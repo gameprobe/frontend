@@ -22,6 +22,8 @@ jobs:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-24.04-arm
     timeout-minutes: 45
+    outputs:
+      digest: ${{ steps.build.outputs.digest }}
 
     steps:
       - name: Check out source
@@ -78,3 +80,101 @@ jobs:
             printf -- '- Platform: `linux/arm64`\n'
             printf -- '- Deployment reference: `%s@%s`\n' "$IMAGE_NAME" "$IMAGE_DIGEST"
           } >> "$GITHUB_STEP_SUMMARY"
+
+  propose-deployment:
+    name: Propose deployment image update
+    needs: publish
+    runs-on: ubuntu-24.04-arm
+    timeout-minutes: 10
+
+    steps:
+      - name: Check that this is still the latest frontend main commit
+        id: current
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SOURCE_SHA: ${{ github.sha }}
+          SOURCE_REPOSITORY: ${{ github.repository }}
+        run: |
+          latest_sha="$(gh api "repos/$SOURCE_REPOSITORY/git/ref/heads/main" --jq '.object.sha')"
+          if [[ "$SOURCE_SHA" != "$latest_sha" ]]; then
+            echo 'is-current=false' >> "$GITHUB_OUTPUT"
+            echo 'Deployment PR skipped: a newer frontend main commit exists.' >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo 'is-current=true' >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check deploy repository credentials
+        if: steps.current.outputs.is-current == 'true'
+        shell: bash
+        env:
+          DEPLOY_REPO_TOKEN: ${{ secrets.DEPLOY_REPO_TOKEN }}
+        run: |
+          if [[ -z "$DEPLOY_REPO_TOKEN" ]]; then
+            echo "::error::Set DEPLOY_REPO_TOKEN in frontend Actions secrets (gameprobe/deploy Contents and Pull requests: read and write)."
+            exit 1
+          fi
+
+      - name: Check out published frontend source
+        if: steps.current.outputs.is-current == 'true'
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.sha }}
+          path: frontend
+          persist-credentials: false
+
+      - name: Check out deploy main
+        if: steps.current.outputs.is-current == 'true'
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: gameprobe/deploy
+          ref: main
+          path: deploy
+          token: ${{ secrets.DEPLOY_REPO_TOKEN }}
+          persist-credentials: false
+
+      - name: Update frontend deployment digest
+        if: steps.current.outputs.is-current == 'true'
+        shell: bash
+        env:
+          IMAGE_DIGEST: ${{ needs.publish.outputs.digest }}
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          python3 frontend/.github/scripts/update-deploy-image.py \
+            deploy/apps/frontend/kustomization.yaml "$IMAGE_DIGEST" "$SOURCE_SHA"
+
+      - name: Create or update deployment PR
+        if: steps.current.outputs.is-current == 'true'
+        id: deployment-pr
+        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
+        with:
+          token: ${{ secrets.DEPLOY_REPO_TOKEN }}
+          path: deploy
+          base: main
+          branch: codex/frontend-image-update
+          add-paths: apps/frontend/kustomization.yaml
+          commit-message: '[TASK-INFRA-002] 프론트 배포 이미지 갱신'
+          title: 'deploy: 프론트 이미지 갱신'
+          body: |
+            frontend/main에서 게시한 이미지로 프론트 배포 버전을 갱신합니다.
+            이 PR을 병합하면 Argo CD 자동 Sync가 활성화된 환경에 배포됩니다.
+
+            - 소스: [${{ github.sha }}](${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }})
+            - 이미지: `${{ env.IMAGE_NAME }}@${{ needs.publish.outputs.digest }}`
+            - 태그: `${{ env.IMAGE_NAME }}:sha-${{ github.sha }}`
+            - 플랫폼: `linux/arm64`
+            - 이미지 게시: [GitHub Actions 실행](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+
+            변경 범위는 `apps/frontend/kustomization.yaml`의 이미지 digest와 소스 커밋 주석입니다.
+
+      - name: Show deployment proposal
+        if: steps.current.outputs.is-current == 'true'
+        shell: bash
+        env:
+          PR_URL: ${{ steps.deployment-pr.outputs.pull-request-url }}
+        run: |
+          if [[ -n "$PR_URL" ]]; then
+            printf '\nDeployment PR: %s\nMerge this PR to deploy after Argo CD auto-sync is enabled.\n' "$PR_URL" >> "$GITHUB_STEP_SUMMARY"
+          else
+            printf '\nNo deployment PR needed: deploy/main already contains this image.\n' >> "$GITHUB_STEP_SUMMARY"
+          fi
