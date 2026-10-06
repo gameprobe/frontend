@@ -1,0 +1,57 @@
+{
+  "phase": "after",
+  "screens": [
+    "after-1440-admin.png",
+    "after-1440-entry-code.png",
+    "after-1440-editor.png",
+    "after-1440-preview.png",
+    "after-1440-bent-route-editor.png",
+    "after-1440-bent-route-preview.png",
+    "after-1440-smoke-wall.png",
+    "after-390-admin.png",
+    "after-390-entry-code.png",
+    "after-390-editor.png",
+    "after-390-preview.png",
+    "after-390-bent-route-editor.png",
+    "after-390-bent-route-preview.png",
+    "after-390-smoke-wall.png",
+    "after-1440-home.png",
+    "after-1440-insights.png",
+    "after-1440-lineups.png",
+    "after-1440-smokes.png"
+  ],
+  "checks": [
+    {
+      "width": 1440,
+      "exampleCode": "PASS",
+      "mixedBounceRoute": "PASS",
+      "routePreviewAndSave": "PASS",
+      "createEdit": "PASS",
+      "filters": "PASS",
+      "url": "PASS",
+      "positions": "PASS",
+      "mapReset": "PASS",
+      "wall": "PASS",
+      "keyboard": "PASS",
+      "discard": "PASS",
+      "reloadReset": "PASS"
+    },
+    {
+      "width": 390,
+      "exampleCode": "PASS",
+      "mixedBounceRoute": "PASS",
+      "routePreviewAndSave": "PASS",
+      "createEdit": "PASS",
+      "filters": "PASS",
+      "url": "PASS",
+      "positions": "PASS",
+      "mapReset": "PASS",
+      "wall": "PASS",
+      "keyboard": "PASS",
+      "discard": "PASS",
+      "reloadReset": "PASS"
+    }
+  ],
+  "errors": [],
+  "apiRequests": []
+}

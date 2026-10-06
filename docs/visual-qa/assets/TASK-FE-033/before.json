@@ -1,0 +1,178 @@
+{
+  "results": [
+    {
+      "file": "before-1440-privacy-ko.png",
+      "route": "privacy",
+      "width": 1440,
+      "locale": "ko",
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "file": "before-1440-terms-ko.png",
+      "route": "terms",
+      "width": 1440,
+      "locale": "ko",
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "file": "before-1440-privacy-en.png",
+      "route": "privacy",
+      "width": 1440,
+      "locale": "en",
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "file": "before-1440-terms-en.png",
+      "route": "terms",
+      "width": 1440,
+      "locale": "en",
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "file": "before-390-privacy-ko.png",
+      "route": "privacy",
+      "width": 390,
+      "locale": "ko",
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "file": "before-390-terms-ko.png",
+      "route": "terms",
+      "width": 390,
+      "locale": "ko",
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "file": "before-390-privacy-en.png",
+      "route": "privacy",
+      "width": 390,
+      "locale": "en",
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "file": "before-390-terms-en.png",
+      "route": "terms",
+      "width": 390,
+      "locale": "en",
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "file": "before-320-privacy-ko.png",
+      "route": "privacy",
+      "width": 320,
+      "locale": "ko",
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "file": "before-320-terms-ko.png",
+      "route": "terms",
+      "width": 320,
+      "locale": "ko",
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "file": "before-320-privacy-en.png",
+      "route": "privacy",
+      "width": 320,
+      "locale": "en",
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "file": "before-320-terms-en.png",
+      "route": "terms",
+      "width": 320,
+      "locale": "en",
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "file": "before-1440-home-top.png",
+      "route": "/",
+      "width": 1440,
+      "locale": "ko",
+      "part": "top"
+    },
+    {
+      "file": "before-1440-home-footer.png",
+      "route": "/",
+      "width": 1440,
+      "locale": "ko",
+      "part": "footer",
+      "overflow": false
+    },
+    {
+      "file": "before-1440-profile-top.png",
+      "route": "/players/ied-agent-allen",
+      "width": 1440,
+      "locale": "ko",
+      "part": "top"
+    },
+    {
+      "file": "before-1440-profile-footer.png",
+      "route": "/players/ied-agent-allen",
+      "width": 1440,
+      "locale": "ko",
+      "part": "footer",
+      "overflow": false
+    },
+    {
+      "file": "before-1440-connect-footer.png",
+      "route": "/connect",
+      "width": 1440,
+      "locale": "ko",
+      "part": "footer",
+      "overflow": false
+    },
+    {
+      "file": "before-390-home-top.png",
+      "route": "/",
+      "width": 390,
+      "locale": "ko",
+      "part": "top"
+    },
+    {
+      "file": "before-390-home-footer.png",
+      "route": "/",
+      "width": 390,
+      "locale": "ko",
+      "part": "footer",
+      "overflow": false
+    },
+    {
+      "file": "before-390-profile-top.png",
+      "route": "/players/ied-agent-allen",
+      "width": 390,
+      "locale": "ko",
+      "part": "top"
+    },
+    {
+      "file": "before-390-profile-footer.png",
+      "route": "/players/ied-agent-allen",
+      "width": 390,
+      "locale": "ko",
+      "part": "footer",
+      "overflow": false
+    },
+    {
+      "file": "before-390-connect-footer.png",
+      "route": "/connect",
+      "width": 390,
+      "locale": "ko",
+      "part": "footer",
+      "overflow": false
+    }
+  ],
+  "checks": [],
+  "errors": []
+}

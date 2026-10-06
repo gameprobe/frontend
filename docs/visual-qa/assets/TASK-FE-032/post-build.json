@@ -1,0 +1,15 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "status": 200,
+      "grantAndRevoke": "pass"
+    },
+    {
+      "width": 390,
+      "status": 200,
+      "grantAndRevoke": "pass"
+    }
+  ],
+  "errors": []
+}

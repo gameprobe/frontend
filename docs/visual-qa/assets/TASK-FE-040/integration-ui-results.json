@@ -1,0 +1,78 @@
+[
+  {
+    "name": "1440px actual login rejects wrong token then accepts test token",
+    "status": "PASS"
+  },
+  {
+    "name": "1440px browser creates and reloads zero-intermediate REVIEW image with persisted fields",
+    "status": "PASS"
+  },
+  {
+    "name": "1440px browser edits one/multiple intermediates, preserves registration/status, recovers real API 400",
+    "status": "PASS"
+  },
+  {
+    "name": "1440px status PATCH publication, unsaved-change cancel, second origin, shared-destination lock",
+    "status": "PASS"
+  },
+  {
+    "name": "1440px anonymous public grouped origins, exact ordered route, rendered IMAGE and playable VIDEO",
+    "status": "PASS"
+  },
+  {
+    "name": "1440px unpublish exclusion, legacy marker protection, UI DELETE -> public 404",
+    "status": "PASS"
+  },
+  {
+    "name": "1440px preview retains memory-only save/reset and simplified lineup intermediate tool",
+    "status": "PASS"
+  },
+  {
+    "name": "390px actual login rejects wrong token then accepts test token",
+    "status": "PASS"
+  },
+  {
+    "name": "390px browser creates and reloads zero-intermediate REVIEW image with persisted fields",
+    "status": "PASS"
+  },
+  {
+    "name": "390px browser edits one/multiple intermediates, preserves registration/status, recovers real API 400",
+    "status": "PASS"
+  },
+  {
+    "name": "390px status PATCH publication, unsaved-change cancel, second origin, shared-destination lock",
+    "status": "PASS"
+  },
+  {
+    "name": "390px anonymous public grouped origins, exact ordered route, rendered IMAGE and playable VIDEO",
+    "status": "PASS"
+  },
+  {
+    "name": "390px unpublish exclusion, legacy marker protection, UI DELETE -> public 404",
+    "status": "PASS"
+  },
+  {
+    "name": "390px preview retains memory-only save/reset and simplified lineup intermediate tool",
+    "status": "PASS"
+  },
+  {
+    "name": "existing literal E skill ID survives a title-only UI edit",
+    "status": "PASS"
+  },
+  {
+    "name": "saved login token retained on server500 and retry succeeds",
+    "status": "PASS"
+  },
+  {
+    "name": "saved login token retained on network and retry succeeds",
+    "status": "PASS"
+  },
+  {
+    "name": "frontend handles server-read failure/retry and real 403 by expiring the token",
+    "status": "PASS"
+  },
+  {
+    "name": "both viewports have zero page exceptions and zero horizontal overflow",
+    "status": "PASS"
+  }
+]

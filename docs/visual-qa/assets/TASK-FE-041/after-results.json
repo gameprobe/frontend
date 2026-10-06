@@ -1,0 +1,358 @@
+{
+  "checks": [
+    {
+      "name": "1440px ATTACK: mouse selects duplicate and nearby skills with exact media",
+      "status": "PASS",
+      "markerPositions": [
+        {
+          "left": "50%",
+          "top": "50%"
+        },
+        {
+          "left": "50%",
+          "top": "50%"
+        },
+        {
+          "left": "50.2%",
+          "top": "50.2%"
+        }
+      ],
+      "pathPoints": "40,40 50,50",
+      "choices": 3
+    },
+    {
+      "name": "1440px ATTACK: keyboard controls and map selection synchronize, focused hidden marker comes forward",
+      "status": "PASS"
+    },
+    {
+      "name": "1440px ATTACK: long name fits, choice surfaces remain visible, no image or horizontal layout errors",
+      "status": "PASS",
+      "choiceStyles": [
+        {
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderColor": "rgb(38, 49, 60)",
+          "background": "rgb(32, 43, 55)",
+          "expectedBackground": "rgb(32, 43, 55)",
+          "expectedBorder": "rgb(38, 49, 60)"
+        },
+        {
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderColor": "rgb(216, 200, 121)",
+          "background": "rgb(32, 43, 55)",
+          "expectedBackground": "rgb(32, 43, 55)",
+          "expectedBorder": "rgb(216, 200, 121)"
+        },
+        {
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderColor": "rgb(38, 49, 60)",
+          "background": "rgb(32, 43, 55)",
+          "expectedBackground": "rgb(32, 43, 55)",
+          "expectedBorder": "rgb(38, 49, 60)"
+        }
+      ]
+    },
+    {
+      "name": "1440px DEFENSE: mouse selects duplicate and nearby skills with exact media",
+      "status": "PASS",
+      "markerPositions": [
+        {
+          "left": "50%",
+          "top": "50%"
+        },
+        {
+          "left": "50%",
+          "top": "50%"
+        },
+        {
+          "left": "49.8%",
+          "top": "49.8%"
+        }
+      ],
+      "pathPoints": "60,60 50,50",
+      "choices": 3
+    },
+    {
+      "name": "1440px DEFENSE: keyboard controls and map selection synchronize, focused hidden marker comes forward",
+      "status": "PASS"
+    },
+    {
+      "name": "1440px DEFENSE: long name fits, choice surfaces remain visible, no image or horizontal layout errors",
+      "status": "PASS",
+      "choiceStyles": [
+        {
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderColor": "rgb(38, 49, 60)",
+          "background": "rgb(32, 43, 55)",
+          "expectedBackground": "rgb(32, 43, 55)",
+          "expectedBorder": "rgb(38, 49, 60)"
+        },
+        {
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderColor": "rgb(216, 200, 121)",
+          "background": "rgb(32, 43, 55)",
+          "expectedBackground": "rgb(32, 43, 55)",
+          "expectedBorder": "rgb(216, 200, 121)"
+        },
+        {
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderColor": "rgb(38, 49, 60)",
+          "background": "rgb(32, 43, 55)",
+          "expectedBackground": "rgb(32, 43, 55)",
+          "expectedBorder": "rgb(38, 49, 60)"
+        }
+      ]
+    },
+    {
+      "name": "1440px 0-marker detail retains existing UI and media",
+      "status": "PASS"
+    },
+    {
+      "name": "1440px 1-marker detail retains existing UI and media",
+      "status": "PASS"
+    },
+    {
+      "name": "390px ATTACK: touch selects duplicate and nearby skills with exact media",
+      "status": "PASS",
+      "markerPositions": [
+        {
+          "left": "50%",
+          "top": "50%"
+        },
+        {
+          "left": "50%",
+          "top": "50%"
+        },
+        {
+          "left": "50.2%",
+          "top": "50.2%"
+        }
+      ],
+      "pathPoints": "40,40 50,50",
+      "choices": 3
+    },
+    {
+      "name": "390px ATTACK: keyboard controls and map selection synchronize, focused hidden marker comes forward",
+      "status": "PASS"
+    },
+    {
+      "name": "390px ATTACK: long name fits, choice surfaces remain visible, no image or horizontal layout errors",
+      "status": "PASS",
+      "choiceStyles": [
+        {
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderColor": "rgb(38, 49, 60)",
+          "background": "rgb(32, 43, 55)",
+          "expectedBackground": "rgb(32, 43, 55)",
+          "expectedBorder": "rgb(38, 49, 60)"
+        },
+        {
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderColor": "rgb(216, 200, 121)",
+          "background": "rgb(32, 43, 55)",
+          "expectedBackground": "rgb(32, 43, 55)",
+          "expectedBorder": "rgb(216, 200, 121)"
+        },
+        {
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderColor": "rgb(38, 49, 60)",
+          "background": "rgb(32, 43, 55)",
+          "expectedBackground": "rgb(32, 43, 55)",
+          "expectedBorder": "rgb(38, 49, 60)"
+        }
+      ]
+    },
+    {
+      "name": "390px DEFENSE: touch selects duplicate and nearby skills with exact media",
+      "status": "PASS",
+      "markerPositions": [
+        {
+          "left": "50%",
+          "top": "50%"
+        },
+        {
+          "left": "50%",
+          "top": "50%"
+        },
+        {
+          "left": "49.8%",
+          "top": "49.8%"
+        }
+      ],
+      "pathPoints": "60,60 50,50",
+      "choices": 3
+    },
+    {
+      "name": "390px DEFENSE: keyboard controls and map selection synchronize, focused hidden marker comes forward",
+      "status": "PASS"
+    },
+    {
+      "name": "390px DEFENSE: long name fits, choice surfaces remain visible, no image or horizontal layout errors",
+      "status": "PASS",
+      "choiceStyles": [
+        {
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderColor": "rgb(38, 49, 60)",
+          "background": "rgb(32, 43, 55)",
+          "expectedBackground": "rgb(32, 43, 55)",
+          "expectedBorder": "rgb(38, 49, 60)"
+        },
+        {
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderColor": "rgb(216, 200, 121)",
+          "background": "rgb(32, 43, 55)",
+          "expectedBackground": "rgb(32, 43, 55)",
+          "expectedBorder": "rgb(216, 200, 121)"
+        },
+        {
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderColor": "rgb(38, 49, 60)",
+          "background": "rgb(32, 43, 55)",
+          "expectedBackground": "rgb(32, 43, 55)",
+          "expectedBorder": "rgb(38, 49, 60)"
+        }
+      ]
+    },
+    {
+      "name": "390px 0-marker detail retains existing UI and media",
+      "status": "PASS"
+    },
+    {
+      "name": "390px 1-marker detail retains existing UI and media",
+      "status": "PASS"
+    },
+    {
+      "name": "320px ATTACK: touch selects duplicate and nearby skills with exact media",
+      "status": "PASS",
+      "markerPositions": [
+        {
+          "left": "50%",
+          "top": "50%"
+        },
+        {
+          "left": "50%",
+          "top": "50%"
+        },
+        {
+          "left": "50.2%",
+          "top": "50.2%"
+        }
+      ],
+      "pathPoints": "40,40 50,50",
+      "choices": 3
+    },
+    {
+      "name": "320px ATTACK: keyboard controls and map selection synchronize, focused hidden marker comes forward",
+      "status": "PASS"
+    },
+    {
+      "name": "320px ATTACK: long name fits, choice surfaces remain visible, no image or horizontal layout errors",
+      "status": "PASS",
+      "choiceStyles": [
+        {
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderColor": "rgb(38, 49, 60)",
+          "background": "rgb(32, 43, 55)",
+          "expectedBackground": "rgb(32, 43, 55)",
+          "expectedBorder": "rgb(38, 49, 60)"
+        },
+        {
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderColor": "rgb(216, 200, 121)",
+          "background": "rgb(32, 43, 55)",
+          "expectedBackground": "rgb(32, 43, 55)",
+          "expectedBorder": "rgb(216, 200, 121)"
+        },
+        {
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderColor": "rgb(38, 49, 60)",
+          "background": "rgb(32, 43, 55)",
+          "expectedBackground": "rgb(32, 43, 55)",
+          "expectedBorder": "rgb(38, 49, 60)"
+        }
+      ]
+    },
+    {
+      "name": "320px DEFENSE: touch selects duplicate and nearby skills with exact media",
+      "status": "PASS",
+      "markerPositions": [
+        {
+          "left": "50%",
+          "top": "50%"
+        },
+        {
+          "left": "50%",
+          "top": "50%"
+        },
+        {
+          "left": "49.8%",
+          "top": "49.8%"
+        }
+      ],
+      "pathPoints": "60,60 50,50",
+      "choices": 3
+    },
+    {
+      "name": "320px DEFENSE: keyboard controls and map selection synchronize, focused hidden marker comes forward",
+      "status": "PASS"
+    },
+    {
+      "name": "320px DEFENSE: long name fits, choice surfaces remain visible, no image or horizontal layout errors",
+      "status": "PASS",
+      "choiceStyles": [
+        {
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderColor": "rgb(38, 49, 60)",
+          "background": "rgb(32, 43, 55)",
+          "expectedBackground": "rgb(32, 43, 55)",
+          "expectedBorder": "rgb(38, 49, 60)"
+        },
+        {
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderColor": "rgb(216, 200, 121)",
+          "background": "rgb(32, 43, 55)",
+          "expectedBackground": "rgb(32, 43, 55)",
+          "expectedBorder": "rgb(216, 200, 121)"
+        },
+        {
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderColor": "rgb(38, 49, 60)",
+          "background": "rgb(32, 43, 55)",
+          "expectedBackground": "rgb(32, 43, 55)",
+          "expectedBorder": "rgb(38, 49, 60)"
+        }
+      ]
+    },
+    {
+      "name": "320px 0-marker detail retains existing UI and media",
+      "status": "PASS"
+    },
+    {
+      "name": "320px 1-marker detail retains existing UI and media",
+      "status": "PASS"
+    },
+    {
+      "name": "zero page exceptions, broken images, horizontal overflow or API writes",
+      "status": "PASS"
+    }
+  ],
+  "pageErrors": [],
+  "blockedWrites": []
+}

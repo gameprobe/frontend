@@ -1,0 +1,3758 @@
+{
+  "phase": "before",
+  "states": [
+    {
+      "name": "1440-lineups-index",
+      "file": "before-1440-lineups-index.png",
+      "width": 1440,
+      "height": 1311,
+      "overflow": 0,
+      "mainCount": 1,
+      "text": "GAMEPROBE TACTICAL LIBRARY\n\n라인업 검색 센터\n\n맵, 요원, 스킬 슬롯을 조합해 필요한 전술 라인업을 빠르게 찾으세요. 승인된 라인업의 위치, 경로, 영상 가이드를 한 곳에서 확인하세요.\n\nAPI PREVIEW\n공개 라인업 API 요청 실패 (503) 데모 데이터를 표시합니다.\nLINEUPS\nMAPS\n\n라인업을 확인할 맵을 선택하세요.\n\nAscent\nSplit\nFracture\nBind\nBreeze\nAbyss\nLotus\nSunset\nPearl\nIcebox\nCorrode\nHaven",
+      "pins": [],
+      "paths": [],
+      "map": [],
+      "regression": [
+        {
+          "text": "라인업 검색 센터",
+          "x": 65,
+          "y": 181.796875,
+          "w": 945.578125,
+          "h": 54,
+          "font": "54px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "API Preview공개 라인업 API 요청 실패 (503) 데모 데이터를 표시합니다.",
+          "x": 1034.578125,
+          "y": 233.890625,
+          "w": 340.40625,
+          "h": 59.5,
+          "font": "16px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(245, 247, 249)"
+        },
+        {
+          "text": "Ascent",
+          "x": 47,
+          "y": 493.578125,
+          "w": 439.328125,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Split",
+          "x": 500.328125,
+          "y": 493.578125,
+          "w": 439.328125,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Fracture",
+          "x": 953.65625,
+          "y": 493.578125,
+          "w": 439.34375,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Bind",
+          "x": 47,
+          "y": 657.578125,
+          "w": 439.328125,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Breeze",
+          "x": 500.328125,
+          "y": 657.578125,
+          "w": 439.328125,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Abyss",
+          "x": 953.65625,
+          "y": 657.578125,
+          "w": 439.34375,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Lotus",
+          "x": 47,
+          "y": 821.578125,
+          "w": 439.328125,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Sunset",
+          "x": 500.328125,
+          "y": 821.578125,
+          "w": 439.328125,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Pearl",
+          "x": 953.65625,
+          "y": 821.578125,
+          "w": 439.34375,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Icebox",
+          "x": 47,
+          "y": 985.578125,
+          "w": 439.328125,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Corrode",
+          "x": 500.328125,
+          "y": 985.578125,
+          "w": 439.328125,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Haven",
+          "x": 953.65625,
+          "y": 985.578125,
+          "w": 439.34375,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        }
+      ]
+    },
+    {
+      "name": "1440-lineups-ascent",
+      "file": "before-1440-lineups-ascent.png",
+      "width": 1440,
+      "height": 1201,
+      "overflow": 0,
+      "mainCount": 1,
+      "text": "GAMEPROBE TACTICAL LIBRARY\n\n라인업 검색 센터\n\n맵, 요원, 스킬 슬롯을 조합해 필요한 전술 라인업을 빠르게 찾으세요. 승인된 라인업의 위치, 경로, 영상 가이드를 한 곳에서 확인하세요.\n\nAPI PREVIEW\n공개 라인업 API 요청 실패 (503) 데모 데이터를 표시합니다.\nLINEUP DATABASE\nASCENT\n맵 변경\n요원 선택\n스킬 종류\nC\nQ\nE\n궁극기\nMap explorer\nAscent\n공격\n수비\n시작 위치\n스킬 도착 위치\n투사 경로\n선택한 라인업 상세 보기 →",
+      "pins": [
+        {
+          "label": "Sova 시작 요원 위치 선택",
+          "left": "32%",
+          "top": "20%"
+        },
+        {
+          "label": "Recon Bolt 도착 위치에서 시작 요원 보기",
+          "left": "66%",
+          "top": "68%"
+        }
+      ],
+      "paths": [
+        "31.999999999999996,20 48,45 65.99999999999999,68"
+      ],
+      "map": [
+        {
+          "src": "/_next/image?url=%2Fassets%2Fmaps%2Fascent.png&w=3840&q=75",
+          "transform": "matrix(0, 1, -1, 0, 0, 0)"
+        }
+      ],
+      "regression": [
+        {
+          "text": "라인업 검색 센터",
+          "x": 65,
+          "y": 181.796875,
+          "w": 945.578125,
+          "h": 54,
+          "font": "54px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "API Preview공개 라인업 API 요청 실패 (503) 데모 데이터를 표시합니다.",
+          "x": 1034.578125,
+          "y": 233.890625,
+          "w": 340.40625,
+          "h": 59.5,
+          "font": "16px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(245, 247, 249)"
+        },
+        {
+          "text": "Lineup databaseAscent맵 변경요원 선택스킬 종류CQE궁극기",
+          "x": 16,
+          "y": 360.390625,
+          "w": 220,
+          "h": 377,
+          "font": "16px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Ascent맵 변경",
+          "x": 31,
+          "y": 392.390625,
+          "w": 190,
+          "h": 50,
+          "font": "10px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(246, 247, 249)"
+        },
+        {
+          "text": "",
+          "x": 32,
+          "y": 481.390625,
+          "w": 27.15625,
+          "h": 28,
+          "font": "9px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 64.15625,
+          "y": 481.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 96.328125,
+          "y": 481.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 128.484375,
+          "y": 481.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 160.65625,
+          "y": 481.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 192.828125,
+          "y": 481.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 32,
+          "y": 514.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 64.15625,
+          "y": 514.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 96.328125,
+          "y": 514.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 128.484375,
+          "y": 514.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 160.65625,
+          "y": 514.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 192.828125,
+          "y": 514.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 32,
+          "y": 547.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 64.15625,
+          "y": 547.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 96.328125,
+          "y": 547.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 128.484375,
+          "y": 547.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 160.65625,
+          "y": 547.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 192.828125,
+          "y": 547.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 32,
+          "y": 580.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 64.15625,
+          "y": 580.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 96.328125,
+          "y": 580.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 128.484375,
+          "y": 580.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 160.65625,
+          "y": 580.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(255, 245, 246)"
+        },
+        {
+          "text": "",
+          "x": 192.828125,
+          "y": 580.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 32,
+          "y": 613.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 64.15625,
+          "y": 613.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 96.328125,
+          "y": 613.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 128.484375,
+          "y": 613.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 160.65625,
+          "y": 613.390625,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "C",
+          "x": 31,
+          "y": 676.390625,
+          "w": 34,
+          "h": 46,
+          "font": "9px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Q",
+          "x": 70,
+          "y": 676.390625,
+          "w": 34,
+          "h": 46,
+          "font": "9px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "E",
+          "x": 109,
+          "y": 676.390625,
+          "w": 34,
+          "h": 46,
+          "font": "9px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "궁극기",
+          "x": 148,
+          "y": 676.390625,
+          "w": 34,
+          "h": 46,
+          "font": "9px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "공격",
+          "x": 1318.9375,
+          "y": 383.640625,
+          "w": 44.03125,
+          "h": 27,
+          "font": "11px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(217, 79, 93)"
+        },
+        {
+          "text": "수비",
+          "x": 1362.96875,
+          "y": 383.640625,
+          "w": 43.03125,
+          "h": 27,
+          "font": "11px",
+          "color": "rgb(104, 112, 124)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 605.671875,
+          "y": 528.484375,
+          "w": 38,
+          "h": 38,
+          "font": "16px",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgb(42, 157, 104)"
+        },
+        {
+          "text": "",
+          "x": 1004.828125,
+          "y": 801.125,
+          "w": 38,
+          "h": 38,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(217, 79, 93)"
+        }
+      ]
+    },
+    {
+      "name": "1440-smokes-index",
+      "file": "before-1440-smokes-index.png",
+      "width": 1440,
+      "height": 1311,
+      "overflow": 0,
+      "mainCount": 1,
+      "text": "GAMEPROBE SMOKE LIBRARY\n\n스모크 가이드 센터\n\n맵과 진영을 선택해 어디에 연막을 설치하면 좋은지 확인하세요. 바이퍼를 제외한 공통 원형 연막과 하버 일자 연막을 안내합니다. 바이퍼 라인업은 라인업 페이지에서 확인할 수 있습니다.\n\nSMOKE PREVIEW\n현재는 공통 원형 연막 Preview입니다. 패치별 검증 후 실제 좌표와 수치로 확장됩니다.\nSMOKE LIBRARY\nMAPS\n\n연막 가이드를 확인할 맵을 선택하세요.\n\nAscent\nSplit\nFracture\nBind\nBreeze\nAbyss\nLotus\nSunset\nPearl\nIcebox\nCorrode\nHaven",
+      "pins": [],
+      "paths": [],
+      "map": [],
+      "regression": [
+        {
+          "text": "스모크 가이드 센터",
+          "x": 65,
+          "y": 181.796875,
+          "w": 945.578125,
+          "h": 54,
+          "font": "54px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Smoke Preview현재는 공통 원형 연막 Preview입니다. 패치별 검증 후 실제 좌표와 수치로 확장됩니다.",
+          "x": 1034.578125,
+          "y": 217.390625,
+          "w": 340.40625,
+          "h": 76,
+          "font": "16px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(245, 247, 249)"
+        },
+        {
+          "text": "Ascent",
+          "x": 47,
+          "y": 493.578125,
+          "w": 439.328125,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Split",
+          "x": 500.328125,
+          "y": 493.578125,
+          "w": 439.328125,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Fracture",
+          "x": 953.65625,
+          "y": 493.578125,
+          "w": 439.34375,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Bind",
+          "x": 47,
+          "y": 657.578125,
+          "w": 439.328125,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Breeze",
+          "x": 500.328125,
+          "y": 657.578125,
+          "w": 439.328125,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Abyss",
+          "x": 953.65625,
+          "y": 657.578125,
+          "w": 439.34375,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Lotus",
+          "x": 47,
+          "y": 821.578125,
+          "w": 439.328125,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Sunset",
+          "x": 500.328125,
+          "y": 821.578125,
+          "w": 439.328125,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Pearl",
+          "x": 953.65625,
+          "y": 821.578125,
+          "w": 439.34375,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Icebox",
+          "x": 47,
+          "y": 985.578125,
+          "w": 439.328125,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Corrode",
+          "x": 500.328125,
+          "y": 985.578125,
+          "w": 439.328125,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Haven",
+          "x": 953.65625,
+          "y": 985.578125,
+          "w": 439.34375,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        }
+      ]
+    },
+    {
+      "name": "1440-smokes-ascent",
+      "file": "before-1440-smokes-ascent.png",
+      "width": 1440,
+      "height": 1585,
+      "overflow": 0,
+      "mainCount": 1,
+      "text": "GAMEPROBE SMOKE LIBRARY\n\n스모크 가이드 센터\n\n맵과 진영을 선택해 어디에 연막을 설치하면 좋은지 확인하세요. 바이퍼를 제외한 공통 원형 연막과 하버 일자 연막을 안내합니다. 바이퍼 라인업은 라인업 페이지에서 확인할 수 있습니다.\n\nSMOKE PREVIEW\n현재는 공통 원형 연막 Preview입니다. 패치별 검증 후 실제 좌표와 수치로 확장됩니다.\nSMOKE DATABASE\nASCENT\n맵 변경\n진영\n공격\n수비\n요원별 연막 비교\nPREVIEW\n요원\n크기\n지속\nOmen\n4.5m 반경\n15초\nBrimstone\n5m 반경\n19초\nAstra\n4.75m 반경\n14초\nClove\n4.75m 반경\n14초\nHarbor\n4m 반경 + 벽\n4.5초 / 벽 12초\nMiks\n4.5m 반경\n12초\n\nViper 전용 연막 라인업은 라인업 페이지에서 확인하고, Smoke에서는 나머지 공통 연막과 Harbor 일자 연막을 안내합니다.\n\n사이트\n전체\nA\nB\nC\nMid\n연막 유형\n모든 연막 (바이퍼 제외)\n하버 일자\nSmoke explorer\nAscent\n1개 가이드 · 공격\n●\n●\n연막 도착 위치\n투척 위치\n투사 경로\nAVAILABLE SMOKES\n1 guides\n●\nAscent A 진입 공통 원형 연막\n모든 요원 (Viper 제외) · 공통 원형\nPreview · 패치 검증 필요\nA site · 모든 요원 (Viper 제외)\nAscent A 진입 공통 원형 연막\n형태\n원형\n크기\n4.5m 반경\n지속\n공통 원형 기준\n\nA 진입 전에 Viper를 제외한 모든 요원이 공통으로 사용할 수 있는 원형 연막입니다.\n\n공격 진영의 표시된 시작 위치에 정렬하세요.\n지도 위 원형 연막 도착 지점에 맞춰 조준하세요.\n연막이 완전히 형성된 뒤 팀의 다음 행동을 시작하세요.",
+      "pins": [
+        {
+          "label": "Ascent A 진입 공통 원형 연막 선택",
+          "left": "69%",
+          "top": "62%"
+        },
+        {
+          "label": "Ascent A 진입 공통 원형 연막 시작 위치",
+          "left": "27%",
+          "top": "17%"
+        }
+      ],
+      "paths": [
+        "27,17 48,39.5 69,62"
+      ],
+      "map": [
+        {
+          "src": "/_next/image?url=%2Fassets%2Fmaps%2Fascent.png&w=3840&q=75",
+          "transform": "matrix(0, 1, -1, 0, 0, 0)"
+        }
+      ],
+      "regression": [
+        {
+          "text": "스모크 가이드 센터",
+          "x": 65,
+          "y": 181.796875,
+          "w": 945.578125,
+          "h": 54,
+          "font": "54px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Smoke Preview현재는 공통 원형 연막 Preview입니다. 패치별 검증 후 실제 좌표와 수치로 확장됩니다.",
+          "x": 1034.578125,
+          "y": 217.390625,
+          "w": 340.40625,
+          "h": 76,
+          "font": "16px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(245, 247, 249)"
+        },
+        {
+          "text": "Smoke databaseAscent맵 변경진영공격수비요원별 연막 비교Preview요원크기지속Omen4.5m 반경15초Brimstone5m 반경19초Astra4.75m 반경14초Clove4.75m 반경14초Harbor4m 반경 + 벽4.5초 / 벽 12초Miks4.5m 반경12초Viper 전용 연막 라인업은 라인업 페이지에서 확인하고, Smoke에서는 나머지 공통 연막과 Harbor 일자 연막을 안내합니다.사이트전체ABCMid연막 유형모든 연막 (바이퍼 제외)하버 일자",
+          "x": 16,
+          "y": 360.390625,
+          "w": 220,
+          "h": 612.5,
+          "font": "16px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Ascent맵 변경",
+          "x": 31,
+          "y": 392.390625,
+          "w": 190,
+          "h": 50,
+          "font": "10px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(246, 247, 249)"
+        },
+        {
+          "text": "공격",
+          "x": 32,
+          "y": 481.390625,
+          "w": 44.03125,
+          "h": 27,
+          "font": "11px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(217, 79, 93)"
+        },
+        {
+          "text": "수비",
+          "x": 76.03125,
+          "y": 481.390625,
+          "w": 43.03125,
+          "h": 27,
+          "font": "11px",
+          "color": "rgb(104, 112, 124)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "전체",
+          "x": 31,
+          "y": 855.890625,
+          "w": 34,
+          "h": 28,
+          "font": "10px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(255, 245, 246)"
+        },
+        {
+          "text": "A",
+          "x": 70,
+          "y": 855.890625,
+          "w": 34,
+          "h": 28,
+          "font": "10px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "B",
+          "x": 109,
+          "y": 855.890625,
+          "w": 34,
+          "h": 28,
+          "font": "10px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "C",
+          "x": 148,
+          "y": 855.890625,
+          "w": 34,
+          "h": 28,
+          "font": "10px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Mid",
+          "x": 187,
+          "y": 855.890625,
+          "w": 34,
+          "h": 28,
+          "font": "10px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "모든 연막 (바이퍼 제외)",
+          "x": 31,
+          "y": 917.890625,
+          "w": 92.5,
+          "h": 40,
+          "font": "10px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(255, 245, 246)"
+        },
+        {
+          "text": "하버 일자",
+          "x": 128.5,
+          "y": 917.890625,
+          "w": 92.5,
+          "h": 40,
+          "font": "10px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "●",
+          "x": 1040.046875,
+          "y": 798.046875,
+          "w": 38,
+          "h": 38,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(217, 79, 93)"
+        },
+        {
+          "text": "●",
+          "x": 546.96875,
+          "y": 519.9375,
+          "w": 38,
+          "h": 38,
+          "font": "16px",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgb(42, 157, 104)"
+        },
+        {
+          "text": "●Ascent A 진입 공통 원형 연막모든 요원 (Viper 제외) · 공통 원형Preview · 패치 검증 필요",
+          "x": 261,
+          "y": 1120.890625,
+          "w": 1150,
+          "h": 52,
+          "font": "16px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(255, 245, 246)"
+        }
+      ]
+    },
+    {
+      "name": "1440-home",
+      "file": "before-1440-home.png",
+      "width": 1440,
+      "height": 1119,
+      "overflow": 0,
+      "mainCount": 1,
+      "text": "GP\nGAMEPROBE\nVALORANT\nPLAYER STATS\nLINEUPS\n데모 미리보기\nLanguage\nConnect account\nV\nSearch\nHome\nOverview\nLineups\nMore\nJETT\nVALORANT STATS\n당신의 플레이,\n더 선명하게.\n\n전적을 살펴보고, 다음 경기를 준비하세요.\n\n기존 디자인 데모 미리보기\nRiot ID\n데모 보기\n\n실제 Riot ID 검색은 아직 제공하지 않습니다. 입력값과 관계없이 기존 디자인 데모로 이동합니다.\n\n데모 미리보기\n실제 Riot ID 검색은 아직 제공하지 않습니다. 아래 두 데모를 비교해 보세요.\n\n데모 비교하기\n새 데이터 데모\n· DemoPlayer01\n기존 디자인 데모\n· IED agent\n새 데이터 데모\nDemoPlayer01 예시 기록\n기존 디자인 데모\nIED agent #Allen\n01 / DUELIST JETT\n게임을 더 깊이 들여다보세요\nEXPLORE GAMEPROBE\nPLAYER OVERVIEW\n최근 경기를 한눈에\n\n시즌 성적부터 요원·맵별 기록까지, 내 플레이의 흐름을 확인하세요.\n\n전적 프로필 보기\nTACTICAL LIBRARY\n다음 라운드의 한 수\n\n맵과 요원에 맞는 라인업을 찾아보세요.\n\n라인업 둘러보기\nASCENT\n플레이 분석 미리보기 예시\n분석 화면을 위한 예시 점수입니다.\n위치 선정\n87\n팀 교전\n74\n첫 교전\n68\n사이트 방어\n91\nGameProbe\nRiot Games 및 Tracker Network와 제휴 관계가 없는 비공식 서비스입니다. 현재 전적은 예시 데이터입니다.\nPrivacy\nTerms",
+      "pins": [],
+      "paths": [],
+      "map": [],
+      "regression": [
+        {
+          "text": "Language",
+          "x": 1128.015625,
+          "y": 4,
+          "w": 97.40625,
+          "h": 32,
+          "font": "13px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(17, 29, 38)"
+        },
+        {
+          "text": "VSearchHomeOverviewLineupsMore",
+          "x": 0,
+          "y": 40,
+          "w": 1440,
+          "h": 54,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(17, 28, 36)"
+        },
+        {
+          "text": "More",
+          "x": 1324.546875,
+          "y": 44.5,
+          "w": 91.453125,
+          "h": 44,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(43, 53, 64)"
+        },
+        {
+          "text": "당신의 플레이,더 선명하게.",
+          "x": 57,
+          "y": 177.1875,
+          "w": 703,
+          "h": 89.65625,
+          "font": "38px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "",
+          "x": 73,
+          "y": 371.984375,
+          "w": 556.65625,
+          "h": 48,
+          "font": "16px",
+          "color": "rgb(236, 240, 245)",
+          "background": "rgb(32, 45, 58)"
+        },
+        {
+          "text": "데모 보기",
+          "x": 639.65625,
+          "y": 371.984375,
+          "w": 104.34375,
+          "h": 48,
+          "font": "14px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(201, 54, 72)"
+        },
+        {
+          "text": "새 데이터 데모DemoPlayer01 예시 기록기존 디자인 데모IED agent #Allen",
+          "x": 1110,
+          "y": 404.0625,
+          "w": 271,
+          "h": 150,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "GameProbeRiot Games 및 Tracker Network와 제휴 관계가 없는 비공식 서비스입니다. 현재 전적은 예시 데이터입니다.PrivacyTerms",
+          "x": 20,
+          "y": 1025.03125,
+          "w": 1400,
+          "h": 93.796875,
+          "font": "12px",
+          "color": "rgb(180, 194, 207)",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "name": "1440-profile",
+      "file": "before-1440-profile.png",
+      "width": 1440,
+      "height": 4408,
+      "overflow": 0,
+      "mainCount": 1,
+      "text": "GP\nGAMEPROBE\nVALORANT\nPLAYER STATS\nLINEUPS\n데모 미리보기\nLanguage\nConnect account\nV\nHome\nOverview\nLineups\nMatches\nPerformance\nAgents\nMaps\nWeapons\nMore\n!\n데모 미리보기\n\n현재 전적은 예시 데이터입니다. 실제 Riot 전적은 연결되지 않았습니다.\n\n닫기\nJETT\nSave Profile\n데모 미리보기\n1,281 profile views · 예시 데이터\nIED agent\n#Allen\nOverview\nMatches\nPerformance\nAgents\nMaps\nWeapons\nLineups\nGP\nKNOW YOUR GAME.\nYOUR STATS. YOUR PROGRESS. YOUR NEXT WIN.\n❯❯❯\nA closer look at every match.\nExplore your performance\nPC\nConsole\nCompetitive\nPremier\nUnrated\nDeathmatch\nSwiftplay\nAll Acts\nAct\nAll Acts\nV26: A5\nV26: A4\nCURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · 예시\n\nEVERY ROUND COUNTS.\n다음 경기에서 개선할 점을 확인하세요.\nView performance\nACCURACY\nSelected act\n\nHead\n25.6%\n\nBody\n67.4%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 66.7%\n6W - 3L\n\nKDA 1.32\n127 / 145 / 64\n\n✕\nDuelist\nWR 55.6%\n5W - 4L\n\nKDA 1.31\n153 / 147 / 39\n\n↗\nInitiator\nWR 100.0%\n5W - 0L\n\nKDA 1.64\n85 / 74 / 36\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n28%\nKills\n208\nPhantom\nAssault Rifles\nHS\n23%\nKills\n127\nOperator\nSniper Rifles\nHS\n27%\nKills\n30\nView All Weapons\nTOP MAPS\nAscent\n88%\n7W - 1L\nHaven\n88%\n7W - 1L\nSplit\n29%\n2W - 5L\nView All Maps\nV26: A5 COMPETITIVE OVERVIEW\n14h Playtime // 23 Matches\nShow More\nImmortal 1\n43 RR\n#14,290\nLevel\n161\n16 W\n7 L\nIMMORTAL\nDamage/Round\n143.1\n평균 피해량\n•••\nK/D Ratio\n1.00\nKills / Deaths\n•••\nHeadshot %\n25.6%\n헤드샷 명중률\n•••\nWin %\n69.6%\n16 W · 7 L\n•••\nWins\n16\nKAST\n70.7%\nDDΔ/Round\n+6\nKills\n365\nDeaths\n366\nAssists\n139\nACS\n217.0\nKAD Ratio\n1.38\nKills/Round\n0.73\nFirst Bloods\n49\nFlawless Rounds\n19\nAces\n1\n◈\nProbe Score\n557 / 1,000\n플레이 분석 예시 점수\nRound Win %\n54.3%\nS\nKAST\n70.7%\nC\nACS\n217.0\nB\nDDΔ/Round\n+6\nB\nTOP AGENTS\nView All Agents\nAgent\tMatches\tWin %\tK/D\tADR\tACS\tDDΔ\tBest Map\n\nJett\n5.3 hours\n\t9\t55.6%\t1.04\t152.6\t233.4\t+12\tAscent\n\nOmen\n5.3 hours\n\t9\t66.7%\t0.88\t131.6\t197.3\t-7\tAscent\n\nSova\n2.9 hours\n\t5\t100.0%\t1.15\t146.4\t222.5\t+20\tAscent\n다음 승리를 준비하세요.\n경기를 돌아보고 플레이 패턴과 변화를 확인해 보세요.\nLAST 20 MATCHES\nAll Matches\nAgent\nAll Agents\nJett\nOmen\nSova\nMap\nAll Maps\nAscent\nHaven\nSplit\nWeapon\nAll Weapons\nPhantom\nVandal\nOperator\nDate range\nAll Dates\nLast 7 days\nLast 30 days\n+ More\n14W - 6L (70%)\n1.02 K/D | 145 ADR\n23 matching games · latest 20\n5W - 3L (63%)\nK/D 1.09\n5W - 3L (63%)\nK/D 0.87\n4W - 0L (100%)\nK/D 1.21\nSep 9\n13 : 8\nK/D 1.3\nSep 4\n13 : 2\nK/D 0.8\nSep 4\n11 : 13\nK/D 1.1\nSep 4\n14 : 12\nK/D 1.1\nSep 4\n13 : 8\nK/D 0.7\nSep 4\n9 : 13\nK/D 0.9\nSep 1\n7 : 13\nK/D 0.7\nAug 31\n13 : 6\nK/D 2.5\nSep 9\n1\n1 W // 0 L\nK/D\n1.31\nDDΔ\n+43\nHS%\n32\nACS\n240\n21:48 // Competitive\nHaven\nSova\nScore\n13 : 8\n◈\nPS\n726\nK/D\n1.3\nK / D / A\n17 / 13 / 5\nDDΔ\n+43\nHS%\n32%\nACS\n240\nSep 4\n5\n3 W // 2 L\nK/D\n0.96\nDDΔ\n+7\nHS%\n23\nACS\n217\n23:46 // Competitive\nAscent\nJett\nScore\n13 : 2\n◈\nPS\n547\nK/D\n0.8\nK / D / A\n10 / 12 / 4\nDDΔ\n-25\nHS%\n29%\nACS\n197\n22:55 // Competitive\nSplit\nJett\nScore\n11 : 13\n◈\nPS\n549\nK/D\n1.1\nK / D / A\n20 / 18 / 5\nDDΔ\n+21\nHS%\n29%\nACS\n256\n22:01 // Competitive\nSplit\nJett\nScore\n14 : 12\n◈\nPS\n669\nK/D\n1.1\nK / D / A\n22 / 20 / 6\nDDΔ\n+38\nHS%\n13%\nACS\n269\n21:08 // Competitive\nHaven\nOmen\nScore\n13 : 8\n◈\nPS\n389\nK/D\n0.7\nK / D / A\n10 / 14 / 5\nDDΔ\n-7\nHS%\n22%\nACS\n153\n20:14 // Competitive\nHaven\nOmen\nScore\n9 : 13\n◈\nPS\n397\nK/D\n0.9\nK / D / A\n14 / 15 / 1\nDDΔ\n-9\nHS%\n24%\nACS\n187\nSep 1\n1\n0 W // 1 L\nK/D\n0.73\nDDΔ\n-27\nHS%\n34\nACS\n162\n21:09 // Competitive\nAscent\nJett\nScore\n7 : 13\n◈\nPS\n223\nK/D\n0.7\nK / D / A\n11 / 15 / 4\nDDΔ\n-27\nHS%\n34%\nACS\n162\nAug 31\n1\n1 W // 0 L\nK/D\n2.45\nDDΔ\n+135\nHS%\n35\nACS\n379\n23:36 // Competitive\nSplit\nJett\nScore\n13 : 6\n◈\nPS\n993\nK/D\n2.5\nK / D / A\n27 / 11 / 2\nDDΔ\n+135\nHS%\n35%\nACS\n379\nAug 30\n4\n3 W // 1 L\nK/D\n1.13\nDDΔ\n+15\nHS%\n27\nACS\n228\n23:42 // Competitive\nAscent\nOmen\nScore\n13 : 7\n◈\nPS\n803\nK/D\n1.5\nK / D / A\n18 / 12 / 9\nDDΔ\n+39\nHS%\n26%\nACS\n243\n22:53 // Competitive\nHaven\nSova\nScore\n13 : 9\n◈\nPS\n731\nK/D\n1.1\nK / D / A\n17 / 15 / 8\nDDΔ\n+17\nHS%\n27%\nACS\n218\n22:04 // Competitive\nSplit\nOmen\nScore\n10 : 13\n◈\nPS\n382\nK/D\n0.9\nK / D / A\n16 / 18 / 7\nDDΔ\n-13\nHS%\n24%\nACS\n216\n21:15 // Competitive\nAscent\nJett\nScore\n13 : 10\n◈\nPS\n746\nK/D\n1.1\nK / D / A\n19 / 17 / 4\nDDΔ\n+19\nHS%\n30%\nACS\n237\nAug 29\n3\n2 W // 1 L\nK/D\n0.98\nDDΔ\n+2\nHS%\n26\nACS\n206\n22:44 // Competitive\nHaven\nOmen\nScore\n13 : 11\n◈\nPS\n493\nK/D\n0.8\nK / D / A\n15 / 19 / 8\nDDΔ\n-11\nHS%\n21%\nACS\n193\n21:57 // Competitive\nAscent\nSova\nScore\n13 : 5\n◈\nPS\n861\nK/D\n1.9\nK / D / A\n17 / 9 / 6\nDDΔ\n+61\nHS%\n28%\nACS\n256\n21:06 // Competitive\nSplit\nJett\nScore\n8 : 13\n◈\nPS\n281\nK/D\n0.7\nK / D / A\n12 / 17 / 5\nDDΔ\n-34\nHS%\n29%\nACS\n178\nAug 28\n3\n2 W // 1 L\nK/D\n0.84\nDDΔ\n-12\nHS%\n24\nACS\n205\n23:40 // Competitive\nHaven\nOmen\nScore\n13 : 9\n◈\nPS\n566\nK/D\n0.9\nK / D / A\n14 / 16 / 10\nDDΔ\n-9\nHS%\n19%\nACS\n206\n22:46 // Competitive\nAscent\nJett\nScore\n13 : 11\n◈\nPS\n635\nK/D\n1.1\nK / D / A\n19 / 18 / 5\nDDΔ\n+12\nHS%\n31%\nACS\n235\n21:52 // Competitive\nSplit\nOmen\nScore\n6 : 13\n◈\nPS\n194\nK/D\n0.6\nK / D / A\n10 / 17 / 6\nDDΔ\n-46\nHS%\n20%\nACS\n167\nAug 27\n2\n2 W // 0 L\nK/D\n0.86\nDDΔ\n-6\nHS%\n26\nACS\n201\n23:01 // Competitive\nHaven\nOmen\nScore\n13 : 10\n◈\nPS\n514\nK/D\n0.8\nK / D / A\n14 / 17 / 9\nDDΔ\n-5\nHS%\n23%\nACS\n197\n22:08 // Competitive\nAscent\nSova\nScore\n13 : 11\n◈\nPS\n597\nK/D\n0.9\nK / D / A\n17 / 19 / 6\nDDΔ\n-7\nHS%\n28%\nACS\n204\nLoad more matches\nGameProbe\nRiot Games 및 Tracker Network와 제휴 관계가 없는 비공식 서비스입니다. 현재 전적은 예시 데이터입니다.\nPrivacy\nTerms",
+      "pins": [],
+      "paths": [],
+      "map": [],
+      "regression": [
+        {
+          "text": "Language",
+          "x": 1128.015625,
+          "y": 4,
+          "w": 97.40625,
+          "h": 32,
+          "font": "13px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(17, 29, 38)"
+        },
+        {
+          "text": "VHomeOverviewLineupsMatchesPerformanceAgentsMapsWeaponsMore",
+          "x": 0,
+          "y": 40,
+          "w": 1440,
+          "h": 54,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(17, 28, 36)"
+        },
+        {
+          "text": "",
+          "x": 102,
+          "y": 54.703125,
+          "w": 94,
+          "h": 23.59375,
+          "font": "16px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Overview",
+          "x": 282.90625,
+          "y": 40,
+          "w": 62.265625,
+          "h": 53,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Matches",
+          "x": 438.84375,
+          "y": 40,
+          "w": 56.03125,
+          "h": 53,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Performance",
+          "x": 514.875,
+          "y": 40,
+          "w": 85.59375,
+          "h": 53,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Agents",
+          "x": 620.46875,
+          "y": 40,
+          "w": 47.453125,
+          "h": 53,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Maps",
+          "x": 687.921875,
+          "y": 40,
+          "w": 35.796875,
+          "h": 53,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Weapons",
+          "x": 743.71875,
+          "y": 40,
+          "w": 61.984375,
+          "h": 53,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "More",
+          "x": 1324.546875,
+          "y": 44.5,
+          "w": 91.453125,
+          "h": 44,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(43, 53, 64)"
+        },
+        {
+          "text": "닫기",
+          "x": 1367.234375,
+          "y": 110.40625,
+          "w": 56.765625,
+          "h": 38.1875,
+          "font": "12px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(48, 54, 60)"
+        },
+        {
+          "text": "Save Profile",
+          "x": 32,
+          "y": 200,
+          "w": 119.703125,
+          "h": 38.1875,
+          "font": "12px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(201, 54, 72)"
+        },
+        {
+          "text": "데모 미리보기",
+          "x": 1268.375,
+          "y": 200,
+          "w": 139.625,
+          "h": 38.1875,
+          "font": "12px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "IED agent#Allen",
+          "x": 136,
+          "y": 339.296875,
+          "w": 173.109375,
+          "h": 33.59375,
+          "font": "28px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "",
+          "x": 1364,
+          "y": 340.109375,
+          "w": 43,
+          "h": 47.890625,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(255, 255, 255, 0.133)"
+        },
+        {
+          "text": "OverviewMatchesPerformanceAgentsMapsWeaponsLineups ",
+          "x": 16,
+          "y": 400,
+          "w": 1408,
+          "h": 44,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(48, 63, 80)"
+        },
+        {
+          "text": "Overview",
+          "x": 136,
+          "y": 400,
+          "w": 98.265625,
+          "h": 44,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(255, 255, 255, 0.02)"
+        },
+        {
+          "text": "Matches",
+          "x": 236.265625,
+          "y": 400,
+          "w": 92.03125,
+          "h": 44,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Performance",
+          "x": 330.296875,
+          "y": 400,
+          "w": 121.59375,
+          "h": 44,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Agents",
+          "x": 453.890625,
+          "y": 400,
+          "w": 83.453125,
+          "h": 44,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Maps",
+          "x": 539.34375,
+          "y": 400,
+          "w": 71.796875,
+          "h": 44,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Weapons",
+          "x": 613.140625,
+          "y": 400,
+          "w": 97.984375,
+          "h": 44,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Explore your performance ",
+          "x": 994.515625,
+          "y": 501.359375,
+          "w": 217.390625,
+          "h": 38.1875,
+          "font": "12px",
+          "color": "rgb(38, 34, 27)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "PC",
+          "x": 17,
+          "y": 569,
+          "w": 119.5,
+          "h": 38,
+          "font": "12px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(36, 52, 65)"
+        },
+        {
+          "text": "Console",
+          "x": 136.5,
+          "y": 569,
+          "w": 118.5,
+          "h": 38,
+          "font": "12px",
+          "color": "rgb(201, 207, 214)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Competitive",
+          "x": 273,
+          "y": 569,
+          "w": 179,
+          "h": 38,
+          "font": "12px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(240, 82, 96)"
+        },
+        {
+          "text": "Premier",
+          "x": 452,
+          "y": 569,
+          "w": 179,
+          "h": 38,
+          "font": "12px",
+          "color": "rgb(201, 207, 214)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Unrated",
+          "x": 631,
+          "y": 569,
+          "w": 179,
+          "h": 38,
+          "font": "12px",
+          "color": "rgb(201, 207, 214)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Deathmatch",
+          "x": 810,
+          "y": 569,
+          "w": 179,
+          "h": 38,
+          "font": "12px",
+          "color": "rgb(201, 207, 214)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Swiftplay",
+          "x": 989,
+          "y": 569,
+          "w": 178,
+          "h": 38,
+          "font": "12px",
+          "color": "rgb(201, 207, 214)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "All Acts",
+          "x": 1184,
+          "y": 568,
+          "w": 84.234375,
+          "h": 40,
+          "font": "12px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "CURRENT RATING ⓘImmortal 143 RR#14,290Peak RatingImmortal 3 263RRV25: ACT I · 예시EVERY ROUND COUNTS.다음 경기에서 개선할 점을 확인하세요.View performance ACCURACY Selected actHead25.6%Body67.4%Legs7.0%AVG HS%ROLES⌃ControllerWR 66.7%6W - 3LKDA 1.32127 / 145 / 64✕DuelistWR 55.6%5W - 4LKDA 1.31153 / 147 / 39↗InitiatorWR 100.0%5W - 0LKDA 1.6485 / 74 / 36TOP WEAPONSVandalAssault RiflesHS28%Kills208PhantomAssault RiflesHS23%Kills127OperatorSniper RiflesHS27%Kills30View All Weapons TOP MAPSAscent88%7W - 1LHaven88%7W - 1LSplit29%2W - 5LView All Maps ",
+          "x": 16,
+          "y": 626,
+          "w": 272,
+          "h": 1771.90625,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "View performance ",
+          "x": 75.921875,
+          "y": 1031.5,
+          "w": 152.15625,
+          "h": 36.1875,
+          "font": "12px",
+          "color": "rgb(37, 40, 39)",
+          "background": "rgb(220, 204, 146)"
+        },
+        {
+          "text": "VandalAssault RiflesHS28%Kills208",
+          "x": 17,
+          "y": 1781.578125,
+          "w": 270,
+          "h": 99.984375,
+          "font": "12px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "PhantomAssault RiflesHS23%Kills127",
+          "x": 17,
+          "y": 1881.5625,
+          "w": 270,
+          "h": 99.984375,
+          "font": "12px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "OperatorSniper RiflesHS27%Kills30",
+          "x": 17,
+          "y": 1981.546875,
+          "w": 270,
+          "h": 99.984375,
+          "font": "12px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "View All Weapons ",
+          "x": 17,
+          "y": 2081.53125,
+          "w": 270,
+          "h": 44.1875,
+          "font": "12px",
+          "color": "rgb(240, 82, 96)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Ascent88%7W - 1L",
+          "x": 17,
+          "y": 2181.71875,
+          "w": 270,
+          "h": 57,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Haven88%7W - 1L",
+          "x": 17,
+          "y": 2238.71875,
+          "w": 270,
+          "h": 57,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Split29%2W - 5L",
+          "x": 17,
+          "y": 2295.71875,
+          "w": 270,
+          "h": 57,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "View All Maps ",
+          "x": 17,
+          "y": 2352.71875,
+          "w": 270,
+          "h": 44.1875,
+          "font": "12px",
+          "color": "rgb(240, 82, 96)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Show More",
+          "x": 1359.984375,
+          "y": 630.203125,
+          "w": 64.015625,
+          "h": 15.59375,
+          "font": "12px",
+          "color": "rgb(240, 82, 96)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "View All Agents ",
+          "x": 1310.078125,
+          "y": 1117.4375,
+          "w": 113.921875,
+          "h": 15.59375,
+          "font": "12px",
+          "color": "rgb(240, 82, 96)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Jett5.3 hours",
+          "x": 325,
+          "y": 1191.421875,
+          "w": 102.21875,
+          "h": 42,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Omen5.3 hours",
+          "x": 325,
+          "y": 1251.421875,
+          "w": 102.21875,
+          "h": 42,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Sova2.9 hours",
+          "x": 325,
+          "y": 1311.421875,
+          "w": 102.21875,
+          "h": 42,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "",
+          "x": 1390,
+          "y": 1407.265625,
+          "w": 18,
+          "h": 18,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "All Matches ",
+          "x": 1330.3125,
+          "y": 1463.609375,
+          "w": 93.6875,
+          "h": 17,
+          "font": "12px",
+          "color": "rgb(240, 82, 96)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "+ More",
+          "x": 794,
+          "y": 1502.78125,
+          "w": 55.015625,
+          "h": 32.1875,
+          "font": "12px",
+          "color": "rgb(216, 200, 121)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Sep 913 : 8K/D 1.3",
+          "x": 306,
+          "y": 1666.84375,
+          "w": 136.25,
+          "h": 103.28125,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Sep 413 : 2K/D 0.8",
+          "x": 446.25,
+          "y": 1666.84375,
+          "w": 136.25,
+          "h": 103.28125,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Sep 411 : 13K/D 1.1",
+          "x": 586.5,
+          "y": 1666.84375,
+          "w": 136.25,
+          "h": 103.28125,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Sep 414 : 12K/D 1.1",
+          "x": 726.75,
+          "y": 1666.84375,
+          "w": 136.25,
+          "h": 103.28125,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Sep 413 : 8K/D 0.7",
+          "x": 867,
+          "y": 1666.84375,
+          "w": 136.25,
+          "h": 103.28125,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Sep 49 : 13K/D 0.9",
+          "x": 1007.25,
+          "y": 1666.84375,
+          "w": 136.25,
+          "h": 103.28125,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Sep 17 : 13K/D 0.7",
+          "x": 1147.5,
+          "y": 1666.84375,
+          "w": 136.25,
+          "h": 103.28125,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Aug 3113 : 6K/D 2.5",
+          "x": 1287.75,
+          "y": 1666.84375,
+          "w": 136.25,
+          "h": 103.28125,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "21:48 // CompetitiveHavenSovaScore13 : 8◈PS726K/D1.3K / D / A17 / 13 / 5DDΔ+43HS%32%ACS240",
+          "x": 321,
+          "y": 1848.203125,
+          "w": 1088,
+          "h": 83.96875,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(24, 49, 47)"
+        },
+        {
+          "text": "23:46 // CompetitiveAscentJettScore13 : 2◈PS547K/D0.8K / D / A10 / 12 / 4DDΔ-25HS%29%ACS197",
+          "x": 321,
+          "y": 2015.25,
+          "w": 1088,
+          "h": 83.96875,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(24, 49, 47)"
+        },
+        {
+          "text": "22:55 // CompetitiveSplitJettScore11 : 13◈PS549K/D1.1K / D / A20 / 18 / 5DDΔ+21HS%29%ACS256",
+          "x": 321,
+          "y": 2106.21875,
+          "w": 1088,
+          "h": 83.96875,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(42, 37, 45)"
+        },
+        {
+          "text": "22:01 // CompetitiveSplitJettScore14 : 12◈PS669K/D1.1K / D / A22 / 20 / 6DDΔ+38HS%13%ACS269",
+          "x": 321,
+          "y": 2197.1875,
+          "w": 1088,
+          "h": 83.96875,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(24, 49, 47)"
+        },
+        {
+          "text": "21:08 // CompetitiveHavenOmenScore13 : 8◈PS389K/D0.7K / D / A10 / 14 / 5DDΔ-7HS%22%ACS153",
+          "x": 321,
+          "y": 2288.15625,
+          "w": 1088,
+          "h": 83.96875,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(24, 49, 47)"
+        },
+        {
+          "text": "20:14 // CompetitiveHavenOmenScore9 : 13◈PS397K/D0.9K / D / A14 / 15 / 1DDΔ-9HS%24%ACS187",
+          "x": 321,
+          "y": 2379.125,
+          "w": 1088,
+          "h": 83.96875,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(42, 37, 45)"
+        },
+        {
+          "text": "21:09 // CompetitiveAscentJettScore7 : 13◈PS223K/D0.7K / D / A11 / 15 / 4DDΔ-27HS%34%ACS162",
+          "x": 321,
+          "y": 2546.171875,
+          "w": 1088,
+          "h": 83.96875,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(42, 37, 45)"
+        },
+        {
+          "text": "23:36 // CompetitiveSplitJettScore13 : 6◈PS993K/D2.5K / D / A27 / 11 / 2DDΔ+135HS%35%ACS379",
+          "x": 321,
+          "y": 2713.21875,
+          "w": 1088,
+          "h": 83.96875,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(24, 49, 47)"
+        },
+        {
+          "text": "23:42 // CompetitiveAscentOmenScore13 : 7◈PS803K/D1.5K / D / A18 / 12 / 9DDΔ+39HS%26%ACS243",
+          "x": 321,
+          "y": 2880.265625,
+          "w": 1088,
+          "h": 83.96875,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(24, 49, 47)"
+        },
+        {
+          "text": "22:53 // CompetitiveHavenSovaScore13 : 9◈PS731K/D1.1K / D / A17 / 15 / 8DDΔ+17HS%27%ACS218",
+          "x": 321,
+          "y": 2971.234375,
+          "w": 1088,
+          "h": 83.96875,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(24, 49, 47)"
+        },
+        {
+          "text": "22:04 // CompetitiveSplitOmenScore10 : 13◈PS382K/D0.9K / D / A16 / 18 / 7DDΔ-13HS%24%ACS216",
+          "x": 321,
+          "y": 3062.203125,
+          "w": 1088,
+          "h": 83.96875,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(42, 37, 45)"
+        },
+        {
+          "text": "21:15 // CompetitiveAscentJettScore13 : 10◈PS746K/D1.1K / D / A19 / 17 / 4DDΔ+19HS%30%ACS237",
+          "x": 321,
+          "y": 3153.171875,
+          "w": 1088,
+          "h": 83.96875,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(24, 49, 47)"
+        },
+        {
+          "text": "22:44 // CompetitiveHavenOmenScore13 : 11◈PS493K/D0.8K / D / A15 / 19 / 8DDΔ-11HS%21%ACS193",
+          "x": 321,
+          "y": 3320.21875,
+          "w": 1088,
+          "h": 83.96875,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(24, 49, 47)"
+        },
+        {
+          "text": "21:57 // CompetitiveAscentSovaScore13 : 5◈PS861K/D1.9K / D / A17 / 9 / 6DDΔ+61HS%28%ACS256",
+          "x": 321,
+          "y": 3411.1875,
+          "w": 1088,
+          "h": 83.96875,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(24, 49, 47)"
+        },
+        {
+          "text": "21:06 // CompetitiveSplitJettScore8 : 13◈PS281K/D0.7K / D / A12 / 17 / 5DDΔ-34HS%29%ACS178",
+          "x": 321,
+          "y": 3502.15625,
+          "w": 1088,
+          "h": 83.96875,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(42, 37, 45)"
+        },
+        {
+          "text": "23:40 // CompetitiveHavenOmenScore13 : 9◈PS566K/D0.9K / D / A14 / 16 / 10DDΔ-9HS%19%ACS206",
+          "x": 321,
+          "y": 3669.203125,
+          "w": 1088,
+          "h": 83.96875,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(24, 49, 47)"
+        },
+        {
+          "text": "22:46 // CompetitiveAscentJettScore13 : 11◈PS635K/D1.1K / D / A19 / 18 / 5DDΔ+12HS%31%ACS235",
+          "x": 321,
+          "y": 3760.171875,
+          "w": 1088,
+          "h": 83.96875,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(24, 49, 47)"
+        },
+        {
+          "text": "21:52 // CompetitiveSplitOmenScore6 : 13◈PS194K/D0.6K / D / A10 / 17 / 6DDΔ-46HS%20%ACS167",
+          "x": 321,
+          "y": 3851.140625,
+          "w": 1088,
+          "h": 83.96875,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(42, 37, 45)"
+        },
+        {
+          "text": "23:01 // CompetitiveHavenOmenScore13 : 10◈PS514K/D0.8K / D / A14 / 17 / 9DDΔ-5HS%23%ACS197",
+          "x": 321,
+          "y": 4018.1875,
+          "w": 1088,
+          "h": 83.96875,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(24, 49, 47)"
+        },
+        {
+          "text": "22:08 // CompetitiveAscentSovaScore13 : 11◈PS597K/D0.9K / D / A17 / 19 / 6DDΔ-7HS%28%ACS204",
+          "x": 321,
+          "y": 4109.15625,
+          "w": 1088,
+          "h": 83.96875,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(24, 49, 47)"
+        },
+        {
+          "text": "Load more matches ",
+          "x": 306,
+          "y": 4218.125,
+          "w": 1118,
+          "h": 50.890625,
+          "font": "14px",
+          "color": "rgb(233, 237, 239)",
+          "background": "rgb(35, 50, 62)"
+        },
+        {
+          "text": "GameProbeRiot Games 및 Tracker Network와 제휴 관계가 없는 비공식 서비스입니다. 현재 전적은 예시 데이터입니다.PrivacyTerms",
+          "x": 16,
+          "y": 4319.015625,
+          "w": 1408,
+          "h": 89.296875,
+          "font": "12px",
+          "color": "rgb(180, 194, 207)",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "name": "820-lineups-index",
+      "file": "before-820-lineups-index.png",
+      "width": 820,
+      "height": 1351,
+      "overflow": 0,
+      "mainCount": 1,
+      "text": "GAMEPROBE TACTICAL LIBRARY\n\n라인업 검색 센터\n\n맵, 요원, 스킬 슬롯을 조합해 필요한 전술 라인업을 빠르게 찾으세요. 승인된 라인업의 위치, 경로, 영상 가이드를 한 곳에서 확인하세요.\n\nAPI PREVIEW\n공개 라인업 API 요청 실패 (503) 데모 데이터를 표시합니다.\nLINEUPS\nMAPS\n\n라인업을 확인할 맵을 선택하세요.\n\nAscent\nSplit\nFracture\nBind\nBreeze\nAbyss\nLotus\nSunset\nPearl\nIcebox\nCorrode\nHaven",
+      "pins": [],
+      "paths": [],
+      "map": [],
+      "regression": [
+        {
+          "text": "라인업 검색 센터",
+          "x": 49.796875,
+          "y": 166.59375,
+          "w": 720.40625,
+          "h": 41,
+          "font": "41px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "API Preview공개 라인업 API 요청 실패 (503) 데모 데이터를 표시합니다.",
+          "x": 49.796875,
+          "y": 289.1875,
+          "w": 520,
+          "h": 59.5,
+          "font": "16px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(245, 247, 249)"
+        },
+        {
+          "text": "Ascent",
+          "x": 47,
+          "y": 533.671875,
+          "w": 232.65625,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Split",
+          "x": 293.65625,
+          "y": 533.671875,
+          "w": 232.671875,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Fracture",
+          "x": 540.328125,
+          "y": 533.671875,
+          "w": 232.671875,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Bind",
+          "x": 47,
+          "y": 697.671875,
+          "w": 232.65625,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Breeze",
+          "x": 293.65625,
+          "y": 697.671875,
+          "w": 232.671875,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Abyss",
+          "x": 540.328125,
+          "y": 697.671875,
+          "w": 232.671875,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Lotus",
+          "x": 47,
+          "y": 861.671875,
+          "w": 232.65625,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Sunset",
+          "x": 293.65625,
+          "y": 861.671875,
+          "w": 232.671875,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Pearl",
+          "x": 540.328125,
+          "y": 861.671875,
+          "w": 232.671875,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Icebox",
+          "x": 47,
+          "y": 1025.671875,
+          "w": 232.65625,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Corrode",
+          "x": 293.65625,
+          "y": 1025.671875,
+          "w": 232.671875,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Haven",
+          "x": 540.328125,
+          "y": 1025.671875,
+          "w": 232.671875,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        }
+      ]
+    },
+    {
+      "name": "820-lineups-ascent",
+      "file": "before-820-lineups-ascent.png",
+      "width": 820,
+      "height": 1241,
+      "overflow": 0,
+      "mainCount": 1,
+      "text": "GAMEPROBE TACTICAL LIBRARY\n\n라인업 검색 센터\n\n맵, 요원, 스킬 슬롯을 조합해 필요한 전술 라인업을 빠르게 찾으세요. 승인된 라인업의 위치, 경로, 영상 가이드를 한 곳에서 확인하세요.\n\nAPI PREVIEW\n공개 라인업 API 요청 실패 (503) 데모 데이터를 표시합니다.\nLINEUP DATABASE\nASCENT\n맵 변경\n요원 선택\n스킬 종류\nC\nQ\nE\n궁극기\nMap explorer\nAscent\n공격\n수비\n시작 위치\n스킬 도착 위치\n투사 경로\n선택한 라인업 상세 보기 →",
+      "pins": [
+        {
+          "label": "Sova 시작 요원 위치 선택",
+          "left": "32%",
+          "top": "20%"
+        },
+        {
+          "label": "Recon Bolt 도착 위치에서 시작 요원 보기",
+          "left": "66%",
+          "top": "68%"
+        }
+      ],
+      "paths": [
+        "31.999999999999996,20 48,45 65.99999999999999,68"
+      ],
+      "map": [
+        {
+          "src": "/_next/image?url=%2Fassets%2Fmaps%2Fascent.png&w=3840&q=75",
+          "transform": "matrix(0, 1, -1, 0, 0, 0)"
+        }
+      ],
+      "regression": [
+        {
+          "text": "라인업 검색 센터",
+          "x": 49.796875,
+          "y": 166.59375,
+          "w": 720.40625,
+          "h": 41,
+          "font": "41px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "API Preview공개 라인업 API 요청 실패 (503) 데모 데이터를 표시합니다.",
+          "x": 49.796875,
+          "y": 289.1875,
+          "w": 520,
+          "h": 59.5,
+          "font": "16px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(245, 247, 249)"
+        },
+        {
+          "text": "Lineup databaseAscent맵 변경요원 선택스킬 종류CQE궁극기",
+          "x": 16,
+          "y": 400.484375,
+          "w": 190,
+          "h": 377,
+          "font": "16px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Ascent맵 변경",
+          "x": 31,
+          "y": 432.484375,
+          "w": 160,
+          "h": 50,
+          "font": "10px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(246, 247, 249)"
+        },
+        {
+          "text": "",
+          "x": 32,
+          "y": 521.484375,
+          "w": 22.15625,
+          "h": 28,
+          "font": "9px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 59.15625,
+          "y": 521.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 86.328125,
+          "y": 521.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 113.484375,
+          "y": 521.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 140.65625,
+          "y": 521.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 167.828125,
+          "y": 521.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 32,
+          "y": 554.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 59.15625,
+          "y": 554.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 86.328125,
+          "y": 554.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 113.484375,
+          "y": 554.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 140.65625,
+          "y": 554.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 167.828125,
+          "y": 554.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 32,
+          "y": 587.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 59.15625,
+          "y": 587.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 86.328125,
+          "y": 587.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 113.484375,
+          "y": 587.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 140.65625,
+          "y": 587.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 167.828125,
+          "y": 587.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 32,
+          "y": 620.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 59.15625,
+          "y": 620.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 86.328125,
+          "y": 620.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 113.484375,
+          "y": 620.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 140.65625,
+          "y": 620.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(255, 245, 246)"
+        },
+        {
+          "text": "",
+          "x": 167.828125,
+          "y": 620.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 32,
+          "y": 653.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 59.15625,
+          "y": 653.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 86.328125,
+          "y": 653.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 113.484375,
+          "y": 653.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 140.65625,
+          "y": 653.484375,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "C",
+          "x": 31,
+          "y": 716.484375,
+          "w": 28,
+          "h": 46,
+          "font": "9px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Q",
+          "x": 64,
+          "y": 716.484375,
+          "w": 28,
+          "h": 46,
+          "font": "9px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "E",
+          "x": 97,
+          "y": 716.484375,
+          "w": 28,
+          "h": 46,
+          "font": "9px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "궁극기",
+          "x": 130,
+          "y": 716.484375,
+          "w": 28,
+          "h": 46,
+          "font": "9px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "공격",
+          "x": 698.9375,
+          "y": 423.734375,
+          "w": 44.03125,
+          "h": 27,
+          "font": "11px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(217, 79, 93)"
+        },
+        {
+          "text": "수비",
+          "x": 742.96875,
+          "y": 423.734375,
+          "w": 43.03125,
+          "h": 27,
+          "font": "11px",
+          "color": "rgb(104, 112, 124)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 386.875,
+          "y": 568.578125,
+          "w": 38,
+          "h": 38,
+          "font": "16px",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgb(42, 157, 104)"
+        },
+        {
+          "text": "",
+          "x": 585.4375,
+          "y": 841.21875,
+          "w": 38,
+          "h": 38,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(217, 79, 93)"
+        }
+      ]
+    },
+    {
+      "name": "820-smokes-index",
+      "file": "before-820-smokes-index.png",
+      "width": 820,
+      "height": 1351,
+      "overflow": 0,
+      "mainCount": 1,
+      "text": "GAMEPROBE SMOKE LIBRARY\n\n스모크 가이드 센터\n\n맵과 진영을 선택해 어디에 연막을 설치하면 좋은지 확인하세요. 바이퍼를 제외한 공통 원형 연막과 하버 일자 연막을 안내합니다. 바이퍼 라인업은 라인업 페이지에서 확인할 수 있습니다.\n\nSMOKE PREVIEW\n현재는 공통 원형 연막 Preview입니다. 패치별 검증 후 실제 좌표와 수치로 확장됩니다.\nSMOKE LIBRARY\nMAPS\n\n연막 가이드를 확인할 맵을 선택하세요.\n\nAscent\nSplit\nFracture\nBind\nBreeze\nAbyss\nLotus\nSunset\nPearl\nIcebox\nCorrode\nHaven",
+      "pins": [],
+      "paths": [],
+      "map": [],
+      "regression": [
+        {
+          "text": "스모크 가이드 센터",
+          "x": 49.796875,
+          "y": 166.59375,
+          "w": 720.40625,
+          "h": 41,
+          "font": "41px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Smoke Preview현재는 공통 원형 연막 Preview입니다. 패치별 검증 후 실제 좌표와 수치로 확장됩니다.",
+          "x": 49.796875,
+          "y": 289.1875,
+          "w": 520,
+          "h": 59.5,
+          "font": "16px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(245, 247, 249)"
+        },
+        {
+          "text": "Ascent",
+          "x": 47,
+          "y": 533.671875,
+          "w": 232.65625,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Split",
+          "x": 293.65625,
+          "y": 533.671875,
+          "w": 232.671875,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Fracture",
+          "x": 540.328125,
+          "y": 533.671875,
+          "w": 232.671875,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Bind",
+          "x": 47,
+          "y": 697.671875,
+          "w": 232.65625,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Breeze",
+          "x": 293.65625,
+          "y": 697.671875,
+          "w": 232.671875,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Abyss",
+          "x": 540.328125,
+          "y": 697.671875,
+          "w": 232.671875,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Lotus",
+          "x": 47,
+          "y": 861.671875,
+          "w": 232.65625,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Sunset",
+          "x": 293.65625,
+          "y": 861.671875,
+          "w": 232.671875,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Pearl",
+          "x": 540.328125,
+          "y": 861.671875,
+          "w": 232.671875,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Icebox",
+          "x": 47,
+          "y": 1025.671875,
+          "w": 232.65625,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Corrode",
+          "x": 293.65625,
+          "y": 1025.671875,
+          "w": 232.671875,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Haven",
+          "x": 540.328125,
+          "y": 1025.671875,
+          "w": 232.671875,
+          "h": 150,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        }
+      ]
+    },
+    {
+      "name": "820-smokes-ascent",
+      "file": "before-820-smokes-ascent.png",
+      "width": 820,
+      "height": 1626,
+      "overflow": 0,
+      "mainCount": 1,
+      "text": "GAMEPROBE SMOKE LIBRARY\n\n스모크 가이드 센터\n\n맵과 진영을 선택해 어디에 연막을 설치하면 좋은지 확인하세요. 바이퍼를 제외한 공통 원형 연막과 하버 일자 연막을 안내합니다. 바이퍼 라인업은 라인업 페이지에서 확인할 수 있습니다.\n\nSMOKE PREVIEW\n현재는 공통 원형 연막 Preview입니다. 패치별 검증 후 실제 좌표와 수치로 확장됩니다.\nSMOKE DATABASE\nASCENT\n맵 변경\n진영\n공격\n수비\n요원별 연막 비교\nPREVIEW\n요원\n크기\n지속\nOmen\n4.5m 반경\n15초\nBrimstone\n5m 반경\n19초\nAstra\n4.75m 반경\n14초\nClove\n4.75m 반경\n14초\nHarbor\n4m 반경 + 벽\n4.5초 / 벽 12초\nMiks\n4.5m 반경\n12초\n\nViper 전용 연막 라인업은 라인업 페이지에서 확인하고, Smoke에서는 나머지 공통 연막과 Harbor 일자 연막을 안내합니다.\n\n사이트\n전체\nA\nB\nC\nMid\n연막 유형\n모든 연막 (바이퍼 제외)\n하버 일자\nSmoke explorer\nAscent\n1개 가이드 · 공격\n●\n●\n연막 도착 위치\n투척 위치\n투사 경로\nAVAILABLE SMOKES\n1 guides\n●\nAscent A 진입 공통 원형 연막\n모든 요원 (Viper 제외) · 공통 원형\nPreview · 패치 검증 필요\nA site · 모든 요원 (Viper 제외)\nAscent A 진입 공통 원형 연막\n형태\n원형\n크기\n4.5m 반경\n지속\n공통 원형 기준\n\nA 진입 전에 Viper를 제외한 모든 요원이 공통으로 사용할 수 있는 원형 연막입니다.\n\n공격 진영의 표시된 시작 위치에 정렬하세요.\n지도 위 원형 연막 도착 지점에 맞춰 조준하세요.\n연막이 완전히 형성된 뒤 팀의 다음 행동을 시작하세요.",
+      "pins": [
+        {
+          "label": "Ascent A 진입 공통 원형 연막 선택",
+          "left": "69%",
+          "top": "62%"
+        },
+        {
+          "label": "Ascent A 진입 공통 원형 연막 시작 위치",
+          "left": "27%",
+          "top": "17%"
+        }
+      ],
+      "paths": [
+        "27,17 48,39.5 69,62"
+      ],
+      "map": [
+        {
+          "src": "/_next/image?url=%2Fassets%2Fmaps%2Fascent.png&w=3840&q=75",
+          "transform": "matrix(0, 1, -1, 0, 0, 0)"
+        }
+      ],
+      "regression": [
+        {
+          "text": "스모크 가이드 센터",
+          "x": 49.796875,
+          "y": 166.59375,
+          "w": 720.40625,
+          "h": 41,
+          "font": "41px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Smoke Preview현재는 공통 원형 연막 Preview입니다. 패치별 검증 후 실제 좌표와 수치로 확장됩니다.",
+          "x": 49.796875,
+          "y": 289.1875,
+          "w": 520,
+          "h": 59.5,
+          "font": "16px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(245, 247, 249)"
+        },
+        {
+          "text": "Smoke databaseAscent맵 변경진영공격수비요원별 연막 비교Preview요원크기지속Omen4.5m 반경15초Brimstone5m 반경19초Astra4.75m 반경14초Clove4.75m 반경14초Harbor4m 반경 + 벽4.5초 / 벽 12초Miks4.5m 반경12초Viper 전용 연막 라인업은 라인업 페이지에서 확인하고, Smoke에서는 나머지 공통 연막과 Harbor 일자 연막을 안내합니다.사이트전체ABCMid연막 유형모든 연막 (바이퍼 제외)하버 일자",
+          "x": 16,
+          "y": 400.484375,
+          "w": 190,
+          "h": 612.5,
+          "font": "16px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Ascent맵 변경",
+          "x": 31,
+          "y": 432.484375,
+          "w": 160,
+          "h": 50,
+          "font": "10px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(246, 247, 249)"
+        },
+        {
+          "text": "공격",
+          "x": 32,
+          "y": 521.484375,
+          "w": 44.03125,
+          "h": 27,
+          "font": "11px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(217, 79, 93)"
+        },
+        {
+          "text": "수비",
+          "x": 76.03125,
+          "y": 521.484375,
+          "w": 43.03125,
+          "h": 27,
+          "font": "11px",
+          "color": "rgb(104, 112, 124)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "전체",
+          "x": 31,
+          "y": 895.984375,
+          "w": 28,
+          "h": 28,
+          "font": "10px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(255, 245, 246)"
+        },
+        {
+          "text": "A",
+          "x": 64,
+          "y": 895.984375,
+          "w": 28,
+          "h": 28,
+          "font": "10px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "B",
+          "x": 97,
+          "y": 895.984375,
+          "w": 28,
+          "h": 28,
+          "font": "10px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "C",
+          "x": 130,
+          "y": 895.984375,
+          "w": 28,
+          "h": 28,
+          "font": "10px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Mid",
+          "x": 163,
+          "y": 895.984375,
+          "w": 28,
+          "h": 28,
+          "font": "10px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "모든 연막 (바이퍼 제외)",
+          "x": 31,
+          "y": 957.984375,
+          "w": 77.5,
+          "h": 40,
+          "font": "10px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(255, 245, 246)"
+        },
+        {
+          "text": "하버 일자",
+          "x": 113.5,
+          "y": 957.984375,
+          "w": 77.5,
+          "h": 40,
+          "font": "10px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "●",
+          "x": 602.953125,
+          "y": 838.140625,
+          "w": 38,
+          "h": 38,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(217, 79, 93)"
+        },
+        {
+          "text": "●",
+          "x": 357.671875,
+          "y": 560.03125,
+          "w": 38,
+          "h": 38,
+          "font": "16px",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgb(42, 157, 104)"
+        },
+        {
+          "text": "●Ascent A 진입 공통 원형 연막모든 요원 (Viper 제외) · 공통 원형Preview · 패치 검증 필요",
+          "x": 231,
+          "y": 1160.984375,
+          "w": 560,
+          "h": 52,
+          "font": "16px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(255, 245, 246)"
+        }
+      ]
+    },
+    {
+      "name": "390-lineups-index",
+      "file": "before-390-lineups-index.png",
+      "width": 390,
+      "height": 1446,
+      "overflow": 0,
+      "mainCount": 1,
+      "text": "GAMEPROBE TACTICAL LIBRARY\n\n라인업 검색 센터\n\n맵, 요원, 스킬 슬롯을 조합해 필요한 전술 라인업을 빠르게 찾으세요. 승인된 라인업의 위치, 경로, 영상 가이드를 한 곳에서 확인하세요.\n\nAPI PREVIEW\n공개 라인업 API 요청 실패 (503) 데모 데이터를 표시합니다.\nLINEUPS\nMAPS\n\n라인업을 확인할 맵을 선택하세요.\n\nAscent\nSplit\nFracture\nBind\nBreeze\nAbyss\nLotus\nSunset\nPearl\nIcebox\nCorrode\nHaven",
+      "pins": [],
+      "paths": [],
+      "map": [],
+      "regression": [
+        {
+          "text": "라인업 검색 센터",
+          "x": 27,
+          "y": 222.796875,
+          "w": 336,
+          "h": 32,
+          "font": "32px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "API Preview공개 라인업 API 요청 실패 (503) 데모 데이터를 표시합니다.",
+          "x": 27,
+          "y": 352.1875,
+          "w": 336,
+          "h": 59.5,
+          "font": "16px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(245, 247, 249)"
+        },
+        {
+          "text": "Ascent",
+          "x": 29,
+          "y": 585.875,
+          "w": 162,
+          "h": 110,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Split",
+          "x": 199,
+          "y": 585.875,
+          "w": 162,
+          "h": 110,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Fracture",
+          "x": 29,
+          "y": 703.875,
+          "w": 162,
+          "h": 110,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Bind",
+          "x": 199,
+          "y": 703.875,
+          "w": 162,
+          "h": 110,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Breeze",
+          "x": 29,
+          "y": 821.875,
+          "w": 162,
+          "h": 110,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Abyss",
+          "x": 199,
+          "y": 821.875,
+          "w": 162,
+          "h": 110,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Lotus",
+          "x": 29,
+          "y": 939.875,
+          "w": 162,
+          "h": 110,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Sunset",
+          "x": 199,
+          "y": 939.875,
+          "w": 162,
+          "h": 110,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Pearl",
+          "x": 29,
+          "y": 1057.875,
+          "w": 162,
+          "h": 110,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Icebox",
+          "x": 199,
+          "y": 1057.875,
+          "w": 162,
+          "h": 110,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Corrode",
+          "x": 29,
+          "y": 1175.875,
+          "w": 162,
+          "h": 110,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Haven",
+          "x": 199,
+          "y": 1175.875,
+          "w": 162,
+          "h": 110,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        }
+      ]
+    },
+    {
+      "name": "390-lineups-ascent",
+      "file": "before-390-lineups-ascent.png",
+      "width": 390,
+      "height": 1429,
+      "overflow": 0,
+      "mainCount": 1,
+      "text": "GAMEPROBE TACTICAL LIBRARY\n\n라인업 검색 센터\n\n맵, 요원, 스킬 슬롯을 조합해 필요한 전술 라인업을 빠르게 찾으세요. 승인된 라인업의 위치, 경로, 영상 가이드를 한 곳에서 확인하세요.\n\nAPI PREVIEW\n공개 라인업 API 요청 실패 (503) 데모 데이터를 표시합니다.\nLINEUP DATABASE\nASCENT\n맵 변경\n요원 선택\n스킬 종류\nC\nQ\nE\n궁극기\nMap explorer\nAscent\n공격\n수비\n시작 위치\n스킬 도착 위치\n투사 경로\n선택한 라인업 상세 보기 →",
+      "pins": [
+        {
+          "label": "Sova 시작 요원 위치 선택",
+          "left": "32%",
+          "top": "20%"
+        },
+        {
+          "label": "Recon Bolt 도착 위치에서 시작 요원 보기",
+          "left": "66%",
+          "top": "68%"
+        }
+      ],
+      "paths": [
+        "31.999999999999996,20 48,45 65.99999999999999,68"
+      ],
+      "map": [
+        {
+          "src": "/_next/image?url=%2Fassets%2Fmaps%2Fascent.png&w=3840&q=75",
+          "transform": "matrix(0, 1, -1, 0, 0, 0)"
+        }
+      ],
+      "regression": [
+        {
+          "text": "라인업 검색 센터",
+          "x": 27,
+          "y": 222.796875,
+          "w": 336,
+          "h": 32,
+          "font": "32px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "API Preview공개 라인업 API 요청 실패 (503) 데모 데이터를 표시합니다.",
+          "x": 27,
+          "y": 352.1875,
+          "w": 336,
+          "h": 59.5,
+          "font": "16px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(245, 247, 249)"
+        },
+        {
+          "text": "Lineup databaseAscent맵 변경요원 선택스킬 종류CQE궁극기",
+          "x": 10,
+          "y": 452.6875,
+          "w": 370,
+          "h": 377,
+          "font": "16px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Ascent맵 변경",
+          "x": 25,
+          "y": 484.6875,
+          "w": 340,
+          "h": 50,
+          "font": "10px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(246, 247, 249)"
+        },
+        {
+          "text": "",
+          "x": 26,
+          "y": 573.6875,
+          "w": 52.15625,
+          "h": 28,
+          "font": "9px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 83.15625,
+          "y": 573.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 140.328125,
+          "y": 573.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 197.5,
+          "y": 573.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 254.65625,
+          "y": 573.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 311.828125,
+          "y": 573.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 26,
+          "y": 606.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 83.15625,
+          "y": 606.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 140.328125,
+          "y": 606.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 197.5,
+          "y": 606.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 254.65625,
+          "y": 606.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 311.828125,
+          "y": 606.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 26,
+          "y": 639.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 83.15625,
+          "y": 639.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 140.328125,
+          "y": 639.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 197.5,
+          "y": 639.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 254.65625,
+          "y": 639.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 311.828125,
+          "y": 639.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 26,
+          "y": 672.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 83.15625,
+          "y": 672.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 140.328125,
+          "y": 672.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 197.5,
+          "y": 672.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 254.65625,
+          "y": 672.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(255, 245, 246)"
+        },
+        {
+          "text": "",
+          "x": 311.828125,
+          "y": 672.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 26,
+          "y": 705.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 83.15625,
+          "y": 705.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 140.328125,
+          "y": 705.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 197.5,
+          "y": 705.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 254.65625,
+          "y": 705.6875,
+          "w": 28,
+          "h": 28,
+          "font": "16px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "C",
+          "x": 25,
+          "y": 768.6875,
+          "w": 64,
+          "h": 46,
+          "font": "9px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Q",
+          "x": 94,
+          "y": 768.6875,
+          "w": 64,
+          "h": 46,
+          "font": "9px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "E",
+          "x": 163,
+          "y": 768.6875,
+          "w": 64,
+          "h": 46,
+          "font": "9px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "궁극기",
+          "x": 232,
+          "y": 768.6875,
+          "w": 64,
+          "h": 46,
+          "font": "9px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "공격",
+          "x": 274.9375,
+          "y": 857.6875,
+          "w": 44.03125,
+          "h": 27,
+          "font": "11px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(217, 79, 93)"
+        },
+        {
+          "text": "수비",
+          "x": 318.96875,
+          "y": 857.6875,
+          "w": 43.03125,
+          "h": 27,
+          "font": "11px",
+          "color": "rgb(104, 112, 124)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "",
+          "x": 109.75,
+          "y": 959.734375,
+          "w": 38,
+          "h": 38,
+          "font": "16px",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgb(42, 157, 104)"
+        },
+        {
+          "text": "",
+          "x": 234.875,
+          "y": 1112.28125,
+          "w": 38,
+          "h": 38,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(217, 79, 93)"
+        }
+      ]
+    },
+    {
+      "name": "390-smokes-index",
+      "file": "before-390-smokes-index.png",
+      "width": 390,
+      "height": 1475,
+      "overflow": 0,
+      "mainCount": 1,
+      "text": "GAMEPROBE SMOKE LIBRARY\n\n스모크 가이드 센터\n\n맵과 진영을 선택해 어디에 연막을 설치하면 좋은지 확인하세요. 바이퍼를 제외한 공통 원형 연막과 하버 일자 연막을 안내합니다. 바이퍼 라인업은 라인업 페이지에서 확인할 수 있습니다.\n\nSMOKE PREVIEW\n현재는 공통 원형 연막 Preview입니다. 패치별 검증 후 실제 좌표와 수치로 확장됩니다.\nSMOKE LIBRARY\nMAPS\n\n연막 가이드를 확인할 맵을 선택하세요.\n\nAscent\nSplit\nFracture\nBind\nBreeze\nAbyss\nLotus\nSunset\nPearl\nIcebox\nCorrode\nHaven",
+      "pins": [],
+      "paths": [],
+      "map": [],
+      "regression": [
+        {
+          "text": "스모크 가이드 센터",
+          "x": 27,
+          "y": 222.796875,
+          "w": 336,
+          "h": 32,
+          "font": "32px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Smoke Preview현재는 공통 원형 연막 Preview입니다. 패치별 검증 후 실제 좌표와 수치로 확장됩니다.",
+          "x": 27,
+          "y": 375.984375,
+          "w": 336,
+          "h": 76,
+          "font": "16px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(245, 247, 249)"
+        },
+        {
+          "text": "Ascent",
+          "x": 29,
+          "y": 614.171875,
+          "w": 162,
+          "h": 110,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Split",
+          "x": 199,
+          "y": 614.171875,
+          "w": 162,
+          "h": 110,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Fracture",
+          "x": 29,
+          "y": 732.171875,
+          "w": 162,
+          "h": 110,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Bind",
+          "x": 199,
+          "y": 732.171875,
+          "w": 162,
+          "h": 110,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Breeze",
+          "x": 29,
+          "y": 850.171875,
+          "w": 162,
+          "h": 110,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Abyss",
+          "x": 199,
+          "y": 850.171875,
+          "w": 162,
+          "h": 110,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Lotus",
+          "x": 29,
+          "y": 968.171875,
+          "w": 162,
+          "h": 110,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Sunset",
+          "x": 199,
+          "y": 968.171875,
+          "w": 162,
+          "h": 110,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Pearl",
+          "x": 29,
+          "y": 1086.171875,
+          "w": 162,
+          "h": 110,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Icebox",
+          "x": 199,
+          "y": 1086.171875,
+          "w": 162,
+          "h": 110,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Corrode",
+          "x": 29,
+          "y": 1204.171875,
+          "w": 162,
+          "h": 110,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        },
+        {
+          "text": "Haven",
+          "x": 199,
+          "y": 1204.171875,
+          "w": 162,
+          "h": 110,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 36, 45)"
+        }
+      ]
+    },
+    {
+      "name": "390-smokes-ascent",
+      "file": "before-390-smokes-ascent.png",
+      "width": 390,
+      "height": 2031,
+      "overflow": 0,
+      "mainCount": 1,
+      "text": "GAMEPROBE SMOKE LIBRARY\n\n스모크 가이드 센터\n\n맵과 진영을 선택해 어디에 연막을 설치하면 좋은지 확인하세요. 바이퍼를 제외한 공통 원형 연막과 하버 일자 연막을 안내합니다. 바이퍼 라인업은 라인업 페이지에서 확인할 수 있습니다.\n\nSMOKE PREVIEW\n현재는 공통 원형 연막 Preview입니다. 패치별 검증 후 실제 좌표와 수치로 확장됩니다.\nSMOKE DATABASE\nASCENT\n맵 변경\n진영\n공격\n수비\n요원별 연막 비교\nPREVIEW\n요원\n크기\n지속\nOmen\n4.5m 반경\n15초\nBrimstone\n5m 반경\n19초\nAstra\n4.75m 반경\n14초\nClove\n4.75m 반경\n14초\nHarbor\n4m 반경 + 벽\n4.5초 / 벽 12초\nMiks\n4.5m 반경\n12초\n\nViper 전용 연막 라인업은 라인업 페이지에서 확인하고, Smoke에서는 나머지 공통 연막과 Harbor 일자 연막을 안내합니다.\n\n사이트\n전체\nA\nB\nC\nMid\n연막 유형\n모든 연막 (바이퍼 제외)\n하버 일자\nSmoke explorer\nAscent\n1개 가이드 · 공격\n●\n●\n연막 도착 위치\n투척 위치\n투사 경로\nAVAILABLE SMOKES\n1 guides\n●\nAscent A 진입 공통 원형 연막\n모든 요원 (Viper 제외) · 공통 원형\nA site · 모든 요원 (Viper 제외)\nAscent A 진입 공통 원형 연막\n형태\n원형\n크기\n4.5m 반경\n지속\n공통 원형 기준\n\nA 진입 전에 Viper를 제외한 모든 요원이 공통으로 사용할 수 있는 원형 연막입니다.\n\n공격 진영의 표시된 시작 위치에 정렬하세요.\n지도 위 원형 연막 도착 지점에 맞춰 조준하세요.\n연막이 완전히 형성된 뒤 팀의 다음 행동을 시작하세요.",
+      "pins": [
+        {
+          "label": "Ascent A 진입 공통 원형 연막 선택",
+          "left": "69%",
+          "top": "62%"
+        },
+        {
+          "label": "Ascent A 진입 공통 원형 연막 시작 위치",
+          "left": "27%",
+          "top": "17%"
+        }
+      ],
+      "paths": [
+        "27,17 48,39.5 69,62"
+      ],
+      "map": [
+        {
+          "src": "/_next/image?url=%2Fassets%2Fmaps%2Fascent.png&w=3840&q=75",
+          "transform": "matrix(0, 1, -1, 0, 0, 0)"
+        }
+      ],
+      "regression": [
+        {
+          "text": "스모크 가이드 센터",
+          "x": 27,
+          "y": 222.796875,
+          "w": 336,
+          "h": 32,
+          "font": "32px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Smoke Preview현재는 공통 원형 연막 Preview입니다. 패치별 검증 후 실제 좌표와 수치로 확장됩니다.",
+          "x": 27,
+          "y": 375.984375,
+          "w": 336,
+          "h": 76,
+          "font": "16px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(245, 247, 249)"
+        },
+        {
+          "text": "Smoke databaseAscent맵 변경진영공격수비요원별 연막 비교Preview요원크기지속Omen4.5m 반경15초Brimstone5m 반경19초Astra4.75m 반경14초Clove4.75m 반경14초Harbor4m 반경 + 벽4.5초 / 벽 12초Miks4.5m 반경12초Viper 전용 연막 라인업은 라인업 페이지에서 확인하고, Smoke에서는 나머지 공통 연막과 Harbor 일자 연막을 안내합니다.사이트전체ABCMid연막 유형모든 연막 (바이퍼 제외)하버 일자",
+          "x": 10,
+          "y": 492.984375,
+          "w": 370,
+          "h": 587,
+          "font": "16px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Ascent맵 변경",
+          "x": 25,
+          "y": 524.984375,
+          "w": 340,
+          "h": 50,
+          "font": "10px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(246, 247, 249)"
+        },
+        {
+          "text": "공격",
+          "x": 26,
+          "y": 613.984375,
+          "w": 44.03125,
+          "h": 27,
+          "font": "11px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(217, 79, 93)"
+        },
+        {
+          "text": "수비",
+          "x": 70.03125,
+          "y": 613.984375,
+          "w": 43.03125,
+          "h": 27,
+          "font": "11px",
+          "color": "rgb(104, 112, 124)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "전체",
+          "x": 25,
+          "y": 974.984375,
+          "w": 64,
+          "h": 28,
+          "font": "10px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(255, 245, 246)"
+        },
+        {
+          "text": "A",
+          "x": 94,
+          "y": 974.984375,
+          "w": 64,
+          "h": 28,
+          "font": "10px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "B",
+          "x": 163,
+          "y": 974.984375,
+          "w": 64,
+          "h": 28,
+          "font": "10px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "C",
+          "x": 232,
+          "y": 974.984375,
+          "w": 64,
+          "h": 28,
+          "font": "10px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Mid",
+          "x": 301,
+          "y": 974.984375,
+          "w": 64,
+          "h": 28,
+          "font": "10px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "모든 연막 (바이퍼 제외)",
+          "x": 25,
+          "y": 1036.984375,
+          "w": 167.5,
+          "h": 28,
+          "font": "10px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(255, 245, 246)"
+        },
+        {
+          "text": "하버 일자",
+          "x": 197.5,
+          "y": 1036.984375,
+          "w": 167.5,
+          "h": 28,
+          "font": "10px",
+          "color": "rgb(83, 89, 102)",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "●",
+          "x": 245.90625,
+          "y": 1343.515625,
+          "w": 38,
+          "h": 38,
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(217, 79, 93)"
+        },
+        {
+          "text": "●",
+          "x": 91.359375,
+          "y": 1200.5,
+          "w": 38,
+          "h": 38,
+          "font": "16px",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgb(42, 157, 104)"
+        },
+        {
+          "text": "●Ascent A 진입 공통 원형 연막모든 요원 (Viper 제외) · 공통 원형Preview · 패치 검증 필요",
+          "x": 23,
+          "y": 1552.28125,
+          "w": 344,
+          "h": 52,
+          "font": "16px",
+          "color": "rgb(32, 36, 45)",
+          "background": "rgb(255, 245, 246)"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "requests": [
+    {
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    }
+  ],
+  "status": "PASS"
+}

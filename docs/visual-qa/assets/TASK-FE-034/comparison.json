@@ -1,0 +1,730 @@
+[
+  {
+    "before": "before-1440-ko-home.png",
+    "after": "after-1440-ko-home.png",
+    "beforeSize": [
+      1440,
+      1231
+    ],
+    "afterSize": [
+      1440,
+      1231
+    ],
+    "comparedHeight": 1231,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-1440-ko-profile.png",
+    "after": "after-1440-ko-profile.png",
+    "beforeSize": [
+      1440,
+      2858
+    ],
+    "afterSize": [
+      1440,
+      2858
+    ],
+    "comparedHeight": 2858,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-1440-ko-match.png",
+    "after": "after-1440-ko-match.png",
+    "beforeSize": [
+      1440,
+      1079
+    ],
+    "afterSize": [
+      1440,
+      1339
+    ],
+    "comparedHeight": 1079,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-1440-ko-match-scoreboard.png",
+    "after": "after-1440-ko-match-scoreboard.png",
+    "beforeSize": [
+      1440,
+      960
+    ],
+    "afterSize": [
+      1440,
+      960
+    ],
+    "comparedHeight": 960,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-1440-ko-match-performance.png",
+    "after": "after-1440-ko-match-performance.png",
+    "beforeSize": [
+      1440,
+      960
+    ],
+    "afterSize": [
+      1440,
+      960
+    ],
+    "comparedHeight": 960,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-1440-ko-match-economy.png",
+    "after": "after-1440-ko-match-economy.png",
+    "beforeSize": [
+      1440,
+      960
+    ],
+    "afterSize": [
+      1440,
+      960
+    ],
+    "comparedHeight": 960,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-1440-ko-match-rounds.png",
+    "after": "after-1440-ko-match-rounds.png",
+    "beforeSize": [
+      1440,
+      960
+    ],
+    "afterSize": [
+      1440,
+      960
+    ],
+    "comparedHeight": 960,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-1440-ko-match-duels.png",
+    "after": "after-1440-ko-match-duels.png",
+    "beforeSize": [
+      1440,
+      960
+    ],
+    "afterSize": [
+      1440,
+      960
+    ],
+    "comparedHeight": 960,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-1440-ko-connect.png",
+    "after": "after-1440-ko-connect.png",
+    "beforeSize": [
+      1440,
+      1115
+    ],
+    "afterSize": [
+      1440,
+      1115
+    ],
+    "comparedHeight": 1115,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-1440-ko-privacy.png",
+    "after": "after-1440-ko-privacy.png",
+    "beforeSize": [
+      1440,
+      2093
+    ],
+    "afterSize": [
+      1440,
+      2093
+    ],
+    "comparedHeight": 2093,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-1440-ko-terms.png",
+    "after": "after-1440-ko-terms.png",
+    "beforeSize": [
+      1440,
+      1818
+    ],
+    "afterSize": [
+      1440,
+      1818
+    ],
+    "comparedHeight": 1818,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-1440-ko-lineups.png",
+    "after": "after-1440-ko-lineups.png",
+    "beforeSize": [
+      1440,
+      1371
+    ],
+    "afterSize": [
+      1440,
+      1371
+    ],
+    "comparedHeight": 1371,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-1440-ko-smokes.png",
+    "after": "after-1440-ko-smokes.png",
+    "beforeSize": [
+      1440,
+      1389
+    ],
+    "afterSize": [
+      1440,
+      1389
+    ],
+    "comparedHeight": 1389,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-1440-en-home.png",
+    "after": "after-1440-en-home.png",
+    "beforeSize": [
+      1440,
+      1231
+    ],
+    "afterSize": [
+      1440,
+      1231
+    ],
+    "comparedHeight": 1231,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-1440-en-profile.png",
+    "after": "after-1440-en-profile.png",
+    "beforeSize": [
+      1440,
+      2885
+    ],
+    "afterSize": [
+      1440,
+      2885
+    ],
+    "comparedHeight": 2885,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-1440-en-match.png",
+    "after": "after-1440-en-match.png",
+    "beforeSize": [
+      1440,
+      1079
+    ],
+    "afterSize": [
+      1440,
+      1339
+    ],
+    "comparedHeight": 1079,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-1440-en-match-scoreboard.png",
+    "after": "after-1440-en-match-scoreboard.png",
+    "beforeSize": [
+      1440,
+      960
+    ],
+    "afterSize": [
+      1440,
+      960
+    ],
+    "comparedHeight": 960,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-1440-en-match-performance.png",
+    "after": "after-1440-en-match-performance.png",
+    "beforeSize": [
+      1440,
+      960
+    ],
+    "afterSize": [
+      1440,
+      960
+    ],
+    "comparedHeight": 960,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-1440-en-match-economy.png",
+    "after": "after-1440-en-match-economy.png",
+    "beforeSize": [
+      1440,
+      960
+    ],
+    "afterSize": [
+      1440,
+      960
+    ],
+    "comparedHeight": 960,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-1440-en-match-rounds.png",
+    "after": "after-1440-en-match-rounds.png",
+    "beforeSize": [
+      1440,
+      960
+    ],
+    "afterSize": [
+      1440,
+      960
+    ],
+    "comparedHeight": 960,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-1440-en-match-duels.png",
+    "after": "after-1440-en-match-duels.png",
+    "beforeSize": [
+      1440,
+      960
+    ],
+    "afterSize": [
+      1440,
+      960
+    ],
+    "comparedHeight": 960,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-1440-en-connect.png",
+    "after": "after-1440-en-connect.png",
+    "beforeSize": [
+      1440,
+      1140
+    ],
+    "afterSize": [
+      1440,
+      1140
+    ],
+    "comparedHeight": 1140,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-1440-en-privacy.png",
+    "after": "after-1440-en-privacy.png",
+    "beforeSize": [
+      1440,
+      2294
+    ],
+    "afterSize": [
+      1440,
+      2294
+    ],
+    "comparedHeight": 2294,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-1440-en-terms.png",
+    "after": "after-1440-en-terms.png",
+    "beforeSize": [
+      1440,
+      1944
+    ],
+    "afterSize": [
+      1440,
+      1944
+    ],
+    "comparedHeight": 1944,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-1440-en-lineups.png",
+    "after": "after-1440-en-lineups.png",
+    "beforeSize": [
+      1440,
+      1371
+    ],
+    "afterSize": [
+      1440,
+      1371
+    ],
+    "comparedHeight": 1371,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-1440-en-smokes.png",
+    "after": "after-1440-en-smokes.png",
+    "beforeSize": [
+      1440,
+      1389
+    ],
+    "afterSize": [
+      1440,
+      1389
+    ],
+    "comparedHeight": 1389,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-ko-home.png",
+    "after": "after-390-ko-home.png",
+    "beforeSize": [
+      390,
+      1828
+    ],
+    "afterSize": [
+      390,
+      1828
+    ],
+    "comparedHeight": 1828,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-ko-profile.png",
+    "after": "after-390-ko-profile.png",
+    "beforeSize": [
+      390,
+      5127
+    ],
+    "afterSize": [
+      390,
+      5127
+    ],
+    "comparedHeight": 5127,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-ko-match.png",
+    "after": "after-390-ko-match.png",
+    "beforeSize": [
+      390,
+      1143
+    ],
+    "afterSize": [
+      390,
+      1490
+    ],
+    "comparedHeight": 1143,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-ko-match-scoreboard.png",
+    "after": "after-390-ko-match-scoreboard.png",
+    "beforeSize": [
+      390,
+      960
+    ],
+    "afterSize": [
+      390,
+      960
+    ],
+    "comparedHeight": 960,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-ko-match-performance.png",
+    "after": "after-390-ko-match-performance.png",
+    "beforeSize": [
+      390,
+      960
+    ],
+    "afterSize": [
+      390,
+      960
+    ],
+    "comparedHeight": 960,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-ko-match-economy.png",
+    "after": "after-390-ko-match-economy.png",
+    "beforeSize": [
+      390,
+      960
+    ],
+    "afterSize": [
+      390,
+      960
+    ],
+    "comparedHeight": 960,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-ko-match-rounds.png",
+    "after": "after-390-ko-match-rounds.png",
+    "beforeSize": [
+      390,
+      960
+    ],
+    "afterSize": [
+      390,
+      960
+    ],
+    "comparedHeight": 960,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-ko-match-duels.png",
+    "after": "after-390-ko-match-duels.png",
+    "beforeSize": [
+      390,
+      960
+    ],
+    "afterSize": [
+      390,
+      960
+    ],
+    "comparedHeight": 960,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-ko-connect.png",
+    "after": "after-390-ko-connect.png",
+    "beforeSize": [
+      390,
+      1412
+    ],
+    "afterSize": [
+      390,
+      1412
+    ],
+    "comparedHeight": 1412,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-ko-privacy.png",
+    "after": "after-390-ko-privacy.png",
+    "beforeSize": [
+      390,
+      3020
+    ],
+    "afterSize": [
+      390,
+      3020
+    ],
+    "comparedHeight": 3020,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-ko-terms.png",
+    "after": "after-390-ko-terms.png",
+    "beforeSize": [
+      390,
+      2494
+    ],
+    "afterSize": [
+      390,
+      2494
+    ],
+    "comparedHeight": 2494,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-ko-lineups.png",
+    "after": "after-390-ko-lineups.png",
+    "beforeSize": [
+      390,
+      1678
+    ],
+    "afterSize": [
+      390,
+      1678
+    ],
+    "comparedHeight": 1678,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-ko-smokes.png",
+    "after": "after-390-ko-smokes.png",
+    "beforeSize": [
+      390,
+      1684
+    ],
+    "afterSize": [
+      390,
+      1684
+    ],
+    "comparedHeight": 1684,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-en-home.png",
+    "after": "after-390-en-home.png",
+    "beforeSize": [
+      390,
+      1867
+    ],
+    "afterSize": [
+      390,
+      1867
+    ],
+    "comparedHeight": 1867,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-en-profile.png",
+    "after": "after-390-en-profile.png",
+    "beforeSize": [
+      390,
+      5195
+    ],
+    "afterSize": [
+      390,
+      5195
+    ],
+    "comparedHeight": 5195,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-en-match.png",
+    "after": "after-390-en-match.png",
+    "beforeSize": [
+      390,
+      1143
+    ],
+    "afterSize": [
+      390,
+      1510
+    ],
+    "comparedHeight": 1143,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-en-match-scoreboard.png",
+    "after": "after-390-en-match-scoreboard.png",
+    "beforeSize": [
+      390,
+      960
+    ],
+    "afterSize": [
+      390,
+      960
+    ],
+    "comparedHeight": 960,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-en-match-performance.png",
+    "after": "after-390-en-match-performance.png",
+    "beforeSize": [
+      390,
+      960
+    ],
+    "afterSize": [
+      390,
+      960
+    ],
+    "comparedHeight": 960,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-en-match-economy.png",
+    "after": "after-390-en-match-economy.png",
+    "beforeSize": [
+      390,
+      960
+    ],
+    "afterSize": [
+      390,
+      960
+    ],
+    "comparedHeight": 960,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-en-match-rounds.png",
+    "after": "after-390-en-match-rounds.png",
+    "beforeSize": [
+      390,
+      960
+    ],
+    "afterSize": [
+      390,
+      960
+    ],
+    "comparedHeight": 960,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-en-match-duels.png",
+    "after": "after-390-en-match-duels.png",
+    "beforeSize": [
+      390,
+      960
+    ],
+    "afterSize": [
+      390,
+      960
+    ],
+    "comparedHeight": 960,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-en-connect.png",
+    "after": "after-390-en-connect.png",
+    "beforeSize": [
+      390,
+      1532
+    ],
+    "afterSize": [
+      390,
+      1532
+    ],
+    "comparedHeight": 1532,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-en-privacy.png",
+    "after": "after-390-en-privacy.png",
+    "beforeSize": [
+      390,
+      3562
+    ],
+    "afterSize": [
+      390,
+      3562
+    ],
+    "comparedHeight": 3562,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-en-terms.png",
+    "after": "after-390-en-terms.png",
+    "beforeSize": [
+      390,
+      2935
+    ],
+    "afterSize": [
+      390,
+      2935
+    ],
+    "comparedHeight": 2935,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-en-lineups.png",
+    "after": "after-390-en-lineups.png",
+    "beforeSize": [
+      390,
+      1717
+    ],
+    "afterSize": [
+      390,
+      1717
+    ],
+    "comparedHeight": 1717,
+    "changedPixels": 0
+  },
+  {
+    "before": "before-390-en-smokes.png",
+    "after": "after-390-en-smokes.png",
+    "beforeSize": [
+      390,
+      1722
+    ],
+    "afterSize": [
+      390,
+      1722
+    ],
+    "comparedHeight": 1722,
+    "changedPixels": 0
+  }
+]

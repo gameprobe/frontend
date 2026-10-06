@@ -1,0 +1,22 @@
+[
+  {
+    "name": "modal",
+    "width": 1440,
+    "identical_png": true
+  },
+  {
+    "name": "modal",
+    "width": 390,
+    "identical_png": true
+  },
+  {
+    "name": "missing",
+    "width": 390,
+    "identical_png": true
+  },
+  {
+    "name": "legacy",
+    "width": 1440,
+    "identical_png": true
+  }
+]

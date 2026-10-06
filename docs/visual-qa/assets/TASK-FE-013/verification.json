@@ -1,0 +1,255 @@
+{
+  "task": "TASK-FE-013",
+  "baseline": "6cde828",
+  "browser": "Chromium headless; 100% zoom; DPR 1; reduced motion",
+  "widths": [
+    320,
+    390,
+    480,
+    481,
+    700,
+    701,
+    768,
+    800,
+    801,
+    850,
+    851,
+    1000,
+    1001,
+    1100,
+    1101,
+    1250,
+    1251,
+    1440,
+    1499,
+    1500,
+    1920
+  ],
+  "layout": {
+    "conditions": 42,
+    "outsideSearchDifferences": 0,
+    "pageOverflow": 0,
+    "mainCount": 1,
+    "pageErrors": 0
+  },
+  "search": {
+    "fontSize": "16px",
+    "textAndIconColor": "#e9edef",
+    "boxPreserved": true,
+    "hoverFilter": "none",
+    "keyboardFocus": "2px solid #d8c879; offset 3px; no layout shift"
+  },
+  "pixels": [
+    {
+      "capture": "home-desktop-footer.png",
+      "changedPixels": 0,
+      "outsideSearchPixels": 0,
+      "outsideSearchMaxChannelDifference": 0,
+      "size": [
+        1400,
+        95
+      ]
+    },
+    {
+      "capture": "home-desktop-menu.png",
+      "changedPixels": 449,
+      "outsideSearchPixels": 0,
+      "outsideSearchMaxChannelDifference": 0,
+      "size": [
+        1920,
+        300
+      ]
+    },
+    {
+      "capture": "home-desktop-search-focus.png",
+      "changedPixels": 449,
+      "outsideSearchPixels": 0,
+      "outsideSearchMaxChannelDifference": 0,
+      "size": [
+        1920,
+        160
+      ]
+    },
+    {
+      "capture": "home-desktop.png",
+      "changedPixels": 449,
+      "outsideSearchPixels": 0,
+      "outsideSearchMaxChannelDifference": 0,
+      "size": [
+        1920,
+        1076
+      ]
+    },
+    {
+      "capture": "home-mobile-footer.png",
+      "changedPixels": 0,
+      "outsideSearchPixels": 0,
+      "outsideSearchMaxChannelDifference": 0,
+      "size": [
+        370,
+        126
+      ]
+    },
+    {
+      "capture": "home-mobile-menu.png",
+      "changedPixels": 0,
+      "outsideSearchPixels": 0,
+      "outsideSearchMaxChannelDifference": 0,
+      "size": [
+        390,
+        300
+      ]
+    },
+    {
+      "capture": "home-mobile-search-focus.png",
+      "changedPixels": 1,
+      "outsideSearchPixels": 0,
+      "outsideSearchMaxChannelDifference": 0,
+      "size": [
+        390,
+        160
+      ]
+    },
+    {
+      "capture": "home-mobile.png",
+      "changedPixels": 0,
+      "outsideSearchPixels": 0,
+      "outsideSearchMaxChannelDifference": 0,
+      "size": [
+        390,
+        1486
+      ]
+    },
+    {
+      "capture": "profile-desktop-footer.png",
+      "changedPixels": 0,
+      "outsideSearchPixels": 0,
+      "outsideSearchMaxChannelDifference": 0,
+      "size": [
+        1408,
+        90
+      ]
+    },
+    {
+      "capture": "profile-desktop-menu.png",
+      "changedPixels": 528,
+      "outsideSearchPixels": 0,
+      "outsideSearchMaxChannelDifference": 0,
+      "size": [
+        1920,
+        300
+      ]
+    },
+    {
+      "capture": "profile-desktop-search-focus.png",
+      "changedPixels": 1946,
+      "outsideSearchPixels": 0,
+      "outsideSearchMaxChannelDifference": 0,
+      "size": [
+        1920,
+        160
+      ]
+    },
+    {
+      "capture": "profile-desktop-search-input.png",
+      "changedPixels": 2271,
+      "outsideSearchPixels": 0,
+      "outsideSearchMaxChannelDifference": 0,
+      "size": [
+        1920,
+        160
+      ]
+    },
+    {
+      "capture": "profile-desktop.png",
+      "changedPixels": 528,
+      "outsideSearchPixels": 0,
+      "outsideSearchMaxChannelDifference": 0,
+      "size": [
+        1920,
+        4408
+      ]
+    },
+    {
+      "capture": "profile-mobile-footer.png",
+      "changedPixels": 0,
+      "outsideSearchPixels": 0,
+      "outsideSearchMaxChannelDifference": 0,
+      "size": [
+        370,
+        116
+      ]
+    },
+    {
+      "capture": "profile-mobile-menu.png",
+      "changedPixels": 528,
+      "outsideSearchPixels": 0,
+      "outsideSearchMaxChannelDifference": 0,
+      "size": [
+        390,
+        300
+      ]
+    },
+    {
+      "capture": "profile-mobile-search-focus.png",
+      "changedPixels": 1576,
+      "outsideSearchPixels": 16,
+      "outsideSearchMaxChannelDifference": 1,
+      "size": [
+        390,
+        160
+      ]
+    },
+    {
+      "capture": "profile-mobile-search-input.png",
+      "changedPixels": 1665,
+      "outsideSearchPixels": 16,
+      "outsideSearchMaxChannelDifference": 1,
+      "size": [
+        390,
+        160
+      ]
+    },
+    {
+      "capture": "profile-mobile.png",
+      "changedPixels": 528,
+      "outsideSearchPixels": 0,
+      "outsideSearchMaxChannelDifference": 0,
+      "size": [
+        390,
+        7388
+      ]
+    }
+  ],
+  "pixelNote": "Two profile-mobile focus/input images differ by max 1 RGB level at 16 More-button edge pixels each; exact count retained above. No material pixel difference outside Search.",
+  "interactions": {
+    "checks": [
+      "home Search hover / keyboard focus without layout shift",
+      "Home More / Escape / focus",
+      "Home search existing demo route",
+      "Overview existing IED route",
+      "profile Search hover / keyboard focus without layout shift",
+      "Profile search empty/matching/other and existing toast timeout",
+      "Profile More preserves toggle without Home Escape behavior",
+      "Footer/account destinations and Mock notice dismissal",
+      "Sticky navigation",
+      "Six profile tabs",
+      "Agent card filters nine matches",
+      "One expanded match and detail tabs reset",
+      "Loss filter / reset / 20 to 23 matches",
+      "Act switch updates data",
+      "Empty state and season reset",
+      "Favorite persists with existing storage key",
+      "profile to lineups restores global shell",
+      "home to lineups restores global shell"
+    ],
+    "errors": []
+  },
+  "build": {
+    "mock": "PASS",
+    "typescript": "PASS",
+    "lint": "PASS (0 errors/warnings)",
+    "production": "PASS (11 static pages)",
+    "developmentServer": "restored"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "home": {
+    "size": [
+      1440,
+      1000
+    ],
+    "different_pixels": 0
+  },
+  "insights": {
+    "size": [
+      1440,
+      1000
+    ],
+    "different_pixels": 0
+  },
+  "lineups": {
+    "size": [
+      1440,
+      1000
+    ],
+    "different_pixels": 0
+  },
+  "smokes": {
+    "size": [
+      1440,
+      1000
+    ],
+    "different_pixels": 0
+  }
+}

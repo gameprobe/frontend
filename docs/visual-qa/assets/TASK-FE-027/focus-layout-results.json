@@ -1,0 +1,947 @@
+{
+  "checks": [
+    "1440 lineups: Tab reaches hovered map card",
+    "1440 lineups: actual keyboard focus-visible",
+    "1440 lineups: pointer remains over same card",
+    "1440 lineups: explicit visible outline under hover",
+    "1440 smokes: Tab reaches hovered map card",
+    "1440 smokes: actual keyboard focus-visible",
+    "1440 smokes: pointer remains over same card",
+    "1440 smokes: explicit visible outline under hover",
+    "1440: no overflow",
+    "1440: main1",
+    "1440: six comparison agents",
+    "1440: readable table font minimum12",
+    "820: no overflow",
+    "820: main1",
+    "820: six comparison agents",
+    "820: readable table font minimum12",
+    "820: comparison sits beside side/site/type",
+    "390 lineups: Tab reaches hovered map card",
+    "390 lineups: actual keyboard focus-visible",
+    "390 lineups: pointer remains over same card",
+    "390 lineups: explicit visible outline under hover",
+    "390 smokes: Tab reaches hovered map card",
+    "390 smokes: actual keyboard focus-visible",
+    "390 smokes: pointer remains over same card",
+    "390 smokes: explicit visible outline under hover",
+    "390: no overflow",
+    "390: main1",
+    "390: six comparison agents",
+    "390: readable table font minimum12",
+    "390: comparison follows side selector vertically",
+    "No page errors",
+    "No console errors"
+  ],
+  "layouts": [
+    {
+      "width": 1440,
+      "overflow": 0,
+      "mainCount": 1,
+      "comparison": {
+        "x": 37,
+        "y": 64.25,
+        "width": 270,
+        "height": 387.046875
+      },
+      "controls": [
+        {
+          "text": "진영\n공격\n수비",
+          "x": 37,
+          "y": -26.640625,
+          "width": 270,
+          "height": 70.890625
+        },
+        {
+          "text": "사이트\n전체\nA\nB\nC\nMid",
+          "x": 37,
+          "y": 471.296875,
+          "width": 270,
+          "height": 68.890625
+        },
+        {
+          "text": "연막 유형\n모든 연막 (바이퍼 제외)\n하버 일자",
+          "x": 37,
+          "y": 560.1875,
+          "width": 270,
+          "height": 84.671875
+        }
+      ],
+      "rows": [
+        {
+          "text": "요원\n크기\n지속",
+          "x": 38,
+          "y": 91.140625,
+          "width": 268,
+          "height": 34,
+          "cells": [
+            {
+              "text": "요원",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 46,
+              "y": 99.734375,
+              "width": 96.8125,
+              "height": 16.796875
+            },
+            {
+              "text": "크기",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 146.8125,
+              "y": 99.734375,
+              "width": 77.46875,
+              "height": 16.796875
+            },
+            {
+              "text": "지속",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 228.28125,
+              "y": 99.734375,
+              "width": 69.703125,
+              "height": 16.796875
+            }
+          ]
+        },
+        {
+          "text": "Omen\n4.5m 반경\n15초",
+          "x": 38,
+          "y": 125.140625,
+          "width": 268,
+          "height": 42,
+          "cells": [
+            {
+              "text": "Omen",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 46,
+              "y": 135.640625,
+              "width": 96.8125,
+              "height": 22
+            },
+            {
+              "text": "4.5m 반경",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 146.8125,
+              "y": 138.234375,
+              "width": 77.46875,
+              "height": 16.796875
+            },
+            {
+              "text": "15초",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 228.28125,
+              "y": 138.234375,
+              "width": 69.703125,
+              "height": 16.796875
+            }
+          ]
+        },
+        {
+          "text": "Brimstone\n5m 반경\n19초",
+          "x": 38,
+          "y": 167.140625,
+          "width": 268,
+          "height": 42,
+          "cells": [
+            {
+              "text": "Brimstone",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 46,
+              "y": 177.640625,
+              "width": 96.8125,
+              "height": 22
+            },
+            {
+              "text": "5m 반경",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 146.8125,
+              "y": 180.234375,
+              "width": 77.46875,
+              "height": 16.796875
+            },
+            {
+              "text": "19초",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 228.28125,
+              "y": 180.234375,
+              "width": 69.703125,
+              "height": 16.796875
+            }
+          ]
+        },
+        {
+          "text": "Astra\n4.75m 반경\n14초",
+          "x": 38,
+          "y": 209.140625,
+          "width": 268,
+          "height": 42,
+          "cells": [
+            {
+              "text": "Astra",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 46,
+              "y": 219.640625,
+              "width": 96.8125,
+              "height": 22
+            },
+            {
+              "text": "4.75m 반경",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 146.8125,
+              "y": 222.234375,
+              "width": 77.46875,
+              "height": 16.796875
+            },
+            {
+              "text": "14초",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 228.28125,
+              "y": 222.234375,
+              "width": 69.703125,
+              "height": 16.796875
+            }
+          ]
+        },
+        {
+          "text": "Clove\n4.75m 반경\n14초",
+          "x": 38,
+          "y": 251.140625,
+          "width": 268,
+          "height": 42,
+          "cells": [
+            {
+              "text": "Clove",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 46,
+              "y": 261.640625,
+              "width": 96.8125,
+              "height": 22
+            },
+            {
+              "text": "4.75m 반경",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 146.8125,
+              "y": 264.234375,
+              "width": 77.46875,
+              "height": 16.796875
+            },
+            {
+              "text": "14초",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 228.28125,
+              "y": 264.234375,
+              "width": 69.703125,
+              "height": 16.796875
+            }
+          ]
+        },
+        {
+          "text": "Harbor\n4m 반경 + 벽\n4.5초 / 벽 12초",
+          "x": 38,
+          "y": 293.140625,
+          "width": 268,
+          "height": 50.59375,
+          "cells": [
+            {
+              "text": "Harbor",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 46,
+              "y": 307.9375,
+              "width": 96.8125,
+              "height": 22
+            },
+            {
+              "text": "4m 반경 + 벽",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 146.8125,
+              "y": 310.53125,
+              "width": 77.46875,
+              "height": 16.796875
+            },
+            {
+              "text": "4.5초 / 벽 12초",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 228.28125,
+              "y": 302.140625,
+              "width": 69.703125,
+              "height": 33.59375
+            }
+          ]
+        },
+        {
+          "text": "Miks\n4.5m 반경\n12초",
+          "x": 38,
+          "y": 343.734375,
+          "width": 268,
+          "height": 42,
+          "cells": [
+            {
+              "text": "Miks",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 46,
+              "y": 354.234375,
+              "width": 96.8125,
+              "height": 22
+            },
+            {
+              "text": "4.5m 반경",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 146.8125,
+              "y": 356.828125,
+              "width": 77.46875,
+              "height": 16.796875
+            },
+            {
+              "text": "12초",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 228.28125,
+              "y": 356.828125,
+              "width": 69.703125,
+              "height": 16.796875
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 820,
+      "overflow": 0,
+      "mainCount": 1,
+      "comparison": {
+        "x": 420,
+        "y": -533.046875,
+        "width": 363,
+        "height": 359.265625
+      },
+      "controls": [
+        {
+          "text": "진영\n공격\n수비",
+          "x": 37,
+          "y": -533.046875,
+          "width": 363,
+          "height": 70.890625
+        },
+        {
+          "text": "사이트\n전체\nA\nB\nC\nMid",
+          "x": 37,
+          "y": -442.15625,
+          "width": 363,
+          "height": 68.890625
+        },
+        {
+          "text": "연막 유형\n모든 연막 (바이퍼 제외)\n하버 일자",
+          "x": 37,
+          "y": -353.265625,
+          "width": 363,
+          "height": 68.890625
+        }
+      ],
+      "rows": [
+        {
+          "text": "요원\n크기\n지속",
+          "x": 421,
+          "y": -506.15625,
+          "width": 361,
+          "height": 34,
+          "cells": [
+            {
+              "text": "요원",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 429,
+              "y": -497.5625,
+              "width": 133.71875,
+              "height": 16.796875
+            },
+            {
+              "text": "크기",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 566.71875,
+              "y": -497.5625,
+              "width": 106.984375,
+              "height": 16.796875
+            },
+            {
+              "text": "지속",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 677.703125,
+              "y": -497.5625,
+              "width": 96.28125,
+              "height": 16.796875
+            }
+          ]
+        },
+        {
+          "text": "Omen\n4.5m 반경\n15초",
+          "x": 421,
+          "y": -472.15625,
+          "width": 361,
+          "height": 42,
+          "cells": [
+            {
+              "text": "Omen",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 429,
+              "y": -461.65625,
+              "width": 133.71875,
+              "height": 22
+            },
+            {
+              "text": "4.5m 반경",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 566.71875,
+              "y": -459.0625,
+              "width": 106.984375,
+              "height": 16.796875
+            },
+            {
+              "text": "15초",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 677.703125,
+              "y": -459.0625,
+              "width": 96.28125,
+              "height": 16.796875
+            }
+          ]
+        },
+        {
+          "text": "Brimstone\n5m 반경\n19초",
+          "x": 421,
+          "y": -430.15625,
+          "width": 361,
+          "height": 42,
+          "cells": [
+            {
+              "text": "Brimstone",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 429,
+              "y": -419.65625,
+              "width": 133.71875,
+              "height": 22
+            },
+            {
+              "text": "5m 반경",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 566.71875,
+              "y": -417.0625,
+              "width": 106.984375,
+              "height": 16.796875
+            },
+            {
+              "text": "19초",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 677.703125,
+              "y": -417.0625,
+              "width": 96.28125,
+              "height": 16.796875
+            }
+          ]
+        },
+        {
+          "text": "Astra\n4.75m 반경\n14초",
+          "x": 421,
+          "y": -388.15625,
+          "width": 361,
+          "height": 42,
+          "cells": [
+            {
+              "text": "Astra",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 429,
+              "y": -377.65625,
+              "width": 133.71875,
+              "height": 22
+            },
+            {
+              "text": "4.75m 반경",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 566.71875,
+              "y": -375.0625,
+              "width": 106.984375,
+              "height": 16.796875
+            },
+            {
+              "text": "14초",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 677.703125,
+              "y": -375.0625,
+              "width": 96.28125,
+              "height": 16.796875
+            }
+          ]
+        },
+        {
+          "text": "Clove\n4.75m 반경\n14초",
+          "x": 421,
+          "y": -346.15625,
+          "width": 361,
+          "height": 42,
+          "cells": [
+            {
+              "text": "Clove",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 429,
+              "y": -335.65625,
+              "width": 133.71875,
+              "height": 22
+            },
+            {
+              "text": "4.75m 반경",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 566.71875,
+              "y": -333.0625,
+              "width": 106.984375,
+              "height": 16.796875
+            },
+            {
+              "text": "14초",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 677.703125,
+              "y": -333.0625,
+              "width": 96.28125,
+              "height": 16.796875
+            }
+          ]
+        },
+        {
+          "text": "Harbor\n4m 반경 + 벽\n4.5초 / 벽 12초",
+          "x": 421,
+          "y": -304.15625,
+          "width": 361,
+          "height": 42,
+          "cells": [
+            {
+              "text": "Harbor",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 429,
+              "y": -293.65625,
+              "width": 133.71875,
+              "height": 22
+            },
+            {
+              "text": "4m 반경 + 벽",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 566.71875,
+              "y": -291.0625,
+              "width": 106.984375,
+              "height": 16.796875
+            },
+            {
+              "text": "4.5초 / 벽 12초",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 677.703125,
+              "y": -291.0625,
+              "width": 96.28125,
+              "height": 16.796875
+            }
+          ]
+        },
+        {
+          "text": "Miks\n4.5m 반경\n12초",
+          "x": 421,
+          "y": -262.15625,
+          "width": 361,
+          "height": 42,
+          "cells": [
+            {
+              "text": "Miks",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 429,
+              "y": -251.65625,
+              "width": 133.71875,
+              "height": 22
+            },
+            {
+              "text": "4.5m 반경",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 566.71875,
+              "y": -249.0625,
+              "width": 106.984375,
+              "height": 16.796875
+            },
+            {
+              "text": "12초",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 677.703125,
+              "y": -249.0625,
+              "width": 96.28125,
+              "height": 16.796875
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "overflow": 0,
+      "mainCount": 1,
+      "comparison": {
+        "x": 27,
+        "y": -565.96875,
+        "width": 336,
+        "height": 359.265625
+      },
+      "controls": [
+        {
+          "text": "진영\n공격\n수비",
+          "x": 27,
+          "y": -656.859375,
+          "width": 336,
+          "height": 70.890625
+        },
+        {
+          "text": "사이트\n전체\nA\nB\nC\nMid",
+          "x": 27,
+          "y": -186.703125,
+          "width": 336,
+          "height": 68.890625
+        },
+        {
+          "text": "연막 유형\n모든 연막 (바이퍼 제외)\n하버 일자",
+          "x": 27,
+          "y": -97.8125,
+          "width": 336,
+          "height": 68.890625
+        }
+      ],
+      "rows": [
+        {
+          "text": "요원\n크기\n지속",
+          "x": 28,
+          "y": -539.078125,
+          "width": 334,
+          "height": 34,
+          "cells": [
+            {
+              "text": "요원",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 36,
+              "y": -530.484375,
+              "width": 123.015625,
+              "height": 16.796875
+            },
+            {
+              "text": "크기",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 163.015625,
+              "y": -530.484375,
+              "width": 98.40625,
+              "height": 16.796875
+            },
+            {
+              "text": "지속",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 265.421875,
+              "y": -530.484375,
+              "width": 88.5625,
+              "height": 16.796875
+            }
+          ]
+        },
+        {
+          "text": "Omen\n4.5m 반경\n15초",
+          "x": 28,
+          "y": -505.078125,
+          "width": 334,
+          "height": 42,
+          "cells": [
+            {
+              "text": "Omen",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 36,
+              "y": -494.578125,
+              "width": 123.015625,
+              "height": 22
+            },
+            {
+              "text": "4.5m 반경",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 163.015625,
+              "y": -491.984375,
+              "width": 98.40625,
+              "height": 16.796875
+            },
+            {
+              "text": "15초",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 265.421875,
+              "y": -491.984375,
+              "width": 88.5625,
+              "height": 16.796875
+            }
+          ]
+        },
+        {
+          "text": "Brimstone\n5m 반경\n19초",
+          "x": 28,
+          "y": -463.078125,
+          "width": 334,
+          "height": 42,
+          "cells": [
+            {
+              "text": "Brimstone",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 36,
+              "y": -452.578125,
+              "width": 123.015625,
+              "height": 22
+            },
+            {
+              "text": "5m 반경",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 163.015625,
+              "y": -449.984375,
+              "width": 98.40625,
+              "height": 16.796875
+            },
+            {
+              "text": "19초",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 265.421875,
+              "y": -449.984375,
+              "width": 88.5625,
+              "height": 16.796875
+            }
+          ]
+        },
+        {
+          "text": "Astra\n4.75m 반경\n14초",
+          "x": 28,
+          "y": -421.078125,
+          "width": 334,
+          "height": 42,
+          "cells": [
+            {
+              "text": "Astra",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 36,
+              "y": -410.578125,
+              "width": 123.015625,
+              "height": 22
+            },
+            {
+              "text": "4.75m 반경",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 163.015625,
+              "y": -407.984375,
+              "width": 98.40625,
+              "height": 16.796875
+            },
+            {
+              "text": "14초",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 265.421875,
+              "y": -407.984375,
+              "width": 88.5625,
+              "height": 16.796875
+            }
+          ]
+        },
+        {
+          "text": "Clove\n4.75m 반경\n14초",
+          "x": 28,
+          "y": -379.078125,
+          "width": 334,
+          "height": 42,
+          "cells": [
+            {
+              "text": "Clove",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 36,
+              "y": -368.578125,
+              "width": 123.015625,
+              "height": 22
+            },
+            {
+              "text": "4.75m 반경",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 163.015625,
+              "y": -365.984375,
+              "width": 98.40625,
+              "height": 16.796875
+            },
+            {
+              "text": "14초",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 265.421875,
+              "y": -365.984375,
+              "width": 88.5625,
+              "height": 16.796875
+            }
+          ]
+        },
+        {
+          "text": "Harbor\n4m 반경 + 벽\n4.5초 / 벽 12초",
+          "x": 28,
+          "y": -337.078125,
+          "width": 334,
+          "height": 42,
+          "cells": [
+            {
+              "text": "Harbor",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 36,
+              "y": -326.578125,
+              "width": 123.015625,
+              "height": 22
+            },
+            {
+              "text": "4m 반경 + 벽",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 163.015625,
+              "y": -323.984375,
+              "width": 98.40625,
+              "height": 16.796875
+            },
+            {
+              "text": "4.5초 / 벽 12초",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 265.421875,
+              "y": -323.984375,
+              "width": 88.5625,
+              "height": 16.796875
+            }
+          ]
+        },
+        {
+          "text": "Miks\n4.5m 반경\n12초",
+          "x": 28,
+          "y": -295.078125,
+          "width": 334,
+          "height": 42,
+          "cells": [
+            {
+              "text": "Miks",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 36,
+              "y": -284.578125,
+              "width": 123.015625,
+              "height": 22
+            },
+            {
+              "text": "4.5m 반경",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 163.015625,
+              "y": -281.984375,
+              "width": 98.40625,
+              "height": 16.796875
+            },
+            {
+              "text": "12초",
+              "font": 12,
+              "wordBreak": "keep-all",
+              "x": 265.421875,
+              "y": -281.984375,
+              "width": 88.5625,
+              "height": 16.796875
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "focus": [
+    {
+      "width": 1440,
+      "kind": "lineups",
+      "focusVisible": true,
+      "hover": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "width": 1440,
+      "kind": "smokes",
+      "focusVisible": true,
+      "hover": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "width": 390,
+      "kind": "lineups",
+      "focusVisible": true,
+      "hover": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "width": 390,
+      "kind": "smokes",
+      "focusVisible": true,
+      "hover": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "status": "PASS"
+}

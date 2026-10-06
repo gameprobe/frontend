@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "baseline": "df4d078",
+  "checks": {
+    "frontend/src/features/home/HomeLanding.tsx body unchanged": true,
+    "frontend/src/features/tracker-profile/TrackerProfile.tsx body unchanged": true,
+    "frontend/src/features/strategy-explorer/StrategyExplorerShell.tsx body unchanged": true,
+    "frontend/src/features/tracker-profile/hooks/useProfileViewState.ts unchanged": true,
+    "frontend/src/features/tracker-profile/hooks/useProfileBrowserActions.ts unchanged": true,
+    "frontend/src/app/lineups/page.tsx unchanged": true,
+    "frontend/src/app/smokes/page.tsx unchanged": true,
+    "frontend/src/app/globals.css unchanged": true,
+    "frontend/package.json unchanged": true
+  }
+}

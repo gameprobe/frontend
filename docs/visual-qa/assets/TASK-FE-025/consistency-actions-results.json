@@ -1,0 +1,225 @@
+{
+  "checks": [
+    "1440-legacy: save receives keyboard focus",
+    "1440-legacy: focus outline visible",
+    "1440-legacy save: Korean feedback",
+    "1440-legacy: per-player save persisted",
+    "1440-legacy: saved state keeps distinct color",
+    "1440-legacy: saved survives reload",
+    "1440-legacy unsave: Korean feedback",
+    "1440-legacy: unsave persisted",
+    "1440-legacy share: Korean feedback",
+    "1440-legacy: copy current profile URL",
+    "1440-legacy search: Korean feedback",
+    "1440-legacy: search remains demo",
+    "1440-legacy refresh: Korean feedback",
+    "1440-legacy: refresh preserves sample rows",
+    "1440-legacy: load more 23 rows",
+    "1440-legacy: Jett filter 9 rows",
+    "1440-legacy: filter reset restores 20",
+    "1440-legacy: details five tabs and Escape preserved",
+    "1440-legacy: agent table still opens filtered matches",
+    "1440-new: save receives keyboard focus",
+    "1440-new: focus outline visible",
+    "1440-new save: Korean feedback",
+    "1440-new: per-player save persisted",
+    "1440-new: saved state keeps distinct color",
+    "1440-new: saved survives reload",
+    "1440-new unsave: Korean feedback",
+    "1440-new: unsave persisted",
+    "1440-new share: Korean feedback",
+    "1440-new: copy current profile URL",
+    "1440-new search: Korean feedback",
+    "1440-new: search remains demo",
+    "1440-new: refresh preserves sample rows",
+    "1440-new: Jett filter 2 rows",
+    "1440-new: filter reset restores 4",
+    "1440-new: details five tabs and Escape preserved",
+    "1440-new: agent table still opens filtered matches",
+    "1440: default demo still legacy",
+    "1440: named new demo still synthetic",
+    "1440 partial: no overflow",
+    "1440 partial: Korean status and 3 rows",
+    "1440 partial: retry retains scenario",
+    "1440 partial: default return restores 4 rows",
+    "1440 empty: no overflow",
+    "1440 empty: Korean status and 0 rows",
+    "1440 empty: default return restores 4 rows",
+    "1440 error: no overflow",
+    "1440 error: Korean status and 0 rows",
+    "1440 error: retry retains scenario",
+    "1440 error: default return restores 4 rows",
+    "1440 unsupported Console: no overflow",
+    "1440: unsupported Console preserves Korean unavailable state",
+    "390-legacy: save receives keyboard focus",
+    "390-legacy: focus outline visible",
+    "390-legacy save: Korean feedback",
+    "390-legacy: per-player save persisted",
+    "390-legacy: saved state keeps distinct color",
+    "390-legacy: saved survives reload",
+    "390-legacy unsave: Korean feedback",
+    "390-legacy: unsave persisted",
+    "390-legacy share: Korean feedback",
+    "390-legacy: copy current profile URL",
+    "390-legacy search: Korean feedback",
+    "390-legacy: search remains demo",
+    "390-legacy refresh: Korean feedback",
+    "390-legacy: refresh preserves sample rows",
+    "390-legacy: load more 23 rows",
+    "390-legacy: Jett filter 9 rows",
+    "390-legacy: filter reset restores 20",
+    "390-legacy: details five tabs and Escape preserved",
+    "390-legacy: agent table still opens filtered matches",
+    "390-new: save receives keyboard focus",
+    "390-new: focus outline visible",
+    "390-new save: Korean feedback",
+    "390-new: per-player save persisted",
+    "390-new: saved state keeps distinct color",
+    "390-new: saved survives reload",
+    "390-new unsave: Korean feedback",
+    "390-new: unsave persisted",
+    "390-new share: Korean feedback",
+    "390-new: copy current profile URL",
+    "390-new search: Korean feedback",
+    "390-new: search remains demo",
+    "390-new: refresh preserves sample rows",
+    "390-new: Jett filter 2 rows",
+    "390-new: filter reset restores 4",
+    "390-new: details five tabs and Escape preserved",
+    "390-new: agent table still opens filtered matches",
+    "390: default demo still legacy",
+    "390: named new demo still synthetic",
+    "390 partial: no overflow",
+    "390 partial: Korean status and 3 rows",
+    "390 partial: retry retains scenario",
+    "390 partial: default return restores 4 rows",
+    "390 empty: no overflow",
+    "390 empty: Korean status and 0 rows",
+    "390 empty: default return restores 4 rows",
+    "390 error: no overflow",
+    "390 error: Korean status and 0 rows",
+    "390 error: retry retains scenario",
+    "390 error: default return restores 4 rows",
+    "390 unsupported Console: no overflow",
+    "390: unsupported Console preserves Korean unavailable state",
+    "no page errors",
+    "no console errors"
+  ],
+  "toasts": [
+    {
+      "key": "1440-legacy",
+      "action": "save",
+      "text": "이 브라우저에 프로필을 저장했습니다."
+    },
+    {
+      "key": "1440-legacy",
+      "action": "unsave",
+      "text": "저장한 프로필에서 삭제했습니다."
+    },
+    {
+      "key": "1440-legacy",
+      "action": "share",
+      "text": "프로필 링크를 복사했습니다."
+    },
+    {
+      "key": "1440-legacy",
+      "action": "search",
+      "text": "데모 프로필만 볼 수 있습니다. 실제 Riot ID 검색은 아직 제공하지 않습니다."
+    },
+    {
+      "key": "1440-legacy",
+      "action": "refresh",
+      "text": "데모 화면을 새로 확인했습니다. 예시 데이터는 변경되지 않습니다."
+    },
+    {
+      "key": "1440-new",
+      "action": "save",
+      "text": "이 브라우저에 프로필을 저장했습니다."
+    },
+    {
+      "key": "1440-new",
+      "action": "unsave",
+      "text": "저장한 프로필에서 삭제했습니다."
+    },
+    {
+      "key": "1440-new",
+      "action": "share",
+      "text": "프로필 링크를 복사했습니다."
+    },
+    {
+      "key": "1440-new",
+      "action": "search",
+      "text": "데모 프로필만 볼 수 있습니다. 실제 Riot ID 검색은 아직 제공하지 않습니다."
+    },
+    {
+      "key": "390-legacy",
+      "action": "save",
+      "text": "이 브라우저에 프로필을 저장했습니다."
+    },
+    {
+      "key": "390-legacy",
+      "action": "unsave",
+      "text": "저장한 프로필에서 삭제했습니다."
+    },
+    {
+      "key": "390-legacy",
+      "action": "share",
+      "text": "프로필 링크를 복사했습니다."
+    },
+    {
+      "key": "390-legacy",
+      "action": "search",
+      "text": "데모 프로필만 볼 수 있습니다. 실제 Riot ID 검색은 아직 제공하지 않습니다."
+    },
+    {
+      "key": "390-legacy",
+      "action": "refresh",
+      "text": "데모 화면을 새로 확인했습니다. 예시 데이터는 변경되지 않습니다."
+    },
+    {
+      "key": "390-new",
+      "action": "save",
+      "text": "이 브라우저에 프로필을 저장했습니다."
+    },
+    {
+      "key": "390-new",
+      "action": "unsave",
+      "text": "저장한 프로필에서 삭제했습니다."
+    },
+    {
+      "key": "390-new",
+      "action": "share",
+      "text": "프로필 링크를 복사했습니다."
+    },
+    {
+      "key": "390-new",
+      "action": "search",
+      "text": "데모 프로필만 볼 수 있습니다. 실제 Riot ID 검색은 아직 제공하지 않습니다."
+    }
+  ],
+  "styles": [
+    {
+      "key": "1440-legacy",
+      "savedColor": "rgb(40, 91, 81)",
+      "accountColor": "rgb(201, 54, 72)"
+    },
+    {
+      "key": "1440-new",
+      "savedColor": "rgb(40, 91, 81)",
+      "accountColor": "rgb(201, 54, 72)"
+    },
+    {
+      "key": "390-legacy",
+      "savedColor": "rgb(40, 91, 81)",
+      "accountColor": "rgb(201, 54, 72)"
+    },
+    {
+      "key": "390-new",
+      "savedColor": "rgb(40, 91, 81)",
+      "accountColor": "rgb(201, 54, 72)"
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "status": "PASS"
+}

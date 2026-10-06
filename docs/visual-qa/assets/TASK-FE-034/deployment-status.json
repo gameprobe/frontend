@@ -1,0 +1,22 @@
+{
+  "checkedDate": "2026-09-28",
+  "source": "Connected Vercel list/get deployment tools; browser results in live.json",
+  "project": "valorant-platform",
+  "production": {
+    "id": "dpl_78x98XcC3QL6EZVpet2xCgq8UPsL",
+    "commit": "189c1eb2d8e1c9525ad0a10eb5f131043d95d703",
+    "state": "READY",
+    "alias": "www.game-probe.com"
+  },
+  "dev": {
+    "id": "dpl_DNTby9prVx6ah3ceS79kCD6NXoXz",
+    "commit": "6249e145a66c00423ff873619ee2fb39ed603b23",
+    "state": "BLOCKED",
+    "errorLink": "https://vercel.com/docs/deployments/troubleshoot-project-collaboration#team-configuration"
+  },
+  "limitations": [
+    "get_project connector schema mismatch; project settings not verified",
+    "get_deployment_build_logs tool not found; no exact author/membership cause confirmed",
+    "No deployment, account changes, merge or submission performed"
+  ]
+}

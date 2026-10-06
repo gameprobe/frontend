@@ -1,0 +1,37 @@
+[
+  {
+    "name": "real API rejects invalid token and accepts isolated test token",
+    "status": "PASS"
+  },
+  {
+    "name": "real API round trip for 0 intermediate points",
+    "status": "PASS",
+    "id": "d112afb7-f8c5-4f44-884c-65fbc4faa406"
+  },
+  {
+    "name": "real API round trip for 1 intermediate points",
+    "status": "PASS",
+    "id": "17d410c1-3bc4-4204-a813-94560fa2a936"
+  },
+  {
+    "name": "real API round trip for 2 intermediate points",
+    "status": "PASS",
+    "id": "ce75130a-7c7c-407c-909c-e2cc41d3c7b7"
+  },
+  {
+    "name": "real API VIDEO media persistence",
+    "status": "PASS"
+  },
+  {
+    "name": "legacy multiple markers preserved by status update",
+    "status": "PASS"
+  },
+  {
+    "name": "real API rejects missing description, incomplete/out-of-range points, invalid media URL",
+    "status": "PASS"
+  },
+  {
+    "name": "real API deletion returns 204 and subsequent reads return 404",
+    "status": "PASS"
+  }
+]

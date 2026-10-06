@@ -1,0 +1,104 @@
+{
+  "checks": [
+    {
+      "name": "1440px 404 preserves the matching failure message",
+      "status": "PASS",
+      "text": "자료가 없거나 더 이상 공개되어 있지 않습니다."
+    },
+    {
+      "name": "1440px 500 preserves the matching failure message",
+      "status": "PASS",
+      "text": "서버에서 요청을 처리하지 못했습니다. 잠시 후 다시 시도해 주세요."
+    },
+    {
+      "name": "1440px offline preserves the matching failure message",
+      "status": "PASS",
+      "text": "서버에 연결하지 못했습니다. 연결을 확인한 뒤 다시 시도해 주세요."
+    },
+    {
+      "name": "1440px demo fallback survives 404",
+      "status": "PASS"
+    },
+    {
+      "name": "1440px demo fallback survives offline",
+      "status": "PASS"
+    },
+    {
+      "name": "1440px legacy second URL null stays empty; selecting first restores only first media",
+      "status": "PASS"
+    },
+    {
+      "name": "1440px legacy second URL undefined stays empty; selecting first restores only first media",
+      "status": "PASS"
+    },
+    {
+      "name": "1440px legacy second URL empty stays empty; selecting first restores only first media",
+      "status": "PASS"
+    },
+    {
+      "name": "1440px legacy first and second URLs remain separately selectable",
+      "status": "PASS"
+    },
+    {
+      "name": "1440px registered VIDEO and IMAGE media still render their own source",
+      "status": "PASS"
+    },
+    {
+      "name": "1440px zero-marker record retains generic empty guidance",
+      "status": "PASS"
+    },
+    {
+      "name": "390px 404 preserves the matching failure message",
+      "status": "PASS",
+      "text": "자료가 없거나 더 이상 공개되어 있지 않습니다."
+    },
+    {
+      "name": "390px 500 preserves the matching failure message",
+      "status": "PASS",
+      "text": "서버에서 요청을 처리하지 못했습니다. 잠시 후 다시 시도해 주세요."
+    },
+    {
+      "name": "390px offline preserves the matching failure message",
+      "status": "PASS",
+      "text": "서버에 연결하지 못했습니다. 연결을 확인한 뒤 다시 시도해 주세요."
+    },
+    {
+      "name": "390px demo fallback survives 404",
+      "status": "PASS"
+    },
+    {
+      "name": "390px demo fallback survives offline",
+      "status": "PASS"
+    },
+    {
+      "name": "390px legacy second URL null stays empty; selecting first restores only first media",
+      "status": "PASS"
+    },
+    {
+      "name": "390px legacy second URL undefined stays empty; selecting first restores only first media",
+      "status": "PASS"
+    },
+    {
+      "name": "390px legacy second URL empty stays empty; selecting first restores only first media",
+      "status": "PASS"
+    },
+    {
+      "name": "390px legacy first and second URLs remain separately selectable",
+      "status": "PASS"
+    },
+    {
+      "name": "390px registered VIDEO and IMAGE media still render their own source",
+      "status": "PASS"
+    },
+    {
+      "name": "390px zero-marker record retains generic empty guidance",
+      "status": "PASS"
+    },
+    {
+      "name": "zero page exceptions, broken images, horizontal overflow or API writes",
+      "status": "PASS"
+    }
+  ],
+  "pageErrors": [],
+  "blockedWrites": []
+}

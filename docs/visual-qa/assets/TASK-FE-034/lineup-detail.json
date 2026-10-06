@@ -1,0 +1,14 @@
+{
+  "checks": [
+    {
+      "id": "ascent-sova-a-main-recon-001",
+      "expected": "existing mock detail fallback"
+    },
+    {
+      "id": "fe034-missing-lineup",
+      "expected": "missing/error recovery"
+    }
+  ],
+  "errors": [],
+  "apiRequests": []
+}

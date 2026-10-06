@@ -1,0 +1,60 @@
+/*
+ * 홈(HomeLanding)·프로필(TrackerProfile)의 최상위 main에 붙이는 공통 테마.
+ * 바깥 배경만 해당 main이 있는 body에도 연결하며, 라인업으로 이동하면 해제된다.
+ * 기본 변수의 우선순위를 낮춰 각 화면의 반응형 덮어쓰기를 유지한다.
+ * 개별 카드·모바일 규칙의 고정값까지 모두 제어하는 설정은 아니다.
+ */
+:where(.theme) {
+  /* 글자 크기: 배치 폭·간격과 별개로 조정한다. */
+  --font-caption:12px; /* 표 머리글, 통계 라벨, 작은 설명, 푸터 */
+  --font-meta:13px; /* 요원 플레이 시간, 경기 시간·요원명, 브랜드 바 보조 문구 */
+  --font-body:14px; /* 기본 본문, 내비게이션, 홈 설명·버튼 */
+  --font-value:16px; /* 일반 수치, 요원·맵 이름, 검색 입력 */
+  --font-section:18px; /* 섹션 제목, 경기 일자, 상단 브랜드명 */
+  --font-heading:20px; /* 주요 통계 값, 홈 소개 카드 제목 */
+  --font-feature:24px; /* 종합 점수, 강조 수치, 홈 분석 예시 점수 */
+  --font-title:28px; /* 프로필 사용자 이름과 큰 랭크 수치 */
+  --font-home-title:38px; /* 홈 대표 문구. HomeLanding CSS에서 36/30px로 반응형 조정 */
+
+  /* 배치: 홈·프로필의 본문 폭과 기본 여백 */
+  --content-max:1440px; /* 두 화면의 본문 최대 폭 */
+  --sidebar-width:272px; /* 프로필 왼쪽 통계 열. TrackerProfile CSS에서 1500px 이상은 288px */
+  --space-card:14px; /* 프로필 시즌 통계·점수 카드의 내부 여백/일부 간격 */
+  --space-section:18px; /* 본문·섹션·사이드바 및 홈 소개 영역 간격 */
+  --brand-height:40px; /* 최상단 브랜드 바 기본 높이. 모바일은 화면 CSS의 44px 사용 */
+  --nav-height:54px; /* 검색·메뉴 바 기본 높이. 모바일은 화면 CSS의 56px 사용 */
+  --radius:14px; /* 일반 카드와 홈 소개 영역의 모서리. 일부 모바일·개별 카드 규칙 우선 */
+  --gap:18px; /* 프로필 좌우 열과 홈 소개 카드 사이 기본 간격 */
+
+  /* 색상: 변수로 연결된 영역에 적용되는 공통 팔레트 */
+  --panel:#111d26; /* 일반 통계·홈 소개 카드, 프로필 시즌 카드의 아래 배경 */
+  --raised:#202b37; /* 현재 랭크·홈 분석 카드, More 메뉴, 승률 도넛 내부 */
+  --line:#26313c; /* 내비게이션·메뉴·표·푸터 및 홈 소개 카드 테두리 */
+  --text:#e9edef; /* 기본 글자, 제목, 활성 메뉴 */
+  --muted:#b4c2cf; /* 보조 설명, 시간·통계 라벨, 비활성 문구 */
+  --accent:#f05260; /* 문자 로고, 활성 표시, 강조 장식·일부 패배 표시 */
+  /* 홈 데모·계정 연결·미저장 프로필·기록 없음 복귀의 주요 행동 버튼. */
+  --action-bg:#c93648;
+  --action-hover:#b52d3e;
+  --action-text:#fff;
+  --green:#6ad6b3; /* 승리·긍정 수치, 명중 분포, 홈 예시 차트 */
+  --gold:#d8c879; /* 강조 수치, 예시 배지, 키보드 포커스 테두리 */
+}
+
+/* body는 main의 변수를 상속받지 못하므로, 배경값 하나를 두 대상이 공유한다. */
+:where(.theme), :global(body):has(.theme) {
+  --bg:#0e141a; /* 홈·프로필 main과 바깥 페이지 배경. 다른 변수는 main 안에만 둔다. */
+}
+
+:global(body):has(.theme) {
+  background:var(--bg);
+}
+
+.theme {
+  background:var(--bg);
+  color:var(--text);
+  /* 두 화면의 기본 글꼴·본문 크기·줄 간격. 개별 제목/입력 규칙은 화면 CSS에 있다. */
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:var(--font-body);
+  line-height:1.35;
+}

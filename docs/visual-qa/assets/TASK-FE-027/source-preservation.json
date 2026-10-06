@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checks": {
+    "lineups_data_state_effect_and_preview_unchanged": true,
+    "frontend/src/components/LineupSearchFilter.tsx unchanged": true,
+    "frontend/src/components/SmokeSearchFilter.tsx unchanged": true,
+    "frontend/src/app/globals.css unchanged": true,
+    "frontend/src/features/stats-shell/StatsHeader.tsx unchanged": true
+  }
+}

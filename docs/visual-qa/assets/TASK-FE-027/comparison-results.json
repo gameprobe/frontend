@@ -1,0 +1,51 @@
+{
+  "state_comparisons": [
+    {
+      "name": "1440-lineups-ascent",
+      "pins_paths_rotation": "identical"
+    },
+    {
+      "name": "1440-smokes-ascent",
+      "pins_paths_rotation": "identical"
+    },
+    {
+      "name": "820-lineups-ascent",
+      "pins_paths_rotation": "identical"
+    },
+    {
+      "name": "820-smokes-ascent",
+      "pins_paths_rotation": "identical"
+    },
+    {
+      "name": "390-lineups-ascent",
+      "pins_paths_rotation": "identical"
+    },
+    {
+      "name": "390-smokes-ascent",
+      "pins_paths_rotation": "identical"
+    }
+  ],
+  "regression": [
+    {
+      "name": "1440-home",
+      "size": [
+        1440,
+        1119
+      ],
+      "changed_pixels": 0,
+      "difference_bbox": null,
+      "DOM_style_rect": "identical"
+    },
+    {
+      "name": "1440-profile",
+      "size": [
+        1440,
+        4408
+      ],
+      "changed_pixels": 0,
+      "difference_bbox": null,
+      "DOM_style_rect": "identical"
+    }
+  ],
+  "status": "PASS"
+}

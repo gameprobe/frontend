@@ -1,0 +1,40 @@
+{
+  "title": "[테스트] 어비스 브림스톤 A 사이트 · 꺾이는 경로",
+  "source": "https://strats.gg/valorant/lineups/post-plant-molly-a-site-10727?map=abyss&agent=brimstone",
+  "checks": [
+    "Real admin token login",
+    "Saved record survives editor reload",
+    "Custom Brimstone ability and Q slot survive reload",
+    "Anonymous API exposes published registration",
+    "One origin, one destination and one intermediate point retained",
+    "Clicked coordinates round-trip within 0.5% of the map",
+    "All existing records are unchanged",
+    "No duplicate or unrelated record created",
+    "Destination selection and origin hover show the saved rotated path",
+    "Origin click opens the exact saved detail",
+    "Detail retains the same unrotated ordered path",
+    "Original reference media link is available without copying video",
+    "Mobile detail has no horizontal page overflow",
+    "No admin or public JavaScript page errors"
+  ],
+  "created": false,
+  "id": "15f99bbd-3982-469e-b447-09f4ffcc4064",
+  "detailUrl": "http://localhost:3000/lineups/15f99bbd-3982-469e-b447-09f4ffcc4064",
+  "adminUrl": "http://localhost:3000/admin/lineups/15f99bbd-3982-469e-b447-09f4ffcc4064/edit",
+  "route": [
+    {
+      "x": 0.6393417987827785,
+      "y": 0.07448593683472338
+    },
+    {
+      "x": 0.4742404888922283,
+      "y": 0.2173717033586295
+    },
+    {
+      "x": 0.45500538482730984,
+      "y": 0.14341172640068126
+    }
+  ],
+  "retainedForUserReview": true,
+  "completedAt": "2026-10-04T15:55:08.844Z"
+}

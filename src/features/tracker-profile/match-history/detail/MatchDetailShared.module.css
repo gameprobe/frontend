@@ -1,0 +1,41 @@
+/* TrackerMatchPanel.panel에서만 합성한다. 다섯 상세 탭에 상속되며 인라인·프로필 밖에는 적용되지 않는다. */
+.theme {
+  /* 모달 기본 글자·배경·강조색. 기존 탭의 변수 이름과 색상값을 유지한다. */
+  --text: #e5e7eb;
+  --muted: #aab8c7;
+  --green: #00d3aa;
+  --accent: #ff4655;
+  --panel: #0f1923;
+  --raised: #1b2935;
+  --line: #293d4d;
+
+  /* 헤더·탭·표 제목과 팀 구분 배경: 탭별 배치와 명암 차이는 각 CSS에 남긴다. */
+  --detail-chrome: #2c3f52;
+  --detail-team-a-background: #104e48;
+  --detail-team-b-background: #4b2333;
+
+  /* Performance/Duels의 본문·보조 설명·선수 식별 문구. 비슷한 다른 회색과 통일하지 않는다. */
+  --detail-content-text: #edf3f8;
+  --detail-secondary-text: #b4c2cf;
+  --detail-identity-text: #c4d0da;
+  --detail-team-b-text: #ff7883;
+  --detail-focus-ring: #b9d9f1;
+}
+
+/* Performance의 선수 선택·라운드·분포 표와 Duels 매트릭스에만 합성한다.
+   Scoreboard/Rounds는 스크롤 조건이 달라 각각의 로컬 규칙을 유지한다. */
+.horizontalScroll {
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+}
+
+/* Performance/Duels에서 경기 또는 조회 선수 기록이 없을 때 표시하는 동일한 안내.
+   Economy 그래프·Rounds 안내 박스·전체 모달 fallback은 각 탭의 별도 형태를 유지한다. */
+.emptyDetail {
+  padding: 24px;
+  color: var(--detail-secondary-text);
+  font-size: 16px;
+}
+.emptyDetail h3 { margin: 0 0 8px; color: var(--detail-content-text); }
+.emptyDetail p { margin: 0; }

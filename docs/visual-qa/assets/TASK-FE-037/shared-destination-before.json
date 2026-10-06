@@ -1,0 +1,21 @@
+{
+  "phase": "before",
+  "screens": [
+    "shared-destination-before-1440-shared-editor.png",
+    "shared-destination-before-1440-single-editor.png",
+    "shared-destination-before-390-shared-editor.png",
+    "shared-destination-before-390-single-editor.png"
+  ],
+  "checks": [
+    {
+      "width": 1440,
+      "capture": "PASS"
+    },
+    {
+      "width": 390,
+      "capture": "PASS"
+    }
+  ],
+  "errors": [],
+  "apiRequests": []
+}

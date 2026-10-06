@@ -1,0 +1,92 @@
+{
+  "checks": [
+    "1440 lineups: Tab reaches hovered map card",
+    "1440 lineups: actual keyboard focus-visible",
+    "1440 lineups: pointer remains over same card",
+    "1440 lineups: computed outline under hover",
+    "1440 smokes: Tab reaches hovered map card",
+    "1440 smokes: actual keyboard focus-visible",
+    "1440 smokes: pointer remains over same card",
+    "1440 smokes: computed outline under hover",
+    "390 lineups: Tab reaches hovered map card",
+    "390 lineups: actual keyboard focus-visible",
+    "390 lineups: pointer remains over same card",
+    "390 lineups: computed outline under hover",
+    "390 smokes: Tab reaches hovered map card",
+    "390 smokes: actual keyboard focus-visible",
+    "390 smokes: pointer remains over same card",
+    "390 smokes: computed outline under hover",
+    "No page errors",
+    "No console errors"
+  ],
+  "layouts": [],
+  "focus": [
+    {
+      "width": 1440,
+      "kind": "lineups",
+      "rect": {
+        "x": 45,
+        "y": 415.953125,
+        "width": 440.65625,
+        "height": 160
+      },
+      "focusVisible": true,
+      "hover": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "width": 1440,
+      "kind": "smokes",
+      "rect": {
+        "x": 45,
+        "y": 439.75,
+        "width": 440.65625,
+        "height": 160
+      },
+      "focusVisible": true,
+      "hover": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "width": 390,
+      "kind": "lineups",
+      "rect": {
+        "x": 27,
+        "y": 553.9375,
+        "width": 163,
+        "height": 120
+      },
+      "focusVisible": true,
+      "hover": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "width": 390,
+      "kind": "smokes",
+      "rect": {
+        "x": 27,
+        "y": 580.53125,
+        "width": 163,
+        "height": 120
+      },
+      "focusVisible": true,
+      "hover": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "status": "PASS"
+}

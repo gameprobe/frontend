@@ -1,0 +1,88 @@
+{
+  "results": [
+    {
+      "page": "home",
+      "width": 1440,
+      "below_header_changed_pixels": 82,
+      "header_geometry_unchanged": true,
+      "document_overflow": 0
+    },
+    {
+      "page": "profile",
+      "width": 1440,
+      "below_header_changed_pixels": 0,
+      "header_geometry_unchanged": true,
+      "document_overflow": 0
+    },
+    {
+      "page": "lineups",
+      "width": 1440,
+      "below_header_changed_pixels": 16,
+      "header_geometry_unchanged": true,
+      "document_overflow": 0
+    },
+    {
+      "page": "smokes",
+      "width": 1440,
+      "below_header_changed_pixels": 23,
+      "header_geometry_unchanged": true,
+      "document_overflow": 0
+    },
+    {
+      "page": "home",
+      "width": 820,
+      "below_header_changed_pixels": 0,
+      "header_geometry_unchanged": true,
+      "document_overflow": 0
+    },
+    {
+      "page": "profile",
+      "width": 820,
+      "below_header_changed_pixels": 0,
+      "header_geometry_unchanged": true,
+      "document_overflow": 0
+    },
+    {
+      "page": "lineups",
+      "width": 820,
+      "below_header_changed_pixels": 0,
+      "header_geometry_unchanged": true,
+      "document_overflow": 0
+    },
+    {
+      "page": "smokes",
+      "width": 820,
+      "below_header_changed_pixels": 34,
+      "header_geometry_unchanged": true,
+      "document_overflow": 0
+    },
+    {
+      "page": "home",
+      "width": 390,
+      "below_header_changed_pixels": 0,
+      "header_geometry_unchanged": true,
+      "document_overflow": 0
+    },
+    {
+      "page": "profile",
+      "width": 390,
+      "below_header_changed_pixels": 0,
+      "header_geometry_unchanged": true,
+      "document_overflow": 0
+    },
+    {
+      "page": "lineups",
+      "width": 390,
+      "below_header_changed_pixels": 0,
+      "header_geometry_unchanged": true,
+      "document_overflow": 0
+    },
+    {
+      "page": "smokes",
+      "width": 390,
+      "below_header_changed_pixels": 34,
+      "header_geometry_unchanged": true,
+      "document_overflow": 0
+    }
+  ]
+}

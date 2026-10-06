@@ -1,0 +1,56 @@
+[
+  {
+    "width": 1440,
+    "status": 200,
+    "participants": 10,
+    "rounds": 22,
+    "participantFieldsCompared": 50,
+    "roundFieldsCompared": 88,
+    "documentOverflow": false,
+    "tableScrollWidth": 1398,
+    "tableClientWidth": 1398,
+    "minTextSize": 12,
+    "headerBackground": "rgb(17, 29, 38)",
+    "keyboardFocus": {
+      "width": "2px",
+      "style": "solid"
+    },
+    "browserErrors": []
+  },
+  {
+    "width": 820,
+    "status": 200,
+    "participants": 10,
+    "rounds": 22,
+    "participantFieldsCompared": 50,
+    "roundFieldsCompared": 88,
+    "documentOverflow": false,
+    "tableScrollWidth": 778,
+    "tableClientWidth": 778,
+    "minTextSize": 12,
+    "headerBackground": "rgb(17, 29, 38)",
+    "keyboardFocus": {
+      "width": "2px",
+      "style": "solid"
+    },
+    "browserErrors": []
+  },
+  {
+    "width": 390,
+    "status": 200,
+    "participants": 10,
+    "rounds": 22,
+    "participantFieldsCompared": 50,
+    "roundFieldsCompared": 88,
+    "documentOverflow": false,
+    "tableScrollWidth": 580,
+    "tableClientWidth": 364,
+    "minTextSize": 12,
+    "headerBackground": "rgb(17, 29, 38)",
+    "keyboardFocus": {
+      "width": "2px",
+      "style": "solid"
+    },
+    "browserErrors": []
+  }
+]

@@ -1,0 +1,81 @@
+{
+  "checks": 230,
+  "cases": [
+    {
+      "width": 1440,
+      "mode": "success",
+      "status": "PASS"
+    },
+    {
+      "width": 1440,
+      "mode": "no-video",
+      "status": "PASS"
+    },
+    {
+      "width": 1440,
+      "mode": "loading",
+      "status": "PASS"
+    },
+    {
+      "width": 1440,
+      "mode": "error",
+      "status": "PASS"
+    },
+    {
+      "width": 1440,
+      "mode": "fallback",
+      "status": "PASS"
+    },
+    {
+      "width": 820,
+      "mode": "success",
+      "status": "PASS"
+    },
+    {
+      "width": 820,
+      "mode": "no-video",
+      "status": "PASS"
+    },
+    {
+      "width": 820,
+      "mode": "loading",
+      "status": "PASS"
+    },
+    {
+      "width": 820,
+      "mode": "error",
+      "status": "PASS"
+    },
+    {
+      "width": 820,
+      "mode": "fallback",
+      "status": "PASS"
+    },
+    {
+      "width": 390,
+      "mode": "success",
+      "status": "PASS"
+    },
+    {
+      "width": 390,
+      "mode": "no-video",
+      "status": "PASS"
+    },
+    {
+      "width": 390,
+      "mode": "loading",
+      "status": "PASS"
+    },
+    {
+      "width": 390,
+      "mode": "error",
+      "status": "PASS"
+    },
+    {
+      "width": 390,
+      "mode": "fallback",
+      "status": "PASS"
+    }
+  ],
+  "errors": []
+}

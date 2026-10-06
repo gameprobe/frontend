@@ -1,0 +1,712 @@
+{
+  "task": "TASK-FE-018",
+  "baseline": "17da56c",
+  "status": "PASS",
+  "environment": {
+    "browser": "Playwright Chromium headless",
+    "zoom": "100%",
+    "deviceScaleFactor": 1,
+    "primaryViewports": [
+      [
+        1920,
+        960
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "additionalWidths": [
+      320,
+      768,
+      1000,
+      1440
+    ]
+  },
+  "closedScreenComparison": {
+    "conditions": [
+      {
+        "name": "desktop-home",
+        "status": "unchanged"
+      },
+      {
+        "name": "desktop-profile",
+        "status": "unchanged"
+      },
+      {
+        "name": "mobile-home",
+        "status": "unchanged"
+      },
+      {
+        "name": "mobile-profile",
+        "status": "unchanged"
+      }
+    ],
+    "computedStyleProperties": 23,
+    "pixels": [
+      {
+        "name": "desktop-home",
+        "size": [
+          1920,
+          1076
+        ],
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      },
+      {
+        "name": "desktop-profile",
+        "size": [
+          1920,
+          4408
+        ],
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      },
+      {
+        "name": "mobile-home",
+        "size": [
+          390,
+          1486
+        ],
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      },
+      {
+        "name": "mobile-profile",
+        "size": [
+          390,
+          7388
+        ],
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    ],
+    "method": "All main DOM elements, text, viewport coordinates, computed styles, ARIA/id/image/SVG attributes and full-page PNG compared exactly."
+  },
+  "detailChecks": {
+    "count": 22,
+    "checks": [
+      "desktop: Home and closed profile DOM/styles/positions unchanged",
+      "desktop: Four detail tabs, unique ARIA linkage and Mock notice",
+      "desktop: Arrow keys switch and wrap detail tabs with focus",
+      "desktop: Round selector keyboard updates selection",
+      "desktop: Viewer row matches selected player and scoreboard columns remain scrollable",
+      "desktop: Close/reopen and different row reset to scoreboard",
+      "desktop: Recent strip opens target and resets detail tab",
+      "desktop: Match filter closes detail and resets displayed rows",
+      "desktop: Profile tab closes detail and Load more rows retain detail support",
+      "desktop: Deathmatch tabs show explicit missing data and personal metrics without fabricated team table",
+      "desktop: Other profile keeps its own viewer identity in detail",
+      "mobile: Home and closed profile DOM/styles/positions unchanged",
+      "mobile: Four detail tabs, unique ARIA linkage and Mock notice",
+      "mobile: Arrow keys switch and wrap detail tabs with focus",
+      "mobile: Round selector keyboard updates selection",
+      "mobile: Viewer row matches selected player and scoreboard columns remain scrollable",
+      "mobile: Close/reopen and different row reset to scoreboard",
+      "mobile: Recent strip opens target and resets detail tab",
+      "mobile: Match filter closes detail and resets displayed rows",
+      "mobile: Profile tab closes detail and Load more rows retain detail support",
+      "mobile: Deathmatch tabs show explicit missing data and personal metrics without fabricated team table",
+      "mobile: Other profile keeps its own viewer identity in detail"
+    ],
+    "pageErrors": [],
+    "ariaTabRecords": [
+      {
+        "size": "desktop",
+        "label": "스코어보드",
+        "id": "scoreboard",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-scoreboard-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "라운드",
+        "id": "rounds",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-rounds-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "성과",
+        "id": "performance",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-performance-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "분석",
+        "id": "analysis",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-analysis-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "스코어보드",
+        "id": "scoreboard",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-scoreboard-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "분석",
+        "id": "analysis",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-analysis-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "성과",
+        "id": "performance",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-performance-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "분석",
+        "id": "analysis",
+        "matchId": "mock-match-02",
+        "panelId": "match-mock-match-02-analysis-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "분석",
+        "id": "analysis",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-analysis-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "스코어보드",
+        "id": "scoreboard",
+        "matchId": "mock-match-28",
+        "panelId": "match-mock-match-28-scoreboard-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "라운드",
+        "id": "rounds",
+        "matchId": "mock-match-28",
+        "panelId": "match-mock-match-28-rounds-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "성과",
+        "id": "performance",
+        "matchId": "mock-match-28",
+        "panelId": "match-mock-match-28-performance-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "분석",
+        "id": "analysis",
+        "matchId": "mock-match-28",
+        "panelId": "match-mock-match-28-analysis-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "성과",
+        "id": "performance",
+        "matchId": "mock-match-28",
+        "panelId": "match-mock-match-28-performance-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "스코어보드",
+        "id": "scoreboard",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-scoreboard-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "라운드",
+        "id": "rounds",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-rounds-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "성과",
+        "id": "performance",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-performance-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "분석",
+        "id": "analysis",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-analysis-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "스코어보드",
+        "id": "scoreboard",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-scoreboard-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "라운드",
+        "id": "rounds",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-rounds-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "성과",
+        "id": "performance",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-performance-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "분석",
+        "id": "analysis",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-analysis-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "스코어보드",
+        "id": "scoreboard",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-scoreboard-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "라운드",
+        "id": "rounds",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-rounds-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "성과",
+        "id": "performance",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-performance-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "분석",
+        "id": "analysis",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-analysis-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "스코어보드",
+        "id": "scoreboard",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-scoreboard-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "라운드",
+        "id": "rounds",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-rounds-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "성과",
+        "id": "performance",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-performance-panel"
+      },
+      {
+        "size": "desktop",
+        "label": "분석",
+        "id": "analysis",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-analysis-panel"
+      },
+      {
+        "size": "mobile",
+        "label": "스코어보드",
+        "id": "scoreboard",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-scoreboard-panel"
+      },
+      {
+        "size": "mobile",
+        "label": "라운드",
+        "id": "rounds",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-rounds-panel"
+      },
+      {
+        "size": "mobile",
+        "label": "성과",
+        "id": "performance",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-performance-panel"
+      },
+      {
+        "size": "mobile",
+        "label": "분석",
+        "id": "analysis",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-analysis-panel"
+      },
+      {
+        "size": "mobile",
+        "label": "스코어보드",
+        "id": "scoreboard",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-scoreboard-panel"
+      },
+      {
+        "size": "mobile",
+        "label": "분석",
+        "id": "analysis",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-analysis-panel"
+      },
+      {
+        "size": "mobile",
+        "label": "성과",
+        "id": "performance",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-performance-panel"
+      },
+      {
+        "size": "mobile",
+        "label": "분석",
+        "id": "analysis",
+        "matchId": "mock-match-02",
+        "panelId": "match-mock-match-02-analysis-panel"
+      },
+      {
+        "size": "mobile",
+        "label": "분석",
+        "id": "analysis",
+        "matchId": "mock-match-01",
+        "panelId": "match-mock-match-01-analysis-panel"
+      },
+      {
+        "size": "mobile",
+        "label": "스코어보드",
+        "id": "scoreboard",
+        "matchId": "mock-match-28",
+        "panelId": "match-mock-match-28-scoreboard-panel"
+      },
+      {
+        "size": "mobile",
+        "label": "라운드",
+        "id": "rounds",
+        "matchId": "mock-match-28",
+        "panelId": "match-mock-match-28-rounds-panel"
+      },
+      {
+        "size": "mobile",
+        "label": "성과",
+        "id": "performance",
+        "matchId": "mock-match-28",
+        "panelId": "match-mock-match-28-performance-panel"
+      },
+      {
+        "size": "mobile",
+        "label": "분석",
+        "id": "analysis",
+        "matchId": "mock-match-28",
+        "panelId": "match-mock-match-28-analysis-panel"
+      },
+      {
+        "size": "mobile",
+        "label": "성과",
+        "id": "performance",
+        "matchId": "mock-match-28",
+        "panelId": "match-mock-match-28-performance-panel"
+      }
+    ],
+    "responsive": [
+      {
+        "width": 320,
+        "tab": "scoreboard",
+        "pageOverflow": 0
+      },
+      {
+        "width": 320,
+        "tab": "rounds",
+        "pageOverflow": 0
+      },
+      {
+        "width": 320,
+        "tab": "performance",
+        "pageOverflow": 0
+      },
+      {
+        "width": 320,
+        "tab": "analysis",
+        "pageOverflow": 0
+      },
+      {
+        "width": 768,
+        "tab": "scoreboard",
+        "pageOverflow": 0
+      },
+      {
+        "width": 768,
+        "tab": "rounds",
+        "pageOverflow": 0
+      },
+      {
+        "width": 768,
+        "tab": "performance",
+        "pageOverflow": 0
+      },
+      {
+        "width": 768,
+        "tab": "analysis",
+        "pageOverflow": 0
+      },
+      {
+        "width": 1000,
+        "tab": "scoreboard",
+        "pageOverflow": 0
+      },
+      {
+        "width": 1000,
+        "tab": "rounds",
+        "pageOverflow": 0
+      },
+      {
+        "width": 1000,
+        "tab": "performance",
+        "pageOverflow": 0
+      },
+      {
+        "width": 1000,
+        "tab": "analysis",
+        "pageOverflow": 0
+      },
+      {
+        "width": 1440,
+        "tab": "scoreboard",
+        "pageOverflow": 0
+      },
+      {
+        "width": 1440,
+        "tab": "rounds",
+        "pageOverflow": 0
+      },
+      {
+        "width": 1440,
+        "tab": "performance",
+        "pageOverflow": 0
+      },
+      {
+        "width": 1440,
+        "tab": "analysis",
+        "pageOverflow": 0
+      }
+    ]
+  },
+  "existingRegression": {
+    "count": 18,
+    "checks": [
+      "home Search hover / keyboard focus without layout shift",
+      "Home More / Escape / focus",
+      "Home search existing demo route",
+      "Overview existing IED route",
+      "profile Search hover / keyboard focus without layout shift",
+      "Profile search empty/matching/other and existing toast timeout",
+      "Profile More preserves toggle without Home Escape behavior",
+      "Footer/account destinations and Mock notice dismissal",
+      "Sticky navigation",
+      "Six profile tabs",
+      "Agent card filters nine matches",
+      "One expanded match and detail tabs reset",
+      "Loss filter / reset / 20 to 23 matches",
+      "Act switch updates data",
+      "Empty state and season reset",
+      "Favorite persists with existing storage key",
+      "profile to lineups restores global shell",
+      "home to lineups restores global shell"
+    ],
+    "pageErrors": []
+  },
+  "captures": {
+    "beforePng": 8,
+    "afterPng": 21,
+    "totalPng": 29,
+    "detailCropSources": {
+      "after-desktop-detail-scoreboard.png": {
+        "source": "/tmp/fe018-after-full-desktop-detail-scoreboard.png",
+        "clip": [
+          577,
+          1848,
+          1649,
+          3021
+        ]
+      },
+      "after-desktop-detail-rounds.png": {
+        "source": "/tmp/fe018-after-full-desktop-detail-rounds.png",
+        "clip": [
+          577,
+          1848,
+          1649,
+          2591
+        ]
+      },
+      "after-desktop-detail-performance.png": {
+        "source": "/tmp/fe018-after-full-desktop-detail-performance.png",
+        "clip": [
+          577,
+          1848,
+          1649,
+          2943
+        ]
+      },
+      "after-desktop-detail-analysis.png": {
+        "source": "/tmp/fe018-after-full-desktop-detail-analysis.png",
+        "clip": [
+          577,
+          1848,
+          1649,
+          2583
+        ]
+      },
+      "after-desktop-round-selected.png": {
+        "source": "/tmp/fe018-after-full-desktop-round-selected.png",
+        "clip": [
+          577,
+          1848,
+          1649,
+          2591
+        ]
+      },
+      "after-desktop-deathmatch-missing.png": {
+        "source": "/tmp/fe018-after-full-desktop-deathmatch-missing.png",
+        "clip": [
+          577,
+          1086,
+          1649,
+          1689
+        ]
+      },
+      "after-desktop-alternate-identity.png": {
+        "source": "/tmp/fe018-after-full-desktop-alternate-identity.png",
+        "clip": [
+          577,
+          1848,
+          1649,
+          3021
+        ]
+      },
+      "after-mobile-detail-scoreboard.png": {
+        "source": "/tmp/fe018-after-full-mobile-detail-scoreboard.png",
+        "clip": [
+          20,
+          2257,
+          370,
+          3501
+        ]
+      },
+      "after-mobile-detail-rounds.png": {
+        "source": "/tmp/fe018-after-full-mobile-detail-rounds.png",
+        "clip": [
+          20,
+          2257,
+          370,
+          3139
+        ]
+      },
+      "after-mobile-detail-performance.png": {
+        "source": "/tmp/fe018-after-full-mobile-detail-performance.png",
+        "clip": [
+          20,
+          2257,
+          370,
+          3900
+        ]
+      },
+      "after-mobile-detail-analysis.png": {
+        "source": "/tmp/fe018-after-full-mobile-detail-analysis.png",
+        "clip": [
+          20,
+          2257,
+          370,
+          3079
+        ]
+      },
+      "after-mobile-round-selected.png": {
+        "source": "/tmp/fe018-after-full-mobile-round-selected.png",
+        "clip": [
+          20,
+          2257,
+          370,
+          3139
+        ]
+      },
+      "after-mobile-scoreboard-scrolled.png": {
+        "source": "/tmp/fe018-after-full-mobile-scoreboard-scrolled.png",
+        "clip": [
+          20,
+          2257,
+          370,
+          3501
+        ]
+      },
+      "after-mobile-deathmatch-missing.png": {
+        "source": "/tmp/fe018-after-full-mobile-deathmatch-missing.png",
+        "clip": [
+          20,
+          1156,
+          370,
+          1964
+        ]
+      },
+      "after-mobile-alternate-identity.png": {
+        "source": "/tmp/fe018-after-full-mobile-alternate-identity.png",
+        "clip": [
+          20,
+          2257,
+          370,
+          3501
+        ]
+      }
+    }
+  },
+  "intentionalChanges": [
+    "Prior inline Overview/Performance replaced by four scoreboard/rounds/performance/analysis tabs.",
+    "New detailed Mock samples and missing-data UI are visibly identified.",
+    "New detail panels are inspected for layout/readability, not expected to match previous detail pixels."
+  ],
+  "testSetupAdjustment": "Initial keyboard script was corrected to select Scoreboard before testing left-arrow wrap. Merely focusing an inactive tab does not update the active-tab state. This was a script assumption, not an application defect.",
+  "limitations": [
+    "Additional responsive checks assert tab operation/page overflow; full screenshots focus desktop and mobile reference sizes.",
+    "Native select popup keyboard menus are not claimed; value changes use selectOption. Button/round selector/tab/scoreboard scrolling keyboard events use actual keys.",
+    "Synthetic data validity and consistency are tested separately by implementation/data agents.",
+    "Full-page detail source captures and DOM data remain in /tmp; cropped UI artifacts retain unmodified pixels without masks or color adjustments."
+  ],
+  "qualitativeReview": {
+    "status": "PASS",
+    "reviewMethod": "Direct visual inspection of final desktop/mobile PNGs; closed home/profile also compared pixel-for-pixel.",
+    "reviewedImages": [
+      "after-desktop-detail-scoreboard.png",
+      "after-desktop-detail-rounds.png",
+      "after-desktop-detail-performance.png",
+      "after-desktop-detail-analysis.png",
+      "after-mobile-detail-scoreboard.png",
+      "after-mobile-detail-rounds.png",
+      "after-mobile-detail-performance.png",
+      "after-mobile-detail-analysis.png",
+      "after-mobile-scoreboard-scrolled.png",
+      "after-mobile-deathmatch-missing.png"
+    ],
+    "observations": [
+      "Desktop and mobile four-tab panels have no new overlapping text, broken card layout, or page-level horizontal overflow.",
+      "Mobile scoreboard intentionally scrolls horizontally inside each team table; final HS% column is reachable and captured.",
+      "Rounds shows an explicit missing-coordinate message without a fabricated map or location legend.",
+      "Deathmatch displays its detail-unavailable reason and personal performance summary; Damage (Avg) is shown and unsupported KAST is absent.",
+      "Missing FK/FD values use em dashes with a visible explanatory note; mock participant and telemetry data are labeled.",
+      "The four new detail tabs intentionally differ from the old two-tab before screenshots; unchanged home and closed-profile areas are exact matches."
+    ]
+  }
+}

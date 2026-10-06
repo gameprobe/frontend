@@ -1,0 +1,197 @@
+{
+  "results": [
+    {
+      "file": "after-1440-privacy-ko.png",
+      "route": "privacy",
+      "width": 1440,
+      "locale": "ko",
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "file": "after-1440-terms-ko.png",
+      "route": "terms",
+      "width": 1440,
+      "locale": "ko",
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "file": "after-1440-privacy-en.png",
+      "route": "privacy",
+      "width": 1440,
+      "locale": "en",
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "file": "after-1440-terms-en.png",
+      "route": "terms",
+      "width": 1440,
+      "locale": "en",
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "file": "after-390-privacy-ko.png",
+      "route": "privacy",
+      "width": 390,
+      "locale": "ko",
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "file": "after-390-terms-ko.png",
+      "route": "terms",
+      "width": 390,
+      "locale": "ko",
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "file": "after-390-privacy-en.png",
+      "route": "privacy",
+      "width": 390,
+      "locale": "en",
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "file": "after-390-terms-en.png",
+      "route": "terms",
+      "width": 390,
+      "locale": "en",
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "file": "after-320-privacy-ko.png",
+      "route": "privacy",
+      "width": 320,
+      "locale": "ko",
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "file": "after-320-terms-ko.png",
+      "route": "terms",
+      "width": 320,
+      "locale": "ko",
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "file": "after-320-privacy-en.png",
+      "route": "privacy",
+      "width": 320,
+      "locale": "en",
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "file": "after-320-terms-en.png",
+      "route": "terms",
+      "width": 320,
+      "locale": "en",
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "file": "after-1440-home-top.png",
+      "route": "/",
+      "width": 1440,
+      "locale": "ko",
+      "part": "top"
+    },
+    {
+      "file": "after-1440-home-footer.png",
+      "route": "/",
+      "width": 1440,
+      "locale": "ko",
+      "part": "footer",
+      "overflow": false
+    },
+    {
+      "file": "after-1440-profile-top.png",
+      "route": "/players/ied-agent-allen",
+      "width": 1440,
+      "locale": "ko",
+      "part": "top"
+    },
+    {
+      "file": "after-1440-profile-footer.png",
+      "route": "/players/ied-agent-allen",
+      "width": 1440,
+      "locale": "ko",
+      "part": "footer",
+      "overflow": false
+    },
+    {
+      "file": "after-1440-connect-footer.png",
+      "route": "/connect",
+      "width": 1440,
+      "locale": "ko",
+      "part": "footer",
+      "overflow": false
+    },
+    {
+      "file": "after-390-home-top.png",
+      "route": "/",
+      "width": 390,
+      "locale": "ko",
+      "part": "top"
+    },
+    {
+      "file": "after-390-home-footer.png",
+      "route": "/",
+      "width": 390,
+      "locale": "ko",
+      "part": "footer",
+      "overflow": false
+    },
+    {
+      "file": "after-390-profile-top.png",
+      "route": "/players/ied-agent-allen",
+      "width": 390,
+      "locale": "ko",
+      "part": "top"
+    },
+    {
+      "file": "after-390-profile-footer.png",
+      "route": "/players/ied-agent-allen",
+      "width": 390,
+      "locale": "ko",
+      "part": "footer",
+      "overflow": false
+    },
+    {
+      "file": "after-390-connect-footer.png",
+      "route": "/connect",
+      "width": 390,
+      "locale": "ko",
+      "part": "footer",
+      "overflow": false
+    }
+  ],
+  "checks": [
+    "policy links + contact anchor + placeholder non-link: 1440/ko",
+    "policy links + contact anchor + placeholder non-link: 1440/en",
+    "policy links + contact anchor + placeholder non-link: 390/ko",
+    "policy links + contact anchor + placeholder non-link: 390/en",
+    "policy links + contact anchor + placeholder non-link: 320/ko",
+    "policy links + contact anchor + placeholder non-link: 320/en",
+    "home/1440: 0 changed pixels (antialiasing excluded, threshold 0.1)",
+    "home/1440: shared footer + no document overflow",
+    "profile/1440: 0 changed pixels (antialiasing excluded, threshold 0.1)",
+    "profile/1440: shared footer + no document overflow",
+    "connect/1440: shared footer + no document overflow",
+    "connect consent + revoke preserved: 1440",
+    "home/390: 0 changed pixels (antialiasing excluded, threshold 0.1)",
+    "home/390: shared footer + no document overflow",
+    "profile/390: 0 changed pixels (antialiasing excluded, threshold 0.1)",
+    "profile/390: shared footer + no document overflow",
+    "connect/390: shared footer + no document overflow",
+    "connect consent + revoke preserved: 390"
+  ],
+  "errors": []
+}

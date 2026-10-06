@@ -1,0 +1,412 @@
+{
+  "checks": [
+    {
+      "name": "1440px ATTACK 1-intermediate list/detail consistency",
+      "status": "PASS",
+      "id": "15f99bbd-3982-469e-b447-09f4ffcc4064",
+      "canvas": {
+        "width": 640,
+        "height": 640,
+        "padding": "26px",
+        "transform": "matrix(0, 1, -1, 0, 0, 0)",
+        "fit": "contain",
+        "src": "/_next/image?url=%2Fassets%2Fmaps%2Fabyss.png&w=3840&q=75"
+      },
+      "route": {
+        "points": [
+          [
+            92.55140631652766,
+            63.93417987827785
+          ],
+          [
+            78.26282966413704,
+            47.42404888922283
+          ],
+          [
+            85.65882735993188,
+            45.50053848273098
+          ]
+        ],
+        "stroke": "rgb(106, 214, 179)",
+        "width": "3px",
+        "opacity": "0.65",
+        "dash": "none",
+        "effect": "non-scaling-stroke",
+        "join": "round",
+        "cap": "round"
+      },
+      "activeStroke": "rgb(216, 200, 121)",
+      "agents": [
+        {
+          "left": 92.5514,
+          "top": 63.9342,
+          "width": 40,
+          "height": 40,
+          "center": [
+            92.55126953125,
+            63.93310546874999
+          ],
+          "inStage": true
+        }
+      ],
+      "skills": [
+        {
+          "left": 85.6588,
+          "top": 45.5005,
+          "width": 40,
+          "height": 40,
+          "center": [
+            85.65673828125,
+            45.50048828125
+          ],
+          "inStage": true
+        }
+      ],
+      "source": "existing real published example, read only"
+    },
+    {
+      "name": "1440px DEFENSE 2-intermediate list/detail consistency",
+      "status": "PASS",
+      "id": "qa-defense-multiple-edges",
+      "canvas": {
+        "width": 640,
+        "height": 640,
+        "padding": "26px",
+        "transform": "matrix(0, -1, 1, 0, 0, 0)",
+        "fit": "contain",
+        "src": "/_next/image?url=%2Fassets%2Fmaps%2Fabyss.png&w=3840&q=75"
+      },
+      "route": {
+        "points": [
+          [
+            0,
+            100
+          ],
+          [
+            30,
+            80
+          ],
+          [
+            90,
+            30.000000000000004
+          ],
+          [
+            100,
+            0
+          ]
+        ],
+        "stroke": "rgb(106, 214, 179)",
+        "width": "3px",
+        "opacity": "0.65",
+        "dash": "none",
+        "effect": "non-scaling-stroke",
+        "join": "round",
+        "cap": "round"
+      },
+      "activeStroke": "rgb(216, 200, 121)",
+      "agents": [
+        {
+          "left": 0,
+          "top": 100,
+          "width": 40,
+          "height": 40,
+          "center": [
+            0,
+            100
+          ],
+          "inStage": true
+        }
+      ],
+      "skills": [
+        {
+          "left": 100,
+          "top": 0,
+          "width": 40,
+          "height": 40,
+          "center": [
+            100,
+            0
+          ],
+          "inStage": true
+        }
+      ],
+      "source": "intercepted synthetic GET responses"
+    },
+    {
+      "name": "1440px ATTACK 0-intermediate list/detail consistency",
+      "status": "PASS",
+      "id": "qa-attack-straight-edges",
+      "canvas": {
+        "width": 640,
+        "height": 640,
+        "padding": "26px",
+        "transform": "matrix(0, 1, -1, 0, 0, 0)",
+        "fit": "contain",
+        "src": "/_next/image?url=%2Fassets%2Fmaps%2Fabyss.png&w=3840&q=75"
+      },
+      "route": {
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            100,
+            100
+          ]
+        ],
+        "stroke": "rgb(106, 214, 179)",
+        "width": "3px",
+        "opacity": "0.65",
+        "dash": "none",
+        "effect": "non-scaling-stroke",
+        "join": "round",
+        "cap": "round"
+      },
+      "activeStroke": "rgb(216, 200, 121)",
+      "agents": [
+        {
+          "left": 0,
+          "top": 0,
+          "width": 40,
+          "height": 40,
+          "center": [
+            0,
+            0
+          ],
+          "inStage": true
+        }
+      ],
+      "skills": [
+        {
+          "left": 100,
+          "top": 100,
+          "width": 40,
+          "height": 40,
+          "center": [
+            100,
+            100
+          ],
+          "inStage": true
+        }
+      ],
+      "source": "intercepted synthetic GET responses"
+    },
+    {
+      "name": "1440px legacy multiple markers and selected media retained",
+      "status": "PASS",
+      "routePointCount": 2,
+      "agentMarkers": 2,
+      "skillMarkers": 2
+    },
+    {
+      "name": "390px ATTACK 1-intermediate list/detail consistency",
+      "status": "PASS",
+      "id": "15f99bbd-3982-469e-b447-09f4ffcc4064",
+      "canvas": {
+        "width": 316,
+        "height": 316,
+        "padding": "24px",
+        "transform": "matrix(0, 1, -1, 0, 0, 0)",
+        "fit": "contain",
+        "src": "/_next/image?url=%2Fassets%2Fmaps%2Fabyss.png&w=3840&q=75"
+      },
+      "route": {
+        "points": [
+          [
+            92.55140631652766,
+            63.93417987827785
+          ],
+          [
+            78.26282966413704,
+            47.42404888922283
+          ],
+          [
+            85.65882735993188,
+            45.50053848273098
+          ]
+        ],
+        "stroke": "rgb(106, 214, 179)",
+        "width": "3px",
+        "opacity": "0.65",
+        "dash": "none",
+        "effect": "non-scaling-stroke",
+        "join": "round",
+        "cap": "round"
+      },
+      "activeStroke": "rgb(216, 200, 121)",
+      "agents": [
+        {
+          "left": 92.5514,
+          "top": 63.9342,
+          "width": 40,
+          "height": 40,
+          "center": [
+            92.54845727848101,
+            63.93393987341772
+          ],
+          "inStage": true
+        }
+      ],
+      "skills": [
+        {
+          "left": 85.6588,
+          "top": 45.5005,
+          "width": 40,
+          "height": 40,
+          "center": [
+            85.65565664556962,
+            45.50039556962025
+          ],
+          "inStage": true
+        }
+      ],
+      "source": "existing real published example, read only"
+    },
+    {
+      "name": "390px DEFENSE 2-intermediate list/detail consistency",
+      "status": "PASS",
+      "id": "qa-defense-multiple-edges",
+      "canvas": {
+        "width": 316,
+        "height": 316,
+        "padding": "24px",
+        "transform": "matrix(0, -1, 1, 0, 0, 0)",
+        "fit": "contain",
+        "src": "/_next/image?url=%2Fassets%2Fmaps%2Fabyss.png&w=3840&q=75"
+      },
+      "route": {
+        "points": [
+          [
+            0,
+            100
+          ],
+          [
+            30,
+            80
+          ],
+          [
+            90,
+            30.000000000000004
+          ],
+          [
+            100,
+            0
+          ]
+        ],
+        "stroke": "rgb(106, 214, 179)",
+        "width": "3px",
+        "opacity": "0.65",
+        "dash": "none",
+        "effect": "non-scaling-stroke",
+        "join": "round",
+        "cap": "round"
+      },
+      "activeStroke": "rgb(216, 200, 121)",
+      "agents": [
+        {
+          "left": 0,
+          "top": 100,
+          "width": 40,
+          "height": 40,
+          "center": [
+            0,
+            100
+          ],
+          "inStage": true
+        }
+      ],
+      "skills": [
+        {
+          "left": 100,
+          "top": 0,
+          "width": 40,
+          "height": 40,
+          "center": [
+            100,
+            0
+          ],
+          "inStage": true
+        }
+      ],
+      "source": "intercepted synthetic GET responses"
+    },
+    {
+      "name": "390px ATTACK 0-intermediate list/detail consistency",
+      "status": "PASS",
+      "id": "qa-attack-straight-edges",
+      "canvas": {
+        "width": 316,
+        "height": 316,
+        "padding": "24px",
+        "transform": "matrix(0, 1, -1, 0, 0, 0)",
+        "fit": "contain",
+        "src": "/_next/image?url=%2Fassets%2Fmaps%2Fabyss.png&w=3840&q=75"
+      },
+      "route": {
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            100,
+            100
+          ]
+        ],
+        "stroke": "rgb(106, 214, 179)",
+        "width": "3px",
+        "opacity": "0.65",
+        "dash": "none",
+        "effect": "non-scaling-stroke",
+        "join": "round",
+        "cap": "round"
+      },
+      "activeStroke": "rgb(216, 200, 121)",
+      "agents": [
+        {
+          "left": 0,
+          "top": 0,
+          "width": 40,
+          "height": 40,
+          "center": [
+            0,
+            0
+          ],
+          "inStage": true
+        }
+      ],
+      "skills": [
+        {
+          "left": 100,
+          "top": 100,
+          "width": 40,
+          "height": 40,
+          "center": [
+            100,
+            100
+          ],
+          "inStage": true
+        }
+      ],
+      "source": "intercepted synthetic GET responses"
+    },
+    {
+      "name": "390px legacy multiple markers and selected media retained",
+      "status": "PASS",
+      "routePointCount": 2,
+      "agentMarkers": 2,
+      "skillMarkers": 2
+    },
+    {
+      "name": "existing database record unchanged and synthetic cases caused zero API writes",
+      "status": "PASS"
+    },
+    {
+      "name": "zero page exceptions, broken images, horizontal overflow or API writes",
+      "status": "PASS"
+    }
+  ],
+  "pageErrors": [],
+  "blockedWrites": []
+}

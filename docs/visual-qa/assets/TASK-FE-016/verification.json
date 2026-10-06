@@ -1,0 +1,1450 @@
+{
+  "task": "TASK-FE-016",
+  "date": "2026-09-20",
+  "baseline": "9e843468c36f7d8c966ce838ed6904bc83213307",
+  "branch": "codex/profile-sidebar-components",
+  "environment": {
+    "browser": "Playwright Chromium headless",
+    "zoom": "100%",
+    "deviceScaleFactor": 1,
+    "desktop": [
+      1920,
+      960
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "widths": [
+      320,
+      390,
+      480,
+      481,
+      700,
+      701,
+      768,
+      800,
+      801,
+      850,
+      851,
+      1000,
+      1001,
+      1100,
+      1101,
+      1250,
+      1251,
+      1440,
+      1499,
+      1500,
+      1920
+    ]
+  },
+  "comparison": {
+    "status": "PASS",
+    "conditions": 56,
+    "domDifferences": [],
+    "pageErrors": [],
+    "horizontalOverflow": 0,
+    "mainCount": 1,
+    "computedStyleProperties": 23,
+    "includes": [
+      "all main elements",
+      "tag and leaf text",
+      "bounding boxes",
+      "computed styles",
+      "image alt/src",
+      "aria attributes",
+      "SVG paths and points"
+    ]
+  },
+  "pixels": [
+    {
+      "name": "desktop-all-acts",
+      "size": [
+        288,
+        1772
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "desktop-console",
+      "size": [
+        288,
+        1715
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "desktop-deathmatch",
+      "size": [
+        288,
+        1715
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "desktop-empty",
+      "size": [
+        288,
+        1601
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "desktop-filtered-season",
+      "size": [
+        288,
+        1772
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "desktop-performance-tab",
+      "size": [
+        288,
+        1772
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "desktop-saved-refreshed",
+      "size": [
+        288,
+        1772
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "home-desktop",
+      "size": [
+        1920,
+        1076
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "home-mobile",
+      "size": [
+        390,
+        1486
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "mobile-all-acts",
+      "size": [
+        370,
+        1418
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "mobile-console",
+      "size": [
+        370,
+        1361
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "mobile-deathmatch",
+      "size": [
+        370,
+        1360
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "mobile-empty",
+      "size": [
+        370,
+        1247
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "mobile-filtered-season",
+      "size": [
+        370,
+        1418
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "mobile-performance-tab",
+      "size": [
+        370,
+        1418
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "mobile-saved-refreshed",
+      "size": [
+        370,
+        1418
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "profile-desktop-accuracy",
+      "size": [
+        288,
+        303
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "profile-desktop-maps",
+      "size": [
+        288,
+        253
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "profile-desktop-sidebar",
+      "size": [
+        288,
+        1772
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "profile-desktop-weapons",
+      "size": [
+        288,
+        382
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "profile-desktop",
+      "size": [
+        1920,
+        4408
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "profile-mobile-accuracy",
+      "size": [
+        370,
+        249
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "profile-mobile-maps",
+      "size": [
+        370,
+        248
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "profile-mobile-sidebar",
+      "size": [
+        370,
+        1417
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "profile-mobile-weapons",
+      "size": [
+        370,
+        403
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "profile-mobile",
+      "size": [
+        390,
+        7388
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    }
+  ],
+  "captures": {
+    "pngCount": 54,
+    "beforeAfterPairs": 26,
+    "keyboardExtras": [
+      "after-home-keyboard-focus.png",
+      "after-profile-keyboard-focus.png"
+    ],
+    "basicRegionCropSources": {
+      "before": {
+        "profile-desktop-sidebar": {
+          "source": "before-profile-desktop.png",
+          "clip": [
+            256,
+            626,
+            544,
+            2398
+          ]
+        },
+        "profile-desktop-accuracy": {
+          "source": "before-profile-desktop.png",
+          "clip": [
+            256,
+            1144,
+            544,
+            1447
+          ]
+        },
+        "profile-desktop-weapons": {
+          "source": "before-profile-desktop.png",
+          "clip": [
+            256,
+            1745,
+            544,
+            2127
+          ]
+        },
+        "profile-desktop-maps": {
+          "source": "before-profile-desktop.png",
+          "clip": [
+            256,
+            2145,
+            544,
+            2398
+          ]
+        },
+        "profile-mobile-sidebar": {
+          "source": "before-profile-mobile.png",
+          "clip": [
+            10,
+            5826,
+            380,
+            7243
+          ]
+        },
+        "profile-mobile-accuracy": {
+          "source": "before-profile-mobile.png",
+          "clip": [
+            10,
+            6042,
+            380,
+            6291
+          ]
+        },
+        "profile-mobile-weapons": {
+          "source": "before-profile-mobile.png",
+          "clip": [
+            10,
+            6574,
+            380,
+            6977
+          ]
+        },
+        "profile-mobile-maps": {
+          "source": "before-profile-mobile.png",
+          "clip": [
+            10,
+            6995,
+            380,
+            7243
+          ]
+        }
+      },
+      "after": {
+        "profile-desktop-sidebar": {
+          "source": "after-profile-desktop.png",
+          "clip": [
+            256,
+            626,
+            544,
+            2398
+          ]
+        },
+        "profile-desktop-accuracy": {
+          "source": "after-profile-desktop.png",
+          "clip": [
+            256,
+            1144,
+            544,
+            1447
+          ]
+        },
+        "profile-desktop-weapons": {
+          "source": "after-profile-desktop.png",
+          "clip": [
+            256,
+            1745,
+            544,
+            2127
+          ]
+        },
+        "profile-desktop-maps": {
+          "source": "after-profile-desktop.png",
+          "clip": [
+            256,
+            2145,
+            544,
+            2398
+          ]
+        },
+        "profile-mobile-sidebar": {
+          "source": "after-profile-mobile.png",
+          "clip": [
+            10,
+            5826,
+            380,
+            7243
+          ]
+        },
+        "profile-mobile-accuracy": {
+          "source": "after-profile-mobile.png",
+          "clip": [
+            10,
+            6042,
+            380,
+            6291
+          ]
+        },
+        "profile-mobile-weapons": {
+          "source": "after-profile-mobile.png",
+          "clip": [
+            10,
+            6574,
+            380,
+            6977
+          ]
+        },
+        "profile-mobile-maps": {
+          "source": "after-profile-mobile.png",
+          "clip": [
+            10,
+            6995,
+            380,
+            7243
+          ]
+        }
+      }
+    }
+  },
+  "interactions": {
+    "interactions": {
+      "count": 18,
+      "checks": [
+        "home Search hover / keyboard focus without layout shift",
+        "Home More / Escape / focus",
+        "Home search existing demo route",
+        "Overview existing IED route",
+        "profile Search hover / keyboard focus without layout shift",
+        "Profile search empty/matching/other and existing toast timeout",
+        "Profile More preserves toggle without Home Escape behavior",
+        "Footer/account destinations and Mock notice dismissal",
+        "Sticky navigation",
+        "Six profile tabs",
+        "Agent card filters nine matches",
+        "One expanded match and detail tabs reset",
+        "Loss filter / reset / 20 to 23 matches",
+        "Act switch updates data",
+        "Empty state and season reset",
+        "Favorite persists with existing storage key",
+        "profile to lineups restores global shell",
+        "home to lineups restores global shell"
+      ],
+      "pageErrors": [],
+      "status": "PASS"
+    },
+    "summary-interactions": {
+      "count": 11,
+      "checks": [
+        "Match agent filter leaves season/score/agent totals unchanged",
+        "Agent table selection preserves other match filters and navigates",
+        "Show More survives tab/act changes; act updates season statistics",
+        "All Acts and platform update season totals",
+        "Deathmatch labels and hidden non-applicable statistics preserved",
+        "Empty season keeps zero metrics, absent grades and empty agent message",
+        "Empty reset restores initial season, score and agent values",
+        "Mock refresh changes notice only",
+        "Share success and failure notices preserved",
+        "Mobile agent table scrolls inside its region without page overflow",
+        "Restricted storage still preserves visit-only favorite feedback"
+      ],
+      "pageErrors": [],
+      "status": "PASS"
+    },
+    "header-interactions": {
+      "count": 7,
+      "checks": [
+        "Header favorite keyboard activation and reload persistence",
+        "Profile tabs preserve loaded count while closing match details",
+        "Promotion navigates to Performance without clearing match filters",
+        "All Acts and all five modes preserve selection semantics",
+        "Act focus, option selection and season reset keep original behavior",
+        "Alternate demo identity and per-player saved keys stay independent",
+        "Mobile tab and mode keyboard scrolling stays within page"
+      ],
+      "pageErrors": [],
+      "status": "PASS"
+    },
+    "sidebar-interactions": {
+      "count": 10,
+      "checks": [
+        "Six sidebar cards and existing accuracy graph label",
+        "S02 keyboard Performance closes expansion and preserves loaded page size",
+        "S05 keyboard weapon selection preserves other filters and season totals, resets expansion",
+        "S06 keyboard map selection keeps weapon/agent/result and sidebar season statistics",
+        "S05 View All Weapons changes only tab, match filters restored",
+        "S06 View All Maps keyboard action preserves match filters",
+        "Sidebar filter change resets loaded page count to twenty",
+        "Act/All Acts/platform/Deathmatch/empty change sidebar data but keep illustrative rank",
+        "Empty selection keeps zero anatomy/roles/weapons and no map rows; reset restores initial data",
+        "Mobile sidebar keyboard target remains focused without page overflow"
+      ],
+      "pageErrors": [],
+      "status": "PASS"
+    }
+  },
+  "sidebarStateComparison": {
+    "status": "PASS",
+    "states": 14,
+    "before": {
+      "initial": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n25.6%\n\nBody\n67.4%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 66.7%\n6W - 3L\n\nKDA 1.32\n127 / 145 / 64\n\n✕\nDuelist\nWR 55.6%\n5W - 4L\n\nKDA 1.31\n153 / 147 / 39\n\n↗\nInitiator\nWR 100.0%\n5W - 0L\n\nKDA 1.64\n85 / 74 / 36\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n28%\nKills\n208\nPhantom\nAssault Rifles\nHS\n23%\nKills\n127\nOperator\nSniper Rifles\nHS\n27%\nKills\n30\nView All Weapons\nTOP MAPS\nAscent\n88%\n7W - 1L\nHaven\n88%\n7W - 1L\nSplit\n29%\n2W - 5L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "V26: A5"
+          ],
+          [
+            "Agent",
+            "All Agents"
+          ],
+          [
+            "Map",
+            "All Maps"
+          ],
+          [
+            "Weapon",
+            "All Weapons"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ]
+        ],
+        "activeTab": "Overview",
+        "rows": 20,
+        "details": 0
+      },
+      "performance-return": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n25.6%\n\nBody\n67.4%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 66.7%\n6W - 3L\n\nKDA 1.32\n127 / 145 / 64\n\n✕\nDuelist\nWR 55.6%\n5W - 4L\n\nKDA 1.31\n153 / 147 / 39\n\n↗\nInitiator\nWR 100.0%\n5W - 0L\n\nKDA 1.64\n85 / 74 / 36\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n28%\nKills\n208\nPhantom\nAssault Rifles\nHS\n23%\nKills\n127\nOperator\nSniper Rifles\nHS\n27%\nKills\n30\nView All Weapons\nTOP MAPS\nAscent\n88%\n7W - 1L\nHaven\n88%\n7W - 1L\nSplit\n29%\n2W - 5L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "V26: A5"
+          ],
+          [
+            "Agent",
+            "All Agents"
+          ],
+          [
+            "Map",
+            "All Maps"
+          ],
+          [
+            "Weapon",
+            "All Weapons"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ]
+        ],
+        "activeTab": "Matches",
+        "rows": 23,
+        "details": 0
+      },
+      "weapon-with-filters": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n25.6%\n\nBody\n67.4%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 66.7%\n6W - 3L\n\nKDA 1.32\n127 / 145 / 64\n\n✕\nDuelist\nWR 55.6%\n5W - 4L\n\nKDA 1.31\n153 / 147 / 39\n\n↗\nInitiator\nWR 100.0%\n5W - 0L\n\nKDA 1.64\n85 / 74 / 36\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n28%\nKills\n208\nPhantom\nAssault Rifles\nHS\n23%\nKills\n127\nOperator\nSniper Rifles\nHS\n27%\nKills\n30\nView All Weapons\nTOP MAPS\nAscent\n88%\n7W - 1L\nHaven\n88%\n7W - 1L\nSplit\n29%\n2W - 5L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "V26: A5"
+          ],
+          [
+            "Agent",
+            "Jett"
+          ],
+          [
+            "Map",
+            "All Maps"
+          ],
+          [
+            "Weapon",
+            "Vandal"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ],
+          [
+            "Result",
+            "Losses"
+          ]
+        ],
+        "activeTab": "Matches",
+        "rows": 3,
+        "details": 0
+      },
+      "map-with-filters": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n25.6%\n\nBody\n67.4%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 66.7%\n6W - 3L\n\nKDA 1.32\n127 / 145 / 64\n\n✕\nDuelist\nWR 55.6%\n5W - 4L\n\nKDA 1.31\n153 / 147 / 39\n\n↗\nInitiator\nWR 100.0%\n5W - 0L\n\nKDA 1.64\n85 / 74 / 36\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n28%\nKills\n208\nPhantom\nAssault Rifles\nHS\n23%\nKills\n127\nOperator\nSniper Rifles\nHS\n27%\nKills\n30\nView All Weapons\nTOP MAPS\nAscent\n88%\n7W - 1L\nHaven\n88%\n7W - 1L\nSplit\n29%\n2W - 5L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "V26: A5"
+          ],
+          [
+            "Agent",
+            "Jett"
+          ],
+          [
+            "Map",
+            "Ascent"
+          ],
+          [
+            "Weapon",
+            "Vandal"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ],
+          [
+            "Result",
+            "Losses"
+          ]
+        ],
+        "activeTab": "Matches",
+        "rows": 1,
+        "details": 0
+      },
+      "all-weapons-return": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n25.6%\n\nBody\n67.4%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 66.7%\n6W - 3L\n\nKDA 1.32\n127 / 145 / 64\n\n✕\nDuelist\nWR 55.6%\n5W - 4L\n\nKDA 1.31\n153 / 147 / 39\n\n↗\nInitiator\nWR 100.0%\n5W - 0L\n\nKDA 1.64\n85 / 74 / 36\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n28%\nKills\n208\nPhantom\nAssault Rifles\nHS\n23%\nKills\n127\nOperator\nSniper Rifles\nHS\n27%\nKills\n30\nView All Weapons\nTOP MAPS\nAscent\n88%\n7W - 1L\nHaven\n88%\n7W - 1L\nSplit\n29%\n2W - 5L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "V26: A5"
+          ],
+          [
+            "Agent",
+            "Jett"
+          ],
+          [
+            "Map",
+            "Ascent"
+          ],
+          [
+            "Weapon",
+            "Vandal"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ],
+          [
+            "Result",
+            "Losses"
+          ]
+        ],
+        "activeTab": "Matches",
+        "rows": 1,
+        "details": 0
+      },
+      "all-maps-return": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n25.6%\n\nBody\n67.4%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 66.7%\n6W - 3L\n\nKDA 1.32\n127 / 145 / 64\n\n✕\nDuelist\nWR 55.6%\n5W - 4L\n\nKDA 1.31\n153 / 147 / 39\n\n↗\nInitiator\nWR 100.0%\n5W - 0L\n\nKDA 1.64\n85 / 74 / 36\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n28%\nKills\n208\nPhantom\nAssault Rifles\nHS\n23%\nKills\n127\nOperator\nSniper Rifles\nHS\n27%\nKills\n30\nView All Weapons\nTOP MAPS\nAscent\n88%\n7W - 1L\nHaven\n88%\n7W - 1L\nSplit\n29%\n2W - 5L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "V26: A5"
+          ],
+          [
+            "Agent",
+            "Jett"
+          ],
+          [
+            "Map",
+            "Ascent"
+          ],
+          [
+            "Weapon",
+            "Vandal"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ],
+          [
+            "Result",
+            "Losses"
+          ]
+        ],
+        "activeTab": "Matches",
+        "rows": 1,
+        "details": 0
+      },
+      "selection-page-reset": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n25.6%\n\nBody\n67.4%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 66.7%\n6W - 3L\n\nKDA 1.32\n127 / 145 / 64\n\n✕\nDuelist\nWR 55.6%\n5W - 4L\n\nKDA 1.31\n153 / 147 / 39\n\n↗\nInitiator\nWR 100.0%\n5W - 0L\n\nKDA 1.64\n85 / 74 / 36\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n28%\nKills\n208\nPhantom\nAssault Rifles\nHS\n23%\nKills\n127\nOperator\nSniper Rifles\nHS\n27%\nKills\n30\nView All Weapons\nTOP MAPS\nAscent\n88%\n7W - 1L\nHaven\n88%\n7W - 1L\nSplit\n29%\n2W - 5L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "V26: A5"
+          ],
+          [
+            "Agent",
+            "All Agents"
+          ],
+          [
+            "Map",
+            "All Maps"
+          ],
+          [
+            "Weapon",
+            "All Weapons"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ],
+          [
+            "Result",
+            "All Results"
+          ]
+        ],
+        "activeTab": "Matches",
+        "rows": 20,
+        "details": 0
+      },
+      "act-a4": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n29.1%\n\nBody\n63.9%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 100.0%\n1W - 0L\n\nKDA 2.58\n20 / 12 / 11\n\n✕\nDuelist\nWR 100.0%\n1W - 0L\n\nKDA 1.76\n24 / 17 / 6\n\n↗\nInitiator\nWR 0.0%\n0W - 1L\n\nKDA 1.11\n13 / 18 / 7\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n33%\nKills\n24\nPhantom\nAssault Rifles\nHS\n29%\nKills\n20\nOperator\nSniper Rifles\nHS\n25%\nKills\n13\nView All Weapons\nTOP MAPS\nHaven\n100%\n1W - 0L\nSplit\n100%\n1W - 0L\nAscent\n0%\n0W - 1L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "V26: A4"
+          ],
+          [
+            "Agent",
+            "All Agents"
+          ],
+          [
+            "Map",
+            "All Maps"
+          ],
+          [
+            "Weapon",
+            "All Weapons"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ],
+          [
+            "Result",
+            "All Results"
+          ]
+        ],
+        "activeTab": "Overview",
+        "rows": 3,
+        "details": 0
+      },
+      "all-acts": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n26.1%\n\nBody\n66.9%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 70.0%\n7W - 3L\n\nKDA 1.41\n147 / 157 / 75\n\n✕\nDuelist\nWR 60.0%\n6W - 4L\n\nKDA 1.35\n177 / 164 / 45\n\n↗\nInitiator\nWR 83.3%\n5W - 1L\n\nKDA 1.53\n98 / 92 / 43\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n28%\nKills\n232\nPhantom\nAssault Rifles\nHS\n23%\nKills\n147\nOperator\nSniper Rifles\nHS\n26%\nKills\n43\nView All Weapons\nTOP MAPS\nHaven\n89%\n8W - 1L\nAscent\n78%\n7W - 2L\nSplit\n38%\n3W - 5L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "All Acts"
+          ],
+          [
+            "Agent",
+            "All Agents"
+          ],
+          [
+            "Map",
+            "All Maps"
+          ],
+          [
+            "Weapon",
+            "All Weapons"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ],
+          [
+            "Result",
+            "All Results"
+          ]
+        ],
+        "activeTab": "Overview",
+        "rows": 20,
+        "details": 0
+      },
+      "console": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n22.0%\n\nBody\n71.0%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 0.0%\n0W - 0L\n\nKDA 0.00\n0 / 0 / 0\n\n✕\nDuelist\nWR 0.0%\n0W - 1L\n\nKDA 1.11\n16 / 19 / 5\n\n↗\nInitiator\nWR 100.0%\n1W - 0L\n\nKDA 1.87\n20 / 15 / 8\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n22%\nKills\n36\nPhantom\nAssault Rifles\nHS\n0%\nKills\n0\nOperator\nSniper Rifles\nHS\n0%\nKills\n0\nView All Weapons\nTOP MAPS\nAscent\n100%\n1W - 0L\nHaven\n0%\n0W - 1L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "All Acts"
+          ],
+          [
+            "Agent",
+            "All Agents"
+          ],
+          [
+            "Map",
+            "All Maps"
+          ],
+          [
+            "Weapon",
+            "All Weapons"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ],
+          [
+            "Result",
+            "All Results"
+          ]
+        ],
+        "activeTab": "Overview",
+        "rows": 2,
+        "details": 0
+      },
+      "deathmatch": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n33.0%\n\nBody\n60.0%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 0.0%\n0W - 0L\n\nKDA 0.00\n0 / 0 / 0\n\n✕\nDuelist\nWR 100.0%\n1W - 0L\n\nKDA 1.64\n40 / 25 / 1\n\n↗\nInitiator\nWR 0.0%\n0W - 1L\n\nKDA 1.07\n31 / 29 / 0\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n33%\nKills\n71\nPhantom\nAssault Rifles\nHS\n0%\nKills\n0\nOperator\nSniper Rifles\nHS\n0%\nKills\n0\nView All Weapons\nTOP MAPS\nSplit\n100%\n1W - 0L\nHaven\n0%\n0W - 1L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "All Acts"
+          ],
+          [
+            "Agent",
+            "All Agents"
+          ],
+          [
+            "Map",
+            "All Maps"
+          ],
+          [
+            "Weapon",
+            "All Weapons"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ],
+          [
+            "Result",
+            "All Results"
+          ]
+        ],
+        "activeTab": "Overview",
+        "rows": 2,
+        "details": 0
+      },
+      "empty": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n0.0%\n\nBody\n0.0%\n\nLegs\n0.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 0.0%\n0W - 0L\n\nKDA 0.00\n0 / 0 / 0\n\n✕\nDuelist\nWR 0.0%\n0W - 0L\n\nKDA 0.00\n0 / 0 / 0\n\n↗\nInitiator\nWR 0.0%\n0W - 0L\n\nKDA 0.00\n0 / 0 / 0\n\nTOP WEAPONS\nPhantom\nAssault Rifles\nHS\n0%\nKills\n0\nVandal\nAssault Rifles\nHS\n0%\nKills\n0\nOperator\nSniper Rifles\nHS\n0%\nKills\n0\nView All Weapons\nTOP MAPS\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "All Acts"
+          ],
+          [
+            "Agent",
+            "All Agents"
+          ],
+          [
+            "Map",
+            "All Maps"
+          ],
+          [
+            "Weapon",
+            "All Weapons"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ],
+          [
+            "Result",
+            "All Results"
+          ]
+        ],
+        "activeTab": "Overview",
+        "rows": 0,
+        "details": 0
+      },
+      "empty-reset": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n25.6%\n\nBody\n67.4%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 66.7%\n6W - 3L\n\nKDA 1.32\n127 / 145 / 64\n\n✕\nDuelist\nWR 55.6%\n5W - 4L\n\nKDA 1.31\n153 / 147 / 39\n\n↗\nInitiator\nWR 100.0%\n5W - 0L\n\nKDA 1.64\n85 / 74 / 36\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n28%\nKills\n208\nPhantom\nAssault Rifles\nHS\n23%\nKills\n127\nOperator\nSniper Rifles\nHS\n27%\nKills\n30\nView All Weapons\nTOP MAPS\nAscent\n88%\n7W - 1L\nHaven\n88%\n7W - 1L\nSplit\n29%\n2W - 5L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "V26: A5"
+          ],
+          [
+            "Agent",
+            "All Agents"
+          ],
+          [
+            "Map",
+            "All Maps"
+          ],
+          [
+            "Weapon",
+            "All Weapons"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ],
+          [
+            "Result",
+            "All Results"
+          ]
+        ],
+        "activeTab": "Overview",
+        "rows": 20,
+        "details": 0
+      },
+      "mobile-keyboard-weapons": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nACCURACY\nSelected act\n\nHead\n25.6%\n\nBody\n67.4%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 66.7%\n6W - 3L\n✕\nDuelist\nWR 55.6%\n5W - 4L\n↗\nInitiator\nWR 100.0%\n5W - 0L\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n28%\nKills\n208\nPhantom\nAssault Rifles\nHS\n23%\nKills\n127\nOperator\nSniper Rifles\nHS\n27%\nKills\n30\nView All Weapons\nTOP MAPS\nAscent\n88%\n7W - 1L\nHaven\n88%\n7W - 1L\nSplit\n29%\n2W - 5L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "V26: A5"
+          ]
+        ],
+        "activeTab": "Weapons",
+        "rows": 0,
+        "details": 0
+      }
+    },
+    "after": {
+      "initial": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n25.6%\n\nBody\n67.4%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 66.7%\n6W - 3L\n\nKDA 1.32\n127 / 145 / 64\n\n✕\nDuelist\nWR 55.6%\n5W - 4L\n\nKDA 1.31\n153 / 147 / 39\n\n↗\nInitiator\nWR 100.0%\n5W - 0L\n\nKDA 1.64\n85 / 74 / 36\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n28%\nKills\n208\nPhantom\nAssault Rifles\nHS\n23%\nKills\n127\nOperator\nSniper Rifles\nHS\n27%\nKills\n30\nView All Weapons\nTOP MAPS\nAscent\n88%\n7W - 1L\nHaven\n88%\n7W - 1L\nSplit\n29%\n2W - 5L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "V26: A5"
+          ],
+          [
+            "Agent",
+            "All Agents"
+          ],
+          [
+            "Map",
+            "All Maps"
+          ],
+          [
+            "Weapon",
+            "All Weapons"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ]
+        ],
+        "activeTab": "Overview",
+        "rows": 20,
+        "details": 0
+      },
+      "performance-return": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n25.6%\n\nBody\n67.4%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 66.7%\n6W - 3L\n\nKDA 1.32\n127 / 145 / 64\n\n✕\nDuelist\nWR 55.6%\n5W - 4L\n\nKDA 1.31\n153 / 147 / 39\n\n↗\nInitiator\nWR 100.0%\n5W - 0L\n\nKDA 1.64\n85 / 74 / 36\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n28%\nKills\n208\nPhantom\nAssault Rifles\nHS\n23%\nKills\n127\nOperator\nSniper Rifles\nHS\n27%\nKills\n30\nView All Weapons\nTOP MAPS\nAscent\n88%\n7W - 1L\nHaven\n88%\n7W - 1L\nSplit\n29%\n2W - 5L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "V26: A5"
+          ],
+          [
+            "Agent",
+            "All Agents"
+          ],
+          [
+            "Map",
+            "All Maps"
+          ],
+          [
+            "Weapon",
+            "All Weapons"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ]
+        ],
+        "activeTab": "Matches",
+        "rows": 23,
+        "details": 0
+      },
+      "weapon-with-filters": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n25.6%\n\nBody\n67.4%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 66.7%\n6W - 3L\n\nKDA 1.32\n127 / 145 / 64\n\n✕\nDuelist\nWR 55.6%\n5W - 4L\n\nKDA 1.31\n153 / 147 / 39\n\n↗\nInitiator\nWR 100.0%\n5W - 0L\n\nKDA 1.64\n85 / 74 / 36\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n28%\nKills\n208\nPhantom\nAssault Rifles\nHS\n23%\nKills\n127\nOperator\nSniper Rifles\nHS\n27%\nKills\n30\nView All Weapons\nTOP MAPS\nAscent\n88%\n7W - 1L\nHaven\n88%\n7W - 1L\nSplit\n29%\n2W - 5L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "V26: A5"
+          ],
+          [
+            "Agent",
+            "Jett"
+          ],
+          [
+            "Map",
+            "All Maps"
+          ],
+          [
+            "Weapon",
+            "Vandal"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ],
+          [
+            "Result",
+            "Losses"
+          ]
+        ],
+        "activeTab": "Matches",
+        "rows": 3,
+        "details": 0
+      },
+      "map-with-filters": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n25.6%\n\nBody\n67.4%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 66.7%\n6W - 3L\n\nKDA 1.32\n127 / 145 / 64\n\n✕\nDuelist\nWR 55.6%\n5W - 4L\n\nKDA 1.31\n153 / 147 / 39\n\n↗\nInitiator\nWR 100.0%\n5W - 0L\n\nKDA 1.64\n85 / 74 / 36\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n28%\nKills\n208\nPhantom\nAssault Rifles\nHS\n23%\nKills\n127\nOperator\nSniper Rifles\nHS\n27%\nKills\n30\nView All Weapons\nTOP MAPS\nAscent\n88%\n7W - 1L\nHaven\n88%\n7W - 1L\nSplit\n29%\n2W - 5L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "V26: A5"
+          ],
+          [
+            "Agent",
+            "Jett"
+          ],
+          [
+            "Map",
+            "Ascent"
+          ],
+          [
+            "Weapon",
+            "Vandal"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ],
+          [
+            "Result",
+            "Losses"
+          ]
+        ],
+        "activeTab": "Matches",
+        "rows": 1,
+        "details": 0
+      },
+      "all-weapons-return": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n25.6%\n\nBody\n67.4%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 66.7%\n6W - 3L\n\nKDA 1.32\n127 / 145 / 64\n\n✕\nDuelist\nWR 55.6%\n5W - 4L\n\nKDA 1.31\n153 / 147 / 39\n\n↗\nInitiator\nWR 100.0%\n5W - 0L\n\nKDA 1.64\n85 / 74 / 36\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n28%\nKills\n208\nPhantom\nAssault Rifles\nHS\n23%\nKills\n127\nOperator\nSniper Rifles\nHS\n27%\nKills\n30\nView All Weapons\nTOP MAPS\nAscent\n88%\n7W - 1L\nHaven\n88%\n7W - 1L\nSplit\n29%\n2W - 5L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "V26: A5"
+          ],
+          [
+            "Agent",
+            "Jett"
+          ],
+          [
+            "Map",
+            "Ascent"
+          ],
+          [
+            "Weapon",
+            "Vandal"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ],
+          [
+            "Result",
+            "Losses"
+          ]
+        ],
+        "activeTab": "Matches",
+        "rows": 1,
+        "details": 0
+      },
+      "all-maps-return": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n25.6%\n\nBody\n67.4%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 66.7%\n6W - 3L\n\nKDA 1.32\n127 / 145 / 64\n\n✕\nDuelist\nWR 55.6%\n5W - 4L\n\nKDA 1.31\n153 / 147 / 39\n\n↗\nInitiator\nWR 100.0%\n5W - 0L\n\nKDA 1.64\n85 / 74 / 36\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n28%\nKills\n208\nPhantom\nAssault Rifles\nHS\n23%\nKills\n127\nOperator\nSniper Rifles\nHS\n27%\nKills\n30\nView All Weapons\nTOP MAPS\nAscent\n88%\n7W - 1L\nHaven\n88%\n7W - 1L\nSplit\n29%\n2W - 5L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "V26: A5"
+          ],
+          [
+            "Agent",
+            "Jett"
+          ],
+          [
+            "Map",
+            "Ascent"
+          ],
+          [
+            "Weapon",
+            "Vandal"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ],
+          [
+            "Result",
+            "Losses"
+          ]
+        ],
+        "activeTab": "Matches",
+        "rows": 1,
+        "details": 0
+      },
+      "selection-page-reset": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n25.6%\n\nBody\n67.4%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 66.7%\n6W - 3L\n\nKDA 1.32\n127 / 145 / 64\n\n✕\nDuelist\nWR 55.6%\n5W - 4L\n\nKDA 1.31\n153 / 147 / 39\n\n↗\nInitiator\nWR 100.0%\n5W - 0L\n\nKDA 1.64\n85 / 74 / 36\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n28%\nKills\n208\nPhantom\nAssault Rifles\nHS\n23%\nKills\n127\nOperator\nSniper Rifles\nHS\n27%\nKills\n30\nView All Weapons\nTOP MAPS\nAscent\n88%\n7W - 1L\nHaven\n88%\n7W - 1L\nSplit\n29%\n2W - 5L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "V26: A5"
+          ],
+          [
+            "Agent",
+            "All Agents"
+          ],
+          [
+            "Map",
+            "All Maps"
+          ],
+          [
+            "Weapon",
+            "All Weapons"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ],
+          [
+            "Result",
+            "All Results"
+          ]
+        ],
+        "activeTab": "Matches",
+        "rows": 20,
+        "details": 0
+      },
+      "act-a4": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n29.1%\n\nBody\n63.9%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 100.0%\n1W - 0L\n\nKDA 2.58\n20 / 12 / 11\n\n✕\nDuelist\nWR 100.0%\n1W - 0L\n\nKDA 1.76\n24 / 17 / 6\n\n↗\nInitiator\nWR 0.0%\n0W - 1L\n\nKDA 1.11\n13 / 18 / 7\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n33%\nKills\n24\nPhantom\nAssault Rifles\nHS\n29%\nKills\n20\nOperator\nSniper Rifles\nHS\n25%\nKills\n13\nView All Weapons\nTOP MAPS\nHaven\n100%\n1W - 0L\nSplit\n100%\n1W - 0L\nAscent\n0%\n0W - 1L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "V26: A4"
+          ],
+          [
+            "Agent",
+            "All Agents"
+          ],
+          [
+            "Map",
+            "All Maps"
+          ],
+          [
+            "Weapon",
+            "All Weapons"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ],
+          [
+            "Result",
+            "All Results"
+          ]
+        ],
+        "activeTab": "Overview",
+        "rows": 3,
+        "details": 0
+      },
+      "all-acts": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n26.1%\n\nBody\n66.9%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 70.0%\n7W - 3L\n\nKDA 1.41\n147 / 157 / 75\n\n✕\nDuelist\nWR 60.0%\n6W - 4L\n\nKDA 1.35\n177 / 164 / 45\n\n↗\nInitiator\nWR 83.3%\n5W - 1L\n\nKDA 1.53\n98 / 92 / 43\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n28%\nKills\n232\nPhantom\nAssault Rifles\nHS\n23%\nKills\n147\nOperator\nSniper Rifles\nHS\n26%\nKills\n43\nView All Weapons\nTOP MAPS\nHaven\n89%\n8W - 1L\nAscent\n78%\n7W - 2L\nSplit\n38%\n3W - 5L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "All Acts"
+          ],
+          [
+            "Agent",
+            "All Agents"
+          ],
+          [
+            "Map",
+            "All Maps"
+          ],
+          [
+            "Weapon",
+            "All Weapons"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ],
+          [
+            "Result",
+            "All Results"
+          ]
+        ],
+        "activeTab": "Overview",
+        "rows": 20,
+        "details": 0
+      },
+      "console": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n22.0%\n\nBody\n71.0%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 0.0%\n0W - 0L\n\nKDA 0.00\n0 / 0 / 0\n\n✕\nDuelist\nWR 0.0%\n0W - 1L\n\nKDA 1.11\n16 / 19 / 5\n\n↗\nInitiator\nWR 100.0%\n1W - 0L\n\nKDA 1.87\n20 / 15 / 8\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n22%\nKills\n36\nPhantom\nAssault Rifles\nHS\n0%\nKills\n0\nOperator\nSniper Rifles\nHS\n0%\nKills\n0\nView All Weapons\nTOP MAPS\nAscent\n100%\n1W - 0L\nHaven\n0%\n0W - 1L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "All Acts"
+          ],
+          [
+            "Agent",
+            "All Agents"
+          ],
+          [
+            "Map",
+            "All Maps"
+          ],
+          [
+            "Weapon",
+            "All Weapons"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ],
+          [
+            "Result",
+            "All Results"
+          ]
+        ],
+        "activeTab": "Overview",
+        "rows": 2,
+        "details": 0
+      },
+      "deathmatch": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n33.0%\n\nBody\n60.0%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 0.0%\n0W - 0L\n\nKDA 0.00\n0 / 0 / 0\n\n✕\nDuelist\nWR 100.0%\n1W - 0L\n\nKDA 1.64\n40 / 25 / 1\n\n↗\nInitiator\nWR 0.0%\n0W - 1L\n\nKDA 1.07\n31 / 29 / 0\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n33%\nKills\n71\nPhantom\nAssault Rifles\nHS\n0%\nKills\n0\nOperator\nSniper Rifles\nHS\n0%\nKills\n0\nView All Weapons\nTOP MAPS\nSplit\n100%\n1W - 0L\nHaven\n0%\n0W - 1L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "All Acts"
+          ],
+          [
+            "Agent",
+            "All Agents"
+          ],
+          [
+            "Map",
+            "All Maps"
+          ],
+          [
+            "Weapon",
+            "All Weapons"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ],
+          [
+            "Result",
+            "All Results"
+          ]
+        ],
+        "activeTab": "Overview",
+        "rows": 2,
+        "details": 0
+      },
+      "empty": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n0.0%\n\nBody\n0.0%\n\nLegs\n0.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 0.0%\n0W - 0L\n\nKDA 0.00\n0 / 0 / 0\n\n✕\nDuelist\nWR 0.0%\n0W - 0L\n\nKDA 0.00\n0 / 0 / 0\n\n↗\nInitiator\nWR 0.0%\n0W - 0L\n\nKDA 0.00\n0 / 0 / 0\n\nTOP WEAPONS\nPhantom\nAssault Rifles\nHS\n0%\nKills\n0\nVandal\nAssault Rifles\nHS\n0%\nKills\n0\nOperator\nSniper Rifles\nHS\n0%\nKills\n0\nView All Weapons\nTOP MAPS\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "All Acts"
+          ],
+          [
+            "Agent",
+            "All Agents"
+          ],
+          [
+            "Map",
+            "All Maps"
+          ],
+          [
+            "Weapon",
+            "All Weapons"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ],
+          [
+            "Result",
+            "All Results"
+          ]
+        ],
+        "activeTab": "Overview",
+        "rows": 0,
+        "details": 0
+      },
+      "empty-reset": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n25.6%\n\nBody\n67.4%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 66.7%\n6W - 3L\n\nKDA 1.32\n127 / 145 / 64\n\n✕\nDuelist\nWR 55.6%\n5W - 4L\n\nKDA 1.31\n153 / 147 / 39\n\n↗\nInitiator\nWR 100.0%\n5W - 0L\n\nKDA 1.64\n85 / 74 / 36\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n28%\nKills\n208\nPhantom\nAssault Rifles\nHS\n23%\nKills\n127\nOperator\nSniper Rifles\nHS\n27%\nKills\n30\nView All Weapons\nTOP MAPS\nAscent\n88%\n7W - 1L\nHaven\n88%\n7W - 1L\nSplit\n29%\n2W - 5L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "V26: A5"
+          ],
+          [
+            "Agent",
+            "All Agents"
+          ],
+          [
+            "Map",
+            "All Maps"
+          ],
+          [
+            "Weapon",
+            "All Weapons"
+          ],
+          [
+            "Date range",
+            "All Dates"
+          ],
+          [
+            "Result",
+            "All Results"
+          ]
+        ],
+        "activeTab": "Overview",
+        "rows": 20,
+        "details": 0
+      },
+      "mobile-keyboard-weapons": {
+        "text": "CURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nACCURACY\nSelected act\n\nHead\n25.6%\n\nBody\n67.4%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 66.7%\n6W - 3L\n✕\nDuelist\nWR 55.6%\n5W - 4L\n↗\nInitiator\nWR 100.0%\n5W - 0L\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n28%\nKills\n208\nPhantom\nAssault Rifles\nHS\n23%\nKills\n127\nOperator\nSniper Rifles\nHS\n27%\nKills\n30\nView All Weapons\nTOP MAPS\nAscent\n88%\n7W - 1L\nHaven\n88%\n7W - 1L\nSplit\n29%\n2W - 5L\nView All Maps",
+        "selected": [
+          [
+            "Act",
+            "V26: A5"
+          ]
+        ],
+        "activeTab": "Weapons",
+        "rows": 0,
+        "details": 0
+      }
+    }
+  },
+  "qualitativeReview": {
+    "status": "PASS",
+    "reviewed": [
+      "baseline and final desktop sidebar",
+      "baseline and final mobile sidebar",
+      "final empty desktop sidebar",
+      "final Deathmatch mobile sidebar"
+    ],
+    "findings": [
+      "Original sidebar card order, text hierarchy, rank/weapon/map assets and SVG anatomy retained.",
+      "Mobile S02 promotion stays hidden as before.",
+      "No new text clipping, card spacing or alignment regressions observed."
+    ]
+  },
+  "limitations": [
+    "State-specific tall sidebar locator screenshots include the original sticky navigation during scrolling. All DOM/style/position data and full-page/cropped basic sidebar screenshots supplement these views.",
+    "Basic sidebar and individual-card crops are derived from original full-page screenshots and original measurement coordinates without masks or color edits.",
+    "Native Act select arrow-key menu selection was not claimed; focus and selectOption change handling verified. Button Enter/Space events were verified.",
+    "Automated and visual checks do not replace human review or formal Cursor review."
+  ],
+  "temporaryScripts": [
+    "/tmp/fe016-visual.cjs",
+    "/tmp/fe016-interactions.cjs",
+    "/tmp/fe016-summary-interactions.cjs",
+    "/tmp/fe016-header-interactions.cjs",
+    "/tmp/fe016-sidebar-interactions.cjs",
+    "/tmp/fe016-crop.py",
+    "/tmp/fe016-pixels.py"
+  ],
+  "buildVerification": {
+    "status": "PASS",
+    "mock": "PASS",
+    "typescript": "PASS",
+    "lint": {
+      "status": "PASS",
+      "warnings": 0,
+      "errors": 0
+    },
+    "productionBuild": {
+      "status": "PASS",
+      "staticPages": 11
+    },
+    "developmentServerRestored": true,
+    "profileHttpStatus": 200,
+    "note": "Executed by the primary implementation agent after Playwright checks; existing git metadata fallback only."
+  }
+}

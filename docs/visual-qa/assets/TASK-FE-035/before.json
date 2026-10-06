@@ -1,0 +1,10 @@
+{
+  "phase": "before",
+  "screens": [
+    "before-1440-en-profile.png",
+    "before-1440-ko-profile.png",
+    "before-390-en-profile.png",
+    "before-390-ko-profile.png"
+  ],
+  "errors": []
+}

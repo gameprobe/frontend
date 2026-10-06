@@ -1,0 +1,24 @@
+{
+  "checks": [
+    "pathless: no fabricated path and preserved detail link",
+    "pathless: copy matches the unavailable map geometry",
+    "no-start: no fabricated path and preserved detail link",
+    "no-start: copy matches the unavailable map geometry"
+  ],
+  "states": [
+    {
+      "name": "pathless",
+      "message": "선택한 시작 위치를 표시하고 있어요. 자세한 내용은 아래 상세 보기에서 확인해 보세요.",
+      "paths": 0,
+      "startPins": 1
+    },
+    {
+      "name": "no-start",
+      "message": "시작 위치가 아직 등록되지 않았어요. 현재 등록된 스킬 위치만 표시하고 있어요.",
+      "paths": 0,
+      "startPins": 0
+    }
+  ],
+  "errors": [],
+  "status": "PASS"
+}

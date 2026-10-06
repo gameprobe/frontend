@@ -1,0 +1,14 @@
+{
+  "screens": [
+    "destination-after-1440-admin.png",
+    "destination-after-1440-home.png",
+    "destination-after-1440-insights.png",
+    "destination-after-1440-lineups.png",
+    "destination-after-1440-smokes.png",
+    "destination-after-390-admin.png"
+  ],
+  "errors": [],
+  "checks": [
+    "No external media/API request or real admin token stored"
+  ]
+}

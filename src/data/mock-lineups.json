@@ -1,0 +1,302 @@
+[
+  {
+    "id": "ascent-sova-a-main-recon-001",
+    "title": "A 메인 진입용 사이트 리콘 볼트",
+    "mapId": "ascent",
+    "mapName": "Ascent",
+    "agentId": "sova",
+    "agentName": "Sova",
+    "ability": {
+      "abilityId": "sova-recon-bolt",
+      "slot": "E",
+      "displayName": "Recon Bolt"
+    },
+    "side": "attack",
+    "difficulty": "easy",
+    "description": "A 메인 입구의 벽 모서리를 기준으로 한 번 충전해 사이트 후방과 발전기 주변을 확인하는 진입 리콘입니다.",
+    "steps": [
+      "A 로비 상자 오른쪽 모서리에 붙습니다.",
+      "지붕 끝선과 구름 사이를 조준합니다.",
+      "1단 충전, 바운스 없이 발사합니다."
+    ],
+    "media": {
+      "youtubeUrl": "https://www.youtube.com/watch?v=demo-ascent-sova-a",
+      "thumbnailAssetId": "ascent"
+    },
+    "author": {
+      "name": "GameProbe Lab"
+    },
+    "tags": ["entry", "recon", "a-site"],
+    "createdAt": "2026-06-25T00:10:00.000Z"
+  },
+  {
+    "id": "ascent-sova-b-lobby-shock-002",
+    "title": "B 로비 포스트 플랜트 쇼크 볼트",
+    "mapId": "ascent",
+    "mapName": "Ascent",
+    "agentId": "sova",
+    "agentName": "Sova",
+    "ability": {
+      "abilityId": "sova-shock-bolt",
+      "slot": "Q",
+      "displayName": "Shock Bolt"
+    },
+    "side": "attack",
+    "difficulty": "medium",
+    "description": "B 로비 안전 지점에서 기본 설치 위치를 압박하는 2바운스 쇼크 볼트입니다.",
+    "steps": [
+      "B 로비 벽면 세로선을 맞춥니다.",
+      "HUD 다이아몬드를 창문 하단에 둡니다.",
+      "2단 충전, 바운스 2회로 발사합니다."
+    ],
+    "media": {
+      "youtubeUrl": "https://www.youtube.com/watch?v=demo-ascent-sova-b",
+      "thumbnailAssetId": "ascent"
+    },
+    "author": {
+      "name": "SeoulDuelist"
+    },
+    "tags": ["post-plant", "damage", "b-site"],
+    "createdAt": "2026-06-25T00:20:00.000Z"
+  },
+  {
+    "id": "ascent-killjoy-b-site-molly-003",
+    "title": "B 사이트 기본 설치 나노스웜",
+    "mapId": "ascent",
+    "mapName": "Ascent",
+    "agentId": "killjoy",
+    "agentName": "Killjoy",
+    "ability": {
+      "abilityId": "killjoy-nanoswarm",
+      "slot": "C",
+      "displayName": "Nanoswarm"
+    },
+    "side": "defense",
+    "difficulty": "easy",
+    "description": "B 기본 설치 지점과 진입 동선을 동시에 견제하도록 나노스웜을 숨기는 방어 배치입니다.",
+    "steps": [
+      "사이트 중앙 상자 뒤에 섭니다.",
+      "설치 지점 케이블 교차부를 조준합니다.",
+      "나노스웜을 낮게 던져 지형에 숨깁니다."
+    ],
+    "media": {
+      "youtubeUrl": "https://www.youtube.com/watch?v=demo-ascent-kj-b",
+      "thumbnailAssetId": "ascent"
+    },
+    "author": {
+      "name": "AnchorKilljoy"
+    },
+    "tags": ["setup", "stall", "b-site"],
+    "createdAt": "2026-06-25T00:30:00.000Z"
+  },
+  {
+    "id": "haven-sova-c-long-recon-004",
+    "title": "C 롱 진입용 백사이트 리콘",
+    "mapId": "haven",
+    "mapName": "Haven",
+    "agentId": "sova",
+    "agentName": "Sova",
+    "ability": {
+      "abilityId": "sova-recon-bolt",
+      "slot": "E",
+      "displayName": "Recon Bolt"
+    },
+    "side": "attack",
+    "difficulty": "medium",
+    "description": "C 롱에서 백사이트와 플랫폼 수비수를 동시에 스캔하도록 설계한 고각 리콘입니다.",
+    "steps": [
+      "C 롱 첫 상자 왼쪽에 붙습니다.",
+      "나뭇가지 끝과 지붕 모서리를 맞춥니다.",
+      "2단 충전, 바운스 1회로 발사합니다."
+    ],
+    "media": {
+      "youtubeUrl": "https://www.youtube.com/watch?v=demo-haven-sova-c",
+      "thumbnailAssetId": "haven"
+    },
+    "author": {
+      "name": "ReconArchive"
+    },
+    "tags": ["entry", "recon", "c-site"],
+    "createdAt": "2026-06-25T00:40:00.000Z"
+  },
+  {
+    "id": "haven-killjoy-c-garage-turret-005",
+    "title": "C·차고 동시 감시 터렛 배치",
+    "mapId": "haven",
+    "mapName": "Haven",
+    "agentId": "killjoy",
+    "agentName": "Killjoy",
+    "ability": {
+      "abilityId": "killjoy-turret",
+      "slot": "E",
+      "displayName": "Turret"
+    },
+    "side": "defense",
+    "difficulty": "easy",
+    "description": "C 롱 진입과 차고 출구를 넓게 확인해 수비 로테이션 시간을 확보하는 터렛 각도입니다.",
+    "steps": [
+      "C 사이트 플랫폼 뒤 상자로 이동합니다.",
+      "터렛이 차고 문과 C 롱을 가로지르게 회전합니다.",
+      "알람봇 범위와 겹치지 않게 설치합니다."
+    ],
+    "media": {
+      "youtubeUrl": "https://www.youtube.com/watch?v=demo-haven-kj-c",
+      "thumbnailAssetId": "haven"
+    },
+    "author": {
+      "name": "AnchorKilljoy"
+    },
+    "tags": ["setup", "information", "c-site"],
+    "createdAt": "2026-06-25T00:50:00.000Z"
+  },
+  {
+    "id": "haven-cypher-a-lobby-trip-006",
+    "title": "A 로비 러시 차단 트랩와이어",
+    "mapId": "haven",
+    "mapName": "Haven",
+    "agentId": "cypher",
+    "agentName": "Cypher",
+    "ability": {
+      "abilityId": "cypher-trapwire",
+      "slot": "C",
+      "displayName": "Trapwire"
+    },
+    "side": "defense",
+    "difficulty": "medium",
+    "description": "A 롱 러시와 짧은 진입을 구분하면서 쉽게 파괴되지 않는 높이로 배치하는 트랩와이어입니다.",
+    "steps": [
+      "A 사이트 기본 상자 측면으로 이동합니다.",
+      "와이어를 점프 높이보다 낮게 맞춥니다.",
+      "케이지 투척 지점과 교차하도록 설치합니다."
+    ],
+    "media": {
+      "youtubeUrl": "https://www.youtube.com/watch?v=demo-haven-cypher-a",
+      "thumbnailAssetId": "haven"
+    },
+    "author": {
+      "name": "SiteCypher"
+    },
+    "tags": ["setup", "anti-rush", "a-site"],
+    "createdAt": "2026-06-25T01:00:00.000Z"
+  },
+  {
+    "id": "split-viper-b-main-screen-007",
+    "title": "B 메인 진입 차단 독성 장막",
+    "mapId": "split",
+    "mapName": "Split",
+    "agentId": "viper",
+    "agentName": "Viper",
+    "ability": {
+      "abilityId": "viper-toxic-screen",
+      "slot": "E",
+      "displayName": "Toxic Screen"
+    },
+    "side": "defense",
+    "difficulty": "easy",
+    "description": "B 메인 시야와 사이트 진입선을 끊어 수비수가 기둥과 백사이트에서 교차 사격하기 좋은 장막입니다.",
+    "steps": [
+      "B 백사이트 벽에 붙습니다.",
+      "미니맵 기준 B 메인 입구와 기둥을 잇습니다.",
+      "장막 끝이 사이트 밖으로 지나도록 설치합니다."
+    ],
+    "media": {
+      "youtubeUrl": "https://www.youtube.com/watch?v=demo-split-viper-b",
+      "thumbnailAssetId": "split"
+    },
+    "author": {
+      "name": "WallViper"
+    },
+    "tags": ["wall", "stall", "b-site"],
+    "createdAt": "2026-06-25T01:10:00.000Z"
+  },
+  {
+    "id": "split-viper-a-postplant-snakebite-008",
+    "title": "A 램프 포스트 플랜트 스네이크 바이트",
+    "mapId": "split",
+    "mapName": "Split",
+    "agentId": "viper",
+    "agentName": "Viper",
+    "ability": {
+      "abilityId": "viper-snake-bite",
+      "slot": "Q",
+      "displayName": "Snake Bite"
+    },
+    "side": "attack",
+    "difficulty": "hard",
+    "description": "A 램프 후퇴 지점에서 기본 설치 위치에 도달하는 장거리 스네이크 바이트 라인업입니다.",
+    "steps": [
+      "A 램프 공격 진영 벽 모서리에 붙습니다.",
+      "전광판 상단의 작은 조명점을 조준합니다.",
+      "점프 없이 정지 상태에서 투척합니다."
+    ],
+    "media": {
+      "youtubeUrl": "https://www.youtube.com/watch?v=demo-split-viper-a",
+      "thumbnailAssetId": "split"
+    },
+    "author": {
+      "name": "WallViper"
+    },
+    "tags": ["post-plant", "molly", "a-site"],
+    "createdAt": "2026-06-25T01:20:00.000Z"
+  },
+  {
+    "id": "split-cypher-b-main-camera-009",
+    "title": "B 메인·사이트 전환 감시 카메라",
+    "mapId": "split",
+    "mapName": "Split",
+    "agentId": "cypher",
+    "agentName": "Cypher",
+    "ability": {
+      "abilityId": "cypher-spycam",
+      "slot": "E",
+      "displayName": "Spycam"
+    },
+    "side": "defense",
+    "difficulty": "medium",
+    "description": "B 메인 진입과 사이트 안쪽 움직임을 모두 확인하면서 공격팀 시야에서 발견하기 어려운 카메라입니다.",
+    "steps": [
+      "B 사이트 기둥 뒤 상자 위로 올라갑니다.",
+      "천장 구조물의 어두운 면을 조준합니다.",
+      "메인 입구가 화면 왼쪽에 보이도록 설치합니다."
+    ],
+    "media": {
+      "youtubeUrl": "https://www.youtube.com/watch?v=demo-split-cypher-b",
+      "thumbnailAssetId": "split"
+    },
+    "author": {
+      "name": "SiteCypher"
+    },
+    "tags": ["camera", "information", "b-site"],
+    "createdAt": "2026-06-25T01:30:00.000Z"
+  },
+  {
+    "id": "ascent-killjoy-a-lockdown-010",
+    "title": "A 리테이크 봉쇄 안전 배치",
+    "mapId": "ascent",
+    "mapName": "Ascent",
+    "agentId": "killjoy",
+    "agentName": "Killjoy",
+    "ability": {
+      "abilityId": "killjoy-lockdown",
+      "slot": "X",
+      "displayName": "Lockdown"
+    },
+    "side": "defense",
+    "difficulty": "hard",
+    "description": "A 사이트 리테이크에서 벽 관통 파괴 각도를 줄이고 사이트 대부분을 덮는 봉쇄 배치입니다.",
+    "steps": [
+      "A 정원 연결부 안전 벽으로 이동합니다.",
+      "봉쇄 반경이 와인과 사이트 후방을 포함하는지 확인합니다.",
+      "연막과 함께 설치해 파괴 시야를 차단합니다."
+    ],
+    "media": {
+      "youtubeUrl": "https://www.youtube.com/watch?v=demo-ascent-kj-x",
+      "thumbnailAssetId": "ascent"
+    },
+    "author": {
+      "name": "GameProbe Lab"
+    },
+    "tags": ["retake", "ultimate", "a-site"],
+    "createdAt": "2026-06-25T01:40:00.000Z"
+  }
+]

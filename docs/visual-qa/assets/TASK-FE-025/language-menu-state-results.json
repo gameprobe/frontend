@@ -1,0 +1,790 @@
+{
+  "checks": [
+    "Fresh browser defaults to ko",
+    "Language trigger exposes menu semantics and closed state",
+    "Mouse hover opens menu",
+    "Exactly two choices",
+    "Current Korean option is checked",
+    "Pointer can travel from trigger to option across dropdown gap",
+    "Pointer leaving menu closes without keyboard focus",
+    "Escape closes hover menu while focus is outside",
+    "Outside-focus Escape preserves search input focus",
+    "Click pins a hovered menu open",
+    "Second click toggles pinned menu closed",
+    "Click opens closed menu",
+    "Outside pointerdown closes menu",
+    "ArrowDown on trigger opens and focuses first choice",
+    "Pointer leave retains menu while keyboard focus is inside",
+    "ArrowUp wraps from first to last",
+    "ArrowDown wraps from last to first",
+    "End focuses last choice",
+    "Home focuses first choice",
+    "Escape closes keyboard menu",
+    "Escape returns focus to Language trigger",
+    "ArrowUp on trigger opens and focuses last choice",
+    "Enter selects English and closes menu",
+    "English persisted in storage",
+    "English selection marker updates",
+    "Tab out of menu closes it",
+    "Tab focus leaves menu",
+    "Selected language survives client navigation",
+    "Selected language survives reload",
+    "New tab reads selected language",
+    "Menu selection synchronizes another tab",
+    "Touch opens Language menu",
+    "Touch toggles Language menu closed",
+    "Touch selects English and closes menu",
+    "Outside touch closes menu",
+    "1440 / ko: selection checked",
+    "1440 / ko: no global overflow",
+    "1440 / ko: one main",
+    "1440 / ko: trigger within viewport",
+    "1440 / ko: menu within viewport",
+    "1440 / ko: More within viewport",
+    "1440 / ko: trigger and More do not overlap",
+    "1440 / en: selection checked",
+    "1440 / en: no global overflow",
+    "1440 / en: one main",
+    "1440 / en: trigger within viewport",
+    "1440 / en: menu within viewport",
+    "1440 / en: More within viewport",
+    "1440 / en: trigger and More do not overlap",
+    "1440 /players/ied-agent-allen ko: selection checked",
+    "1440 /players/ied-agent-allen ko: no global overflow",
+    "1440 /players/ied-agent-allen ko: one main",
+    "1440 /players/ied-agent-allen ko: trigger within viewport",
+    "1440 /players/ied-agent-allen ko: menu within viewport",
+    "1440 /players/ied-agent-allen ko: More within viewport",
+    "1440 /players/ied-agent-allen ko: trigger and More do not overlap",
+    "1440 /players/ied-agent-allen en: selection checked",
+    "1440 /players/ied-agent-allen en: no global overflow",
+    "1440 /players/ied-agent-allen en: one main",
+    "1440 /players/ied-agent-allen en: trigger within viewport",
+    "1440 /players/ied-agent-allen en: menu within viewport",
+    "1440 /players/ied-agent-allen en: More within viewport",
+    "1440 /players/ied-agent-allen en: trigger and More do not overlap",
+    "1440 /connect ko: selection checked",
+    "1440 /connect ko: no global overflow",
+    "1440 /connect ko: one main",
+    "1440 /connect ko: trigger within viewport",
+    "1440 /connect ko: menu within viewport",
+    "1440 /connect ko: More within viewport",
+    "1440 /connect ko: trigger and More do not overlap",
+    "1440 /connect en: selection checked",
+    "1440 /connect en: no global overflow",
+    "1440 /connect en: one main",
+    "1440 /connect en: trigger within viewport",
+    "1440 /connect en: menu within viewport",
+    "1440 /connect en: More within viewport",
+    "1440 /connect en: trigger and More do not overlap",
+    "820 / ko: selection checked",
+    "820 / ko: no global overflow",
+    "820 / ko: one main",
+    "820 / ko: trigger within viewport",
+    "820 / ko: menu within viewport",
+    "820 / ko: More within viewport",
+    "820 / ko: trigger and More do not overlap",
+    "820 / en: selection checked",
+    "820 / en: no global overflow",
+    "820 / en: one main",
+    "820 / en: trigger within viewport",
+    "820 / en: menu within viewport",
+    "820 / en: More within viewport",
+    "820 / en: trigger and More do not overlap",
+    "820 /players/ied-agent-allen ko: selection checked",
+    "820 /players/ied-agent-allen ko: no global overflow",
+    "820 /players/ied-agent-allen ko: one main",
+    "820 /players/ied-agent-allen ko: trigger within viewport",
+    "820 /players/ied-agent-allen ko: menu within viewport",
+    "820 /players/ied-agent-allen ko: More within viewport",
+    "820 /players/ied-agent-allen ko: trigger and More do not overlap",
+    "820 /players/ied-agent-allen en: selection checked",
+    "820 /players/ied-agent-allen en: no global overflow",
+    "820 /players/ied-agent-allen en: one main",
+    "820 /players/ied-agent-allen en: trigger within viewport",
+    "820 /players/ied-agent-allen en: menu within viewport",
+    "820 /players/ied-agent-allen en: More within viewport",
+    "820 /players/ied-agent-allen en: trigger and More do not overlap",
+    "820 /connect ko: selection checked",
+    "820 /connect ko: no global overflow",
+    "820 /connect ko: one main",
+    "820 /connect ko: trigger within viewport",
+    "820 /connect ko: menu within viewport",
+    "820 /connect ko: More within viewport",
+    "820 /connect ko: trigger and More do not overlap",
+    "820 /connect en: selection checked",
+    "820 /connect en: no global overflow",
+    "820 /connect en: one main",
+    "820 /connect en: trigger within viewport",
+    "820 /connect en: menu within viewport",
+    "820 /connect en: More within viewport",
+    "820 /connect en: trigger and More do not overlap",
+    "390 / ko: selection checked",
+    "390 / ko: no global overflow",
+    "390 / ko: one main",
+    "390 / ko: trigger within viewport",
+    "390 / ko: menu within viewport",
+    "390 / ko: More within viewport",
+    "390 / ko: trigger and More do not overlap",
+    "390 / en: selection checked",
+    "390 / en: no global overflow",
+    "390 / en: one main",
+    "390 / en: trigger within viewport",
+    "390 / en: menu within viewport",
+    "390 / en: More within viewport",
+    "390 / en: trigger and More do not overlap",
+    "390 /players/ied-agent-allen ko: selection checked",
+    "390 /players/ied-agent-allen ko: no global overflow",
+    "390 /players/ied-agent-allen ko: one main",
+    "390 /players/ied-agent-allen ko: trigger within viewport",
+    "390 /players/ied-agent-allen ko: menu within viewport",
+    "390 /players/ied-agent-allen ko: More within viewport",
+    "390 /players/ied-agent-allen ko: trigger and More do not overlap",
+    "390 /players/ied-agent-allen en: selection checked",
+    "390 /players/ied-agent-allen en: no global overflow",
+    "390 /players/ied-agent-allen en: one main",
+    "390 /players/ied-agent-allen en: trigger within viewport",
+    "390 /players/ied-agent-allen en: menu within viewport",
+    "390 /players/ied-agent-allen en: More within viewport",
+    "390 /players/ied-agent-allen en: trigger and More do not overlap",
+    "390 /connect ko: selection checked",
+    "390 /connect ko: no global overflow",
+    "390 /connect ko: one main",
+    "390 /connect ko: trigger within viewport",
+    "390 /connect ko: menu within viewport",
+    "390 /connect ko: More within viewport",
+    "390 /connect ko: trigger and More do not overlap",
+    "390 /connect en: selection checked",
+    "390 /connect en: no global overflow",
+    "390 /connect en: one main",
+    "390 /connect en: trigger within viewport",
+    "390 /connect en: menu within viewport",
+    "390 /connect en: More within viewport",
+    "390 /connect en: trigger and More do not overlap",
+    "320 / ko: selection checked",
+    "320 / ko: no global overflow",
+    "320 / ko: one main",
+    "320 / ko: trigger within viewport",
+    "320 / ko: menu within viewport",
+    "320 / ko: More within viewport",
+    "320 / ko: trigger and More do not overlap",
+    "320 / en: selection checked",
+    "320 / en: no global overflow",
+    "320 / en: one main",
+    "320 / en: trigger within viewport",
+    "320 / en: menu within viewport",
+    "320 / en: More within viewport",
+    "320 / en: trigger and More do not overlap",
+    "320 /players/ied-agent-allen ko: selection checked",
+    "320 /players/ied-agent-allen ko: no global overflow",
+    "320 /players/ied-agent-allen ko: one main",
+    "320 /players/ied-agent-allen ko: trigger within viewport",
+    "320 /players/ied-agent-allen ko: menu within viewport",
+    "320 /players/ied-agent-allen ko: More within viewport",
+    "320 /players/ied-agent-allen ko: trigger and More do not overlap",
+    "320 /players/ied-agent-allen en: selection checked",
+    "320 /players/ied-agent-allen en: no global overflow",
+    "320 /players/ied-agent-allen en: one main",
+    "320 /players/ied-agent-allen en: trigger within viewport",
+    "320 /players/ied-agent-allen en: menu within viewport",
+    "320 /players/ied-agent-allen en: More within viewport",
+    "320 /players/ied-agent-allen en: trigger and More do not overlap",
+    "320 /connect ko: selection checked",
+    "320 /connect ko: no global overflow",
+    "320 /connect ko: one main",
+    "320 /connect ko: trigger within viewport",
+    "320 /connect ko: menu within viewport",
+    "320 /connect ko: More within viewport",
+    "320 /connect ko: trigger and More do not overlap",
+    "320 /connect en: selection checked",
+    "320 /connect en: no global overflow",
+    "320 /connect en: one main",
+    "320 /connect en: trigger within viewport",
+    "320 /connect en: menu within viewport",
+    "320 /connect en: More within viewport",
+    "320 /connect en: trigger and More do not overlap",
+    "No page or hydration errors",
+    "No console or hydration errors"
+  ],
+  "layouts": [
+    {
+      "label": "1440 / ko",
+      "width": 1440,
+      "overflow": 0,
+      "mainCount": 1,
+      "language": {
+        "x": 1128.015625,
+        "y": 4,
+        "width": 97.40625,
+        "height": 32
+      },
+      "list": {
+        "x": 1065.421875,
+        "y": 42,
+        "width": 160,
+        "height": 90
+      },
+      "more": {
+        "x": 1324.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "1440 / en",
+      "width": 1440,
+      "overflow": 0,
+      "mainCount": 1,
+      "language": {
+        "x": 1128.015625,
+        "y": 4,
+        "width": 97.40625,
+        "height": 32
+      },
+      "list": {
+        "x": 1065.421875,
+        "y": 42,
+        "width": 160,
+        "height": 90
+      },
+      "more": {
+        "x": 1324.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "1440 /players/ied-agent-allen ko",
+      "width": 1440,
+      "overflow": 0,
+      "mainCount": 1,
+      "language": {
+        "x": 1128.015625,
+        "y": 4,
+        "width": 97.40625,
+        "height": 32
+      },
+      "list": {
+        "x": 1065.421875,
+        "y": 42,
+        "width": 160,
+        "height": 90
+      },
+      "more": {
+        "x": 1324.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "1440 /players/ied-agent-allen en",
+      "width": 1440,
+      "overflow": 0,
+      "mainCount": 1,
+      "language": {
+        "x": 1128.015625,
+        "y": 4,
+        "width": 97.40625,
+        "height": 32
+      },
+      "list": {
+        "x": 1065.421875,
+        "y": 42,
+        "width": 160,
+        "height": 90
+      },
+      "more": {
+        "x": 1324.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "1440 /connect ko",
+      "width": 1440,
+      "overflow": 0,
+      "mainCount": 1,
+      "language": {
+        "x": 1128.015625,
+        "y": 4,
+        "width": 97.40625,
+        "height": 32
+      },
+      "list": {
+        "x": 1065.421875,
+        "y": 42,
+        "width": 160,
+        "height": 90
+      },
+      "more": {
+        "x": 1324.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "1440 /connect en",
+      "width": 1440,
+      "overflow": 0,
+      "mainCount": 1,
+      "language": {
+        "x": 1128.015625,
+        "y": 4,
+        "width": 97.40625,
+        "height": 32
+      },
+      "list": {
+        "x": 1065.421875,
+        "y": 42,
+        "width": 160,
+        "height": 90
+      },
+      "more": {
+        "x": 1324.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "820 / ko",
+      "width": 820,
+      "overflow": 0,
+      "mainCount": 1,
+      "language": {
+        "x": 508.015625,
+        "y": 4,
+        "width": 97.40625,
+        "height": 32
+      },
+      "list": {
+        "x": 445.421875,
+        "y": 42,
+        "width": 160,
+        "height": 90
+      },
+      "more": {
+        "x": 704.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "820 / en",
+      "width": 820,
+      "overflow": 0,
+      "mainCount": 1,
+      "language": {
+        "x": 508.015625,
+        "y": 4,
+        "width": 97.40625,
+        "height": 32
+      },
+      "list": {
+        "x": 445.421875,
+        "y": 42,
+        "width": 160,
+        "height": 90
+      },
+      "more": {
+        "x": 704.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "820 /players/ied-agent-allen ko",
+      "width": 820,
+      "overflow": 0,
+      "mainCount": 1,
+      "language": {
+        "x": 508.015625,
+        "y": 4,
+        "width": 97.40625,
+        "height": 32
+      },
+      "list": {
+        "x": 445.421875,
+        "y": 42,
+        "width": 160,
+        "height": 90
+      },
+      "more": {
+        "x": 704.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "820 /players/ied-agent-allen en",
+      "width": 820,
+      "overflow": 0,
+      "mainCount": 1,
+      "language": {
+        "x": 508.015625,
+        "y": 4,
+        "width": 97.40625,
+        "height": 32
+      },
+      "list": {
+        "x": 445.421875,
+        "y": 42,
+        "width": 160,
+        "height": 90
+      },
+      "more": {
+        "x": 704.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "820 /connect ko",
+      "width": 820,
+      "overflow": 0,
+      "mainCount": 1,
+      "language": {
+        "x": 508.015625,
+        "y": 4,
+        "width": 97.40625,
+        "height": 32
+      },
+      "list": {
+        "x": 445.421875,
+        "y": 42,
+        "width": 160,
+        "height": 90
+      },
+      "more": {
+        "x": 704.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "820 /connect en",
+      "width": 820,
+      "overflow": 0,
+      "mainCount": 1,
+      "language": {
+        "x": 508.015625,
+        "y": 4,
+        "width": 97.40625,
+        "height": 32
+      },
+      "list": {
+        "x": 445.421875,
+        "y": 42,
+        "width": 160,
+        "height": 90
+      },
+      "more": {
+        "x": 704.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "390 / ko",
+      "width": 390,
+      "overflow": 0,
+      "mainCount": 1,
+      "language": {
+        "x": 200.59375,
+        "y": 6,
+        "width": 97.40625,
+        "height": 32
+      },
+      "list": {
+        "x": 138,
+        "y": 44,
+        "width": 160,
+        "height": 90
+      },
+      "more": {
+        "x": 338,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "390 / en",
+      "width": 390,
+      "overflow": 0,
+      "mainCount": 1,
+      "language": {
+        "x": 200.59375,
+        "y": 6,
+        "width": 97.40625,
+        "height": 32
+      },
+      "list": {
+        "x": 138,
+        "y": 44,
+        "width": 160,
+        "height": 90
+      },
+      "more": {
+        "x": 338,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "390 /players/ied-agent-allen ko",
+      "width": 390,
+      "overflow": 0,
+      "mainCount": 1,
+      "language": {
+        "x": 200.59375,
+        "y": 6,
+        "width": 97.40625,
+        "height": 32
+      },
+      "list": {
+        "x": 138,
+        "y": 44,
+        "width": 160,
+        "height": 90
+      },
+      "more": {
+        "x": 338,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "390 /players/ied-agent-allen en",
+      "width": 390,
+      "overflow": 0,
+      "mainCount": 1,
+      "language": {
+        "x": 200.59375,
+        "y": 6,
+        "width": 97.40625,
+        "height": 32
+      },
+      "list": {
+        "x": 138,
+        "y": 44,
+        "width": 160,
+        "height": 90
+      },
+      "more": {
+        "x": 338,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "390 /connect ko",
+      "width": 390,
+      "overflow": 0,
+      "mainCount": 1,
+      "language": {
+        "x": 200.59375,
+        "y": 6,
+        "width": 97.40625,
+        "height": 32
+      },
+      "list": {
+        "x": 138,
+        "y": 44,
+        "width": 160,
+        "height": 90
+      },
+      "more": {
+        "x": 338,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "390 /connect en",
+      "width": 390,
+      "overflow": 0,
+      "mainCount": 1,
+      "language": {
+        "x": 200.59375,
+        "y": 6,
+        "width": 97.40625,
+        "height": 32
+      },
+      "list": {
+        "x": 138,
+        "y": 44,
+        "width": 160,
+        "height": 90
+      },
+      "more": {
+        "x": 338,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "320 / ko",
+      "width": 320,
+      "overflow": 0,
+      "mainCount": 1,
+      "language": {
+        "x": 151.328125,
+        "y": 6,
+        "width": 88.671875,
+        "height": 32
+      },
+      "list": {
+        "x": 80,
+        "y": 44,
+        "width": 160,
+        "height": 90
+      },
+      "more": {
+        "x": 268,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "320 / en",
+      "width": 320,
+      "overflow": 0,
+      "mainCount": 1,
+      "language": {
+        "x": 151.328125,
+        "y": 6,
+        "width": 88.671875,
+        "height": 32
+      },
+      "list": {
+        "x": 80,
+        "y": 44,
+        "width": 160,
+        "height": 90
+      },
+      "more": {
+        "x": 268,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "320 /players/ied-agent-allen ko",
+      "width": 320,
+      "overflow": 0,
+      "mainCount": 1,
+      "language": {
+        "x": 151.328125,
+        "y": 6,
+        "width": 88.671875,
+        "height": 32
+      },
+      "list": {
+        "x": 80,
+        "y": 44,
+        "width": 160,
+        "height": 90
+      },
+      "more": {
+        "x": 268,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "320 /players/ied-agent-allen en",
+      "width": 320,
+      "overflow": 0,
+      "mainCount": 1,
+      "language": {
+        "x": 151.328125,
+        "y": 6,
+        "width": 88.671875,
+        "height": 32
+      },
+      "list": {
+        "x": 80,
+        "y": 44,
+        "width": 160,
+        "height": 90
+      },
+      "more": {
+        "x": 268,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "320 /connect ko",
+      "width": 320,
+      "overflow": 0,
+      "mainCount": 1,
+      "language": {
+        "x": 151.328125,
+        "y": 6,
+        "width": 88.671875,
+        "height": 32
+      },
+      "list": {
+        "x": 80,
+        "y": 44,
+        "width": 160,
+        "height": 90
+      },
+      "more": {
+        "x": 268,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "320 /connect en",
+      "width": 320,
+      "overflow": 0,
+      "mainCount": 1,
+      "language": {
+        "x": 151.328125,
+        "y": 6,
+        "width": 88.671875,
+        "height": 32
+      },
+      "list": {
+        "x": 80,
+        "y": 44,
+        "width": 160,
+        "height": 90
+      },
+      "more": {
+        "x": 268,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "status": "PASS"
+}

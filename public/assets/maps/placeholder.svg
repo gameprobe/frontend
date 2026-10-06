@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 240" role="img" aria-label="Map placeholder">
+  <rect width="480" height="240" fill="#07111f"/>
+  <rect x="80" y="56" width="320" height="128" fill="#10233a" stroke="#5eead4" stroke-width="6"/>
+  <text x="240" y="136" text-anchor="middle" fill="#e5f4ff" font-family="Arial, sans-serif" font-size="36" font-weight="800">MAP</text>
+</svg>

@@ -1,0 +1,161 @@
+{
+  "phase": "after",
+  "screenshots": [
+    "after-1440-gate.png",
+    "after-1440-lineup-list.png",
+    "after-1440-lineup-editor.png",
+    "after-1440-smoke-filtered-list.png",
+    "after-1440-empty-list.png",
+    "after-1440-dirty-preview.png",
+    "after-1440-saved-editor.png",
+    "after-1440-new-lineup.png",
+    "after-1440-smoke-preview.png",
+    "after-1440-smoke-list.png",
+    "after-390-gate.png",
+    "after-390-lineup-list.png",
+    "after-390-lineup-editor.png",
+    "after-390-smoke-filtered-list.png",
+    "after-390-empty-list.png",
+    "after-390-dirty-preview.png",
+    "after-390-saved-editor.png",
+    "after-390-new-lineup.png",
+    "after-390-smoke-preview.png",
+    "after-390-smoke-list.png"
+  ],
+  "checks": [
+    {
+      "width": 1440,
+      "initialList": "PASS",
+      "keyboardOpen": "PASS",
+      "focus": {
+        "initialFocus": {
+          "tag": "H2",
+          "text": "라인업 관리",
+          "hidden": false
+        },
+        "editorFocus": {
+          "tag": "H2",
+          "text": "공략 편집",
+          "hidden": false
+        },
+        "returnFocus": {
+          "tag": "H2",
+          "text": "라인업 관리",
+          "hidden": false
+        }
+      },
+      "perKindFilters": "PASS",
+      "emptyReset": "PASS",
+      "dirtyGuard": "PASS",
+      "dialogs": [
+        {
+          "message": "저장하지 않은 변경이 있습니다. 변경을 버리고 이동할까요?",
+          "decision": "dismiss"
+        },
+        {
+          "message": "저장하지 않은 변경이 있습니다. 변경을 버리고 이동할까요?",
+          "decision": "dismiss"
+        },
+        {
+          "message": "저장하지 않은 변경이 있습니다. 변경을 버리고 이동할까요?",
+          "decision": "dismiss"
+        },
+        {
+          "message": "저장하지 않은 변경이 있습니다. 변경을 버리고 이동할까요?",
+          "decision": "dismiss"
+        },
+        {
+          "message": "저장하지 않은 변경이 있습니다. 변경을 버리고 이동할까요?",
+          "decision": "dismiss"
+        },
+        {
+          "message": "저장하지 않은 변경이 있습니다. 변경을 버리고 이동할까요?",
+          "decision": "dismiss"
+        },
+        {
+          "message": "저장하지 않은 변경이 있습니다. 변경을 버리고 이동할까요?",
+          "decision": "accept"
+        },
+        {
+          "message": "저장하지 않은 변경이 있습니다. 변경을 버리고 이동할까요?",
+          "decision": "accept"
+        }
+      ],
+      "saveStaysEditor": "PASS",
+      "savePreservesFilters": "PASS",
+      "newLineup": "PASS",
+      "newSmoke": "PASS",
+      "preview": "PASS",
+      "reload": "PASS",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "initialList": "PASS",
+      "keyboardOpen": "PASS",
+      "focus": {
+        "initialFocus": {
+          "tag": "H2",
+          "text": "라인업 관리",
+          "hidden": false
+        },
+        "editorFocus": {
+          "tag": "H2",
+          "text": "공략 편집",
+          "hidden": false
+        },
+        "returnFocus": {
+          "tag": "H2",
+          "text": "라인업 관리",
+          "hidden": false
+        }
+      },
+      "perKindFilters": "PASS",
+      "emptyReset": "PASS",
+      "dirtyGuard": "PASS",
+      "dialogs": [
+        {
+          "message": "저장하지 않은 변경이 있습니다. 변경을 버리고 이동할까요?",
+          "decision": "dismiss"
+        },
+        {
+          "message": "저장하지 않은 변경이 있습니다. 변경을 버리고 이동할까요?",
+          "decision": "dismiss"
+        },
+        {
+          "message": "저장하지 않은 변경이 있습니다. 변경을 버리고 이동할까요?",
+          "decision": "dismiss"
+        },
+        {
+          "message": "저장하지 않은 변경이 있습니다. 변경을 버리고 이동할까요?",
+          "decision": "dismiss"
+        },
+        {
+          "message": "저장하지 않은 변경이 있습니다. 변경을 버리고 이동할까요?",
+          "decision": "dismiss"
+        },
+        {
+          "message": "저장하지 않은 변경이 있습니다. 변경을 버리고 이동할까요?",
+          "decision": "dismiss"
+        },
+        {
+          "message": "저장하지 않은 변경이 있습니다. 변경을 버리고 이동할까요?",
+          "decision": "accept"
+        },
+        {
+          "message": "저장하지 않은 변경이 있습니다. 변경을 버리고 이동할까요?",
+          "decision": "accept"
+        }
+      ],
+      "saveStaysEditor": "PASS",
+      "savePreservesFilters": "PASS",
+      "newLineup": "PASS",
+      "newSmoke": "PASS",
+      "preview": "PASS",
+      "reload": "PASS",
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "apiRequests": []
+}

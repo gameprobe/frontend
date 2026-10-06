@@ -1,0 +1,17 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "status": 200,
+      "keyboardContact": "pass",
+      "placeholderNotLinked": true
+    },
+    {
+      "width": 390,
+      "status": 200,
+      "keyboardContact": "pass",
+      "placeholderNotLinked": true
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,129 @@
+{
+  "results": [
+    {
+      "file": "before-1440-connect-ko.png",
+      "name": "connect",
+      "width": 1440,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot 계정 연결 예정"
+      ]
+    },
+    {
+      "file": "before-1440-connect-en.png",
+      "name": "connect",
+      "width": 1440,
+      "locale": "en",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot account connection coming soon"
+      ]
+    },
+    {
+      "file": "before-820-connect-ko.png",
+      "name": "connect",
+      "width": 820,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot 계정 연결 예정"
+      ]
+    },
+    {
+      "file": "before-390-connect-ko.png",
+      "name": "connect",
+      "width": 390,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot 계정 연결 예정"
+      ]
+    },
+    {
+      "file": "before-390-connect-en.png",
+      "name": "connect",
+      "width": 390,
+      "locale": "en",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot account connection coming soon"
+      ]
+    },
+    {
+      "file": "before-320-connect-ko.png",
+      "name": "connect",
+      "width": 320,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot 계정 연결 예정"
+      ]
+    },
+    {
+      "file": "before-1440-home-ko.png",
+      "name": "home",
+      "width": 1440,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "당신의 플레이,더 선명하게.",
+        "기존 디자인 데모 미리보기",
+        "게임을 더 깊이 들여다보세요",
+        "플레이 분석 미리보기 예시",
+        "위치 선정",
+        "팀 교전",
+        "첫 교전",
+        "사이트 방어"
+      ]
+    },
+    {
+      "file": "before-1440-legacy-ko.png",
+      "name": "legacy",
+      "width": 1440,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "IED agent#Allen",
+        "CURRENT RATING ⓘ",
+        "ACCURACY Selected act",
+        "ROLES",
+        "TOP WEAPONS",
+        "TOP MAPS",
+        "V26: A5 COMPETITIVE OVERVIEW",
+        "TOP AGENTS",
+        "LAST 20 MATCHES"
+      ]
+    },
+    {
+      "file": "before-1440-synthetic-ko.png",
+      "name": "synthetic",
+      "width": 1440,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "DemoPlayer01#DEMO",
+        "CURRENT RATING ⓘ",
+        "ACCURACY Selected act",
+        "ROLES",
+        "TOP WEAPONS",
+        "TOP MAPS",
+        "DEMO ACT COMPETITIVE OVERVIEW",
+        "TOP AGENTS",
+        "LAST 20 MATCHES"
+      ]
+    }
+  ],
+  "checks": [],
+  "errors": [],
+  "apiRequests": []
+}

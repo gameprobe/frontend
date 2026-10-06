@@ -1,0 +1,69 @@
+{
+  "states": [
+    {
+      "width": 1440,
+      "route": "lineups",
+      "outlineColor": [
+        216,
+        200,
+        121
+      ],
+      "outlinePixelsInCardRegion": 2346,
+      "region": [
+        38,
+        408,
+        493,
+        583
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "smokes",
+      "outlineColor": [
+        216,
+        200,
+        121
+      ],
+      "outlinePixelsInCardRegion": 2346,
+      "region": [
+        38,
+        432,
+        493,
+        607
+      ]
+    },
+    {
+      "width": 390,
+      "route": "lineups",
+      "outlineColor": [
+        216,
+        200,
+        121
+      ],
+      "outlinePixelsInCardRegion": 1072,
+      "region": [
+        20,
+        546,
+        197,
+        681
+      ]
+    },
+    {
+      "width": 390,
+      "route": "smokes",
+      "outlineColor": [
+        216,
+        200,
+        121
+      ],
+      "outlinePixelsInCardRegion": 1076,
+      "region": [
+        20,
+        573,
+        197,
+        708
+      ]
+    }
+  ],
+  "status": "PASS"
+}

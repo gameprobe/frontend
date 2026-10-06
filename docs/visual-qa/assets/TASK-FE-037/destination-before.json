@@ -1,0 +1,14 @@
+{
+  "phase": "before",
+  "screens": [
+    "destination-before-1440-gate.png",
+    "destination-before-1440-editor.png",
+    "destination-before-1440-preview.png",
+    "destination-before-390-gate.png",
+    "destination-before-390-editor.png",
+    "destination-before-390-preview.png"
+  ],
+  "checks": [],
+  "errors": [],
+  "apiRequests": []
+}

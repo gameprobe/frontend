@@ -1,0 +1,1124 @@
+{
+  "task": "TASK-FE-017",
+  "date": "2026-09-20",
+  "baseline": "eac0cbf23b7640bb2550a26c0e8d7e7fe7334b5f",
+  "branch": "codex/profile-match-history-components",
+  "environment": {
+    "browser": "Playwright Chromium headless",
+    "zoom": "100%",
+    "deviceScaleFactor": 1,
+    "desktop": [
+      1920,
+      960
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "widths": [
+      320,
+      390,
+      480,
+      481,
+      700,
+      701,
+      768,
+      800,
+      801,
+      850,
+      851,
+      1000,
+      1001,
+      1100,
+      1101,
+      1250,
+      1251,
+      1440,
+      1499,
+      1500,
+      1920
+    ]
+  },
+  "comparison": {
+    "status": "PASS",
+    "basicConditions": 56,
+    "matchConditions": 30,
+    "totalConditions": 86,
+    "basicDifferences": [],
+    "matchDifferences": [],
+    "pageErrors": [],
+    "computedStyleProperties": 23,
+    "pageHorizontalOverflow": 0,
+    "mainCount": 1,
+    "includes": [
+      "all main elements",
+      "tag and leaf text",
+      "bounding boxes",
+      "computed styles",
+      "image alt/src",
+      "ARIA and SVG paths/points",
+      "match ids and aria-controls in match state comparisons"
+    ],
+    "scrollNormalization": [
+      {
+        "key": "desktop-strip-selection",
+        "stage": "after",
+        "offset": 8,
+        "reason": "Translate viewport coordinates into document coordinates before the sticky threshold."
+      },
+      {
+        "key": "desktop-strip-selection",
+        "stage": "before",
+        "offset": 7,
+        "reason": "Translate viewport coordinates into document coordinates before the sticky threshold."
+      },
+      {
+        "key": "mobile-strip-selection",
+        "stage": "after",
+        "offset": 4,
+        "reason": "Translate viewport coordinates into document coordinates before the sticky threshold."
+      },
+      {
+        "key": "mobile-strip-selection",
+        "stage": "before",
+        "offset": 5,
+        "reason": "Translate viewport coordinates into document coordinates before the sticky threshold."
+      }
+    ]
+  },
+  "pixels": [
+    {
+      "name": "home-desktop",
+      "size": [
+        1920,
+        1076
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "home-mobile",
+      "size": [
+        390,
+        1486
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-desktop-all-matches",
+      "size": [
+        1102,
+        557
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-desktop-alternate-identity",
+      "size": [
+        1072,
+        318
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-desktop-banner-dismissed",
+      "size": [
+        1102,
+        485
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-desktop-deathmatch-performance",
+      "size": [
+        1072,
+        282
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-desktop-detail-overview",
+      "size": [
+        1072,
+        318
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-desktop-detail-performance",
+      "size": [
+        1072,
+        282
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-desktop-empty-match-filters",
+      "size": [
+        1102,
+        531
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-desktop-empty-season",
+      "size": [
+        1102,
+        531
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-desktop-filters-date",
+      "size": [
+        1102,
+        588
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-desktop-load-more",
+      "size": [
+        1102,
+        155
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-desktop-overview",
+      "size": [
+        1102,
+        557
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-desktop-reset-match-filters",
+      "size": [
+        1102,
+        557
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-desktop-strip-selection",
+      "size": [
+        1072,
+        318
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-mobile-all-matches",
+      "size": [
+        370,
+        642
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-mobile-alternate-identity",
+      "size": [
+        350,
+        356
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-mobile-banner-dismissed",
+      "size": [
+        370,
+        555
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-mobile-deathmatch-performance",
+      "size": [
+        350,
+        388
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-mobile-detail-overview",
+      "size": [
+        350,
+        356
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-mobile-detail-performance",
+      "size": [
+        350,
+        388
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-mobile-empty-match-filters",
+      "size": [
+        370,
+        571
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-mobile-empty-season",
+      "size": [
+        370,
+        571
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-mobile-filters-date",
+      "size": [
+        370,
+        674
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-mobile-load-more",
+      "size": [
+        370,
+        210
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-mobile-overview",
+      "size": [
+        370,
+        642
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-mobile-reset-match-filters",
+      "size": [
+        370,
+        642
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "matches-mobile-strip-selection",
+      "size": [
+        350,
+        356
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "profile-desktop",
+      "size": [
+        1920,
+        4408
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    },
+    {
+      "name": "profile-mobile",
+      "size": [
+        390,
+        7388
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bbox": null
+    }
+  ],
+  "captures": {
+    "pngCount": 62,
+    "pairs": 30,
+    "keyboardExtras": [
+      "after-home-keyboard-focus.png",
+      "after-profile-keyboard-focus.png"
+    ],
+    "matchRegions": {
+      "before": {
+        "before-matches-desktop-overview.png": {
+          "source": "/tmp/fe017-before-full-desktop-overview.png",
+          "clip": [
+            562,
+            1388,
+            1664,
+            1945
+          ]
+        },
+        "before-matches-desktop-detail-overview.png": {
+          "source": "/tmp/fe017-before-full-desktop-detail-overview.png",
+          "clip": [
+            577,
+            1848,
+            1649,
+            2166
+          ]
+        },
+        "before-matches-desktop-detail-performance.png": {
+          "source": "/tmp/fe017-before-full-desktop-detail-performance.png",
+          "clip": [
+            577,
+            1848,
+            1649,
+            2130
+          ]
+        },
+        "before-matches-desktop-strip-selection.png": {
+          "source": "/tmp/fe017-before-full-desktop-strip-selection.png",
+          "clip": [
+            577,
+            2713,
+            1649,
+            3031
+          ],
+          "documentScrollOffset": 7
+        },
+        "before-matches-desktop-all-matches.png": {
+          "source": "/tmp/fe017-before-full-desktop-all-matches.png",
+          "clip": [
+            562,
+            626,
+            1664,
+            1183
+          ]
+        },
+        "before-matches-desktop-load-more.png": {
+          "source": "/tmp/fe017-before-full-desktop-load-more.png",
+          "clip": [
+            562,
+            4786,
+            1664,
+            4941
+          ]
+        },
+        "before-matches-desktop-filters-date.png": {
+          "source": "/tmp/fe017-before-full-desktop-filters-date.png",
+          "clip": [
+            562,
+            1388,
+            1664,
+            1976
+          ]
+        },
+        "before-matches-desktop-empty-match-filters.png": {
+          "source": "/tmp/fe017-before-full-desktop-empty-match-filters.png",
+          "clip": [
+            562,
+            1388,
+            1664,
+            1919
+          ]
+        },
+        "before-matches-desktop-reset-match-filters.png": {
+          "source": "/tmp/fe017-before-full-desktop-reset-match-filters.png",
+          "clip": [
+            562,
+            1388,
+            1664,
+            1945
+          ]
+        },
+        "before-matches-desktop-deathmatch-performance.png": {
+          "source": "/tmp/fe017-before-full-desktop-deathmatch-performance.png",
+          "clip": [
+            577,
+            1788,
+            1649,
+            2070
+          ]
+        },
+        "before-matches-desktop-empty-season.png": {
+          "source": "/tmp/fe017-before-full-desktop-empty-season.png",
+          "clip": [
+            562,
+            1314,
+            1664,
+            1845
+          ]
+        },
+        "before-matches-desktop-banner-dismissed.png": {
+          "source": "/tmp/fe017-before-full-desktop-banner-dismissed.png",
+          "clip": [
+            562,
+            626,
+            1664,
+            1111
+          ]
+        },
+        "before-matches-desktop-alternate-identity.png": {
+          "source": "/tmp/fe017-before-full-desktop-alternate-identity.png",
+          "clip": [
+            577,
+            1848,
+            1649,
+            2166
+          ]
+        },
+        "before-matches-mobile-overview.png": {
+          "source": "/tmp/fe017-before-full-mobile-overview.png",
+          "clip": [
+            10,
+            1766,
+            380,
+            2408
+          ]
+        },
+        "before-matches-mobile-detail-overview.png": {
+          "source": "/tmp/fe017-before-full-mobile-detail-overview.png",
+          "clip": [
+            20,
+            2257,
+            370,
+            2613
+          ]
+        },
+        "before-matches-mobile-detail-performance.png": {
+          "source": "/tmp/fe017-before-full-mobile-detail-performance.png",
+          "clip": [
+            20,
+            2257,
+            370,
+            2645
+          ]
+        },
+        "before-matches-mobile-strip-selection.png": {
+          "source": "/tmp/fe017-before-full-mobile-strip-selection.png",
+          "clip": [
+            20,
+            2775,
+            370,
+            3131
+          ],
+          "documentScrollOffset": 5
+        },
+        "before-matches-mobile-all-matches.png": {
+          "source": "/tmp/fe017-before-full-mobile-all-matches.png",
+          "clip": [
+            10,
+            665,
+            380,
+            1307
+          ]
+        },
+        "before-matches-mobile-load-more.png": {
+          "source": "/tmp/fe017-before-full-mobile-load-more.png",
+          "clip": [
+            10,
+            6408,
+            380,
+            6618
+          ]
+        },
+        "before-matches-mobile-filters-date.png": {
+          "source": "/tmp/fe017-before-full-mobile-filters-date.png",
+          "clip": [
+            10,
+            1766,
+            380,
+            2440
+          ]
+        },
+        "before-matches-mobile-empty-match-filters.png": {
+          "source": "/tmp/fe017-before-full-mobile-empty-match-filters.png",
+          "clip": [
+            10,
+            1766,
+            380,
+            2337
+          ]
+        },
+        "before-matches-mobile-reset-match-filters.png": {
+          "source": "/tmp/fe017-before-full-mobile-reset-match-filters.png",
+          "clip": [
+            10,
+            1766,
+            380,
+            2408
+          ]
+        },
+        "before-matches-mobile-deathmatch-performance.png": {
+          "source": "/tmp/fe017-before-full-mobile-deathmatch-performance.png",
+          "clip": [
+            20,
+            2142,
+            370,
+            2530
+          ]
+        },
+        "before-matches-mobile-empty-season.png": {
+          "source": "/tmp/fe017-before-full-mobile-empty-season.png",
+          "clip": [
+            10,
+            1700,
+            380,
+            2271
+          ]
+        },
+        "before-matches-mobile-banner-dismissed.png": {
+          "source": "/tmp/fe017-before-full-mobile-banner-dismissed.png",
+          "clip": [
+            10,
+            665,
+            380,
+            1220
+          ]
+        },
+        "before-matches-mobile-alternate-identity.png": {
+          "source": "/tmp/fe017-before-full-mobile-alternate-identity.png",
+          "clip": [
+            20,
+            2257,
+            370,
+            2613
+          ]
+        }
+      },
+      "after": {
+        "after-matches-desktop-overview.png": {
+          "source": "/tmp/fe017-after-full-desktop-overview.png",
+          "clip": [
+            562,
+            1388,
+            1664,
+            1945
+          ]
+        },
+        "after-matches-desktop-detail-overview.png": {
+          "source": "/tmp/fe017-after-full-desktop-detail-overview.png",
+          "clip": [
+            577,
+            1848,
+            1649,
+            2166
+          ]
+        },
+        "after-matches-desktop-detail-performance.png": {
+          "source": "/tmp/fe017-after-full-desktop-detail-performance.png",
+          "clip": [
+            577,
+            1848,
+            1649,
+            2130
+          ]
+        },
+        "after-matches-desktop-strip-selection.png": {
+          "source": "/tmp/fe017-after-full-desktop-strip-selection.png",
+          "clip": [
+            577,
+            2713,
+            1649,
+            3031
+          ],
+          "documentScrollOffset": 8
+        },
+        "after-matches-desktop-all-matches.png": {
+          "source": "/tmp/fe017-after-full-desktop-all-matches.png",
+          "clip": [
+            562,
+            626,
+            1664,
+            1183
+          ]
+        },
+        "after-matches-desktop-load-more.png": {
+          "source": "/tmp/fe017-after-full-desktop-load-more.png",
+          "clip": [
+            562,
+            4786,
+            1664,
+            4941
+          ]
+        },
+        "after-matches-desktop-filters-date.png": {
+          "source": "/tmp/fe017-after-full-desktop-filters-date.png",
+          "clip": [
+            562,
+            1388,
+            1664,
+            1976
+          ]
+        },
+        "after-matches-desktop-empty-match-filters.png": {
+          "source": "/tmp/fe017-after-full-desktop-empty-match-filters.png",
+          "clip": [
+            562,
+            1388,
+            1664,
+            1919
+          ]
+        },
+        "after-matches-desktop-reset-match-filters.png": {
+          "source": "/tmp/fe017-after-full-desktop-reset-match-filters.png",
+          "clip": [
+            562,
+            1388,
+            1664,
+            1945
+          ]
+        },
+        "after-matches-desktop-deathmatch-performance.png": {
+          "source": "/tmp/fe017-after-full-desktop-deathmatch-performance.png",
+          "clip": [
+            577,
+            1788,
+            1649,
+            2070
+          ]
+        },
+        "after-matches-desktop-empty-season.png": {
+          "source": "/tmp/fe017-after-full-desktop-empty-season.png",
+          "clip": [
+            562,
+            1314,
+            1664,
+            1845
+          ]
+        },
+        "after-matches-desktop-banner-dismissed.png": {
+          "source": "/tmp/fe017-after-full-desktop-banner-dismissed.png",
+          "clip": [
+            562,
+            626,
+            1664,
+            1111
+          ]
+        },
+        "after-matches-desktop-alternate-identity.png": {
+          "source": "/tmp/fe017-after-full-desktop-alternate-identity.png",
+          "clip": [
+            577,
+            1848,
+            1649,
+            2166
+          ]
+        },
+        "after-matches-mobile-overview.png": {
+          "source": "/tmp/fe017-after-full-mobile-overview.png",
+          "clip": [
+            10,
+            1766,
+            380,
+            2408
+          ]
+        },
+        "after-matches-mobile-detail-overview.png": {
+          "source": "/tmp/fe017-after-full-mobile-detail-overview.png",
+          "clip": [
+            20,
+            2257,
+            370,
+            2613
+          ]
+        },
+        "after-matches-mobile-detail-performance.png": {
+          "source": "/tmp/fe017-after-full-mobile-detail-performance.png",
+          "clip": [
+            20,
+            2257,
+            370,
+            2645
+          ]
+        },
+        "after-matches-mobile-strip-selection.png": {
+          "source": "/tmp/fe017-after-full-mobile-strip-selection.png",
+          "clip": [
+            20,
+            2775,
+            370,
+            3131
+          ],
+          "documentScrollOffset": 4
+        },
+        "after-matches-mobile-all-matches.png": {
+          "source": "/tmp/fe017-after-full-mobile-all-matches.png",
+          "clip": [
+            10,
+            665,
+            380,
+            1307
+          ]
+        },
+        "after-matches-mobile-load-more.png": {
+          "source": "/tmp/fe017-after-full-mobile-load-more.png",
+          "clip": [
+            10,
+            6408,
+            380,
+            6618
+          ]
+        },
+        "after-matches-mobile-filters-date.png": {
+          "source": "/tmp/fe017-after-full-mobile-filters-date.png",
+          "clip": [
+            10,
+            1766,
+            380,
+            2440
+          ]
+        },
+        "after-matches-mobile-empty-match-filters.png": {
+          "source": "/tmp/fe017-after-full-mobile-empty-match-filters.png",
+          "clip": [
+            10,
+            1766,
+            380,
+            2337
+          ]
+        },
+        "after-matches-mobile-reset-match-filters.png": {
+          "source": "/tmp/fe017-after-full-mobile-reset-match-filters.png",
+          "clip": [
+            10,
+            1766,
+            380,
+            2408
+          ]
+        },
+        "after-matches-mobile-deathmatch-performance.png": {
+          "source": "/tmp/fe017-after-full-mobile-deathmatch-performance.png",
+          "clip": [
+            20,
+            2142,
+            370,
+            2530
+          ]
+        },
+        "after-matches-mobile-empty-season.png": {
+          "source": "/tmp/fe017-after-full-mobile-empty-season.png",
+          "clip": [
+            10,
+            1700,
+            380,
+            2271
+          ]
+        },
+        "after-matches-mobile-banner-dismissed.png": {
+          "source": "/tmp/fe017-after-full-mobile-banner-dismissed.png",
+          "clip": [
+            10,
+            665,
+            380,
+            1220
+          ]
+        },
+        "after-matches-mobile-alternate-identity.png": {
+          "source": "/tmp/fe017-after-full-mobile-alternate-identity.png",
+          "clip": [
+            20,
+            2257,
+            370,
+            2613
+          ]
+        }
+      }
+    }
+  },
+  "interactions": {
+    "interactions": {
+      "status": "PASS",
+      "count": 18,
+      "checks": [
+        "home Search hover / keyboard focus without layout shift",
+        "Home More / Escape / focus",
+        "Home search existing demo route",
+        "Overview existing IED route",
+        "profile Search hover / keyboard focus without layout shift",
+        "Profile search empty/matching/other and existing toast timeout",
+        "Profile More preserves toggle without Home Escape behavior",
+        "Footer/account destinations and Mock notice dismissal",
+        "Sticky navigation",
+        "Six profile tabs",
+        "Agent card filters nine matches",
+        "One expanded match and detail tabs reset",
+        "Loss filter / reset / 20 to 23 matches",
+        "Act switch updates data",
+        "Empty state and season reset",
+        "Favorite persists with existing storage key",
+        "profile to lineups restores global shell",
+        "home to lineups restores global shell"
+      ],
+      "pageErrors": []
+    },
+    "summary-interactions": {
+      "status": "PASS",
+      "count": 11,
+      "checks": [
+        "Match agent filter leaves season/score/agent totals unchanged",
+        "Agent table selection preserves other match filters and navigates",
+        "Show More survives tab/act changes; act updates season statistics",
+        "All Acts and platform update season totals",
+        "Deathmatch labels and hidden non-applicable statistics preserved",
+        "Empty season keeps zero metrics, absent grades and empty agent message",
+        "Empty reset restores initial season, score and agent values",
+        "Mock refresh changes notice only",
+        "Share success and failure notices preserved",
+        "Mobile agent table scrolls inside its region without page overflow",
+        "Restricted storage still preserves visit-only favorite feedback"
+      ],
+      "pageErrors": []
+    },
+    "header-interactions": {
+      "status": "PASS",
+      "count": 7,
+      "checks": [
+        "Header favorite keyboard activation and reload persistence",
+        "Profile tabs preserve loaded count while closing match details",
+        "Promotion navigates to Performance without clearing match filters",
+        "All Acts and all five modes preserve selection semantics",
+        "Act focus, option selection and season reset keep original behavior",
+        "Alternate demo identity and per-player saved keys stay independent",
+        "Mobile tab and mode keyboard scrolling stays within page"
+      ],
+      "pageErrors": []
+    },
+    "sidebar-interactions": {
+      "status": "PASS",
+      "count": 10,
+      "checks": [
+        "Six sidebar cards and existing accuracy graph label",
+        "S02 keyboard Performance closes expansion and preserves loaded page size",
+        "S05 keyboard weapon selection preserves other filters and season totals, resets expansion",
+        "S06 keyboard map selection keeps weapon/agent/result and sidebar season statistics",
+        "S05 View All Weapons changes only tab, match filters restored",
+        "S06 View All Maps keyboard action preserves match filters",
+        "Sidebar filter change resets loaded page count to twenty",
+        "Act/All Acts/platform/Deathmatch/empty change sidebar data but keep illustrative rank",
+        "Empty selection keeps zero anatomy/roles/weapons and no map rows; reset restores initial data",
+        "Mobile sidebar keyboard target remains focused without page overflow"
+      ],
+      "pageErrors": []
+    },
+    "match-interactions": {
+      "status": "PASS",
+      "count": 22,
+      "checks": [
+        "desktop: Row keyboard expansion and both detail tabs",
+        "desktop: Only one expansion; close/reopen resets detail tab",
+        "desktop: Recent strip opens visible target, resets detail and requests centered scroll",
+        "desktop: All Matches changes tab, closes detail and displays all twenty-three",
+        "desktop: Load more extends twenty to twenty-three without closing detail",
+        "desktop: More toggle retains result; date note/filter change closes expansion",
+        "desktop: Empty match filter Reset retains selected act and restores its three matches",
+        "desktop: Deathmatch detail keeps average damage and omits KAST",
+        "desktop: Empty season Reset restores PC Competitive current act and twenty matches",
+        "desktop: Banner dismissal persists through profile tab change",
+        "desktop: Expanded match uses alternate profile identity",
+        "mobile: Row keyboard expansion and both detail tabs",
+        "mobile: Only one expansion; close/reopen resets detail tab",
+        "mobile: Recent strip opens visible target, resets detail and requests centered scroll",
+        "mobile: All Matches changes tab, closes detail and displays all twenty-three",
+        "mobile: Load more extends twenty to twenty-three without closing detail",
+        "mobile: More toggle retains result; date note/filter change closes expansion",
+        "mobile: Empty match filter Reset retains selected act and restores its three matches",
+        "mobile: Deathmatch detail keeps average damage and omits KAST",
+        "mobile: Empty season Reset restores PC Competitive current act and twenty matches",
+        "mobile: Banner dismissal persists through profile tab change",
+        "mobile: Expanded match uses alternate profile identity"
+      ],
+      "pageErrors": []
+    }
+  },
+  "sidebarStateComparison": {
+    "status": "PASS",
+    "states": 14
+  },
+  "matchStateNames": [
+    "desktop-overview",
+    "desktop-detail-overview",
+    "desktop-detail-performance",
+    "desktop-reopened-second",
+    "desktop-strip-selection",
+    "desktop-all-matches",
+    "desktop-load-more",
+    "desktop-filters-date",
+    "desktop-empty-match-filters",
+    "desktop-reset-match-filters",
+    "desktop-deathmatch-performance",
+    "desktop-empty-season",
+    "desktop-reset-season",
+    "desktop-banner-dismissed",
+    "desktop-alternate-identity",
+    "mobile-overview",
+    "mobile-detail-overview",
+    "mobile-detail-performance",
+    "mobile-reopened-second",
+    "mobile-strip-selection",
+    "mobile-all-matches",
+    "mobile-load-more",
+    "mobile-filters-date",
+    "mobile-empty-match-filters",
+    "mobile-reset-match-filters",
+    "mobile-deathmatch-performance",
+    "mobile-empty-season",
+    "mobile-reset-season",
+    "mobile-banner-dismissed",
+    "mobile-alternate-identity"
+  ],
+  "qualitativeReview": {
+    "status": "PASS",
+    "observed": "Before/After desktop and mobile match overview, both detail tabs, filters/date, empty filters, empty season and Deathmatch reviewed; no new text clipping, spacing or alignment regressions."
+  },
+  "limitations": [
+    "Match region captures are unmodified full-page screenshots cropped by measured coordinates without masks or color adjustments; full source images remain in /tmp.",
+    "Mobile recent strip has eight DOM buttons but only first four displayed as before; keyboard test targets fourth visible mobile entry and eighth desktop entry.",
+    "Native Act select popup direction-key selection is not claimed; focus/selectOption change handling checked. Actual Enter/Space button events verified.",
+    "Mock data meanings and existing missing/nonapplicable statistics remain unchanged.",
+    "Automated and visual checks do not replace user or formal Cursor review.",
+    "Two strip-selection states retained small scroll offsets in both phases despite an instant-scroll attempt. Raw measurements were preserved and viewport coordinates translated into document coordinates with the recorded 7/5px before and 8/4px after offsets; no element mask or tolerance was used."
+  ],
+  "cssReview": {
+    "task": "TASK-FE-017",
+    "scope": "CSS extraction review only",
+    "baseline_commit": "eac0cbf23b7640bb2550a26c0e8d7e7fe7334b5f",
+    "files": [
+      "frontend/src/features/tracker-profile/TrackerProfile.module.css",
+      "frontend/src/features/tracker-profile/match-history/MatchHistory.module.css"
+    ],
+    "counts": {
+      "before_rule_groups": 259,
+      "retained_parent_rule_groups": 91,
+      "moved_child_rule_groups": 168
+    },
+    "checks": {
+      "condition_selector_declaration_multiset_identical": true,
+      "per_selector_declarations_and_responsive_order_identical": true,
+      "cross_module_selectors": [
+        {
+          "selector": ".content>.matchSection:first-child",
+          "preserved_verbatim_in_child": true
+        },
+        {
+          "selector": ".matchFilters .selectWrap select",
+          "preserved_verbatim_in_child": true
+        },
+        {
+          "selector": ".matchFilters .selectWrap:nth-child(n+3) select",
+          "preserved_verbatim_in_child": true
+        },
+        {
+          "selector": ".matchFilters .selectWrap:nth-child(n+3) svg",
+          "preserved_verbatim_in_child": true
+        }
+      ],
+      "unchanged_undefined_class_references": {
+        "formWin": {
+          "defined_before": false,
+          "defined_after": false
+        },
+        "matchWin": {
+          "defined_before": false,
+          "defined_after": false
+        }
+      },
+      "scoped_git_diff_check": {
+        "command": [
+          "git",
+          "diff",
+          "--check",
+          "--",
+          "frontend/src/features/tracker-profile/TrackerProfile.module.css",
+          "frontend/src/features/tracker-profile/match-history/MatchHistory.module.css"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    "limitations": [
+      "Static comparison confirms CSS rule text and per-selector order; computed DOM/style and screenshot comparison remains the independent After QA responsibility.",
+      "At <=700px, .matchGroup border-radius:10px and shared .card border-radius use equal specificity; verify the effective 10px value after CSS module load-order changes."
+    ],
+    "result": "PASS"
+  },
+  "computedMobileMatchGroupRadius": {
+    "before": "10px",
+    "after": "10px",
+    "status": "PASS"
+  },
+  "buildVerification": {
+    "status": "PASS",
+    "mock": "PASS",
+    "typescript": "PASS",
+    "lint": {
+      "status": "PASS",
+      "warnings": 0,
+      "errors": 0
+    },
+    "productionBuild": {
+      "status": "PASS",
+      "staticPages": 11
+    },
+    "developmentServerRestored": true,
+    "profileHttpStatus": 200,
+    "note": "Executed by the primary implementation agent after Playwright checks; existing git metadata fallback only."
+  },
+  "additionalPrimaryAgentReview": {
+    "typescriptBoundaryReview": "No source behavior regression reported.",
+    "visualReview": [
+      "desktop Performance details",
+      "mobile Overview details"
+    ],
+    "findings": "No new clipping or overlap."
+  }
+}

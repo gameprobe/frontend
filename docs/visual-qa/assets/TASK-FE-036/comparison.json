@@ -1,0 +1,50 @@
+[
+  {
+    "width": 1440,
+    "page": "home",
+    "below_header_changed_pixels": 0,
+    "bbox": null
+  },
+  {
+    "width": 1440,
+    "page": "profile",
+    "below_header_changed_pixels": 0,
+    "bbox": null
+  },
+  {
+    "width": 1440,
+    "page": "lineups",
+    "below_header_changed_pixels": 0,
+    "bbox": null
+  },
+  {
+    "width": 1440,
+    "page": "smokes",
+    "below_header_changed_pixels": 0,
+    "bbox": null
+  },
+  {
+    "width": 390,
+    "page": "home",
+    "below_header_changed_pixels": 0,
+    "bbox": null
+  },
+  {
+    "width": 390,
+    "page": "profile",
+    "below_header_changed_pixels": 0,
+    "bbox": null
+  },
+  {
+    "width": 390,
+    "page": "lineups",
+    "below_header_changed_pixels": 0,
+    "bbox": null
+  },
+  {
+    "width": 390,
+    "page": "smokes",
+    "below_header_changed_pixels": 0,
+    "bbox": null
+  }
+]

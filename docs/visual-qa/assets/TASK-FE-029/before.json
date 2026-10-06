@@ -1,0 +1,1914 @@
+{
+  "phase": "before",
+  "screenshots": [
+    {
+      "name": "lineups-loading",
+      "width": 1440,
+      "file": "before-1440-lineups-loading.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "API Preview공개 라인업을 불러오는 중입니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 905.8125,
+          "y": 150.890625,
+          "width": 485.1875,
+          "height": 83.59375
+        }
+      ],
+      "mapCards": 12,
+      "guideCards": 0,
+      "rotation": [],
+      "pins": [],
+      "paths": [],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": "page",
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": null,
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "lineups-success",
+      "width": 1440,
+      "file": "before-1440-lineups-success.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "Published API관리자가 공개 승인한 라인업을 표시합니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 905.8125,
+          "y": 150.890625,
+          "width": 485.1875,
+          "height": 83.59375
+        }
+      ],
+      "mapCards": 12,
+      "guideCards": 0,
+      "rotation": [],
+      "pins": [],
+      "paths": [],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": "page",
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": null,
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "lineups-selected",
+      "width": 1440,
+      "file": "before-1440-lineups-selected.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "Published API관리자가 공개 승인한 라인업을 표시합니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 905.8125,
+          "y": 150.890625,
+          "width": 485.1875,
+          "height": 83.59375
+        }
+      ],
+      "mapCards": 0,
+      "guideCards": 0,
+      "rotation": [
+        "matrix(0, 1, -1, 0, 0, 0)"
+      ],
+      "pins": [
+        {
+          "label": "소바 시작 요원 위치 선택",
+          "class": "strats-map-pin strats-agent-pin ",
+          "left": "30%",
+          "top": "20%"
+        },
+        {
+          "label": "소바 시작 요원 위치 선택",
+          "class": "strats-map-pin strats-agent-pin is-active",
+          "left": "40%",
+          "top": "30%"
+        },
+        {
+          "label": "Recon Bolt 도착 위치에서 시작 요원 보기",
+          "class": "strats-map-pin strats-skill-pin is-active",
+          "left": "70%",
+          "top": "60%"
+        }
+      ],
+      "paths": [
+        "40,30 50,45 70,60"
+      ],
+      "lines": [],
+      "detailLink": "/lineups/qa-a",
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": "page",
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": null,
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "lineups-filter-empty",
+      "width": 1440,
+      "file": "before-1440-lineups-filter-empty.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "Published API관리자가 공개 승인한 라인업을 표시합니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 905.8125,
+          "y": 150.890625,
+          "width": 485.1875,
+          "height": 83.59375
+        }
+      ],
+      "mapCards": 0,
+      "guideCards": 0,
+      "rotation": [
+        "matrix(0, 1, -1, 0, 0, 0)"
+      ],
+      "pins": [],
+      "paths": [],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": "page",
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": null,
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "lineups-empty",
+      "width": 1440,
+      "file": "before-1440-lineups-empty.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "Published API관리자가 공개 승인한 라인업을 표시합니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 905.8125,
+          "y": 150.890625,
+          "width": 485.1875,
+          "height": 83.59375
+        }
+      ],
+      "mapCards": 12,
+      "guideCards": 0,
+      "rotation": [],
+      "pins": [],
+      "paths": [],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": "page",
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": null,
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "lineups-failure",
+      "width": 1440,
+      "file": "before-1440-lineups-failure.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "API Preview공개 라인업 API 요청 실패 (503) 데모 데이터를 표시합니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 905.8125,
+          "y": 150.890625,
+          "width": 485.1875,
+          "height": 83.59375
+        }
+      ],
+      "mapCards": 12,
+      "guideCards": 0,
+      "rotation": [],
+      "pins": [],
+      "paths": [],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": "page",
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": null,
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "smokes-example",
+      "width": 1440,
+      "file": "before-1440-smokes-example.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "Smoke Preview현재는 공통 원형 연막 Preview입니다. 패치별 검증 후 실제 좌표와 수치로 확장됩니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 905.8125,
+          "y": 162.78125,
+          "width": 485.1875,
+          "height": 83.59375
+        },
+        {
+          "text": "지도 위 연막 아이콘이나 아래 가이드를 선택하면 투척 경로와 설치 방법이 표시됩니다.",
+          "role": null,
+          "live": null,
+          "atomic": null,
+          "x": 361,
+          "y": 1206.234375,
+          "width": 1040,
+          "height": 58.796875
+        }
+      ],
+      "mapCards": 0,
+      "guideCards": 1,
+      "rotation": [
+        "matrix(0, 1, -1, 0, 0, 0)"
+      ],
+      "pins": [
+        {
+          "label": "Ascent A 진입 공통 원형 연막 선택",
+          "class": "strats-map-pin smoke-common-pin ",
+          "left": "69%",
+          "top": "62%"
+        }
+      ],
+      "paths": [],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": null,
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": "page",
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "smokes-selected",
+      "width": 1440,
+      "file": "before-1440-smokes-selected.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "Smoke Preview현재는 공통 원형 연막 Preview입니다. 패치별 검증 후 실제 좌표와 수치로 확장됩니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 905.8125,
+          "y": 162.78125,
+          "width": 485.1875,
+          "height": 83.59375
+        }
+      ],
+      "mapCards": 0,
+      "guideCards": 1,
+      "rotation": [
+        "matrix(0, 1, -1, 0, 0, 0)"
+      ],
+      "pins": [
+        {
+          "label": "Ascent A 진입 공통 원형 연막 선택",
+          "class": "strats-map-pin smoke-common-pin is-active",
+          "left": "69%",
+          "top": "62%"
+        },
+        {
+          "label": "Ascent A 진입 공통 원형 연막 시작 위치",
+          "class": "strats-map-pin smoke-thrower-pin",
+          "left": "27%",
+          "top": "17%"
+        }
+      ],
+      "paths": [
+        "27,17 48,39.5 69,62"
+      ],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": null,
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": "page",
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "smokes-filter-empty",
+      "width": 1440,
+      "file": "before-1440-smokes-filter-empty.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "Smoke Preview현재는 공통 원형 연막 Preview입니다. 패치별 검증 후 실제 좌표와 수치로 확장됩니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 905.8125,
+          "y": 162.78125,
+          "width": 485.1875,
+          "height": 83.59375
+        },
+        {
+          "text": "현재 조건에 맞는 스모크 가이드가 없습니다.",
+          "role": null,
+          "live": null,
+          "atomic": null,
+          "x": 343,
+          "y": 393.0625,
+          "width": 1076,
+          "height": 618
+        },
+        {
+          "text": "지도 위 연막 아이콘이나 아래 가이드를 선택하면 투척 경로와 설치 방법이 표시됩니다.",
+          "role": null,
+          "live": null,
+          "atomic": null,
+          "x": 361,
+          "y": 1131.4375,
+          "width": 1040,
+          "height": 58.796875
+        }
+      ],
+      "mapCards": 0,
+      "guideCards": 0,
+      "rotation": [
+        "matrix(0, 1, -1, 0, 0, 0)"
+      ],
+      "pins": [],
+      "paths": [],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": null,
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": "page",
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "home",
+      "width": 1440,
+      "file": "before-1440-home.png",
+      "overflow": 0,
+      "statuses": [],
+      "mapCards": 0,
+      "guideCards": 0,
+      "rotation": [],
+      "pins": [],
+      "paths": [],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": "page",
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": null,
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": null,
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "profile",
+      "width": 1440,
+      "file": "before-1440-profile.png",
+      "overflow": 0,
+      "statuses": [],
+      "mapCards": 0,
+      "guideCards": 0,
+      "rotation": [],
+      "pins": [],
+      "paths": [],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": "page",
+          "href": null
+        },
+        {
+          "label": "Matches",
+          "current": null,
+          "href": null
+        },
+        {
+          "label": "Performance",
+          "current": null,
+          "href": null
+        },
+        {
+          "label": "Agents",
+          "current": null,
+          "href": null
+        },
+        {
+          "label": "Maps",
+          "current": null,
+          "href": null
+        },
+        {
+          "label": "Weapons",
+          "current": null,
+          "href": null
+        },
+        {
+          "label": "Lineups",
+          "current": null,
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": null,
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "lineups-loading",
+      "width": 820,
+      "file": "before-820-lineups-loading.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "API Preview공개 라인업을 불러오는 중입니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 49,
+          "y": 288.171875,
+          "width": 722,
+          "height": 83.59375
+        }
+      ],
+      "mapCards": 12,
+      "guideCards": 0,
+      "rotation": [],
+      "pins": [],
+      "paths": [],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": "page",
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": null,
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "lineups-success",
+      "width": 820,
+      "file": "before-820-lineups-success.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "Published API관리자가 공개 승인한 라인업을 표시합니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 49,
+          "y": 288.171875,
+          "width": 722,
+          "height": 83.59375
+        }
+      ],
+      "mapCards": 12,
+      "guideCards": 0,
+      "rotation": [],
+      "pins": [],
+      "paths": [],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": "page",
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": null,
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "lineups-selected",
+      "width": 820,
+      "file": "before-820-lineups-selected.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "Published API관리자가 공개 승인한 라인업을 표시합니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 49,
+          "y": 288.171875,
+          "width": 722,
+          "height": 83.59375
+        }
+      ],
+      "mapCards": 0,
+      "guideCards": 0,
+      "rotation": [
+        "matrix(0, 1, -1, 0, 0, 0)"
+      ],
+      "pins": [
+        {
+          "label": "소바 시작 요원 위치 선택",
+          "class": "strats-map-pin strats-agent-pin ",
+          "left": "30%",
+          "top": "20%"
+        },
+        {
+          "label": "소바 시작 요원 위치 선택",
+          "class": "strats-map-pin strats-agent-pin is-active",
+          "left": "40%",
+          "top": "30%"
+        },
+        {
+          "label": "Recon Bolt 도착 위치에서 시작 요원 보기",
+          "class": "strats-map-pin strats-skill-pin is-active",
+          "left": "70%",
+          "top": "60%"
+        }
+      ],
+      "paths": [
+        "40,30 50,45 70,60"
+      ],
+      "lines": [],
+      "detailLink": "/lineups/qa-a",
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": "page",
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": null,
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "lineups-filter-empty",
+      "width": 820,
+      "file": "before-820-lineups-filter-empty.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "Published API관리자가 공개 승인한 라인업을 표시합니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 49,
+          "y": 288.171875,
+          "width": 722,
+          "height": 83.59375
+        }
+      ],
+      "mapCards": 0,
+      "guideCards": 0,
+      "rotation": [
+        "matrix(0, 1, -1, 0, 0, 0)"
+      ],
+      "pins": [],
+      "paths": [],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": "page",
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": null,
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "lineups-empty",
+      "width": 820,
+      "file": "before-820-lineups-empty.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "Published API관리자가 공개 승인한 라인업을 표시합니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 49,
+          "y": 288.171875,
+          "width": 722,
+          "height": 83.59375
+        }
+      ],
+      "mapCards": 12,
+      "guideCards": 0,
+      "rotation": [],
+      "pins": [],
+      "paths": [],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": "page",
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": null,
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "lineups-failure",
+      "width": 820,
+      "file": "before-820-lineups-failure.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "API Preview공개 라인업 API 요청 실패 (503) 데모 데이터를 표시합니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 49,
+          "y": 288.171875,
+          "width": 722,
+          "height": 83.59375
+        }
+      ],
+      "mapCards": 12,
+      "guideCards": 0,
+      "rotation": [],
+      "pins": [],
+      "paths": [],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": "page",
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": null,
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "smokes-example",
+      "width": 820,
+      "file": "before-820-smokes-example.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "Smoke Preview현재는 공통 원형 연막 Preview입니다. 패치별 검증 후 실제 좌표와 수치로 확장됩니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 49,
+          "y": 288.171875,
+          "width": 722,
+          "height": 83.59375
+        },
+        {
+          "text": "지도 위 연막 아이콘이나 아래 가이드를 선택하면 투척 경로와 설치 방법이 표시됩니다.",
+          "role": null,
+          "live": null,
+          "atomic": null,
+          "x": 39,
+          "y": 1816.28125,
+          "width": 742,
+          "height": 58.796875
+        }
+      ],
+      "mapCards": 0,
+      "guideCards": 1,
+      "rotation": [
+        "matrix(0, 1, -1, 0, 0, 0)"
+      ],
+      "pins": [
+        {
+          "label": "Ascent A 진입 공통 원형 연막 선택",
+          "class": "strats-map-pin smoke-common-pin ",
+          "left": "69%",
+          "top": "62%"
+        }
+      ],
+      "paths": [],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": null,
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": "page",
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "smokes-selected",
+      "width": 820,
+      "file": "before-820-smokes-selected.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "Smoke Preview현재는 공통 원형 연막 Preview입니다. 패치별 검증 후 실제 좌표와 수치로 확장됩니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 49,
+          "y": 288.171875,
+          "width": 722,
+          "height": 83.59375
+        }
+      ],
+      "mapCards": 0,
+      "guideCards": 1,
+      "rotation": [
+        "matrix(0, 1, -1, 0, 0, 0)"
+      ],
+      "pins": [
+        {
+          "label": "Ascent A 진입 공통 원형 연막 선택",
+          "class": "strats-map-pin smoke-common-pin is-active",
+          "left": "69%",
+          "top": "62%"
+        },
+        {
+          "label": "Ascent A 진입 공통 원형 연막 시작 위치",
+          "class": "strats-map-pin smoke-thrower-pin",
+          "left": "27%",
+          "top": "17%"
+        }
+      ],
+      "paths": [
+        "27,17 48,39.5 69,62"
+      ],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": null,
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": "page",
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "smokes-filter-empty",
+      "width": 820,
+      "file": "before-820-smokes-filter-empty.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "Smoke Preview현재는 공통 원형 연막 Preview입니다. 패치별 검증 후 실제 좌표와 수치로 확장됩니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 49,
+          "y": 288.171875,
+          "width": 722,
+          "height": 83.59375
+        },
+        {
+          "text": "현재 조건에 맞는 스모크 가이드가 없습니다.",
+          "role": null,
+          "live": null,
+          "atomic": null,
+          "x": 21,
+          "y": 1003.109375,
+          "width": 778,
+          "height": 618
+        },
+        {
+          "text": "지도 위 연막 아이콘이나 아래 가이드를 선택하면 투척 경로와 설치 방법이 표시됩니다.",
+          "role": null,
+          "live": null,
+          "atomic": null,
+          "x": 39,
+          "y": 1741.484375,
+          "width": 742,
+          "height": 58.796875
+        }
+      ],
+      "mapCards": 0,
+      "guideCards": 0,
+      "rotation": [
+        "matrix(0, 1, -1, 0, 0, 0)"
+      ],
+      "pins": [],
+      "paths": [],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": null,
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": "page",
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "lineups-loading",
+      "width": 390,
+      "file": "before-390-lineups-loading.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "API Preview공개 라인업을 불러오는 중입니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 31,
+          "y": 300.765625,
+          "width": 328,
+          "height": 79.59375
+        }
+      ],
+      "mapCards": 12,
+      "guideCards": 0,
+      "rotation": [],
+      "pins": [],
+      "paths": [],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": "page",
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": null,
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "lineups-success",
+      "width": 390,
+      "file": "before-390-lineups-success.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "Published API관리자가 공개 승인한 라인업을 표시합니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 31,
+          "y": 300.765625,
+          "width": 328,
+          "height": 79.59375
+        }
+      ],
+      "mapCards": 12,
+      "guideCards": 0,
+      "rotation": [],
+      "pins": [],
+      "paths": [],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": "page",
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": null,
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "lineups-selected",
+      "width": 390,
+      "file": "before-390-lineups-selected.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "Published API관리자가 공개 승인한 라인업을 표시합니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 31,
+          "y": 300.765625,
+          "width": 328,
+          "height": 79.59375
+        }
+      ],
+      "mapCards": 0,
+      "guideCards": 0,
+      "rotation": [
+        "matrix(0, 1, -1, 0, 0, 0)"
+      ],
+      "pins": [
+        {
+          "label": "소바 시작 요원 위치 선택",
+          "class": "strats-map-pin strats-agent-pin ",
+          "left": "30%",
+          "top": "20%"
+        },
+        {
+          "label": "소바 시작 요원 위치 선택",
+          "class": "strats-map-pin strats-agent-pin is-active",
+          "left": "40%",
+          "top": "30%"
+        },
+        {
+          "label": "Recon Bolt 도착 위치에서 시작 요원 보기",
+          "class": "strats-map-pin strats-skill-pin is-active",
+          "left": "70%",
+          "top": "60%"
+        }
+      ],
+      "paths": [
+        "40,30 50,45 70,60"
+      ],
+      "lines": [],
+      "detailLink": "/lineups/qa-a",
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": "page",
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": null,
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "lineups-filter-empty",
+      "width": 390,
+      "file": "before-390-lineups-filter-empty.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "Published API관리자가 공개 승인한 라인업을 표시합니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 31,
+          "y": 300.765625,
+          "width": 328,
+          "height": 79.59375
+        }
+      ],
+      "mapCards": 0,
+      "guideCards": 0,
+      "rotation": [
+        "matrix(0, 1, -1, 0, 0, 0)"
+      ],
+      "pins": [],
+      "paths": [],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": "page",
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": null,
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "lineups-empty",
+      "width": 390,
+      "file": "before-390-lineups-empty.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "Published API관리자가 공개 승인한 라인업을 표시합니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 31,
+          "y": 300.765625,
+          "width": 328,
+          "height": 79.59375
+        }
+      ],
+      "mapCards": 12,
+      "guideCards": 0,
+      "rotation": [],
+      "pins": [],
+      "paths": [],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": "page",
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": null,
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "lineups-failure",
+      "width": 390,
+      "file": "before-390-lineups-failure.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "API Preview공개 라인업 API 요청 실패 (503) 데모 데이터를 표시합니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 31,
+          "y": 300.765625,
+          "width": 328,
+          "height": 100.390625
+        }
+      ],
+      "mapCards": 12,
+      "guideCards": 0,
+      "rotation": [],
+      "pins": [],
+      "paths": [],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": "page",
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": null,
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "smokes-example",
+      "width": 390,
+      "file": "before-390-smokes-example.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "Smoke Preview현재는 공통 원형 연막 Preview입니다. 패치별 검증 후 실제 좌표와 수치로 확장됩니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 31,
+          "y": 324.5625,
+          "width": 328,
+          "height": 100.390625
+        },
+        {
+          "text": "지도 위 연막 아이콘이나 아래 가이드를 선택하면 투척 경로와 설치 방법이 표시됩니다.",
+          "role": null,
+          "live": null,
+          "atomic": null,
+          "x": 25,
+          "y": 1839.125,
+          "width": 340,
+          "height": 71.59375
+        }
+      ],
+      "mapCards": 0,
+      "guideCards": 1,
+      "rotation": [
+        "matrix(0, 1, -1, 0, 0, 0)"
+      ],
+      "pins": [
+        {
+          "label": "Ascent A 진입 공통 원형 연막 선택",
+          "class": "strats-map-pin smoke-common-pin ",
+          "left": "69%",
+          "top": "62%"
+        }
+      ],
+      "paths": [],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": null,
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": "page",
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "smokes-selected",
+      "width": 390,
+      "file": "before-390-smokes-selected.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "Smoke Preview현재는 공통 원형 연막 Preview입니다. 패치별 검증 후 실제 좌표와 수치로 확장됩니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 31,
+          "y": 324.5625,
+          "width": 328,
+          "height": 100.390625
+        }
+      ],
+      "mapCards": 0,
+      "guideCards": 1,
+      "rotation": [
+        "matrix(0, 1, -1, 0, 0, 0)"
+      ],
+      "pins": [
+        {
+          "label": "Ascent A 진입 공통 원형 연막 선택",
+          "class": "strats-map-pin smoke-common-pin is-active",
+          "left": "69%",
+          "top": "62%"
+        },
+        {
+          "label": "Ascent A 진입 공통 원형 연막 시작 위치",
+          "class": "strats-map-pin smoke-thrower-pin",
+          "left": "27%",
+          "top": "17%"
+        }
+      ],
+      "paths": [
+        "27,17 48,39.5 69,62"
+      ],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": null,
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": "page",
+          "href": "/smokes"
+        }
+      ]
+    },
+    {
+      "name": "smokes-filter-empty",
+      "width": 390,
+      "file": "before-390-smokes-filter-empty.png",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "Smoke Preview현재는 공통 원형 연막 Preview입니다. 패치별 검증 후 실제 좌표와 수치로 확장됩니다.",
+          "role": "status",
+          "live": null,
+          "atomic": null,
+          "x": 31,
+          "y": 324.5625,
+          "width": 328,
+          "height": 100.390625
+        },
+        {
+          "text": "현재 조건에 맞는 스모크 가이드가 없습니다.",
+          "role": null,
+          "live": null,
+          "atomic": null,
+          "x": 11,
+          "y": 1312.96875,
+          "width": 368,
+          "height": 317.796875
+        },
+        {
+          "text": "지도 위 연막 아이콘이나 아래 가이드를 선택하면 투척 경로와 설치 방법이 표시됩니다.",
+          "role": null,
+          "live": null,
+          "atomic": null,
+          "x": 25,
+          "y": 1739.140625,
+          "width": 340,
+          "height": 71.59375
+        }
+      ],
+      "mapCards": 0,
+      "guideCards": 0,
+      "rotation": [
+        "matrix(0, 1, -1, 0, 0, 0)"
+      ],
+      "pins": [],
+      "paths": [],
+      "lines": [],
+      "detailLink": null,
+      "nav": [
+        {
+          "label": "Home",
+          "current": null,
+          "href": "/"
+        },
+        {
+          "label": "Overview",
+          "current": null,
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "label": "Lineups",
+          "current": null,
+          "href": "/lineups"
+        },
+        {
+          "label": "Smokes",
+          "current": "page",
+          "href": "/smokes"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "/lineups loading: HTTP 200",
+    "1440px lineups-loading: no global overflow",
+    "/lineups success: HTTP 200",
+    "1440px lineups-success: no global overflow",
+    "1440px: attack rotation",
+    "1440px: two same-ability candidates",
+    "1440px: selected path",
+    "1440px lineups-selected: no global overflow",
+    "1440px: unmatched filter has no pin",
+    "1440px lineups-filter-empty: no global overflow",
+    "/lineups empty: HTTP 200",
+    "1440px lineups-empty: no global overflow",
+    "/lineups failure: HTTP 200",
+    "1440px lineups-failure: no global overflow",
+    "/smokes smoke: HTTP 200",
+    "1440px: smoke selection initially empty",
+    "1440px smokes-example: no global overflow",
+    "1440px: smoke selected path",
+    "1440px smokes-selected: no global overflow",
+    "1440px: smoke unmatched filter",
+    "1440px smokes-filter-empty: no global overflow",
+    "/ regression: HTTP 200",
+    "1440px home: no global overflow",
+    "/players/ied-agent-allen regression: HTTP 200",
+    "1440px profile: no global overflow",
+    "/lineups loading: HTTP 200",
+    "820px lineups-loading: no global overflow",
+    "/lineups success: HTTP 200",
+    "820px lineups-success: no global overflow",
+    "820px: attack rotation",
+    "820px: two same-ability candidates",
+    "820px: selected path",
+    "820px lineups-selected: no global overflow",
+    "820px: unmatched filter has no pin",
+    "820px lineups-filter-empty: no global overflow",
+    "/lineups empty: HTTP 200",
+    "820px lineups-empty: no global overflow",
+    "/lineups failure: HTTP 200",
+    "820px lineups-failure: no global overflow",
+    "/smokes smoke: HTTP 200",
+    "820px: smoke selection initially empty",
+    "820px smokes-example: no global overflow",
+    "820px: smoke selected path",
+    "820px smokes-selected: no global overflow",
+    "820px: smoke unmatched filter",
+    "820px smokes-filter-empty: no global overflow",
+    "/lineups loading: HTTP 200",
+    "390px lineups-loading: no global overflow",
+    "/lineups success: HTTP 200",
+    "390px lineups-success: no global overflow",
+    "390px: attack rotation",
+    "390px: two same-ability candidates",
+    "390px: selected path",
+    "390px lineups-selected: no global overflow",
+    "390px: unmatched filter has no pin",
+    "390px lineups-filter-empty: no global overflow",
+    "/lineups empty: HTTP 200",
+    "390px lineups-empty: no global overflow",
+    "/lineups failure: HTTP 200",
+    "390px lineups-failure: no global overflow",
+    "/smokes smoke: HTTP 200",
+    "390px: smoke selection initially empty",
+    "390px smokes-example: no global overflow",
+    "390px: smoke selected path",
+    "390px smokes-selected: no global overflow",
+    "390px: smoke unmatched filter",
+    "390px smokes-filter-empty: no global overflow",
+    "No page errors",
+    "No unexpected console errors"
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "expectedApiErrors": [
+    {
+      "width": 1440,
+      "mode": "failure",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 1440,
+      "mode": "failure",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 820,
+      "mode": "failure",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 820,
+      "mode": "failure",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 390,
+      "mode": "failure",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 390,
+      "mode": "failure",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "requests": [
+    {
+      "width": 1440,
+      "mode": "loading",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 1440,
+      "mode": "loading",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 1440,
+      "mode": "success",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 1440,
+      "mode": "success",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 1440,
+      "mode": "empty",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 1440,
+      "mode": "empty",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 1440,
+      "mode": "failure",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 1440,
+      "mode": "failure",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 820,
+      "mode": "loading",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 820,
+      "mode": "loading",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 820,
+      "mode": "success",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 820,
+      "mode": "success",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 820,
+      "mode": "empty",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 820,
+      "mode": "empty",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 820,
+      "mode": "failure",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 820,
+      "mode": "failure",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 390,
+      "mode": "loading",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 390,
+      "mode": "loading",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 390,
+      "mode": "success",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 390,
+      "mode": "success",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 390,
+      "mode": "empty",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 390,
+      "mode": "empty",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 390,
+      "mode": "failure",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 390,
+      "mode": "failure",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    }
+  ],
+  "status": "PASS"
+}

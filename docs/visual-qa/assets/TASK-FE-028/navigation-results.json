@@ -1,0 +1,2454 @@
+{
+  "checks": [
+    "/: HTTP 200",
+    "/: HTTP 200",
+    "1440px home: common navigation order",
+    "1440px home: no document horizontal overflow",
+    "1440px home: every navigation item is rendered and available",
+    "1440px home: exactly one current item (Home)",
+    "1440px home: Home and Overview destinations retained",
+    "1440px home: More retains /privacy",
+    "1440px home: More retains /terms",
+    "1440px home: More retains /connect",
+    "1440px home: More Escape closes and restores trigger focus",
+    "1440px home: English selection stored",
+    "1440px home: English keeps navigation labels and order",
+    "1440px home: Language switches both directions and restores focus",
+    "1440px home: Search reaches the home Riot ID input",
+    "/: HTTP 200",
+    "1440px home: Tab reaches Overview",
+    "1440px home: Tab reaches Lineups",
+    "1440px home Lineups: keyboard auto-scroll reveals full link and visible focus",
+    "1440px home: Tab reaches Smokes",
+    "1440px home Smokes: keyboard auto-scroll reveals full link and visible focus",
+    "1440px home: keyboard Lineups activation: exactly one current item (Lineups)",
+    "1440px home: keyboard Smokes activation: exactly one current item (Smokes)",
+    "/players/ied-agent-allen: HTTP 200",
+    "1440px profile: common navigation order",
+    "1440px profile: no document horizontal overflow",
+    "1440px profile: every navigation item is rendered and available",
+    "1440px profile: exactly one current item (Overview)",
+    "1440px profile: Home and Overview destinations retained",
+    "1440px profile: More retains /privacy",
+    "1440px profile: More retains /terms",
+    "1440px profile: More retains /connect",
+    "1440px profile: More Escape closes and restores trigger focus",
+    "1440px profile: English selection stored",
+    "1440px profile: English keeps navigation labels and order",
+    "1440px profile: Language switches both directions and restores focus",
+    "1440px profile: internal Overview: exactly one current item (Overview)",
+    "1440px profile: Overview preserves selected player URL",
+    "1440px profile: Overview synchronizes existing profile section",
+    "1440px profile: internal Matches: exactly one current item (Matches)",
+    "1440px profile: Matches preserves selected player URL",
+    "1440px profile: Matches synchronizes existing profile section",
+    "1440px profile: internal Performance: exactly one current item (Performance)",
+    "1440px profile: Performance preserves selected player URL",
+    "1440px profile: Performance synchronizes existing profile section",
+    "1440px profile: internal Agents: exactly one current item (Agents)",
+    "1440px profile: Agents preserves selected player URL",
+    "1440px profile: Agents synchronizes existing profile section",
+    "1440px profile: internal Maps: exactly one current item (Maps)",
+    "1440px profile: Maps preserves selected player URL",
+    "1440px profile: Maps synchronizes existing profile section",
+    "1440px profile: internal Weapons: exactly one current item (Weapons)",
+    "1440px profile: Weapons preserves selected player URL",
+    "1440px profile: Weapons synchronizes existing profile section",
+    "1440px profile: profile Search retains player route",
+    "1440px profile: Tab reaches Overview",
+    "1440px profile: Tab reaches Matches",
+    "1440px profile: Tab reaches Performance",
+    "1440px profile: Tab reaches Agents",
+    "1440px profile: Tab reaches Maps",
+    "1440px profile: Tab reaches Weapons",
+    "1440px profile: Tab reaches Lineups",
+    "1440px profile Lineups: keyboard auto-scroll reveals full link and visible focus",
+    "1440px profile: Tab reaches Smokes",
+    "1440px profile Smokes: keyboard auto-scroll reveals full link and visible focus",
+    "1440px profile: keyboard Lineups activation: exactly one current item (Lineups)",
+    "1440px profile: keyboard Smokes activation: exactly one current item (Smokes)",
+    "/players/demo-player-01: HTTP 200",
+    "1440px synthetic-profile: common navigation order",
+    "1440px synthetic-profile: no document horizontal overflow",
+    "1440px synthetic-profile: every navigation item is rendered and available",
+    "1440px synthetic-profile: exactly one current item (Overview)",
+    "1440px synthetic-profile: Home and Overview destinations retained",
+    "1440px synthetic-profile: More retains /privacy",
+    "1440px synthetic-profile: More retains /terms",
+    "1440px synthetic-profile: More retains /connect",
+    "1440px synthetic-profile: More Escape closes and restores trigger focus",
+    "1440px synthetic-profile: English selection stored",
+    "1440px synthetic-profile: English keeps navigation labels and order",
+    "1440px synthetic-profile: Language switches both directions and restores focus",
+    "1440px synthetic-profile: internal Overview: exactly one current item (Overview)",
+    "1440px synthetic-profile: Overview preserves selected player URL",
+    "1440px synthetic-profile: Overview synchronizes existing profile section",
+    "1440px synthetic-profile: internal Matches: exactly one current item (Matches)",
+    "1440px synthetic-profile: Matches preserves selected player URL",
+    "1440px synthetic-profile: Matches synchronizes existing profile section",
+    "1440px synthetic-profile: internal Performance: exactly one current item (Performance)",
+    "1440px synthetic-profile: Performance preserves selected player URL",
+    "1440px synthetic-profile: Performance synchronizes existing profile section",
+    "1440px synthetic-profile: internal Agents: exactly one current item (Agents)",
+    "1440px synthetic-profile: Agents preserves selected player URL",
+    "1440px synthetic-profile: Agents synchronizes existing profile section",
+    "1440px synthetic-profile: internal Maps: exactly one current item (Maps)",
+    "1440px synthetic-profile: Maps preserves selected player URL",
+    "1440px synthetic-profile: Maps synchronizes existing profile section",
+    "1440px synthetic-profile: internal Weapons: exactly one current item (Weapons)",
+    "1440px synthetic-profile: Weapons preserves selected player URL",
+    "1440px synthetic-profile: Weapons synchronizes existing profile section",
+    "1440px synthetic-profile: profile Search retains player route",
+    "1440px synthetic-profile: Tab reaches Overview",
+    "1440px synthetic-profile: Tab reaches Matches",
+    "1440px synthetic-profile: Tab reaches Performance",
+    "1440px synthetic-profile: Tab reaches Agents",
+    "1440px synthetic-profile: Tab reaches Maps",
+    "1440px synthetic-profile: Tab reaches Weapons",
+    "1440px synthetic-profile: Tab reaches Lineups",
+    "1440px synthetic-profile Lineups: keyboard auto-scroll reveals full link and visible focus",
+    "1440px synthetic-profile: Tab reaches Smokes",
+    "1440px synthetic-profile Smokes: keyboard auto-scroll reveals full link and visible focus",
+    "1440px synthetic-profile: keyboard Lineups activation: exactly one current item (Lineups)",
+    "1440px synthetic-profile: keyboard Smokes activation: exactly one current item (Smokes)",
+    "/lineups: HTTP 200",
+    "1440px lineups: common navigation order",
+    "1440px lineups: no document horizontal overflow",
+    "1440px lineups: every navigation item is rendered and available",
+    "1440px lineups: exactly one current item (Lineups)",
+    "1440px lineups: Home and Overview destinations retained",
+    "1440px lineups: More retains /privacy",
+    "1440px lineups: More retains /terms",
+    "1440px lineups: More retains /connect",
+    "1440px lineups: More Escape closes and restores trigger focus",
+    "1440px lineups: English selection stored",
+    "1440px lineups: English keeps navigation labels and order",
+    "1440px lineups: Language switches both directions and restores focus",
+    "1440px lineups: Search reaches the home Riot ID input",
+    "/lineups: HTTP 200",
+    "1440px lineups: Tab reaches Overview",
+    "1440px lineups: Tab reaches Lineups",
+    "1440px lineups Lineups: keyboard auto-scroll reveals full link and visible focus",
+    "1440px lineups: Tab reaches Smokes",
+    "1440px lineups Smokes: keyboard auto-scroll reveals full link and visible focus",
+    "1440px lineups: keyboard Lineups activation: exactly one current item (Lineups)",
+    "1440px lineups: keyboard Smokes activation: exactly one current item (Smokes)",
+    "/smokes: HTTP 200",
+    "1440px smokes: common navigation order",
+    "1440px smokes: no document horizontal overflow",
+    "1440px smokes: every navigation item is rendered and available",
+    "1440px smokes: exactly one current item (Smokes)",
+    "1440px smokes: Home and Overview destinations retained",
+    "1440px smokes: More retains /privacy",
+    "1440px smokes: More retains /terms",
+    "1440px smokes: More retains /connect",
+    "1440px smokes: More Escape closes and restores trigger focus",
+    "1440px smokes: English selection stored",
+    "1440px smokes: English keeps navigation labels and order",
+    "1440px smokes: Language switches both directions and restores focus",
+    "1440px smokes: Search reaches the home Riot ID input",
+    "/smokes: HTTP 200",
+    "1440px smokes: Tab reaches Overview",
+    "1440px smokes: Tab reaches Lineups",
+    "1440px smokes Lineups: keyboard auto-scroll reveals full link and visible focus",
+    "1440px smokes: Tab reaches Smokes",
+    "1440px smokes Smokes: keyboard auto-scroll reveals full link and visible focus",
+    "1440px smokes: keyboard Lineups activation: exactly one current item (Lineups)",
+    "1440px smokes: keyboard Smokes activation: exactly one current item (Smokes)",
+    "/: HTTP 200",
+    "1440px Overview destination: exactly one current item (Overview)",
+    "1440px Home destination: exactly one current item (Home)",
+    "/: HTTP 200",
+    "1440px More Privacy policy follows /privacy",
+    "/: HTTP 200",
+    "1440px More Terms of service follows /terms",
+    "/: HTTP 200",
+    "1440px More Connect account follows /connect",
+    "/: HTTP 200",
+    "/: HTTP 200",
+    "820px home: common navigation order",
+    "820px home: no document horizontal overflow",
+    "820px home: every navigation item is rendered and available",
+    "820px home: exactly one current item (Home)",
+    "820px home: Home and Overview destinations retained",
+    "820px home: More retains /privacy",
+    "820px home: More retains /terms",
+    "820px home: More retains /connect",
+    "820px home: More Escape closes and restores trigger focus",
+    "820px home: English selection stored",
+    "820px home: English keeps navigation labels and order",
+    "820px home: Language switches both directions and restores focus",
+    "820px home: Search reaches the home Riot ID input",
+    "/: HTTP 200",
+    "820px home: Tab reaches Overview",
+    "820px home: Tab reaches Lineups",
+    "820px home Lineups: keyboard auto-scroll reveals full link and visible focus",
+    "820px home: Tab reaches Smokes",
+    "820px home Smokes: keyboard auto-scroll reveals full link and visible focus",
+    "820px home: keyboard Lineups activation: exactly one current item (Lineups)",
+    "820px home: keyboard Smokes activation: exactly one current item (Smokes)",
+    "/players/ied-agent-allen: HTTP 200",
+    "820px profile: common navigation order",
+    "820px profile: no document horizontal overflow",
+    "820px profile: every navigation item is rendered and available",
+    "820px profile: overflowing navigation uses a scrollable rail",
+    "820px profile: exactly one current item (Overview)",
+    "820px profile: Home and Overview destinations retained",
+    "820px profile: More retains /privacy",
+    "820px profile: More retains /terms",
+    "820px profile: More retains /connect",
+    "820px profile: More Escape closes and restores trigger focus",
+    "820px profile: English selection stored",
+    "820px profile: English keeps navigation labels and order",
+    "820px profile: Language switches both directions and restores focus",
+    "820px profile: internal Overview: exactly one current item (Overview)",
+    "820px profile: Overview preserves selected player URL",
+    "820px profile: Overview synchronizes existing profile section",
+    "820px profile: internal Matches: exactly one current item (Matches)",
+    "820px profile: Matches preserves selected player URL",
+    "820px profile: Matches synchronizes existing profile section",
+    "820px profile: internal Performance: exactly one current item (Performance)",
+    "820px profile: Performance preserves selected player URL",
+    "820px profile: Performance synchronizes existing profile section",
+    "820px profile: internal Agents: exactly one current item (Agents)",
+    "820px profile: Agents preserves selected player URL",
+    "820px profile: Agents synchronizes existing profile section",
+    "820px profile: internal Maps: exactly one current item (Maps)",
+    "820px profile: Maps preserves selected player URL",
+    "820px profile: Maps synchronizes existing profile section",
+    "820px profile: internal Weapons: exactly one current item (Weapons)",
+    "820px profile: Weapons preserves selected player URL",
+    "820px profile: Weapons synchronizes existing profile section",
+    "820px profile: profile Search retains player route",
+    "820px profile: Tab reaches Overview",
+    "820px profile: Tab reaches Matches",
+    "820px profile: Tab reaches Performance",
+    "820px profile: Tab reaches Agents",
+    "820px profile: Tab reaches Maps",
+    "820px profile: Tab reaches Weapons",
+    "820px profile: Tab reaches Lineups",
+    "820px profile Lineups: keyboard auto-scroll reveals full link and visible focus",
+    "820px profile: Tab reaches Smokes",
+    "820px profile Smokes: keyboard auto-scroll reveals full link and visible focus",
+    "820px profile: keyboard Lineups activation: exactly one current item (Lineups)",
+    "820px profile: keyboard Smokes activation: exactly one current item (Smokes)",
+    "/players/demo-player-01: HTTP 200",
+    "820px synthetic-profile: common navigation order",
+    "820px synthetic-profile: no document horizontal overflow",
+    "820px synthetic-profile: every navigation item is rendered and available",
+    "820px synthetic-profile: overflowing navigation uses a scrollable rail",
+    "820px synthetic-profile: exactly one current item (Overview)",
+    "820px synthetic-profile: Home and Overview destinations retained",
+    "820px synthetic-profile: More retains /privacy",
+    "820px synthetic-profile: More retains /terms",
+    "820px synthetic-profile: More retains /connect",
+    "820px synthetic-profile: More Escape closes and restores trigger focus",
+    "820px synthetic-profile: English selection stored",
+    "820px synthetic-profile: English keeps navigation labels and order",
+    "820px synthetic-profile: Language switches both directions and restores focus",
+    "820px synthetic-profile: internal Overview: exactly one current item (Overview)",
+    "820px synthetic-profile: Overview preserves selected player URL",
+    "820px synthetic-profile: Overview synchronizes existing profile section",
+    "820px synthetic-profile: internal Matches: exactly one current item (Matches)",
+    "820px synthetic-profile: Matches preserves selected player URL",
+    "820px synthetic-profile: Matches synchronizes existing profile section",
+    "820px synthetic-profile: internal Performance: exactly one current item (Performance)",
+    "820px synthetic-profile: Performance preserves selected player URL",
+    "820px synthetic-profile: Performance synchronizes existing profile section",
+    "820px synthetic-profile: internal Agents: exactly one current item (Agents)",
+    "820px synthetic-profile: Agents preserves selected player URL",
+    "820px synthetic-profile: Agents synchronizes existing profile section",
+    "820px synthetic-profile: internal Maps: exactly one current item (Maps)",
+    "820px synthetic-profile: Maps preserves selected player URL",
+    "820px synthetic-profile: Maps synchronizes existing profile section",
+    "820px synthetic-profile: internal Weapons: exactly one current item (Weapons)",
+    "820px synthetic-profile: Weapons preserves selected player URL",
+    "820px synthetic-profile: Weapons synchronizes existing profile section",
+    "820px synthetic-profile: profile Search retains player route",
+    "820px synthetic-profile: Tab reaches Overview",
+    "820px synthetic-profile: Tab reaches Matches",
+    "820px synthetic-profile: Tab reaches Performance",
+    "820px synthetic-profile: Tab reaches Agents",
+    "820px synthetic-profile: Tab reaches Maps",
+    "820px synthetic-profile: Tab reaches Weapons",
+    "820px synthetic-profile: Tab reaches Lineups",
+    "820px synthetic-profile Lineups: keyboard auto-scroll reveals full link and visible focus",
+    "820px synthetic-profile: Tab reaches Smokes",
+    "820px synthetic-profile Smokes: keyboard auto-scroll reveals full link and visible focus",
+    "820px synthetic-profile: keyboard Lineups activation: exactly one current item (Lineups)",
+    "820px synthetic-profile: keyboard Smokes activation: exactly one current item (Smokes)",
+    "/lineups: HTTP 200",
+    "820px lineups: common navigation order",
+    "820px lineups: no document horizontal overflow",
+    "820px lineups: every navigation item is rendered and available",
+    "820px lineups: exactly one current item (Lineups)",
+    "820px lineups: Home and Overview destinations retained",
+    "820px lineups: More retains /privacy",
+    "820px lineups: More retains /terms",
+    "820px lineups: More retains /connect",
+    "820px lineups: More Escape closes and restores trigger focus",
+    "820px lineups: English selection stored",
+    "820px lineups: English keeps navigation labels and order",
+    "820px lineups: Language switches both directions and restores focus",
+    "820px lineups: Search reaches the home Riot ID input",
+    "/lineups: HTTP 200",
+    "820px lineups: Tab reaches Overview",
+    "820px lineups: Tab reaches Lineups",
+    "820px lineups Lineups: keyboard auto-scroll reveals full link and visible focus",
+    "820px lineups: Tab reaches Smokes",
+    "820px lineups Smokes: keyboard auto-scroll reveals full link and visible focus",
+    "820px lineups: keyboard Lineups activation: exactly one current item (Lineups)",
+    "820px lineups: keyboard Smokes activation: exactly one current item (Smokes)",
+    "/smokes: HTTP 200",
+    "820px smokes: common navigation order",
+    "820px smokes: no document horizontal overflow",
+    "820px smokes: every navigation item is rendered and available",
+    "820px smokes: exactly one current item (Smokes)",
+    "820px smokes: Home and Overview destinations retained",
+    "820px smokes: More retains /privacy",
+    "820px smokes: More retains /terms",
+    "820px smokes: More retains /connect",
+    "820px smokes: More Escape closes and restores trigger focus",
+    "820px smokes: English selection stored",
+    "820px smokes: English keeps navigation labels and order",
+    "820px smokes: Language switches both directions and restores focus",
+    "820px smokes: Search reaches the home Riot ID input",
+    "/smokes: HTTP 200",
+    "820px smokes: Tab reaches Overview",
+    "820px smokes: Tab reaches Lineups",
+    "820px smokes Lineups: keyboard auto-scroll reveals full link and visible focus",
+    "820px smokes: Tab reaches Smokes",
+    "820px smokes Smokes: keyboard auto-scroll reveals full link and visible focus",
+    "820px smokes: keyboard Lineups activation: exactly one current item (Lineups)",
+    "820px smokes: keyboard Smokes activation: exactly one current item (Smokes)",
+    "/: HTTP 200",
+    "820px Overview destination: exactly one current item (Overview)",
+    "820px Home destination: exactly one current item (Home)",
+    "/: HTTP 200",
+    "820px More Privacy policy follows /privacy",
+    "/: HTTP 200",
+    "820px More Terms of service follows /terms",
+    "/: HTTP 200",
+    "820px More Connect account follows /connect",
+    "/: HTTP 200",
+    "/: HTTP 200",
+    "390px home: common navigation order",
+    "390px home: no document horizontal overflow",
+    "390px home: every navigation item is rendered and available",
+    "390px home: exactly one current item (Home)",
+    "390px home: Home and Overview destinations retained",
+    "390px home: More retains /privacy",
+    "390px home: More retains /terms",
+    "390px home: More retains /connect",
+    "390px home: More Escape closes and restores trigger focus",
+    "390px home: English selection stored",
+    "390px home: English keeps navigation labels and order",
+    "390px home: Language switches both directions and restores focus",
+    "390px home: Search reaches the home Riot ID input",
+    "/: HTTP 200",
+    "390px home: Tab reaches Overview",
+    "390px home: Tab reaches Lineups",
+    "390px home Lineups: keyboard auto-scroll reveals full link and visible focus",
+    "390px home: Tab reaches Smokes",
+    "390px home Smokes: keyboard auto-scroll reveals full link and visible focus",
+    "390px home: keyboard Lineups activation: exactly one current item (Lineups)",
+    "390px home: keyboard Smokes activation: exactly one current item (Smokes)",
+    "/players/ied-agent-allen: HTTP 200",
+    "390px profile: common navigation order",
+    "390px profile: no document horizontal overflow",
+    "390px profile: every navigation item is rendered and available",
+    "390px profile: overflowing navigation uses a scrollable rail",
+    "390px profile: exactly one current item (Overview)",
+    "390px profile: Home and Overview destinations retained",
+    "390px profile: More retains /privacy",
+    "390px profile: More retains /terms",
+    "390px profile: More retains /connect",
+    "390px profile: More Escape closes and restores trigger focus",
+    "390px profile: English selection stored",
+    "390px profile: English keeps navigation labels and order",
+    "390px profile: Language switches both directions and restores focus",
+    "390px profile: internal Overview: exactly one current item (Overview)",
+    "390px profile: Overview preserves selected player URL",
+    "390px profile: Overview synchronizes existing profile section",
+    "390px profile: internal Matches: exactly one current item (Matches)",
+    "390px profile: Matches preserves selected player URL",
+    "390px profile: Matches synchronizes existing profile section",
+    "390px profile: internal Performance: exactly one current item (Performance)",
+    "390px profile: Performance preserves selected player URL",
+    "390px profile: Performance synchronizes existing profile section",
+    "390px profile: internal Agents: exactly one current item (Agents)",
+    "390px profile: Agents preserves selected player URL",
+    "390px profile: Agents synchronizes existing profile section",
+    "390px profile: internal Maps: exactly one current item (Maps)",
+    "390px profile: Maps preserves selected player URL",
+    "390px profile: Maps synchronizes existing profile section",
+    "390px profile: internal Weapons: exactly one current item (Weapons)",
+    "390px profile: Weapons preserves selected player URL",
+    "390px profile: Weapons synchronizes existing profile section",
+    "390px profile: profile Search retains player route",
+    "390px profile: Tab reaches Overview",
+    "390px profile: Tab reaches Matches",
+    "390px profile: Tab reaches Performance",
+    "390px profile: Tab reaches Agents",
+    "390px profile: Tab reaches Maps",
+    "390px profile: Tab reaches Weapons",
+    "390px profile: Tab reaches Lineups",
+    "390px profile Lineups: keyboard auto-scroll reveals full link and visible focus",
+    "390px profile: Tab reaches Smokes",
+    "390px profile Smokes: keyboard auto-scroll reveals full link and visible focus",
+    "390px profile: keyboard Lineups activation: exactly one current item (Lineups)",
+    "390px profile: keyboard Smokes activation: exactly one current item (Smokes)",
+    "/players/demo-player-01: HTTP 200",
+    "390px synthetic-profile: common navigation order",
+    "390px synthetic-profile: no document horizontal overflow",
+    "390px synthetic-profile: every navigation item is rendered and available",
+    "390px synthetic-profile: overflowing navigation uses a scrollable rail",
+    "390px synthetic-profile: exactly one current item (Overview)",
+    "390px synthetic-profile: Home and Overview destinations retained",
+    "390px synthetic-profile: More retains /privacy",
+    "390px synthetic-profile: More retains /terms",
+    "390px synthetic-profile: More retains /connect",
+    "390px synthetic-profile: More Escape closes and restores trigger focus",
+    "390px synthetic-profile: English selection stored",
+    "390px synthetic-profile: English keeps navigation labels and order",
+    "390px synthetic-profile: Language switches both directions and restores focus",
+    "390px synthetic-profile: internal Overview: exactly one current item (Overview)",
+    "390px synthetic-profile: Overview preserves selected player URL",
+    "390px synthetic-profile: Overview synchronizes existing profile section",
+    "390px synthetic-profile: internal Matches: exactly one current item (Matches)",
+    "390px synthetic-profile: Matches preserves selected player URL",
+    "390px synthetic-profile: Matches synchronizes existing profile section",
+    "390px synthetic-profile: internal Performance: exactly one current item (Performance)",
+    "390px synthetic-profile: Performance preserves selected player URL",
+    "390px synthetic-profile: Performance synchronizes existing profile section",
+    "390px synthetic-profile: internal Agents: exactly one current item (Agents)",
+    "390px synthetic-profile: Agents preserves selected player URL",
+    "390px synthetic-profile: Agents synchronizes existing profile section",
+    "390px synthetic-profile: internal Maps: exactly one current item (Maps)",
+    "390px synthetic-profile: Maps preserves selected player URL",
+    "390px synthetic-profile: Maps synchronizes existing profile section",
+    "390px synthetic-profile: internal Weapons: exactly one current item (Weapons)",
+    "390px synthetic-profile: Weapons preserves selected player URL",
+    "390px synthetic-profile: Weapons synchronizes existing profile section",
+    "390px synthetic-profile: profile Search retains player route",
+    "390px synthetic-profile: Tab reaches Overview",
+    "390px synthetic-profile: Tab reaches Matches",
+    "390px synthetic-profile: Tab reaches Performance",
+    "390px synthetic-profile: Tab reaches Agents",
+    "390px synthetic-profile: Tab reaches Maps",
+    "390px synthetic-profile: Tab reaches Weapons",
+    "390px synthetic-profile: Tab reaches Lineups",
+    "390px synthetic-profile Lineups: keyboard auto-scroll reveals full link and visible focus",
+    "390px synthetic-profile: Tab reaches Smokes",
+    "390px synthetic-profile Smokes: keyboard auto-scroll reveals full link and visible focus",
+    "390px synthetic-profile: keyboard Lineups activation: exactly one current item (Lineups)",
+    "390px synthetic-profile: keyboard Smokes activation: exactly one current item (Smokes)",
+    "/lineups: HTTP 200",
+    "390px lineups: common navigation order",
+    "390px lineups: no document horizontal overflow",
+    "390px lineups: every navigation item is rendered and available",
+    "390px lineups: exactly one current item (Lineups)",
+    "390px lineups: Home and Overview destinations retained",
+    "390px lineups: More retains /privacy",
+    "390px lineups: More retains /terms",
+    "390px lineups: More retains /connect",
+    "390px lineups: More Escape closes and restores trigger focus",
+    "390px lineups: English selection stored",
+    "390px lineups: English keeps navigation labels and order",
+    "390px lineups: Language switches both directions and restores focus",
+    "390px lineups: Search reaches the home Riot ID input",
+    "/lineups: HTTP 200",
+    "390px lineups: Tab reaches Overview",
+    "390px lineups: Tab reaches Lineups",
+    "390px lineups Lineups: keyboard auto-scroll reveals full link and visible focus",
+    "390px lineups: Tab reaches Smokes",
+    "390px lineups Smokes: keyboard auto-scroll reveals full link and visible focus",
+    "390px lineups: keyboard Lineups activation: exactly one current item (Lineups)",
+    "390px lineups: keyboard Smokes activation: exactly one current item (Smokes)",
+    "/smokes: HTTP 200",
+    "390px smokes: common navigation order",
+    "390px smokes: no document horizontal overflow",
+    "390px smokes: every navigation item is rendered and available",
+    "390px smokes: exactly one current item (Smokes)",
+    "390px smokes: Home and Overview destinations retained",
+    "390px smokes: More retains /privacy",
+    "390px smokes: More retains /terms",
+    "390px smokes: More retains /connect",
+    "390px smokes: More Escape closes and restores trigger focus",
+    "390px smokes: English selection stored",
+    "390px smokes: English keeps navigation labels and order",
+    "390px smokes: Language switches both directions and restores focus",
+    "390px smokes: Search reaches the home Riot ID input",
+    "/smokes: HTTP 200",
+    "390px smokes: Tab reaches Overview",
+    "390px smokes: Tab reaches Lineups",
+    "390px smokes Lineups: keyboard auto-scroll reveals full link and visible focus",
+    "390px smokes: Tab reaches Smokes",
+    "390px smokes Smokes: keyboard auto-scroll reveals full link and visible focus",
+    "390px smokes: keyboard Lineups activation: exactly one current item (Lineups)",
+    "390px smokes: keyboard Smokes activation: exactly one current item (Smokes)",
+    "/: HTTP 200",
+    "390px Overview destination: exactly one current item (Overview)",
+    "390px Home destination: exactly one current item (Home)",
+    "/: HTTP 200",
+    "390px More Privacy policy follows /privacy",
+    "/: HTTP 200",
+    "390px More Terms of service follows /terms",
+    "/: HTTP 200",
+    "390px More Connect account follows /connect",
+    "No browser runtime errors",
+    "No unexpected browser console errors"
+  ],
+  "layouts": [
+    {
+      "label": "1440px home",
+      "overflow": 0,
+      "rail": {
+        "width": 268.546875,
+        "scrollWidth": 269,
+        "clientWidth": 269,
+        "overflowX": "auto"
+      },
+      "items": [
+        {
+          "label": "Home",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 38.90625,
+          "height": 53
+        },
+        {
+          "label": "Overview",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 62.265625,
+          "height": 53
+        },
+        {
+          "label": "Lineups",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.671875,
+          "height": 53
+        },
+        {
+          "label": "Smokes",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.703125,
+          "height": 53
+        }
+      ]
+    },
+    {
+      "label": "1440px profile",
+      "overflow": 0,
+      "rail": {
+        "width": 655.40625,
+        "scrollWidth": 655,
+        "clientWidth": 655,
+        "overflowX": "auto"
+      },
+      "items": [
+        {
+          "label": "Home",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 38.90625,
+          "height": 53
+        },
+        {
+          "label": "Overview",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 62.265625,
+          "height": 53
+        },
+        {
+          "label": "Matches",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 56.03125,
+          "height": 53
+        },
+        {
+          "label": "Performance",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 85.59375,
+          "height": 53
+        },
+        {
+          "label": "Agents",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 47.453125,
+          "height": 53
+        },
+        {
+          "label": "Maps",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 35.796875,
+          "height": 53
+        },
+        {
+          "label": "Weapons",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 61.984375,
+          "height": 53
+        },
+        {
+          "label": "Lineups",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.671875,
+          "height": 53
+        },
+        {
+          "label": "Smokes",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.703125,
+          "height": 53
+        }
+      ]
+    },
+    {
+      "label": "1440px synthetic-profile",
+      "overflow": 0,
+      "rail": {
+        "width": 655.40625,
+        "scrollWidth": 655,
+        "clientWidth": 655,
+        "overflowX": "auto"
+      },
+      "items": [
+        {
+          "label": "Home",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 38.90625,
+          "height": 53
+        },
+        {
+          "label": "Overview",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 62.265625,
+          "height": 53
+        },
+        {
+          "label": "Matches",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 56.03125,
+          "height": 53
+        },
+        {
+          "label": "Performance",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 85.59375,
+          "height": 53
+        },
+        {
+          "label": "Agents",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 47.453125,
+          "height": 53
+        },
+        {
+          "label": "Maps",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 35.796875,
+          "height": 53
+        },
+        {
+          "label": "Weapons",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 61.984375,
+          "height": 53
+        },
+        {
+          "label": "Lineups",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.671875,
+          "height": 53
+        },
+        {
+          "label": "Smokes",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.703125,
+          "height": 53
+        }
+      ]
+    },
+    {
+      "label": "1440px lineups",
+      "overflow": 0,
+      "rail": {
+        "width": 268.546875,
+        "scrollWidth": 269,
+        "clientWidth": 269,
+        "overflowX": "auto"
+      },
+      "items": [
+        {
+          "label": "Home",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 38.90625,
+          "height": 53
+        },
+        {
+          "label": "Overview",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 62.265625,
+          "height": 53
+        },
+        {
+          "label": "Lineups",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.671875,
+          "height": 53
+        },
+        {
+          "label": "Smokes",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.703125,
+          "height": 53
+        }
+      ]
+    },
+    {
+      "label": "1440px smokes",
+      "overflow": 0,
+      "rail": {
+        "width": 268.546875,
+        "scrollWidth": 269,
+        "clientWidth": 269,
+        "overflowX": "auto"
+      },
+      "items": [
+        {
+          "label": "Home",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 38.90625,
+          "height": 53
+        },
+        {
+          "label": "Overview",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 62.265625,
+          "height": 53
+        },
+        {
+          "label": "Lineups",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.671875,
+          "height": 53
+        },
+        {
+          "label": "Smokes",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.703125,
+          "height": 53
+        }
+      ]
+    },
+    {
+      "label": "820px home",
+      "overflow": 0,
+      "rail": {
+        "width": 262.546875,
+        "scrollWidth": 263,
+        "clientWidth": 263,
+        "overflowX": "auto"
+      },
+      "items": [
+        {
+          "label": "Home",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 38.90625,
+          "height": 53
+        },
+        {
+          "label": "Overview",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 62.265625,
+          "height": 53
+        },
+        {
+          "label": "Lineups",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.671875,
+          "height": 53
+        },
+        {
+          "label": "Smokes",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.703125,
+          "height": 53
+        }
+      ]
+    },
+    {
+      "label": "820px profile",
+      "overflow": 0,
+      "rail": {
+        "width": 460.546875,
+        "scrollWidth": 639,
+        "clientWidth": 461,
+        "overflowX": "auto"
+      },
+      "items": [
+        {
+          "label": "Home",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 38.90625,
+          "height": 53
+        },
+        {
+          "label": "Overview",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 62.265625,
+          "height": 53
+        },
+        {
+          "label": "Matches",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 56.03125,
+          "height": 53
+        },
+        {
+          "label": "Performance",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 85.59375,
+          "height": 53
+        },
+        {
+          "label": "Agents",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 47.453125,
+          "height": 53
+        },
+        {
+          "label": "Maps",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 35.796875,
+          "height": 53
+        },
+        {
+          "label": "Weapons",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 61.984375,
+          "height": 53
+        },
+        {
+          "label": "Lineups",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.671875,
+          "height": 53
+        },
+        {
+          "label": "Smokes",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.703125,
+          "height": 53
+        }
+      ]
+    },
+    {
+      "label": "820px synthetic-profile",
+      "overflow": 0,
+      "rail": {
+        "width": 460.546875,
+        "scrollWidth": 639,
+        "clientWidth": 461,
+        "overflowX": "auto"
+      },
+      "items": [
+        {
+          "label": "Home",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 38.90625,
+          "height": 53
+        },
+        {
+          "label": "Overview",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 62.265625,
+          "height": 53
+        },
+        {
+          "label": "Matches",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 56.03125,
+          "height": 53
+        },
+        {
+          "label": "Performance",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 85.59375,
+          "height": 53
+        },
+        {
+          "label": "Agents",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 47.453125,
+          "height": 53
+        },
+        {
+          "label": "Maps",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 35.796875,
+          "height": 53
+        },
+        {
+          "label": "Weapons",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 61.984375,
+          "height": 53
+        },
+        {
+          "label": "Lineups",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.671875,
+          "height": 53
+        },
+        {
+          "label": "Smokes",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.703125,
+          "height": 53
+        }
+      ]
+    },
+    {
+      "label": "820px lineups",
+      "overflow": 0,
+      "rail": {
+        "width": 262.546875,
+        "scrollWidth": 263,
+        "clientWidth": 263,
+        "overflowX": "auto"
+      },
+      "items": [
+        {
+          "label": "Home",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 38.90625,
+          "height": 53
+        },
+        {
+          "label": "Overview",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 62.265625,
+          "height": 53
+        },
+        {
+          "label": "Lineups",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.671875,
+          "height": 53
+        },
+        {
+          "label": "Smokes",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.703125,
+          "height": 53
+        }
+      ]
+    },
+    {
+      "label": "820px smokes",
+      "overflow": 0,
+      "rail": {
+        "width": 262.546875,
+        "scrollWidth": 263,
+        "clientWidth": 263,
+        "overflowX": "auto"
+      },
+      "items": [
+        {
+          "label": "Home",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 38.90625,
+          "height": 53
+        },
+        {
+          "label": "Overview",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 62.265625,
+          "height": 53
+        },
+        {
+          "label": "Lineups",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.671875,
+          "height": 53
+        },
+        {
+          "label": "Smokes",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.703125,
+          "height": 53
+        }
+      ]
+    },
+    {
+      "label": "390px home",
+      "overflow": 0,
+      "rail": {
+        "width": 238.546875,
+        "scrollWidth": 239,
+        "clientWidth": 239,
+        "overflowX": "auto"
+      },
+      "items": [
+        {
+          "label": "Home",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 38.90625,
+          "height": 55
+        },
+        {
+          "label": "Overview",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 62.265625,
+          "height": 55
+        },
+        {
+          "label": "Lineups",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.671875,
+          "height": 55
+        },
+        {
+          "label": "Smokes",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.703125,
+          "height": 55
+        }
+      ]
+    },
+    {
+      "label": "390px profile",
+      "overflow": 0,
+      "rail": {
+        "width": 202,
+        "scrollWidth": 575,
+        "clientWidth": 202,
+        "overflowX": "auto"
+      },
+      "items": [
+        {
+          "label": "Home",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 38.90625,
+          "height": 55
+        },
+        {
+          "label": "Overview",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 62.265625,
+          "height": 55
+        },
+        {
+          "label": "Matches",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 56.03125,
+          "height": 55
+        },
+        {
+          "label": "Performance",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 85.59375,
+          "height": 55
+        },
+        {
+          "label": "Agents",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 47.453125,
+          "height": 55
+        },
+        {
+          "label": "Maps",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 35.796875,
+          "height": 55
+        },
+        {
+          "label": "Weapons",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 61.984375,
+          "height": 55
+        },
+        {
+          "label": "Lineups",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.671875,
+          "height": 55
+        },
+        {
+          "label": "Smokes",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.703125,
+          "height": 55
+        }
+      ]
+    },
+    {
+      "label": "390px synthetic-profile",
+      "overflow": 0,
+      "rail": {
+        "width": 202,
+        "scrollWidth": 575,
+        "clientWidth": 202,
+        "overflowX": "auto"
+      },
+      "items": [
+        {
+          "label": "Home",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 38.90625,
+          "height": 55
+        },
+        {
+          "label": "Overview",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 62.265625,
+          "height": 55
+        },
+        {
+          "label": "Matches",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 56.03125,
+          "height": 55
+        },
+        {
+          "label": "Performance",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 85.59375,
+          "height": 55
+        },
+        {
+          "label": "Agents",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 47.453125,
+          "height": 55
+        },
+        {
+          "label": "Maps",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 35.796875,
+          "height": 55
+        },
+        {
+          "label": "Weapons",
+          "tag": "BUTTON",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 61.984375,
+          "height": 55
+        },
+        {
+          "label": "Lineups",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.671875,
+          "height": 55
+        },
+        {
+          "label": "Smokes",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.703125,
+          "height": 55
+        }
+      ]
+    },
+    {
+      "label": "390px lineups",
+      "overflow": 0,
+      "rail": {
+        "width": 238.546875,
+        "scrollWidth": 239,
+        "clientWidth": 239,
+        "overflowX": "auto"
+      },
+      "items": [
+        {
+          "label": "Home",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 38.90625,
+          "height": 55
+        },
+        {
+          "label": "Overview",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 62.265625,
+          "height": 55
+        },
+        {
+          "label": "Lineups",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.671875,
+          "height": 55
+        },
+        {
+          "label": "Smokes",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.703125,
+          "height": 55
+        }
+      ]
+    },
+    {
+      "label": "390px smokes",
+      "overflow": 0,
+      "rail": {
+        "width": 238.546875,
+        "scrollWidth": 239,
+        "clientWidth": 239,
+        "overflowX": "auto"
+      },
+      "items": [
+        {
+          "label": "Home",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 38.90625,
+          "height": 55
+        },
+        {
+          "label": "Overview",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 62.265625,
+          "height": 55
+        },
+        {
+          "label": "Lineups",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.671875,
+          "height": 55
+        },
+        {
+          "label": "Smokes",
+          "tag": "A",
+          "display": "flex",
+          "visibility": "visible",
+          "width": 53.703125,
+          "height": 55
+        }
+      ]
+    }
+  ],
+  "focus": [
+    {
+      "case": "1440px home Lineups",
+      "label": "Lineups",
+      "left": 365.171875,
+      "right": 418.84375,
+      "railLeft": 224,
+      "railRight": 492.546875,
+      "scrollLeft": 0,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "case": "1440px home Smokes",
+      "label": "Smokes",
+      "left": 438.84375,
+      "right": 492.546875,
+      "railLeft": 224,
+      "railRight": 492.546875,
+      "scrollLeft": 0,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "case": "1440px profile Lineups",
+      "label": "Lineups",
+      "left": 752.03125,
+      "right": 805.703125,
+      "railLeft": 224,
+      "railRight": 879.40625,
+      "scrollLeft": 0,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "case": "1440px profile Smokes",
+      "label": "Smokes",
+      "left": 825.703125,
+      "right": 879.40625,
+      "railLeft": 224,
+      "railRight": 879.40625,
+      "scrollLeft": 0,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "case": "1440px synthetic-profile Lineups",
+      "label": "Lineups",
+      "left": 752.03125,
+      "right": 805.703125,
+      "railLeft": 224,
+      "railRight": 879.40625,
+      "scrollLeft": 0,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "case": "1440px synthetic-profile Smokes",
+      "label": "Smokes",
+      "left": 825.703125,
+      "right": 879.40625,
+      "railLeft": 224,
+      "railRight": 879.40625,
+      "scrollLeft": 0,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "case": "1440px lineups Lineups",
+      "label": "Lineups",
+      "left": 365.171875,
+      "right": 418.84375,
+      "railLeft": 224,
+      "railRight": 492.546875,
+      "scrollLeft": 0,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "rgb(240, 82, 96) 0px -2px 0px 0px inset"
+    },
+    {
+      "case": "1440px lineups Smokes",
+      "label": "Smokes",
+      "left": 438.84375,
+      "right": 492.546875,
+      "railLeft": 224,
+      "railRight": 492.546875,
+      "scrollLeft": 0,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "case": "1440px smokes Lineups",
+      "label": "Lineups",
+      "left": 365.171875,
+      "right": 418.84375,
+      "railLeft": 224,
+      "railRight": 492.546875,
+      "scrollLeft": 0,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "case": "1440px smokes Smokes",
+      "label": "Smokes",
+      "left": 438.84375,
+      "right": 492.546875,
+      "railLeft": 224,
+      "railRight": 492.546875,
+      "scrollLeft": 0,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "rgb(240, 82, 96) 0px -2px 0px 0px inset"
+    },
+    {
+      "case": "820px home Lineups",
+      "label": "Lineups",
+      "left": 361.171875,
+      "right": 414.84375,
+      "railLeft": 224,
+      "railRight": 486.546875,
+      "scrollLeft": 0,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "case": "820px home Smokes",
+      "label": "Smokes",
+      "left": 432.84375,
+      "right": 486.546875,
+      "railLeft": 224,
+      "railRight": 486.546875,
+      "scrollLeft": 0,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "case": "820px profile Lineups",
+      "label": "Lineups",
+      "left": 560.03125,
+      "right": 613.703125,
+      "railLeft": 224,
+      "railRight": 684.546875,
+      "scrollLeft": 178,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "case": "820px profile Smokes",
+      "label": "Smokes",
+      "left": 631.703125,
+      "right": 685.40625,
+      "railLeft": 224,
+      "railRight": 684.546875,
+      "scrollLeft": 178,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "case": "820px synthetic-profile Lineups",
+      "label": "Lineups",
+      "left": 560.03125,
+      "right": 613.703125,
+      "railLeft": 224,
+      "railRight": 684.546875,
+      "scrollLeft": 178,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "case": "820px synthetic-profile Smokes",
+      "label": "Smokes",
+      "left": 631.703125,
+      "right": 685.40625,
+      "railLeft": 224,
+      "railRight": 684.546875,
+      "scrollLeft": 178,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "case": "820px lineups Lineups",
+      "label": "Lineups",
+      "left": 361.171875,
+      "right": 414.84375,
+      "railLeft": 224,
+      "railRight": 486.546875,
+      "scrollLeft": 0,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "rgb(240, 82, 96) 0px -2px 0px 0px inset"
+    },
+    {
+      "case": "820px lineups Smokes",
+      "label": "Smokes",
+      "left": 432.84375,
+      "right": 486.546875,
+      "railLeft": 224,
+      "railRight": 486.546875,
+      "scrollLeft": 0,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "case": "820px smokes Lineups",
+      "label": "Lineups",
+      "left": 361.171875,
+      "right": 414.84375,
+      "railLeft": 224,
+      "railRight": 486.546875,
+      "scrollLeft": 0,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "case": "820px smokes Smokes",
+      "label": "Smokes",
+      "left": 432.84375,
+      "right": 486.546875,
+      "railLeft": 224,
+      "railRight": 486.546875,
+      "scrollLeft": 0,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "rgb(240, 82, 96) 0px -2px 0px 0px inset"
+    },
+    {
+      "case": "390px home Lineups",
+      "label": "Lineups",
+      "left": 181.171875,
+      "right": 234.84375,
+      "railLeft": 60,
+      "railRight": 298.546875,
+      "scrollLeft": 0,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "case": "390px home Smokes",
+      "label": "Smokes",
+      "left": 244.84375,
+      "right": 298.546875,
+      "railLeft": 60,
+      "railRight": 298.546875,
+      "scrollLeft": 0,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "case": "390px profile Lineups",
+      "label": "Lineups",
+      "left": 213.03125,
+      "right": 266.703125,
+      "railLeft": 128,
+      "railRight": 330,
+      "scrollLeft": 373,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "case": "390px profile Smokes",
+      "label": "Smokes",
+      "left": 276.703125,
+      "right": 330.40625,
+      "railLeft": 128,
+      "railRight": 330,
+      "scrollLeft": 373,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "case": "390px synthetic-profile Lineups",
+      "label": "Lineups",
+      "left": 213.03125,
+      "right": 266.703125,
+      "railLeft": 128,
+      "railRight": 330,
+      "scrollLeft": 373,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "case": "390px synthetic-profile Smokes",
+      "label": "Smokes",
+      "left": 276.703125,
+      "right": 330.40625,
+      "railLeft": 128,
+      "railRight": 330,
+      "scrollLeft": 373,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "case": "390px lineups Lineups",
+      "label": "Lineups",
+      "left": 181.171875,
+      "right": 234.84375,
+      "railLeft": 60,
+      "railRight": 298.546875,
+      "scrollLeft": 0,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "rgb(240, 82, 96) 0px -2px 0px 0px inset"
+    },
+    {
+      "case": "390px lineups Smokes",
+      "label": "Smokes",
+      "left": 244.84375,
+      "right": 298.546875,
+      "railLeft": 60,
+      "railRight": 298.546875,
+      "scrollLeft": 0,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "case": "390px smokes Lineups",
+      "label": "Lineups",
+      "left": 181.171875,
+      "right": 234.84375,
+      "railLeft": 60,
+      "railRight": 298.546875,
+      "scrollLeft": 0,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "none"
+    },
+    {
+      "case": "390px smokes Smokes",
+      "label": "Smokes",
+      "left": 244.84375,
+      "right": 298.546875,
+      "railLeft": 60,
+      "railRight": 298.546875,
+      "scrollLeft": 0,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(216, 200, 121)",
+      "boxShadow": "rgb(240, 82, 96) 0px -2px 0px 0px inset"
+    }
+  ],
+  "screenshots": [
+    "after-keyboard-profile-1440.png",
+    "after-keyboard-synthetic-profile-1440.png",
+    "after-keyboard-profile-820.png",
+    "after-keyboard-synthetic-profile-820.png",
+    "after-keyboard-profile-390.png",
+    "after-keyboard-synthetic-profile-390.png"
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "expectedApiErrors": [
+    {
+      "width": 1440,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 1440,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 1440,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 1440,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 1440,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 1440,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 1440,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 1440,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 1440,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 1440,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 1440,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 1440,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 820,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 820,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 820,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 820,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 820,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 820,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 820,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 820,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 820,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 820,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 820,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 820,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 390,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 390,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 390,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 390,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 390,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 390,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 390,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 390,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 390,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 390,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 390,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 390,
+      "route": "http://localhost:3000/lineups",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "requests": [
+    {
+      "width": 1440,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 1440,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 1440,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 1440,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 1440,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 1440,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 1440,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 1440,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 1440,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 1440,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 1440,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 1440,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 820,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 820,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 820,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 820,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 820,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 820,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 820,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 820,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 820,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 820,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 820,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 820,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 390,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 390,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 390,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 390,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 390,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 390,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 390,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 390,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 390,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 390,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 390,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    },
+    {
+      "width": 390,
+      "url": "http://localhost:8080/api/lineups",
+      "status": 503
+    }
+  ],
+  "syntheticProfile": "/players/demo-player-01",
+  "status": "PASS"
+}

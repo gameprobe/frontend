@@ -1,0 +1,293 @@
+{
+  "layouts": [
+    {
+      "width": 1440,
+      "name": "lineup",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 1440,
+      "name": "lineup-api",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 1440,
+      "name": "lineup-no-video",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 1440,
+      "name": "lineup-loading",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 1440,
+      "name": "lineup-error",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 1440,
+      "name": "match",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 1440,
+      "name": "404",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 1440,
+      "name": "connect",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 1440,
+      "name": "admin-login",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 1440,
+      "name": "admin-gate",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 1440,
+      "name": "admin-list",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 1440,
+      "name": "admin-empty",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 1440,
+      "name": "admin-error",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 1440,
+      "name": "admin-new",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 1440,
+      "name": "admin-edit",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 1440,
+      "name": "admin-edit-error",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 1440,
+      "name": "home",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 1440,
+      "name": "profile",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 390,
+      "name": "lineup",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 390,
+      "name": "lineup-api",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 390,
+      "name": "lineup-no-video",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 390,
+      "name": "lineup-loading",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 390,
+      "name": "lineup-error",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 390,
+      "name": "match",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 390,
+      "name": "404",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 390,
+      "name": "connect",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 390,
+      "name": "admin-login",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 390,
+      "name": "admin-gate",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 390,
+      "name": "admin-list",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 390,
+      "name": "admin-empty",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 390,
+      "name": "admin-error",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 390,
+      "name": "admin-new",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 390,
+      "name": "admin-edit",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 390,
+      "name": "admin-edit-error",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 820,
+      "name": "lineup",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 820,
+      "name": "match",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 820,
+      "name": "admin-list",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    },
+    {
+      "width": 820,
+      "name": "admin-new",
+      "geometryDataSame": true,
+      "overflow": false,
+      "errors": 0
+    }
+  ],
+  "homeProfilePngByteSame": {
+    "home": true,
+    "profile": true
+  },
+  "unchangedSources": [
+    "frontend/src/app/globals.css",
+    "frontend/src/lib/lineup-api.ts",
+    "frontend/src/types/lineup.ts",
+    "frontend/src/data/mock-lineups.json",
+    "frontend/src/data/mock-data.json",
+    "frontend/src/lib/mock-data.ts",
+    "frontend/src/lib/smoke-data.ts",
+    "frontend/src/lib/asset-map.ts",
+    "frontend/src/features/stats-shell/StatsHeader.tsx",
+    "frontend/src/features/stats-shell/StatsShell.tsx",
+    "frontend/src/features/stats-shell/StatsShell.module.css",
+    "frontend/src/features/stats-shell/theme.module.css",
+    "frontend/src/features/stats-shell/locale.tsx",
+    "frontend/src/features/tracker-profile/SyntheticMatchPage.tsx",
+    "frontend/src/features/tracker-profile/TrackerProfile.tsx",
+    "frontend/src/features/home/HomeLanding.tsx",
+    "frontend/package.json"
+  ]
+}

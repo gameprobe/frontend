@@ -1,0 +1,393 @@
+{
+  "phase": "before",
+  "base": "http://127.0.0.1:3100",
+  "capturedAt": "2026-09-28T08:11:06.386Z",
+  "screens": [
+    {
+      "name": "home",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-home.png"
+    },
+    {
+      "name": "profile",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-profile.png"
+    },
+    {
+      "name": "match",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-match.png"
+    },
+    {
+      "name": "match-scoreboard",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-match-scoreboard.png"
+    },
+    {
+      "name": "match-performance",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-match-performance.png"
+    },
+    {
+      "name": "match-economy",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-match-economy.png"
+    },
+    {
+      "name": "match-rounds",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-match-rounds.png"
+    },
+    {
+      "name": "match-duels",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-match-duels.png"
+    },
+    {
+      "name": "connect",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-connect.png"
+    },
+    {
+      "name": "privacy",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-privacy.png"
+    },
+    {
+      "name": "terms",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-terms.png"
+    },
+    {
+      "name": "lineups",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-lineups.png"
+    },
+    {
+      "name": "smokes",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-smokes.png"
+    },
+    {
+      "name": "home",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-home.png"
+    },
+    {
+      "name": "profile",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-profile.png"
+    },
+    {
+      "name": "match",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-match.png"
+    },
+    {
+      "name": "match-scoreboard",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-match-scoreboard.png"
+    },
+    {
+      "name": "match-performance",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-match-performance.png"
+    },
+    {
+      "name": "match-economy",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-match-economy.png"
+    },
+    {
+      "name": "match-rounds",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-match-rounds.png"
+    },
+    {
+      "name": "match-duels",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-match-duels.png"
+    },
+    {
+      "name": "connect",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-connect.png"
+    },
+    {
+      "name": "privacy",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-privacy.png"
+    },
+    {
+      "name": "terms",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-terms.png"
+    },
+    {
+      "name": "lineups",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-lineups.png"
+    },
+    {
+      "name": "smokes",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-smokes.png"
+    },
+    {
+      "name": "home",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-home.png"
+    },
+    {
+      "name": "profile",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-profile.png"
+    },
+    {
+      "name": "match",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-match.png"
+    },
+    {
+      "name": "match-scoreboard",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-match-scoreboard.png"
+    },
+    {
+      "name": "match-performance",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-match-performance.png"
+    },
+    {
+      "name": "match-economy",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-match-economy.png"
+    },
+    {
+      "name": "match-rounds",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-match-rounds.png"
+    },
+    {
+      "name": "match-duels",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-match-duels.png"
+    },
+    {
+      "name": "connect",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-connect.png"
+    },
+    {
+      "name": "privacy",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-privacy.png"
+    },
+    {
+      "name": "terms",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-terms.png"
+    },
+    {
+      "name": "lineups",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-lineups.png"
+    },
+    {
+      "name": "smokes",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-smokes.png"
+    },
+    {
+      "name": "home",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-home.png"
+    },
+    {
+      "name": "profile",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-profile.png"
+    },
+    {
+      "name": "match",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-match.png"
+    },
+    {
+      "name": "match-scoreboard",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-match-scoreboard.png"
+    },
+    {
+      "name": "match-performance",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-match-performance.png"
+    },
+    {
+      "name": "match-economy",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-match-economy.png"
+    },
+    {
+      "name": "match-rounds",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-match-rounds.png"
+    },
+    {
+      "name": "match-duels",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-match-duels.png"
+    },
+    {
+      "name": "connect",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-connect.png"
+    },
+    {
+      "name": "privacy",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-privacy.png"
+    },
+    {
+      "name": "terms",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-terms.png"
+    },
+    {
+      "name": "lineups",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-lineups.png"
+    },
+    {
+      "name": "smokes",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-smokes.png"
+    }
+  ],
+  "checks": [],
+  "errors": [],
+  "consoleErrors": [
+    {
+      "url": "http://127.0.0.1:3100/",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "url": "http://127.0.0.1:3100/lineups",
+      "message": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/lineups",
+      "message": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/lineups",
+      "message": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/lineups",
+      "message": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/lineups",
+      "message": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/lineups",
+      "message": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/lineups",
+      "message": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/lineups",
+      "message": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+    }
+  ],
+  "failedRequests": [
+    {
+      "url": "http://localhost:8080/api/lineups",
+      "error": "net::ERR_CONNECTION_REFUSED"
+    },
+    {
+      "url": "http://localhost:8080/api/lineups",
+      "error": "net::ERR_CONNECTION_REFUSED"
+    },
+    {
+      "url": "http://localhost:8080/api/lineups",
+      "error": "net::ERR_CONNECTION_REFUSED"
+    },
+    {
+      "url": "http://localhost:8080/api/lineups",
+      "error": "net::ERR_CONNECTION_REFUSED"
+    },
+    {
+      "url": "http://localhost:8080/api/lineups",
+      "error": "net::ERR_CONNECTION_REFUSED"
+    },
+    {
+      "url": "http://localhost:8080/api/lineups",
+      "error": "net::ERR_CONNECTION_REFUSED"
+    },
+    {
+      "url": "http://localhost:8080/api/lineups",
+      "error": "net::ERR_CONNECTION_REFUSED"
+    },
+    {
+      "url": "http://localhost:8080/api/lineups",
+      "error": "net::ERR_CONNECTION_REFUSED"
+    }
+  ]
+}

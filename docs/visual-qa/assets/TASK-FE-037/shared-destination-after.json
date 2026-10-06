@@ -1,0 +1,221 @@
+{
+  "phase": "after",
+  "screens": [
+    "shared-destination-after-1440-shared-locked.png",
+    "shared-destination-after-1440-shared-staged.png",
+    "shared-destination-after-1440-shared-saved.png",
+    "shared-destination-after-1440-single-editable.png",
+    "shared-destination-after-1440-new-shared-draft.png",
+    "shared-destination-after-1440-shared-preview.png",
+    "shared-destination-after-1440-select-spacing.png",
+    "shared-destination-after-390-shared-locked.png",
+    "shared-destination-after-390-shared-staged.png",
+    "shared-destination-after-390-shared-saved.png",
+    "shared-destination-after-390-single-editable.png",
+    "shared-destination-after-390-new-shared-draft.png",
+    "shared-destination-after-390-shared-preview.png",
+    "shared-destination-after-390-select-spacing.png"
+  ],
+  "checks": [
+    {
+      "width": 1440,
+      "input": "mouse",
+      "sharedCount": 3,
+      "cancelPreservesOtherEdits": "PASS",
+      "invalidSaveIsolation": "PASS",
+      "savePropagation": "PASS",
+      "peerFields": "PASS",
+      "activationReset": "PASS",
+      "detach": "PASS",
+      "soleDestination": "PASS",
+      "newGuideCount": 2,
+      "newGuidePropagation": "PASS",
+      "preview": "PASS",
+      "reload": "PASS",
+      "selects": [
+        {
+          "id": "목록 상태 필터",
+          "appearance": "none",
+          "background": "linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgb(180, 194, 207) 50%), linear-gradient(135deg, rgb(180, 194, 207) 50%, rgba(0, 0, 0, 0) 50%)",
+          "position": "calc(100% - 17px) 50%, calc(100% - 12px) 50%",
+          "paddingRight": 36,
+          "width": 210
+        },
+        {
+          "id": "preview-map",
+          "appearance": "none",
+          "background": "linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgb(180, 194, 207) 50%), linear-gradient(135deg, rgb(180, 194, 207) 50%, rgba(0, 0, 0, 0) 50%)",
+          "position": "calc(100% - 17px) 50%, calc(100% - 12px) 50%",
+          "paddingRight": 36,
+          "width": 211
+        },
+        {
+          "id": "preview-agent",
+          "appearance": "none",
+          "background": "linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgb(180, 194, 207) 50%), linear-gradient(135deg, rgb(180, 194, 207) 50%, rgba(0, 0, 0, 0) 50%)",
+          "position": "calc(100% - 17px) 50%, calc(100% - 12px) 50%",
+          "paddingRight": 36,
+          "width": 211
+        },
+        {
+          "id": "preview-destination",
+          "appearance": "none",
+          "background": "linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgb(180, 194, 207) 50%), linear-gradient(135deg, rgb(180, 194, 207) 50%, rgba(0, 0, 0, 0) 50%)",
+          "position": "calc(100% - 17px) 50%, calc(100% - 12px) 50%",
+          "paddingRight": 36,
+          "width": 434
+        },
+        {
+          "id": "preview-ability",
+          "appearance": "none",
+          "background": "linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgb(180, 194, 207) 50%), linear-gradient(135deg, rgb(180, 194, 207) 50%, rgba(0, 0, 0, 0) 50%)",
+          "position": "calc(100% - 17px) 50%, calc(100% - 12px) 50%",
+          "paddingRight": 36,
+          "width": 211
+        },
+        {
+          "id": "preview-shape",
+          "appearance": "none",
+          "background": "linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgb(180, 194, 207) 50%), linear-gradient(135deg, rgb(180, 194, 207) 50%, rgba(0, 0, 0, 0) 50%)",
+          "position": "calc(100% - 17px) 50%, calc(100% - 12px) 50%",
+          "paddingRight": 36,
+          "width": 211
+        },
+        {
+          "id": "preview-media-type",
+          "appearance": "none",
+          "background": "linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgb(180, 194, 207) 50%), linear-gradient(135deg, rgb(180, 194, 207) 50%, rgba(0, 0, 0, 0) 50%)",
+          "position": "calc(100% - 17px) 50%, calc(100% - 12px) 50%",
+          "paddingRight": 36,
+          "width": 434
+        },
+        {
+          "id": "preview-side",
+          "appearance": "none",
+          "background": "linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgb(180, 194, 207) 50%), linear-gradient(135deg, rgb(180, 194, 207) 50%, rgba(0, 0, 0, 0) 50%)",
+          "position": "calc(100% - 17px) 50%, calc(100% - 12px) 50%",
+          "paddingRight": 36,
+          "width": 211
+        },
+        {
+          "id": "preview-site",
+          "appearance": "none",
+          "background": "linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgb(180, 194, 207) 50%), linear-gradient(135deg, rgb(180, 194, 207) 50%, rgba(0, 0, 0, 0) 50%)",
+          "position": "calc(100% - 17px) 50%, calc(100% - 12px) 50%",
+          "paddingRight": 36,
+          "width": 211
+        },
+        {
+          "id": "preview-status",
+          "appearance": "none",
+          "background": "linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgb(180, 194, 207) 50%), linear-gradient(135deg, rgb(180, 194, 207) 50%, rgba(0, 0, 0, 0) 50%)",
+          "position": "calc(100% - 17px) 50%, calc(100% - 12px) 50%",
+          "paddingRight": 36,
+          "width": 434
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "input": "touch",
+      "sharedCount": 3,
+      "cancelPreservesOtherEdits": "PASS",
+      "invalidSaveIsolation": "PASS",
+      "savePropagation": "PASS",
+      "peerFields": "PASS",
+      "activationReset": "PASS",
+      "detach": "PASS",
+      "soleDestination": "PASS",
+      "newGuideCount": 2,
+      "newGuidePropagation": "PASS",
+      "preview": "PASS",
+      "reload": "PASS",
+      "selects": [
+        {
+          "id": "목록 상태 필터",
+          "appearance": "none",
+          "background": "linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgb(180, 194, 207) 50%), linear-gradient(135deg, rgb(180, 194, 207) 50%, rgba(0, 0, 0, 0) 50%)",
+          "position": "calc(100% - 17px) 50%, calc(100% - 12px) 50%",
+          "paddingRight": 36,
+          "width": 110
+        },
+        {
+          "id": "preview-map",
+          "appearance": "none",
+          "background": "linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgb(180, 194, 207) 50%), linear-gradient(135deg, rgb(180, 194, 207) 50%, rgba(0, 0, 0, 0) 50%)",
+          "position": "calc(100% - 17px) 50%, calc(100% - 12px) 50%",
+          "paddingRight": 36,
+          "width": 160
+        },
+        {
+          "id": "preview-agent",
+          "appearance": "none",
+          "background": "linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgb(180, 194, 207) 50%), linear-gradient(135deg, rgb(180, 194, 207) 50%, rgba(0, 0, 0, 0) 50%)",
+          "position": "calc(100% - 17px) 50%, calc(100% - 12px) 50%",
+          "paddingRight": 36,
+          "width": 160
+        },
+        {
+          "id": "preview-destination",
+          "appearance": "none",
+          "background": "linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgb(180, 194, 207) 50%), linear-gradient(135deg, rgb(180, 194, 207) 50%, rgba(0, 0, 0, 0) 50%)",
+          "position": "calc(100% - 17px) 50%, calc(100% - 12px) 50%",
+          "paddingRight": 36,
+          "width": 332
+        },
+        {
+          "id": "preview-ability",
+          "appearance": "none",
+          "background": "linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgb(180, 194, 207) 50%), linear-gradient(135deg, rgb(180, 194, 207) 50%, rgba(0, 0, 0, 0) 50%)",
+          "position": "calc(100% - 17px) 50%, calc(100% - 12px) 50%",
+          "paddingRight": 36,
+          "width": 160
+        },
+        {
+          "id": "preview-shape",
+          "appearance": "none",
+          "background": "linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgb(180, 194, 207) 50%), linear-gradient(135deg, rgb(180, 194, 207) 50%, rgba(0, 0, 0, 0) 50%)",
+          "position": "calc(100% - 17px) 50%, calc(100% - 12px) 50%",
+          "paddingRight": 36,
+          "width": 160
+        },
+        {
+          "id": "preview-media-type",
+          "appearance": "none",
+          "background": "linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgb(180, 194, 207) 50%), linear-gradient(135deg, rgb(180, 194, 207) 50%, rgba(0, 0, 0, 0) 50%)",
+          "position": "calc(100% - 17px) 50%, calc(100% - 12px) 50%",
+          "paddingRight": 36,
+          "width": 332
+        },
+        {
+          "id": "preview-side",
+          "appearance": "none",
+          "background": "linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgb(180, 194, 207) 50%), linear-gradient(135deg, rgb(180, 194, 207) 50%, rgba(0, 0, 0, 0) 50%)",
+          "position": "calc(100% - 17px) 50%, calc(100% - 12px) 50%",
+          "paddingRight": 36,
+          "width": 160
+        },
+        {
+          "id": "preview-site",
+          "appearance": "none",
+          "background": "linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgb(180, 194, 207) 50%), linear-gradient(135deg, rgb(180, 194, 207) 50%, rgba(0, 0, 0, 0) 50%)",
+          "position": "calc(100% - 17px) 50%, calc(100% - 12px) 50%",
+          "paddingRight": 36,
+          "width": 160
+        },
+        {
+          "id": "preview-status",
+          "appearance": "none",
+          "background": "linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgb(180, 194, 207) 50%), linear-gradient(135deg, rgb(180, 194, 207) 50%, rgba(0, 0, 0, 0) 50%)",
+          "position": "calc(100% - 17px) 50%, calc(100% - 12px) 50%",
+          "paddingRight": 36,
+          "width": 332
+        }
+      ],
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "apiRequests": []
+}

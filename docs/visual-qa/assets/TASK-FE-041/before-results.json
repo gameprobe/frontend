@@ -1,0 +1,46 @@
+[
+  {
+    "width": 1440,
+    "selectionControls": 0,
+    "markers": 3,
+    "overlapPositions": [
+      {
+        "left": "50%",
+        "top": "50%"
+      },
+      {
+        "left": "50%",
+        "top": "50%"
+      },
+      {
+        "left": "50.2%",
+        "top": "50.2%"
+      }
+    ],
+    "overflow": false,
+    "errors": [],
+    "writes": []
+  },
+  {
+    "width": 390,
+    "selectionControls": 0,
+    "markers": 3,
+    "overlapPositions": [
+      {
+        "left": "50%",
+        "top": "50%"
+      },
+      {
+        "left": "50%",
+        "top": "50%"
+      },
+      {
+        "left": "50.2%",
+        "top": "50.2%"
+      }
+    ],
+    "overflow": false,
+    "errors": [],
+    "writes": []
+  }
+]

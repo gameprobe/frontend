@@ -1,0 +1,1501 @@
+{
+  "task": "TASK-FE-021",
+  "baseline": "45bbd06",
+  "firstCommit": "32aefcd",
+  "branch": "codex/profile-view-state",
+  "status": "PASS",
+  "sourceSHA256": {
+    "frontend/src/features/tracker-profile/TrackerProfile.tsx": "c63bf5c6e3a332c78b9755989e1bf4d090e503e565ea2ea81c5d9ae0d8d6c0be",
+    "frontend/src/features/tracker-profile/hooks/useProfileViewState.ts": "c5bb204532557ac94830c1291d295ea5f8bef912372679b51bf9bab78ff2dc1a",
+    "frontend/src/features/tracker-profile/hooks/useProfileBrowserActions.ts": "8e07512742384dc049e34767559f9c61127d98f6050d5806ee42608bf1508f80"
+  },
+  "visual": {
+    "snapshotsIdentical": 58,
+    "captures": [
+      "final-desktop-home.png",
+      "final-desktop-overview.png",
+      "final-desktop-matches.png",
+      "final-desktop-performance.png",
+      "final-desktop-agents.png",
+      "final-desktop-maps.png",
+      "final-desktop-weapons.png",
+      "final-desktop-show-more.png",
+      "final-desktop-filters.png",
+      "final-desktop-empty-matches.png",
+      "final-desktop-empty-maps.png",
+      "final-desktop-act.png",
+      "final-desktop-deathmatch.png",
+      "final-desktop-weapon-scroll.png",
+      "final-desktop-modal-scoreboard.png",
+      "final-mobile-home.png",
+      "final-mobile-overview.png",
+      "final-mobile-matches.png",
+      "final-mobile-performance.png",
+      "final-mobile-agents.png",
+      "final-mobile-maps.png",
+      "final-mobile-weapons.png",
+      "final-mobile-show-more.png",
+      "final-mobile-filters.png",
+      "final-mobile-empty-matches.png",
+      "final-mobile-empty-maps.png",
+      "final-mobile-act.png",
+      "final-mobile-deathmatch.png",
+      "final-mobile-weapon-scroll.png",
+      "final-mobile-modal-scoreboard.png"
+    ],
+    "checks": [
+      "desktop: six profile tabs",
+      "desktop: load more, agent, date, result filters",
+      "desktop: empty match/map + reset",
+      "desktop: act and playlist",
+      "desktop: modal five tabs / Escape / focus",
+      "mobile: six profile tabs",
+      "mobile: load more, agent, date, result filters",
+      "mobile: empty match/map + reset",
+      "mobile: act and playlist",
+      "mobile: modal five tabs / Escape / focus",
+      "20 breakpoint/tab states without document overflow"
+    ],
+    "errors": [],
+    "comparisons": [
+      {
+        "state": "desktop-act",
+        "before": "before-desktop-act.png",
+        "after": "final-desktop-act.png",
+        "size": [
+          1728,
+          2537
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "desktop-agents",
+        "before": "before-desktop-agents.png",
+        "after": "final-desktop-agents.png",
+        "size": [
+          1728,
+          2537
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "desktop-deathmatch",
+        "before": "before-desktop-deathmatch.png",
+        "after": "final-desktop-deathmatch.png",
+        "size": [
+          1728,
+          2480
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "desktop-empty-maps",
+        "before": "before-desktop-empty-maps.png",
+        "after": "final-desktop-empty-maps.png",
+        "size": [
+          1728,
+          2366
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "desktop-empty-matches",
+        "before": "before-desktop-empty-matches.png",
+        "after": "final-desktop-empty-matches.png",
+        "size": [
+          1728,
+          2366
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "desktop-filters",
+        "before": "before-desktop-filters.png",
+        "after": "final-desktop-filters.png",
+        "size": [
+          1728,
+          2537
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "desktop-home",
+        "before": "control-before-desktop-home.png",
+        "after": "control-after-desktop-home.png",
+        "size": [
+          1728,
+          941
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": true
+      },
+      {
+        "state": "desktop-maps",
+        "before": "before-desktop-maps.png",
+        "after": "final-desktop-maps.png",
+        "size": [
+          1728,
+          2537
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "desktop-matches",
+        "before": "before-desktop-matches.png",
+        "after": "final-desktop-matches.png",
+        "size": [
+          1728,
+          3646
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "desktop-modal-scoreboard",
+        "before": "before-desktop-modal-scoreboard.png",
+        "after": "final-desktop-modal-scoreboard.png",
+        "size": [
+          1728,
+          941
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "desktop-overview",
+        "before": "before-desktop-overview.png",
+        "after": "final-desktop-overview.png",
+        "size": [
+          1728,
+          4408
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "desktop-performance",
+        "before": "before-desktop-performance.png",
+        "after": "final-desktop-performance.png",
+        "size": [
+          1728,
+          2537
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "desktop-show-more",
+        "before": "before-desktop-show-more.png",
+        "after": "final-desktop-show-more.png",
+        "size": [
+          1728,
+          4446
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "desktop-weapon-scroll",
+        "before": "before-desktop-weapon-scroll.png",
+        "after": "final-desktop-weapon-scroll.png",
+        "size": [
+          1728,
+          2537
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "desktop-weapons",
+        "before": "before-desktop-weapons.png",
+        "after": "final-desktop-weapons.png",
+        "size": [
+          1728,
+          2537
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "mobile-act",
+        "before": "before-mobile-act.png",
+        "after": "final-mobile-act.png",
+        "size": [
+          390,
+          4449
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "mobile-agents",
+        "before": "control-before-mobile-agents.png",
+        "after": "control-after-mobile-agents.png",
+        "size": [
+          390,
+          2548
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": true
+      },
+      {
+        "state": "mobile-deathmatch",
+        "before": "before-mobile-deathmatch.png",
+        "after": "final-mobile-deathmatch.png",
+        "size": [
+          390,
+          4056
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "mobile-empty-maps",
+        "before": "before-mobile-empty-maps.png",
+        "after": "final-mobile-empty-maps.png",
+        "size": [
+          390,
+          2366
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "mobile-empty-matches",
+        "before": "before-mobile-empty-matches.png",
+        "after": "final-mobile-empty-matches.png",
+        "size": [
+          390,
+          2651
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "mobile-filters",
+        "before": "before-mobile-filters.png",
+        "after": "final-mobile-filters.png",
+        "size": [
+          390,
+          3085
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "mobile-home",
+        "before": "before-mobile-home.png",
+        "after": "final-mobile-home.png",
+        "size": [
+          390,
+          844
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "mobile-maps",
+        "before": "before-mobile-maps.png",
+        "after": "final-mobile-maps.png",
+        "size": [
+          390,
+          2758
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "mobile-matches",
+        "before": "before-mobile-matches.png",
+        "after": "final-mobile-matches.png",
+        "size": [
+          390,
+          6287
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "mobile-modal-scoreboard",
+        "before": "before-mobile-modal-scoreboard.png",
+        "after": "final-mobile-modal-scoreboard.png",
+        "size": [
+          390,
+          844
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "mobile-overview",
+        "before": "before-mobile-overview.png",
+        "after": "final-mobile-overview.png",
+        "size": [
+          390,
+          7388
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "mobile-performance",
+        "before": "before-mobile-performance.png",
+        "after": "final-mobile-performance.png",
+        "size": [
+          390,
+          3629
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "mobile-show-more",
+        "before": "before-mobile-show-more.png",
+        "after": "final-mobile-show-more.png",
+        "size": [
+          390,
+          7444
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "mobile-weapon-scroll",
+        "before": "before-mobile-weapon-scroll.png",
+        "after": "final-mobile-weapon-scroll.png",
+        "size": [
+          390,
+          2576
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      },
+      {
+        "state": "mobile-weapons",
+        "before": "before-mobile-weapons.png",
+        "after": "final-mobile-weapons.png",
+        "size": [
+          390,
+          2576
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "controlledRecapture": false
+      }
+    ]
+  },
+  "browserActions": {
+    "snapshotsIdentical": 12,
+    "captures": [
+      "browser-after-desktop-retained-menu.png",
+      "browser-after-desktop-storage-unavailable.png",
+      "browser-after-mobile-retained-menu.png",
+      "browser-after-mobile-storage-unavailable.png"
+    ],
+    "checks": [
+      "desktop: save key/message and manual toast close",
+      "desktop: remove and saved state after reentry",
+      "desktop: share URL and exact 3200ms toast expiry",
+      "desktop: empty, case-insensitive demo and other search without navigation",
+      "desktop: mock refresh status with identical match data",
+      "desktop: menu open/close and notice/banner/search/saved/refresh lifetime across tabs",
+      "desktop: visit-local state reset and storage-backed saved persistence on reload",
+      "desktop: unavailable storage read/write retains visit-only save toggling",
+      "desktop: clipboard rejection fallback and continued controls",
+      "mobile: save key/message and manual toast close",
+      "mobile: remove and saved state after reentry",
+      "mobile: share URL and exact 3200ms toast expiry",
+      "mobile: empty, case-insensitive demo and other search without navigation",
+      "mobile: mock refresh status with identical match data",
+      "mobile: menu open/close and notice/banner/search/saved/refresh lifetime across tabs",
+      "mobile: visit-local state reset and storage-backed saved persistence on reload",
+      "mobile: unavailable storage read/write retains visit-only save toggling",
+      "mobile: clipboard rejection fallback and continued controls"
+    ],
+    "errors": [],
+    "comparisons": [
+      {
+        "state": "desktop-retained-menu",
+        "size": [
+          1728,
+          941
+        ],
+        "identical": true,
+        "differentPixels": 0,
+        "differenceBox": null
+      },
+      {
+        "state": "desktop-storage-unavailable",
+        "size": [
+          1728,
+          941
+        ],
+        "identical": true,
+        "differentPixels": 0,
+        "differenceBox": null
+      },
+      {
+        "state": "mobile-retained-menu",
+        "size": [
+          390,
+          844
+        ],
+        "identical": true,
+        "differentPixels": 0,
+        "differenceBox": null
+      },
+      {
+        "state": "mobile-storage-unavailable",
+        "size": [
+          390,
+          844
+        ],
+        "identical": true,
+        "differentPixels": 0,
+        "differenceBox": null
+      }
+    ]
+  },
+  "viewStateHarness": {
+    "harness": "Real React 18 UMD + ReactDOM.createRoot + React.act in Playwright Chromium; no hook mocks",
+    "checks": [
+      {
+        "mode": "normal",
+        "name": "platform: same default/non-default values preserve; changed value resets",
+        "finalState": {
+          "tab": "Matches",
+          "platform": "Console",
+          "mode": "Competitive",
+          "act": "V26: A5",
+          "agent": "All Agents",
+          "map": "All Maps",
+          "weapon": "All Weapons",
+          "result": "All Results",
+          "date": "All Dates",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      },
+      {
+        "mode": "normal",
+        "name": "mode: same default/non-default values preserve; changed value resets",
+        "finalState": {
+          "tab": "Matches",
+          "platform": "PC",
+          "mode": "Premier",
+          "act": "V26: A5",
+          "agent": "All Agents",
+          "map": "All Maps",
+          "weapon": "All Weapons",
+          "result": "All Results",
+          "date": "All Dates",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      },
+      {
+        "mode": "normal",
+        "name": "act: same default/non-default values preserve; changed value resets",
+        "finalState": {
+          "tab": "Matches",
+          "platform": "PC",
+          "mode": "Competitive",
+          "act": "All Acts",
+          "agent": "All Agents",
+          "map": "All Maps",
+          "weapon": "All Weapons",
+          "result": "All Results",
+          "date": "All Dates",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      },
+      {
+        "mode": "normal",
+        "name": "agent: same default/non-default values preserve; changed value resets",
+        "finalState": {
+          "tab": "Matches",
+          "platform": "PC",
+          "mode": "Competitive",
+          "act": "V26: A5",
+          "agent": "Jett",
+          "map": "All Maps",
+          "weapon": "All Weapons",
+          "result": "All Results",
+          "date": "All Dates",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      },
+      {
+        "mode": "normal",
+        "name": "map: same default/non-default values preserve; changed value resets",
+        "finalState": {
+          "tab": "Matches",
+          "platform": "PC",
+          "mode": "Competitive",
+          "act": "V26: A5",
+          "agent": "All Agents",
+          "map": "Ascent",
+          "weapon": "All Weapons",
+          "result": "All Results",
+          "date": "All Dates",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      },
+      {
+        "mode": "normal",
+        "name": "weapon: same default/non-default values preserve; changed value resets",
+        "finalState": {
+          "tab": "Matches",
+          "platform": "PC",
+          "mode": "Competitive",
+          "act": "V26: A5",
+          "agent": "All Agents",
+          "map": "All Maps",
+          "weapon": "Vandal",
+          "result": "All Results",
+          "date": "All Dates",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      },
+      {
+        "mode": "normal",
+        "name": "result: same default/non-default values preserve; changed value resets",
+        "finalState": {
+          "tab": "Matches",
+          "platform": "PC",
+          "mode": "Competitive",
+          "act": "V26: A5",
+          "agent": "All Agents",
+          "map": "All Maps",
+          "weapon": "All Weapons",
+          "result": "Wins",
+          "date": "All Dates",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      },
+      {
+        "mode": "normal",
+        "name": "date: same default/non-default values preserve; changed value resets",
+        "finalState": {
+          "tab": "Matches",
+          "platform": "PC",
+          "mode": "Competitive",
+          "act": "V26: A5",
+          "agent": "All Agents",
+          "map": "All Maps",
+          "weapon": "All Weapons",
+          "result": "All Results",
+          "date": "Last 7 days",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      },
+      {
+        "mode": "normal",
+        "name": "navigate and same tab close selection while preserving filters, page size and detail tab",
+        "finalState": {
+          "tab": "Performance",
+          "platform": "PC",
+          "mode": "Competitive",
+          "act": "V26: A5",
+          "agent": "Jett",
+          "map": "All Maps",
+          "weapon": "All Weapons",
+          "result": "All Results",
+          "date": "All Dates",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "performance",
+          "pageSize": 43
+        }
+      },
+      {
+        "mode": "normal",
+        "name": "agent statistics preserve all unrelated conditions for same and different selections",
+        "finalState": {
+          "tab": "Matches",
+          "platform": "Console",
+          "mode": "Premier",
+          "act": "All Acts",
+          "agent": "Omen",
+          "map": "Ascent",
+          "weapon": "Vandal",
+          "result": "Wins",
+          "date": "Last 7 days",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      },
+      {
+        "mode": "normal",
+        "name": "map statistics preserve all unrelated conditions for same and different selections",
+        "finalState": {
+          "tab": "Matches",
+          "platform": "Console",
+          "mode": "Premier",
+          "act": "All Acts",
+          "agent": "Jett",
+          "map": "Haven",
+          "weapon": "Vandal",
+          "result": "Wins",
+          "date": "Last 7 days",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      },
+      {
+        "mode": "normal",
+        "name": "weapon statistics preserve all unrelated conditions for same and different selections",
+        "finalState": {
+          "tab": "Matches",
+          "platform": "Console",
+          "mode": "Premier",
+          "act": "All Acts",
+          "agent": "Jett",
+          "map": "Ascent",
+          "weapon": "Phantom",
+          "result": "Wins",
+          "date": "Last 7 days",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      },
+      {
+        "mode": "normal",
+        "name": "row toggle, recent-strip selection and close keep distinct inline detail behavior",
+        "finalState": {
+          "tab": "Overview",
+          "platform": "PC",
+          "mode": "Competitive",
+          "act": "V26: A5",
+          "agent": "All Agents",
+          "map": "All Maps",
+          "weapon": "All Weapons",
+          "result": "All Results",
+          "date": "All Dates",
+          "showFilters": false,
+          "showMore": false,
+          "expanded": "match-c",
+          "detailTab": "scoreboard",
+          "pageSize": 40
+        }
+      },
+      {
+        "mode": "normal",
+        "name": "load more increments and All Matches uses exact filtered count including zero",
+        "finalState": {
+          "tab": "Overview",
+          "platform": "PC",
+          "mode": "Unrated",
+          "act": "V26: A5",
+          "agent": "All Agents",
+          "map": "All Maps",
+          "weapon": "All Weapons",
+          "result": "All Results",
+          "date": "All Dates",
+          "showFilters": false,
+          "showMore": false,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      },
+      {
+        "mode": "normal",
+        "name": "reset scope, no-op default resets, and disclosure lifetime across filters/tabs/resets",
+        "finalState": {
+          "tab": "Maps",
+          "platform": "PC",
+          "mode": "Competitive",
+          "act": "V26: A5",
+          "agent": "All Agents",
+          "map": "All Maps",
+          "weapon": "All Weapons",
+          "result": "All Results",
+          "date": "All Dates",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      },
+      {
+        "mode": "StrictMode",
+        "name": "platform: same default/non-default values preserve; changed value resets",
+        "finalState": {
+          "tab": "Matches",
+          "platform": "Console",
+          "mode": "Competitive",
+          "act": "V26: A5",
+          "agent": "All Agents",
+          "map": "All Maps",
+          "weapon": "All Weapons",
+          "result": "All Results",
+          "date": "All Dates",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      },
+      {
+        "mode": "StrictMode",
+        "name": "mode: same default/non-default values preserve; changed value resets",
+        "finalState": {
+          "tab": "Matches",
+          "platform": "PC",
+          "mode": "Premier",
+          "act": "V26: A5",
+          "agent": "All Agents",
+          "map": "All Maps",
+          "weapon": "All Weapons",
+          "result": "All Results",
+          "date": "All Dates",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      },
+      {
+        "mode": "StrictMode",
+        "name": "act: same default/non-default values preserve; changed value resets",
+        "finalState": {
+          "tab": "Matches",
+          "platform": "PC",
+          "mode": "Competitive",
+          "act": "All Acts",
+          "agent": "All Agents",
+          "map": "All Maps",
+          "weapon": "All Weapons",
+          "result": "All Results",
+          "date": "All Dates",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      },
+      {
+        "mode": "StrictMode",
+        "name": "agent: same default/non-default values preserve; changed value resets",
+        "finalState": {
+          "tab": "Matches",
+          "platform": "PC",
+          "mode": "Competitive",
+          "act": "V26: A5",
+          "agent": "Jett",
+          "map": "All Maps",
+          "weapon": "All Weapons",
+          "result": "All Results",
+          "date": "All Dates",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      },
+      {
+        "mode": "StrictMode",
+        "name": "map: same default/non-default values preserve; changed value resets",
+        "finalState": {
+          "tab": "Matches",
+          "platform": "PC",
+          "mode": "Competitive",
+          "act": "V26: A5",
+          "agent": "All Agents",
+          "map": "Ascent",
+          "weapon": "All Weapons",
+          "result": "All Results",
+          "date": "All Dates",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      },
+      {
+        "mode": "StrictMode",
+        "name": "weapon: same default/non-default values preserve; changed value resets",
+        "finalState": {
+          "tab": "Matches",
+          "platform": "PC",
+          "mode": "Competitive",
+          "act": "V26: A5",
+          "agent": "All Agents",
+          "map": "All Maps",
+          "weapon": "Vandal",
+          "result": "All Results",
+          "date": "All Dates",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      },
+      {
+        "mode": "StrictMode",
+        "name": "result: same default/non-default values preserve; changed value resets",
+        "finalState": {
+          "tab": "Matches",
+          "platform": "PC",
+          "mode": "Competitive",
+          "act": "V26: A5",
+          "agent": "All Agents",
+          "map": "All Maps",
+          "weapon": "All Weapons",
+          "result": "Wins",
+          "date": "All Dates",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      },
+      {
+        "mode": "StrictMode",
+        "name": "date: same default/non-default values preserve; changed value resets",
+        "finalState": {
+          "tab": "Matches",
+          "platform": "PC",
+          "mode": "Competitive",
+          "act": "V26: A5",
+          "agent": "All Agents",
+          "map": "All Maps",
+          "weapon": "All Weapons",
+          "result": "All Results",
+          "date": "Last 7 days",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      },
+      {
+        "mode": "StrictMode",
+        "name": "navigate and same tab close selection while preserving filters, page size and detail tab",
+        "finalState": {
+          "tab": "Performance",
+          "platform": "PC",
+          "mode": "Competitive",
+          "act": "V26: A5",
+          "agent": "Jett",
+          "map": "All Maps",
+          "weapon": "All Weapons",
+          "result": "All Results",
+          "date": "All Dates",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "performance",
+          "pageSize": 43
+        }
+      },
+      {
+        "mode": "StrictMode",
+        "name": "agent statistics preserve all unrelated conditions for same and different selections",
+        "finalState": {
+          "tab": "Matches",
+          "platform": "Console",
+          "mode": "Premier",
+          "act": "All Acts",
+          "agent": "Omen",
+          "map": "Ascent",
+          "weapon": "Vandal",
+          "result": "Wins",
+          "date": "Last 7 days",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      },
+      {
+        "mode": "StrictMode",
+        "name": "map statistics preserve all unrelated conditions for same and different selections",
+        "finalState": {
+          "tab": "Matches",
+          "platform": "Console",
+          "mode": "Premier",
+          "act": "All Acts",
+          "agent": "Jett",
+          "map": "Haven",
+          "weapon": "Vandal",
+          "result": "Wins",
+          "date": "Last 7 days",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      },
+      {
+        "mode": "StrictMode",
+        "name": "weapon statistics preserve all unrelated conditions for same and different selections",
+        "finalState": {
+          "tab": "Matches",
+          "platform": "Console",
+          "mode": "Premier",
+          "act": "All Acts",
+          "agent": "Jett",
+          "map": "Ascent",
+          "weapon": "Phantom",
+          "result": "Wins",
+          "date": "Last 7 days",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      },
+      {
+        "mode": "StrictMode",
+        "name": "row toggle, recent-strip selection and close keep distinct inline detail behavior",
+        "finalState": {
+          "tab": "Overview",
+          "platform": "PC",
+          "mode": "Competitive",
+          "act": "V26: A5",
+          "agent": "All Agents",
+          "map": "All Maps",
+          "weapon": "All Weapons",
+          "result": "All Results",
+          "date": "All Dates",
+          "showFilters": false,
+          "showMore": false,
+          "expanded": "match-c",
+          "detailTab": "scoreboard",
+          "pageSize": 40
+        }
+      },
+      {
+        "mode": "StrictMode",
+        "name": "load more increments and All Matches uses exact filtered count including zero",
+        "finalState": {
+          "tab": "Overview",
+          "platform": "PC",
+          "mode": "Unrated",
+          "act": "V26: A5",
+          "agent": "All Agents",
+          "map": "All Maps",
+          "weapon": "All Weapons",
+          "result": "All Results",
+          "date": "All Dates",
+          "showFilters": false,
+          "showMore": false,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      },
+      {
+        "mode": "StrictMode",
+        "name": "reset scope, no-op default resets, and disclosure lifetime across filters/tabs/resets",
+        "finalState": {
+          "tab": "Maps",
+          "platform": "PC",
+          "mode": "Competitive",
+          "act": "V26: A5",
+          "agent": "All Agents",
+          "map": "All Maps",
+          "weapon": "All Weapons",
+          "result": "All Results",
+          "date": "All Dates",
+          "showFilters": true,
+          "showMore": true,
+          "expanded": null,
+          "detailTab": "rounds",
+          "pageSize": 20
+        }
+      }
+    ],
+    "errors": [],
+    "consoleErrors": [],
+    "versions": {
+      "react": "18.3.1",
+      "reactDOM": "18.3.1",
+      "typescript": "5.7.3"
+    },
+    "hookSHA256": "c5bb204532557ac94830c1291d295ea5f8bef912372679b51bf9bab78ff2dc1a",
+    "chromiumVersion": "151.0.7922.34",
+    "status": "PASS"
+  },
+  "browserActionsHarness": {
+    "status": "PASS",
+    "checks": [
+      {
+        "strict": false,
+        "name": "playerId reloads only saved flag; other local state survives"
+      },
+      {
+        "strict": false,
+        "name": "storage read failure preserves visit state without exception"
+      },
+      {
+        "strict": false,
+        "name": "3200ms timer: identical text preserves deadline, changed text replaces timer, expiry clears toast"
+      },
+      {
+        "strict": false,
+        "name": "displayName updates search matching; whitespace submission leaves state and timer unchanged"
+      },
+      {
+        "strict": false,
+        "name": "manual dismissal and unmount clean up active timer"
+      },
+      {
+        "strict": true,
+        "name": "playerId reloads only saved flag; other local state survives"
+      },
+      {
+        "strict": true,
+        "name": "storage read failure preserves visit state without exception"
+      },
+      {
+        "strict": true,
+        "name": "3200ms timer: identical text preserves deadline, changed text replaces timer, expiry clears toast"
+      },
+      {
+        "strict": true,
+        "name": "displayName updates search matching; whitespace submission leaves state and timer unchanged"
+      },
+      {
+        "strict": true,
+        "name": "manual dismissal and unmount clean up active timer"
+      }
+    ],
+    "errors": [],
+    "consoleErrors": [],
+    "sourceSHA256": "8e07512742384dc049e34767559f9c61127d98f6050d5806ee42608bf1508f80"
+  },
+  "postBuildSmoke": {
+    "status": "PASS",
+    "http": 200,
+    "modalWidth": 1400,
+    "tabs": 5,
+    "minTextSize": 12,
+    "closeButton": {
+      "x": 1507,
+      "y": 66,
+      "width": 44,
+      "height": 44
+    },
+    "closed": true,
+    "bodyOverflow": "visible"
+  },
+  "controlledRecapture": {
+    "source": {
+      "beforeCommit": "32aefcd",
+      "beforeParentSHA256": "99dcc3ddb836a2693a52a288d1b9720969ff01b638bf2de78f8fa20769f14384",
+      "afterParentSHA256": "c63bf5c6e3a332c78b9755989e1bf4d090e503e565ea2ea81c5d9ae0d8d6c0be",
+      "restored": true
+    },
+    "comparisons": [
+      {
+        "state": "desktop-home",
+        "size": [
+          1728,
+          941
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "changedPixels": 0
+      },
+      {
+        "state": "mobile-agents",
+        "size": [
+          390,
+          2548
+        ],
+        "identical": true,
+        "differenceBox": null,
+        "changedPixels": 0
+      }
+    ],
+    "initialComparison": [
+      {
+        "state": "desktop-act",
+        "size": [
+          1728,
+          2537
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "desktop-agents",
+        "size": [
+          1728,
+          2537
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "desktop-deathmatch",
+        "size": [
+          1728,
+          2480
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "desktop-empty-maps",
+        "size": [
+          1728,
+          2366
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "desktop-empty-matches",
+        "size": [
+          1728,
+          2366
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "desktop-filters",
+        "size": [
+          1728,
+          2537
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "desktop-home",
+        "size": [
+          1728,
+          941
+        ],
+        "identical": false,
+        "differenceBox": [
+          1278,
+          441,
+          1522,
+          509
+        ]
+      },
+      {
+        "state": "desktop-maps",
+        "size": [
+          1728,
+          2537
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "desktop-matches",
+        "size": [
+          1728,
+          3646
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "desktop-modal-scoreboard",
+        "size": [
+          1728,
+          941
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "desktop-overview",
+        "size": [
+          1728,
+          4408
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "desktop-performance",
+        "size": [
+          1728,
+          2537
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "desktop-show-more",
+        "size": [
+          1728,
+          4446
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "desktop-weapon-scroll",
+        "size": [
+          1728,
+          2537
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "desktop-weapons",
+        "size": [
+          1728,
+          2537
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "mobile-act",
+        "size": [
+          390,
+          4449
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "mobile-agents",
+        "size": [
+          390,
+          2548
+        ],
+        "identical": false,
+        "differenceBox": [
+          378,
+          537,
+          380,
+          712
+        ]
+      },
+      {
+        "state": "mobile-deathmatch",
+        "size": [
+          390,
+          4056
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "mobile-empty-maps",
+        "size": [
+          390,
+          2366
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "mobile-empty-matches",
+        "size": [
+          390,
+          2651
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "mobile-filters",
+        "size": [
+          390,
+          3085
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "mobile-home",
+        "size": [
+          390,
+          844
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "mobile-maps",
+        "size": [
+          390,
+          2758
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "mobile-matches",
+        "size": [
+          390,
+          6287
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "mobile-modal-scoreboard",
+        "size": [
+          390,
+          844
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "mobile-overview",
+        "size": [
+          390,
+          7388
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "mobile-performance",
+        "size": [
+          390,
+          3629
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "mobile-show-more",
+        "size": [
+          390,
+          7444
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "mobile-weapon-scroll",
+        "size": [
+          390,
+          2576
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "state": "mobile-weapons",
+        "size": [
+          390,
+          2576
+        ],
+        "identical": true,
+        "differenceBox": null
+      }
+    ],
+    "note": "Strict original comparison found only corner raster differences on two captures (19/15 pixels, max channel delta 2); a repeat also varied corners. First-commit and final source were recaptured with identical --disable-gpu renderer, both pairs now pixel-identical. Original evidence retained; tolerance remains zero."
+  },
+  "validation": {
+    "mock": "PASS",
+    "matchDetailMock": "PASS",
+    "missingDataSSR": "PASS",
+    "typescript": "PASS",
+    "lint": "PASS (0 warnings/errors)",
+    "build": "PASS (11 static pages)",
+    "gitDiffCheck": "PASS"
+  },
+  "notes": [
+    "Clipboard and storage success/failure use browser API stubs; real UI/hook is exercised.",
+    "Temporary source baseline restored byte-for-byte to validated final code.",
+    "Existing container git metadata warning remains. API/RSO/Spring/deployment not tested.",
+    "Browser harness corrected initial menu click order and undefined-field JSON normalization; no product changes."
+  ]
+}

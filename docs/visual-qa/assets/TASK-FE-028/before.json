@@ -1,0 +1,828 @@
+{
+  "phase": "before",
+  "states": [
+    {
+      "name": "home",
+      "width": 1440,
+      "file": "before-1440-home.png",
+      "overflow": 0,
+      "nav": {
+        "x": 0,
+        "y": 40,
+        "width": 1440,
+        "height": 54
+      },
+      "rail": {
+        "x": 224,
+        "y": 40,
+        "width": 194.84375,
+        "height": 53
+      },
+      "railScrollWidth": 195,
+      "items": [
+        {
+          "label": "Home",
+          "href": "/",
+          "current": "page",
+          "display": "flex",
+          "x": 224,
+          "y": 40,
+          "width": 38.90625,
+          "height": 53
+        },
+        {
+          "label": "Overview",
+          "href": "/players/ied-agent-allen",
+          "current": null,
+          "display": "flex",
+          "x": 282.90625,
+          "y": 40,
+          "width": 62.265625,
+          "height": 53
+        },
+        {
+          "label": "Lineups",
+          "href": "/lineups",
+          "current": null,
+          "display": "flex",
+          "x": 365.171875,
+          "y": 40,
+          "width": 53.671875,
+          "height": 53
+        }
+      ]
+    },
+    {
+      "name": "profile",
+      "width": 1440,
+      "file": "before-1440-profile.png",
+      "overflow": 0,
+      "nav": {
+        "x": 0,
+        "y": 40,
+        "width": 1440,
+        "height": 54
+      },
+      "rail": {
+        "x": 224,
+        "y": 40,
+        "width": 581.703125,
+        "height": 53
+      },
+      "railScrollWidth": 582,
+      "items": [
+        {
+          "label": "Home",
+          "href": "/",
+          "current": null,
+          "display": "flex",
+          "x": 224,
+          "y": 40,
+          "width": 38.90625,
+          "height": 53
+        },
+        {
+          "label": "Overview",
+          "href": null,
+          "current": null,
+          "display": "flex",
+          "x": 282.90625,
+          "y": 40,
+          "width": 62.265625,
+          "height": 53
+        },
+        {
+          "label": "Lineups",
+          "href": "/lineups",
+          "current": null,
+          "display": "flex",
+          "x": 365.171875,
+          "y": 40,
+          "width": 53.671875,
+          "height": 53
+        },
+        {
+          "label": "Matches",
+          "href": null,
+          "current": null,
+          "display": "flex",
+          "x": 438.84375,
+          "y": 40,
+          "width": 56.03125,
+          "height": 53
+        },
+        {
+          "label": "Performance",
+          "href": null,
+          "current": null,
+          "display": "flex",
+          "x": 514.875,
+          "y": 40,
+          "width": 85.59375,
+          "height": 53
+        },
+        {
+          "label": "Agents",
+          "href": null,
+          "current": null,
+          "display": "flex",
+          "x": 620.46875,
+          "y": 40,
+          "width": 47.453125,
+          "height": 53
+        },
+        {
+          "label": "Maps",
+          "href": null,
+          "current": null,
+          "display": "flex",
+          "x": 687.921875,
+          "y": 40,
+          "width": 35.796875,
+          "height": 53
+        },
+        {
+          "label": "Weapons",
+          "href": null,
+          "current": null,
+          "display": "flex",
+          "x": 743.71875,
+          "y": 40,
+          "width": 61.984375,
+          "height": 53
+        }
+      ]
+    },
+    {
+      "name": "lineups",
+      "width": 1440,
+      "file": "before-1440-lineups.png",
+      "overflow": 0,
+      "nav": {
+        "x": 0,
+        "y": 40,
+        "width": 1440,
+        "height": 54
+      },
+      "rail": {
+        "x": 224,
+        "y": 40,
+        "width": 268.546875,
+        "height": 53
+      },
+      "railScrollWidth": 269,
+      "items": [
+        {
+          "label": "Home",
+          "href": "/",
+          "current": null,
+          "display": "flex",
+          "x": 224,
+          "y": 40,
+          "width": 38.90625,
+          "height": 53
+        },
+        {
+          "label": "Overview",
+          "href": "/players/ied-agent-allen",
+          "current": null,
+          "display": "flex",
+          "x": 282.90625,
+          "y": 40,
+          "width": 62.265625,
+          "height": 53
+        },
+        {
+          "label": "Lineups",
+          "href": "/lineups",
+          "current": "page",
+          "display": "flex",
+          "x": 365.171875,
+          "y": 40,
+          "width": 53.671875,
+          "height": 53
+        },
+        {
+          "label": "Smokes",
+          "href": "/smokes",
+          "current": null,
+          "display": "flex",
+          "x": 438.84375,
+          "y": 40,
+          "width": 53.703125,
+          "height": 53
+        }
+      ]
+    },
+    {
+      "name": "smokes",
+      "width": 1440,
+      "file": "before-1440-smokes.png",
+      "overflow": 0,
+      "nav": {
+        "x": 0,
+        "y": 40,
+        "width": 1440,
+        "height": 54
+      },
+      "rail": {
+        "x": 224,
+        "y": 40,
+        "width": 268.546875,
+        "height": 53
+      },
+      "railScrollWidth": 269,
+      "items": [
+        {
+          "label": "Home",
+          "href": "/",
+          "current": null,
+          "display": "flex",
+          "x": 224,
+          "y": 40,
+          "width": 38.90625,
+          "height": 53
+        },
+        {
+          "label": "Overview",
+          "href": "/players/ied-agent-allen",
+          "current": null,
+          "display": "flex",
+          "x": 282.90625,
+          "y": 40,
+          "width": 62.265625,
+          "height": 53
+        },
+        {
+          "label": "Lineups",
+          "href": "/lineups",
+          "current": null,
+          "display": "flex",
+          "x": 365.171875,
+          "y": 40,
+          "width": 53.671875,
+          "height": 53
+        },
+        {
+          "label": "Smokes",
+          "href": "/smokes",
+          "current": "page",
+          "display": "flex",
+          "x": 438.84375,
+          "y": 40,
+          "width": 53.703125,
+          "height": 53
+        }
+      ]
+    },
+    {
+      "name": "home",
+      "width": 820,
+      "file": "before-820-home.png",
+      "overflow": 0,
+      "nav": {
+        "x": 0,
+        "y": 40,
+        "width": 820,
+        "height": 54
+      },
+      "rail": {
+        "x": 224,
+        "y": 40,
+        "width": 190.84375,
+        "height": 53
+      },
+      "railScrollWidth": 191,
+      "items": [
+        {
+          "label": "Home",
+          "href": "/",
+          "current": "page",
+          "display": "flex",
+          "x": 224,
+          "y": 40,
+          "width": 38.90625,
+          "height": 53
+        },
+        {
+          "label": "Overview",
+          "href": "/players/ied-agent-allen",
+          "current": null,
+          "display": "flex",
+          "x": 280.90625,
+          "y": 40,
+          "width": 62.265625,
+          "height": 53
+        },
+        {
+          "label": "Lineups",
+          "href": "/lineups",
+          "current": null,
+          "display": "flex",
+          "x": 361.171875,
+          "y": 40,
+          "width": 53.671875,
+          "height": 53
+        }
+      ]
+    },
+    {
+      "name": "profile",
+      "width": 820,
+      "file": "before-820-profile.png",
+      "overflow": 0,
+      "nav": {
+        "x": 0,
+        "y": 40,
+        "width": 820,
+        "height": 54
+      },
+      "rail": {
+        "x": 224,
+        "y": 40,
+        "width": 368.46875,
+        "height": 53
+      },
+      "railScrollWidth": 368,
+      "items": [
+        {
+          "label": "Home",
+          "href": "/",
+          "current": null,
+          "display": "flex",
+          "x": 224,
+          "y": 40,
+          "width": 38.90625,
+          "height": 53
+        },
+        {
+          "label": "Overview",
+          "href": null,
+          "current": null,
+          "display": "flex",
+          "x": 280.90625,
+          "y": 40,
+          "width": 62.265625,
+          "height": 53
+        },
+        {
+          "label": "Lineups",
+          "href": "/lineups",
+          "current": null,
+          "display": "flex",
+          "x": 361.171875,
+          "y": 40,
+          "width": 53.671875,
+          "height": 53
+        },
+        {
+          "label": "Matches",
+          "href": null,
+          "current": null,
+          "display": "flex",
+          "x": 432.84375,
+          "y": 40,
+          "width": 56.03125,
+          "height": 53
+        },
+        {
+          "label": "Performance",
+          "href": null,
+          "current": null,
+          "display": "flex",
+          "x": 506.875,
+          "y": 40,
+          "width": 85.59375,
+          "height": 53
+        },
+        {
+          "label": "Agents",
+          "href": null,
+          "current": null,
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "label": "Maps",
+          "href": null,
+          "current": null,
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "label": "Weapons",
+          "href": null,
+          "current": null,
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ]
+    },
+    {
+      "name": "lineups",
+      "width": 820,
+      "file": "before-820-lineups.png",
+      "overflow": 0,
+      "nav": {
+        "x": 0,
+        "y": 40,
+        "width": 820,
+        "height": 54
+      },
+      "rail": {
+        "x": 224,
+        "y": 40,
+        "width": 262.546875,
+        "height": 53
+      },
+      "railScrollWidth": 263,
+      "items": [
+        {
+          "label": "Home",
+          "href": "/",
+          "current": null,
+          "display": "flex",
+          "x": 224,
+          "y": 40,
+          "width": 38.90625,
+          "height": 53
+        },
+        {
+          "label": "Overview",
+          "href": "/players/ied-agent-allen",
+          "current": null,
+          "display": "flex",
+          "x": 280.90625,
+          "y": 40,
+          "width": 62.265625,
+          "height": 53
+        },
+        {
+          "label": "Lineups",
+          "href": "/lineups",
+          "current": "page",
+          "display": "flex",
+          "x": 361.171875,
+          "y": 40,
+          "width": 53.671875,
+          "height": 53
+        },
+        {
+          "label": "Smokes",
+          "href": "/smokes",
+          "current": null,
+          "display": "flex",
+          "x": 432.84375,
+          "y": 40,
+          "width": 53.703125,
+          "height": 53
+        }
+      ]
+    },
+    {
+      "name": "smokes",
+      "width": 820,
+      "file": "before-820-smokes.png",
+      "overflow": 0,
+      "nav": {
+        "x": 0,
+        "y": 40,
+        "width": 820,
+        "height": 54
+      },
+      "rail": {
+        "x": 224,
+        "y": 40,
+        "width": 262.546875,
+        "height": 53
+      },
+      "railScrollWidth": 263,
+      "items": [
+        {
+          "label": "Home",
+          "href": "/",
+          "current": null,
+          "display": "flex",
+          "x": 224,
+          "y": 40,
+          "width": 38.90625,
+          "height": 53
+        },
+        {
+          "label": "Overview",
+          "href": "/players/ied-agent-allen",
+          "current": null,
+          "display": "flex",
+          "x": 280.90625,
+          "y": 40,
+          "width": 62.265625,
+          "height": 53
+        },
+        {
+          "label": "Lineups",
+          "href": "/lineups",
+          "current": null,
+          "display": "flex",
+          "x": 361.171875,
+          "y": 40,
+          "width": 53.671875,
+          "height": 53
+        },
+        {
+          "label": "Smokes",
+          "href": "/smokes",
+          "current": "page",
+          "display": "flex",
+          "x": 432.84375,
+          "y": 40,
+          "width": 53.703125,
+          "height": 53
+        }
+      ]
+    },
+    {
+      "name": "home",
+      "width": 390,
+      "file": "before-390-home.png",
+      "overflow": 0,
+      "nav": {
+        "x": 0,
+        "y": 44,
+        "width": 390,
+        "height": 56
+      },
+      "rail": {
+        "x": 60,
+        "y": 44,
+        "width": 174.84375,
+        "height": 55
+      },
+      "railScrollWidth": 175,
+      "items": [
+        {
+          "label": "Home",
+          "href": "/",
+          "current": "page",
+          "display": "flex",
+          "x": 60,
+          "y": 44,
+          "width": 38.90625,
+          "height": 55
+        },
+        {
+          "label": "Overview",
+          "href": "/players/ied-agent-allen",
+          "current": null,
+          "display": "flex",
+          "x": 108.90625,
+          "y": 44,
+          "width": 62.265625,
+          "height": 55
+        },
+        {
+          "label": "Lineups",
+          "href": "/lineups",
+          "current": null,
+          "display": "flex",
+          "x": 181.171875,
+          "y": 44,
+          "width": 53.671875,
+          "height": 55
+        }
+      ]
+    },
+    {
+      "name": "profile",
+      "width": 390,
+      "file": "before-390-profile.png",
+      "overflow": 0,
+      "nav": {
+        "x": 0,
+        "y": 44,
+        "width": 390,
+        "height": 56
+      },
+      "rail": {
+        "x": 128,
+        "y": 44,
+        "width": 102.578125,
+        "height": 55
+      },
+      "railScrollWidth": 103,
+      "items": [
+        {
+          "label": "Home",
+          "href": "/",
+          "current": null,
+          "display": "flex",
+          "x": 128,
+          "y": 44,
+          "width": 38.90625,
+          "height": 55
+        },
+        {
+          "label": "Overview",
+          "href": null,
+          "current": null,
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "label": "Lineups",
+          "href": "/lineups",
+          "current": null,
+          "display": "flex",
+          "x": 176.90625,
+          "y": 44,
+          "width": 53.671875,
+          "height": 55
+        },
+        {
+          "label": "Matches",
+          "href": null,
+          "current": null,
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "label": "Performance",
+          "href": null,
+          "current": null,
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "label": "Agents",
+          "href": null,
+          "current": null,
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "label": "Maps",
+          "href": null,
+          "current": null,
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "label": "Weapons",
+          "href": null,
+          "current": null,
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ]
+    },
+    {
+      "name": "lineups",
+      "width": 390,
+      "file": "before-390-lineups.png",
+      "overflow": 0,
+      "nav": {
+        "x": 0,
+        "y": 44,
+        "width": 390,
+        "height": 56
+      },
+      "rail": {
+        "x": 60,
+        "y": 44,
+        "width": 238.546875,
+        "height": 55
+      },
+      "railScrollWidth": 239,
+      "items": [
+        {
+          "label": "Home",
+          "href": "/",
+          "current": null,
+          "display": "flex",
+          "x": 60,
+          "y": 44,
+          "width": 38.90625,
+          "height": 55
+        },
+        {
+          "label": "Overview",
+          "href": "/players/ied-agent-allen",
+          "current": null,
+          "display": "flex",
+          "x": 108.90625,
+          "y": 44,
+          "width": 62.265625,
+          "height": 55
+        },
+        {
+          "label": "Lineups",
+          "href": "/lineups",
+          "current": "page",
+          "display": "flex",
+          "x": 181.171875,
+          "y": 44,
+          "width": 53.671875,
+          "height": 55
+        },
+        {
+          "label": "Smokes",
+          "href": "/smokes",
+          "current": null,
+          "display": "flex",
+          "x": 244.84375,
+          "y": 44,
+          "width": 53.703125,
+          "height": 55
+        }
+      ]
+    },
+    {
+      "name": "smokes",
+      "width": 390,
+      "file": "before-390-smokes.png",
+      "overflow": 0,
+      "nav": {
+        "x": 0,
+        "y": 44,
+        "width": 390,
+        "height": 56
+      },
+      "rail": {
+        "x": 60,
+        "y": 44,
+        "width": 238.546875,
+        "height": 55
+      },
+      "railScrollWidth": 239,
+      "items": [
+        {
+          "label": "Home",
+          "href": "/",
+          "current": null,
+          "display": "flex",
+          "x": 60,
+          "y": 44,
+          "width": 38.90625,
+          "height": 55
+        },
+        {
+          "label": "Overview",
+          "href": "/players/ied-agent-allen",
+          "current": null,
+          "display": "flex",
+          "x": 108.90625,
+          "y": 44,
+          "width": 62.265625,
+          "height": 55
+        },
+        {
+          "label": "Lineups",
+          "href": "/lineups",
+          "current": null,
+          "display": "flex",
+          "x": 181.171875,
+          "y": 44,
+          "width": 53.671875,
+          "height": 55
+        },
+        {
+          "label": "Smokes",
+          "href": "/smokes",
+          "current": "page",
+          "display": "flex",
+          "x": 244.84375,
+          "y": 44,
+          "width": 53.703125,
+          "height": 55
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

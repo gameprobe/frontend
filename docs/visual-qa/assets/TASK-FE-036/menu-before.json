@@ -1,0 +1,200 @@
+{
+  "phase": "before",
+  "screens": [
+    "menu-before-1440-ko-profile-more.png",
+    "menu-before-1440-ko-insights-more.png",
+    "menu-before-1440-ko-insights-nav.png",
+    "menu-before-1440-en-profile-more.png",
+    "menu-before-1440-en-insights-more.png",
+    "menu-before-1440-en-insights-nav.png",
+    "menu-before-390-ko-profile-more.png",
+    "menu-before-390-ko-insights-more.png",
+    "menu-before-390-ko-insights-nav.png",
+    "menu-before-390-en-profile-more.png",
+    "menu-before-390-en-insights-more.png",
+    "menu-before-390-en-insights-nav.png"
+  ],
+  "checks": [
+    {
+      "width": 1440,
+      "locale": "ko",
+      "route": "/",
+      "order": "PASS",
+      "more": "PASS",
+      "keyboard": "PASS",
+      "insightsLink": "PASS"
+    },
+    {
+      "width": 1440,
+      "locale": "ko",
+      "route": "/players/ied-agent-allen",
+      "order": "PASS",
+      "more": "PASS",
+      "keyboard": "PASS",
+      "insightsLink": "PASS"
+    },
+    {
+      "width": 1440,
+      "locale": "ko",
+      "route": "/lineups",
+      "order": "PASS",
+      "more": "PASS",
+      "keyboard": "PASS",
+      "insightsLink": "PASS"
+    },
+    {
+      "width": 1440,
+      "locale": "ko",
+      "route": "/smokes",
+      "order": "PASS",
+      "more": "PASS",
+      "keyboard": "PASS",
+      "insightsLink": "PASS"
+    },
+    {
+      "width": 1440,
+      "locale": "ko",
+      "route": "/insights",
+      "order": "PASS",
+      "more": "PASS",
+      "keyboard": "PASS",
+      "insightsLink": "PASS"
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "route": "/",
+      "order": "PASS",
+      "more": "PASS",
+      "keyboard": "PASS",
+      "insightsLink": "PASS"
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "route": "/players/ied-agent-allen",
+      "order": "PASS",
+      "more": "PASS",
+      "keyboard": "PASS",
+      "insightsLink": "PASS"
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "route": "/lineups",
+      "order": "PASS",
+      "more": "PASS",
+      "keyboard": "PASS",
+      "insightsLink": "PASS"
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "route": "/smokes",
+      "order": "PASS",
+      "more": "PASS",
+      "keyboard": "PASS",
+      "insightsLink": "PASS"
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "route": "/insights",
+      "order": "PASS",
+      "more": "PASS",
+      "keyboard": "PASS",
+      "insightsLink": "PASS"
+    },
+    {
+      "width": 390,
+      "locale": "ko",
+      "route": "/",
+      "order": "PASS",
+      "more": "PASS",
+      "keyboard": "PASS",
+      "insightsLink": "PASS"
+    },
+    {
+      "width": 390,
+      "locale": "ko",
+      "route": "/players/ied-agent-allen",
+      "order": "PASS",
+      "more": "PASS",
+      "keyboard": "PASS",
+      "insightsLink": "PASS"
+    },
+    {
+      "width": 390,
+      "locale": "ko",
+      "route": "/lineups",
+      "order": "PASS",
+      "more": "PASS",
+      "keyboard": "PASS",
+      "insightsLink": "PASS"
+    },
+    {
+      "width": 390,
+      "locale": "ko",
+      "route": "/smokes",
+      "order": "PASS",
+      "more": "PASS",
+      "keyboard": "PASS",
+      "insightsLink": "PASS"
+    },
+    {
+      "width": 390,
+      "locale": "ko",
+      "route": "/insights",
+      "order": "PASS",
+      "more": "PASS",
+      "keyboard": "PASS",
+      "insightsLink": "PASS"
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "route": "/",
+      "order": "PASS",
+      "more": "PASS",
+      "keyboard": "PASS",
+      "insightsLink": "PASS"
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "route": "/players/ied-agent-allen",
+      "order": "PASS",
+      "more": "PASS",
+      "keyboard": "PASS",
+      "insightsLink": "PASS"
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "route": "/lineups",
+      "order": "PASS",
+      "more": "PASS",
+      "keyboard": "PASS",
+      "insightsLink": "PASS"
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "route": "/smokes",
+      "order": "PASS",
+      "more": "PASS",
+      "keyboard": "PASS",
+      "insightsLink": "PASS"
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "route": "/insights",
+      "order": "PASS",
+      "more": "PASS",
+      "keyboard": "PASS",
+      "insightsLink": "PASS"
+    }
+  ],
+  "errors": []
+}

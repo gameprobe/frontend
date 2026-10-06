@@ -1,0 +1,56 @@
+[
+  {
+    "width": 1440,
+    "checks": [
+      "no implicit grouping",
+      "empty path unchanged",
+      "recorded path unchanged",
+      "missing origin guide accessible",
+      "missing target guide accessible",
+      "detail identity",
+      "successful empty API response",
+      "no overflow/errors"
+    ],
+    "requests": [
+      {
+        "url": "http://127.0.0.1:3101/test-api/api/lineups",
+        "method": "GET"
+      },
+      {
+        "url": "http://127.0.0.1:3101/test-api/api/lineups/no-target",
+        "method": "GET"
+      },
+      {
+        "url": "http://127.0.0.1:3101/test-api/api/lineups",
+        "method": "GET"
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "checks": [
+      "no implicit grouping",
+      "empty path unchanged",
+      "recorded path unchanged",
+      "missing origin guide accessible",
+      "missing target guide accessible",
+      "detail identity",
+      "successful empty API response",
+      "no overflow/errors"
+    ],
+    "requests": [
+      {
+        "url": "http://127.0.0.1:3101/test-api/api/lineups",
+        "method": "GET"
+      },
+      {
+        "url": "http://127.0.0.1:3101/test-api/api/lineups/no-target",
+        "method": "GET"
+      },
+      {
+        "url": "http://127.0.0.1:3101/test-api/api/lineups",
+        "method": "GET"
+      }
+    ]
+  }
+]

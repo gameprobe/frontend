@@ -1,0 +1,315 @@
+/* 헤더·푸터·기본 초기화는 stats-shell/StatsShell.module.css.
+ * 재사용 기본형은 ProfileShared.module.css, 아래는 프로필 페이지 배치·탭 전용 표시·알림이다.
+ */
+.notice {
+  min-height:72px;
+  display:flex;
+  align-items:center;
+  gap:16px;
+  padding:14px 16px;
+  background:#10151b;
+  border-bottom:1px solid #242a32;
+}
+.noticeIcon {
+  width:39px;
+  height:39px;
+  border:1px solid #633b45;
+  border-radius:3px;
+  color:var(--accent);
+  font-weight:900;
+  font-size:var(--font-heading);
+  display:grid;
+  place-items:center;
+}
+.notice strong {
+  font-size:var(--font-body);
+}
+.notice p {
+  color:var(--muted);
+  font-size:var(--font-caption);
+  margin-top:3px;
+}
+.notice button {
+  margin-left:auto;
+  background:#30363c;
+  border:1px solid #42474d;
+  padding:10px 17px;
+  border-radius:4px;
+  font-size:var(--font-caption);
+  font-weight:700;
+}
+.container {
+  max-width:var(--content-max);
+  margin:auto;
+  padding:var(--space-section) 16px 0;
+}
+.columns {
+  display:grid;
+  grid-template-columns:var(--sidebar-width) minmax(0,1fr);
+  gap:var(--gap);
+  align-items:start;
+}
+.content {
+  min-width:0;
+}
+.weaponTable{
+  width:100%;
+  border-collapse:collapse;
+  white-space:nowrap;
+  text-align:right;
+  font-size:var(--font-body);
+}
+.weaponTable th{
+  color:var(--muted);
+  font-size:var(--font-caption);
+  padding:8px 16px;
+  font-weight:600;
+}
+.helper {
+  font-size:var(--font-caption);
+  color:var(--muted);
+  padding:16px 0;
+}
+.mapGrid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+}
+.mapGrid>button {
+  text-align:left;
+  border-radius:16px;
+  overflow:hidden;
+  background:var(--panel);
+  border:1px solid var(--line);
+}
+.mapGrid img {
+  height:145px;
+  width:100%;
+  object-fit:cover;
+}
+.mapGrid>button>div {
+  padding:20px;
+}
+.mapGrid h3 {
+  font-size:var(--font-heading);
+  margin-bottom:18px;
+}
+.mapGrid strong {
+  font-size:var(--font-heading);
+  color:var(--green);
+  display:block;
+}
+.mapGrid strong small {
+  font-size:var(--font-caption);
+  color:var(--muted);
+}
+.mapGrid p {
+  font-size:var(--font-caption);
+  color:var(--muted);
+  margin:8px 0 18px;
+}
+.mapGrid span {
+  display:flex;
+  justify-content:space-between;
+  font-size:var(--font-meta);
+}
+.weaponTable th {
+  text-align:left;
+  padding:15px 22px;
+}
+.weaponTable td {
+  text-align:left;
+  padding:24px 22px;
+  border-top:1px solid var(--line);
+}
+.weaponTable button {
+  display:flex;
+  align-items:center;
+  gap:20px;
+  font-weight:700;
+}
+.weaponTable img {
+  width:120px;
+  height:36px;
+}
+.performance {
+  padding:26px;
+  margin-bottom:24px;
+}
+.performance h2 {
+  font-size:var(--font-heading);
+}
+.performance p {
+  font-size:var(--font-caption);
+  color:var(--muted);
+  margin:8px 0 24px;
+}
+/* 공통 sparkline과 함께 붙이는 Performance 전용 표식. 기존 높이 규칙의 우선순위를 유지한다. */
+.performance .performanceGraph {
+  height:180px;
+}
+.performance>div {
+  display:flex;
+  justify-content:space-between;
+  color:var(--muted);
+  font-size:var(--font-caption);
+  margin-top:8px;
+}
+.toast {
+  position:fixed;
+  bottom:24px;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  align-items:center;
+  gap:20px;
+  z-index:50;
+  padding:16px 20px;
+  border:1px solid #50766a;
+  border-radius:7px;
+  background:#203830;
+  box-shadow:0 8px 30px #0007;
+  font-size:var(--font-meta);
+  max-width:calc(100vw - 32px);
+  color:white;
+}
+.toast button {
+  display:flex;
+}
+@media(min-width:1500px) {
+  .page {
+    /* 넓은 화면의 프로필 통계 열. 공통 theme의 기본 272px보다 우선한다. */
+    --sidebar-width:288px;
+  }
+}
+@media(max-width:1250px) {
+  .columns {
+    grid-template-columns:260px minmax(0,1fr);
+    gap:20px;
+  }
+}
+@media(max-width:1000px) {
+  .columns {
+    grid-template-columns:230px minmax(0,1fr);
+    gap:16px;
+  }
+  .mapGrid {
+    grid-template-columns:1fr;
+  }
+  .mapGrid>button {
+    display:flex;
+  }
+  .mapGrid img {
+    width:42%;
+    height:auto;
+    object-fit:cover;
+  }
+  .mapGrid>button>div {
+    flex:1;
+  }
+  .mapGrid h3 {
+    margin-bottom:8px;
+  }
+}
+@media(max-width:700px) {
+  .notice {
+    padding:12px;
+    gap:10px;
+    min-height:79px;
+  }
+  .noticeIcon {
+    width:28px;
+    height:28px;
+    flex-shrink:0;
+    font-size:var(--font-value);
+  }
+  .notice strong {
+    font-size:var(--font-caption);
+  }
+  .notice p {
+    font-size:var(--font-caption);
+    max-width:220px;
+  }
+  .notice button {
+    padding:8px;
+    font-size:var(--font-caption);
+  }
+  .container {
+    padding:14px 10px 0;
+  }
+  .columns {
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+  }
+  .content {
+    width:100%;
+    order:1;
+  }
+  .mapGrid {
+    gap:12px;
+  }
+  .mapGrid h3 {
+    font-size:var(--font-section);
+  }
+  .mapGrid strong {
+    font-size:var(--font-heading);
+  }
+  .mapGrid>button>div {
+    padding:16px;
+  }
+  .mapGrid p {
+    font-size:var(--font-caption);
+    margin-bottom:12px;
+  }
+  .weaponTable {
+    min-width:540px;
+    font-size:var(--font-body);
+  }
+  .weaponTable td {
+    padding:19px 15px;
+  }
+  .weaponTable th {
+    padding:13px 15px;
+    font-size:var(--font-caption);
+  }
+  .weaponTable img {
+    width:85px;
+  }
+  .weaponTable button {
+    gap:10px;
+  }
+  .performance {
+    padding:20px;
+  }
+  .performance .performanceGraph {
+    height:135px;
+  }
+  .performance h2 {
+    font-size:var(--font-value);
+  }
+  .toast {
+    width:calc(100vw - 32px);
+    bottom:16px;
+    font-size:var(--font-caption);
+    padding:14px 16px;
+    justify-content:space-between;
+  }
+}
+
+/* FE024: 조회 범위/부분 실패/미제공 안내. 카드 배치는 기존 컴포넌트를 그대로 사용한다. */
+.dataStatus {
+  margin: 16px 0;
+  padding: 16px 20px;
+  border: 1px solid var(--border, #293c49);
+  border-radius: 10px;
+  background: #13232d;
+  color: #dce7ee;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.dataStatus p { margin: 4px 0; }
+.dataStatus button, .dataStatus a { color: #89dccc; text-decoration: underline; }
+.dataStatus button { background: none; border: 0; padding: 8px 0; cursor: pointer; }
+.standaloneMatch { max-width: 1400px; margin: 24px auto; padding: 0 16px; }
+.standaloneMatch > a { display: inline-block; color: #c8d8e5; margin-bottom: 16px; }

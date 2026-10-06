@@ -1,0 +1,433 @@
+{
+  "phase": "before",
+  "base": "http://127.0.0.1:3100",
+  "capturedAt": "2026-09-29T06:38:26.900Z",
+  "screens": [
+    {
+      "name": "home",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-home.png"
+    },
+    {
+      "name": "profile",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-profile.png"
+    },
+    {
+      "name": "match",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-match.png"
+    },
+    {
+      "name": "match-scoreboard",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-match-scoreboard.png"
+    },
+    {
+      "name": "match-performance",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-match-performance.png"
+    },
+    {
+      "name": "match-economy",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-match-economy.png"
+    },
+    {
+      "name": "match-rounds",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-match-rounds.png"
+    },
+    {
+      "name": "match-duels",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-match-duels.png"
+    },
+    {
+      "name": "connect",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-connect.png"
+    },
+    {
+      "name": "privacy",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-privacy.png"
+    },
+    {
+      "name": "terms",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-terms.png"
+    },
+    {
+      "name": "lineups",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-lineups.png"
+    },
+    {
+      "name": "smokes",
+      "width": 1440,
+      "locale": "ko",
+      "file": "before-1440-ko-smokes.png"
+    },
+    {
+      "name": "home",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-home.png"
+    },
+    {
+      "name": "profile",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-profile.png"
+    },
+    {
+      "name": "match",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-match.png"
+    },
+    {
+      "name": "match-scoreboard",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-match-scoreboard.png"
+    },
+    {
+      "name": "match-performance",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-match-performance.png"
+    },
+    {
+      "name": "match-economy",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-match-economy.png"
+    },
+    {
+      "name": "match-rounds",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-match-rounds.png"
+    },
+    {
+      "name": "match-duels",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-match-duels.png"
+    },
+    {
+      "name": "connect",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-connect.png"
+    },
+    {
+      "name": "privacy",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-privacy.png"
+    },
+    {
+      "name": "terms",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-terms.png"
+    },
+    {
+      "name": "lineups",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-lineups.png"
+    },
+    {
+      "name": "smokes",
+      "width": 1440,
+      "locale": "en",
+      "file": "before-1440-en-smokes.png"
+    },
+    {
+      "name": "home",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-home.png"
+    },
+    {
+      "name": "profile",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-profile.png"
+    },
+    {
+      "name": "match",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-match.png"
+    },
+    {
+      "name": "match-scoreboard",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-match-scoreboard.png"
+    },
+    {
+      "name": "match-performance",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-match-performance.png"
+    },
+    {
+      "name": "match-economy",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-match-economy.png"
+    },
+    {
+      "name": "match-rounds",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-match-rounds.png"
+    },
+    {
+      "name": "match-duels",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-match-duels.png"
+    },
+    {
+      "name": "connect",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-connect.png"
+    },
+    {
+      "name": "privacy",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-privacy.png"
+    },
+    {
+      "name": "terms",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-terms.png"
+    },
+    {
+      "name": "lineups",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-lineups.png"
+    },
+    {
+      "name": "smokes",
+      "width": 390,
+      "locale": "ko",
+      "file": "before-390-ko-smokes.png"
+    },
+    {
+      "name": "home",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-home.png"
+    },
+    {
+      "name": "profile",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-profile.png"
+    },
+    {
+      "name": "match",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-match.png"
+    },
+    {
+      "name": "match-scoreboard",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-match-scoreboard.png"
+    },
+    {
+      "name": "match-performance",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-match-performance.png"
+    },
+    {
+      "name": "match-economy",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-match-economy.png"
+    },
+    {
+      "name": "match-rounds",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-match-rounds.png"
+    },
+    {
+      "name": "match-duels",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-match-duels.png"
+    },
+    {
+      "name": "connect",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-connect.png"
+    },
+    {
+      "name": "privacy",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-privacy.png"
+    },
+    {
+      "name": "terms",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-terms.png"
+    },
+    {
+      "name": "lineups",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-lineups.png"
+    },
+    {
+      "name": "smokes",
+      "width": 390,
+      "locale": "en",
+      "file": "before-390-en-smokes.png"
+    }
+  ],
+  "checks": [],
+  "errors": [],
+  "consoleErrors": [],
+  "failedRequests": [
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=19zvn",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=9to9k",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/demo-player-01?_rsc=9to9k",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=vlr26",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=14k4p",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=1baln",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=x7o9q",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/demo-player-01?_rsc=19zvn",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/demo-player-01?_rsc=9to9k",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=vlr26",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=14k4p",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=1lgnf",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=x7o9q",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=19zvn",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=9to9k",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=vlr26",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=14k4p",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=1lgnf",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=1baln",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=x7o9q",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=19zvn",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/demo-player-01?_rsc=9to9k",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=vlr26",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=14k4p",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=1lgnf",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=1baln",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=x7o9q",
+      "error": "net::ERR_ABORTED"
+    }
+  ],
+  "apiRequests": []
+}

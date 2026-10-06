@@ -1,0 +1,1558 @@
+{
+  "phase": "after",
+  "viewport": {
+    "390": {
+      "connect": {
+        "mainCount": 1,
+        "visibleLegacyHeaders": 0,
+        "visibleFooters": 1,
+        "visibleNavs": 1,
+        "overflow": 0,
+        "title": "Riot 계정 연결 예정",
+        "titleFontSize": "28px",
+        "titleBox": [
+          29,
+          172.59375,
+          332,
+          36.390625
+        ],
+        "blocks": [
+          {
+            "tag": "P",
+            "text": "RSO preview"
+          },
+          {
+            "tag": "H1",
+            "text": "Riot 계정 연결 예정"
+          },
+          {
+            "tag": "P",
+            "text": "Riot Sign On(RSO)을 통한 계정 연결은 Phase 4에서 실제 Riot API 연동과 함께 구현될 예정입니다. 현재 화면은 Riot Production API 신청 준비를 위한 안내 UI이며, 인증·세션·토큰 처리는 수행하지 않습니다."
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Riot 계정 연결 준비 중"
+          },
+          {
+            "tag": "P",
+            "text": "이 버튼은 비활성 상태이며 외부 인증 페이지로 이동하지 않습니다. 향후 실제 연동 시 TASK-014에서 추가한 Backend Riot API Adapter 구조와 Phase 4의 RSO 인증 흐름에 연결됩니다."
+          }
+        ],
+        "disabledButtons": [
+          {
+            "text": "Riot 계정 연결 준비 중",
+            "disabled": true
+          }
+        ],
+        "mainText": "GP\nGAMEPROBE\nConnect account\nHome\nOverview\nLineups\n\nRSO PREVIEW\n\nRiot 계정 연결 예정\n\nRiot Sign On(RSO)을 통한 계정 연결은 Phase 4에서 실제 Riot API 연동과 함께 구현될 예정입니다. 현재 화면은 Riot Production API 신청 준비를 위한 안내 UI이며, 인증·세션·토큰 처리는 수행하지 않습니다.\n\nRiot 계정 연결 준비 중\n\n이 버튼은 비활성 상태이며 외부 인증 페이지로 이동하지 않습니다. 향후 실제 연동 시 TASK-014에서 추가한 Backend Riot API Adapter 구조와 Phase 4의 RSO 인증 흐름에 연결됩니다.\n\nGameProbe\nRiot Games와 제휴 관계가 없는 비공식 서비스입니다. 현재 전적은 Mock 데이터로 제공됩니다.\nPrivacy\nTerms",
+        "http": 200,
+        "screenshot": "after-390-connect.png"
+      },
+      "privacy": {
+        "mainCount": 1,
+        "visibleLegacyHeaders": 0,
+        "visibleFooters": 1,
+        "visibleNavs": 1,
+        "overflow": 0,
+        "title": "개인정보처리방침",
+        "titleFontSize": "28px",
+        "titleBox": [
+          29,
+          172.59375,
+          332,
+          36.390625
+        ],
+        "blocks": [
+          {
+            "tag": "P",
+            "text": "Privacy policy draft"
+          },
+          {
+            "tag": "H1",
+            "text": "개인정보처리방침"
+          },
+          {
+            "tag": "P",
+            "text": "이 문서는 Riot Production API 신청 준비를 위한 개인정보처리방침 초안입니다. 법적 효력이 있는 최종 문구는 TASK-013H에서 사람의 법률 검토와 승인을 거쳐 확정됩니다."
+          },
+          {
+            "tag": "H2",
+            "text": "수집 항목"
+          },
+          {
+            "tag": "LI",
+            "text": "Phase 1-2 프로토타입은 Mock 데이터를 사용하며 실제 Riot 계정 정보나 전적 데이터를 수집하지 않습니다."
+          },
+          {
+            "tag": "LI",
+            "text": "향후 Riot API와 RSO 연동 시 Riot ID, PUUID, 전적 조회 결과, 서비스 이용 기록 등 서비스 제공에 필요한 항목을 수집할 수 있습니다."
+          },
+          {
+            "tag": "H2",
+            "text": "이용 목적"
+          },
+          {
+            "tag": "LI",
+            "text": "플레이어 프로필, 최근 경기, 경기 상세 등 전적 검색 기능 제공"
+          },
+          {
+            "tag": "LI",
+            "text": "Riot Production API 신청 및 운영 준비를 위한 서비스 구조 검증"
+          },
+          {
+            "tag": "LI",
+            "text": "서비스 안정성 확인과 오류 대응"
+          },
+          {
+            "tag": "H2",
+            "text": "보관 및 파기"
+          },
+          {
+            "tag": "LI",
+            "text": "Mock 데이터는 정적 샘플 데이터이며 이용자 개인을 식별하기 위한 목적으로 보관하지 않습니다."
+          },
+          {
+            "tag": "LI",
+            "text": "향후 실제 데이터 수집이 시작되면 보관 기간, 파기 절차, 삭제 요청 처리 방식을 최종 정책에 명시합니다."
+          },
+          {
+            "tag": "H2",
+            "text": "제3자 제공"
+          },
+          {
+            "tag": "LI",
+            "text": "현재 프로토타입은 수집한 개인정보를 제3자에게 제공하지 않습니다."
+          },
+          {
+            "tag": "LI",
+            "text": "Riot API 연동 시 Riot Games 정책과 이용자 동의 범위 안에서만 데이터를 처리합니다."
+          },
+          {
+            "tag": "H2",
+            "text": "이용자 권리"
+          },
+          {
+            "tag": "LI",
+            "text": "이용자는 본인 데이터 열람, 정정, 삭제, 처리 중지를 요청할 수 있어야 합니다."
+          },
+          {
+            "tag": "LI",
+            "text": "구체적인 요청 절차와 처리 기한은 TASK-013H 법률 검토에서 최종 확정합니다."
+          },
+          {
+            "tag": "H2",
+            "text": "문의처"
+          },
+          {
+            "tag": "LI",
+            "text": "개인정보 관련 문의 채널은 운영 배포 전 확정합니다."
+          },
+          {
+            "tag": "LI",
+            "text": "본 초안의 문의처와 책임자 정보는 법률 검토 및 운영 주체 확정 후 보완합니다."
+          }
+        ],
+        "disabledButtons": [],
+        "mainText": "GP\nGAMEPROBE\nConnect account\nHome\nOverview\nLineups\n\nPRIVACY POLICY DRAFT\n\n개인정보처리방침\n\n이 문서는 Riot Production API 신청 준비를 위한 개인정보처리방침 초안입니다. 법적 효력이 있는 최종 문구는 TASK-013H에서 사람의 법률 검토와 승인을 거쳐 확정됩니다.\n\n수집 항목\nPhase 1-2 프로토타입은 Mock 데이터를 사용하며 실제 Riot 계정 정보나 전적 데이터를 수집하지 않습니다.\n향후 Riot API와 RSO 연동 시 Riot ID, PUUID, 전적 조회 결과, 서비스 이용 기록 등 서비스 제공에 필요한 항목을 수집할 수 있습니다.\n이용 목적\n플레이어 프로필, 최근 경기, 경기 상세 등 전적 검색 기능 제공\nRiot Production API 신청 및 운영 준비를 위한 서비스 구조 검증\n서비스 안정성 확인과 오류 대응\n보관 및 파기\nMock 데이터는 정적 샘플 데이터이며 이용자 개인을 식별하기 위한 목적으로 보관하지 않습니다.\n향후 실제 데이터 수집이 시작되면 보관 기간, 파기 절차, 삭제 요청 처리 방식을 최종 정책에 명시합니다.\n제3자 제공\n현재 프로토타입은 수집한 개인정보를 제3자에게 제공하지 않습니다.\nRiot API 연동 시 Riot Games 정책과 이용자 동의 범위 안에서만 데이터를 처리합니다.\n이용자 권리\n이용자는 본인 데이터 열람, 정정, 삭제, 처리 중지를 요청할 수 있어야 합니다.\n구체적인 요청 절차와 처리 기한은 TASK-013H 법률 검토에서 최종 확정합니다.\n문의처\n개인정보 관련 문의 채널은 운영 배포 전 확정합니다.\n본 초안의 문의처와 책임자 정보는 법률 검토 및 운영 주체 확정 후 보완합니다.\nGameProbe\nRiot Games와 제휴 관계가 없는 비공식 서비스입니다. 현재 전적은 Mock 데이터로 제공됩니다.\nPrivacy\nTerms",
+        "http": 200,
+        "screenshot": "after-390-privacy.png"
+      },
+      "terms": {
+        "mainCount": 1,
+        "visibleLegacyHeaders": 0,
+        "visibleFooters": 1,
+        "visibleNavs": 1,
+        "overflow": 0,
+        "title": "이용약관",
+        "titleFontSize": "28px",
+        "titleBox": [
+          29,
+          172.59375,
+          332,
+          36.390625
+        ],
+        "blocks": [
+          {
+            "tag": "P",
+            "text": "Terms draft"
+          },
+          {
+            "tag": "H1",
+            "text": "이용약관"
+          },
+          {
+            "tag": "P",
+            "text": "이 문서는 Riot Production API 신청 준비를 위한 이용약관 초안입니다. 법적 효력이 있는 최종 문구는 TASK-013H에서 사람의 법률 검토와 승인을 거쳐 확정됩니다."
+          },
+          {
+            "tag": "H2",
+            "text": "서비스 정의"
+          },
+          {
+            "tag": "LI",
+            "text": "VALORANT Platform은 VALORANT 플레이어의 전적 검색과 성장 지원 기능을 제공하기 위한 웹 서비스입니다."
+          },
+          {
+            "tag": "LI",
+            "text": "현재 Phase 1-2 프로토타입은 Mock 데이터를 기반으로 동작하며 Riot API 실제 호출이나 RSO 인증을 제공하지 않습니다."
+          },
+          {
+            "tag": "H2",
+            "text": "이용 조건"
+          },
+          {
+            "tag": "LI",
+            "text": "이용자는 관계 법령, Riot Games 정책, 본 약관 초안의 취지에 맞게 서비스를 이용해야 합니다."
+          },
+          {
+            "tag": "LI",
+            "text": "실제 Riot 계정 연결 기능이 도입되기 전까지 계정 인증이나 개인 Riot 데이터 조회 기능은 제공하지 않습니다."
+          },
+          {
+            "tag": "H2",
+            "text": "금지 행위"
+          },
+          {
+            "tag": "LI",
+            "text": "비공식 Riot 클라이언트 API나 승인되지 않은 방법으로 데이터를 수집하도록 서비스를 악용하는 행위"
+          },
+          {
+            "tag": "LI",
+            "text": "서비스 장애를 유발하거나 다른 이용자의 정상적인 이용을 방해하는 행위"
+          },
+          {
+            "tag": "LI",
+            "text": "허위 정보 입력, 자동화된 대량 요청, 보안 취약점 악용 행위"
+          },
+          {
+            "tag": "H2",
+            "text": "책임 제한"
+          },
+          {
+            "tag": "LI",
+            "text": "프로토타입 단계의 Mock 데이터와 화면은 실제 전적, 랭크, 경기 결과를 보장하지 않습니다."
+          },
+          {
+            "tag": "LI",
+            "text": "서비스 제공자는 법률상 허용되는 범위에서 외부 플랫폼 장애, Riot API 정책 변경, 불가항력으로 인한 손해에 대한 책임을 제한할 수 있습니다."
+          },
+          {
+            "tag": "H2",
+            "text": "준거법 및 분쟁"
+          },
+          {
+            "tag": "LI",
+            "text": "준거법, 관할, 분쟁 해결 절차는 운영 주체와 서비스 제공 지역 확정 후 최종 약관에서 정합니다."
+          },
+          {
+            "tag": "LI",
+            "text": "본 초안은 법률 검토 전 문서이며 분쟁 해결 기준으로 사용할 수 없습니다."
+          },
+          {
+            "tag": "H2",
+            "text": "약관 변경"
+          },
+          {
+            "tag": "LI",
+            "text": "서비스 기능, Riot API 정책, 법령 변경에 따라 약관이 변경될 수 있습니다."
+          },
+          {
+            "tag": "LI",
+            "text": "변경 공지 방식과 효력 발생 시점은 TASK-013H 법률 검토에서 최종 확정합니다."
+          },
+          {
+            "tag": "H2",
+            "text": "문의처"
+          },
+          {
+            "tag": "LI",
+            "text": "서비스 및 약관 관련 문의 채널은 운영 배포 전 확정합니다."
+          },
+          {
+            "tag": "LI",
+            "text": "운영 주체, 연락처, 책임자 정보는 법률 검토 및 배포 준비 과정에서 보완합니다."
+          }
+        ],
+        "disabledButtons": [],
+        "mainText": "GP\nGAMEPROBE\nConnect account\nHome\nOverview\nLineups\n\nTERMS DRAFT\n\n이용약관\n\n이 문서는 Riot Production API 신청 준비를 위한 이용약관 초안입니다. 법적 효력이 있는 최종 문구는 TASK-013H에서 사람의 법률 검토와 승인을 거쳐 확정됩니다.\n\n서비스 정의\nVALORANT Platform은 VALORANT 플레이어의 전적 검색과 성장 지원 기능을 제공하기 위한 웹 서비스입니다.\n현재 Phase 1-2 프로토타입은 Mock 데이터를 기반으로 동작하며 Riot API 실제 호출이나 RSO 인증을 제공하지 않습니다.\n이용 조건\n이용자는 관계 법령, Riot Games 정책, 본 약관 초안의 취지에 맞게 서비스를 이용해야 합니다.\n실제 Riot 계정 연결 기능이 도입되기 전까지 계정 인증이나 개인 Riot 데이터 조회 기능은 제공하지 않습니다.\n금지 행위\n비공식 Riot 클라이언트 API나 승인되지 않은 방법으로 데이터를 수집하도록 서비스를 악용하는 행위\n서비스 장애를 유발하거나 다른 이용자의 정상적인 이용을 방해하는 행위\n허위 정보 입력, 자동화된 대량 요청, 보안 취약점 악용 행위\n책임 제한\n프로토타입 단계의 Mock 데이터와 화면은 실제 전적, 랭크, 경기 결과를 보장하지 않습니다.\n서비스 제공자는 법률상 허용되는 범위에서 외부 플랫폼 장애, Riot API 정책 변경, 불가항력으로 인한 손해에 대한 책임을 제한할 수 있습니다.\n준거법 및 분쟁\n준거법, 관할, 분쟁 해결 절차는 운영 주체와 서비스 제공 지역 확정 후 최종 약관에서 정합니다.\n본 초안은 법률 검토 전 문서이며 분쟁 해결 기준으로 사용할 수 없습니다.\n약관 변경\n서비스 기능, Riot API 정책, 법령 변경에 따라 약관이 변경될 수 있습니다.\n변경 공지 방식과 효력 발생 시점은 TASK-013H 법률 검토에서 최종 확정합니다.\n문의처\n서비스 및 약관 관련 문의 채널은 운영 배포 전 확정합니다.\n운영 주체, 연락처, 책임자 정보는 법률 검토 및 배포 준비 과정에서 보완합니다.\nGameProbe\nRiot Games와 제휴 관계가 없는 비공식 서비스입니다. 현재 전적은 Mock 데이터로 제공됩니다.\nPrivacy\nTerms",
+        "http": 200,
+        "screenshot": "after-390-terms.png"
+      },
+      "missing-legacy-match": {
+        "mainCount": 1,
+        "visibleLegacyHeaders": 0,
+        "visibleFooters": 1,
+        "visibleNavs": 1,
+        "overflow": 0,
+        "title": "경기를 찾을 수 없음",
+        "titleFontSize": "28px",
+        "titleBox": [
+          29,
+          172.59375,
+          332,
+          36.390625
+        ],
+        "blocks": [
+          {
+            "tag": "P",
+            "text": "Match detail"
+          },
+          {
+            "tag": "H1",
+            "text": "경기를 찾을 수 없음"
+          },
+          {
+            "tag": "P",
+            "text": "Mock 데이터에 없는 matchId입니다."
+          }
+        ],
+        "disabledButtons": [],
+        "mainText": "GP\nGAMEPROBE\nConnect account\nHome\nOverview\nLineups\n\nMATCH DETAIL\n\n경기를 찾을 수 없음\n\nMock 데이터에 없는 matchId입니다.\n\n데모 프로필로 돌아가기\n홈으로 돌아가기\nGameProbe\nRiot Games와 제휴 관계가 없는 비공식 서비스입니다. 현재 전적은 Mock 데이터로 제공됩니다.\nPrivacy\nTerms",
+        "http": 200,
+        "screenshot": "after-390-missing-legacy-match.png"
+      },
+      "missing-synthetic-match": {
+        "mainCount": 1,
+        "visibleLegacyHeaders": 0,
+        "visibleFooters": 1,
+        "visibleNavs": 1,
+        "overflow": 0,
+        "title": "경기를 찾을 수 없음",
+        "titleFontSize": "28px",
+        "titleBox": [
+          29,
+          172.59375,
+          332,
+          36.390625
+        ],
+        "blocks": [
+          {
+            "tag": "P",
+            "text": "Match detail"
+          },
+          {
+            "tag": "H1",
+            "text": "경기를 찾을 수 없음"
+          },
+          {
+            "tag": "P",
+            "text": "이 경기 또는 선수의 합성 기록이 없습니다."
+          }
+        ],
+        "disabledButtons": [],
+        "mainText": "GP\nGAMEPROBE\nConnect account\nHome\nOverview\nLineups\n\nMATCH DETAIL\n\n경기를 찾을 수 없음\n\n이 경기 또는 선수의 합성 기록이 없습니다.\n\n데모 프로필로 돌아가기\n홈으로 돌아가기\nGameProbe\nRiot Games와 제휴 관계가 없는 비공식 서비스입니다. 현재 전적은 Mock 데이터로 제공됩니다.\nPrivacy\nTerms",
+        "http": 200,
+        "screenshot": "after-390-missing-synthetic-match.png"
+      },
+      "missing-player": {
+        "mainCount": 1,
+        "visibleLegacyHeaders": 0,
+        "visibleFooters": 1,
+        "visibleNavs": 1,
+        "overflow": 0,
+        "title": "플레이어를 찾을 수 없음",
+        "titleFontSize": "28px",
+        "titleBox": [
+          29,
+          172.59375,
+          332,
+          36.390625
+        ],
+        "blocks": [
+          {
+            "tag": "P",
+            "text": "Player profile"
+          },
+          {
+            "tag": "H1",
+            "text": "플레이어를 찾을 수 없음"
+          },
+          {
+            "tag": "P",
+            "text": "Mock 데이터에 없는 PUUID입니다."
+          }
+        ],
+        "disabledButtons": [],
+        "mainText": "GP\nGAMEPROBE\nConnect account\nHome\nOverview\nLineups\n\nPLAYER PROFILE\n\n플레이어를 찾을 수 없음\n\nMock 데이터에 없는 PUUID입니다.\n\n데모 프로필로 돌아가기\n홈으로 돌아가기\nGameProbe\nRiot Games와 제휴 관계가 없는 비공식 서비스입니다. 현재 전적은 Mock 데이터로 제공됩니다.\nPrivacy\nTerms",
+        "http": 200,
+        "screenshot": "after-390-missing-player.png"
+      },
+      "home": {
+        "mainCount": 1,
+        "visibleLegacyHeaders": 0,
+        "visibleFooters": 1,
+        "visibleNavs": 1,
+        "overflow": 0,
+        "title": "당신의 플레이,더 선명하게.",
+        "titleFontSize": "30px",
+        "titleBox": [
+          29,
+          173.1875,
+          332,
+          73.1875
+        ],
+        "blocks": [
+          {
+            "tag": "H1",
+            "text": "당신의 플레이,더 선명하게."
+          },
+          {
+            "tag": "P",
+            "text": "전적을 살펴보고, 다음 경기를 준비하세요."
+          },
+          {
+            "tag": "H2",
+            "text": "기존 디자인 데모 미리보기"
+          },
+          {
+            "tag": "P",
+            "text": "입력한 Riot ID를 조회하지 않습니다. 기존 디자인 데모로 이동합니다."
+          },
+          {
+            "tag": "P",
+            "text": "MOCK PREVIEW 검색 기능은 아직 연결되지 않았습니다. 아래 두 데모를 비교해 보세요."
+          },
+          {
+            "tag": "H2",
+            "text": "게임을 더 깊이 들여다보세요"
+          },
+          {
+            "tag": "H3",
+            "text": "최근 경기를 한눈에"
+          },
+          {
+            "tag": "P",
+            "text": "시즌 성적부터 요원·맵별 기록까지, 내 플레이의 흐름을 확인하세요."
+          },
+          {
+            "tag": "H3",
+            "text": "다음 라운드의 한 수"
+          },
+          {
+            "tag": "P",
+            "text": "맵과 요원에 맞는 라인업을 찾아보세요."
+          },
+          {
+            "tag": "H2",
+            "text": "플레이 분석 미리보기 SAMPLE"
+          },
+          {
+            "tag": "H2",
+            "text": "위치 선정"
+          },
+          {
+            "tag": "H2",
+            "text": "팀 교전"
+          },
+          {
+            "tag": "H2",
+            "text": "첫 교전"
+          },
+          {
+            "tag": "H2",
+            "text": "사이트 방어"
+          }
+        ],
+        "disabledButtons": [],
+        "mainText": "GP\nGAMEPROBE\nConnect account\nHome\nOverview\nLineups\nJETT\nVALORANT STATS\n당신의 플레이,\n더 선명하게.\n\n전적을 살펴보고, 다음 경기를 준비하세요.\n\n기존 디자인 데모 미리보기\nRiot ID\n데모 보기\n\n입력한 Riot ID를 조회하지 않습니다. 기존 디자인 데모로 이동합니다.\n\nMOCK PREVIEW\n검색 기능은 아직 연결되지 않았습니다. 아래 두 데모를 비교해 보세요.\n\n데모 비교하기\n새 데이터 데모\n· DemoPlayer01\n기존 디자인 데모\n· IED agent\n게임을 더 깊이 들여다보세요\nPLAYER OVERVIEW\n최근 경기를 한눈에\n\n시즌 성적부터 요원·맵별 기록까지, 내 플레이의 흐름을 확인하세요.\n\n전적 프로필 보기\nTACTICAL LIBRARY\n다음 라운드의 한 수\n\n맵과 요원에 맞는 라인업을 찾아보세요.\n\n라인업 둘러보기\nASCENT\n플레이 분석 미리보기 SAMPLE\n분석 화면을 위한 예시 점수입니다.\n위치 선정\n87\n팀 교전\n74\n첫 교전\n68\n사이트 방어\n91\nGameProbe\nRiot Games와 제휴 관계가 없는 비공식 서비스입니다. 현재 전적은 Mock 데이터로 제공됩니다.\nPrivacy\nTerms",
+        "http": 200,
+        "screenshot": "after-390-home.png",
+        "snapshotDigest": "821715f65bff945829eb414ea2251b582f1dca408df7f1fb2baf42bb4b7fdb89",
+        "snapshotElements": 140
+      },
+      "legacy-profile": {
+        "mainCount": 1,
+        "visibleLegacyHeaders": 0,
+        "visibleFooters": 1,
+        "visibleNavs": 1,
+        "overflow": 0,
+        "title": "IED agent#Allen",
+        "titleFontSize": "20px",
+        "titleBox": [
+          98,
+          350.859375,
+          187.421875,
+          24
+        ],
+        "blocks": [
+          {
+            "tag": "P",
+            "text": "Explore the full profile with sample stats. Live Riot data is not connected."
+          },
+          {
+            "tag": "H1",
+            "text": "IED agent#Allen"
+          },
+          {
+            "tag": "H2",
+            "text": "CURRENT RATING ⓘ"
+          },
+          {
+            "tag": "P",
+            "text": "Immortal 3 263RRV25: ACT I · Mock"
+          },
+          {
+            "tag": "H2",
+            "text": "ACCURACY Selected act"
+          },
+          {
+            "tag": "P",
+            "text": "Head25.6%"
+          },
+          {
+            "tag": "P",
+            "text": "Body67.4%"
+          },
+          {
+            "tag": "P",
+            "text": "Legs7.0%"
+          },
+          {
+            "tag": "H2",
+            "text": "ROLES"
+          },
+          {
+            "tag": "P",
+            "text": "KDA 1.32127 / 145 / 64"
+          },
+          {
+            "tag": "P",
+            "text": "KDA 1.31153 / 147 / 39"
+          },
+          {
+            "tag": "P",
+            "text": "KDA 1.6485 / 74 / 36"
+          },
+          {
+            "tag": "H2",
+            "text": "TOP WEAPONS"
+          },
+          {
+            "tag": "H2",
+            "text": "TOP MAPS"
+          },
+          {
+            "tag": "H2",
+            "text": "V26: A5 COMPETITIVE OVERVIEW"
+          },
+          {
+            "tag": "H2",
+            "text": "TOP AGENTS"
+          },
+          {
+            "tag": "H2",
+            "text": "LAST 20 MATCHES"
+          }
+        ],
+        "disabledButtons": [],
+        "mainText": "GP\nGAMEPROBE\nConnect account\nHome\nLineups\n!\nMock data preview\n\nExplore the full profile with sample stats. Live Riot data is not connected.\n\nDismiss\nJETT\nSave Profile\nMock Preview\n1,281 profile views · Sample data\nIED agent#Allen\nOverview\nMatches\nPerformance\nAgents\nMaps\nWeapons\nLineups\nGP\nKNOW YOUR GAME.\nYOUR STATS. YOUR PROGRESS. YOUR NEXT WIN.\nPC\nConsole\nCompetitive\nPremier\nUnrated\nDeathmatch\nSwiftplay\nAll Acts\nAct\nAll Acts\nV26: A5\nV26: A4\nCURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nACCURACY\nSelected act\n\nHead\n25.6%\n\nBody\n67.4%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 66.7%\n6W - 3L\n✕\nDuelist\nWR 55.6%\n5W - 4L\n↗\nInitiator\nWR 100.0%\n5W - 0L\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n28%\nKills\n208\nPhantom\nAssault Rifles\nHS\n23%\nKills\n127\nOperator\nSniper Rifles\nHS\n27%\nKills\n30\nView All Weapons\nTOP MAPS\nAscent\n88%\n7W - 1L\nHaven\n88%\n7W - 1L\nSplit\n29%\n2W - 5L\nView All Maps\nV26: A5 COMPETITIVE OVERVIEW\n14h Playtime // 23 Matches\nShow More\nImmortal 1\n43 RR\n#14,290\nLevel\n161\n16 W\n7 L\nDamage/Round\n143.1\nAverage damage\nK/D Ratio\n1.00\nKills / Deaths\nHeadshot %\n25.6%\nHeadshot accuracy\nWin %\n69.6%\n16 W · 7 L\nWins\n16\nKAST\n70.7%\nDDΔ/Round\n+6\nKills\n365\nDeaths\n366\nAssists\n139\nACS\n217.0\nKAD Ratio\n1.38\nKills/Round\n0.73\nFirst Bloods\n49\nFlawless Rounds\n19\nAces\n1\n◈\nProbe Score\n557 / 1,000\nSample performance score\nRound Win %\n54.3%\nS\nKAST\n70.7%\nC\nACS\n217.0\nB\nDDΔ/Round\n+6\nB\nTOP AGENTS\nView All Agents\nAgent\tMatches\tWin %\tK/D\tADR\tACS\tDDΔ\tBest Map\n\nJett\n5.3 hours\n\t9\t55.6%\t1.04\t152.6\t233.4\t+12\tAscent\n\nOmen\n5.3 hours\n\t9\t66.7%\t0.88\t131.6\t197.3\t-7\tAscent\n\nSova\n2.9 hours\n\t5\t100.0%\t1.15\t146.4\t222.5\t+20\tAscent\nYour next win starts here.\nReview your matches, spot patterns, and track your progress.\nLAST 20 MATCHES\nAll Matches\nAgent\nAll Agents\nJett\nOmen\nSova\nMap\nAll Maps\nAscent\nHaven\nSplit\nWeapon\nAll Weapons\nPhantom\nVandal\nOperator\nDate range\nAll Dates\nLast 7 days\nLast 30 days\n+ More\n14W - 6L (70%)\n1.02 K/D | 145 ADR\n23 matching games · latest 20\n5W - 3L (63%)\nK/D 1.09\nSep 9\n13 : 8\nK/D 1.3\nSep 4\n13 : 2\nK/D 0.8\nSep 4\n11 : 13\nK/D 1.1\nSep 4\n14 : 12\nK/D 1.1\nSep 9\n1\n1 W // 0 L\nK/D\n1.31\nDDΔ\n+43\n21:48 // Competitive\nHaven\nSova\nScore\n13 : 8\nK / D / A\n17 / 13 / 5\nSep 4\n5\n3 W // 2 L\nK/D\n0.96\nDDΔ\n+7\n23:46 // Competitive\nAscent\nJett\nScore\n13 : 2\nK / D / A\n10 / 12 / 4\n22:55 // Competitive\nSplit\nJett\nScore\n11 : 13\nK / D / A\n20 / 18 / 5\n22:01 // Competitive\nSplit\nJett\nScore\n14 : 12\nK / D / A\n22 / 20 / 6\n21:08 // Competitive\nHaven\nOmen\nScore\n13 : 8\nK / D / A\n10 / 14 / 5\n20:14 // Competitive\nHaven\nOmen\nScore\n9 : 13\nK / D / A\n14 / 15 / 1\nSep 1\n1\n0 W // 1 L\nK/D\n0.73\nDDΔ\n-27\n21:09 // Competitive\nAscent\nJett\nScore\n7 : 13\nK / D / A\n11 / 15 / 4\nAug 31\n1\n1 W // 0 L\nK/D\n2.45\nDDΔ\n+135\n23:36 // Competitive\nSplit\nJett\nScore\n13 : 6\nK / D / A\n27 / 11 / 2\nAug 30\n4\n3 W // 1 L\nK/D\n1.13\nDDΔ\n+15\n23:42 // Competitive\nAscent\nOmen\nScore\n13 : 7\nK / D / A\n18 / 12 / 9\n22:53 // Competitive\nHaven\nSova\nScore\n13 : 9\nK / D / A\n17 / 15 / 8\n22:04 // Competitive\nSplit\nOmen\nScore\n10 : 13\nK / D / A\n16 / 18 / 7\n21:15 // Competitive\nAscent\nJett\nScore\n13 : 10\nK / D / A\n19 / 17 / 4\nAug 29\n3\n2 W // 1 L\nK/D\n0.98\nDDΔ\n+2\n22:44 // Competitive\nHaven\nOmen\nScore\n13 : 11\nK / D / A\n15 / 19 / 8\n21:57 // Competitive\nAscent\nSova\nScore\n13 : 5\nK / D / A\n17 / 9 / 6\n21:06 // Competitive\nSplit\nJett\nScore\n8 : 13\nK / D / A\n12 / 17 / 5\nAug 28\n3\n2 W // 1 L\nK/D\n0.84\nDDΔ\n-12\n23:40 // Competitive\nHaven\nOmen\nScore\n13 : 9\nK / D / A\n14 / 16 / 10\n22:46 // Competitive\nAscent\nJett\nScore\n13 : 11\nK / D / A\n19 / 18 / 5\n21:52 // Competitive\nSplit\nOmen\nScore\n6 : 13\nK / D / A\n10 / 17 / 6\nAug 27\n2\n2 W // 0 L\nK/D\n0.86\nDDΔ\n-6\n23:01 // Competitive\nHaven\nOmen\nScore\n13 : 10\nK / D / A\n14 / 17 / 9\n22:08 // Competitive\nAscent\nSova\nScore\n13 : 11\nK / D / A\n17 / 19 / 6\nLoad more matches\nGameProbe\nMock profile preview · Not affiliated with Riot Games or Tracker Network.\nPrivacy\nTerms",
+        "http": 200,
+        "screenshot": "after-390-legacy-profile.png",
+        "snapshotDigest": "587c9739f25bbc45d64508a9258aee6d58dd4a922338e06108d5c26b47a5580b",
+        "snapshotElements": 1446
+      },
+      "new-profile": {
+        "mainCount": 1,
+        "visibleLegacyHeaders": 0,
+        "visibleFooters": 1,
+        "visibleNavs": 1,
+        "overflow": 0,
+        "title": "DemoPlayer01#DEMO",
+        "titleFontSize": "20px",
+        "titleBox": [
+          98,
+          350.859375,
+          189.5625,
+          24
+        ],
+        "blocks": [
+          {
+            "tag": "P",
+            "text": "Explore the full profile with sample stats. Live Riot data is not connected."
+          },
+          {
+            "tag": "H1",
+            "text": "DemoPlayer01#DEMO"
+          },
+          {
+            "tag": "P",
+            "text": "4 of 4 returned matches included. Fetched sample only, not a complete season. — means unavailable; it is not zero. Current rank/RR, KAST and Probe Score are not provided."
+          },
+          {
+            "tag": "P",
+            "text": "DemoPlayer01#DEMO · Times in UTC · Weapon filters select matches containing kills with that weapon."
+          },
+          {
+            "tag": "H2",
+            "text": "CURRENT RATING ⓘ"
+          },
+          {
+            "tag": "P",
+            "text": "Not provided —RRNot provided"
+          },
+          {
+            "tag": "H2",
+            "text": "ACCURACY Selected act"
+          },
+          {
+            "tag": "P",
+            "text": "Head16.9%"
+          },
+          {
+            "tag": "P",
+            "text": "Body66.3%"
+          },
+          {
+            "tag": "P",
+            "text": "Legs16.9%"
+          },
+          {
+            "tag": "H2",
+            "text": "ROLES"
+          },
+          {
+            "tag": "P",
+            "text": "KDA 1.1310 / 16 / 8"
+          },
+          {
+            "tag": "P",
+            "text": "KDA 1.6642 / 32 / 11"
+          },
+          {
+            "tag": "P",
+            "text": "KDA 2.1313 / 8 / 4"
+          },
+          {
+            "tag": "H2",
+            "text": "TOP WEAPONS"
+          },
+          {
+            "tag": "H2",
+            "text": "TOP MAPS"
+          },
+          {
+            "tag": "H2",
+            "text": "DEMO ACT COMPETITIVE OVERVIEW"
+          },
+          {
+            "tag": "P",
+            "text": "Rank history not provided"
+          },
+          {
+            "tag": "H2",
+            "text": "TOP AGENTS"
+          },
+          {
+            "tag": "H2",
+            "text": "LAST 20 MATCHES"
+          }
+        ],
+        "disabledButtons": [],
+        "mainText": "GP\nGAMEPROBE\nConnect account\nHome\nLineups\n!\nMock data preview\n\nExplore the full profile with sample stats. Live Riot data is not connected.\n\nDismiss\nJETT\nSave Profile\nMock Preview\nSynthetic API-shaped sample\nDemoPlayer01#DEMO\nOverview\nMatches\nPerformance\nAgents\nMaps\nWeapons\nLineups\nGP\nKNOW YOUR GAME.\nYOUR STATS. YOUR PROGRESS. YOUR NEXT WIN.\nPC\nConsole\nCompetitive\nPremier\nUnrated\nDeathmatch\nSwiftplay\nAll Acts\nAct\nAll Acts\nDemo Act\nSynthetic API-shaped sample\n\n4 of 4 returned matches included. Fetched sample only, not a complete season. — means unavailable; it is not zero. Current rank/RR, KAST and Probe Score are not provided.\n\nDemoPlayer01#DEMO · Times in UTC · Weapon filters select matches containing kills with that weapon.\n\nCURRENT RATING\nⓘ\nNot provided\n— RR\nNot provided\nPeak Rating\n\nNot provided —RR\nNot provided\n\nACCURACY\nSelected act\n\nHead\n16.9%\n\nBody\n66.3%\n\nLegs\n16.9%\n\nAVG HS%\nROLES\n⌃\nController\nWR 0.0%\n0W - 1L\n✕\nDuelist\nWR 100.0%\n2W - 0L\n↗\nInitiator\nWR 100.0%\n1W - 0L\nTOP WEAPONS\nPhantom\nAssault Rifles\nHS\n—\nKills\n21\nVandal\nAssault Rifles\nHS\n—\nKills\n20\nGhost\nSidearms\nHS\n—\nKills\n19\nView All Weapons\nTOP MAPS\nAscent\n100%\n2W - 0L\nBind\n100%\n1W - 0L\nHaven\n0%\n0W - 1L\nView All Maps\nDEMO ACT COMPETITIVE OVERVIEW\n2.2h Playtime // 4 Matches\nShow More\nNot provided\n— RR\nNot provided\nLevel\n40\n3 W\n1 L\nDamage/Round\n95.4\nAverage damage\nK/D Ratio\n1.16\nKills / Deaths\nHeadshot %\n16.9%\nHeadshot accuracy\nWin %\n75.0%\n3 W · 1 L\nWins\n3\nKAST\n—\nDDΔ/Round\n+1\nKills\n65\nDeaths\n56\nAssists\n23\nACS\n174.9\nKAD Ratio\n1.57\nKills/Round\n0.73\nFirst Bloods\n—\nFlawless Rounds\n—\nAces\n—\n◈\nProbe Score\n— / 1,000\nNot available · definition pending\nRound Win %\n55.1%\n—\nKAST\n—\n—\nACS\n174.9\n—\nDDΔ/Round\n+1\n—\nTOP AGENTS\nView All Agents\nAgent\tMatches\tWin %\tK/D\tADR\tACS\tDDΔ\tBest Map\n\nJett\n1.2 hours\n\t2\t100.0%\t1.31\t111.9\t205.1\t+12\tAscent\n\nOmen\n0.6 hours\n\t1\t0.0%\t0.63\t65.5\t120.0\t-44\tHaven\n\nSova\n0.5 hours\n\t1\t100.0%\t1.63\t88.4\t162.1\t+25\tBind\nYour next win starts here.\nReview your matches, spot patterns, and track your progress.\nLAST 20 MATCHES\nAll Matches\nAgent\nAll Agents\nJett\nOmen\nSova\nMap\nAll Maps\nAscent\nBind\nHaven\nWeapon\nAll Weapons\nPhantom\nVandal\nGhost\nDate range\nAll Dates\nLast 7 days\nLast 30 days\n+ More\n3W - 1L (75%)\n1.16 K/D | 95 ADR\n4 matching games · latest 4\n2W - 0L (100%)\nK/D 1.31\nSep 20\n13 : 9\nK/D 1.6\nSep 19\n9 : 13\nK/D 0.6\nSep 18\n14 : 12\nK/D 1.1\nSep 17\n13 : 6\nK/D 1.6\nSep 20\n1\n1 W // 0 L\nK/D\n1.60\nDDΔ\n+35\n00:00 UTC // Competitive\nAscent\nJett\nScore\n13 : 9\nK / D / A\n24 / 15 / 5\nSep 19\n1\n0 W // 1 L\nK/D\n0.63\nDDΔ\n-44\n00:00 UTC // Competitive\nHaven\nOmen\nScore\n9 : 13\nK / D / A\n10 / 16 / 8\nSep 18\n1\n1 W // 0 L\nK/D\n1.06\nDDΔ\n-8\n00:00 UTC // Competitive\nAscent\nJett\nScore\n14 : 12\nK / D / A\n18 / 17 / 6\nSep 17\n1\n1 W // 0 L\nK/D\n1.63\nDDΔ\n+25\n00:00 UTC // Competitive\nBind\nSova\nScore\n13 : 6\nK / D / A\n13 / 8 / 4\nGameProbe\nMock profile preview · Not affiliated with Riot Games or Tracker Network.\nPrivacy\nTerms",
+        "http": 200,
+        "screenshot": "after-390-new-profile.png",
+        "snapshotDigest": "f734ca46a3b86088a9b01481bec25b7ac80b6a2581c285c9c0a496e40e4599fe",
+        "snapshotElements": 747
+      },
+      "synthetic-detail": {
+        "mainCount": 1,
+        "visibleLegacyHeaders": 0,
+        "visibleFooters": 1,
+        "visibleNavs": 0,
+        "overflow": 0,
+        "titleFontSize": null,
+        "titleBox": null,
+        "blocks": [
+          {
+            "tag": "H3",
+            "text": "Ascent"
+          },
+          {
+            "tag": "P",
+            "text": "— 미제공 또는 분모 0 · PS/KAST와 랭크 명칭은 미제공입니다. ACS는 합성 score의 라운드 평균입니다."
+          }
+        ],
+        "disabledButtons": [],
+        "mainText": "← Demo profile\nCompetitive\nAscent\nTeam A\n13\n:\nTeam B\n9\n2026-09-20 · 00:00 UTC\n33m\nScoreboard\nPerformance\nEconomy\nRounds\nDuels\nTeam A\n13\nTeam B\n9\n◆\n·\n1\n·\n◆\n2\n◆\n·\n3\n·\n◆\n4\n◆\n·\n5\n·\n◆\n6\n◆\n·\n7\n·\n◆\n8\n◆\n·\n9\n·\n◆\n10\n◆\n·\n11\n·\n◆\n12\n◆\n·\n13\n·\n◆\n14\n◆\n·\n15\n·\n◆\n16\n◆\n·\n17\n·\n◆\n18\n◆\n·\n19\n◆\n·\n20\n◆\n·\n21\n◆\n·\n22\nTeam A · Avg. Rank: —\tMatch Rank\tPS\t▾ ACS\tK\tD\tA\t+/−\tK/D\tDDΔ\tADR\tHS%\tKAST\tFK\tFD\tMK\n\nDemoPlayer02 #DEMO\nOmen\n\t—\t—\t320\t17\t9\t60\t+8\t1.89\t+113.2\t174.5\t16.9%\t—\t0\t0\t2\n\nDemoPlayer01 #DEMO\nJett\nYOU\n\t—\t—\t252.5\t24\t15\t5\t+9\t1.60\t+35.5\t137.7\t16.4%\t—\t22\t0\t2\n\nDemoPlayer03 #DEMO\nSova\n\t—\t—\t160\t13\t9\t12\t+4\t1.44\t+25.9\t87.3\t16.3%\t—\t0\t0\t0\n\nDemoPlayer05 #DEMO\nRaze\n\t—\t—\t120\t12\t9\t0\t+3\t1.33\t+4.1\t65.5\t21.7%\t—\t0\t0\t0\n\nDemoPlayer04 #DEMO\nSage\n\t—\t—\t110\t11\t9\t0\t+2\t1.22\t-1.4\t60\t17.6%\t—\t0\t0\t0\nTeam B · Avg. Rank: —\tMatch Rank\tPS\t▾ ACS\tK\tD\tA\t+/−\tK/D\tDDΔ\tADR\tHS%\tKAST\tFK\tFD\tMK\n\nDemoPlayer07 #DEMO\nBrimstone\n\t—\t—\t222.5\t17\t15\t21\t+2\t1.13\t+19.1\t121.4\t17.8%\t—\t0\t0\t7\n\nDemoPlayer08 #DEMO\nSova\n\t—\t—\t167.5\t12\t14\t19\t-2\t0.86\t-4.1\t91.4\t16.9%\t—\t0\t0\t1\n\nDemoPlayer09 #DEMO\nSage\n\t—\t—\t137.5\t12\t13\t7\t-1\t0.92\t-13.6\t75\t13.9%\t—\t0\t0\t1\n\nDemoPlayer10 #DEMO\nCypher\n\t—\t—\t110\t10\t13\t4\t-3\t0.77\t-28.6\t60\t13.8%\t—\t0\t0\t1\n\nDemoPlayer06 #DEMO\nRaze\n\t—\t—\t0\t0\t22\t0\t-22\t0.00\t-150\t0\t—\t—\t0\t22\t0\n\n— 미제공 또는 분모 0 · PS/KAST와 랭크 명칭은 미제공입니다. ACS는 합성 score의 라운드 평균입니다.\n\n공식 API 사용 필드 형태의 합성 경기입니다. 실제 Riot 기록이 아니며 피해·경제·score는 단순화한 표본입니다. PS·KAST·현재 RR·무기별 HS·좌표·설치/해체는 미제공입니다.\n이 경기 새 탭에서 보기\n경기 링크 복사",
+        "http": 200,
+        "screenshot": "after-390-synthetic-detail.png",
+        "snapshotDigest": "61d149ff30f9554c66cb37259f63e6302c77f9a349ddb058c602026b2b0cd4a4",
+        "snapshotElements": 452
+      }
+    },
+    "1440": {
+      "connect": {
+        "mainCount": 1,
+        "visibleLegacyHeaders": 0,
+        "visibleFooters": 1,
+        "visibleNavs": 1,
+        "overflow": 0,
+        "title": "Riot 계정 연결 예정",
+        "titleFontSize": "28px",
+        "titleBox": [
+          293,
+          186.59375,
+          854,
+          36.390625
+        ],
+        "blocks": [
+          {
+            "tag": "P",
+            "text": "RSO preview"
+          },
+          {
+            "tag": "H1",
+            "text": "Riot 계정 연결 예정"
+          },
+          {
+            "tag": "P",
+            "text": "Riot Sign On(RSO)을 통한 계정 연결은 Phase 4에서 실제 Riot API 연동과 함께 구현될 예정입니다. 현재 화면은 Riot Production API 신청 준비를 위한 안내 UI이며, 인증·세션·토큰 처리는 수행하지 않습니다."
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Riot 계정 연결 준비 중"
+          },
+          {
+            "tag": "P",
+            "text": "이 버튼은 비활성 상태이며 외부 인증 페이지로 이동하지 않습니다. 향후 실제 연동 시 TASK-014에서 추가한 Backend Riot API Adapter 구조와 Phase 4의 RSO 인증 흐름에 연결됩니다."
+          }
+        ],
+        "disabledButtons": [
+          {
+            "text": "Riot 계정 연결 준비 중",
+            "disabled": true
+          }
+        ],
+        "mainText": "GP\nGAMEPROBE\nVALORANT\nPLAYER STATS\nLINEUPS\nMOCK PREVIEW\nConnect account\nV\nSearch\nHome\nOverview\nLineups\nMore\n\nRSO PREVIEW\n\nRiot 계정 연결 예정\n\nRiot Sign On(RSO)을 통한 계정 연결은 Phase 4에서 실제 Riot API 연동과 함께 구현될 예정입니다. 현재 화면은 Riot Production API 신청 준비를 위한 안내 UI이며, 인증·세션·토큰 처리는 수행하지 않습니다.\n\nRiot 계정 연결 준비 중\n\n이 버튼은 비활성 상태이며 외부 인증 페이지로 이동하지 않습니다. 향후 실제 연동 시 TASK-014에서 추가한 Backend Riot API Adapter 구조와 Phase 4의 RSO 인증 흐름에 연결됩니다.\n\nGameProbe\nRiot Games와 제휴 관계가 없는 비공식 서비스입니다. 현재 전적은 Mock 데이터로 제공됩니다.\nPrivacy\nTerms",
+        "http": 200,
+        "screenshot": "after-1440-connect.png"
+      },
+      "privacy": {
+        "mainCount": 1,
+        "visibleLegacyHeaders": 0,
+        "visibleFooters": 1,
+        "visibleNavs": 1,
+        "overflow": 0,
+        "title": "개인정보처리방침",
+        "titleFontSize": "28px",
+        "titleBox": [
+          293,
+          186.59375,
+          854,
+          36.390625
+        ],
+        "blocks": [
+          {
+            "tag": "P",
+            "text": "Privacy policy draft"
+          },
+          {
+            "tag": "H1",
+            "text": "개인정보처리방침"
+          },
+          {
+            "tag": "P",
+            "text": "이 문서는 Riot Production API 신청 준비를 위한 개인정보처리방침 초안입니다. 법적 효력이 있는 최종 문구는 TASK-013H에서 사람의 법률 검토와 승인을 거쳐 확정됩니다."
+          },
+          {
+            "tag": "H2",
+            "text": "수집 항목"
+          },
+          {
+            "tag": "LI",
+            "text": "Phase 1-2 프로토타입은 Mock 데이터를 사용하며 실제 Riot 계정 정보나 전적 데이터를 수집하지 않습니다."
+          },
+          {
+            "tag": "LI",
+            "text": "향후 Riot API와 RSO 연동 시 Riot ID, PUUID, 전적 조회 결과, 서비스 이용 기록 등 서비스 제공에 필요한 항목을 수집할 수 있습니다."
+          },
+          {
+            "tag": "H2",
+            "text": "이용 목적"
+          },
+          {
+            "tag": "LI",
+            "text": "플레이어 프로필, 최근 경기, 경기 상세 등 전적 검색 기능 제공"
+          },
+          {
+            "tag": "LI",
+            "text": "Riot Production API 신청 및 운영 준비를 위한 서비스 구조 검증"
+          },
+          {
+            "tag": "LI",
+            "text": "서비스 안정성 확인과 오류 대응"
+          },
+          {
+            "tag": "H2",
+            "text": "보관 및 파기"
+          },
+          {
+            "tag": "LI",
+            "text": "Mock 데이터는 정적 샘플 데이터이며 이용자 개인을 식별하기 위한 목적으로 보관하지 않습니다."
+          },
+          {
+            "tag": "LI",
+            "text": "향후 실제 데이터 수집이 시작되면 보관 기간, 파기 절차, 삭제 요청 처리 방식을 최종 정책에 명시합니다."
+          },
+          {
+            "tag": "H2",
+            "text": "제3자 제공"
+          },
+          {
+            "tag": "LI",
+            "text": "현재 프로토타입은 수집한 개인정보를 제3자에게 제공하지 않습니다."
+          },
+          {
+            "tag": "LI",
+            "text": "Riot API 연동 시 Riot Games 정책과 이용자 동의 범위 안에서만 데이터를 처리합니다."
+          },
+          {
+            "tag": "H2",
+            "text": "이용자 권리"
+          },
+          {
+            "tag": "LI",
+            "text": "이용자는 본인 데이터 열람, 정정, 삭제, 처리 중지를 요청할 수 있어야 합니다."
+          },
+          {
+            "tag": "LI",
+            "text": "구체적인 요청 절차와 처리 기한은 TASK-013H 법률 검토에서 최종 확정합니다."
+          },
+          {
+            "tag": "H2",
+            "text": "문의처"
+          },
+          {
+            "tag": "LI",
+            "text": "개인정보 관련 문의 채널은 운영 배포 전 확정합니다."
+          },
+          {
+            "tag": "LI",
+            "text": "본 초안의 문의처와 책임자 정보는 법률 검토 및 운영 주체 확정 후 보완합니다."
+          }
+        ],
+        "disabledButtons": [],
+        "mainText": "GP\nGAMEPROBE\nVALORANT\nPLAYER STATS\nLINEUPS\nMOCK PREVIEW\nConnect account\nV\nSearch\nHome\nOverview\nLineups\nMore\n\nPRIVACY POLICY DRAFT\n\n개인정보처리방침\n\n이 문서는 Riot Production API 신청 준비를 위한 개인정보처리방침 초안입니다. 법적 효력이 있는 최종 문구는 TASK-013H에서 사람의 법률 검토와 승인을 거쳐 확정됩니다.\n\n수집 항목\nPhase 1-2 프로토타입은 Mock 데이터를 사용하며 실제 Riot 계정 정보나 전적 데이터를 수집하지 않습니다.\n향후 Riot API와 RSO 연동 시 Riot ID, PUUID, 전적 조회 결과, 서비스 이용 기록 등 서비스 제공에 필요한 항목을 수집할 수 있습니다.\n이용 목적\n플레이어 프로필, 최근 경기, 경기 상세 등 전적 검색 기능 제공\nRiot Production API 신청 및 운영 준비를 위한 서비스 구조 검증\n서비스 안정성 확인과 오류 대응\n보관 및 파기\nMock 데이터는 정적 샘플 데이터이며 이용자 개인을 식별하기 위한 목적으로 보관하지 않습니다.\n향후 실제 데이터 수집이 시작되면 보관 기간, 파기 절차, 삭제 요청 처리 방식을 최종 정책에 명시합니다.\n제3자 제공\n현재 프로토타입은 수집한 개인정보를 제3자에게 제공하지 않습니다.\nRiot API 연동 시 Riot Games 정책과 이용자 동의 범위 안에서만 데이터를 처리합니다.\n이용자 권리\n이용자는 본인 데이터 열람, 정정, 삭제, 처리 중지를 요청할 수 있어야 합니다.\n구체적인 요청 절차와 처리 기한은 TASK-013H 법률 검토에서 최종 확정합니다.\n문의처\n개인정보 관련 문의 채널은 운영 배포 전 확정합니다.\n본 초안의 문의처와 책임자 정보는 법률 검토 및 운영 주체 확정 후 보완합니다.\nGameProbe\nRiot Games와 제휴 관계가 없는 비공식 서비스입니다. 현재 전적은 Mock 데이터로 제공됩니다.\nPrivacy\nTerms",
+        "http": 200,
+        "screenshot": "after-1440-privacy.png"
+      },
+      "terms": {
+        "mainCount": 1,
+        "visibleLegacyHeaders": 0,
+        "visibleFooters": 1,
+        "visibleNavs": 1,
+        "overflow": 0,
+        "title": "이용약관",
+        "titleFontSize": "28px",
+        "titleBox": [
+          293,
+          186.59375,
+          854,
+          36.390625
+        ],
+        "blocks": [
+          {
+            "tag": "P",
+            "text": "Terms draft"
+          },
+          {
+            "tag": "H1",
+            "text": "이용약관"
+          },
+          {
+            "tag": "P",
+            "text": "이 문서는 Riot Production API 신청 준비를 위한 이용약관 초안입니다. 법적 효력이 있는 최종 문구는 TASK-013H에서 사람의 법률 검토와 승인을 거쳐 확정됩니다."
+          },
+          {
+            "tag": "H2",
+            "text": "서비스 정의"
+          },
+          {
+            "tag": "LI",
+            "text": "VALORANT Platform은 VALORANT 플레이어의 전적 검색과 성장 지원 기능을 제공하기 위한 웹 서비스입니다."
+          },
+          {
+            "tag": "LI",
+            "text": "현재 Phase 1-2 프로토타입은 Mock 데이터를 기반으로 동작하며 Riot API 실제 호출이나 RSO 인증을 제공하지 않습니다."
+          },
+          {
+            "tag": "H2",
+            "text": "이용 조건"
+          },
+          {
+            "tag": "LI",
+            "text": "이용자는 관계 법령, Riot Games 정책, 본 약관 초안의 취지에 맞게 서비스를 이용해야 합니다."
+          },
+          {
+            "tag": "LI",
+            "text": "실제 Riot 계정 연결 기능이 도입되기 전까지 계정 인증이나 개인 Riot 데이터 조회 기능은 제공하지 않습니다."
+          },
+          {
+            "tag": "H2",
+            "text": "금지 행위"
+          },
+          {
+            "tag": "LI",
+            "text": "비공식 Riot 클라이언트 API나 승인되지 않은 방법으로 데이터를 수집하도록 서비스를 악용하는 행위"
+          },
+          {
+            "tag": "LI",
+            "text": "서비스 장애를 유발하거나 다른 이용자의 정상적인 이용을 방해하는 행위"
+          },
+          {
+            "tag": "LI",
+            "text": "허위 정보 입력, 자동화된 대량 요청, 보안 취약점 악용 행위"
+          },
+          {
+            "tag": "H2",
+            "text": "책임 제한"
+          },
+          {
+            "tag": "LI",
+            "text": "프로토타입 단계의 Mock 데이터와 화면은 실제 전적, 랭크, 경기 결과를 보장하지 않습니다."
+          },
+          {
+            "tag": "LI",
+            "text": "서비스 제공자는 법률상 허용되는 범위에서 외부 플랫폼 장애, Riot API 정책 변경, 불가항력으로 인한 손해에 대한 책임을 제한할 수 있습니다."
+          },
+          {
+            "tag": "H2",
+            "text": "준거법 및 분쟁"
+          },
+          {
+            "tag": "LI",
+            "text": "준거법, 관할, 분쟁 해결 절차는 운영 주체와 서비스 제공 지역 확정 후 최종 약관에서 정합니다."
+          },
+          {
+            "tag": "LI",
+            "text": "본 초안은 법률 검토 전 문서이며 분쟁 해결 기준으로 사용할 수 없습니다."
+          },
+          {
+            "tag": "H2",
+            "text": "약관 변경"
+          },
+          {
+            "tag": "LI",
+            "text": "서비스 기능, Riot API 정책, 법령 변경에 따라 약관이 변경될 수 있습니다."
+          },
+          {
+            "tag": "LI",
+            "text": "변경 공지 방식과 효력 발생 시점은 TASK-013H 법률 검토에서 최종 확정합니다."
+          },
+          {
+            "tag": "H2",
+            "text": "문의처"
+          },
+          {
+            "tag": "LI",
+            "text": "서비스 및 약관 관련 문의 채널은 운영 배포 전 확정합니다."
+          },
+          {
+            "tag": "LI",
+            "text": "운영 주체, 연락처, 책임자 정보는 법률 검토 및 배포 준비 과정에서 보완합니다."
+          }
+        ],
+        "disabledButtons": [],
+        "mainText": "GP\nGAMEPROBE\nVALORANT\nPLAYER STATS\nLINEUPS\nMOCK PREVIEW\nConnect account\nV\nSearch\nHome\nOverview\nLineups\nMore\n\nTERMS DRAFT\n\n이용약관\n\n이 문서는 Riot Production API 신청 준비를 위한 이용약관 초안입니다. 법적 효력이 있는 최종 문구는 TASK-013H에서 사람의 법률 검토와 승인을 거쳐 확정됩니다.\n\n서비스 정의\nVALORANT Platform은 VALORANT 플레이어의 전적 검색과 성장 지원 기능을 제공하기 위한 웹 서비스입니다.\n현재 Phase 1-2 프로토타입은 Mock 데이터를 기반으로 동작하며 Riot API 실제 호출이나 RSO 인증을 제공하지 않습니다.\n이용 조건\n이용자는 관계 법령, Riot Games 정책, 본 약관 초안의 취지에 맞게 서비스를 이용해야 합니다.\n실제 Riot 계정 연결 기능이 도입되기 전까지 계정 인증이나 개인 Riot 데이터 조회 기능은 제공하지 않습니다.\n금지 행위\n비공식 Riot 클라이언트 API나 승인되지 않은 방법으로 데이터를 수집하도록 서비스를 악용하는 행위\n서비스 장애를 유발하거나 다른 이용자의 정상적인 이용을 방해하는 행위\n허위 정보 입력, 자동화된 대량 요청, 보안 취약점 악용 행위\n책임 제한\n프로토타입 단계의 Mock 데이터와 화면은 실제 전적, 랭크, 경기 결과를 보장하지 않습니다.\n서비스 제공자는 법률상 허용되는 범위에서 외부 플랫폼 장애, Riot API 정책 변경, 불가항력으로 인한 손해에 대한 책임을 제한할 수 있습니다.\n준거법 및 분쟁\n준거법, 관할, 분쟁 해결 절차는 운영 주체와 서비스 제공 지역 확정 후 최종 약관에서 정합니다.\n본 초안은 법률 검토 전 문서이며 분쟁 해결 기준으로 사용할 수 없습니다.\n약관 변경\n서비스 기능, Riot API 정책, 법령 변경에 따라 약관이 변경될 수 있습니다.\n변경 공지 방식과 효력 발생 시점은 TASK-013H 법률 검토에서 최종 확정합니다.\n문의처\n서비스 및 약관 관련 문의 채널은 운영 배포 전 확정합니다.\n운영 주체, 연락처, 책임자 정보는 법률 검토 및 배포 준비 과정에서 보완합니다.\nGameProbe\nRiot Games와 제휴 관계가 없는 비공식 서비스입니다. 현재 전적은 Mock 데이터로 제공됩니다.\nPrivacy\nTerms",
+        "http": 200,
+        "screenshot": "after-1440-terms.png"
+      },
+      "missing-legacy-match": {
+        "mainCount": 1,
+        "visibleLegacyHeaders": 0,
+        "visibleFooters": 1,
+        "visibleNavs": 1,
+        "overflow": 0,
+        "title": "경기를 찾을 수 없음",
+        "titleFontSize": "28px",
+        "titleBox": [
+          393,
+          186.59375,
+          654,
+          36.390625
+        ],
+        "blocks": [
+          {
+            "tag": "P",
+            "text": "Match detail"
+          },
+          {
+            "tag": "H1",
+            "text": "경기를 찾을 수 없음"
+          },
+          {
+            "tag": "P",
+            "text": "Mock 데이터에 없는 matchId입니다."
+          }
+        ],
+        "disabledButtons": [],
+        "mainText": "GP\nGAMEPROBE\nVALORANT\nPLAYER STATS\nLINEUPS\nMOCK PREVIEW\nConnect account\nV\nSearch\nHome\nOverview\nLineups\nMore\n\nMATCH DETAIL\n\n경기를 찾을 수 없음\n\nMock 데이터에 없는 matchId입니다.\n\n데모 프로필로 돌아가기\n홈으로 돌아가기\nGameProbe\nRiot Games와 제휴 관계가 없는 비공식 서비스입니다. 현재 전적은 Mock 데이터로 제공됩니다.\nPrivacy\nTerms",
+        "http": 200,
+        "screenshot": "after-1440-missing-legacy-match.png"
+      },
+      "missing-synthetic-match": {
+        "mainCount": 1,
+        "visibleLegacyHeaders": 0,
+        "visibleFooters": 1,
+        "visibleNavs": 1,
+        "overflow": 0,
+        "title": "경기를 찾을 수 없음",
+        "titleFontSize": "28px",
+        "titleBox": [
+          393,
+          186.59375,
+          654,
+          36.390625
+        ],
+        "blocks": [
+          {
+            "tag": "P",
+            "text": "Match detail"
+          },
+          {
+            "tag": "H1",
+            "text": "경기를 찾을 수 없음"
+          },
+          {
+            "tag": "P",
+            "text": "이 경기 또는 선수의 합성 기록이 없습니다."
+          }
+        ],
+        "disabledButtons": [],
+        "mainText": "GP\nGAMEPROBE\nVALORANT\nPLAYER STATS\nLINEUPS\nMOCK PREVIEW\nConnect account\nV\nSearch\nHome\nOverview\nLineups\nMore\n\nMATCH DETAIL\n\n경기를 찾을 수 없음\n\n이 경기 또는 선수의 합성 기록이 없습니다.\n\n데모 프로필로 돌아가기\n홈으로 돌아가기\nGameProbe\nRiot Games와 제휴 관계가 없는 비공식 서비스입니다. 현재 전적은 Mock 데이터로 제공됩니다.\nPrivacy\nTerms",
+        "http": 200,
+        "screenshot": "after-1440-missing-synthetic-match.png"
+      },
+      "missing-player": {
+        "mainCount": 1,
+        "visibleLegacyHeaders": 0,
+        "visibleFooters": 1,
+        "visibleNavs": 1,
+        "overflow": 0,
+        "title": "플레이어를 찾을 수 없음",
+        "titleFontSize": "28px",
+        "titleBox": [
+          393,
+          186.59375,
+          654,
+          36.390625
+        ],
+        "blocks": [
+          {
+            "tag": "P",
+            "text": "Player profile"
+          },
+          {
+            "tag": "H1",
+            "text": "플레이어를 찾을 수 없음"
+          },
+          {
+            "tag": "P",
+            "text": "Mock 데이터에 없는 PUUID입니다."
+          }
+        ],
+        "disabledButtons": [],
+        "mainText": "GP\nGAMEPROBE\nVALORANT\nPLAYER STATS\nLINEUPS\nMOCK PREVIEW\nConnect account\nV\nSearch\nHome\nOverview\nLineups\nMore\n\nPLAYER PROFILE\n\n플레이어를 찾을 수 없음\n\nMock 데이터에 없는 PUUID입니다.\n\n데모 프로필로 돌아가기\n홈으로 돌아가기\nGameProbe\nRiot Games와 제휴 관계가 없는 비공식 서비스입니다. 현재 전적은 Mock 데이터로 제공됩니다.\nPrivacy\nTerms",
+        "http": 200,
+        "screenshot": "after-1440-missing-player.png"
+      },
+      "home": {
+        "mainCount": 1,
+        "visibleLegacyHeaders": 0,
+        "visibleFooters": 1,
+        "visibleNavs": 1,
+        "overflow": 0,
+        "title": "당신의 플레이,더 선명하게.",
+        "titleFontSize": "38px",
+        "titleBox": [
+          57,
+          177.1875,
+          703,
+          89.65625
+        ],
+        "blocks": [
+          {
+            "tag": "H1",
+            "text": "당신의 플레이,더 선명하게."
+          },
+          {
+            "tag": "P",
+            "text": "전적을 살펴보고, 다음 경기를 준비하세요."
+          },
+          {
+            "tag": "H2",
+            "text": "기존 디자인 데모 미리보기"
+          },
+          {
+            "tag": "P",
+            "text": "입력한 Riot ID를 조회하지 않습니다. 기존 디자인 데모로 이동합니다."
+          },
+          {
+            "tag": "P",
+            "text": "MOCK PREVIEW 검색 기능은 아직 연결되지 않았습니다. 아래 두 데모를 비교해 보세요."
+          },
+          {
+            "tag": "H2",
+            "text": "게임을 더 깊이 들여다보세요"
+          },
+          {
+            "tag": "H3",
+            "text": "최근 경기를 한눈에"
+          },
+          {
+            "tag": "P",
+            "text": "시즌 성적부터 요원·맵별 기록까지, 내 플레이의 흐름을 확인하세요."
+          },
+          {
+            "tag": "H3",
+            "text": "다음 라운드의 한 수"
+          },
+          {
+            "tag": "P",
+            "text": "맵과 요원에 맞는 라인업을 찾아보세요."
+          },
+          {
+            "tag": "H2",
+            "text": "플레이 분석 미리보기 SAMPLE"
+          },
+          {
+            "tag": "H2",
+            "text": "위치 선정"
+          },
+          {
+            "tag": "H2",
+            "text": "팀 교전"
+          },
+          {
+            "tag": "H2",
+            "text": "첫 교전"
+          },
+          {
+            "tag": "H2",
+            "text": "사이트 방어"
+          }
+        ],
+        "disabledButtons": [],
+        "mainText": "GP\nGAMEPROBE\nVALORANT\nPLAYER STATS\nLINEUPS\nMOCK PREVIEW\nConnect account\nV\nSearch\nHome\nOverview\nLineups\nMore\nJETT\nVALORANT STATS\n당신의 플레이,\n더 선명하게.\n\n전적을 살펴보고, 다음 경기를 준비하세요.\n\n기존 디자인 데모 미리보기\nRiot ID\n데모 보기\n\n입력한 Riot ID를 조회하지 않습니다. 기존 디자인 데모로 이동합니다.\n\nMOCK PREVIEW\n검색 기능은 아직 연결되지 않았습니다. 아래 두 데모를 비교해 보세요.\n\n데모 비교하기\n새 데이터 데모\n· DemoPlayer01\n기존 디자인 데모\n· IED agent\n새 데이터 데모\nDemoPlayer01 API MOCK\n기존 디자인 데모\nIED agent #Allen\n01 / DUELIST JETT\n게임을 더 깊이 들여다보세요\nEXPLORE GAMEPROBE\nPLAYER OVERVIEW\n최근 경기를 한눈에\n\n시즌 성적부터 요원·맵별 기록까지, 내 플레이의 흐름을 확인하세요.\n\n전적 프로필 보기\nTACTICAL LIBRARY\n다음 라운드의 한 수\n\n맵과 요원에 맞는 라인업을 찾아보세요.\n\n라인업 둘러보기\nASCENT\n플레이 분석 미리보기 SAMPLE\n분석 화면을 위한 예시 점수입니다.\n위치 선정\n87\n팀 교전\n74\n첫 교전\n68\n사이트 방어\n91\nGameProbe\nRiot Games와 제휴 관계가 없는 비공식 서비스입니다. 현재 전적은 Mock 데이터로 제공됩니다.\nPrivacy\nTerms",
+        "http": 200,
+        "screenshot": "after-1440-home.png",
+        "snapshotDigest": "4deb82e8c448092418fc3b2d805b46fd46fc7e559609976855f9a89c23bbf8f2",
+        "snapshotElements": 140
+      },
+      "legacy-profile": {
+        "mainCount": 1,
+        "visibleLegacyHeaders": 0,
+        "visibleFooters": 1,
+        "visibleNavs": 1,
+        "overflow": 0,
+        "title": "IED agent#Allen",
+        "titleFontSize": "28px",
+        "titleBox": [
+          136,
+          339.296875,
+          187.421875,
+          33.59375
+        ],
+        "blocks": [
+          {
+            "tag": "P",
+            "text": "Explore the full profile with sample stats. Live Riot data is not connected."
+          },
+          {
+            "tag": "H1",
+            "text": "IED agent#Allen"
+          },
+          {
+            "tag": "H2",
+            "text": "CURRENT RATING ⓘ"
+          },
+          {
+            "tag": "P",
+            "text": "Immortal 3 263RRV25: ACT I · Mock"
+          },
+          {
+            "tag": "H2",
+            "text": "ACCURACY Selected act"
+          },
+          {
+            "tag": "P",
+            "text": "Head25.6%"
+          },
+          {
+            "tag": "P",
+            "text": "Body67.4%"
+          },
+          {
+            "tag": "P",
+            "text": "Legs7.0%"
+          },
+          {
+            "tag": "H2",
+            "text": "ROLES"
+          },
+          {
+            "tag": "P",
+            "text": "KDA 1.32127 / 145 / 64"
+          },
+          {
+            "tag": "P",
+            "text": "KDA 1.31153 / 147 / 39"
+          },
+          {
+            "tag": "P",
+            "text": "KDA 1.6485 / 74 / 36"
+          },
+          {
+            "tag": "H2",
+            "text": "TOP WEAPONS"
+          },
+          {
+            "tag": "H2",
+            "text": "TOP MAPS"
+          },
+          {
+            "tag": "H2",
+            "text": "V26: A5 COMPETITIVE OVERVIEW"
+          },
+          {
+            "tag": "H2",
+            "text": "TOP AGENTS"
+          },
+          {
+            "tag": "H2",
+            "text": "LAST 20 MATCHES"
+          }
+        ],
+        "disabledButtons": [],
+        "mainText": "GP\nGAMEPROBE\nVALORANT\nPLAYER STATS\nLINEUPS\nMOCK PREVIEW\nConnect account\nV\nHome\nOverview\nLineups\nMatches\nPerformance\nAgents\nMaps\nWeapons\nMore\n!\nMock data preview\n\nExplore the full profile with sample stats. Live Riot data is not connected.\n\nDismiss\nJETT\nSave Profile\nMock Preview\n1,281 profile views · Sample data\nIED agent\n#Allen\nOverview\nMatches\nPerformance\nAgents\nMaps\nWeapons\nLineups\nGP\nKNOW YOUR GAME.\nYOUR STATS. YOUR PROGRESS. YOUR NEXT WIN.\n❯❯❯\nA closer look at every match.\nExplore your performance\nPC\nConsole\nCompetitive\nPremier\nUnrated\nDeathmatch\nSwiftplay\nAll Acts\nAct\nAll Acts\nV26: A5\nV26: A4\nCURRENT RATING\nⓘ\nImmortal 1\n43 RR\n#14,290\nPeak Rating\n\nImmortal 3 263RR\nV25: ACT I · Mock\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n25.6%\n\nBody\n67.4%\n\nLegs\n7.0%\n\nAVG HS%\nROLES\n⌃\nController\nWR 66.7%\n6W - 3L\n\nKDA 1.32\n127 / 145 / 64\n\n✕\nDuelist\nWR 55.6%\n5W - 4L\n\nKDA 1.31\n153 / 147 / 39\n\n↗\nInitiator\nWR 100.0%\n5W - 0L\n\nKDA 1.64\n85 / 74 / 36\n\nTOP WEAPONS\nVandal\nAssault Rifles\nHS\n28%\nKills\n208\nPhantom\nAssault Rifles\nHS\n23%\nKills\n127\nOperator\nSniper Rifles\nHS\n27%\nKills\n30\nView All Weapons\nTOP MAPS\nAscent\n88%\n7W - 1L\nHaven\n88%\n7W - 1L\nSplit\n29%\n2W - 5L\nView All Maps\nV26: A5 COMPETITIVE OVERVIEW\n14h Playtime // 23 Matches\nShow More\nImmortal 1\n43 RR\n#14,290\nLevel\n161\n16 W\n7 L\nIMMORTAL\nDamage/Round\n143.1\nAverage damage\n•••\nK/D Ratio\n1.00\nKills / Deaths\n•••\nHeadshot %\n25.6%\nHeadshot accuracy\n•••\nWin %\n69.6%\n16 W · 7 L\n•••\nWins\n16\nKAST\n70.7%\nDDΔ/Round\n+6\nKills\n365\nDeaths\n366\nAssists\n139\nACS\n217.0\nKAD Ratio\n1.38\nKills/Round\n0.73\nFirst Bloods\n49\nFlawless Rounds\n19\nAces\n1\n◈\nProbe Score\n557 / 1,000\nSample performance score\nRound Win %\n54.3%\nS\nKAST\n70.7%\nC\nACS\n217.0\nB\nDDΔ/Round\n+6\nB\nTOP AGENTS\nView All Agents\nAgent\tMatches\tWin %\tK/D\tADR\tACS\tDDΔ\tBest Map\n\nJett\n5.3 hours\n\t9\t55.6%\t1.04\t152.6\t233.4\t+12\tAscent\n\nOmen\n5.3 hours\n\t9\t66.7%\t0.88\t131.6\t197.3\t-7\tAscent\n\nSova\n2.9 hours\n\t5\t100.0%\t1.15\t146.4\t222.5\t+20\tAscent\nYour next win starts here.\nReview your matches, spot patterns, and track your progress.\nLAST 20 MATCHES\nAll Matches\nAgent\nAll Agents\nJett\nOmen\nSova\nMap\nAll Maps\nAscent\nHaven\nSplit\nWeapon\nAll Weapons\nPhantom\nVandal\nOperator\nDate range\nAll Dates\nLast 7 days\nLast 30 days\n+ More\n14W - 6L (70%)\n1.02 K/D | 145 ADR\n23 matching games · latest 20\n5W - 3L (63%)\nK/D 1.09\n5W - 3L (63%)\nK/D 0.87\n4W - 0L (100%)\nK/D 1.21\nSep 9\n13 : 8\nK/D 1.3\nSep 4\n13 : 2\nK/D 0.8\nSep 4\n11 : 13\nK/D 1.1\nSep 4\n14 : 12\nK/D 1.1\nSep 4\n13 : 8\nK/D 0.7\nSep 4\n9 : 13\nK/D 0.9\nSep 1\n7 : 13\nK/D 0.7\nAug 31\n13 : 6\nK/D 2.5\nSep 9\n1\n1 W // 0 L\nK/D\n1.31\nDDΔ\n+43\nHS%\n32\nACS\n240\n21:48 // Competitive\nHaven\nSova\nScore\n13 : 8\n◈\nPS\n726\nK/D\n1.3\nK / D / A\n17 / 13 / 5\nDDΔ\n+43\nHS%\n32%\nACS\n240\nSep 4\n5\n3 W // 2 L\nK/D\n0.96\nDDΔ\n+7\nHS%\n23\nACS\n217\n23:46 // Competitive\nAscent\nJett\nScore\n13 : 2\n◈\nPS\n547\nK/D\n0.8\nK / D / A\n10 / 12 / 4\nDDΔ\n-25\nHS%\n29%\nACS\n197\n22:55 // Competitive\nSplit\nJett\nScore\n11 : 13\n◈\nPS\n549\nK/D\n1.1\nK / D / A\n20 / 18 / 5\nDDΔ\n+21\nHS%\n29%\nACS\n256\n22:01 // Competitive\nSplit\nJett\nScore\n14 : 12\n◈\nPS\n669\nK/D\n1.1\nK / D / A\n22 / 20 / 6\nDDΔ\n+38\nHS%\n13%\nACS\n269\n21:08 // Competitive\nHaven\nOmen\nScore\n13 : 8\n◈\nPS\n389\nK/D\n0.7\nK / D / A\n10 / 14 / 5\nDDΔ\n-7\nHS%\n22%\nACS\n153\n20:14 // Competitive\nHaven\nOmen\nScore\n9 : 13\n◈\nPS\n397\nK/D\n0.9\nK / D / A\n14 / 15 / 1\nDDΔ\n-9\nHS%\n24%\nACS\n187\nSep 1\n1\n0 W // 1 L\nK/D\n0.73\nDDΔ\n-27\nHS%\n34\nACS\n162\n21:09 // Competitive\nAscent\nJett\nScore\n7 : 13\n◈\nPS\n223\nK/D\n0.7\nK / D / A\n11 / 15 / 4\nDDΔ\n-27\nHS%\n34%\nACS\n162\nAug 31\n1\n1 W // 0 L\nK/D\n2.45\nDDΔ\n+135\nHS%\n35\nACS\n379\n23:36 // Competitive\nSplit\nJett\nScore\n13 : 6\n◈\nPS\n993\nK/D\n2.5\nK / D / A\n27 / 11 / 2\nDDΔ\n+135\nHS%\n35%\nACS\n379\nAug 30\n4\n3 W // 1 L\nK/D\n1.13\nDDΔ\n+15\nHS%\n27\nACS\n228\n23:42 // Competitive\nAscent\nOmen\nScore\n13 : 7\n◈\nPS\n803\nK/D\n1.5\nK / D / A\n18 / 12 / 9\nDDΔ\n+39\nHS%\n26%\nACS\n243\n22:53 // Competitive\nHaven\nSova\nScore\n13 : 9\n◈\nPS\n731\nK/D\n1.1\nK / D / A\n17 / 15 / 8\nDDΔ\n+17\nHS%\n27%\nACS\n218\n22:04 // Competitive\nSplit\nOmen\nScore\n10 : 13\n◈\nPS\n382\nK/D\n0.9\nK / D / A\n16 / 18 / 7\nDDΔ\n-13\nHS%\n24%\nACS\n216\n21:15 // Competitive\nAscent\nJett\nScore\n13 : 10\n◈\nPS\n746\nK/D\n1.1\nK / D / A\n19 / 17 / 4\nDDΔ\n+19\nHS%\n30%\nACS\n237\nAug 29\n3\n2 W // 1 L\nK/D\n0.98\nDDΔ\n+2\nHS%\n26\nACS\n206\n22:44 // Competitive\nHaven\nOmen\nScore\n13 : 11\n◈\nPS\n493\nK/D\n0.8\nK / D / A\n15 / 19 / 8\nDDΔ\n-11\nHS%\n21%\nACS\n193\n21:57 // Competitive\nAscent\nSova\nScore\n13 : 5\n◈\nPS\n861\nK/D\n1.9\nK / D / A\n17 / 9 / 6\nDDΔ\n+61\nHS%\n28%\nACS\n256\n21:06 // Competitive\nSplit\nJett\nScore\n8 : 13\n◈\nPS\n281\nK/D\n0.7\nK / D / A\n12 / 17 / 5\nDDΔ\n-34\nHS%\n29%\nACS\n178\nAug 28\n3\n2 W // 1 L\nK/D\n0.84\nDDΔ\n-12\nHS%\n24\nACS\n205\n23:40 // Competitive\nHaven\nOmen\nScore\n13 : 9\n◈\nPS\n566\nK/D\n0.9\nK / D / A\n14 / 16 / 10\nDDΔ\n-9\nHS%\n19%\nACS\n206\n22:46 // Competitive\nAscent\nJett\nScore\n13 : 11\n◈\nPS\n635\nK/D\n1.1\nK / D / A\n19 / 18 / 5\nDDΔ\n+12\nHS%\n31%\nACS\n235\n21:52 // Competitive\nSplit\nOmen\nScore\n6 : 13\n◈\nPS\n194\nK/D\n0.6\nK / D / A\n10 / 17 / 6\nDDΔ\n-46\nHS%\n20%\nACS\n167\nAug 27\n2\n2 W // 0 L\nK/D\n0.86\nDDΔ\n-6\nHS%\n26\nACS\n201\n23:01 // Competitive\nHaven\nOmen\nScore\n13 : 10\n◈\nPS\n514\nK/D\n0.8\nK / D / A\n14 / 17 / 9\nDDΔ\n-5\nHS%\n23%\nACS\n197\n22:08 // Competitive\nAscent\nSova\nScore\n13 : 11\n◈\nPS\n597\nK/D\n0.9\nK / D / A\n17 / 19 / 6\nDDΔ\n-7\nHS%\n28%\nACS\n204\nLoad more matches\nGameProbe\nMock profile preview · Not affiliated with Riot Games or Tracker Network.\nPrivacy\nTerms",
+        "http": 200,
+        "screenshot": "after-1440-legacy-profile.png",
+        "snapshotDigest": "811ebccd7840d920ef8360a803250969f39f7dacc9d18855d0562bcffe55d3ca",
+        "snapshotElements": 1446
+      },
+      "new-profile": {
+        "mainCount": 1,
+        "visibleLegacyHeaders": 0,
+        "visibleFooters": 1,
+        "visibleNavs": 1,
+        "overflow": 0,
+        "title": "DemoPlayer01#DEMO",
+        "titleFontSize": "28px",
+        "titleBox": [
+          136,
+          339.296875,
+          244.5,
+          33.59375
+        ],
+        "blocks": [
+          {
+            "tag": "P",
+            "text": "Explore the full profile with sample stats. Live Riot data is not connected."
+          },
+          {
+            "tag": "H1",
+            "text": "DemoPlayer01#DEMO"
+          },
+          {
+            "tag": "P",
+            "text": "4 of 4 returned matches included. Fetched sample only, not a complete season. — means unavailable; it is not zero. Current rank/RR, KAST and Probe Score are not provided."
+          },
+          {
+            "tag": "P",
+            "text": "DemoPlayer01#DEMO · Times in UTC · Weapon filters select matches containing kills with that weapon."
+          },
+          {
+            "tag": "H2",
+            "text": "CURRENT RATING ⓘ"
+          },
+          {
+            "tag": "P",
+            "text": "Not provided —RRNot provided"
+          },
+          {
+            "tag": "H2",
+            "text": "ACCURACY Selected act"
+          },
+          {
+            "tag": "P",
+            "text": "Head16.9%"
+          },
+          {
+            "tag": "P",
+            "text": "Body66.3%"
+          },
+          {
+            "tag": "P",
+            "text": "Legs16.9%"
+          },
+          {
+            "tag": "H2",
+            "text": "ROLES"
+          },
+          {
+            "tag": "P",
+            "text": "KDA 1.1310 / 16 / 8"
+          },
+          {
+            "tag": "P",
+            "text": "KDA 1.6642 / 32 / 11"
+          },
+          {
+            "tag": "P",
+            "text": "KDA 2.1313 / 8 / 4"
+          },
+          {
+            "tag": "H2",
+            "text": "TOP WEAPONS"
+          },
+          {
+            "tag": "H2",
+            "text": "TOP MAPS"
+          },
+          {
+            "tag": "H2",
+            "text": "DEMO ACT COMPETITIVE OVERVIEW"
+          },
+          {
+            "tag": "P",
+            "text": "Rank history not provided"
+          },
+          {
+            "tag": "H2",
+            "text": "TOP AGENTS"
+          },
+          {
+            "tag": "H2",
+            "text": "LAST 20 MATCHES"
+          }
+        ],
+        "disabledButtons": [],
+        "mainText": "GP\nGAMEPROBE\nVALORANT\nPLAYER STATS\nLINEUPS\nMOCK PREVIEW\nConnect account\nV\nHome\nOverview\nLineups\nMatches\nPerformance\nAgents\nMaps\nWeapons\nMore\n!\nMock data preview\n\nExplore the full profile with sample stats. Live Riot data is not connected.\n\nDismiss\nJETT\nSave Profile\nMock Preview\nSynthetic API-shaped sample\nDemoPlayer01\n#DEMO\nOverview\nMatches\nPerformance\nAgents\nMaps\nWeapons\nLineups\nGP\nKNOW YOUR GAME.\nYOUR STATS. YOUR PROGRESS. YOUR NEXT WIN.\n❯❯❯\nA closer look at every match.\nExplore your performance\nPC\nConsole\nCompetitive\nPremier\nUnrated\nDeathmatch\nSwiftplay\nAll Acts\nAct\nAll Acts\nDemo Act\nSynthetic API-shaped sample\n\n4 of 4 returned matches included. Fetched sample only, not a complete season. — means unavailable; it is not zero. Current rank/RR, KAST and Probe Score are not provided.\n\nDemoPlayer01#DEMO · Times in UTC · Weapon filters select matches containing kills with that weapon.\n\nCURRENT RATING\nⓘ\nNot provided\n— RR\nNot provided\nPeak Rating\n\nNot provided —RR\nNot provided\n\nEVERY ROUND COUNTS.\nFind your next improvement.\nView performance\nACCURACY\nSelected act\n\nHead\n16.9%\n\nBody\n66.3%\n\nLegs\n16.9%\n\nAVG HS%\nROLES\n⌃\nController\nWR 0.0%\n0W - 1L\n\nKDA 1.13\n10 / 16 / 8\n\n✕\nDuelist\nWR 100.0%\n2W - 0L\n\nKDA 1.66\n42 / 32 / 11\n\n↗\nInitiator\nWR 100.0%\n1W - 0L\n\nKDA 2.13\n13 / 8 / 4\n\nTOP WEAPONS\nPhantom\nAssault Rifles\nHS\n—\nKills\n21\nVandal\nAssault Rifles\nHS\n—\nKills\n20\nGhost\nSidearms\nHS\n—\nKills\n19\nView All Weapons\nTOP MAPS\nAscent\n100%\n2W - 0L\nBind\n100%\n1W - 0L\nHaven\n0%\n0W - 1L\nView All Maps\nDEMO ACT COMPETITIVE OVERVIEW\n2.2h Playtime // 4 Matches\nShow More\nNot provided\n— RR\nNot provided\nLevel\n40\n3 W\n1 L\n\nRank history not provided\n\nDamage/Round\n95.4\nAverage damage\n•••\nK/D Ratio\n1.16\nKills / Deaths\n•••\nHeadshot %\n16.9%\nHeadshot accuracy\n•••\nWin %\n75.0%\n3 W · 1 L\n•••\nWins\n3\nKAST\n—\nDDΔ/Round\n+1\nKills\n65\nDeaths\n56\nAssists\n23\nACS\n174.9\nKAD Ratio\n1.57\nKills/Round\n0.73\nFirst Bloods\n—\nFlawless Rounds\n—\nAces\n—\n◈\nProbe Score\n— / 1,000\nNot available · definition pending\nRound Win %\n55.1%\n—\nKAST\n—\n—\nACS\n174.9\n—\nDDΔ/Round\n+1\n—\nTOP AGENTS\nView All Agents\nAgent\tMatches\tWin %\tK/D\tADR\tACS\tDDΔ\tBest Map\n\nJett\n1.2 hours\n\t2\t100.0%\t1.31\t111.9\t205.1\t+12\tAscent\n\nOmen\n0.6 hours\n\t1\t0.0%\t0.63\t65.5\t120.0\t-44\tHaven\n\nSova\n0.5 hours\n\t1\t100.0%\t1.63\t88.4\t162.1\t+25\tBind\nYour next win starts here.\nReview your matches, spot patterns, and track your progress.\nLAST 20 MATCHES\nAll Matches\nAgent\nAll Agents\nJett\nOmen\nSova\nMap\nAll Maps\nAscent\nBind\nHaven\nWeapon\nAll Weapons\nPhantom\nVandal\nGhost\nDate range\nAll Dates\nLast 7 days\nLast 30 days\n+ More\n3W - 1L (75%)\n1.16 K/D | 95 ADR\n4 matching games · latest 4\n2W - 0L (100%)\nK/D 1.31\n0W - 1L (0%)\nK/D 0.63\n1W - 0L (100%)\nK/D 1.63\nSep 20\n13 : 9\nK/D 1.6\nSep 19\n9 : 13\nK/D 0.6\nSep 18\n14 : 12\nK/D 1.1\nSep 17\n13 : 6\nK/D 1.6\nSep 20\n1\n1 W // 0 L\nK/D\n1.60\nDDΔ\n+35\nHS%\n16\nACS\n253\n00:00 UTC // Competitive\nAscent\nJett\n—\nScore\n13 : 9\n◈\nPS\n—\nK/D\n1.6\nK / D / A\n24 / 15 / 5\nDDΔ\n+35\nHS%\n16%\nACS\n253\nSep 19\n1\n0 W // 1 L\nK/D\n0.63\nDDΔ\n-44\nHS%\n14\nACS\n120\n00:00 UTC // Competitive\nHaven\nOmen\n—\nScore\n9 : 13\n◈\nPS\n—\nK/D\n0.6\nK / D / A\n10 / 16 / 8\nDDΔ\n-44\nHS%\n14%\nACS\n120\nSep 18\n1\n1 W // 0 L\nK/D\n1.06\nDDΔ\n-8\nHS%\n18\nACS\n165\n00:00 UTC // Competitive\nAscent\nJett\n—\nScore\n14 : 12\n◈\nPS\n—\nK/D\n1.1\nK / D / A\n18 / 17 / 6\nDDΔ\n-8\nHS%\n18%\nACS\n165\nSep 17\n1\n1 W // 0 L\nK/D\n1.63\nDDΔ\n+25\nHS%\n19\nACS\n162\n00:00 UTC // Competitive\nBind\nSova\n—\nScore\n13 : 6\n◈\nPS\n—\nK/D\n1.6\nK / D / A\n13 / 8 / 4\nDDΔ\n+25\nHS%\n19%\nACS\n162\nGameProbe\nMock profile preview · Not affiliated with Riot Games or Tracker Network.\nPrivacy\nTerms",
+        "http": 200,
+        "screenshot": "after-1440-new-profile.png",
+        "snapshotDigest": "20027d9d898d61cbb32cce3c5fe4783abb16a9acce05ad57c2f8886e1a66ef1d",
+        "snapshotElements": 747
+      },
+      "synthetic-detail": {
+        "mainCount": 1,
+        "visibleLegacyHeaders": 0,
+        "visibleFooters": 1,
+        "visibleNavs": 0,
+        "overflow": 0,
+        "titleFontSize": null,
+        "titleBox": null,
+        "blocks": [
+          {
+            "tag": "H3",
+            "text": "Ascent"
+          },
+          {
+            "tag": "P",
+            "text": "— 미제공 또는 분모 0 · PS/KAST와 랭크 명칭은 미제공입니다. ACS는 합성 score의 라운드 평균입니다."
+          }
+        ],
+        "disabledButtons": [],
+        "mainText": "← Demo profile\nCompetitive\nAscent\nTeam A\n13\n:\nTeam B\n9\n2026-09-20 · 00:00 UTC\n33m\nAverage Rank\n—\nMOCK DATA\nScoreboard\nPerformance\nEconomy\nRounds\nDuels\nTeam A\n13\nTeam B\n9\n◆\n·\n1\n·\n◆\n2\n◆\n·\n3\n·\n◆\n4\n◆\n·\n5\n·\n◆\n6\n◆\n·\n7\n·\n◆\n8\n◆\n·\n9\n·\n◆\n10\n◆\n·\n11\n·\n◆\n12\n◆\n·\n13\n·\n◆\n14\n◆\n·\n15\n·\n◆\n16\n◆\n·\n17\n·\n◆\n18\n◆\n·\n19\n◆\n·\n20\n◆\n·\n21\n◆\n·\n22\nTeam A · Avg. Rank: —\tMatch Rank\tPS\t▾ ACS\tK\tD\tA\t+/−\tK/D\tDDΔ\tADR\tHS%\tKAST\tFK\tFD\tMK\n\nDemoPlayer02 #DEMO\nOmen\n\t—\t—\t320\t17\t9\t60\t+8\t1.89\t+113.2\t174.5\t16.9%\t—\t0\t0\t2\n\nDemoPlayer01 #DEMO\nJett\nYOU\n\t—\t—\t252.5\t24\t15\t5\t+9\t1.60\t+35.5\t137.7\t16.4%\t—\t22\t0\t2\n\nDemoPlayer03 #DEMO\nSova\n\t—\t—\t160\t13\t9\t12\t+4\t1.44\t+25.9\t87.3\t16.3%\t—\t0\t0\t0\n\nDemoPlayer05 #DEMO\nRaze\n\t—\t—\t120\t12\t9\t0\t+3\t1.33\t+4.1\t65.5\t21.7%\t—\t0\t0\t0\n\nDemoPlayer04 #DEMO\nSage\n\t—\t—\t110\t11\t9\t0\t+2\t1.22\t-1.4\t60\t17.6%\t—\t0\t0\t0\nTeam B · Avg. Rank: —\tMatch Rank\tPS\t▾ ACS\tK\tD\tA\t+/−\tK/D\tDDΔ\tADR\tHS%\tKAST\tFK\tFD\tMK\n\nDemoPlayer07 #DEMO\nBrimstone\n\t—\t—\t222.5\t17\t15\t21\t+2\t1.13\t+19.1\t121.4\t17.8%\t—\t0\t0\t7\n\nDemoPlayer08 #DEMO\nSova\n\t—\t—\t167.5\t12\t14\t19\t-2\t0.86\t-4.1\t91.4\t16.9%\t—\t0\t0\t1\n\nDemoPlayer09 #DEMO\nSage\n\t—\t—\t137.5\t12\t13\t7\t-1\t0.92\t-13.6\t75\t13.9%\t—\t0\t0\t1\n\nDemoPlayer10 #DEMO\nCypher\n\t—\t—\t110\t10\t13\t4\t-3\t0.77\t-28.6\t60\t13.8%\t—\t0\t0\t1\n\nDemoPlayer06 #DEMO\nRaze\n\t—\t—\t0\t0\t22\t0\t-22\t0.00\t-150\t0\t—\t—\t0\t22\t0\n\n— 미제공 또는 분모 0 · PS/KAST와 랭크 명칭은 미제공입니다. ACS는 합성 score의 라운드 평균입니다.\n\n공식 API 사용 필드 형태의 합성 경기입니다. 실제 Riot 기록이 아니며 피해·경제·score는 단순화한 표본입니다. PS·KAST·현재 RR·무기별 HS·좌표·설치/해체는 미제공입니다.\n이 경기 새 탭에서 보기\n경기 링크 복사",
+        "http": 200,
+        "screenshot": "after-1440-synthetic-detail.png",
+        "snapshotDigest": "908d92e8e0d499e0038632b10563d2124d3c3ec7e8a622c155a1bf3bef300577",
+        "snapshotElements": 452
+      }
+    }
+  },
+  "checks": [
+    "1440 connect: HTTP 200",
+    "1440 connect: single main",
+    "1440 connect: document overflow 0",
+    "1440 connect: legacy header hidden",
+    "1440 connect: one visible shared navigation",
+    "1440 connect: one visible footer",
+    "1440 connect: title 28px",
+    "1440 connect: document reading width <= 920",
+    "1440 connect: home Search target",
+    "1440 connect: Overview targets legacy",
+    "1440 privacy: HTTP 200",
+    "1440 privacy: single main",
+    "1440 privacy: document overflow 0",
+    "1440 privacy: legacy header hidden",
+    "1440 privacy: one visible shared navigation",
+    "1440 privacy: one visible footer",
+    "1440 privacy: title 28px",
+    "1440 privacy: document reading width <= 920",
+    "1440 privacy: home Search target",
+    "1440 privacy: Overview targets legacy",
+    "1440 terms: HTTP 200",
+    "1440 terms: single main",
+    "1440 terms: document overflow 0",
+    "1440 terms: legacy header hidden",
+    "1440 terms: one visible shared navigation",
+    "1440 terms: one visible footer",
+    "1440 terms: title 28px",
+    "1440 terms: document reading width <= 920",
+    "1440 terms: home Search target",
+    "1440 terms: Overview targets legacy",
+    "1440 missing-legacy-match: HTTP 200",
+    "1440 missing-legacy-match: single main",
+    "1440 missing-legacy-match: document overflow 0",
+    "1440 missing-legacy-match: legacy header hidden",
+    "1440 missing-legacy-match: one visible shared navigation",
+    "1440 missing-legacy-match: one visible footer",
+    "1440 missing-legacy-match: title 28px",
+    "1440 missing-legacy-match: document reading width <= 920",
+    "1440 missing-legacy-match: home Search target",
+    "1440 missing-legacy-match: Overview targets legacy",
+    "1440 missing-legacy-match: return target",
+    "1440 missing-synthetic-match: HTTP 200",
+    "1440 missing-synthetic-match: single main",
+    "1440 missing-synthetic-match: document overflow 0",
+    "1440 missing-synthetic-match: legacy header hidden",
+    "1440 missing-synthetic-match: one visible shared navigation",
+    "1440 missing-synthetic-match: one visible footer",
+    "1440 missing-synthetic-match: title 28px",
+    "1440 missing-synthetic-match: document reading width <= 920",
+    "1440 missing-synthetic-match: home Search target",
+    "1440 missing-synthetic-match: Overview targets legacy",
+    "1440 missing-synthetic-match: return target",
+    "1440 missing-player: HTTP 200",
+    "1440 missing-player: single main",
+    "1440 missing-player: document overflow 0",
+    "1440 missing-player: legacy header hidden",
+    "1440 missing-player: one visible shared navigation",
+    "1440 missing-player: one visible footer",
+    "1440 missing-player: title 28px",
+    "1440 missing-player: document reading width <= 920",
+    "1440 missing-player: home Search target",
+    "1440 missing-player: Overview targets legacy",
+    "1440 missing-player: return target",
+    "1440 home: HTTP 200",
+    "1440 home: single main",
+    "1440 home: document overflow 0",
+    "1440 legacy-profile: HTTP 200",
+    "1440 legacy-profile: single main",
+    "1440 legacy-profile: document overflow 0",
+    "1440 new-profile: HTTP 200",
+    "1440 new-profile: single main",
+    "1440 new-profile: document overflow 0",
+    "1440 synthetic-detail: HTTP 200",
+    "1440 synthetic-detail: single main",
+    "1440 synthetic-detail: document overflow 0",
+    "1440: connect button remains disabled",
+    "1440: More opens",
+    "1440: Escape closes More",
+    "1440: Escape restores focus",
+    "1440: More Privacy navigates",
+    "1440: footer Terms navigates",
+    "1440: Search reaches home input",
+    "1440: Search input in viewport",
+    "390 connect: HTTP 200",
+    "390 connect: single main",
+    "390 connect: document overflow 0",
+    "390 connect: legacy header hidden",
+    "390 connect: one visible shared navigation",
+    "390 connect: one visible footer",
+    "390 connect: title 28px",
+    "390 connect: document reading width <= 920",
+    "390 connect: home Search target",
+    "390 privacy: HTTP 200",
+    "390 privacy: single main",
+    "390 privacy: document overflow 0",
+    "390 privacy: legacy header hidden",
+    "390 privacy: one visible shared navigation",
+    "390 privacy: one visible footer",
+    "390 privacy: title 28px",
+    "390 privacy: document reading width <= 920",
+    "390 privacy: home Search target",
+    "390 terms: HTTP 200",
+    "390 terms: single main",
+    "390 terms: document overflow 0",
+    "390 terms: legacy header hidden",
+    "390 terms: one visible shared navigation",
+    "390 terms: one visible footer",
+    "390 terms: title 28px",
+    "390 terms: document reading width <= 920",
+    "390 terms: home Search target",
+    "390 missing-legacy-match: HTTP 200",
+    "390 missing-legacy-match: single main",
+    "390 missing-legacy-match: document overflow 0",
+    "390 missing-legacy-match: legacy header hidden",
+    "390 missing-legacy-match: one visible shared navigation",
+    "390 missing-legacy-match: one visible footer",
+    "390 missing-legacy-match: title 28px",
+    "390 missing-legacy-match: document reading width <= 920",
+    "390 missing-legacy-match: home Search target",
+    "390 missing-legacy-match: return target",
+    "390 missing-synthetic-match: HTTP 200",
+    "390 missing-synthetic-match: single main",
+    "390 missing-synthetic-match: document overflow 0",
+    "390 missing-synthetic-match: legacy header hidden",
+    "390 missing-synthetic-match: one visible shared navigation",
+    "390 missing-synthetic-match: one visible footer",
+    "390 missing-synthetic-match: title 28px",
+    "390 missing-synthetic-match: document reading width <= 920",
+    "390 missing-synthetic-match: home Search target",
+    "390 missing-synthetic-match: return target",
+    "390 missing-player: HTTP 200",
+    "390 missing-player: single main",
+    "390 missing-player: document overflow 0",
+    "390 missing-player: legacy header hidden",
+    "390 missing-player: one visible shared navigation",
+    "390 missing-player: one visible footer",
+    "390 missing-player: title 28px",
+    "390 missing-player: document reading width <= 920",
+    "390 missing-player: home Search target",
+    "390 missing-player: return target",
+    "390 home: HTTP 200",
+    "390 home: single main",
+    "390 home: document overflow 0",
+    "390 legacy-profile: HTTP 200",
+    "390 legacy-profile: single main",
+    "390 legacy-profile: document overflow 0",
+    "390 new-profile: HTTP 200",
+    "390 new-profile: single main",
+    "390 new-profile: document overflow 0",
+    "390 synthetic-detail: HTTP 200",
+    "390 synthetic-detail: single main",
+    "390 synthetic-detail: document overflow 0",
+    "390: connect button remains disabled",
+    "390: More opens",
+    "390: Escape closes More",
+    "390: Escape restores focus",
+    "390: More Privacy navigates",
+    "390: footer Terms navigates",
+    "390: Search reaches home input",
+    "390: Search input in viewport",
+    "no page errors",
+    "1440 connect: original text blocks exactly preserved",
+    "1440 connect: disabled state exactly preserved",
+    "1440 privacy: original text blocks exactly preserved",
+    "1440 privacy: disabled state exactly preserved",
+    "1440 terms: original text blocks exactly preserved",
+    "1440 terms: disabled state exactly preserved",
+    "1440 home: DOM/style/geometry unchanged",
+    "1440 legacy-profile: DOM/style/geometry unchanged",
+    "1440 new-profile: DOM/style/geometry unchanged",
+    "1440 synthetic-detail: DOM/style/geometry unchanged",
+    "390 connect: original text blocks exactly preserved",
+    "390 connect: disabled state exactly preserved",
+    "390 privacy: original text blocks exactly preserved",
+    "390 privacy: disabled state exactly preserved",
+    "390 terms: original text blocks exactly preserved",
+    "390 terms: disabled state exactly preserved",
+    "390 home: DOM/style/geometry unchanged",
+    "390 legacy-profile: DOM/style/geometry unchanged",
+    "390 new-profile: DOM/style/geometry unchanged",
+    "390 synthetic-detail: DOM/style/geometry unchanged"
+  ],
+  "errors": [],
+  "comparison": {
+    "1440-home": "DOM/style/geometry unchanged",
+    "1440-legacy-profile": "DOM/style/geometry unchanged",
+    "1440-new-profile": "DOM/style/geometry unchanged",
+    "1440-synthetic-detail": "DOM/style/geometry unchanged",
+    "390-home": "DOM/style/geometry unchanged",
+    "390-legacy-profile": "DOM/style/geometry unchanged",
+    "390-new-profile": "DOM/style/geometry unchanged",
+    "390-synthetic-detail": "DOM/style/geometry unchanged"
+  },
+  "status": "PASS"
+}

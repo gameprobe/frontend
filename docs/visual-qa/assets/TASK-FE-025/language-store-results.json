@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "scope": "Actual locale.tsx external-store functions; mocked React hook registration and browser storage; no React rendering",
+  "checks": [
+    "server snapshot is always Korean",
+    "first browser snapshot reads English",
+    "multiple consumers share one storage listener",
+    "remaining consumer keeps listener",
+    "last consumer removes listener",
+    "no consumer means no storage callback",
+    "first returning consumer rereads external Korean choice",
+    "returning consumer notified of changed choice",
+    "later return rereads external English choice",
+    "failed write preserves memory English",
+    "storage remains old Korean after failure",
+    "resubscribe never overwrites session choice with stale storage",
+    "blocked read on resubscribe retains session choice",
+    "successful write persists choice",
+    "successful write exits session-only mode and resubscribe rereads storage",
+    "invalid initial storage defaults Korean",
+    "invalid external storage on returning consumer defaults Korean",
+    "storage event updates English",
+    "unrelated key does not change locale",
+    "different storage area ignored",
+    "storage clear resets Korean",
+    "blocked initial subscription read does not throw"
+  ]
+}

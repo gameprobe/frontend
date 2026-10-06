@@ -1,0 +1,82 @@
+[
+  {
+    "route": "/",
+    "locale": "ko",
+    "passed": true
+  },
+  {
+    "route": "/players/demo-player-01",
+    "locale": "ko",
+    "passed": true
+  },
+  {
+    "route": "/matches/demo-match-001",
+    "locale": "ko",
+    "passed": true
+  },
+  {
+    "route": "/connect",
+    "locale": "ko",
+    "passed": true
+  },
+  {
+    "route": "/privacy",
+    "locale": "ko",
+    "passed": true
+  },
+  {
+    "route": "/terms",
+    "locale": "ko",
+    "passed": true
+  },
+  {
+    "route": "/lineups",
+    "locale": "ko",
+    "passed": true
+  },
+  {
+    "route": "/smokes",
+    "locale": "ko",
+    "passed": true
+  },
+  {
+    "route": "/",
+    "locale": "en",
+    "passed": true
+  },
+  {
+    "route": "/players/demo-player-01",
+    "locale": "en",
+    "passed": true
+  },
+  {
+    "route": "/matches/demo-match-001",
+    "locale": "en",
+    "passed": true
+  },
+  {
+    "route": "/connect",
+    "locale": "en",
+    "passed": true
+  },
+  {
+    "route": "/privacy",
+    "locale": "en",
+    "passed": true
+  },
+  {
+    "route": "/terms",
+    "locale": "en",
+    "passed": true
+  },
+  {
+    "route": "/lineups",
+    "locale": "en",
+    "passed": true
+  },
+  {
+    "route": "/smokes",
+    "locale": "en",
+    "passed": true
+  }
+]

@@ -1,0 +1,1472 @@
+{
+  "checks": [
+    "/lineups: HTTP200",
+    "1440: map index contains12",
+    "1440 lineup index: no global overflow",
+    "1440 lineup index: one main",
+    "1440 lineup index: one common header",
+    "1440 lineup index: one visible footer",
+    "1440 lineup index: core supporting text >=12px",
+    "1440: no initial skill pin",
+    "1440 lineup attack: map rotation",
+    "1440 skill target rotation",
+    "1440: path hidden before target selection",
+    "1440: shared ability reveals two candidates",
+    "1440: ambiguous candidates have no automatic path",
+    "1440 second candidate path exact",
+    "1440 lineup selected: no global overflow",
+    "1440 lineup selected: one main",
+    "1440 lineup selected: one common header",
+    "1440 lineup selected: one visible footer",
+    "1440 lineup selected: core supporting text >=12px",
+    "1440: skill filter clears active candidates",
+    "1440: unique Q candidate opens path",
+    "1440 Q path exact",
+    "1440: selected ability detail link retained",
+    "1440 lineup defense: map rotation",
+    "1440: side change clears path",
+    "1440: unmatched Q defense has no skill pin",
+    "1440 defense skill coordinates",
+    "1440 defense path exact",
+    "1440: inline map picker has12",
+    "1440: map change clears agent selection",
+    "1440: map change clears skill/path",
+    "1440: alternate map/agent fixture available",
+    "/smokes: HTTP200",
+    "1440: smoke map index contains12",
+    "1440 smoke index: no global overflow",
+    "1440 smoke index: one main",
+    "1440 smoke index: one common header",
+    "1440 smoke index: one visible footer",
+    "1440 smoke index: core supporting text >=12px",
+    "1440: common smoke initial guide count",
+    "1440: smoke path initially hidden",
+    "1440 smoke attack: map rotation",
+    "1440 common smoke target coordinates",
+    "1440 common smoke thrower coordinates",
+    "1440 common smoke exact path",
+    "1440: guide steps3",
+    "1440: comparison data has6agents",
+    "1440 smoke selected: no global overflow",
+    "1440 smoke selected: one main",
+    "1440 smoke selected: one common header",
+    "1440 smoke selected: one visible footer",
+    "1440 smoke selected: core supporting text >=12px",
+    "1440: unmatched site empties guide list",
+    "1440: empty site message",
+    "1440: site change hides paths",
+    "1440: harbor guide count",
+    "1440: type change resets selection",
+    "1440: harbor wall line visible",
+    "1440 harbor attack: map rotation",
+    "1440 harbor attack target exact",
+    "1440 harbor attack thrower exact",
+    "1440 harbor attack wall exact",
+    "1440 smoke harbor: no global overflow",
+    "1440 smoke harbor: one main",
+    "1440 smoke harbor: one common header",
+    "1440 smoke harbor: one visible footer",
+    "1440 smoke harbor: core supporting text >=12px",
+    "1440: defense resets smoke selection",
+    "1440 smoke defense: map rotation",
+    "1440: defense harbor line visible",
+    "1440 harbor defense target exact",
+    "1440 harbor defense thrower exact",
+    "1440 harbor defense wall exact",
+    "1440 common defense target exact",
+    "1440 common defense thrower exact",
+    "1440: map change restores common-circle",
+    "1440: map change clears selected guide",
+    "1440: active route Smokes",
+    "1440: common Language works",
+    "1440: Korean explorer content marks its language",
+    "1440: explorer cross-navigation",
+    "1440: Search reaches home input",
+    "/lineups: HTTP200",
+    "820: map index contains12",
+    "820 lineup index: no global overflow",
+    "820 lineup index: one main",
+    "820 lineup index: one common header",
+    "820 lineup index: one visible footer",
+    "820 lineup index: core supporting text >=12px",
+    "820: no initial skill pin",
+    "820 lineup attack: map rotation",
+    "820 skill target rotation",
+    "820: path hidden before target selection",
+    "820: shared ability reveals two candidates",
+    "820: ambiguous candidates have no automatic path",
+    "820 second candidate path exact",
+    "820 lineup selected: no global overflow",
+    "820 lineup selected: one main",
+    "820 lineup selected: one common header",
+    "820 lineup selected: one visible footer",
+    "820 lineup selected: core supporting text >=12px",
+    "820: skill filter clears active candidates",
+    "820: unique Q candidate opens path",
+    "820 Q path exact",
+    "820: selected ability detail link retained",
+    "820 lineup defense: map rotation",
+    "820: side change clears path",
+    "820: unmatched Q defense has no skill pin",
+    "820 defense skill coordinates",
+    "820 defense path exact",
+    "820: inline map picker has12",
+    "820: map change clears agent selection",
+    "820: map change clears skill/path",
+    "820: alternate map/agent fixture available",
+    "/smokes: HTTP200",
+    "820: smoke map index contains12",
+    "820 smoke index: no global overflow",
+    "820 smoke index: one main",
+    "820 smoke index: one common header",
+    "820 smoke index: one visible footer",
+    "820 smoke index: core supporting text >=12px",
+    "820: common smoke initial guide count",
+    "820: smoke path initially hidden",
+    "820 smoke attack: map rotation",
+    "820 common smoke target coordinates",
+    "820 common smoke thrower coordinates",
+    "820 common smoke exact path",
+    "820: guide steps3",
+    "820: comparison data has6agents",
+    "820 smoke selected: no global overflow",
+    "820 smoke selected: one main",
+    "820 smoke selected: one common header",
+    "820 smoke selected: one visible footer",
+    "820 smoke selected: core supporting text >=12px",
+    "820: unmatched site empties guide list",
+    "820: empty site message",
+    "820: site change hides paths",
+    "820: harbor guide count",
+    "820: type change resets selection",
+    "820: harbor wall line visible",
+    "820 harbor attack: map rotation",
+    "820 harbor attack target exact",
+    "820 harbor attack thrower exact",
+    "820 harbor attack wall exact",
+    "820 smoke harbor: no global overflow",
+    "820 smoke harbor: one main",
+    "820 smoke harbor: one common header",
+    "820 smoke harbor: one visible footer",
+    "820 smoke harbor: core supporting text >=12px",
+    "820: defense resets smoke selection",
+    "820 smoke defense: map rotation",
+    "820: defense harbor line visible",
+    "820 harbor defense target exact",
+    "820 harbor defense thrower exact",
+    "820 harbor defense wall exact",
+    "820 common defense target exact",
+    "820 common defense thrower exact",
+    "820: map change restores common-circle",
+    "820: map change clears selected guide",
+    "820: active route Smokes",
+    "820: common Language works",
+    "820: Korean explorer content marks its language",
+    "820: explorer cross-navigation",
+    "820: Search reaches home input",
+    "/lineups: HTTP200",
+    "390: map index contains12",
+    "390 lineup index: no global overflow",
+    "390 lineup index: one main",
+    "390 lineup index: one common header",
+    "390 lineup index: one visible footer",
+    "390 lineup index: core supporting text >=12px",
+    "390: no initial skill pin",
+    "390 lineup attack: map rotation",
+    "390 skill target rotation",
+    "390: path hidden before target selection",
+    "390: shared ability reveals two candidates",
+    "390: ambiguous candidates have no automatic path",
+    "390 second candidate path exact",
+    "390 lineup selected: no global overflow",
+    "390 lineup selected: one main",
+    "390 lineup selected: one common header",
+    "390 lineup selected: one visible footer",
+    "390 lineup selected: core supporting text >=12px",
+    "390: skill filter clears active candidates",
+    "390: unique Q candidate opens path",
+    "390 Q path exact",
+    "390: selected ability detail link retained",
+    "390 lineup defense: map rotation",
+    "390: side change clears path",
+    "390: unmatched Q defense has no skill pin",
+    "390 defense skill coordinates",
+    "390 defense path exact",
+    "390: inline map picker has12",
+    "390: map change clears agent selection",
+    "390: map change clears skill/path",
+    "390: alternate map/agent fixture available",
+    "/smokes: HTTP200",
+    "390: smoke map index contains12",
+    "390 smoke index: no global overflow",
+    "390 smoke index: one main",
+    "390 smoke index: one common header",
+    "390 smoke index: one visible footer",
+    "390 smoke index: core supporting text >=12px",
+    "390: common smoke initial guide count",
+    "390: smoke path initially hidden",
+    "390 smoke attack: map rotation",
+    "390 common smoke target coordinates",
+    "390 common smoke thrower coordinates",
+    "390 common smoke exact path",
+    "390: guide steps3",
+    "390: comparison data has6agents",
+    "390 smoke selected: no global overflow",
+    "390 smoke selected: one main",
+    "390 smoke selected: one common header",
+    "390 smoke selected: one visible footer",
+    "390 smoke selected: core supporting text >=12px",
+    "390: unmatched site empties guide list",
+    "390: empty site message",
+    "390: site change hides paths",
+    "390: harbor guide count",
+    "390: type change resets selection",
+    "390: harbor wall line visible",
+    "390 harbor attack: map rotation",
+    "390 harbor attack target exact",
+    "390 harbor attack thrower exact",
+    "390 harbor attack wall exact",
+    "390 smoke harbor: no global overflow",
+    "390 smoke harbor: one main",
+    "390 smoke harbor: one common header",
+    "390 smoke harbor: one visible footer",
+    "390 smoke harbor: core supporting text >=12px",
+    "390: defense resets smoke selection",
+    "390 smoke defense: map rotation",
+    "390: defense harbor line visible",
+    "390 harbor defense target exact",
+    "390 harbor defense thrower exact",
+    "390 harbor defense wall exact",
+    "390 common defense target exact",
+    "390 common defense thrower exact",
+    "390: map change restores common-circle",
+    "390: map change clears selected guide",
+    "390: active route Smokes",
+    "390: common Language works",
+    "390: Korean explorer content marks its language",
+    "390: explorer cross-navigation",
+    "390: Search reaches home input",
+    "/lineups: HTTP200",
+    "empty: skill pin count",
+    "empty controlled API: no global overflow",
+    "empty controlled API: one main",
+    "empty controlled API: one common header",
+    "empty controlled API: one visible footer",
+    "empty controlled API: core supporting text >=12px",
+    "/lineups: HTTP200",
+    "failure: skill pin count",
+    "failure controlled API: no global overflow",
+    "failure controlled API: one main",
+    "failure controlled API: one common header",
+    "failure controlled API: one visible footer",
+    "failure controlled API: core supporting text >=12px",
+    "No page errors",
+    "No unexpected console errors"
+  ],
+  "layouts": [
+    {
+      "label": "1440 lineup index",
+      "overflow": 0,
+      "mainCount": 1,
+      "headers": 1,
+      "footers": 1,
+      "fonts": []
+    },
+    {
+      "label": "1440 lineup selected",
+      "overflow": 0,
+      "mainCount": 1,
+      "headers": 1,
+      "footers": 1,
+      "fonts": [
+        {
+          "text": "맵 변경",
+          "size": 12
+        },
+        {
+          "text": "요원 선택",
+          "size": 14
+        },
+        {
+          "text": "스킬 종류",
+          "size": 14
+        },
+        {
+          "text": "C",
+          "size": 12
+        },
+        {
+          "text": "Q",
+          "size": 12
+        },
+        {
+          "text": "E",
+          "size": 12
+        },
+        {
+          "text": "궁극기",
+          "size": 12
+        },
+        {
+          "text": " 시작 위치",
+          "size": 12
+        },
+        {
+          "text": " 스킬 도착 위치",
+          "size": 12
+        },
+        {
+          "text": " 투사 경로",
+          "size": 12
+        }
+      ]
+    },
+    {
+      "label": "1440 smoke index",
+      "overflow": 0,
+      "mainCount": 1,
+      "headers": 1,
+      "footers": 1,
+      "fonts": []
+    },
+    {
+      "label": "1440 smoke selected",
+      "overflow": 0,
+      "mainCount": 1,
+      "headers": 1,
+      "footers": 1,
+      "fonts": [
+        {
+          "text": "맵 변경",
+          "size": 12
+        },
+        {
+          "text": "진영",
+          "size": 14
+        },
+        {
+          "text": "요원별 연막 비교",
+          "size": 14
+        },
+        {
+          "text": "요원",
+          "size": 12
+        },
+        {
+          "text": "크기",
+          "size": 12
+        },
+        {
+          "text": "지속",
+          "size": 12
+        },
+        {
+          "text": "Omen",
+          "size": 12
+        },
+        {
+          "text": "4.5m 반경",
+          "size": 12
+        },
+        {
+          "text": "15초",
+          "size": 12
+        },
+        {
+          "text": "Brimstone",
+          "size": 12
+        },
+        {
+          "text": "5m 반경",
+          "size": 12
+        },
+        {
+          "text": "19초",
+          "size": 12
+        },
+        {
+          "text": "Astra",
+          "size": 12
+        },
+        {
+          "text": "4.75m 반경",
+          "size": 12
+        },
+        {
+          "text": "14초",
+          "size": 12
+        },
+        {
+          "text": "Clove",
+          "size": 12
+        },
+        {
+          "text": "4.75m 반경",
+          "size": 12
+        },
+        {
+          "text": "14초",
+          "size": 12
+        },
+        {
+          "text": "Harbor",
+          "size": 12
+        },
+        {
+          "text": "4m 반경 + 벽",
+          "size": 12
+        },
+        {
+          "text": "4.5초 / 벽 12초",
+          "size": 12
+        },
+        {
+          "text": "Miks",
+          "size": 12
+        },
+        {
+          "text": "4.5m 반경",
+          "size": 12
+        },
+        {
+          "text": "12초",
+          "size": 12
+        },
+        {
+          "text": "Viper 전용 연막 라인업은 라인업 페이지에서 확인하고, Smoke에서는 나머지 공통 연막과 Harbor 일자 연막을 안내합니다.",
+          "size": 12
+        },
+        {
+          "text": "사이트",
+          "size": 14
+        },
+        {
+          "text": "연막 유형",
+          "size": 14
+        },
+        {
+          "text": " 연막 도착 위치",
+          "size": 12
+        },
+        {
+          "text": " 투척 위치",
+          "size": 12
+        },
+        {
+          "text": " 투사 경로",
+          "size": 12
+        },
+        {
+          "text": "모든 요원 (Viper 제외) · 공통 원형",
+          "size": 12
+        },
+        {
+          "text": "Preview · 패치 검증 필요",
+          "size": 12
+        }
+      ]
+    },
+    {
+      "label": "1440 smoke harbor",
+      "overflow": 0,
+      "mainCount": 1,
+      "headers": 1,
+      "footers": 1,
+      "fonts": [
+        {
+          "text": "맵 변경",
+          "size": 12
+        },
+        {
+          "text": "진영",
+          "size": 14
+        },
+        {
+          "text": "요원별 연막 비교",
+          "size": 14
+        },
+        {
+          "text": "요원",
+          "size": 12
+        },
+        {
+          "text": "크기",
+          "size": 12
+        },
+        {
+          "text": "지속",
+          "size": 12
+        },
+        {
+          "text": "Omen",
+          "size": 12
+        },
+        {
+          "text": "4.5m 반경",
+          "size": 12
+        },
+        {
+          "text": "15초",
+          "size": 12
+        },
+        {
+          "text": "Brimstone",
+          "size": 12
+        },
+        {
+          "text": "5m 반경",
+          "size": 12
+        },
+        {
+          "text": "19초",
+          "size": 12
+        },
+        {
+          "text": "Astra",
+          "size": 12
+        },
+        {
+          "text": "4.75m 반경",
+          "size": 12
+        },
+        {
+          "text": "14초",
+          "size": 12
+        },
+        {
+          "text": "Clove",
+          "size": 12
+        },
+        {
+          "text": "4.75m 반경",
+          "size": 12
+        },
+        {
+          "text": "14초",
+          "size": 12
+        },
+        {
+          "text": "Harbor",
+          "size": 12
+        },
+        {
+          "text": "4m 반경 + 벽",
+          "size": 12
+        },
+        {
+          "text": "4.5초 / 벽 12초",
+          "size": 12
+        },
+        {
+          "text": "Miks",
+          "size": 12
+        },
+        {
+          "text": "4.5m 반경",
+          "size": 12
+        },
+        {
+          "text": "12초",
+          "size": 12
+        },
+        {
+          "text": "Viper 전용 연막 라인업은 라인업 페이지에서 확인하고, Smoke에서는 나머지 공통 연막과 Harbor 일자 연막을 안내합니다.",
+          "size": 12
+        },
+        {
+          "text": "사이트",
+          "size": 14
+        },
+        {
+          "text": "연막 유형",
+          "size": 14
+        },
+        {
+          "text": " 연막 도착 위치",
+          "size": 12
+        },
+        {
+          "text": " 투척 위치",
+          "size": 12
+        },
+        {
+          "text": " 투사 경로",
+          "size": 12
+        },
+        {
+          "text": "Harbor · 일자 연막",
+          "size": 12
+        },
+        {
+          "text": "Preview · 패치 검증 필요",
+          "size": 12
+        }
+      ]
+    },
+    {
+      "label": "820 lineup index",
+      "overflow": 0,
+      "mainCount": 1,
+      "headers": 1,
+      "footers": 1,
+      "fonts": []
+    },
+    {
+      "label": "820 lineup selected",
+      "overflow": 0,
+      "mainCount": 1,
+      "headers": 1,
+      "footers": 1,
+      "fonts": [
+        {
+          "text": "맵 변경",
+          "size": 12
+        },
+        {
+          "text": "요원 선택",
+          "size": 14
+        },
+        {
+          "text": "스킬 종류",
+          "size": 14
+        },
+        {
+          "text": "C",
+          "size": 12
+        },
+        {
+          "text": "Q",
+          "size": 12
+        },
+        {
+          "text": "E",
+          "size": 12
+        },
+        {
+          "text": "궁극기",
+          "size": 12
+        },
+        {
+          "text": " 시작 위치",
+          "size": 12
+        },
+        {
+          "text": " 스킬 도착 위치",
+          "size": 12
+        },
+        {
+          "text": " 투사 경로",
+          "size": 12
+        }
+      ]
+    },
+    {
+      "label": "820 smoke index",
+      "overflow": 0,
+      "mainCount": 1,
+      "headers": 1,
+      "footers": 1,
+      "fonts": []
+    },
+    {
+      "label": "820 smoke selected",
+      "overflow": 0,
+      "mainCount": 1,
+      "headers": 1,
+      "footers": 1,
+      "fonts": [
+        {
+          "text": "맵 변경",
+          "size": 12
+        },
+        {
+          "text": "진영",
+          "size": 14
+        },
+        {
+          "text": "요원별 연막 비교",
+          "size": 14
+        },
+        {
+          "text": "요원",
+          "size": 12
+        },
+        {
+          "text": "크기",
+          "size": 12
+        },
+        {
+          "text": "지속",
+          "size": 12
+        },
+        {
+          "text": "Omen",
+          "size": 12
+        },
+        {
+          "text": "4.5m 반경",
+          "size": 12
+        },
+        {
+          "text": "15초",
+          "size": 12
+        },
+        {
+          "text": "Brimstone",
+          "size": 12
+        },
+        {
+          "text": "5m 반경",
+          "size": 12
+        },
+        {
+          "text": "19초",
+          "size": 12
+        },
+        {
+          "text": "Astra",
+          "size": 12
+        },
+        {
+          "text": "4.75m 반경",
+          "size": 12
+        },
+        {
+          "text": "14초",
+          "size": 12
+        },
+        {
+          "text": "Clove",
+          "size": 12
+        },
+        {
+          "text": "4.75m 반경",
+          "size": 12
+        },
+        {
+          "text": "14초",
+          "size": 12
+        },
+        {
+          "text": "Harbor",
+          "size": 12
+        },
+        {
+          "text": "4m 반경 + 벽",
+          "size": 12
+        },
+        {
+          "text": "4.5초 / 벽 12초",
+          "size": 12
+        },
+        {
+          "text": "Miks",
+          "size": 12
+        },
+        {
+          "text": "4.5m 반경",
+          "size": 12
+        },
+        {
+          "text": "12초",
+          "size": 12
+        },
+        {
+          "text": "Viper 전용 연막 라인업은 라인업 페이지에서 확인하고, Smoke에서는 나머지 공통 연막과 Harbor 일자 연막을 안내합니다.",
+          "size": 12
+        },
+        {
+          "text": "사이트",
+          "size": 14
+        },
+        {
+          "text": "연막 유형",
+          "size": 14
+        },
+        {
+          "text": " 연막 도착 위치",
+          "size": 12
+        },
+        {
+          "text": " 투척 위치",
+          "size": 12
+        },
+        {
+          "text": " 투사 경로",
+          "size": 12
+        },
+        {
+          "text": "모든 요원 (Viper 제외) · 공통 원형",
+          "size": 12
+        },
+        {
+          "text": "Preview · 패치 검증 필요",
+          "size": 12
+        }
+      ]
+    },
+    {
+      "label": "820 smoke harbor",
+      "overflow": 0,
+      "mainCount": 1,
+      "headers": 1,
+      "footers": 1,
+      "fonts": [
+        {
+          "text": "맵 변경",
+          "size": 12
+        },
+        {
+          "text": "진영",
+          "size": 14
+        },
+        {
+          "text": "요원별 연막 비교",
+          "size": 14
+        },
+        {
+          "text": "요원",
+          "size": 12
+        },
+        {
+          "text": "크기",
+          "size": 12
+        },
+        {
+          "text": "지속",
+          "size": 12
+        },
+        {
+          "text": "Omen",
+          "size": 12
+        },
+        {
+          "text": "4.5m 반경",
+          "size": 12
+        },
+        {
+          "text": "15초",
+          "size": 12
+        },
+        {
+          "text": "Brimstone",
+          "size": 12
+        },
+        {
+          "text": "5m 반경",
+          "size": 12
+        },
+        {
+          "text": "19초",
+          "size": 12
+        },
+        {
+          "text": "Astra",
+          "size": 12
+        },
+        {
+          "text": "4.75m 반경",
+          "size": 12
+        },
+        {
+          "text": "14초",
+          "size": 12
+        },
+        {
+          "text": "Clove",
+          "size": 12
+        },
+        {
+          "text": "4.75m 반경",
+          "size": 12
+        },
+        {
+          "text": "14초",
+          "size": 12
+        },
+        {
+          "text": "Harbor",
+          "size": 12
+        },
+        {
+          "text": "4m 반경 + 벽",
+          "size": 12
+        },
+        {
+          "text": "4.5초 / 벽 12초",
+          "size": 12
+        },
+        {
+          "text": "Miks",
+          "size": 12
+        },
+        {
+          "text": "4.5m 반경",
+          "size": 12
+        },
+        {
+          "text": "12초",
+          "size": 12
+        },
+        {
+          "text": "Viper 전용 연막 라인업은 라인업 페이지에서 확인하고, Smoke에서는 나머지 공통 연막과 Harbor 일자 연막을 안내합니다.",
+          "size": 12
+        },
+        {
+          "text": "사이트",
+          "size": 14
+        },
+        {
+          "text": "연막 유형",
+          "size": 14
+        },
+        {
+          "text": " 연막 도착 위치",
+          "size": 12
+        },
+        {
+          "text": " 투척 위치",
+          "size": 12
+        },
+        {
+          "text": " 투사 경로",
+          "size": 12
+        },
+        {
+          "text": "Harbor · 일자 연막",
+          "size": 12
+        },
+        {
+          "text": "Preview · 패치 검증 필요",
+          "size": 12
+        }
+      ]
+    },
+    {
+      "label": "390 lineup index",
+      "overflow": 0,
+      "mainCount": 1,
+      "headers": 1,
+      "footers": 1,
+      "fonts": []
+    },
+    {
+      "label": "390 lineup selected",
+      "overflow": 0,
+      "mainCount": 1,
+      "headers": 1,
+      "footers": 1,
+      "fonts": [
+        {
+          "text": "맵 변경",
+          "size": 12
+        },
+        {
+          "text": "요원 선택",
+          "size": 14
+        },
+        {
+          "text": "스킬 종류",
+          "size": 14
+        },
+        {
+          "text": "C",
+          "size": 12
+        },
+        {
+          "text": "Q",
+          "size": 12
+        },
+        {
+          "text": "E",
+          "size": 12
+        },
+        {
+          "text": "궁극기",
+          "size": 12
+        },
+        {
+          "text": " 시작 위치",
+          "size": 12
+        },
+        {
+          "text": " 스킬 도착 위치",
+          "size": 12
+        },
+        {
+          "text": " 투사 경로",
+          "size": 12
+        }
+      ]
+    },
+    {
+      "label": "390 smoke index",
+      "overflow": 0,
+      "mainCount": 1,
+      "headers": 1,
+      "footers": 1,
+      "fonts": []
+    },
+    {
+      "label": "390 smoke selected",
+      "overflow": 0,
+      "mainCount": 1,
+      "headers": 1,
+      "footers": 1,
+      "fonts": [
+        {
+          "text": "맵 변경",
+          "size": 12
+        },
+        {
+          "text": "진영",
+          "size": 14
+        },
+        {
+          "text": "요원별 연막 비교",
+          "size": 14
+        },
+        {
+          "text": "요원",
+          "size": 12
+        },
+        {
+          "text": "크기",
+          "size": 12
+        },
+        {
+          "text": "지속",
+          "size": 12
+        },
+        {
+          "text": "Omen",
+          "size": 12
+        },
+        {
+          "text": "4.5m 반경",
+          "size": 12
+        },
+        {
+          "text": "15초",
+          "size": 12
+        },
+        {
+          "text": "Brimstone",
+          "size": 12
+        },
+        {
+          "text": "5m 반경",
+          "size": 12
+        },
+        {
+          "text": "19초",
+          "size": 12
+        },
+        {
+          "text": "Astra",
+          "size": 12
+        },
+        {
+          "text": "4.75m 반경",
+          "size": 12
+        },
+        {
+          "text": "14초",
+          "size": 12
+        },
+        {
+          "text": "Clove",
+          "size": 12
+        },
+        {
+          "text": "4.75m 반경",
+          "size": 12
+        },
+        {
+          "text": "14초",
+          "size": 12
+        },
+        {
+          "text": "Harbor",
+          "size": 12
+        },
+        {
+          "text": "4m 반경 + 벽",
+          "size": 12
+        },
+        {
+          "text": "4.5초 / 벽 12초",
+          "size": 12
+        },
+        {
+          "text": "Miks",
+          "size": 12
+        },
+        {
+          "text": "4.5m 반경",
+          "size": 12
+        },
+        {
+          "text": "12초",
+          "size": 12
+        },
+        {
+          "text": "Viper 전용 연막 라인업은 라인업 페이지에서 확인하고, Smoke에서는 나머지 공통 연막과 Harbor 일자 연막을 안내합니다.",
+          "size": 12
+        },
+        {
+          "text": "사이트",
+          "size": 14
+        },
+        {
+          "text": "연막 유형",
+          "size": 14
+        },
+        {
+          "text": " 연막 도착 위치",
+          "size": 12
+        },
+        {
+          "text": " 투척 위치",
+          "size": 12
+        },
+        {
+          "text": " 투사 경로",
+          "size": 12
+        },
+        {
+          "text": "모든 요원 (Viper 제외) · 공통 원형",
+          "size": 12
+        },
+        {
+          "text": "Preview · 패치 검증 필요",
+          "size": 12
+        }
+      ]
+    },
+    {
+      "label": "390 smoke harbor",
+      "overflow": 0,
+      "mainCount": 1,
+      "headers": 1,
+      "footers": 1,
+      "fonts": [
+        {
+          "text": "맵 변경",
+          "size": 12
+        },
+        {
+          "text": "진영",
+          "size": 14
+        },
+        {
+          "text": "요원별 연막 비교",
+          "size": 14
+        },
+        {
+          "text": "요원",
+          "size": 12
+        },
+        {
+          "text": "크기",
+          "size": 12
+        },
+        {
+          "text": "지속",
+          "size": 12
+        },
+        {
+          "text": "Omen",
+          "size": 12
+        },
+        {
+          "text": "4.5m 반경",
+          "size": 12
+        },
+        {
+          "text": "15초",
+          "size": 12
+        },
+        {
+          "text": "Brimstone",
+          "size": 12
+        },
+        {
+          "text": "5m 반경",
+          "size": 12
+        },
+        {
+          "text": "19초",
+          "size": 12
+        },
+        {
+          "text": "Astra",
+          "size": 12
+        },
+        {
+          "text": "4.75m 반경",
+          "size": 12
+        },
+        {
+          "text": "14초",
+          "size": 12
+        },
+        {
+          "text": "Clove",
+          "size": 12
+        },
+        {
+          "text": "4.75m 반경",
+          "size": 12
+        },
+        {
+          "text": "14초",
+          "size": 12
+        },
+        {
+          "text": "Harbor",
+          "size": 12
+        },
+        {
+          "text": "4m 반경 + 벽",
+          "size": 12
+        },
+        {
+          "text": "4.5초 / 벽 12초",
+          "size": 12
+        },
+        {
+          "text": "Miks",
+          "size": 12
+        },
+        {
+          "text": "4.5m 반경",
+          "size": 12
+        },
+        {
+          "text": "12초",
+          "size": 12
+        },
+        {
+          "text": "Viper 전용 연막 라인업은 라인업 페이지에서 확인하고, Smoke에서는 나머지 공통 연막과 Harbor 일자 연막을 안내합니다.",
+          "size": 12
+        },
+        {
+          "text": "사이트",
+          "size": 14
+        },
+        {
+          "text": "연막 유형",
+          "size": 14
+        },
+        {
+          "text": " 연막 도착 위치",
+          "size": 12
+        },
+        {
+          "text": " 투척 위치",
+          "size": 12
+        },
+        {
+          "text": " 투사 경로",
+          "size": 12
+        },
+        {
+          "text": "Harbor · 일자 연막",
+          "size": 12
+        },
+        {
+          "text": "Preview · 패치 검증 필요",
+          "size": 12
+        }
+      ]
+    },
+    {
+      "label": "empty controlled API",
+      "overflow": 0,
+      "mainCount": 1,
+      "headers": 1,
+      "footers": 1,
+      "fonts": [
+        {
+          "text": "맵 변경",
+          "size": 12
+        },
+        {
+          "text": "요원 선택",
+          "size": 14
+        },
+        {
+          "text": "스킬 종류",
+          "size": 14
+        },
+        {
+          "text": "C",
+          "size": 12
+        },
+        {
+          "text": "Q",
+          "size": 12
+        },
+        {
+          "text": "E",
+          "size": 12
+        },
+        {
+          "text": "궁극기",
+          "size": 12
+        },
+        {
+          "text": " 시작 위치",
+          "size": 12
+        },
+        {
+          "text": " 스킬 도착 위치",
+          "size": 12
+        },
+        {
+          "text": " 투사 경로",
+          "size": 12
+        }
+      ]
+    },
+    {
+      "label": "failure controlled API",
+      "overflow": 0,
+      "mainCount": 1,
+      "headers": 1,
+      "footers": 1,
+      "fonts": [
+        {
+          "text": "맵 변경",
+          "size": 12
+        },
+        {
+          "text": "요원 선택",
+          "size": 14
+        },
+        {
+          "text": "스킬 종류",
+          "size": 14
+        },
+        {
+          "text": "C",
+          "size": 12
+        },
+        {
+          "text": "Q",
+          "size": 12
+        },
+        {
+          "text": "E",
+          "size": 12
+        },
+        {
+          "text": "궁극기",
+          "size": 12
+        },
+        {
+          "text": " 시작 위치",
+          "size": 12
+        },
+        {
+          "text": " 스킬 도착 위치",
+          "size": 12
+        },
+        {
+          "text": " 투사 경로",
+          "size": 12
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "expectedApiErrors": [
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+  ],
+  "requests": [
+    {
+      "width": 1440,
+      "mode": "success",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 1440,
+      "mode": "success",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 1440,
+      "mode": "success",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 1440,
+      "mode": "success",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 820,
+      "mode": "success",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 820,
+      "mode": "success",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 820,
+      "mode": "success",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 820,
+      "mode": "success",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 390,
+      "mode": "success",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 390,
+      "mode": "success",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 390,
+      "mode": "success",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 390,
+      "mode": "success",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 390,
+      "mode": "empty",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 390,
+      "mode": "empty",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 390,
+      "mode": "failure",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 390,
+      "mode": "failure",
+      "url": "http://localhost:8080/api/lineups"
+    }
+  ],
+  "status": "PASS"
+}

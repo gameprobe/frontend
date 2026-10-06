@@ -1,0 +1,40 @@
+[
+  {
+    "width": 1440,
+    "checks": [
+      "distinct destinations",
+      "shared origins/routes",
+      "hover/focus or touch",
+      "detail identity/coordinates",
+      "missing demo media",
+      "destination switch",
+      "skill/side/map/agent reset",
+      "empty results",
+      "defense rotation"
+    ]
+  },
+  {
+    "width": 1440,
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "width": 390,
+    "checks": [
+      "distinct destinations",
+      "shared origins/routes",
+      "hover/focus or touch",
+      "detail identity/coordinates",
+      "missing demo media",
+      "destination switch",
+      "skill/side/map/agent reset",
+      "empty results",
+      "defense rotation"
+    ]
+  },
+  {
+    "width": 390,
+    "errors": [],
+    "overflow": false
+  }
+]

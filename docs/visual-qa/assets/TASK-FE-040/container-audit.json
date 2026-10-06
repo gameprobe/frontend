@@ -1,0 +1,91 @@
+{
+  "task": "TASK-FE-040",
+  "auditedAt": "2026-10-04T15:48:29.075537+00:00",
+  "status": "PASS",
+  "scope": "Read-only audit of current Docker recipes, existing images, running mounts, and archive entry metadata. No rebuild, source edit, deployment, environment inspection, or database access.",
+  "frontend": {
+    "compose": {
+      "path": "docker/compose.frontend.yml",
+      "context": "../frontend",
+      "dockerfile": "Dockerfile.dev",
+      "bindMount": "../frontend:/app"
+    },
+    "image": {
+      "id": "sha256:d83584e5f9fa80bc47a4a5c29fc52c9241de2ca7cbf90eeed833b1a244dd18e1",
+      "created": "2026-09-16T11:06:18.356389049Z",
+      "imageSizeBytes": 356166607,
+      "docsDirectoryPresent": false,
+      "testCjsFiles": 0
+    },
+    "runningContainer": {
+      "name": "valorant-frontend-dev-frontend-1",
+      "docsDirectoryPresent": false,
+      "sourceIsHostBindMount": true,
+      "testCjsFiles": 12,
+      "testCjsBytes": 129209
+    },
+    "currentRecipe": {
+      "qaDocsInBuildContext": false,
+      "reason": "Repository docs/ is outside the frontend-only build context. Dockerfile.dev COPY . . copies only that context; frontend/.dockerignore does not exclude src/**/*.test.cjs.",
+      "testCjsInNextDevelopmentImageBuild": true,
+      "productionDockerfilePresent": false
+    }
+  },
+  "backend": {
+    "compose": {
+      "path": "docker/compose.backend.yml",
+      "context": "..",
+      "dockerfile": "backend/Dockerfile",
+      "bindMountCount": 0
+    },
+    "ignore": {
+      "path": "backend/Dockerfile.dockerignore",
+      "rule": "Exclude all, then allow only backend build files, gradle wrapper, and src/main; local application config and env files excluded."
+    },
+    "image": {
+      "id": "sha256:dfeac1d242e22bb04ffebcbeb2f8c3559e378a7309b5de7c9e660a12c68c186c",
+      "created": "2026-10-04T15:30:05.824457711Z",
+      "imageSizeBytes": 140788988,
+      "docsDirectoryPresent": false,
+      "frontendDirectoryPresent": false,
+      "srcDirectoryPresent": false,
+      "appFiles": [
+        "/app/app.jar"
+      ],
+      "appJarBytes": 33053285
+    },
+    "archiveMetadata": {
+      "jarEntryCount": 225,
+      "visualQaEntries": 0,
+      "testCjsEntries": 0,
+      "taskFe040Entries": 0
+    },
+    "currentRecipe": {
+      "qaDocsInBuildContext": false,
+      "qaDocsInRuntimeImage": false,
+      "testCjsInRuntimeImage": false,
+      "reason": "Dockerfile-specific ignore excludes docs and frontend. Builder copies only backend inputs; final stage copies only bootJar."
+    }
+  },
+  "qaArtifactsSnapshot": {
+    "path": "docs/visual-qa/assets/TASK-FE-040",
+    "files": 44,
+    "bytes": 7377333,
+    "pngFiles": 35,
+    "pngBytes": 7311416,
+    "note": "Filesystem metadata snapshot taken before later follow-up artifacts; these files affect repository checkout size but not the audited image recipes."
+  },
+  "verification": [
+    "Read line-numbered Dockerfile.dev, frontend/.dockerignore, backend/Dockerfile, backend/Dockerfile.dockerignore, and both compose files.",
+    "Inspect only container image IDs and mount metadata; inspect only image ID, created time, and size fields.",
+    "Run each existing image with --rm --network none --read-only and a shell entrypoint to check application paths; do not start either application.",
+    "Read running frontend path and test file metadata; current tests are host bind-mounted.",
+    "Stream backend app.jar into memory and inspect archive entry names only; no extraction or environment/database read."
+  ],
+  "limitations": [
+    "The existing frontend image predates TASK-FE-040; current frontend files are supplied by the host mount. Next development rebuild would include the 12 source .test.cjs files, currently 129209 bytes (~126 KiB).",
+    "No frontend production Dockerfile exists at the audited allowed path. A future deployment recipe, different context, or Dockerfile without the existing ignore rules requires a new audit.",
+    "Image sizes describe existing images, not before/after savings. No image rebuild was needed or performed.",
+    "Sandbox socket denials for docker exec/cp were resolved by narrowly approved read-only retries; all final audit checks passed."
+  ]
+}

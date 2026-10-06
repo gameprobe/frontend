@@ -1,0 +1,44 @@
+{
+  "checks": [
+    "lineups: HTTP200",
+    "lineups: maps12",
+    "lineups: selected Ascent displayed",
+    "lineups: main1",
+    "lineups: common header1",
+    "lineups: visible footer1",
+    "lineups: overflow0",
+    "lineups: dark theme retained",
+    "smokes: HTTP200",
+    "smokes: maps12",
+    "smokes: selected Ascent displayed",
+    "smokes: guide selection works",
+    "smokes: main1",
+    "smokes: common header1",
+    "smokes: visible footer1",
+    "smokes: overflow0",
+    "smokes: dark theme retained",
+    "No page errors",
+    "No console errors"
+  ],
+  "routes": [
+    {
+      "route": "lineups",
+      "mainCount": 1,
+      "bg": "rgb(14, 20, 26)",
+      "headers": 1,
+      "footers": 1,
+      "overflow": 0
+    },
+    {
+      "route": "smokes",
+      "mainCount": 1,
+      "bg": "rgb(14, 20, 26)",
+      "headers": 1,
+      "footers": 1,
+      "overflow": 0
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "status": "PASS"
+}

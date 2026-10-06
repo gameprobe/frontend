@@ -1,0 +1,68 @@
+/* 모달의 고정 헤더/탭과 내부 스크롤. 인라인·프로필 밖으로 스타일이 전파되지 않는다. */
+.panel {
+  composes: theme from "./MatchDetailShared.module.css";
+  --font-caption:12px; --font-meta:14px; --font-body:16px; --font-value:20px; --font-heading:22px;
+  display:flex; flex-direction:column; max-height:calc(100dvh - 58px); min-height:0; background:var(--panel); color:var(--text); font-size:var(--font-body); line-height:1.4;
+}
+.header { display:flex; align-items:center; flex-shrink:0; gap:24px; min-height:56px; padding:6px 12px; background:var(--detail-chrome); }
+.matchInfo { display:flex; align-items:center; gap:8px; min-width:116px; }
+.gameIcon { flex-shrink:0; width:30px; height:30px; }
+.label { display:block; font-size:12px; font-weight:500; color:var(--muted); line-height:16px; }
+.header h3 { margin:0; font-size:18px; line-height:22px; font-weight:700; }
+.header strong { display:block; font-size:18px; line-height:22px; }
+.score { display:flex; align-items:flex-end; gap:12px; white-space:nowrap; text-align:center; font-variant-numeric:tabular-nums; }
+.score div { color:var(--green); }
+.score div:last-child { color:var(--accent); }
+.score span { display:block; font-size:12px; font-weight:700; }
+.score b { padding-bottom:1px; font-size:18px; font-weight:600; }
+.when,.rank { white-space:nowrap; }
+.mock { margin-left:auto; font-size:12px; letter-spacing:1px; color:#c9d4de; border:1px solid #64798b; padding:4px 6px; border-radius:3px; white-space:nowrap; }
+.close { width:44px; height:44px; padding:10px; display:grid; place-items:center; flex-shrink:0; background:none; color:#e5edf3; border:0; border-radius:3px; cursor:pointer; }
+.close:hover { background:#ffffff12; }
+.close:focus-visible,.tabs button:focus-visible { outline:2px solid #fff; outline-offset:-4px; }
+.tabs { display:flex; background:var(--detail-chrome); flex-shrink:0; }
+.tabs button { flex:1; min-width:0; height:56px; padding:8px; color:var(--text); border:0; border-bottom:2px solid transparent; background:transparent; font:inherit; font-size:14px; font-weight:600; cursor:pointer; }
+.tabs button:hover { background:#ffffff08; }
+.tabs button[aria-selected="true"] { border-bottom-color:var(--accent); }
+.content { flex:1; min-height:0; overflow:auto; overscroll-behavior:contain; scrollbar-color:#425463 #0d1a24; scrollbar-width:thin; }
+.content[hidden] { display:none; }
+.content:focus-visible { outline:2px solid #d9e6ee; outline-offset:-2px; }
+.notice { flex-shrink:0; padding:7px 18px; border-top:1px solid #293946; background:#101d28; color:#b0c0cf; font-size:12px; line-height:18px; }
+.empty { padding:28px; }
+.empty h4 { font-size:24px; margin:0 0 12px; }
+.empty p { color:#c3d1dc; font-size:15px; line-height:1.7; }
+@media(max-width:1000px) { .header { gap:20px; }.rank { display:none; } }
+@media(max-width:700px) {
+  .panel { height:100dvh; max-height:100dvh; }
+  .header { position:relative; flex-wrap:wrap; gap:12px 20px; padding:14px 58px 12px 14px; min-height:100px; }
+  .matchInfo { min-width:115px; gap:8px; }.gameIcon { width:26px; height:26px; }
+  .header h3 { font-size:20px; }.header strong { font-size:20px; }
+  .when { flex-basis:100%; display:flex; align-items:center; gap:12px; }.when strong { font-size:15px; }
+  .mock { display:none; }.close { position:absolute; top:12px; right:8px; }
+  .tabs { overflow-x:auto; }.tabs button { flex:1 0 90px; font-size:13px; height:48px; }
+  .notice { padding:6px 12px; font-size:12px; line-height:16px; }
+  .empty { padding:20px 14px; }
+}
+.shareLinks {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:8px 14px;
+  margin-top:10px;
+}
+.shareLinks a,.shareLinks button {
+  min-height:36px;
+  display:inline-flex;
+  align-items:center;
+  padding:6px 10px;
+  color:var(--text);
+  border:1px solid var(--line);
+  border-radius:4px;
+  background:var(--raised);
+  font:inherit;
+  cursor:pointer;
+}
+.shareLinks a:focus-visible,.shareLinks button:focus-visible {
+  outline:2px solid var(--gold);
+  outline-offset:2px;
+}

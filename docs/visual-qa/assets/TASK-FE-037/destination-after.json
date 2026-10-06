@@ -1,0 +1,55 @@
+{
+  "phase": "after",
+  "screens": [
+    "destination-after-1440-gate.png",
+    "destination-after-1440-editor.png",
+    "destination-after-1440-preview.png",
+    "destination-after-1440-add-same-destination.png",
+    "destination-after-1440-saved-guide.png",
+    "destination-after-1440-saved-preview.png",
+    "destination-after-1440-wall.png",
+    "destination-after-1440-long-name-preview.png",
+    "destination-after-390-gate.png",
+    "destination-after-390-editor.png",
+    "destination-after-390-preview.png",
+    "destination-after-390-add-same-destination.png",
+    "destination-after-390-saved-guide.png",
+    "destination-after-390-saved-preview.png",
+    "destination-after-390-wall.png",
+    "destination-after-390-long-name-preview.png"
+  ],
+  "checks": [
+    {
+      "width": 1440,
+      "groupReuse": "PASS",
+      "independentMedia": "PASS",
+      "targetLock": "PASS",
+      "detach": "PASS",
+      "newGuide": "PASS",
+      "bounce": "PASS",
+      "keyboard": "PASS",
+      "savePreview": "PASS",
+      "filters": "PASS",
+      "wall": "PASS",
+      "reloadGate": "PASS",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "groupReuse": "PASS",
+      "independentMedia": "PASS",
+      "targetLock": "PASS",
+      "detach": "PASS",
+      "newGuide": "PASS",
+      "bounce": "PASS",
+      "keyboard": "PASS",
+      "savePreview": "PASS",
+      "filters": "PASS",
+      "wall": "PASS",
+      "reloadGate": "PASS",
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "apiRequests": []
+}

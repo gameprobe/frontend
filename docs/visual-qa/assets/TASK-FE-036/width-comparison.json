@@ -1,0 +1,43 @@
+[
+  {
+    "screen": "1440-en-privacy.png",
+    "same_size": true,
+    "changed_pixels": 34,
+    "diff_bounds": [
+      298,
+      414,
+      302,
+      895
+    ]
+  },
+  {
+    "screen": "1440-en-connect.png",
+    "same_size": true,
+    "changed_pixels": 0,
+    "diff_bounds": null
+  },
+  {
+    "screen": "1440-en-missing.png",
+    "same_size": true,
+    "changed_pixels": 0,
+    "diff_bounds": null
+  },
+  {
+    "screen": "390-ko-privacy.png",
+    "same_size": true,
+    "changed_pixels": 0,
+    "diff_bounds": null
+  },
+  {
+    "screen": "390-ko-connect.png",
+    "same_size": true,
+    "changed_pixels": 0,
+    "diff_bounds": null
+  },
+  {
+    "screen": "390-ko-missing.png",
+    "same_size": true,
+    "changed_pixels": 0,
+    "diff_bounds": null
+  }
+]

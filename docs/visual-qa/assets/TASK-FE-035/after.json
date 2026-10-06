@@ -1,0 +1,22 @@
+{
+  "phase": "after",
+  "screens": [
+    "after-1440-ko-profile.png",
+    "after-1440-ko-position.png",
+    "after-1440-ko-timing.png",
+    "after-1440-ko-habits.png",
+    "after-1440-en-profile.png",
+    "after-1440-en-position.png",
+    "after-1440-en-timing.png",
+    "after-1440-en-habits.png",
+    "after-390-ko-profile.png",
+    "after-390-ko-position.png",
+    "after-390-ko-timing.png",
+    "after-390-ko-habits.png",
+    "after-390-en-profile.png",
+    "after-390-en-position.png",
+    "after-390-en-timing.png",
+    "after-390-en-habits.png"
+  ],
+  "errors": []
+}

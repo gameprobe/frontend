@@ -1,0 +1,126 @@
+[
+  {
+    "width": 1440,
+    "name": "home",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "overview",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "insights",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "smokes",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "smokes-defense",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "admin-editor",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "admin-smokes",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "admin-lineups",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "checks": [
+      "home navigation",
+      "overview/insights rendering",
+      "smoke guide and defense filter",
+      "admin example admission",
+      "shared destination locked",
+      "bounce point remains",
+      "edit/save/list",
+      "per-kind search persistence"
+    ],
+    "writes": []
+  },
+  {
+    "width": 390,
+    "name": "home",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "overview",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "insights",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "smokes",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "smokes-defense",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "admin-editor",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "admin-smokes",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "admin-lineups",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "checks": [
+      "home navigation",
+      "overview/insights rendering",
+      "smoke guide and defense filter",
+      "admin example admission",
+      "shared destination locked",
+      "bounce point remains",
+      "edit/save/list",
+      "per-kind search persistence"
+    ],
+    "writes": []
+  }
+]

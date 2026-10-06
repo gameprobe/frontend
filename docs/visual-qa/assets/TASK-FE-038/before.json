@@ -1,0 +1,25 @@
+{
+  "phase": "before",
+  "screenshots": [
+    "before-1440-gate.png",
+    "before-1440-lineup-editor-sidebar.png",
+    "before-1440-preview.png",
+    "before-1440-smoke-editor-sidebar.png",
+    "before-390-gate.png",
+    "before-390-lineup-editor-sidebar.png",
+    "before-390-preview.png",
+    "before-390-smoke-editor-sidebar.png"
+  ],
+  "checks": [
+    {
+      "width": 1440,
+      "captured": true
+    },
+    {
+      "width": 390,
+      "captured": true
+    }
+  ],
+  "errors": [],
+  "apiRequests": []
+}

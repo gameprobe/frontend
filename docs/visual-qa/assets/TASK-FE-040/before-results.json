@@ -1,0 +1,62 @@
+[
+  {
+    "width": 1440,
+    "name": "login",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "list",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "editor",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "public",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "preview",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "login",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "list",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "editor",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "public",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "preview",
+    "overflow": false,
+    "errors": []
+  }
+]

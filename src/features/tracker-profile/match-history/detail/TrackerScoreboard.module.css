@@ -1,0 +1,44 @@
+/* 모달 Scoreboard/Economy 공통 표. 1,400px 상세창의 56px 행 비율을 맞추며 인라인에는 적용하지 않는다. */
+.scoreboard { color:#e5edf3; font-variant-numeric:tabular-nums; }
+.timelineScroll,.tableScroll { max-width:100%; overflow-x:auto; scrollbar-color:#465b6a #101c26; }
+.timelineScroll:focus-visible,.tableScroll:focus-visible { outline:2px solid var(--accent); outline-offset:-2px; }
+.timeline { display:flex; align-items:stretch; min-width:880px; padding:8px 22px; gap:5px; }
+.totals { width:100px; flex-shrink:0; display:flex; flex-direction:column; gap:4px; padding-right:12px; }
+.totals span { display:flex; align-items:center; justify-content:space-between; gap:8px; height:28px; font-size:13px; color:#aabdcf; font-weight:600; white-space:nowrap; }
+.totals b { font-size:24px; }
+.round { display:grid; grid-template-rows:26px 26px 20px; text-align:center; flex:1; min-width:24px; font-size:24px; line-height:26px; }
+.round small { font-size:12px; line-height:20px; color:#aabdcf; }
+.inactive { color:#334654; }
+.positive { color:var(--green); }
+.negative { color:var(--accent); }
+.unavailable { color:#8197a8; font-weight:400; }
+.table { width:100%; min-width:1290px; border-collapse:collapse; table-layout:fixed; text-align:center; font-size:16px; }
+.playerColumn { width:250px; }
+.rankColumn { width:100px; }
+.table th,.table td { border:0; }
+.heading { background:var(--detail-team-a-background); color:#cadadd; }
+.teamB .heading { background:var(--detail-team-b-background); }
+.heading th { height:32px; padding:0 4px; font-size:12px; font-weight:500; white-space:nowrap; }
+.heading button { border:0; border-radius:0; width:100%; min-height:32px; padding:0; background:none; color:inherit; font:inherit; cursor:pointer; }
+.heading button:hover { color:white; background:#ffffff0c; }
+.heading button:focus-visible { outline:2px solid white; outline-offset:-3px; }
+.heading .teamHeading { text-align:left; padding-left:18px; color:var(--green); font-size:14px; }
+.teamHeading span { font-size:12px; }
+.teamB .teamHeading { color:#ff6b7b; }
+.table tr:not(.heading) { height:56px; background:var(--panel); }
+.table tr:not(.heading):nth-child(odd) { background:var(--raised); }
+.table tr:not(.heading):hover { background:#253a48; }
+.table td { padding:6px 4px; font-weight:700; }
+.table td.sorted { background:#1f3242; }
+.table tr:nth-child(odd) td.sorted { background:#2b4053; }
+.table .player { padding:6px 14px 6px 18px; font-weight:500; text-align:left; }
+.player img { width:44px; height:44px; object-fit:contain; float:left; margin-right:10px; }
+.identity { display:flex; flex-direction:column; justify-content:center; min-height:44px; min-width:0; gap:3px; }
+.name { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:16px; font-weight:500; line-height:22px; }
+.name small { font-size:12px; background:#ffffff09; color:#c3cdd5; padding:1px 3px; }
+.agent { display:flex; gap:7px; align-items:center; font-size:12px; color:#aabdcf; line-height:15px; }
+.agent b { font-size:12px; font-weight:700; color:#e3ce7a; }
+.table tr[data-viewer] .player { background:linear-gradient(90deg,#a98d36a6,#a98d3600 85%); box-shadow:inset 3px 0 #d4be64; }
+.note { margin:0; padding:3px 18px; color:#aabdcf; font-size:12px; line-height:18px; }
+.missing { color:#b5c5d1; padding:32px; }
+@media(max-width:700px) { .timeline { padding-left:14px; padding-right:14px; } .table { font-size:15px; } .note { padding:12px 14px; } }

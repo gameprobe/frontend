@@ -1,0 +1,415 @@
+/* S01~S06 사이드바 전용 배치·반응형. 카드·제목 기본값·강조색은 ProfileShared.module.css를 재사용한다. */
+/* sectionHeading은 공통 제목 클래스와 함께 붙여 기존 사이드바 모바일 우선순위를 유지하는 표식이다. */
+.sidebar {
+  display:grid;
+  gap:var(--space-section);
+  min-width:0;
+}
+/* 짧은 상세 탭의 복귀 버튼. 모바일 2열에서도 한 줄 전체를 차지한다. */
+.sidebar .overviewLink {
+  grid-column:1/-1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  min-height:44px;
+  padding:12px;
+  border:1px solid var(--line);
+  border-radius:4px;
+  background:var(--raised);
+  color:var(--text);
+  font-size:var(--font-body);
+  line-height:1.5;
+  font-weight:700;
+}
+.currentRank {
+  background:var(--raised);
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:17px 19px;
+  min-height:80px;
+}
+.currentRank>img {
+  width:32px;
+  height:38px;
+}
+.currentRank>div {
+  display:flex;
+  flex-direction:column;
+  font-size:var(--font-caption);
+}
+.currentRank strong {
+  font-size:var(--font-value);
+  line-height:1.2;
+}
+.currentRank small {
+  font-size:var(--font-caption);
+}
+.currentRank span {
+  color:var(--muted);
+}
+.peakRank {
+  padding:14px 16px 18px;
+  color:var(--muted);
+}
+.peakRank>span {
+  display:block;
+  margin-bottom:12px;
+}
+.peakRank>div {
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.peakRank img {
+  width:35px;
+  height:35px;
+}
+.peakRank strong {
+  font-size:var(--font-value);
+  color:var(--text);
+  display:block;
+  white-space:nowrap;
+}
+.peakRank em {
+  color:var(--gold);
+}
+.peakRank small {
+  display:block;
+  font-size:var(--font-caption);
+}
+.peakRank em small {
+  display:inline;
+  font-size:var(--font-caption);
+  margin-left:2px;
+}
+.sidePromo {
+  border:1px solid #76663e66;
+  min-height:252px;
+  padding:22px 18px;
+  background:radial-gradient(ellipse at top,#51493477,transparent 85%);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:9px;
+  color:#dccc92;
+}
+.sidePromo>strong {
+  font-size:var(--font-body);
+}
+.sidePromo>span {
+  font-size:var(--font-caption);
+  color:var(--muted);
+}
+.sidePromo button {
+  margin-top:7px;
+  display:flex;
+  gap:8px;
+  align-items:center;
+  background:#dccc92;
+  color:#252827;
+  padding:10px 13px;
+  border-radius:3px;
+  font-weight:700;
+  font-size:var(--font-caption);
+}
+.accuracy {
+  padding:18px 16px 10px;
+}
+.hitDistribution {
+  display:flex;
+  gap:22px;
+  align-items:center;
+}
+.hitDistribution>svg {
+  width:64px;
+  height:132px;
+  flex-shrink:0;
+}
+.bodyHead {
+  fill:#bbc5cf;
+}
+.bodyTorso {
+  fill:var(--green);
+}
+.bodyLegs {
+  fill:#96a5b5;
+}
+.bodyDetail {
+  fill:none;
+  stroke:#163831;
+  stroke-width:1.5;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  opacity:.45;
+}
+.hitDistribution>div {
+  flex:1;
+}
+.hitDistribution p {
+  display:flex;
+  gap:12px;
+  align-items:center;
+  margin:8px 0;
+}
+.hitDistribution p span {
+  color:var(--muted);
+  font-size:var(--font-caption);
+  width:40px;
+}
+.hitDistribution strong {
+  font-size:var(--font-body);
+}
+.hitDistribution p:nth-child(2) strong {
+  color:var(--green);
+}
+.smallHeading {
+  font-size:var(--font-body);
+  display:block;
+  margin:14px 0 8px;
+}
+.roles {
+  padding:14px 16px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+.roles>div {
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:var(--font-caption);
+}
+.roleIcon {
+  border:5px solid #344654;
+  border-top-color:var(--accent);
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  width:40px;
+  height:40px;
+  font-size:var(--font-feature);
+  font-weight:900;
+  flex-shrink:0;
+}
+.roles strong {
+  display:block;
+  font-size:var(--font-body);
+}
+.roles em {
+  color:var(--green);
+}
+.roles small {
+  display:block;
+  font-size:var(--font-caption);
+  color:var(--muted);
+}
+.roles p {
+  text-align:right;
+  margin-left:auto;
+  white-space:nowrap;
+}
+.weaponList>button {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  width:100%;
+  padding:15px 16px;
+  border-bottom:1px solid #273540;
+  font-size:var(--font-caption);
+  text-align:left;
+}
+.weaponList img {
+  width:103px;
+  height:32px;
+  margin-bottom:4px;
+}
+.weaponList small {
+  display:block;
+  color:var(--muted);
+  font-size:var(--font-caption);
+}
+.weaponList b {
+  font-size:var(--font-value);
+}
+.viewAll {
+  color:var(--accent)!important;
+  text-align:center!important;
+  font-size:var(--font-caption)!important;
+  font-weight:700!important;
+  display:flex!important;
+  justify-content:center!important;
+  align-items:center!important;
+  gap:10px!important;
+  padding:14px!important;
+  width:100%;
+  border:0!important;
+}
+.mapList>button:not(.viewAll) {
+  height:57px;
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background-size:cover;
+  background-position:center;
+  padding:8px 16px;
+  text-align:left;
+  border-bottom:1px solid var(--line);
+}
+.mapList span {
+  text-align:right;
+}
+.mapList span small {
+  display:block;
+  color:var(--muted);
+  font-size:var(--font-caption);
+}
+.mapList b {
+  color:var(--green);
+}
+@media(max-width:1250px) {
+  .roles {
+    padding:14px 12px;
+  }
+  .roles p {
+    font-size:var(--font-caption);
+  }
+}
+@media(max-width:1000px) {
+  .peakRank strong {
+    font-size:var(--font-meta);
+  }
+  .roles {
+    padding:15px 10px;
+  }
+  .roles p {
+    display:none;
+  }
+}
+@media(max-width:700px) {
+  .sidebar {
+    order:2;
+    width:100%;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:18px 12px;
+  }
+  .sidebar>section:first-child {
+    grid-column:1/-1;
+  }
+  .sidebar>section:first-child .ratingCard {
+    display:flex;
+  }
+  .currentRank {
+    width:42%;
+    padding:15px;
+    gap:10px;
+  }
+  .peakRank {
+    flex:1;
+    padding:12px 14px;
+  }
+  .peakRank>span {
+    font-size:var(--font-caption);
+    margin-bottom:7px;
+  }
+  .peakRank>div {
+    gap:8px;
+  }
+  .peakRank img {
+    width:29px;
+    height:32px;
+  }
+  .peakRank strong {
+    font-size:var(--font-caption);
+  }
+  .peakRank small {
+    font-size:var(--font-caption);
+  }
+  .sidebar .sidePromo {
+    display:none;
+  }
+  .sidebar .sectionHeading {
+    font-size:var(--font-meta);
+    gap:6px;
+    min-height:20px;
+    margin-bottom:10px!important;
+  }
+  .sidebar .sectionHeading small {
+    font-size:var(--font-caption);
+  }
+  .sidebar>section:nth-last-child(-n+2) {
+    grid-column:1/-1;
+  }
+  .accuracy {
+    padding:13px 10px 9px;
+  }
+  .hitDistribution {
+    gap:7px;
+  }
+  .hitDistribution>svg {
+    width:48px;
+    height:100px;
+  }
+  .hitDistribution p {
+    gap:4px;
+    margin:8px 0;
+  }
+  .hitDistribution p span {
+    font-size:var(--font-caption);
+    width:29px;
+  }
+  .hitDistribution strong {
+    font-size:var(--font-caption);
+  }
+  .smallHeading {
+    font-size:var(--font-caption);
+    margin:10px 0 5px;
+  }
+  .roles {
+    gap:17px;
+    padding:17px 11px;
+  }
+  .roleIcon {
+    width:31px;
+    height:31px;
+    border-width:4px;
+    font-size:var(--font-section);
+  }
+  .roles>div {
+    font-size:var(--font-caption);
+    gap:7px;
+  }
+  .roles strong {
+    font-size:var(--font-caption);
+  }
+  .roles small {
+    font-size:var(--font-caption);
+  }
+  .weaponList img {
+    width:130px;
+    height:39px;
+  }
+  .weaponList>button {
+    padding:16px 22px;
+  }
+  .weaponList b {
+    font-size:var(--font-section);
+  }
+}
+@media(max-width:480px) {
+  .sidebar {
+    grid-template-columns:1fr;
+  }
+  .sidebar>section:first-child .ratingCard {
+    flex-direction:column;
+  }
+  .currentRank {
+    width:auto;
+  }
+  .hitDistribution p span {
+    width:40px;
+  }
+}

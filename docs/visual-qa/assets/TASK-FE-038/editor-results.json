@@ -1,0 +1,71 @@
+{
+  "screens": [
+    "editor-1440-dragged-editor.png",
+    "editor-1440-dragged-preview.png",
+    "editor-1440-shared-staged.png",
+    "editor-1440-single-smoke.png",
+    "editor-1440-wall-preview.png",
+    "editor-1440-new-shared-smoke.png",
+    "editor-1440-new-shared-preview.png",
+    "editor-390-dragged-editor.png",
+    "editor-390-dragged-preview.png",
+    "editor-390-shared-staged.png",
+    "editor-390-single-smoke.png",
+    "editor-390-wall-preview.png",
+    "editor-390-new-shared-smoke.png",
+    "editor-390-new-shared-preview.png"
+  ],
+  "checks": [
+    {
+      "width": 1440,
+      "input": "mouse",
+      "markerDrag": "PASS",
+      "keyboard": "PASS",
+      "escape": "PASS",
+      "touchCancel": "not applicable",
+      "clamp": "PASS",
+      "noExtraPoints": "PASS",
+      "sharedCancel": "PASS",
+      "invalidSaveIsolation": "PASS",
+      "sharedSavePropagation": "PASS",
+      "listRoundtrip": "PASS",
+      "singleDestination": "PASS",
+      "newSharedGuide": "PASS",
+      "waypointBounce": "PASS",
+      "wall": "PASS",
+      "preview": "PASS",
+      "reload": "PASS",
+      "overflow": false,
+      "pointerTypes": [
+        "mouse"
+      ]
+    },
+    {
+      "width": 390,
+      "input": "touch",
+      "markerDrag": "PASS",
+      "keyboard": "PASS",
+      "escape": "PASS",
+      "touchCancel": "PASS",
+      "clamp": "PASS",
+      "noExtraPoints": "PASS",
+      "sharedCancel": "PASS",
+      "invalidSaveIsolation": "PASS",
+      "sharedSavePropagation": "PASS",
+      "listRoundtrip": "PASS",
+      "singleDestination": "PASS",
+      "newSharedGuide": "PASS",
+      "waypointBounce": "PASS",
+      "wall": "PASS",
+      "preview": "PASS",
+      "reload": "PASS",
+      "overflow": false,
+      "pointerTypes": [
+        "mouse",
+        "touch"
+      ]
+    }
+  ],
+  "errors": [],
+  "apiRequests": []
+}

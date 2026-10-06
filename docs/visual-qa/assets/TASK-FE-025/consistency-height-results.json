@@ -1,0 +1,200 @@
+[
+  {
+    "width": 1440,
+    "demo": "legacy",
+    "tab": "agents",
+    "beforePageHeight": 2537,
+    "afterPageHeight": 1072,
+    "pageHeightReduction": 1465,
+    "beforeSidebarHeight": 1771.90625,
+    "afterSidebarHeight": 295.0625,
+    "sidebarHeightReduction": 1476.84
+  },
+  {
+    "width": 1440,
+    "demo": "legacy",
+    "tab": "maps",
+    "beforePageHeight": 2537,
+    "afterPageHeight": 1123,
+    "pageHeightReduction": 1414,
+    "beforeSidebarHeight": 1771.90625,
+    "afterSidebarHeight": 295.0625,
+    "sidebarHeightReduction": 1476.84
+  },
+  {
+    "width": 1440,
+    "demo": "legacy",
+    "tab": "weapons",
+    "beforePageHeight": 2537,
+    "afterPageHeight": 1104,
+    "pageHeightReduction": 1433,
+    "beforeSidebarHeight": 1771.90625,
+    "afterSidebarHeight": 295.0625,
+    "sidebarHeightReduction": 1476.84
+  },
+  {
+    "width": 1440,
+    "demo": "new",
+    "tab": "agents",
+    "beforePageHeight": 2676,
+    "afterPageHeight": 1210,
+    "pageHeightReduction": 1466,
+    "beforeSidebarHeight": 1771.90625,
+    "afterSidebarHeight": 295.0625,
+    "sidebarHeightReduction": 1476.84
+  },
+  {
+    "width": 1440,
+    "demo": "new",
+    "tab": "maps",
+    "beforePageHeight": 2676,
+    "afterPageHeight": 1262,
+    "pageHeightReduction": 1414,
+    "beforeSidebarHeight": 1771.90625,
+    "afterSidebarHeight": 295.0625,
+    "sidebarHeightReduction": 1476.84
+  },
+  {
+    "width": 1440,
+    "demo": "new",
+    "tab": "weapons",
+    "beforePageHeight": 2676,
+    "afterPageHeight": 1243,
+    "pageHeightReduction": 1433,
+    "beforeSidebarHeight": 1771.90625,
+    "afterSidebarHeight": 295.0625,
+    "sidebarHeightReduction": 1476.84
+  },
+  {
+    "width": 820,
+    "demo": "legacy",
+    "tab": "agents",
+    "beforePageHeight": 2586,
+    "afterPageHeight": 1124,
+    "pageHeightReduction": 1462,
+    "beforeSidebarHeight": 1769.109375,
+    "afterSidebarHeight": 290.265625,
+    "sidebarHeightReduction": 1478.84
+  },
+  {
+    "width": 820,
+    "demo": "legacy",
+    "tab": "maps",
+    "beforePageHeight": 2586,
+    "afterPageHeight": 1386,
+    "pageHeightReduction": 1200,
+    "beforeSidebarHeight": 1769.109375,
+    "afterSidebarHeight": 290.265625,
+    "sidebarHeightReduction": 1478.84
+  },
+  {
+    "width": 820,
+    "demo": "legacy",
+    "tab": "weapons",
+    "beforePageHeight": 2586,
+    "afterPageHeight": 1156,
+    "pageHeightReduction": 1430,
+    "beforeSidebarHeight": 1769.109375,
+    "afterSidebarHeight": 290.265625,
+    "sidebarHeightReduction": 1478.84
+  },
+  {
+    "width": 820,
+    "demo": "new",
+    "tab": "agents",
+    "beforePageHeight": 2780,
+    "afterPageHeight": 1290,
+    "pageHeightReduction": 1490,
+    "beforeSidebarHeight": 1769.109375,
+    "afterSidebarHeight": 290.265625,
+    "sidebarHeightReduction": 1478.84
+  },
+  {
+    "width": 820,
+    "demo": "new",
+    "tab": "maps",
+    "beforePageHeight": 2780,
+    "afterPageHeight": 1551,
+    "pageHeightReduction": 1229,
+    "beforeSidebarHeight": 1769.109375,
+    "afterSidebarHeight": 290.265625,
+    "sidebarHeightReduction": 1478.84
+  },
+  {
+    "width": 820,
+    "demo": "new",
+    "tab": "weapons",
+    "beforePageHeight": 2780,
+    "afterPageHeight": 1322,
+    "pageHeightReduction": 1458,
+    "beforeSidebarHeight": 1769.109375,
+    "afterSidebarHeight": 290.265625,
+    "sidebarHeightReduction": 1478.84
+  },
+  {
+    "width": 390,
+    "demo": "legacy",
+    "tab": "agents",
+    "beforePageHeight": 2548,
+    "afterPageHeight": 1394,
+    "pageHeightReduction": 1154,
+    "beforeSidebarHeight": 1416.984375,
+    "afterSidebarHeight": 262.953125,
+    "sidebarHeightReduction": 1154.03
+  },
+  {
+    "width": 390,
+    "demo": "legacy",
+    "tab": "maps",
+    "beforePageHeight": 2758,
+    "afterPageHeight": 1604,
+    "pageHeightReduction": 1154,
+    "beforeSidebarHeight": 1416.984375,
+    "afterSidebarHeight": 262.953125,
+    "sidebarHeightReduction": 1154.03
+  },
+  {
+    "width": 390,
+    "demo": "legacy",
+    "tab": "weapons",
+    "beforePageHeight": 2576,
+    "afterPageHeight": 1399,
+    "pageHeightReduction": 1177,
+    "beforeSidebarHeight": 1416.984375,
+    "afterSidebarHeight": 262.953125,
+    "sidebarHeightReduction": 1154.03
+  },
+  {
+    "width": 390,
+    "demo": "new",
+    "tab": "agents",
+    "beforePageHeight": 2849,
+    "afterPageHeight": 1668,
+    "pageHeightReduction": 1181,
+    "beforeSidebarHeight": 1416.984375,
+    "afterSidebarHeight": 262.953125,
+    "sidebarHeightReduction": 1154.03
+  },
+  {
+    "width": 390,
+    "demo": "new",
+    "tab": "maps",
+    "beforePageHeight": 3060,
+    "afterPageHeight": 1879,
+    "pageHeightReduction": 1181,
+    "beforeSidebarHeight": 1416.984375,
+    "afterSidebarHeight": 262.953125,
+    "sidebarHeightReduction": 1154.03
+  },
+  {
+    "width": 390,
+    "demo": "new",
+    "tab": "weapons",
+    "beforePageHeight": 2894,
+    "afterPageHeight": 1696,
+    "pageHeightReduction": 1198,
+    "beforeSidebarHeight": 1416.984375,
+    "afterSidebarHeight": 262.953125,
+    "sidebarHeightReduction": 1154.03
+  }
+]

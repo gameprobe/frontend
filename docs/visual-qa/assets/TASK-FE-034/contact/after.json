@@ -1,0 +1,634 @@
+{
+  "phase": "after",
+  "base": "http://127.0.0.1:3100",
+  "capturedAt": "2026-09-29T06:41:40.153Z",
+  "screens": [
+    {
+      "name": "home",
+      "width": 1440,
+      "locale": "ko",
+      "file": "after-1440-ko-home.png"
+    },
+    {
+      "name": "profile",
+      "width": 1440,
+      "locale": "ko",
+      "file": "after-1440-ko-profile.png"
+    },
+    {
+      "name": "match",
+      "width": 1440,
+      "locale": "ko",
+      "file": "after-1440-ko-match.png"
+    },
+    {
+      "name": "match-scoreboard",
+      "width": 1440,
+      "locale": "ko",
+      "file": "after-1440-ko-match-scoreboard.png"
+    },
+    {
+      "name": "match-performance",
+      "width": 1440,
+      "locale": "ko",
+      "file": "after-1440-ko-match-performance.png"
+    },
+    {
+      "name": "match-economy",
+      "width": 1440,
+      "locale": "ko",
+      "file": "after-1440-ko-match-economy.png"
+    },
+    {
+      "name": "match-rounds",
+      "width": 1440,
+      "locale": "ko",
+      "file": "after-1440-ko-match-rounds.png"
+    },
+    {
+      "name": "match-duels",
+      "width": 1440,
+      "locale": "ko",
+      "file": "after-1440-ko-match-duels.png"
+    },
+    {
+      "name": "connect",
+      "width": 1440,
+      "locale": "ko",
+      "file": "after-1440-ko-connect.png"
+    },
+    {
+      "name": "privacy",
+      "width": 1440,
+      "locale": "ko",
+      "file": "after-1440-ko-privacy.png"
+    },
+    {
+      "name": "terms",
+      "width": 1440,
+      "locale": "ko",
+      "file": "after-1440-ko-terms.png"
+    },
+    {
+      "name": "lineups",
+      "width": 1440,
+      "locale": "ko",
+      "file": "after-1440-ko-lineups.png"
+    },
+    {
+      "name": "smokes",
+      "width": 1440,
+      "locale": "ko",
+      "file": "after-1440-ko-smokes.png"
+    },
+    {
+      "name": "consent-granted",
+      "width": 1440,
+      "locale": "ko",
+      "file": "after-1440-ko-consent-granted.png"
+    },
+    {
+      "name": "consent-withdrawn",
+      "width": 1440,
+      "locale": "ko",
+      "file": "after-1440-ko-consent-withdrawn.png"
+    },
+    {
+      "name": "home",
+      "width": 1440,
+      "locale": "en",
+      "file": "after-1440-en-home.png"
+    },
+    {
+      "name": "profile",
+      "width": 1440,
+      "locale": "en",
+      "file": "after-1440-en-profile.png"
+    },
+    {
+      "name": "match",
+      "width": 1440,
+      "locale": "en",
+      "file": "after-1440-en-match.png"
+    },
+    {
+      "name": "match-scoreboard",
+      "width": 1440,
+      "locale": "en",
+      "file": "after-1440-en-match-scoreboard.png"
+    },
+    {
+      "name": "match-performance",
+      "width": 1440,
+      "locale": "en",
+      "file": "after-1440-en-match-performance.png"
+    },
+    {
+      "name": "match-economy",
+      "width": 1440,
+      "locale": "en",
+      "file": "after-1440-en-match-economy.png"
+    },
+    {
+      "name": "match-rounds",
+      "width": 1440,
+      "locale": "en",
+      "file": "after-1440-en-match-rounds.png"
+    },
+    {
+      "name": "match-duels",
+      "width": 1440,
+      "locale": "en",
+      "file": "after-1440-en-match-duels.png"
+    },
+    {
+      "name": "connect",
+      "width": 1440,
+      "locale": "en",
+      "file": "after-1440-en-connect.png"
+    },
+    {
+      "name": "privacy",
+      "width": 1440,
+      "locale": "en",
+      "file": "after-1440-en-privacy.png"
+    },
+    {
+      "name": "terms",
+      "width": 1440,
+      "locale": "en",
+      "file": "after-1440-en-terms.png"
+    },
+    {
+      "name": "lineups",
+      "width": 1440,
+      "locale": "en",
+      "file": "after-1440-en-lineups.png"
+    },
+    {
+      "name": "smokes",
+      "width": 1440,
+      "locale": "en",
+      "file": "after-1440-en-smokes.png"
+    },
+    {
+      "name": "consent-granted",
+      "width": 1440,
+      "locale": "en",
+      "file": "after-1440-en-consent-granted.png"
+    },
+    {
+      "name": "consent-withdrawn",
+      "width": 1440,
+      "locale": "en",
+      "file": "after-1440-en-consent-withdrawn.png"
+    },
+    {
+      "name": "home",
+      "width": 390,
+      "locale": "ko",
+      "file": "after-390-ko-home.png"
+    },
+    {
+      "name": "profile",
+      "width": 390,
+      "locale": "ko",
+      "file": "after-390-ko-profile.png"
+    },
+    {
+      "name": "match",
+      "width": 390,
+      "locale": "ko",
+      "file": "after-390-ko-match.png"
+    },
+    {
+      "name": "match-scoreboard",
+      "width": 390,
+      "locale": "ko",
+      "file": "after-390-ko-match-scoreboard.png"
+    },
+    {
+      "name": "match-performance",
+      "width": 390,
+      "locale": "ko",
+      "file": "after-390-ko-match-performance.png"
+    },
+    {
+      "name": "match-economy",
+      "width": 390,
+      "locale": "ko",
+      "file": "after-390-ko-match-economy.png"
+    },
+    {
+      "name": "match-rounds",
+      "width": 390,
+      "locale": "ko",
+      "file": "after-390-ko-match-rounds.png"
+    },
+    {
+      "name": "match-duels",
+      "width": 390,
+      "locale": "ko",
+      "file": "after-390-ko-match-duels.png"
+    },
+    {
+      "name": "connect",
+      "width": 390,
+      "locale": "ko",
+      "file": "after-390-ko-connect.png"
+    },
+    {
+      "name": "privacy",
+      "width": 390,
+      "locale": "ko",
+      "file": "after-390-ko-privacy.png"
+    },
+    {
+      "name": "terms",
+      "width": 390,
+      "locale": "ko",
+      "file": "after-390-ko-terms.png"
+    },
+    {
+      "name": "lineups",
+      "width": 390,
+      "locale": "ko",
+      "file": "after-390-ko-lineups.png"
+    },
+    {
+      "name": "smokes",
+      "width": 390,
+      "locale": "ko",
+      "file": "after-390-ko-smokes.png"
+    },
+    {
+      "name": "consent-granted",
+      "width": 390,
+      "locale": "ko",
+      "file": "after-390-ko-consent-granted.png"
+    },
+    {
+      "name": "consent-withdrawn",
+      "width": 390,
+      "locale": "ko",
+      "file": "after-390-ko-consent-withdrawn.png"
+    },
+    {
+      "name": "home",
+      "width": 390,
+      "locale": "en",
+      "file": "after-390-en-home.png"
+    },
+    {
+      "name": "profile",
+      "width": 390,
+      "locale": "en",
+      "file": "after-390-en-profile.png"
+    },
+    {
+      "name": "match",
+      "width": 390,
+      "locale": "en",
+      "file": "after-390-en-match.png"
+    },
+    {
+      "name": "match-scoreboard",
+      "width": 390,
+      "locale": "en",
+      "file": "after-390-en-match-scoreboard.png"
+    },
+    {
+      "name": "match-performance",
+      "width": 390,
+      "locale": "en",
+      "file": "after-390-en-match-performance.png"
+    },
+    {
+      "name": "match-economy",
+      "width": 390,
+      "locale": "en",
+      "file": "after-390-en-match-economy.png"
+    },
+    {
+      "name": "match-rounds",
+      "width": 390,
+      "locale": "en",
+      "file": "after-390-en-match-rounds.png"
+    },
+    {
+      "name": "match-duels",
+      "width": 390,
+      "locale": "en",
+      "file": "after-390-en-match-duels.png"
+    },
+    {
+      "name": "connect",
+      "width": 390,
+      "locale": "en",
+      "file": "after-390-en-connect.png"
+    },
+    {
+      "name": "privacy",
+      "width": 390,
+      "locale": "en",
+      "file": "after-390-en-privacy.png"
+    },
+    {
+      "name": "terms",
+      "width": 390,
+      "locale": "en",
+      "file": "after-390-en-terms.png"
+    },
+    {
+      "name": "lineups",
+      "width": 390,
+      "locale": "en",
+      "file": "after-390-en-lineups.png"
+    },
+    {
+      "name": "smokes",
+      "width": 390,
+      "locale": "en",
+      "file": "after-390-en-smokes.png"
+    },
+    {
+      "name": "consent-granted",
+      "width": 390,
+      "locale": "en",
+      "file": "after-390-en-consent-granted.png"
+    },
+    {
+      "name": "consent-withdrawn",
+      "width": 390,
+      "locale": "en",
+      "file": "after-390-en-consent-withdrawn.png"
+    }
+  ],
+  "checks": [
+    "//1440/ko: HTTP200, single main/footer, policy/contact links, no overflow",
+    "/players/demo-player-01/1440/ko: HTTP200, single main/footer, policy/contact links, no overflow",
+    "/matches/demo-match-001/1440/ko: HTTP200, single main/footer, policy/contact links, no overflow",
+    "match/1440/ko: five tabs + working footer contact link",
+    "/connect/1440/ko: HTTP200, single main/footer, policy/contact links, no overflow",
+    "/privacy/1440/ko: HTTP200, single main/footer, policy/contact links, no overflow",
+    "/terms/1440/ko: HTTP200, single main/footer, policy/contact links, no overflow",
+    "/lineups/1440/ko: HTTP200, single main/footer, policy/contact links, no overflow",
+    "/smokes/1440/ko: HTTP200, single main/footer, policy/contact links, no overflow",
+    "home → synthetic profile → match modal → direct detail → profile: 1440/ko",
+    "consent default-off → cancel → agree → preview → revoke → renewed consent → reload reset: 1440/ko",
+    "//1440/en: HTTP200, single main/footer, policy/contact links, no overflow",
+    "/players/demo-player-01/1440/en: HTTP200, single main/footer, policy/contact links, no overflow",
+    "/matches/demo-match-001/1440/en: HTTP200, single main/footer, policy/contact links, no overflow",
+    "match/1440/en: five tabs + working footer contact link",
+    "/connect/1440/en: HTTP200, single main/footer, policy/contact links, no overflow",
+    "/privacy/1440/en: HTTP200, single main/footer, policy/contact links, no overflow",
+    "/terms/1440/en: HTTP200, single main/footer, policy/contact links, no overflow",
+    "/lineups/1440/en: HTTP200, single main/footer, policy/contact links, no overflow",
+    "/smokes/1440/en: HTTP200, single main/footer, policy/contact links, no overflow",
+    "home → synthetic profile → match modal → direct detail → profile: 1440/en",
+    "consent default-off → cancel → agree → preview → revoke → renewed consent → reload reset: 1440/en",
+    "//390/ko: HTTP200, single main/footer, policy/contact links, no overflow",
+    "/players/demo-player-01/390/ko: HTTP200, single main/footer, policy/contact links, no overflow",
+    "/matches/demo-match-001/390/ko: HTTP200, single main/footer, policy/contact links, no overflow",
+    "match/390/ko: five tabs + working footer contact link",
+    "/connect/390/ko: HTTP200, single main/footer, policy/contact links, no overflow",
+    "/privacy/390/ko: HTTP200, single main/footer, policy/contact links, no overflow",
+    "/terms/390/ko: HTTP200, single main/footer, policy/contact links, no overflow",
+    "/lineups/390/ko: HTTP200, single main/footer, policy/contact links, no overflow",
+    "/smokes/390/ko: HTTP200, single main/footer, policy/contact links, no overflow",
+    "home → synthetic profile → match modal → direct detail → profile: 390/ko",
+    "consent default-off → cancel → agree → preview → revoke → renewed consent → reload reset: 390/ko",
+    "//390/en: HTTP200, single main/footer, policy/contact links, no overflow",
+    "/players/demo-player-01/390/en: HTTP200, single main/footer, policy/contact links, no overflow",
+    "/matches/demo-match-001/390/en: HTTP200, single main/footer, policy/contact links, no overflow",
+    "match/390/en: five tabs + working footer contact link",
+    "/connect/390/en: HTTP200, single main/footer, policy/contact links, no overflow",
+    "/privacy/390/en: HTTP200, single main/footer, policy/contact links, no overflow",
+    "/terms/390/en: HTTP200, single main/footer, policy/contact links, no overflow",
+    "/lineups/390/en: HTTP200, single main/footer, policy/contact links, no overflow",
+    "/smokes/390/en: HTTP200, single main/footer, policy/contact links, no overflow",
+    "home → synthetic profile → match modal → direct detail → profile: 390/en",
+    "consent default-off → cancel → agree → preview → revoke → renewed consent → reload reset: 390/en"
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "failedRequests": [
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=19zvn",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/demo-player-01?_rsc=19zvn",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=9to9k",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/demo-player-01?_rsc=9to9k",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=vlr26",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=14k4p",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=1lgnf",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=1baln",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=x7o9q",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=19zvn",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/demo-player-01?_rsc=19zvn",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/demo-player-01?_rsc=1091p",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=9to9k",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/demo-player-01?_rsc=9to9k",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/demo-player-01?_rsc=1091p",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=19zvn",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=9to9k",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/demo-player-01?_rsc=9to9k",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=vlr26",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=14k4p",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=1lgnf",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=1baln",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=x7o9q",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=19zvn",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/demo-player-01?_rsc=19zvn",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/demo-player-01?_rsc=1091p",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=9to9k",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/demo-player-01?_rsc=9to9k",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=vlr26",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/demo-player-01?_rsc=19zvn",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=19zvn",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=9to9k",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=vlr26",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=14k4p",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=1baln",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=19zvn",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/demo-player-01?_rsc=19zvn",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/demo-player-01?_rsc=1091p",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=9to9k",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/demo-player-01?_rsc=9to9k",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/demo-player-01?_rsc=1091p",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=19zvn",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/demo-player-01?_rsc=19zvn",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=9to9k",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/demo-player-01?_rsc=9to9k",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=vlr26",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=14k4p",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=1lgnf",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=1baln",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=19zvn",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/demo-player-01?_rsc=19zvn",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/demo-player-01?_rsc=1091p",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/ied-agent-allen?_rsc=9to9k",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3100/players/demo-player-01?_rsc=1091p",
+      "error": "net::ERR_ABORTED"
+    }
+  ],
+  "apiRequests": []
+}

@@ -1,0 +1,30 @@
+{
+  "routes": [
+    {
+      "route": "/lineups",
+      "http": 200,
+      "overflow": 0,
+      "notice": "예시 라인업을 보고 있어요\n자료를 불러오지 못해 예시를 표시하고 있어요. 실제 플레이용으로 검증된 자료는 아니에요."
+    },
+    {
+      "route": "/smokes",
+      "http": 200,
+      "overflow": 0,
+      "notice": "예시 스모크 가이드\n현재 위치·경로·크기·지속시간은 예시예요. 실제 플레이에 사용하기 전 패치별 검증이 필요해요."
+    },
+    {
+      "route": "/",
+      "http": 200,
+      "overflow": 0,
+      "notice": null
+    },
+    {
+      "route": "/players/ied-agent-allen",
+      "http": 200,
+      "overflow": 0,
+      "notice": null
+    }
+  ],
+  "errors": [],
+  "status": "PASS"
+}

@@ -1,0 +1,22 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const ts = require('typescript');
+const source = fs.readFileSync(require.resolve('./media.ts'), 'utf8');
+const compiled = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.CommonJS } }).outputText;
+const mod = { exports: {} };
+new Function('module', 'exports', compiled)(mod, mod.exports);
+const { getMediaPresentation: media } = mod.exports;
+
+assert.equal(media('VIDEO', 'javascript:alert(1)'), null);
+assert.equal(media('IMAGE', 'data:image/svg+xml,<svg/>'), null);
+assert.equal(media('IMAGE', 'https://name:password@example.com/image.png'), null);
+assert.equal(media('VIDEO', ''), null);
+assert.equal(media('VIDEO', 'https://youtube.com.evil.example/watch?v=abcdefghijk').kind, 'link');
+assert.equal(media('VIDEO', 'https://example.com/embed/abcdefghijk').kind, 'link');
+assert.equal(media('VIDEO', 'https://youtu.be/abcdefghijk?t=10').embedUrl, 'https://www.youtube-nocookie.com/embed/abcdefghijk');
+assert.equal(media('VIDEO', 'https://www.youtube.com/shorts/abcdefghijk').kind, 'youtube');
+assert.equal(media('VIDEO', 'https://www.youtube.com/watch?v=demo-example').kind, 'link');
+assert.equal(media('VIDEO', 'https://example.com/video.MP4?signature=123').kind, 'video');
+assert.equal(media('VIDEO', 'https://example.com/watch/42').kind, 'link');
+assert.equal(media('IMAGE', 'https://example.com/image?id=42').kind, 'image');
+console.log('Media presentation: 12 checks passed');

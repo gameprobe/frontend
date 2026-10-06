@@ -1,0 +1,6 @@
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+(async()=>{const b=await chromium.launch({channel:'chrome',headless:true});const result={checks:[],errors:[],apiRequests:[]};try{const p=await b.newPage({viewport:{width:390,height:960}});p.on('pageerror',e=>result.errors.push(e.message));p.on('request',r=>{if(new URL(r.url()).pathname.startsWith('/api/'))result.apiRequests.push(r.url())});
+for(const id of ['ascent-sova-a-main-recon-001','fe034-missing-lineup']){await p.goto('http://127.0.0.1:3100/lineups/'+id);await p.waitForFunction(()=>!document.body.innerText.includes('라인업을 불러오는 중'));const text=await p.locator('body').innerText();if(id==='fe034-missing-lineup')assert.match(text,/찾을 수 없|불러오지 못|오류/);else assert.match(text,/Sova|소바/);assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);result.checks.push({id,expected:id==='fe034-missing-lineup'?'missing/error recovery':'existing mock detail fallback'});}
+assert.deepEqual(result.errors,[]);assert.deepEqual(result.apiRequests,[]);
+}finally{await b.close();fs.writeFileSync(path.join(__dirname,'lineup-detail.json'),JSON.stringify(result,null,2)+'\n');}console.log(JSON.stringify(result));})().catch(e=>{console.error(e);process.exitCode=1;});

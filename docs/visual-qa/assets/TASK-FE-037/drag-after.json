@@ -1,0 +1,62 @@
+{
+  "phase": "after",
+  "screens": [
+    "drag-after-1440-editor.png",
+    "drag-after-1440-preview.png",
+    "drag-after-1440-dragged-existing.png",
+    "drag-after-1440-dragged-preview.png",
+    "drag-after-1440-unlocked-destination.png",
+    "drag-after-1440-wall-preview.png",
+    "drag-after-390-editor.png",
+    "drag-after-390-preview.png",
+    "drag-after-390-dragged-existing.png",
+    "drag-after-390-dragged-preview.png",
+    "drag-after-390-unlocked-destination.png",
+    "drag-after-390-wall-preview.png"
+  ],
+  "checks": [
+    {
+      "width": 1440,
+      "input": "mouse",
+      "origin": "PASS",
+      "waypoint": "PASS",
+      "bounce": "PASS",
+      "destinationLock": "PASS",
+      "newDestination": "PASS",
+      "wallEnd": "PASS",
+      "edgeClamp": "PASS",
+      "escapeCancel": "PASS",
+      "pointerCancel": "not applicable",
+      "keyboard": "PASS",
+      "releaseNoExtraPoint": "PASS",
+      "savePreview": "PASS",
+      "overflow": false,
+      "pointerTypes": [
+        "mouse"
+      ]
+    },
+    {
+      "width": 390,
+      "input": "touch",
+      "origin": "PASS",
+      "waypoint": "PASS",
+      "bounce": "PASS",
+      "destinationLock": "PASS",
+      "newDestination": "PASS",
+      "wallEnd": "PASS",
+      "edgeClamp": "PASS",
+      "escapeCancel": "PASS",
+      "pointerCancel": "PASS",
+      "keyboard": "PASS",
+      "releaseNoExtraPoint": "PASS",
+      "savePreview": "PASS",
+      "overflow": false,
+      "pointerTypes": [
+        "mouse",
+        "touch"
+      ]
+    }
+  ],
+  "errors": [],
+  "apiRequests": []
+}

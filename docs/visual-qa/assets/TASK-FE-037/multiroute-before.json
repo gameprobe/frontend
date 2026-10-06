@@ -1,0 +1,12 @@
+{
+  "phase": "before",
+  "screens": [
+    "multiroute-before-1440-editor.png",
+    "multiroute-before-1440-preview.png",
+    "multiroute-before-390-editor.png",
+    "multiroute-before-390-preview.png"
+  ],
+  "checks": [],
+  "errors": [],
+  "apiRequests": []
+}

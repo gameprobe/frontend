@@ -1,0 +1,120 @@
+/* ProfileFilters 전용 배치·반응형. 상태·이벤트·이미지/Select helper는 부모에서 제공한다. */
+.filters {
+  display:grid;
+  grid-template-columns:240px minmax(0,1fr) 240px;
+  gap:16px;
+  margin-bottom:var(--space-section);
+}
+.segment {
+  display:flex;
+  height:40px;
+  border:1px solid #3a4149;
+  border-radius:4px;
+  overflow:hidden;
+  background:#30363c;
+}
+.segment button {
+  flex:1;
+  padding:0 14px;
+  border-right:1px solid #464b52;
+  font-size:var(--font-caption);
+  font-weight:700;
+  color:#c9cfd6;
+  white-space:nowrap;
+}
+.segment button:last-child {
+  border-right:0;
+}
+.segment:first-child {
+  background:transparent;
+}
+.segment .platformActive {
+  background:#243441;
+  color:white;
+}
+.selected {
+  background:var(--accent)!important;
+  color:#fff!important;
+}
+.actFilter {
+  height:40px;
+  display:flex;
+  border-radius:4px;
+  overflow:hidden;
+  background:#30363c;
+}
+.actFilter>button {
+  font-size:var(--font-caption);
+  font-weight:700;
+  padding:0 20px;
+  white-space:nowrap;
+}
+/* 기존 Select의 label/select 구조를 대상으로 연결해 부모 CSS 모듈의 클래스명에 의존하지 않는다. */
+.actFilter > label {
+  flex:1;
+}
+.actFilter > label > select {
+  width:100%;
+  height:100%;
+  border-radius:0;
+}
+@media(min-width:1500px) {
+  .filters {
+    grid-template-columns:256px minmax(0,1fr) 256px;
+  }
+}
+@media(max-width:1250px) {
+  .filters {
+    grid-template-columns:200px minmax(0,1fr) 210px;
+    gap:12px;
+  }
+  .segment button {
+    padding:0 9px;
+  }
+  .actFilter>button {
+    padding:0 12px;
+  }
+}
+@media(max-width:1000px) {
+  .filters {
+    grid-template-columns:180px minmax(0,1fr);
+  }
+  .modeSegment {
+    order:3;
+    grid-column:1/-1;
+  }
+}
+@media(max-width:700px) {
+  .filters {
+    grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);
+    gap:10px;
+    margin-bottom:20px;
+  }
+  .segment {
+    height:37px;
+  }
+  .segment button {
+    padding:0 11px;
+    font-size:var(--font-caption);
+  }
+  .actFilter {
+    height:37px;
+  }
+  .actFilter>button {
+    font-size:var(--font-caption);
+    padding:0 12px;
+  }
+  .actFilter > label > select {
+    font-size:var(--font-caption);
+    /* 좌우 여백은 부모 Select의 모바일 공통 padding(9px 23px 9px 10px)을 유지한다. */
+  }
+  .modeSegment {
+    overflow:auto;
+    scrollbar-width:none;
+  }
+  .modeSegment button {
+    flex:1;
+    min-width:max-content;
+    padding:0 12px;
+  }
+}

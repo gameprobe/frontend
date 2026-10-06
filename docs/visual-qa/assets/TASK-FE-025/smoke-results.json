@@ -1,0 +1,142 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "width": 1440,
+      "route": "/connect",
+      "status": "PASS",
+      "http": 200
+    },
+    {
+      "width": 1440,
+      "route": "/connect",
+      "action": "Overview",
+      "destination": "/players/ied-agent-allen",
+      "rows": 20,
+      "status": "PASS"
+    },
+    {
+      "width": 1440,
+      "route": "/privacy",
+      "status": "PASS",
+      "http": 200
+    },
+    {
+      "width": 1440,
+      "route": "/terms",
+      "status": "PASS",
+      "http": 200
+    },
+    {
+      "width": 1440,
+      "route": "/matches/fe025-missing",
+      "status": "PASS",
+      "http": 200
+    },
+    {
+      "width": 1440,
+      "route": "/matches/fe025-missing",
+      "action": "데모 프로필로 돌아가기",
+      "destination": "/players/ied-agent-allen",
+      "rows": 20,
+      "status": "PASS"
+    },
+    {
+      "width": 1440,
+      "route": "/players/fe025-missing",
+      "status": "PASS",
+      "http": 200
+    },
+    {
+      "width": 1440,
+      "route": "/players/fe025-missing",
+      "action": "데모 프로필로 돌아가기",
+      "destination": "/players/ied-agent-allen",
+      "rows": 20,
+      "status": "PASS"
+    },
+    {
+      "width": 1440,
+      "route": "/matches/demo-match-missing",
+      "status": "PASS",
+      "http": 200
+    },
+    {
+      "width": 1440,
+      "route": "/matches/demo-match-missing",
+      "action": "데모 프로필로 돌아가기",
+      "destination": "/players/demo-player-01",
+      "rows": 4,
+      "status": "PASS"
+    },
+    {
+      "width": 390,
+      "route": "/connect",
+      "status": "PASS",
+      "http": 200
+    },
+    {
+      "width": 390,
+      "route": "/connect",
+      "action": "Overview",
+      "destination": "/players/ied-agent-allen",
+      "rows": 20,
+      "status": "PASS"
+    },
+    {
+      "width": 390,
+      "route": "/privacy",
+      "status": "PASS",
+      "http": 200
+    },
+    {
+      "width": 390,
+      "route": "/terms",
+      "status": "PASS",
+      "http": 200
+    },
+    {
+      "width": 390,
+      "route": "/matches/fe025-missing",
+      "status": "PASS",
+      "http": 200
+    },
+    {
+      "width": 390,
+      "route": "/matches/fe025-missing",
+      "action": "데모 프로필로 돌아가기",
+      "destination": "/players/ied-agent-allen",
+      "rows": 20,
+      "status": "PASS"
+    },
+    {
+      "width": 390,
+      "route": "/players/fe025-missing",
+      "status": "PASS",
+      "http": 200
+    },
+    {
+      "width": 390,
+      "route": "/players/fe025-missing",
+      "action": "데모 프로필로 돌아가기",
+      "destination": "/players/ied-agent-allen",
+      "rows": 20,
+      "status": "PASS"
+    },
+    {
+      "width": 390,
+      "route": "/matches/demo-match-missing",
+      "status": "PASS",
+      "http": 200
+    },
+    {
+      "width": 390,
+      "route": "/matches/demo-match-missing",
+      "action": "데모 프로필로 돌아가기",
+      "destination": "/players/demo-player-01",
+      "rows": 4,
+      "status": "PASS"
+    }
+  ],
+  "errors": []
+}

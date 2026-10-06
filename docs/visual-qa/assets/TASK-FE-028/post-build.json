@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "url": "/",
+      "http": 200,
+      "items": [
+        "Home",
+        "Overview",
+        "Lineups",
+        "Smokes"
+      ],
+      "current": [
+        "Home"
+      ],
+      "overflow": 0
+    },
+    {
+      "url": "/players/ied-agent-allen",
+      "http": 200,
+      "items": [
+        "Home",
+        "Overview",
+        "Matches",
+        "Performance",
+        "Agents",
+        "Maps",
+        "Weapons",
+        "Lineups",
+        "Smokes"
+      ],
+      "current": [
+        "Overview"
+      ],
+      "overflow": 0
+    },
+    {
+      "url": "/lineups",
+      "http": 200,
+      "items": [
+        "Home",
+        "Overview",
+        "Lineups",
+        "Smokes"
+      ],
+      "current": [
+        "Lineups"
+      ],
+      "overflow": 0
+    },
+    {
+      "url": "/smokes",
+      "http": 200,
+      "items": [
+        "Home",
+        "Overview",
+        "Lineups",
+        "Smokes"
+      ],
+      "current": [
+        "Smokes"
+      ],
+      "overflow": 0
+    }
+  ],
+  "errors": []
+}

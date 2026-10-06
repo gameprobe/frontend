@@ -1,0 +1,533 @@
+{
+  "task": "TASK-FE-020",
+  "base": "1863a99",
+  "branch": "codex/profile-shared-styles",
+  "status": "PASS",
+  "captureEnvironment": {
+    "browser": "Playwright Chromium",
+    "deviceScaleFactor": 1,
+    "reducedMotion": "reduce",
+    "viewports": [
+      [
+        1728,
+        941
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "breakpointWidths": [
+      320,
+      700,
+      701,
+      1000,
+      1001,
+      1250,
+      1251,
+      1440,
+      1500,
+      1920
+    ]
+  },
+  "computedStyles": {
+    "states": 58,
+    "allIdentical": true,
+    "stateNames": [
+      "desktop-home",
+      "desktop-overview",
+      "desktop-matches",
+      "desktop-performance",
+      "desktop-agents",
+      "desktop-maps",
+      "desktop-weapons",
+      "desktop-show-more",
+      "desktop-filters",
+      "desktop-empty-matches",
+      "desktop-empty-maps",
+      "desktop-act",
+      "desktop-deathmatch",
+      "desktop-weapon-scroll",
+      "desktop-modal-scoreboard",
+      "desktop-modal-performance",
+      "desktop-modal-economy",
+      "desktop-modal-rounds",
+      "desktop-modal-duels",
+      "mobile-home",
+      "mobile-overview",
+      "mobile-matches",
+      "mobile-performance",
+      "mobile-agents",
+      "mobile-maps",
+      "mobile-weapons",
+      "mobile-show-more",
+      "mobile-filters",
+      "mobile-empty-matches",
+      "mobile-empty-maps",
+      "mobile-act",
+      "mobile-deathmatch",
+      "mobile-weapon-scroll",
+      "mobile-modal-scoreboard",
+      "mobile-modal-performance",
+      "mobile-modal-economy",
+      "mobile-modal-rounds",
+      "mobile-modal-duels",
+      "width320-overview",
+      "width320-weapons",
+      "width700-overview",
+      "width700-weapons",
+      "width701-overview",
+      "width701-weapons",
+      "width1000-overview",
+      "width1000-weapons",
+      "width1001-overview",
+      "width1001-weapons",
+      "width1250-overview",
+      "width1250-weapons",
+      "width1251-overview",
+      "width1251-weapons",
+      "width1440-overview",
+      "width1440-weapons",
+      "width1500-overview",
+      "width1500-weapons",
+      "width1920-overview",
+      "width1920-weapons"
+    ]
+  },
+  "screenshots": [
+    {
+      "state": "desktop-act",
+      "size": [
+        1728,
+        2537
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "desktop-agents",
+      "size": [
+        1728,
+        2537
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "desktop-deathmatch",
+      "size": [
+        1728,
+        2480
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "desktop-empty-maps",
+      "size": [
+        1728,
+        2366
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "desktop-empty-matches",
+      "size": [
+        1728,
+        2366
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "desktop-filters",
+      "size": [
+        1728,
+        2537
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "desktop-home",
+      "size": [
+        1728,
+        941
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "desktop-maps",
+      "size": [
+        1728,
+        2537
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "desktop-matches",
+      "size": [
+        1728,
+        3646
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "desktop-modal-scoreboard",
+      "size": [
+        1728,
+        941
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "desktop-overview",
+      "size": [
+        1728,
+        4408
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "desktop-performance",
+      "size": [
+        1728,
+        2537
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "desktop-show-more",
+      "size": [
+        1728,
+        4446
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "desktop-weapon-scroll",
+      "size": [
+        1728,
+        2537
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "desktop-weapons",
+      "size": [
+        1728,
+        2537
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "mobile-act",
+      "size": [
+        390,
+        4449
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "mobile-agents",
+      "size": [
+        390,
+        2548
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "mobile-deathmatch",
+      "size": [
+        390,
+        4056
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "mobile-empty-maps",
+      "size": [
+        390,
+        2366
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "mobile-empty-matches",
+      "size": [
+        390,
+        2651
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "mobile-filters",
+      "size": [
+        390,
+        3085
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "mobile-home",
+      "size": [
+        390,
+        844
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "mobile-maps",
+      "size": [
+        390,
+        2758
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "mobile-matches",
+      "size": [
+        390,
+        6287
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "mobile-modal-scoreboard",
+      "size": [
+        390,
+        844
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "mobile-overview",
+      "size": [
+        390,
+        7388
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "mobile-performance",
+      "size": [
+        390,
+        3629
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "mobile-show-more",
+      "size": [
+        390,
+        7444
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "mobile-weapon-scroll",
+      "size": [
+        390,
+        2576
+      ],
+      "identical": true,
+      "differenceBox": null
+    },
+    {
+      "state": "mobile-weapons",
+      "size": [
+        390,
+        2576
+      ],
+      "identical": true,
+      "differenceBox": null
+    }
+  ],
+  "behaviorChecks": [
+    "desktop: six profile tabs",
+    "desktop: load more, agent, date, result filters",
+    "desktop: empty match/map + reset",
+    "desktop: act and playlist",
+    "desktop: modal five tabs / Escape / focus",
+    "mobile: six profile tabs",
+    "mobile: load more, agent, date, result filters",
+    "mobile: empty match/map + reset",
+    "mobile: act and playlist",
+    "mobile: modal five tabs / Escape / focus",
+    "20 breakpoint/tab states without document overflow"
+  ],
+  "pageErrors": [],
+  "captureControl": {
+    "states": [
+      {
+        "state": "desktop-act",
+        "baselineIdenticalToOriginal": true,
+        "pairIdentical": true
+      },
+      {
+        "state": "desktop-agents",
+        "baselineIdenticalToOriginal": true,
+        "pairIdentical": true
+      },
+      {
+        "state": "desktop-deathmatch",
+        "baselineIdenticalToOriginal": true,
+        "pairIdentical": true
+      },
+      {
+        "state": "desktop-empty-maps",
+        "baselineIdenticalToOriginal": true,
+        "pairIdentical": true
+      },
+      {
+        "state": "desktop-empty-matches",
+        "baselineIdenticalToOriginal": true,
+        "pairIdentical": true
+      },
+      {
+        "state": "desktop-filters",
+        "baselineIdenticalToOriginal": true,
+        "pairIdentical": true
+      },
+      {
+        "state": "desktop-home",
+        "baselineIdenticalToOriginal": true,
+        "pairIdentical": true
+      },
+      {
+        "state": "desktop-maps",
+        "baselineIdenticalToOriginal": true,
+        "pairIdentical": true
+      },
+      {
+        "state": "desktop-matches",
+        "baselineIdenticalToOriginal": true,
+        "pairIdentical": true
+      },
+      {
+        "state": "desktop-modal-scoreboard",
+        "baselineIdenticalToOriginal": true,
+        "pairIdentical": true
+      },
+      {
+        "state": "desktop-overview",
+        "baselineIdenticalToOriginal": true,
+        "pairIdentical": true
+      },
+      {
+        "state": "desktop-performance",
+        "baselineIdenticalToOriginal": true,
+        "pairIdentical": true
+      },
+      {
+        "state": "desktop-show-more",
+        "baselineIdenticalToOriginal": true,
+        "pairIdentical": true
+      },
+      {
+        "state": "desktop-weapon-scroll",
+        "baselineIdenticalToOriginal": true,
+        "pairIdentical": true
+      },
+      {
+        "state": "desktop-weapons",
+        "baselineIdenticalToOriginal": true,
+        "pairIdentical": true
+      }
+    ],
+    "computedStates": 19,
+    "sourceRestoredExactly": true,
+    "initialDifference": {
+      "pixels": 18,
+      "bounds": [
+        165,
+        61,
+        175,
+        70
+      ],
+      "maxChannelDifference": 5
+    },
+    "comparisonTolerance": 0
+  },
+  "smoke": {
+    "status": "PASS",
+    "http": 200,
+    "modalWidth": 1400,
+    "tabs": 5,
+    "minTextSize": 12,
+    "closeButton": {
+      "x": 1507,
+      "y": 66,
+      "width": 44,
+      "height": 44
+    },
+    "closed": true,
+    "bodyOverflow": "visible"
+  },
+  "staticAudit": {
+    "sourceFiles": 20,
+    "sharedDeclarationBlocks": 30,
+    "consumerImports": 11,
+    "cssRulesPreserved": 91,
+    "logicAndDataUnchanged": true
+  },
+  "verification": {
+    "mock": "PASS",
+    "mockDetail": "PASS",
+    "missingDataSSR": "PASS",
+    "tsc": "PASS",
+    "lint": "PASS (0 warnings/errors)",
+    "build": "PASS (11 static pages)",
+    "diffCheck": "PASS"
+  },
+  "sourceSha256": {
+    "frontend/src/features/tracker-profile/ProfileShared.module.css": "bc151deb5479c866b76407628ae41cc370913561dfbd359217523310639932f7",
+    "frontend/src/features/tracker-profile/TrackerProfile.module.css": "0c00e9241596a71b15a8cb2207ae8af2bfaab5763f3147aafcc3568afd024694",
+    "frontend/src/features/tracker-profile/TrackerProfile.tsx": "fb5b5841854bfd5d7d04550ed1f9c90b4e42655fd3f4b80beb39fc244e5055a2",
+    "frontend/src/features/tracker-profile/match-history/MatchDayGroup.tsx": "5cf9101d91527baf09bff6b6815520dbaeeb367dba8a5210a8c3d204b8f3103d",
+    "frontend/src/features/tracker-profile/match-history/MatchHistory.module.css": "8070963ad3212aca91ced814dea37b8f2aa63ccb29b31c356c492828b3055851",
+    "frontend/src/features/tracker-profile/match-history/MatchHistory.tsx": "b2d87bb19f28007e691cee4f30e7cbad3c17eddb9e8bc48ec4c0483972b7d788",
+    "frontend/src/features/tracker-profile/match-history/MatchRow.tsx": "345eae792d63716a414c55d90e42c687d818374a2a6fcf138ab4281cf0e683ca",
+    "frontend/src/features/tracker-profile/sidebar/AccuracyCard.tsx": "6499621b3e8a5dedfe261ab98a46fe09c23190a7b132692848e78e15a453981c",
+    "frontend/src/features/tracker-profile/sidebar/ProfileSidebar.module.css": "e476a3395c488479c25ccf5adeffe63f544b14534793c204720adcc36c8f23f3",
+    "frontend/src/features/tracker-profile/sidebar/ProfileSidebar.tsx": "4a1218493a4019fa59e6b45937734711ed9f44707fcb9bcf2cec88cf910aa8c4",
+    "frontend/src/features/tracker-profile/sidebar/RankCard.tsx": "5d65b5c6ab70d1ea4bd978fd87f6622803789148a43c228b8d2d753fd192e900",
+    "frontend/src/features/tracker-profile/sidebar/RoleStatsCard.tsx": "5f8ba69362ac1ab5f879f214743f3bea00fc83c12a36bd4276f2186b4fefb078",
+    "frontend/src/features/tracker-profile/sidebar/TopMapsCard.tsx": "a6895ff3fe36569bd4fbb9f836766b7612c96748f508e229d39ddcf3a61ce1c0",
+    "frontend/src/features/tracker-profile/sidebar/TopWeaponsCard.tsx": "de2a68e3e3a4e57dce4a72d3aea5a0b87d1660ac1cbd8d839a0a0d5ca09b3d33",
+    "frontend/src/features/tracker-profile/summary/AgentStatsTable.module.css": "59920047c5beff0098db1cf6a13caebf50fe00c07b1c10f88918585bb3e8838e",
+    "frontend/src/features/tracker-profile/summary/AgentStatsTable.tsx": "ff8f11ad67032871fb1a30b69f0e7d405a4fb305e53c635f5a8b257dffe97bd4",
+    "frontend/src/features/tracker-profile/summary/ProbeScoreCard.module.css": "516be7a345147b966dc86a65e568385117a2c10c2304077f3c87429652c6a012",
+    "frontend/src/features/tracker-profile/summary/ProbeScoreCard.tsx": "20c2ea49cfe5f72fdd9e27f9ab671226022b16f75d7ea57ba2c46b8d7ded03c8",
+    "frontend/src/features/tracker-profile/summary/SeasonOverview.module.css": "e26b5cdfb00c6fcb797465079a023fe9fa9e5db0ba25d2f0552eb49c77d04860",
+    "frontend/src/features/tracker-profile/summary/SeasonOverview.tsx": "e642f532a179956202bee1685b6dde499624df548112da8f3c70f1696cd9183d"
+  },
+  "limitations": [
+    "별도 Cursor 리뷰 미실행. 독립 Codex 보조 에이전트가 소스와 PC/모바일 Overview를 검토했다.",
+    "실제 Riot API/배포 검증은 이번 범위 밖이다.",
+    "컨테이너 git 메타데이터 경고는 기존과 동일하며 빌드 성공."
+  ]
+}

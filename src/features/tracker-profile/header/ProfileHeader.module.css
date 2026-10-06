@@ -1,0 +1,270 @@
+/* ProfileHeader 전용 배치·반응형. 상태·이벤트·이미지/Select helper는 부모에서 제공한다. */
+.profileHeader {
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 0 44px #24354722;
+}
+.hero {
+  height:216px;
+  position:relative;
+  isolation:isolate;
+  background:linear-gradient(90deg,#192837e6,#19283766,#192837d9),repeating-linear-gradient(0deg,#192737 0px,#192737 53px,#101923 54px,#101923 64px);
+  overflow:hidden;
+}
+.hero:after {
+  content:"";
+  position:absolute;
+  inset:55% 0 0;
+  background:linear-gradient(transparent,#0a121bd9);
+  z-index:-1;
+}
+.heroType {
+  position:absolute;
+  top:-74px;
+  left:17%;
+  color:#2a4059;
+  font-weight:900;
+  font-size:340px;
+  line-height:1.2;
+  letter-spacing:-25px;
+  z-index:-3;
+}
+.heroSlash {
+  position:absolute;
+  left:29%;
+  top:-100px;
+  width:46%;
+  height:540px;
+  transform:rotate(-42deg);
+  background:var(--accent);
+  clip-path:polygon(0 0,100% 0,100% 30%,25% 30%,25% 100%,0 100%);
+  z-index:-2;
+}
+.heroAgent {
+  position:absolute;
+  width:820px;
+  height:770px!important;
+  left:47%;
+  top:-80px;
+  transform:translateX(-43%);
+  object-fit:contain;
+  z-index:-1;
+  filter:drop-shadow(8px 10px 0 #101b2688);
+}
+.heroTop {
+  display:flex;
+  justify-content:space-between;
+  padding:16px;
+  position:relative;
+  z-index:2;
+}
+.saveButton {
+  background:var(--action-bg)!important;
+  color:var(--action-text)!important;
+  padding:11px 14px!important;
+  font-size:var(--font-caption)!important;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  border-radius:3px!important;
+  font-weight:700!important;
+}
+/* 저장 완료의 녹색 상태는 유지하고, 저장 전 행동만 공통 hover를 사용한다. */
+.saveButton:not(.saved):hover {
+  background:var(--action-hover)!important;
+  filter:none;
+}
+.saved {
+  background:#285b51!important;
+}
+.updateButton {
+  background:linear-gradient(90deg,#28295b,#733b4a)!important;
+  border-radius:5px!important;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:10px 12px!important;
+  font-size:var(--font-caption)!important;
+}
+.updateButton i {
+  width:8px;
+  height:8px;
+  background:#76dd98;
+  border-radius:50%;
+}
+.identity {
+  position:absolute;
+  left:24px;
+  bottom:16px;
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+.avatar {
+  width:76px;
+  height:76px;
+  border-radius:50%;
+  border:3px solid #ecedf0;
+  background:#8e95b0;
+}
+.views {
+  display:block;
+  color:var(--muted);
+  font-size:var(--font-caption);
+  font-weight:700;
+  margin-bottom:4px;
+}
+.identity h1 {
+  font-size:var(--font-title);
+  font-weight:800;
+  line-height:1.2;
+  display:flex;
+  gap:6px;
+  align-items:center;
+  letter-spacing:-.6px;
+  color:var(--text);
+}
+.identity h1 span {
+  font-size:var(--font-caption);
+  letter-spacing:0;
+  font-weight:500;
+  color:var(--muted);
+  border:1px solid #758492;
+  border-radius:3px;
+  padding:1px 4px;
+}
+.shareButton {
+  position:absolute;
+  right:17px;
+  bottom:12px;
+  background:#ffffff22!important;
+  padding:10px!important;
+  border-radius:4px!important;
+}
+.tabs {
+  height:44px;
+  display:flex;
+  align-items:stretch;
+  background:#303f50;
+  gap:2px;
+  padding-left:120px;
+  overflow-x:auto;
+  scrollbar-width:thin;
+}
+.tabs button,.tabs a {
+  padding:0 18px;
+  font-size:var(--font-body);
+  font-weight:700;
+  white-space:nowrap;
+  border-bottom:2px solid transparent;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:5px;
+}
+.tabs .activeTab {
+  border-bottom-color:var(--accent);
+  background:#ffffff05;
+}
+@media(max-width:1250px) {
+  .tabs {
+    padding-left:130px;
+  }
+  .tabs button,.tabs a {
+    padding:0 15px;
+  }
+}
+@media(max-width:1000px) {
+  .tabs {
+    padding-left:10px;
+  }
+  .tabs button,.tabs a {
+    padding:0 17px;
+  }
+}
+@media(max-width:700px) {
+  .profileHeader {
+    border-radius:10px;
+  }
+  .hero {
+    height:200px;
+  }
+  .heroTop {
+    padding:10px;
+  }
+  .saveButton {
+    font-size:var(--font-caption)!important;
+    padding:9px 10px!important;
+  }
+  .updateButton {
+    padding:8px 9px!important;
+    gap:7px;
+    font-size:var(--font-caption)!important;
+  }
+  .updateButton svg {
+    width:14px;
+  }
+  .heroType {
+    font-size:260px;
+    left:-15%;
+    top:-42px;
+  }
+  .heroAgent {
+    width:570px;
+    height:540px!important;
+    top:-35px;
+    left:54%;
+  }
+  .heroSlash {
+    left:26%;
+    height:340px;
+    width:70%;
+    top:-25px;
+  }
+  .identity {
+    left:14px;
+    bottom:15px;
+    gap:11px;
+    right:43px;
+  }
+  .avatar {
+    width:63px;
+    height:63px;
+    border-width:2px;
+  }
+  .identity h1 {
+    font-size:var(--font-heading);
+    letter-spacing:-.5px;
+    display:block;
+  }
+  .identity h1 span {
+    font-size:var(--font-caption);
+    letter-spacing:0;
+    display:inline-block;
+    margin-left:5px;
+    vertical-align:middle;
+  }
+  .views {
+    font-size:var(--font-caption);
+    margin-bottom:4px;
+  }
+  .shareButton {
+    padding:7px!important;
+    right:10px;
+    bottom:17px;
+  }
+  .shareButton svg {
+    width:18px;
+    height:18px;
+  }
+  .tabs {
+    height:48px;
+    padding-left:3px;
+    gap:0;
+    scrollbar-width:none;
+  }
+  .tabs button,.tabs a {
+    font-size:var(--font-caption);
+    padding:0 15px;
+  }
+}

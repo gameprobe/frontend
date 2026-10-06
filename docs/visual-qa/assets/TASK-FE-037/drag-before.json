@@ -1,0 +1,21 @@
+{
+  "phase": "before",
+  "screens": [
+    "drag-before-1440-editor.png",
+    "drag-before-1440-preview.png",
+    "drag-before-390-editor.png",
+    "drag-before-390-preview.png"
+  ],
+  "checks": [
+    {
+      "width": 1440,
+      "capture": "PASS"
+    },
+    {
+      "width": 390,
+      "capture": "PASS"
+    }
+  ],
+  "errors": [],
+  "apiRequests": []
+}

@@ -1,0 +1,12 @@
+{
+  "network": "fe040-20261005001925-60338-network",
+  "mongo": "fe040-20261005001925-60338-mongo",
+  "backend": "fe040-20261005001925-60338-backend",
+  "backendUrl": "http://localhost:18080",
+  "frontendUrl": "http://localhost:3101",
+  "frontendCopy": "/tmp/valorant-fe040-frontend.5YRdGG",
+  "frontendContainer": "fe040-frontend-20261005002936-64587",
+  "cleanup": "complete",
+  "fixtures_before_cleanup": [],
+  "main_services": "Preserved localhost:3000 and localhost:8080"
+}

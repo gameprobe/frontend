@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "home restored HTTP200",
+    "default Korean",
+    "English menu selection",
+    "English persists on default demo navigation",
+    "English persists on reload",
+    "legacy twenty rows retained",
+    "Korean restored",
+    "no browser errors"
+  ],
+  "errors": [],
+  "status": "PASS"
+}

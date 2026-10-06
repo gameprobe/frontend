@@ -1,0 +1,171 @@
+{
+  "detailHref": "/matches/demo-match-001?viewer=demo-player-01",
+  "results": [
+    {
+      "name": "modal",
+      "width": 1440,
+      "file": "before-1440-modal.png",
+      "overflow": false,
+      "mainCount": 1,
+      "navCount": 1,
+      "nav": [
+        {
+          "text": "Home",
+          "href": "/"
+        },
+        {
+          "text": "Lineups",
+          "href": "/lineups"
+        },
+        {
+          "text": "Smokes",
+          "href": "/smokes"
+        }
+      ],
+      "sharedLink": "/matches/demo-match-001?viewer=demo-player-01",
+      "panelTexts": "Competitive\nAscent\nTeam A\n13\n:\nTeam B\n9\n2026-09-20 · 00:00 UTC\n33m\nAverage Rank\n—\nMOCK DATA\nScoreboard\nPerformance\nEconomy\nRounds\nDuels\nTeam A\n13\nTeam B\n9\n◆\n·\n1\n·\n◆\n2\n◆\n·\n3\n·\n◆\n4\n◆\n·\n5\n·\n◆\n6\n◆\n·\n7\n·\n◆\n8\n◆\n·\n9\n·\n◆\n10\n◆\n·\n11\n·\n◆\n12\n◆\n·\n13\n·\n◆\n14\n◆\n·\n15\n·\n◆\n16\n◆\n·\n17\n·\n◆\n18\n◆\n·\n19\n◆\n·\n20\n◆\n·\n21\n◆\n·\n22\nTeam A · Avg. Rank: —\tMatch Rank\tPS\t▾ ACS\tK\tD\tA\t+/−\tK/D\tDDΔ\tADR\tHS%\tKAST\tFK\tFD\tMK\n\nDemoPlayer02 #DEMO\nOmen\n\t—\t—\t320\t17\t9\t60\t+8\t1.89\t+113.2\t174.5\t16.9%\t—\t0\t0\t2\n\nDemoPlayer01 #DEMO\nJett\nYOU\n\t—\t—\t252.5\t24\t15\t5\t+9\t1.60\t+35.5\t137.7\t16.4%\t—\t22\t0\t2\n\nDemoPlayer03 #DEMO\nSova\n\t—\t—\t160\t13\t9\t12\t+4\t1.44\t+25.9\t87.3\t16.3%\t—\t0\t0\t0\n\nDemoPlayer05 #DEMO\nRaze\n\t—\t—\t120\t12\t9\t0\t+3\t1.33\t+4.1\t65.5\t21.7%\t—\t0\t0\t0\n\nDemoPlayer04 #DEMO\nSage\n\t—\t—\t110\t11\t9\t0\t+2\t1.22\t-1.4\t60\t17.6%\t—\t0\t0\t0\nTeam B · Avg. Rank: —\tMatch Rank\tPS\t▾ ACS\tK\tD\tA\t+/−\tK/D\tDDΔ\tADR\tHS%\tKAST\tFK\tFD\tMK\n\nDemoPlayer07 #DEMO\nBrimstone\n\t—\t—\t222.5\t17\t15\t21\t+2\t1.13\t+19.1\t121.4\t17.8%\t—\t0\t0\t7\n\nDemoPlayer08 #DEMO\nSova\n\t—\t—\t167.5\t12\t14\t19\t-2\t0.86\t-4.1\t91.4\t16.9%\t—\t0\t0\t1\n\nDemoPlayer09 #DEMO\nSage\n\t—\t—\t137.5\t12\t13\t7\t-1\t0.92\t-13.6\t75\t13.9%\t—\t0\t0\t1\n\nDemoPlayer10 #DEMO\nCypher\n\t—\t—\t110\t10\t13\t4\t-3\t0.77\t-28.6\t60\t13.8%\t—\t0\t0\t1\n\nDemoPlayer06 #DEMO\nRaze\n\t—\t—\t0\t0\t22\t0\t-22\t0.00\t-150\t0\t—\t—\t0\t22\t0\n\n— 미제공 또는 분모 0 · PS/KAST와 랭크 명칭은 미제공입니다. ACS는 합성 score의 라운드 평균입니다.\n\n공식 API 사용 필드 형태의 합성 경기입니다. 실제 Riot 기록이 아니며 피해·경제·score는 단순화한 표본입니다. PS·KAST·현재 RR·무기별 HS·좌표·설치/해체는 미제공입니다.\n이 경기 새 탭에서 보기\n경기 링크 복사"
+    },
+    {
+      "name": "modal",
+      "width": 390,
+      "file": "before-390-modal.png",
+      "overflow": false,
+      "mainCount": 1,
+      "navCount": 1,
+      "nav": [
+        {
+          "text": "Home",
+          "href": "/"
+        },
+        {
+          "text": "Lineups",
+          "href": "/lineups"
+        },
+        {
+          "text": "Smokes",
+          "href": "/smokes"
+        }
+      ],
+      "sharedLink": "/matches/demo-match-001?viewer=demo-player-01",
+      "panelTexts": "Competitive\nAscent\nTeam A\n13\n:\nTeam B\n9\n2026-09-20 · 00:00 UTC\n33m\nScoreboard\nPerformance\nEconomy\nRounds\nDuels\nTeam A\n13\nTeam B\n9\n◆\n·\n1\n·\n◆\n2\n◆\n·\n3\n·\n◆\n4\n◆\n·\n5\n·\n◆\n6\n◆\n·\n7\n·\n◆\n8\n◆\n·\n9\n·\n◆\n10\n◆\n·\n11\n·\n◆\n12\n◆\n·\n13\n·\n◆\n14\n◆\n·\n15\n·\n◆\n16\n◆\n·\n17\n·\n◆\n18\n◆\n·\n19\n◆\n·\n20\n◆\n·\n21\n◆\n·\n22\nTeam A · Avg. Rank: —\tMatch Rank\tPS\t▾ ACS\tK\tD\tA\t+/−\tK/D\tDDΔ\tADR\tHS%\tKAST\tFK\tFD\tMK\n\nDemoPlayer02 #DEMO\nOmen\n\t—\t—\t320\t17\t9\t60\t+8\t1.89\t+113.2\t174.5\t16.9%\t—\t0\t0\t2\n\nDemoPlayer01 #DEMO\nJett\nYOU\n\t—\t—\t252.5\t24\t15\t5\t+9\t1.60\t+35.5\t137.7\t16.4%\t—\t22\t0\t2\n\nDemoPlayer03 #DEMO\nSova\n\t—\t—\t160\t13\t9\t12\t+4\t1.44\t+25.9\t87.3\t16.3%\t—\t0\t0\t0\n\nDemoPlayer05 #DEMO\nRaze\n\t—\t—\t120\t12\t9\t0\t+3\t1.33\t+4.1\t65.5\t21.7%\t—\t0\t0\t0\n\nDemoPlayer04 #DEMO\nSage\n\t—\t—\t110\t11\t9\t0\t+2\t1.22\t-1.4\t60\t17.6%\t—\t0\t0\t0\nTeam B · Avg. Rank: —\tMatch Rank\tPS\t▾ ACS\tK\tD\tA\t+/−\tK/D\tDDΔ\tADR\tHS%\tKAST\tFK\tFD\tMK\n\nDemoPlayer07 #DEMO\nBrimstone\n\t—\t—\t222.5\t17\t15\t21\t+2\t1.13\t+19.1\t121.4\t17.8%\t—\t0\t0\t7\n\nDemoPlayer08 #DEMO\nSova\n\t—\t—\t167.5\t12\t14\t19\t-2\t0.86\t-4.1\t91.4\t16.9%\t—\t0\t0\t1\n\nDemoPlayer09 #DEMO\nSage\n\t—\t—\t137.5\t12\t13\t7\t-1\t0.92\t-13.6\t75\t13.9%\t—\t0\t0\t1\n\nDemoPlayer10 #DEMO\nCypher\n\t—\t—\t110\t10\t13\t4\t-3\t0.77\t-28.6\t60\t13.8%\t—\t0\t0\t1\n\nDemoPlayer06 #DEMO\nRaze\n\t—\t—\t0\t0\t22\t0\t-22\t0.00\t-150\t0\t—\t—\t0\t22\t0\n\n— 미제공 또는 분모 0 · PS/KAST와 랭크 명칭은 미제공입니다. ACS는 합성 score의 라운드 평균입니다.\n\n공식 API 사용 필드 형태의 합성 경기입니다. 실제 Riot 기록이 아니며 피해·경제·score는 단순화한 표본입니다. PS·KAST·현재 RR·무기별 HS·좌표·설치/해체는 미제공입니다.\n이 경기 새 탭에서 보기\n경기 링크 복사"
+    },
+    {
+      "name": "standalone",
+      "width": 1440,
+      "file": "before-1440-standalone.png",
+      "overflow": false,
+      "mainCount": 1,
+      "navCount": 0,
+      "nav": [],
+      "sharedLink": "/matches/demo-match-001?viewer=demo-player-01",
+      "panelTexts": {
+        "Scoreboard": "Team A\n13\nTeam B\n9\n◆\n·\n1\n·\n◆\n2\n◆\n·\n3\n·\n◆\n4\n◆\n·\n5\n·\n◆\n6\n◆\n·\n7\n·\n◆\n8\n◆\n·\n9\n·\n◆\n10\n◆\n·\n11\n·\n◆\n12\n◆\n·\n13\n·\n◆\n14\n◆\n·\n15\n·\n◆\n16\n◆\n·\n17\n·\n◆\n18\n◆\n·\n19\n◆\n·\n20\n◆\n·\n21\n◆\n·\n22\nTeam A · Avg. Rank: —\tMatch Rank\tPS\t▾ ACS\tK\tD\tA\t+/−\tK/D\tDDΔ\tADR\tHS%\tKAST\tFK\tFD\tMK\n\nDemoPlayer02 #DEMO\nOmen\n\t—\t—\t320\t17\t9\t60\t+8\t1.89\t+113.2\t174.5\t16.9%\t—\t0\t0\t2\n\nDemoPlayer01 #DEMO\nJett\nYOU\n\t—\t—\t252.5\t24\t15\t5\t+9\t1.60\t+35.5\t137.7\t16.4%\t—\t22\t0\t2\n\nDemoPlayer03 #DEMO\nSova\n\t—\t—\t160\t13\t9\t12\t+4\t1.44\t+25.9\t87.3\t16.3%\t—\t0\t0\t0\n\nDemoPlayer05 #DEMO\nRaze\n\t—\t—\t120\t12\t9\t0\t+3\t1.33\t+4.1\t65.5\t21.7%\t—\t0\t0\t0\n\nDemoPlayer04 #DEMO\nSage\n\t—\t—\t110\t11\t9\t0\t+2\t1.22\t-1.4\t60\t17.6%\t—\t0\t0\t0\nTeam B · Avg. Rank: —\tMatch Rank\tPS\t▾ ACS\tK\tD\tA\t+/−\tK/D\tDDΔ\tADR\tHS%\tKAST\tFK\tFD\tMK\n\nDemoPlayer07 #DEMO\nBrimstone\n\t—\t—\t222.5\t17\t15\t21\t+2\t1.13\t+19.1\t121.4\t17.8%\t—\t0\t0\t7\n\nDemoPlayer08 #DEMO\nSova\n\t—\t—\t167.5\t12\t14\t19\t-2\t0.86\t-4.1\t91.4\t16.9%\t—\t0\t0\t1\n\nDemoPlayer09 #DEMO\nSage\n\t—\t—\t137.5\t12\t13\t7\t-1\t0.92\t-13.6\t75\t13.9%\t—\t0\t0\t1\n\nDemoPlayer10 #DEMO\nCypher\n\t—\t—\t110\t10\t13\t4\t-3\t0.77\t-28.6\t60\t13.8%\t—\t0\t0\t1\n\nDemoPlayer06 #DEMO\nRaze\n\t—\t—\t0\t0\t22\t0\t-22\t0.00\t-150\t0\t—\t—\t0\t22\t0\n\n— 미제공 또는 분모 0 · PS/KAST와 랭크 명칭은 미제공입니다. ACS는 합성 score의 라운드 평균입니다.",
+        "Performance": "Team A\nVS\nTeam B\n\nTeam A · Jett\n\nDemoPlayer01\n#DEMO\nK/D/A\n24 / 15 / 5\nK/D\n1.60\nADR\n137.7\nACS\n252.5\nHS%\n16.4%\nKAST\n—\n팀 라운드 결과 · 개인 K/D/A\n1\n2/1/1\nW\n2\n2/1/1\nL\n3\n1/1/1\nW\n4\n1/1/1\nL\n5\n1/1/1\nW\n6\n1/1/0\nL\n7\n1/1/0\nW\n8\n1/1/0\nL\n9\n1/1/0\nW\n10\n1/1/0\nL\n11\n1/1/0\nW\n12\n1/1/0\nL\n13\n1/0/0\nW\n14\n1/1/0\nL\n15\n1/0/0\nW\n16\n1/1/0\nL\n17\n1/0/0\nW\n18\n1/1/0\nL\n19\n1/0/0\nW\n20\n1/0/0\nW\n21\n1/0/0\nW\n22\n1/0/0\nW\nAll Rounds\nAttack\nKills\n14\nAssists\n5\nDeaths\n12\nK/D\n1.17\n\n라운드별 실제 공수 역할을 기준으로 합산한 합성 기록\n\nDefense\nKills\n10\nAssists\n0\nDeaths\n3\nK/D\n3.33\n\n라운드별 실제 공수 역할을 기준으로 합산한 합성 기록\n\nOpponents · 상대별 교전\nKills ↓\tDeaths ↕\tDealt\tReceived\tOpponent\n22\t0\t2640\t0\t\nDemoPlayer06\n#DEMO\n\n2\t10\t330\t1200\t\nDemoPlayer07\n#DEMO\n\n0\t3\t60\t660\t\nDemoPlayer08\n#DEMO\n\n0\t2\t0\t330\t\nDemoPlayer09\n#DEMO\n\n0\t0\t0\t60\t\nDemoPlayer10\n#DEMO\n\nDealt / Received: 같은 원본의 상대별 피해 합계\n\nWeapons · 무기별 기록\nWeapon\tKills ↓\tDamage\n\nVandal\n\t8\t—\n\nPhantom\n\t7\t—\n\nGhost\n\t7\t—\n\n능력·기타\n\t2\t—\n\nDamage: 무기별 피해 기록 미제공",
+        "Economy": "Economy\nAvg. Bank: 2,500 / 5,000\nAvg. Loadout: 13,936 / 13,782\nBank\nLoadout\nTotal\n라운드별 보유 크레딧과 장비 가치 합계 · Team A / Team B 합계\nRound\tTeam A\tTeam B\n1\t18,600\t17,700\n2\t15,200\t21,100\n3\t15,200\t17,700\n4\t18,600\t17,700\n5\t15,200\t21,100\n6\t15,200\t17,700\n7\t18,600\t17,700\n8\t15,200\t21,100\n9\t15,200\t17,700\n10\t18,600\t17,700\n11\t15,200\t21,100\n12\t15,200\t17,700\n13\t18,600\t17,700\n14\t15,200\t21,100\n15\t15,200\t17,700\n16\t18,600\t17,700\n17\t15,200\t21,100\n18\t15,200\t17,700\n19\t18,600\t17,700\n20\t15,200\t21,100\n21\t15,200\t17,700\n22\t18,600\t17,700\n\n라운드별 합성 관측값입니다. 평균은 전체 22라운드 기준이며, 구매 이력과 실제 게임 경제 규칙을 재현하지 않습니다.\n\nTeam A · Avg. Rank: —\tMatch Rank\tPS\t▾ ACS\tK\tD\tA\t+/−\tK/D\tDDΔ\tADR\tHS%\tKAST\tFK\tFD\tMK\n\nDemoPlayer02 #DEMO\nOmen\n\t—\t—\t320\t17\t9\t60\t+8\t1.89\t+113.2\t174.5\t16.9%\t—\t0\t0\t2\n\nDemoPlayer01 #DEMO\nJett\nYOU\n\t—\t—\t252.5\t24\t15\t5\t+9\t1.60\t+35.5\t137.7\t16.4%\t—\t22\t0\t2\n\nDemoPlayer03 #DEMO\nSova\n\t—\t—\t160\t13\t9\t12\t+4\t1.44\t+25.9\t87.3\t16.3%\t—\t0\t0\t0\n\nDemoPlayer05 #DEMO\nRaze\n\t—\t—\t120\t12\t9\t0\t+3\t1.33\t+4.1\t65.5\t21.7%\t—\t0\t0\t0\n\nDemoPlayer04 #DEMO\nSage\n\t—\t—\t110\t11\t9\t0\t+2\t1.22\t-1.4\t60\t17.6%\t—\t0\t0\t0\nTeam B · Avg. Rank: —\tMatch Rank\tPS\t▾ ACS\tK\tD\tA\t+/−\tK/D\tDDΔ\tADR\tHS%\tKAST\tFK\tFD\tMK\n\nDemoPlayer07 #DEMO\nBrimstone\n\t—\t—\t222.5\t17\t15\t21\t+2\t1.13\t+19.1\t121.4\t17.8%\t—\t0\t0\t7\n\nDemoPlayer08 #DEMO\nSova\n\t—\t—\t167.5\t12\t14\t19\t-2\t0.86\t-4.1\t91.4\t16.9%\t—\t0\t0\t1\n\nDemoPlayer09 #DEMO\nSage\n\t—\t—\t137.5\t12\t13\t7\t-1\t0.92\t-13.6\t75\t13.9%\t—\t0\t0\t1\n\nDemoPlayer10 #DEMO\nCypher\n\t—\t—\t110\t10\t13\t4\t-3\t0.77\t-28.6\t60\t13.8%\t—\t0\t0\t1\n\nDemoPlayer06 #DEMO\nRaze\n\t—\t—\t0\t0\t22\t0\t-22\t0.00\t-150\t0\t—\t—\t0\t22\t0\n\n— 미제공 또는 분모 0 · PS/KAST와 랭크 명칭은 미제공입니다. ACS는 합성 score의 라운드 평균입니다.",
+        "Rounds": "1\n1\n:\n0\nW\n2\n1\n:\n1\nL\n3\n2\n:\n1\nW\n4\n2\n:\n2\nL\n5\n3\n:\n2\nW\n6\n3\n:\n3\nL\n7\n4\n:\n3\nW\n8\n4\n:\n4\nL\n9\n5\n:\n4\nW\n10\n5\n:\n5\nL\n11\n6\n:\n5\nW\n12\n6\n:\n6\nL\n13\n7\n:\n6\nW\n14\n7\n:\n7\nL\n15\n8\n:\n7\nW\n16\n8\n:\n8\nL\n17\n9\n:\n8\nW\n18\n9\n:\n9\nL\n19\n10\n:\n9\nW\n20\n11\n:\n9\nW\n21\n12\n:\n9\nW\n22\n13\n:\n9\nW\nROUND 1\nTEAM A WIN\n1 : 0 · Elimination\n\n위에서 라운드를 선택해 결과를 확인하세요.\n\nTeam A 라운드별 기록\nTeam A\tScore\tK\tD\tA\tEcon\n\nDemoPlayer01\n#DEMO\n\t495\t2\t1\t1\t3900\n\nDemoPlayer02\n#DEMO\n\t605\t2\t0\t3\t3900\n\nDemoPlayer03\n#DEMO\n\t275\t1\t0\t1\t500\n\nDemoPlayer04\n#DEMO\n\t0\t0\t0\t0\t3900\n\nDemoPlayer05\n#DEMO\n\t0\t0\t0\t0\t3900\nTeam B 라운드별 기록\nTeam B\tScore\tK\tD\tA\tEcon\n\nDemoPlayer06\n#DEMO\n\t0\t0\t1\t0\t500\n\nDemoPlayer07\n#DEMO\n\t0\t0\t1\t0\t3900\n\nDemoPlayer08\n#DEMO\n\t0\t0\t1\t0\t3900\n\nDemoPlayer09\n#DEMO\n\t220\t1\t1\t0\t500\n\nDemoPlayer10\n#DEMO\n\t55\t0\t1\t1\t3900\n\n라운드별 합성 원본 · Econ은 장비 가치입니다. Score는 단순화한 합성 점수입니다.\n\nEvent Log\n15s\nDemoPlayer01\n→ DemoPlayer06\nPhantom · First Kill\n18s\nDemoPlayer01\n→ DemoPlayer07\nGhost\n21s\nDemoPlayer02\n→ DemoPlayer08\nVandal\n24s\nDemoPlayer09\n→ DemoPlayer01\nPhantom\n27s\nDemoPlayer02\n→ DemoPlayer09\nGhost\n30s\nDemoPlayer03\n→ DemoPlayer10\nVandal\n\n설치·해체 이벤트는 이 합성 표본에서 제공하지 않습니다.\n\nPlayer Positions\n선수 위치 미제공\n\nAscent의 라운드별 좌표 기록이 없어 선수 위치를 표시할 수 없습니다.",
+        "Duels": "DemoPlayer01\n\n제공된 교전 기록\n\n24\nKills\n/\n15\nDeaths\nRecorded Duels\n25/ 25\n\n기록이 제공된 선수 조합\n\n전체 교전 비교\n25 / 25\n\n미제공 조합 0개 · 전체 라이벌 순위 미제공\n\nAscent · Team A vs Team B\n\n각 칸은 행 선수의 킬 / 데스입니다. — 기록 미제공\n\nTeam A와 Team B의 상대별 교전 기록\nAvsB\t\nDemoPlayer06\n#DEMO\nRaze\n\t\nDemoPlayer07\n#DEMO\nBrimstone\n\t\nDemoPlayer08\n#DEMO\nSova\n\t\nDemoPlayer09\n#DEMO\nSage\n\t\nDemoPlayer10\n#DEMO\nCypher\n\n\nDemoPlayer01YOU\n#DEMO\nJett\n\t\n22\n/\n0\n\t\n2\n/\n10\n\t\n0\n/\n3\n\t\n0\n/\n2\n\t\n0\n/\n0\n\n\nDemoPlayer02\n#DEMO\nOmen\n\t\n0\n/\n0\n\t\n6\n/\n0\n\t\n4\n/\n4\n\t\n4\n/\n0\n\t\n3\n/\n5\n\n\nDemoPlayer03\n#DEMO\nSova\n\t\n0\n/\n0\n\t\n3\n/\n4\n\t\n4\n/\n0\n\t\n2\n/\n5\n\t\n4\n/\n0\n\n\nDemoPlayer04\n#DEMO\nSage\n\t\n0\n/\n0\n\t\n2\n/\n0\n\t\n3\n/\n4\n\t\n4\n/\n0\n\t\n2\n/\n5\n\n\nDemoPlayer05\n#DEMO\nRaze\n\t\n0\n/\n0\n\t\n2\n/\n3\n\t\n3\n/\n1\n\t\n3\n/\n5\n\t\n4\n/\n0\n\n전체 킬 이벤트에서 양 팀 25개 조합을 계산했습니다. 0은 기록된 교전이 없는 조합입니다."
+      }
+    },
+    {
+      "name": "standalone",
+      "width": 820,
+      "file": "before-820-standalone.png",
+      "overflow": false,
+      "mainCount": 1,
+      "navCount": 0,
+      "nav": [],
+      "sharedLink": "/matches/demo-match-001?viewer=demo-player-01",
+      "panelTexts": {
+        "Scoreboard": "Team A\n13\nTeam B\n9\n◆\n·\n1\n·\n◆\n2\n◆\n·\n3\n·\n◆\n4\n◆\n·\n5\n·\n◆\n6\n◆\n·\n7\n·\n◆\n8\n◆\n·\n9\n·\n◆\n10\n◆\n·\n11\n·\n◆\n12\n◆\n·\n13\n·\n◆\n14\n◆\n·\n15\n·\n◆\n16\n◆\n·\n17\n·\n◆\n18\n◆\n·\n19\n◆\n·\n20\n◆\n·\n21\n◆\n·\n22\nTeam A · Avg. Rank: —\tMatch Rank\tPS\t▾ ACS\tK\tD\tA\t+/−\tK/D\tDDΔ\tADR\tHS%\tKAST\tFK\tFD\tMK\n\nDemoPlayer02 #DEMO\nOmen\n\t—\t—\t320\t17\t9\t60\t+8\t1.89\t+113.2\t174.5\t16.9%\t—\t0\t0\t2\n\nDemoPlayer01 #DEMO\nJett\nYOU\n\t—\t—\t252.5\t24\t15\t5\t+9\t1.60\t+35.5\t137.7\t16.4%\t—\t22\t0\t2\n\nDemoPlayer03 #DEMO\nSova\n\t—\t—\t160\t13\t9\t12\t+4\t1.44\t+25.9\t87.3\t16.3%\t—\t0\t0\t0\n\nDemoPlayer05 #DEMO\nRaze\n\t—\t—\t120\t12\t9\t0\t+3\t1.33\t+4.1\t65.5\t21.7%\t—\t0\t0\t0\n\nDemoPlayer04 #DEMO\nSage\n\t—\t—\t110\t11\t9\t0\t+2\t1.22\t-1.4\t60\t17.6%\t—\t0\t0\t0\nTeam B · Avg. Rank: —\tMatch Rank\tPS\t▾ ACS\tK\tD\tA\t+/−\tK/D\tDDΔ\tADR\tHS%\tKAST\tFK\tFD\tMK\n\nDemoPlayer07 #DEMO\nBrimstone\n\t—\t—\t222.5\t17\t15\t21\t+2\t1.13\t+19.1\t121.4\t17.8%\t—\t0\t0\t7\n\nDemoPlayer08 #DEMO\nSova\n\t—\t—\t167.5\t12\t14\t19\t-2\t0.86\t-4.1\t91.4\t16.9%\t—\t0\t0\t1\n\nDemoPlayer09 #DEMO\nSage\n\t—\t—\t137.5\t12\t13\t7\t-1\t0.92\t-13.6\t75\t13.9%\t—\t0\t0\t1\n\nDemoPlayer10 #DEMO\nCypher\n\t—\t—\t110\t10\t13\t4\t-3\t0.77\t-28.6\t60\t13.8%\t—\t0\t0\t1\n\nDemoPlayer06 #DEMO\nRaze\n\t—\t—\t0\t0\t22\t0\t-22\t0.00\t-150\t0\t—\t—\t0\t22\t0\n\n— 미제공 또는 분모 0 · PS/KAST와 랭크 명칭은 미제공입니다. ACS는 합성 score의 라운드 평균입니다.",
+        "Performance": "Team A\nVS\nTeam B\n\nTeam A · Jett\n\nDemoPlayer01\n#DEMO\nK/D/A\n24 / 15 / 5\nK/D\n1.60\nADR\n137.7\nACS\n252.5\nHS%\n16.4%\nKAST\n—\n팀 라운드 결과 · 개인 K/D/A\n1\n2/1/1\nW\n2\n2/1/1\nL\n3\n1/1/1\nW\n4\n1/1/1\nL\n5\n1/1/1\nW\n6\n1/1/0\nL\n7\n1/1/0\nW\n8\n1/1/0\nL\n9\n1/1/0\nW\n10\n1/1/0\nL\n11\n1/1/0\nW\n12\n1/1/0\nL\n13\n1/0/0\nW\n14\n1/1/0\nL\n15\n1/0/0\nW\n16\n1/1/0\nL\n17\n1/0/0\nW\n18\n1/1/0\nL\n19\n1/0/0\nW\n20\n1/0/0\nW\n21\n1/0/0\nW\n22\n1/0/0\nW\nAll Rounds\nAttack\nKills\n14\nAssists\n5\nDeaths\n12\nK/D\n1.17\n\n라운드별 실제 공수 역할을 기준으로 합산한 합성 기록\n\nDefense\nKills\n10\nAssists\n0\nDeaths\n3\nK/D\n3.33\n\n라운드별 실제 공수 역할을 기준으로 합산한 합성 기록\n\nOpponents · 상대별 교전\nKills ↓\tDeaths ↕\tDealt\tReceived\tOpponent\n22\t0\t2640\t0\t\nDemoPlayer06\n#DEMO\n\n2\t10\t330\t1200\t\nDemoPlayer07\n#DEMO\n\n0\t3\t60\t660\t\nDemoPlayer08\n#DEMO\n\n0\t2\t0\t330\t\nDemoPlayer09\n#DEMO\n\n0\t0\t0\t60\t\nDemoPlayer10\n#DEMO\n\nDealt / Received: 같은 원본의 상대별 피해 합계\n\nWeapons · 무기별 기록\nWeapon\tKills ↓\tDamage\n\nVandal\n\t8\t—\n\nPhantom\n\t7\t—\n\nGhost\n\t7\t—\n\n능력·기타\n\t2\t—\n\nDamage: 무기별 피해 기록 미제공",
+        "Economy": "Economy\nAvg. Bank: 2,500 / 5,000\nAvg. Loadout: 13,936 / 13,782\nBank\nLoadout\nTotal\n라운드별 보유 크레딧과 장비 가치 합계 · Team A / Team B 합계\nRound\tTeam A\tTeam B\n1\t18,600\t17,700\n2\t15,200\t21,100\n3\t15,200\t17,700\n4\t18,600\t17,700\n5\t15,200\t21,100\n6\t15,200\t17,700\n7\t18,600\t17,700\n8\t15,200\t21,100\n9\t15,200\t17,700\n10\t18,600\t17,700\n11\t15,200\t21,100\n12\t15,200\t17,700\n13\t18,600\t17,700\n14\t15,200\t21,100\n15\t15,200\t17,700\n16\t18,600\t17,700\n17\t15,200\t21,100\n18\t15,200\t17,700\n19\t18,600\t17,700\n20\t15,200\t21,100\n21\t15,200\t17,700\n22\t18,600\t17,700\n\n라운드별 합성 관측값입니다. 평균은 전체 22라운드 기준이며, 구매 이력과 실제 게임 경제 규칙을 재현하지 않습니다.\n\nTeam A · Avg. Rank: —\tMatch Rank\tPS\t▾ ACS\tK\tD\tA\t+/−\tK/D\tDDΔ\tADR\tHS%\tKAST\tFK\tFD\tMK\n\nDemoPlayer02 #DEMO\nOmen\n\t—\t—\t320\t17\t9\t60\t+8\t1.89\t+113.2\t174.5\t16.9%\t—\t0\t0\t2\n\nDemoPlayer01 #DEMO\nJett\nYOU\n\t—\t—\t252.5\t24\t15\t5\t+9\t1.60\t+35.5\t137.7\t16.4%\t—\t22\t0\t2\n\nDemoPlayer03 #DEMO\nSova\n\t—\t—\t160\t13\t9\t12\t+4\t1.44\t+25.9\t87.3\t16.3%\t—\t0\t0\t0\n\nDemoPlayer05 #DEMO\nRaze\n\t—\t—\t120\t12\t9\t0\t+3\t1.33\t+4.1\t65.5\t21.7%\t—\t0\t0\t0\n\nDemoPlayer04 #DEMO\nSage\n\t—\t—\t110\t11\t9\t0\t+2\t1.22\t-1.4\t60\t17.6%\t—\t0\t0\t0\nTeam B · Avg. Rank: —\tMatch Rank\tPS\t▾ ACS\tK\tD\tA\t+/−\tK/D\tDDΔ\tADR\tHS%\tKAST\tFK\tFD\tMK\n\nDemoPlayer07 #DEMO\nBrimstone\n\t—\t—\t222.5\t17\t15\t21\t+2\t1.13\t+19.1\t121.4\t17.8%\t—\t0\t0\t7\n\nDemoPlayer08 #DEMO\nSova\n\t—\t—\t167.5\t12\t14\t19\t-2\t0.86\t-4.1\t91.4\t16.9%\t—\t0\t0\t1\n\nDemoPlayer09 #DEMO\nSage\n\t—\t—\t137.5\t12\t13\t7\t-1\t0.92\t-13.6\t75\t13.9%\t—\t0\t0\t1\n\nDemoPlayer10 #DEMO\nCypher\n\t—\t—\t110\t10\t13\t4\t-3\t0.77\t-28.6\t60\t13.8%\t—\t0\t0\t1\n\nDemoPlayer06 #DEMO\nRaze\n\t—\t—\t0\t0\t22\t0\t-22\t0.00\t-150\t0\t—\t—\t0\t22\t0\n\n— 미제공 또는 분모 0 · PS/KAST와 랭크 명칭은 미제공입니다. ACS는 합성 score의 라운드 평균입니다.",
+        "Rounds": "1\n1\n:\n0\nW\n2\n1\n:\n1\nL\n3\n2\n:\n1\nW\n4\n2\n:\n2\nL\n5\n3\n:\n2\nW\n6\n3\n:\n3\nL\n7\n4\n:\n3\nW\n8\n4\n:\n4\nL\n9\n5\n:\n4\nW\n10\n5\n:\n5\nL\n11\n6\n:\n5\nW\n12\n6\n:\n6\nL\n13\n7\n:\n6\nW\n14\n7\n:\n7\nL\n15\n8\n:\n7\nW\n16\n8\n:\n8\nL\n17\n9\n:\n8\nW\n18\n9\n:\n9\nL\n19\n10\n:\n9\nW\n20\n11\n:\n9\nW\n21\n12\n:\n9\nW\n22\n13\n:\n9\nW\nROUND 1\nTEAM A WIN\n1 : 0 · Elimination\n\n위에서 라운드를 선택해 결과를 확인하세요.\n\nTeam A 라운드별 기록\nTeam A\tScore\tK\tD\tA\tEcon\n\nDemoPlayer01\n#DEMO\n\t495\t2\t1\t1\t3900\n\nDemoPlayer02\n#DEMO\n\t605\t2\t0\t3\t3900\n\nDemoPlayer03\n#DEMO\n\t275\t1\t0\t1\t500\n\nDemoPlayer04\n#DEMO\n\t0\t0\t0\t0\t3900\n\nDemoPlayer05\n#DEMO\n\t0\t0\t0\t0\t3900\nTeam B 라운드별 기록\nTeam B\tScore\tK\tD\tA\tEcon\n\nDemoPlayer06\n#DEMO\n\t0\t0\t1\t0\t500\n\nDemoPlayer07\n#DEMO\n\t0\t0\t1\t0\t3900\n\nDemoPlayer08\n#DEMO\n\t0\t0\t1\t0\t3900\n\nDemoPlayer09\n#DEMO\n\t220\t1\t1\t0\t500\n\nDemoPlayer10\n#DEMO\n\t55\t0\t1\t1\t3900\n\n라운드별 합성 원본 · Econ은 장비 가치입니다. Score는 단순화한 합성 점수입니다.\n\nEvent Log\n15s\nDemoPlayer01\n→ DemoPlayer06\nPhantom · First Kill\n18s\nDemoPlayer01\n→ DemoPlayer07\nGhost\n21s\nDemoPlayer02\n→ DemoPlayer08\nVandal\n24s\nDemoPlayer09\n→ DemoPlayer01\nPhantom\n27s\nDemoPlayer02\n→ DemoPlayer09\nGhost\n30s\nDemoPlayer03\n→ DemoPlayer10\nVandal\n\n설치·해체 이벤트는 이 합성 표본에서 제공하지 않습니다.\n\nPlayer Positions\n선수 위치 미제공\n\nAscent의 라운드별 좌표 기록이 없어 선수 위치를 표시할 수 없습니다.",
+        "Duels": "DemoPlayer01\n\n제공된 교전 기록\n\n24\nKills\n/\n15\nDeaths\nRecorded Duels\n25/ 25\n\n기록이 제공된 선수 조합\n\n전체 교전 비교\n25 / 25\n\n미제공 조합 0개 · 전체 라이벌 순위 미제공\n\nAscent · Team A vs Team B\n\n각 칸은 행 선수의 킬 / 데스입니다. — 기록 미제공\n\nTeam A와 Team B의 상대별 교전 기록\nAvsB\t\nDemoPlayer06\n#DEMO\nRaze\n\t\nDemoPlayer07\n#DEMO\nBrimstone\n\t\nDemoPlayer08\n#DEMO\nSova\n\t\nDemoPlayer09\n#DEMO\nSage\n\t\nDemoPlayer10\n#DEMO\nCypher\n\n\nDemoPlayer01YOU\n#DEMO\nJett\n\t\n22\n/\n0\n\t\n2\n/\n10\n\t\n0\n/\n3\n\t\n0\n/\n2\n\t\n0\n/\n0\n\n\nDemoPlayer02\n#DEMO\nOmen\n\t\n0\n/\n0\n\t\n6\n/\n0\n\t\n4\n/\n4\n\t\n4\n/\n0\n\t\n3\n/\n5\n\n\nDemoPlayer03\n#DEMO\nSova\n\t\n0\n/\n0\n\t\n3\n/\n4\n\t\n4\n/\n0\n\t\n2\n/\n5\n\t\n4\n/\n0\n\n\nDemoPlayer04\n#DEMO\nSage\n\t\n0\n/\n0\n\t\n2\n/\n0\n\t\n3\n/\n4\n\t\n4\n/\n0\n\t\n2\n/\n5\n\n\nDemoPlayer05\n#DEMO\nRaze\n\t\n0\n/\n0\n\t\n2\n/\n3\n\t\n3\n/\n1\n\t\n3\n/\n5\n\t\n4\n/\n0\n\n전체 킬 이벤트에서 양 팀 25개 조합을 계산했습니다. 0은 기록된 교전이 없는 조합입니다."
+      }
+    },
+    {
+      "name": "standalone",
+      "width": 390,
+      "file": "before-390-standalone.png",
+      "overflow": false,
+      "mainCount": 1,
+      "navCount": 0,
+      "nav": [],
+      "sharedLink": "/matches/demo-match-001?viewer=demo-player-01",
+      "panelTexts": {
+        "Scoreboard": "Team A\n13\nTeam B\n9\n◆\n·\n1\n·\n◆\n2\n◆\n·\n3\n·\n◆\n4\n◆\n·\n5\n·\n◆\n6\n◆\n·\n7\n·\n◆\n8\n◆\n·\n9\n·\n◆\n10\n◆\n·\n11\n·\n◆\n12\n◆\n·\n13\n·\n◆\n14\n◆\n·\n15\n·\n◆\n16\n◆\n·\n17\n·\n◆\n18\n◆\n·\n19\n◆\n·\n20\n◆\n·\n21\n◆\n·\n22\nTeam A · Avg. Rank: —\tMatch Rank\tPS\t▾ ACS\tK\tD\tA\t+/−\tK/D\tDDΔ\tADR\tHS%\tKAST\tFK\tFD\tMK\n\nDemoPlayer02 #DEMO\nOmen\n\t—\t—\t320\t17\t9\t60\t+8\t1.89\t+113.2\t174.5\t16.9%\t—\t0\t0\t2\n\nDemoPlayer01 #DEMO\nJett\nYOU\n\t—\t—\t252.5\t24\t15\t5\t+9\t1.60\t+35.5\t137.7\t16.4%\t—\t22\t0\t2\n\nDemoPlayer03 #DEMO\nSova\n\t—\t—\t160\t13\t9\t12\t+4\t1.44\t+25.9\t87.3\t16.3%\t—\t0\t0\t0\n\nDemoPlayer05 #DEMO\nRaze\n\t—\t—\t120\t12\t9\t0\t+3\t1.33\t+4.1\t65.5\t21.7%\t—\t0\t0\t0\n\nDemoPlayer04 #DEMO\nSage\n\t—\t—\t110\t11\t9\t0\t+2\t1.22\t-1.4\t60\t17.6%\t—\t0\t0\t0\nTeam B · Avg. Rank: —\tMatch Rank\tPS\t▾ ACS\tK\tD\tA\t+/−\tK/D\tDDΔ\tADR\tHS%\tKAST\tFK\tFD\tMK\n\nDemoPlayer07 #DEMO\nBrimstone\n\t—\t—\t222.5\t17\t15\t21\t+2\t1.13\t+19.1\t121.4\t17.8%\t—\t0\t0\t7\n\nDemoPlayer08 #DEMO\nSova\n\t—\t—\t167.5\t12\t14\t19\t-2\t0.86\t-4.1\t91.4\t16.9%\t—\t0\t0\t1\n\nDemoPlayer09 #DEMO\nSage\n\t—\t—\t137.5\t12\t13\t7\t-1\t0.92\t-13.6\t75\t13.9%\t—\t0\t0\t1\n\nDemoPlayer10 #DEMO\nCypher\n\t—\t—\t110\t10\t13\t4\t-3\t0.77\t-28.6\t60\t13.8%\t—\t0\t0\t1\n\nDemoPlayer06 #DEMO\nRaze\n\t—\t—\t0\t0\t22\t0\t-22\t0.00\t-150\t0\t—\t—\t0\t22\t0\n\n— 미제공 또는 분모 0 · PS/KAST와 랭크 명칭은 미제공입니다. ACS는 합성 score의 라운드 평균입니다.",
+        "Performance": "Team A\nVS\nTeam B\n\nTeam A · Jett\n\nDemoPlayer01\n#DEMO\nK/D/A\n24 / 15 / 5\nK/D\n1.60\nADR\n137.7\nACS\n252.5\nHS%\n16.4%\nKAST\n—\n팀 라운드 결과 · 개인 K/D/A\n1\n2/1/1\nW\n2\n2/1/1\nL\n3\n1/1/1\nW\n4\n1/1/1\nL\n5\n1/1/1\nW\n6\n1/1/0\nL\n7\n1/1/0\nW\n8\n1/1/0\nL\n9\n1/1/0\nW\n10\n1/1/0\nL\n11\n1/1/0\nW\n12\n1/1/0\nL\n13\n1/0/0\nW\n14\n1/1/0\nL\n15\n1/0/0\nW\n16\n1/1/0\nL\n17\n1/0/0\nW\n18\n1/1/0\nL\n19\n1/0/0\nW\n20\n1/0/0\nW\n21\n1/0/0\nW\n22\n1/0/0\nW\nAll Rounds\nAttack\nKills\n14\nAssists\n5\nDeaths\n12\nK/D\n1.17\n\n라운드별 실제 공수 역할을 기준으로 합산한 합성 기록\n\nDefense\nKills\n10\nAssists\n0\nDeaths\n3\nK/D\n3.33\n\n라운드별 실제 공수 역할을 기준으로 합산한 합성 기록\n\nOpponents · 상대별 교전\nKills ↓\tDeaths ↕\tDealt\tReceived\tOpponent\n22\t0\t2640\t0\t\nDemoPlayer06\n#DEMO\n\n2\t10\t330\t1200\t\nDemoPlayer07\n#DEMO\n\n0\t3\t60\t660\t\nDemoPlayer08\n#DEMO\n\n0\t2\t0\t330\t\nDemoPlayer09\n#DEMO\n\n0\t0\t0\t60\t\nDemoPlayer10\n#DEMO\n\nDealt / Received: 같은 원본의 상대별 피해 합계\n\nWeapons · 무기별 기록\nWeapon\tKills ↓\tDamage\n\nVandal\n\t8\t—\n\nPhantom\n\t7\t—\n\nGhost\n\t7\t—\n\n능력·기타\n\t2\t—\n\nDamage: 무기별 피해 기록 미제공",
+        "Economy": "Economy\nAvg. Bank: 2,500 / 5,000\nAvg. Loadout: 13,936 / 13,782\nBank\nLoadout\nTotal\n라운드별 보유 크레딧과 장비 가치 합계 · Team A / Team B 합계\nRound\tTeam A\tTeam B\n1\t18,600\t17,700\n2\t15,200\t21,100\n3\t15,200\t17,700\n4\t18,600\t17,700\n5\t15,200\t21,100\n6\t15,200\t17,700\n7\t18,600\t17,700\n8\t15,200\t21,100\n9\t15,200\t17,700\n10\t18,600\t17,700\n11\t15,200\t21,100\n12\t15,200\t17,700\n13\t18,600\t17,700\n14\t15,200\t21,100\n15\t15,200\t17,700\n16\t18,600\t17,700\n17\t15,200\t21,100\n18\t15,200\t17,700\n19\t18,600\t17,700\n20\t15,200\t21,100\n21\t15,200\t17,700\n22\t18,600\t17,700\n\n라운드별 합성 관측값입니다. 평균은 전체 22라운드 기준이며, 구매 이력과 실제 게임 경제 규칙을 재현하지 않습니다.\n\nTeam A · Avg. Rank: —\tMatch Rank\tPS\t▾ ACS\tK\tD\tA\t+/−\tK/D\tDDΔ\tADR\tHS%\tKAST\tFK\tFD\tMK\n\nDemoPlayer02 #DEMO\nOmen\n\t—\t—\t320\t17\t9\t60\t+8\t1.89\t+113.2\t174.5\t16.9%\t—\t0\t0\t2\n\nDemoPlayer01 #DEMO\nJett\nYOU\n\t—\t—\t252.5\t24\t15\t5\t+9\t1.60\t+35.5\t137.7\t16.4%\t—\t22\t0\t2\n\nDemoPlayer03 #DEMO\nSova\n\t—\t—\t160\t13\t9\t12\t+4\t1.44\t+25.9\t87.3\t16.3%\t—\t0\t0\t0\n\nDemoPlayer05 #DEMO\nRaze\n\t—\t—\t120\t12\t9\t0\t+3\t1.33\t+4.1\t65.5\t21.7%\t—\t0\t0\t0\n\nDemoPlayer04 #DEMO\nSage\n\t—\t—\t110\t11\t9\t0\t+2\t1.22\t-1.4\t60\t17.6%\t—\t0\t0\t0\nTeam B · Avg. Rank: —\tMatch Rank\tPS\t▾ ACS\tK\tD\tA\t+/−\tK/D\tDDΔ\tADR\tHS%\tKAST\tFK\tFD\tMK\n\nDemoPlayer07 #DEMO\nBrimstone\n\t—\t—\t222.5\t17\t15\t21\t+2\t1.13\t+19.1\t121.4\t17.8%\t—\t0\t0\t7\n\nDemoPlayer08 #DEMO\nSova\n\t—\t—\t167.5\t12\t14\t19\t-2\t0.86\t-4.1\t91.4\t16.9%\t—\t0\t0\t1\n\nDemoPlayer09 #DEMO\nSage\n\t—\t—\t137.5\t12\t13\t7\t-1\t0.92\t-13.6\t75\t13.9%\t—\t0\t0\t1\n\nDemoPlayer10 #DEMO\nCypher\n\t—\t—\t110\t10\t13\t4\t-3\t0.77\t-28.6\t60\t13.8%\t—\t0\t0\t1\n\nDemoPlayer06 #DEMO\nRaze\n\t—\t—\t0\t0\t22\t0\t-22\t0.00\t-150\t0\t—\t—\t0\t22\t0\n\n— 미제공 또는 분모 0 · PS/KAST와 랭크 명칭은 미제공입니다. ACS는 합성 score의 라운드 평균입니다.",
+        "Rounds": "1\n1\n:\n0\nW\n2\n1\n:\n1\nL\n3\n2\n:\n1\nW\n4\n2\n:\n2\nL\n5\n3\n:\n2\nW\n6\n3\n:\n3\nL\n7\n4\n:\n3\nW\n8\n4\n:\n4\nL\n9\n5\n:\n4\nW\n10\n5\n:\n5\nL\n11\n6\n:\n5\nW\n12\n6\n:\n6\nL\n13\n7\n:\n6\nW\n14\n7\n:\n7\nL\n15\n8\n:\n7\nW\n16\n8\n:\n8\nL\n17\n9\n:\n8\nW\n18\n9\n:\n9\nL\n19\n10\n:\n9\nW\n20\n11\n:\n9\nW\n21\n12\n:\n9\nW\n22\n13\n:\n9\nW\nROUND 1\nTEAM A WIN\n1 : 0 · Elimination\n\n위에서 라운드를 선택해 결과를 확인하세요.\n\nTeam A 라운드별 기록\nTeam A\tScore\tK\tD\tA\tEcon\n\nDemoPlayer01\n#DEMO\n\t495\t2\t1\t1\t3900\n\nDemoPlayer02\n#DEMO\n\t605\t2\t0\t3\t3900\n\nDemoPlayer03\n#DEMO\n\t275\t1\t0\t1\t500\n\nDemoPlayer04\n#DEMO\n\t0\t0\t0\t0\t3900\n\nDemoPlayer05\n#DEMO\n\t0\t0\t0\t0\t3900\nTeam B 라운드별 기록\nTeam B\tScore\tK\tD\tA\tEcon\n\nDemoPlayer06\n#DEMO\n\t0\t0\t1\t0\t500\n\nDemoPlayer07\n#DEMO\n\t0\t0\t1\t0\t3900\n\nDemoPlayer08\n#DEMO\n\t0\t0\t1\t0\t3900\n\nDemoPlayer09\n#DEMO\n\t220\t1\t1\t0\t500\n\nDemoPlayer10\n#DEMO\n\t55\t0\t1\t1\t3900\n\n라운드별 합성 원본 · Econ은 장비 가치입니다. Score는 단순화한 합성 점수입니다.\n\nEvent Log\n15s\nDemoPlayer01\n→ DemoPlayer06\nPhantom · First Kill\n18s\nDemoPlayer01\n→ DemoPlayer07\nGhost\n21s\nDemoPlayer02\n→ DemoPlayer08\nVandal\n24s\nDemoPlayer09\n→ DemoPlayer01\nPhantom\n27s\nDemoPlayer02\n→ DemoPlayer09\nGhost\n30s\nDemoPlayer03\n→ DemoPlayer10\nVandal\n\n설치·해체 이벤트는 이 합성 표본에서 제공하지 않습니다.\n\nPlayer Positions\n선수 위치 미제공\n\nAscent의 라운드별 좌표 기록이 없어 선수 위치를 표시할 수 없습니다.",
+        "Duels": "DemoPlayer01\n\n제공된 교전 기록\n\n24\nKills\n/\n15\nDeaths\nRecorded Duels\n25/ 25\n\n기록이 제공된 선수 조합\n\n전체 교전 비교\n25 / 25\n\n미제공 조합 0개 · 전체 라이벌 순위 미제공\n\nAscent · Team A vs Team B\n\n각 칸은 행 선수의 킬 / 데스입니다. — 기록 미제공\n\nTeam A와 Team B의 상대별 교전 기록\nAvsB\t\nDemoPlayer06\n#DEMO\nRaze\n\t\nDemoPlayer07\n#DEMO\nBrimstone\n\t\nDemoPlayer08\n#DEMO\nSova\n\t\nDemoPlayer09\n#DEMO\nSage\n\t\nDemoPlayer10\n#DEMO\nCypher\n\n\nDemoPlayer01YOU\n#DEMO\nJett\n\t\n22\n/\n0\n\t\n2\n/\n10\n\t\n0\n/\n3\n\t\n0\n/\n2\n\t\n0\n/\n0\n\n\nDemoPlayer02\n#DEMO\nOmen\n\t\n0\n/\n0\n\t\n6\n/\n0\n\t\n4\n/\n4\n\t\n4\n/\n0\n\t\n3\n/\n5\n\n\nDemoPlayer03\n#DEMO\nSova\n\t\n0\n/\n0\n\t\n3\n/\n4\n\t\n4\n/\n0\n\t\n2\n/\n5\n\t\n4\n/\n0\n\n\nDemoPlayer04\n#DEMO\nSage\n\t\n0\n/\n0\n\t\n2\n/\n0\n\t\n3\n/\n4\n\t\n4\n/\n0\n\t\n2\n/\n5\n\n\nDemoPlayer05\n#DEMO\nRaze\n\t\n0\n/\n0\n\t\n2\n/\n3\n\t\n3\n/\n1\n\t\n3\n/\n5\n\t\n4\n/\n0\n\n전체 킬 이벤트에서 양 팀 25개 조합을 계산했습니다. 0은 기록된 교전이 없는 조합입니다."
+      }
+    },
+    {
+      "name": "alternate-viewer",
+      "width": 1440,
+      "file": "before-1440-alternate-viewer.png",
+      "overflow": false,
+      "mainCount": 1,
+      "navCount": 0,
+      "nav": [],
+      "sharedLink": "/matches/demo-match-001?viewer=demo-player-02",
+      "panelTexts": "Team A\n13\nTeam B\n9\n◆\n·\n1\n·\n◆\n2\n◆\n·\n3\n·\n◆\n4\n◆\n·\n5\n·\n◆\n6\n◆\n·\n7\n·\n◆\n8\n◆\n·\n9\n·\n◆\n10\n◆\n·\n11\n·\n◆\n12\n◆\n·\n13\n·\n◆\n14\n◆\n·\n15\n·\n◆\n16\n◆\n·\n17\n·\n◆\n18\n◆\n·\n19\n◆\n·\n20\n◆\n·\n21\n◆\n·\n22\nTeam A · Avg. Rank: —\tMatch Rank\tPS\t▾ ACS\tK\tD\tA\t+/−\tK/D\tDDΔ\tADR\tHS%\tKAST\tFK\tFD\tMK\n\nDemoPlayer02 #DEMO\nOmen\nYOU\n\t—\t—\t320\t17\t9\t60\t+8\t1.89\t+113.2\t174.5\t16.9%\t—\t0\t0\t2\n\nDemoPlayer01 #DEMO\nJett\n\t—\t—\t252.5\t24\t15\t5\t+9\t1.60\t+35.5\t137.7\t16.4%\t—\t22\t0\t2\n\nDemoPlayer03 #DEMO\nSova\n\t—\t—\t160\t13\t9\t12\t+4\t1.44\t+25.9\t87.3\t16.3%\t—\t0\t0\t0\n\nDemoPlayer05 #DEMO\nRaze\n\t—\t—\t120\t12\t9\t0\t+3\t1.33\t+4.1\t65.5\t21.7%\t—\t0\t0\t0\n\nDemoPlayer04 #DEMO\nSage\n\t—\t—\t110\t11\t9\t0\t+2\t1.22\t-1.4\t60\t17.6%\t—\t0\t0\t0\nTeam B · Avg. Rank: —\tMatch Rank\tPS\t▾ ACS\tK\tD\tA\t+/−\tK/D\tDDΔ\tADR\tHS%\tKAST\tFK\tFD\tMK\n\nDemoPlayer07 #DEMO\nBrimstone\n\t—\t—\t222.5\t17\t15\t21\t+2\t1.13\t+19.1\t121.4\t17.8%\t—\t0\t0\t7\n\nDemoPlayer08 #DEMO\nSova\n\t—\t—\t167.5\t12\t14\t19\t-2\t0.86\t-4.1\t91.4\t16.9%\t—\t0\t0\t1\n\nDemoPlayer09 #DEMO\nSage\n\t—\t—\t137.5\t12\t13\t7\t-1\t0.92\t-13.6\t75\t13.9%\t—\t0\t0\t1\n\nDemoPlayer10 #DEMO\nCypher\n\t—\t—\t110\t10\t13\t4\t-3\t0.77\t-28.6\t60\t13.8%\t—\t0\t0\t1\n\nDemoPlayer06 #DEMO\nRaze\n\t—\t—\t0\t0\t22\t0\t-22\t0.00\t-150\t0\t—\t—\t0\t22\t0\n\n— 미제공 또는 분모 0 · PS/KAST와 랭크 명칭은 미제공입니다. ACS는 합성 score의 라운드 평균입니다."
+    },
+    {
+      "name": "missing",
+      "width": 390,
+      "file": "before-390-missing.png",
+      "overflow": false,
+      "mainCount": 1,
+      "navCount": 1,
+      "nav": [
+        {
+          "text": "Home",
+          "href": "/"
+        },
+        {
+          "text": "Overview",
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "text": "Lineups",
+          "href": "/lineups"
+        },
+        {
+          "text": "Smokes",
+          "href": "/smokes"
+        }
+      ],
+      "panelTexts": null
+    },
+    {
+      "name": "legacy",
+      "width": 1440,
+      "file": "before-1440-legacy.png",
+      "overflow": false,
+      "mainCount": 1,
+      "navCount": 1,
+      "nav": [
+        {
+          "text": "Home",
+          "href": "/"
+        },
+        {
+          "text": "Overview",
+          "href": "/players/ied-agent-allen"
+        },
+        {
+          "text": "Lineups",
+          "href": "/lineups"
+        },
+        {
+          "text": "Smokes",
+          "href": "/smokes"
+        }
+      ],
+      "panelTexts": null
+    }
+  ],
+  "checks": [],
+  "errors": []
+}

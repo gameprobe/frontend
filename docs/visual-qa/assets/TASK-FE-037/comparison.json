@@ -1,0 +1,38 @@
+[
+  {
+    "page": "home",
+    "size": [
+      1440,
+      1000
+    ],
+    "differentPixels": 0,
+    "bounds": null
+  },
+  {
+    "page": "insights",
+    "size": [
+      1440,
+      1000
+    ],
+    "differentPixels": 0,
+    "bounds": null
+  },
+  {
+    "page": "lineups",
+    "size": [
+      1440,
+      1000
+    ],
+    "differentPixels": 0,
+    "bounds": null
+  },
+  {
+    "page": "smokes",
+    "size": [
+      1440,
+      1000
+    ],
+    "differentPixels": 0,
+    "bounds": null
+  }
+]

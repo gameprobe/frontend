@@ -1,0 +1,1385 @@
+{
+  "task": "TASK-FE-019",
+  "status": "PASS",
+  "base": "d48aac4",
+  "branch": "codex/match-detail-shared-styles",
+  "sourceHashes": {
+    "frontend/src/features/tracker-profile/match-history/detail/MatchDetailShared.module.css": "145567246589357bc35bf40fd39fffdc72685c290ab1dd720eb9269abd28f3a8",
+    "frontend/src/features/tracker-profile/match-history/detail/TrackerMatchPanel.module.css": "0ce5a6fa17682ea0c66949bb7688683b9bdfcbf76ab52851cf13616e585d7fe8",
+    "frontend/src/features/tracker-profile/match-history/detail/TrackerScoreboard.module.css": "63beee7f3106c77976bd649679444246c93a8c3e4cdade2433e1812d6d22fe8f",
+    "frontend/src/features/tracker-profile/match-history/detail/TrackerPerformance.module.css": "88d7b4d7a32d9b378f9e55d4ab7bab87ed5dcfc7ed697e4de6d64f3bb9496bcf",
+    "frontend/src/features/tracker-profile/match-history/detail/TrackerEconomy.module.css": "663fb568c4a63e1cce8227985fddb2a20c45a7822eabf65613ce0b6fd6818c60",
+    "frontend/src/features/tracker-profile/match-history/detail/TrackerRounds.module.css": "3bc00e13e6d0f1acb32bad35c5d89d18d351173ec9d6a3867ae0a0bfa4314650",
+    "frontend/src/features/tracker-profile/match-history/detail/TrackerDuels.module.css": "d9280833fb04a146c99f238b37b5ef41cfc424cd138e38803674d46836cc3e3a"
+  },
+  "computedStyleComparisons": [
+    {
+      "state": "desktop-home",
+      "elements": 130,
+      "sha256": "e277c8e489a70be32257f7a0192c6aaa3f369c16e623ed6ae1c161ff9c892d21",
+      "result": "identical"
+    },
+    {
+      "state": "desktop-profile",
+      "elements": 1446,
+      "sha256": "af6790e1623d8c7e71a0a9ccf79a39c59330ef1b0cb758f14ca5e2a03d1a3905",
+      "result": "identical"
+    },
+    {
+      "state": "desktop-scoreboard",
+      "elements": 442,
+      "sha256": "e5110fe1db287c9f2d12022fcd515022f86c7b951c2e21373b45450dd057e089",
+      "result": "identical"
+    },
+    {
+      "state": "desktop-performance",
+      "elements": 316,
+      "sha256": "3b11676a5ff1e010910b220b2a9bc69d94d7cc8e337337e7600797a27f5f7c2c",
+      "result": "identical"
+    },
+    {
+      "state": "desktop-economy",
+      "elements": 368,
+      "sha256": "035f8701aef8f0735782da84edf44a83568060b6859bc481fc008c4e27850371",
+      "result": "identical"
+    },
+    {
+      "state": "desktop-rounds",
+      "elements": 309,
+      "sha256": "526c6effb7ac8d67391a7097fd8364abe6c3436ab53be50c66299bce20b4340f",
+      "result": "identical"
+    },
+    {
+      "state": "desktop-duels",
+      "elements": 219,
+      "sha256": "78411104eaf0dc745293d25daa0a7d25d49ce30462b239a2737f6b4afd27dfa6",
+      "result": "identical"
+    },
+    {
+      "state": "desktop-scoreboard-sorted",
+      "elements": 442,
+      "sha256": "1721f944ea0a585e329faea5c949ef244cde8ad73dfa85174e62b81e3562e50f",
+      "result": "identical"
+    },
+    {
+      "state": "desktop-scoreboard-focus",
+      "elements": 442,
+      "sha256": "1721f944ea0a585e329faea5c949ef244cde8ad73dfa85174e62b81e3562e50f",
+      "result": "identical"
+    },
+    {
+      "state": "desktop-performance-missing",
+      "elements": 305,
+      "sha256": "e0f2fcf6c6d0edc868b8f4cf5f7b67b94dbce364443bf6c793041178dbc3eb99",
+      "result": "identical"
+    },
+    {
+      "state": "desktop-economy-bank",
+      "elements": 368,
+      "sha256": "80340a661196e897777244458624b7dac99ba01d742422dee8a3bbfb8e9c3014",
+      "result": "identical"
+    },
+    {
+      "state": "desktop-rounds-selected",
+      "elements": 309,
+      "sha256": "0a89b486720340df9bee32045c275dea12d8e76c5e9ce2aaec7d4070629a7d67",
+      "result": "identical"
+    },
+    {
+      "state": "desktop-duels-focus",
+      "elements": 219,
+      "sha256": "78411104eaf0dc745293d25daa0a7d25d49ce30462b239a2737f6b4afd27dfa6",
+      "result": "identical"
+    },
+    {
+      "state": "desktop-deathmatch-scoreboard",
+      "elements": 58,
+      "sha256": "181e14949fed618aa9cdc73b078223a63ecdb90b5d1f30b9e855036f2bc488d8",
+      "result": "identical"
+    },
+    {
+      "state": "desktop-deathmatch-performance",
+      "elements": 58,
+      "sha256": "e156b35704e9c232db2df13dba429c5091afde47676a8261967c58f70e56eab1",
+      "result": "identical"
+    },
+    {
+      "state": "desktop-deathmatch-economy",
+      "elements": 33,
+      "sha256": "80be78da4e85e00681d23f03a3d2b6dcb00cf56d698749daa13bf00850fd4fb1",
+      "result": "identical"
+    },
+    {
+      "state": "desktop-deathmatch-rounds",
+      "elements": 33,
+      "sha256": "cf2cfc5afa67a9c20b0ae2ed6d0fc7ccef592379d82a9d31f14f29cc12ba0057",
+      "result": "identical"
+    },
+    {
+      "state": "desktop-deathmatch-duels",
+      "elements": 33,
+      "sha256": "bb2bc163a22c19d57a348658d9247adcc727f1f5d196903378c11195c52ee703",
+      "result": "identical"
+    },
+    {
+      "state": "width320-scoreboard",
+      "elements": 442,
+      "sha256": "7ed6459fba8688eeb0bcaa067dd455d196d196bc5a2dc2fbf52b7b23edba07ea",
+      "result": "identical"
+    },
+    {
+      "state": "width320-performance",
+      "elements": 316,
+      "sha256": "259b3d7ff46b222eea2a34354c0f3f39e5c92dc7161341cd59ef047b20953a19",
+      "result": "identical"
+    },
+    {
+      "state": "width320-economy",
+      "elements": 368,
+      "sha256": "16aa51b098c6b6bf7055ca2e61c27ac2ff9e853d2322fa33bdc1011a47b50f76",
+      "result": "identical"
+    },
+    {
+      "state": "width320-rounds",
+      "elements": 309,
+      "sha256": "901ede401b33618592efc6c8360afe0511bbb3daf463a12b7bac89759c30c96a",
+      "result": "identical"
+    },
+    {
+      "state": "width320-duels",
+      "elements": 219,
+      "sha256": "38bcdc41d1730722fdd1f4f6b975b98929225ccea1c62f0a8d17c1b3c7e372bb",
+      "result": "identical"
+    },
+    {
+      "state": "width650-scoreboard",
+      "elements": 442,
+      "sha256": "9214f5bcafbd70fe1be248198134d9cfaed4201379e8b27cba9ee0fbdb003860",
+      "result": "identical"
+    },
+    {
+      "state": "width650-performance",
+      "elements": 316,
+      "sha256": "8c8ef2b5b1bda7a9eaafed2eee9fb06d6ba1a4c60a2848cc4d8b84d25ddd4d94",
+      "result": "identical"
+    },
+    {
+      "state": "width650-economy",
+      "elements": 368,
+      "sha256": "a59f3df78429b86d6d1573d24c277d8db8778ceccf211cf0b8dfa03d49824b99",
+      "result": "identical"
+    },
+    {
+      "state": "width650-rounds",
+      "elements": 309,
+      "sha256": "0dfd2a3ed1b0f425d5ee4d3868bcffb1f5e0b259e84e9dcd40d304256c85c22e",
+      "result": "identical"
+    },
+    {
+      "state": "width650-duels",
+      "elements": 219,
+      "sha256": "579f82797122f4f93d0dbb38b5f173f8f32bffaff5e9fb2367c46893471c5d0e",
+      "result": "identical"
+    },
+    {
+      "state": "width700-scoreboard",
+      "elements": 442,
+      "sha256": "967020a9e50bc64e8106e0e664bb02ce5c1ed35f840bba0ea46f400a0378e3ee",
+      "result": "identical"
+    },
+    {
+      "state": "width700-performance",
+      "elements": 316,
+      "sha256": "b2b09a19924b49211bf96ac3b7e7168d2e23d08d14510776b12cec68db333acb",
+      "result": "identical"
+    },
+    {
+      "state": "width700-economy",
+      "elements": 368,
+      "sha256": "87c6eba27021f453158a7d49fde4ac1f209374d7d3845edc22e99e7c1aea6824",
+      "result": "identical"
+    },
+    {
+      "state": "width700-rounds",
+      "elements": 309,
+      "sha256": "00cdd031652bf42a76d70e351b88492098a726001f3d88d05c9c8d345bb7040c",
+      "result": "identical"
+    },
+    {
+      "state": "width700-duels",
+      "elements": 219,
+      "sha256": "11ebb35b3e799099d7f1c5f7a6a2ed37b5e53334ec2f63dd203bf8e3fc56d3b8",
+      "result": "identical"
+    },
+    {
+      "state": "width768-scoreboard",
+      "elements": 442,
+      "sha256": "15c3989bcde95c9ad634b8dc41db7b5ecbbb6188b2f7aa28961c318a9acee8f1",
+      "result": "identical"
+    },
+    {
+      "state": "width768-performance",
+      "elements": 316,
+      "sha256": "137c56e28240f1722b21d3818162738f412eda4fd8df6bd7a35cefe58351da70",
+      "result": "identical"
+    },
+    {
+      "state": "width768-economy",
+      "elements": 368,
+      "sha256": "5b436308505babeabf0c8959e973fe9434953865ce81f4148981435342f5bf44",
+      "result": "identical"
+    },
+    {
+      "state": "width768-rounds",
+      "elements": 309,
+      "sha256": "69629fe1407e3025bff31978d65b925477e3fef8cb37224894c208337840b836",
+      "result": "identical"
+    },
+    {
+      "state": "width768-duels",
+      "elements": 219,
+      "sha256": "f522dc1526f727f2f2fe47859352b60d0a37c109fea79174159ef838db392721",
+      "result": "identical"
+    },
+    {
+      "state": "width1000-scoreboard",
+      "elements": 442,
+      "sha256": "c8b34922f162386136007ebc8369c537bf7997782223632446f31e33be1314de",
+      "result": "identical"
+    },
+    {
+      "state": "width1000-performance",
+      "elements": 316,
+      "sha256": "6844899e1df365830d56d92498573ea9284ddc33624a4e4e936fe6feb300fb78",
+      "result": "identical"
+    },
+    {
+      "state": "width1000-economy",
+      "elements": 368,
+      "sha256": "b5e8aa223a282f2b8dfd032db4ebbba8a269497f845f2052ca11a77aa28d9836",
+      "result": "identical"
+    },
+    {
+      "state": "width1000-rounds",
+      "elements": 309,
+      "sha256": "6a438612390992555f68947ed7564148827f029fe4a42db570e7f3251472b82a",
+      "result": "identical"
+    },
+    {
+      "state": "width1000-duels",
+      "elements": 219,
+      "sha256": "054348944f7c6b15bea4845e678d1435e04584408983e471c1dd2b6f060d2242",
+      "result": "identical"
+    },
+    {
+      "state": "width1100-scoreboard",
+      "elements": 442,
+      "sha256": "b4909b2cfc17e8368f0fee9a24fd413937c75bc0eb91f06966db02814fae3570",
+      "result": "identical"
+    },
+    {
+      "state": "width1100-performance",
+      "elements": 316,
+      "sha256": "a6f3b526ae1e5798df554b74ce355e7d90d26a4a0ee2cd09c3a6ea1df6022b9d",
+      "result": "identical"
+    },
+    {
+      "state": "width1100-economy",
+      "elements": 368,
+      "sha256": "14c588609a3100244c0deccc5ccbf9085f0480132a2937aeda5b0ca6a3488e34",
+      "result": "identical"
+    },
+    {
+      "state": "width1100-rounds",
+      "elements": 309,
+      "sha256": "5b2fb3880dc63c1b41b521a65a8445844713b447700705dfe186ba8c6e04f83b",
+      "result": "identical"
+    },
+    {
+      "state": "width1100-duels",
+      "elements": 219,
+      "sha256": "f85fdee055f1ccf431ab785e5694ac8fa489fa0d2afb76e823a8d18eedf8ac65",
+      "result": "identical"
+    },
+    {
+      "state": "width1150-scoreboard",
+      "elements": 442,
+      "sha256": "934b9345bf6662de76197cf2b94b23f0ce43a46b7cd292ece323682ee1c0ecdf",
+      "result": "identical"
+    },
+    {
+      "state": "width1150-performance",
+      "elements": 316,
+      "sha256": "954117dcb6a6598acfb8d0db76a669df867b7d6b31690a7f2edbd3a8e4f67f5a",
+      "result": "identical"
+    },
+    {
+      "state": "width1150-economy",
+      "elements": 368,
+      "sha256": "423ea06fc8c493a69ecae4e48b1ee71eae369cd56cb023d6bfcc2f48c9ca77cd",
+      "result": "identical"
+    },
+    {
+      "state": "width1150-rounds",
+      "elements": 309,
+      "sha256": "6eccebdcc2d645fa90a43f1a39839bc9c540624fed7cb4d5e43354f51ed40e14",
+      "result": "identical"
+    },
+    {
+      "state": "width1150-duels",
+      "elements": 219,
+      "sha256": "1fb1136d09b6852d5bd7541e5d473980183f7d5ef39d5578defc811b4fffa3c2",
+      "result": "identical"
+    },
+    {
+      "state": "width1440-scoreboard",
+      "elements": 442,
+      "sha256": "f17206f7fa0d4f5fc2455f33bd83d2d4aeb459fbcb168a2e984e46eb434039d1",
+      "result": "identical"
+    },
+    {
+      "state": "width1440-performance",
+      "elements": 316,
+      "sha256": "bf34a12c02a4f0a1ba4efef3667ba3e6b529d41951aa9014adf2a4b288458416",
+      "result": "identical"
+    },
+    {
+      "state": "width1440-economy",
+      "elements": 368,
+      "sha256": "45bf26977a6513e5e736d447709468c0736226b42e51b704561f5e89b9e21943",
+      "result": "identical"
+    },
+    {
+      "state": "width1440-rounds",
+      "elements": 309,
+      "sha256": "bbad12a0662839746d2e973229eb63dfb53b5e56befd0f8842c17405bb27a595",
+      "result": "identical"
+    },
+    {
+      "state": "width1440-duels",
+      "elements": 219,
+      "sha256": "b5f39299d91b8c34f0a75d5220d7f26244ce7f841b8a455bb1f78694ad3aa252",
+      "result": "identical"
+    },
+    {
+      "state": "mobile-home",
+      "elements": 130,
+      "sha256": "57cb0f6670a7997c8a7b85f571e40d7f011b75e285f9818fcd90bd190cacf4b9",
+      "result": "identical"
+    },
+    {
+      "state": "mobile-profile",
+      "elements": 1446,
+      "sha256": "f4dd1338fbbf7b705fea802772feab59b19f7204d886cafa2754810dbd758fd3",
+      "result": "identical"
+    },
+    {
+      "state": "mobile-scoreboard",
+      "elements": 442,
+      "sha256": "ec7c9f8306f588484d411ec464154be331e54f51aa2d4a9e2e6083c1569d2829",
+      "result": "identical"
+    },
+    {
+      "state": "mobile-performance",
+      "elements": 316,
+      "sha256": "90b054abe2fef7ab4e283d71dae0d487969933d940e6d55ef3cce96d6d7490f9",
+      "result": "identical"
+    },
+    {
+      "state": "mobile-economy",
+      "elements": 368,
+      "sha256": "7f43cd54a961c0dd989b3e884eff8c8a8d7288b6f7cd620eb9842a286127ed21",
+      "result": "identical"
+    },
+    {
+      "state": "mobile-rounds",
+      "elements": 309,
+      "sha256": "90e0f4fae819a8f57ad84f1afdb980fa1986146dcce2680b3523dcd3dd506124",
+      "result": "identical"
+    },
+    {
+      "state": "mobile-duels",
+      "elements": 219,
+      "sha256": "a4117a44394a2c819c775f50cc4cc70d90a7f3f791f473a79bce89c52b0c5d39",
+      "result": "identical"
+    },
+    {
+      "state": "mobile-scoreboard-sorted",
+      "elements": 442,
+      "sha256": "6a246403f76538897f941f4c7731a3994c22bd9eddadca256aff0376cee76fed",
+      "result": "identical"
+    },
+    {
+      "state": "mobile-scoreboard-focus",
+      "elements": 442,
+      "sha256": "742173cc5c442d1375bdc9f503718194e8c41ede4870541a8fe823f0bf504b22",
+      "result": "identical"
+    },
+    {
+      "state": "mobile-performance-missing",
+      "elements": 305,
+      "sha256": "bf3fbd7e69c02404185c1c9a8697e0dd6b9c7e1939722e386212b9e899219b2d",
+      "result": "identical"
+    },
+    {
+      "state": "mobile-economy-bank",
+      "elements": 368,
+      "sha256": "9209ce9eb9a86a4ad028a33d52ed825342b9d3a6d72c02f0e6405dc8acf125e6",
+      "result": "identical"
+    },
+    {
+      "state": "mobile-rounds-selected",
+      "elements": 309,
+      "sha256": "c5bef4c78a21e7097cec168bb82a0096624c524c5ea181f26af83fbe1327a0f0",
+      "result": "identical"
+    },
+    {
+      "state": "mobile-duels-focus",
+      "elements": 219,
+      "sha256": "f5285da5611761c7ac9174b697cf12830c42220047d38200b73a1365a08eedfb",
+      "result": "identical"
+    },
+    {
+      "state": "mobile-deathmatch-scoreboard",
+      "elements": 58,
+      "sha256": "46f5a391357ded174bf07bc9ef85fbe5cd61ab97b25ac2c138e83c426d3d0353",
+      "result": "identical"
+    },
+    {
+      "state": "mobile-deathmatch-performance",
+      "elements": 58,
+      "sha256": "83544f37311037c72161999d08b674c3b96abbbf776988b8f3936eb23b583fd5",
+      "result": "identical"
+    },
+    {
+      "state": "mobile-deathmatch-economy",
+      "elements": 33,
+      "sha256": "feb4be6765240f1e475f778f3cd173c3acb25aa5046cfb51fdb11ad69bae3ba8",
+      "result": "identical"
+    },
+    {
+      "state": "mobile-deathmatch-rounds",
+      "elements": 33,
+      "sha256": "b12b85e45726495483b8934c98f70e0396717017500401113991ea7206522e18",
+      "result": "identical"
+    },
+    {
+      "state": "mobile-deathmatch-duels",
+      "elements": 33,
+      "sha256": "6665727ddbb6249a05f4e57f13d0386b34e3c382eef512600c91b2ab9f949fb1",
+      "result": "identical"
+    }
+  ],
+  "pixelComparisons": [
+    {
+      "before": "before-desktop-deathmatch-duels.png",
+      "after": "after-desktop-deathmatch-duels.png",
+      "size": [
+        1728,
+        941
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-desktop-deathmatch-performance.png",
+      "after": "after-desktop-deathmatch-performance.png",
+      "size": [
+        1728,
+        941
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-desktop-duels-focus.png",
+      "after": "after-desktop-duels-focus.png",
+      "size": [
+        1728,
+        941
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-desktop-duels.png",
+      "after": "after-desktop-duels.png",
+      "size": [
+        1728,
+        941
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-desktop-economy-bank.png",
+      "after": "after-desktop-economy-bank.png",
+      "size": [
+        1728,
+        941
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-desktop-economy.png",
+      "after": "after-desktop-economy.png",
+      "size": [
+        1728,
+        941
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-desktop-home.png",
+      "after": "after-desktop-home.png",
+      "size": [
+        1728,
+        941
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-desktop-performance-missing.png",
+      "after": "after-desktop-performance-missing.png",
+      "size": [
+        1728,
+        941
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-desktop-performance.png",
+      "after": "after-desktop-performance.png",
+      "size": [
+        1728,
+        941
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-desktop-profile.png",
+      "after": "after-desktop-profile.png",
+      "size": [
+        1728,
+        941
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-desktop-rounds-selected.png",
+      "after": "after-desktop-rounds-selected.png",
+      "size": [
+        1728,
+        941
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-desktop-rounds.png",
+      "after": "after-desktop-rounds.png",
+      "size": [
+        1728,
+        941
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-desktop-scoreboard-focus.png",
+      "after": "after-desktop-scoreboard-focus.png",
+      "size": [
+        1728,
+        941
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-desktop-scoreboard-sorted.png",
+      "after": "after-desktop-scoreboard-sorted.png",
+      "size": [
+        1728,
+        941
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-desktop-scoreboard.png",
+      "after": "after-desktop-scoreboard.png",
+      "size": [
+        1728,
+        941
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-mobile-deathmatch-duels.png",
+      "after": "after-mobile-deathmatch-duels.png",
+      "size": [
+        390,
+        844
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-mobile-deathmatch-performance.png",
+      "after": "after-mobile-deathmatch-performance.png",
+      "size": [
+        390,
+        844
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-mobile-duels-focus.png",
+      "after": "after-mobile-duels-focus.png",
+      "size": [
+        390,
+        844
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-mobile-duels.png",
+      "after": "after-mobile-duels.png",
+      "size": [
+        390,
+        844
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-mobile-economy-bank.png",
+      "after": "after-mobile-economy-bank.png",
+      "size": [
+        390,
+        844
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-mobile-economy.png",
+      "after": "after-mobile-economy.png",
+      "size": [
+        390,
+        844
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-mobile-home.png",
+      "after": "after-mobile-home.png",
+      "size": [
+        390,
+        844
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-mobile-performance-missing.png",
+      "after": "after-mobile-performance-missing.png",
+      "size": [
+        390,
+        844
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-mobile-performance.png",
+      "after": "after-mobile-performance.png",
+      "size": [
+        390,
+        844
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-mobile-profile.png",
+      "after": "after-mobile-profile.png",
+      "size": [
+        390,
+        844
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-mobile-rounds-selected.png",
+      "after": "after-mobile-rounds-selected.png",
+      "size": [
+        390,
+        844
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-mobile-rounds.png",
+      "after": "after-mobile-rounds.png",
+      "size": [
+        390,
+        844
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-mobile-scoreboard-focus.png",
+      "after": "after-mobile-scoreboard-focus.png",
+      "size": [
+        390,
+        844
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-mobile-scoreboard-sorted.png",
+      "after": "after-mobile-scoreboard-sorted.png",
+      "size": [
+        390,
+        844
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    },
+    {
+      "before": "before-mobile-scoreboard.png",
+      "after": "after-mobile-scoreboard.png",
+      "size": [
+        390,
+        844
+      ],
+      "changedPixels": 0,
+      "bbox": null
+    }
+  ],
+  "interactions": [
+    "desktop: Closed home/profile DOM and visual geometry unchanged",
+    "desktop: Row Enter opens one labelled modal with matching viewer",
+    "desktop: Five tabs have selected state, visible panel and no overflow",
+    "desktop: Detail keyboard arrows and Home/End switch focus and selection",
+    "desktop: Scoreboard sorts both teams numerically and keeps missing values last",
+    "desktop: Economy Bank/Loadout/Total switch selection and honest missing-record notice",
+    "desktop: Performance duel and weapon numeric columns sort in both directions",
+    "desktop: Performance player selection updates identity and preserves missing data for others",
+    "desktop: Duels matrix has 5 provided pairs and 20 missing pairs without fabricated zeros",
+    "desktop: Tab and Shift+Tab stay within modal",
+    "desktop: Wheel on backdrop cannot scroll background",
+    "desktop: Only content scrolls while match header and tabs stay fixed",
+    "desktop: Escape restores opening row focus and original list scroll",
+    "desktop: Rounds keyboard selection and close button preserve list state",
+    "desktop: Backdrop close restores focus and scroll",
+    "desktop: Different row opens its own match and resets selected tab",
+    "desktop: Strip opens modal without jumping to row and restores strip focus",
+    "desktop: Filters and Load more preserve detail opening",
+    "desktop: Deathmatch missing state and personal metrics remain correct",
+    "desktop: Alternate profile keeps own identity",
+    "desktop: Additional 20 viewport/tab combinations stay inside viewport",
+    "mobile: Closed home/profile DOM and visual geometry unchanged",
+    "mobile: Row Enter opens one labelled modal with matching viewer",
+    "mobile: Five tabs have selected state, visible panel and no overflow",
+    "mobile: Detail keyboard arrows and Home/End switch focus and selection",
+    "mobile: Scoreboard sorts both teams numerically and keeps missing values last",
+    "mobile: Economy Bank/Loadout/Total switch selection and honest missing-record notice",
+    "mobile: Performance duel and weapon numeric columns sort in both directions",
+    "mobile: Performance player selection updates identity and preserves missing data for others",
+    "mobile: Duels matrix has 5 provided pairs and 20 missing pairs without fabricated zeros",
+    "mobile: Tab and Shift+Tab stay within modal",
+    "mobile: Wheel on backdrop cannot scroll background",
+    "mobile: Only content scrolls while match header and tabs stay fixed",
+    "mobile: Escape restores opening row focus and original list scroll",
+    "mobile: Rounds keyboard selection and close button preserve list state",
+    "mobile: Mobile full-screen dialog closes by button; backdrop has no exposed area",
+    "mobile: Different row opens its own match and resets selected tab",
+    "mobile: Strip opens modal without jumping to row and restores strip focus",
+    "mobile: Filters and Load more preserve detail opening",
+    "mobile: Deathmatch missing state and personal metrics remain correct",
+    "mobile: Alternate profile keeps own identity",
+    "mobile: Mobile keyboard/table scroll reveals final MK column"
+  ],
+  "additionalResponsive": [
+    {
+      "width": 320,
+      "tab": "scoreboard",
+      "dialogBox": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 900
+      },
+      "panelSize": {
+        "clientWidth": 320,
+        "scrollWidth": 320
+      },
+      "pageOverflow": 0
+    },
+    {
+      "width": 320,
+      "tab": "performance",
+      "dialogBox": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 900
+      },
+      "panelSize": {
+        "clientWidth": 320,
+        "scrollWidth": 320
+      },
+      "pageOverflow": 0
+    },
+    {
+      "width": 320,
+      "tab": "economy",
+      "dialogBox": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 900
+      },
+      "panelSize": {
+        "clientWidth": 320,
+        "scrollWidth": 320
+      },
+      "pageOverflow": 0
+    },
+    {
+      "width": 320,
+      "tab": "rounds",
+      "dialogBox": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 900
+      },
+      "panelSize": {
+        "clientWidth": 320,
+        "scrollWidth": 320
+      },
+      "pageOverflow": 0
+    },
+    {
+      "width": 320,
+      "tab": "duels",
+      "dialogBox": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 900
+      },
+      "panelSize": {
+        "clientWidth": 320,
+        "scrollWidth": 320
+      },
+      "pageOverflow": 0
+    },
+    {
+      "width": 768,
+      "tab": "scoreboard",
+      "dialogBox": {
+        "x": 16,
+        "y": 57,
+        "width": 736,
+        "height": 843
+      },
+      "panelSize": {
+        "clientWidth": 734,
+        "scrollWidth": 734
+      },
+      "pageOverflow": 0
+    },
+    {
+      "width": 768,
+      "tab": "performance",
+      "dialogBox": {
+        "x": 16,
+        "y": 57,
+        "width": 736,
+        "height": 843
+      },
+      "panelSize": {
+        "clientWidth": 734,
+        "scrollWidth": 734
+      },
+      "pageOverflow": 0
+    },
+    {
+      "width": 768,
+      "tab": "economy",
+      "dialogBox": {
+        "x": 16,
+        "y": 57,
+        "width": 736,
+        "height": 843
+      },
+      "panelSize": {
+        "clientWidth": 734,
+        "scrollWidth": 734
+      },
+      "pageOverflow": 0
+    },
+    {
+      "width": 768,
+      "tab": "rounds",
+      "dialogBox": {
+        "x": 16,
+        "y": 57,
+        "width": 736,
+        "height": 843
+      },
+      "panelSize": {
+        "clientWidth": 734,
+        "scrollWidth": 734
+      },
+      "pageOverflow": 0
+    },
+    {
+      "width": 768,
+      "tab": "duels",
+      "dialogBox": {
+        "x": 16,
+        "y": 57,
+        "width": 736,
+        "height": 843
+      },
+      "panelSize": {
+        "clientWidth": 734,
+        "scrollWidth": 734
+      },
+      "pageOverflow": 0
+    },
+    {
+      "width": 1000,
+      "tab": "scoreboard",
+      "dialogBox": {
+        "x": 16,
+        "y": 57,
+        "width": 968,
+        "height": 843
+      },
+      "panelSize": {
+        "clientWidth": 966,
+        "scrollWidth": 966
+      },
+      "pageOverflow": 0
+    },
+    {
+      "width": 1000,
+      "tab": "performance",
+      "dialogBox": {
+        "x": 16,
+        "y": 57,
+        "width": 968,
+        "height": 843
+      },
+      "panelSize": {
+        "clientWidth": 966,
+        "scrollWidth": 966
+      },
+      "pageOverflow": 0
+    },
+    {
+      "width": 1000,
+      "tab": "economy",
+      "dialogBox": {
+        "x": 16,
+        "y": 57,
+        "width": 968,
+        "height": 843
+      },
+      "panelSize": {
+        "clientWidth": 966,
+        "scrollWidth": 966
+      },
+      "pageOverflow": 0
+    },
+    {
+      "width": 1000,
+      "tab": "rounds",
+      "dialogBox": {
+        "x": 16,
+        "y": 57,
+        "width": 968,
+        "height": 843
+      },
+      "panelSize": {
+        "clientWidth": 966,
+        "scrollWidth": 966
+      },
+      "pageOverflow": 0
+    },
+    {
+      "width": 1000,
+      "tab": "duels",
+      "dialogBox": {
+        "x": 16,
+        "y": 57,
+        "width": 968,
+        "height": 843
+      },
+      "panelSize": {
+        "clientWidth": 966,
+        "scrollWidth": 966
+      },
+      "pageOverflow": 0
+    },
+    {
+      "width": 1440,
+      "tab": "scoreboard",
+      "dialogBox": {
+        "x": 20,
+        "y": 57,
+        "width": 1400,
+        "height": 843
+      },
+      "panelSize": {
+        "clientWidth": 1398,
+        "scrollWidth": 1398
+      },
+      "pageOverflow": 0
+    },
+    {
+      "width": 1440,
+      "tab": "performance",
+      "dialogBox": {
+        "x": 20,
+        "y": 57,
+        "width": 1400,
+        "height": 843
+      },
+      "panelSize": {
+        "clientWidth": 1398,
+        "scrollWidth": 1398
+      },
+      "pageOverflow": 0
+    },
+    {
+      "width": 1440,
+      "tab": "economy",
+      "dialogBox": {
+        "x": 20,
+        "y": 57,
+        "width": 1400,
+        "height": 843
+      },
+      "panelSize": {
+        "clientWidth": 1398,
+        "scrollWidth": 1398
+      },
+      "pageOverflow": 0
+    },
+    {
+      "width": 1440,
+      "tab": "rounds",
+      "dialogBox": {
+        "x": 20,
+        "y": 57,
+        "width": 1400,
+        "height": 843
+      },
+      "panelSize": {
+        "clientWidth": 1398,
+        "scrollWidth": 1398
+      },
+      "pageOverflow": 0
+    },
+    {
+      "width": 1440,
+      "tab": "duels",
+      "dialogBox": {
+        "x": 20,
+        "y": 57,
+        "width": 1400,
+        "height": 843
+      },
+      "panelSize": {
+        "clientWidth": 1398,
+        "scrollWidth": 1398
+      },
+      "pageOverflow": 0
+    }
+  ],
+  "closedPages": [
+    {
+      "key": "desktop-home",
+      "status": "unchanged",
+      "image": "/tmp/tracker-after-desktop-home.png"
+    },
+    {
+      "key": "desktop-profile",
+      "status": "unchanged",
+      "image": "/tmp/tracker-after-desktop-profile.png"
+    },
+    {
+      "key": "mobile-home",
+      "status": "unchanged",
+      "image": "/tmp/tracker-after-mobile-home.png"
+    },
+    {
+      "key": "mobile-profile",
+      "status": "unchanged",
+      "image": "/tmp/tracker-after-mobile-profile.png"
+    }
+  ],
+  "emptyCSSFixtures": [
+    {
+      "component": "TrackerPerformance",
+      "status": "PASS",
+      "legacy": [
+        {
+          "style": {
+            "color": "rgb(180, 194, 207)",
+            "font-size": "16px",
+            "font-family": "Arial, Helvetica, sans-serif",
+            "font-weight": "400",
+            "line-height": "22.4px",
+            "margin": "0px",
+            "padding": "24px",
+            "border-width": "0px",
+            "display": "block"
+          },
+          "width": 0,
+          "height": 0
+        },
+        {
+          "style": {
+            "color": "rgb(237, 243, 248)",
+            "font-size": "18.72px",
+            "font-family": "Arial, Helvetica, sans-serif",
+            "font-weight": "700",
+            "line-height": "26.208px",
+            "margin": "0px 0px 8px",
+            "padding": "0px",
+            "border-width": "0px",
+            "display": "block"
+          },
+          "width": 0,
+          "height": 0
+        },
+        {
+          "style": {
+            "color": "rgb(142, 166, 184)",
+            "font-size": "17px",
+            "font-family": "Arial, Helvetica, sans-serif",
+            "font-weight": "400",
+            "line-height": "27.2px",
+            "margin": "0px",
+            "padding": "0px",
+            "border-width": "0px",
+            "display": "block"
+          },
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "shared": [
+        {
+          "style": {
+            "color": "rgb(180, 194, 207)",
+            "font-size": "16px",
+            "font-family": "Arial, Helvetica, sans-serif",
+            "font-weight": "400",
+            "line-height": "22.4px",
+            "margin": "0px",
+            "padding": "24px",
+            "border-width": "0px",
+            "display": "block"
+          },
+          "width": 0,
+          "height": 0
+        },
+        {
+          "style": {
+            "color": "rgb(237, 243, 248)",
+            "font-size": "18.72px",
+            "font-family": "Arial, Helvetica, sans-serif",
+            "font-weight": "700",
+            "line-height": "26.208px",
+            "margin": "0px 0px 8px",
+            "padding": "0px",
+            "border-width": "0px",
+            "display": "block"
+          },
+          "width": 0,
+          "height": 0
+        },
+        {
+          "style": {
+            "color": "rgb(142, 166, 184)",
+            "font-size": "17px",
+            "font-family": "Arial, Helvetica, sans-serif",
+            "font-weight": "400",
+            "line-height": "27.2px",
+            "margin": "0px",
+            "padding": "0px",
+            "border-width": "0px",
+            "display": "block"
+          },
+          "width": 0,
+          "height": 0
+        }
+      ]
+    },
+    {
+      "component": "TrackerDuels",
+      "status": "PASS",
+      "legacy": [
+        {
+          "style": {
+            "color": "rgb(180, 194, 207)",
+            "font-size": "16px",
+            "font-family": "Arial, Helvetica, sans-serif",
+            "font-weight": "400",
+            "line-height": "22.4px",
+            "margin": "0px",
+            "padding": "24px",
+            "border-width": "0px",
+            "display": "block"
+          },
+          "width": 0,
+          "height": 0
+        },
+        {
+          "style": {
+            "color": "rgb(237, 243, 248)",
+            "font-size": "18.72px",
+            "font-family": "Arial, Helvetica, sans-serif",
+            "font-weight": "700",
+            "line-height": "26.208px",
+            "margin": "0px 0px 8px",
+            "padding": "0px",
+            "border-width": "0px",
+            "display": "block"
+          },
+          "width": 0,
+          "height": 0
+        },
+        {
+          "style": {
+            "color": "rgb(142, 166, 184)",
+            "font-size": "17px",
+            "font-family": "Arial, Helvetica, sans-serif",
+            "font-weight": "400",
+            "line-height": "27.2px",
+            "margin": "0px",
+            "padding": "0px",
+            "border-width": "0px",
+            "display": "block"
+          },
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "shared": [
+        {
+          "style": {
+            "color": "rgb(180, 194, 207)",
+            "font-size": "16px",
+            "font-family": "Arial, Helvetica, sans-serif",
+            "font-weight": "400",
+            "line-height": "22.4px",
+            "margin": "0px",
+            "padding": "24px",
+            "border-width": "0px",
+            "display": "block"
+          },
+          "width": 0,
+          "height": 0
+        },
+        {
+          "style": {
+            "color": "rgb(237, 243, 248)",
+            "font-size": "18.72px",
+            "font-family": "Arial, Helvetica, sans-serif",
+            "font-weight": "700",
+            "line-height": "26.208px",
+            "margin": "0px 0px 8px",
+            "padding": "0px",
+            "border-width": "0px",
+            "display": "block"
+          },
+          "width": 0,
+          "height": 0
+        },
+        {
+          "style": {
+            "color": "rgb(142, 166, 184)",
+            "font-size": "17px",
+            "font-family": "Arial, Helvetica, sans-serif",
+            "font-weight": "400",
+            "line-height": "27.2px",
+            "margin": "0px",
+            "padding": "0px",
+            "border-width": "0px",
+            "display": "block"
+          },
+          "width": 0,
+          "height": 0
+        }
+      ]
+    }
+  ],
+  "postBuildSmoke": {
+    "status": "PASS",
+    "http": 200,
+    "modalWidth": 1400,
+    "tabs": 5,
+    "minTextSize": 12,
+    "closeButton": {
+      "x": 1507,
+      "y": 66,
+      "width": 44,
+      "height": 44
+    },
+    "closed": true,
+    "bodyOverflow": "visible"
+  },
+  "pageErrors": [],
+  "checks": {
+    "mock": "PASS",
+    "detailMock": "PASS: 34 team details / 2 Deathmatch fallbacks",
+    "missingDataSSR": "PASS",
+    "typescript": "PASS",
+    "lint": "PASS: no warnings/errors",
+    "build": "PASS: 11 static pages",
+    "diffCheck": "PASS"
+  },
+  "visualReview": {
+    "status": "PASS",
+    "rootViewed": [
+      "after-desktop-scoreboard.png",
+      "after-mobile-performance-missing.png"
+    ],
+    "independentPairs": [
+      "desktop-duels",
+      "mobile-rounds"
+    ],
+    "note": "No new visual defects; independent assistant review, not Cursor review."
+  },
+  "notes": [
+    "No TSX, data, asset, global or inline changes.",
+    "Empty component CSS checked via temporary browser DOM fixtures against original HEAD declarations; no production data modified.",
+    "Exact property snapshots remain in /tmp/fe019-before.json and /tmp/fe019-after.json.",
+    "Container git: not found warning is existing build metadata fallback; all commands exited 0.",
+    "Delivery audit clarification: emptyCSSFixtures measured widths/heights are 0; these fixtures verify computed styles only, not visible fallback layout dimensions."
+  ]
+}

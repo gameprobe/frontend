@@ -1,0 +1,2013 @@
+{
+  "task": "TASK-FE-018",
+  "stage": "Tracker reference modal redesign: five tabs with preserved four-tab inline presentation",
+  "status": "PASS",
+  "environment": {
+    "url": "http://127.0.0.1:3000",
+    "browser": "Playwright Chromium headless",
+    "desktop": [
+      1920,
+      960
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "additionalWidths": [
+      320,
+      768,
+      1000,
+      1440
+    ],
+    "deviceScaleFactor": 1,
+    "reducedMotion": "reduce"
+  },
+  "before": {
+    "captures": [
+      "tracker-before-desktop-scoreboard.png",
+      "tracker-before-desktop-rounds.png",
+      "tracker-before-desktop-performance.png",
+      "tracker-before-desktop-analysis.png",
+      "tracker-before-mobile-scoreboard.png",
+      "tracker-before-mobile-rounds.png",
+      "tracker-before-mobile-performance.png",
+      "tracker-before-mobile-analysis.png"
+    ],
+    "closed": [
+      {
+        "size": "desktop",
+        "name": "home",
+        "file": "/tmp/tracker-before-desktop-home.png"
+      },
+      {
+        "size": "desktop",
+        "name": "profile",
+        "file": "/tmp/tracker-before-desktop-profile.png"
+      },
+      {
+        "size": "mobile",
+        "name": "home",
+        "file": "/tmp/tracker-before-mobile-home.png"
+      },
+      {
+        "size": "mobile",
+        "name": "profile",
+        "file": "/tmp/tracker-before-mobile-profile.png"
+      }
+    ],
+    "states": [
+      {
+        "size": "desktop",
+        "tab": "scoreboard",
+        "text": "Competitive · 경기 상세\nHaven 13 : 8\n2026-09-09 21:48\n34분\nMock Preview\n\n현재 경기 요약에 맞춰 구성한 Mock 표본입니다. 참가자·라운드 순서·무기/교전 분포는 실제 기록이 아닙니다.\n\n스코어보드\n라운드\n성과\n분석\n\n— 는 미제공 기록입니다. FK: 첫 킬 · FD: 첫 데스\n\n우리 팀\n\n13-8 · K/D/A 48/70/9 · 평균 ACS 241\n\n승리\n플레이어\nK / D / A\nACS\nFK\nFD\nK/D Ratio\nADR\nHS%\nMock Ally 1#MOCK\nMVP\n4/17/2\n314\n—\n—\n0.24\n171\n23%\nMock Ally 2#MOCK\n6/14/0\n252\n—\n—\n0.43\n159\n19%\nIED agent#Allen\nYOU\n17/13/5\n240\n—\n—\n1.31\n156\n32%\nMock Ally 3#MOCK\n6/13/2\n222\n—\n—\n0.46\n216\n13%\nMock Ally 4#MOCK\n15/13/0\n179\n—\n—\n1.15\n80\n17%\n상대 팀\n\n8-13 · K/D/A 70/48/28 · 평균 ACS 259\n\n패배\n플레이어\nK / D / A\nACS\nFK\nFD\nK/D Ratio\nADR\nHS%\nMock Opponent 4#MOCK\nMVP\n14/9/4\n310\n—\n—\n1.56\n86\n33%\nMock Opponent 1#MOCK\n15/10/8\n302\n—\n—\n1.50\n136\n13%\nMock Opponent 3#MOCK\n13/9/8\n271\n—\n—\n1.44\n167\n41%\nMock Opponent 2#MOCK\n13/11/0\n249\n—\n—\n1.18\n127\n19%\nMock Opponent 5#MOCK\n15/9/8\n165\n—\n—\n1.67\n214\n19%\n\nMock 경기 데이터 · 실제 Riot 경기 기록은 연결되지 않았습니다.",
+        "dialogBox": {
+          "x": 240,
+          "y": 32,
+          "width": 1440,
+          "height": 896
+        },
+        "pageOverflow": 0
+      },
+      {
+        "size": "desktop",
+        "tab": "rounds",
+        "text": "Competitive · 경기 상세\nHaven 13 : 8\n2026-09-09 21:48\n34분\nMock Preview\n\n현재 경기 요약에 맞춰 구성한 Mock 표본입니다. 참가자·라운드 순서·무기/교전 분포는 실제 기록이 아닙니다.\n\n스코어보드\n라운드\n성과\n분석\nRound flow\n라운드 타임라인\nDemo telemetry · Mock Preview\nR1\n—\n1-0\nR2\n—\n2-0\nR3\n—\n3-0\nR4\n—\n3-1\nR5\n—\n4-1\nR6\n—\n4-2\nR7\n—\n5-2\nR8\n—\n6-2\nR9\n—\n6-3\nR10\n—\n7-3\nR11\n—\n8-3\nR12\n—\n9-3\nR13\n—\n9-4\nR14\n—\n10-4\nR15\n—\n10-5\nR16\n—\n10-6\nR17\n—\n10-7\nR18\n—\n11-7\nR19\n—\n11-8\nR20\n—\n12-8\nR21\n—\n13-8\n우리 팀 승리\n우리 팀 패배\n— 종료 원인 미제공\nRound 1\n킬 로그\n승리\n1-0 · 종료 원인 미제공\n\n이벤트 기록 없음(Mock)\n\nTactical plot\n2D 교전 위치\nMock Preview\n\n좌표 이벤트 기록 없음(Mock)\n\nMock 경기 데이터 · 실제 Riot 경기 기록은 연결되지 않았습니다.",
+        "dialogBox": {
+          "x": 240,
+          "y": 32,
+          "width": 1440,
+          "height": 896
+        },
+        "pageOverflow": 0
+      },
+      {
+        "size": "desktop",
+        "tab": "performance",
+        "text": "Competitive · 경기 상세\nHaven 13 : 8\n2026-09-09 21:48\n34분\nMock Preview\n\n현재 경기 요약에 맞춰 구성한 Mock 표본입니다. 참가자·라운드 순서·무기/교전 분포는 실제 기록이 아닙니다.\n\n스코어보드\n라운드\n성과\n분석\nIED agent#Allen\n\nSova · Operator · V26: A5\n\n17 / 13 / 5 K / D / A\n+12 RR\nDamage / Round\n156\nCombat Score\n240\nKAST\n73.5%\nHeadshot %\n32%\nDamage Delta\n+43\nProbe Score\n726\nPerformance\n매치업 분석\nDemo telemetry · Mock Preview\n플레이어\nIED agent#Allen\n매치 K/D/A\n17/13/5\n매치 임팩트\nACS 240\nHead-to-head\n라이벌 매치업\n17 : 13\n상대\n내 킬\n당한 데스\n우열\n표본 요원\nMock Opponent 2#MOCK\n4\n2\n+2\n표본 요원\nMock Opponent 1#MOCK\n4\n3\n+1\n표본 요원\nMock Opponent 3#MOCK\n3\n2\n+1\n표본 요원\nMock Opponent 4#MOCK\n3\n3\n0\n표본 요원\nMock Opponent 5#MOCK\n3\n3\n0\n가장 많이 잡은 상대\nMock Opponent 1#MOCK\n가장 위협적인 상대\nMock Opponent 1#MOCK\nWeapon usage\n무기 킬 분포\n17 KILLS\n1\nOperator\n71% of kills\n12\n2\nPhantom\n29% of kills\n5\n\nMock 경기 데이터 · 실제 Riot 경기 기록은 연결되지 않았습니다.",
+        "dialogBox": {
+          "x": 240,
+          "y": 32,
+          "width": 1440,
+          "height": 896
+        },
+        "pageOverflow": 0
+      },
+      {
+        "size": "desktop",
+        "tab": "analysis",
+        "text": "Competitive · 경기 상세\nHaven 13 : 8\n2026-09-09 21:48\n34분\nMock Preview\n\n현재 경기 요약에 맞춰 구성한 Mock 표본입니다. 참가자·라운드 순서·무기/교전 분포는 실제 기록이 아닙니다.\n\n스코어보드\n라운드\n성과\n분석\nMatch analysis\n팀 델타 · 경제 흐름\nDemo telemetry · Mock Preview\nTeam delta\n팀 전투 지표\n우리 팀\n상대 팀\n1,207\n전투 점수\n1,297\n48\n총 킬\n70\n\n팀 피해량은 전체 참가자의 기록이 준비되면 표시됩니다. 현재는 미제공입니다.\n\nRound economy\n로드아웃 · Bank 추이\nMock Preview\n\n경제 기록 없음(Mock)\n\nMock 경기 데이터 · 실제 Riot 경기 기록은 연결되지 않았습니다.",
+        "dialogBox": {
+          "x": 240,
+          "y": 32,
+          "width": 1440,
+          "height": 896
+        },
+        "pageOverflow": 0
+      },
+      {
+        "size": "mobile",
+        "tab": "scoreboard",
+        "text": "Competitive · 경기 상세\nHaven 13 : 8\n2026-09-09 21:48\n34분\nMock Preview\n\n현재 경기 요약에 맞춰 구성한 Mock 표본입니다. 참가자·라운드 순서·무기/교전 분포는 실제 기록이 아닙니다.\n\n스코어보드\n라운드\n성과\n분석\n\n— 는 미제공 기록입니다. FK: 첫 킬 · FD: 첫 데스\n\n우리 팀\n\n13-8 · K/D/A 48/70/9 · 평균 ACS 241\n\n승리\n플레이어\nK / D / A\nACS\nFK\nFD\nK/D Ratio\nADR\nHS%\nMock Ally 1#MOCK\nMVP\n4/17/2\n314\n—\n—\n0.24\n171\n23%\nMock Ally 2#MOCK\n6/14/0\n252\n—\n—\n0.43\n159\n19%\nIED agent#Allen\nYOU\n17/13/5\n240\n—\n—\n1.31\n156\n32%\nMock Ally 3#MOCK\n6/13/2\n222\n—\n—\n0.46\n216\n13%\nMock Ally 4#MOCK\n15/13/0\n179\n—\n—\n1.15\n80\n17%\n상대 팀\n\n8-13 · K/D/A 70/48/28 · 평균 ACS 259\n\n패배\n플레이어\nK / D / A\nACS\nFK\nFD\nK/D Ratio\nADR\nHS%\nMock Opponent 4#MOCK\nMVP\n14/9/4\n310\n—\n—\n1.56\n86\n33%\nMock Opponent 1#MOCK\n15/10/8\n302\n—\n—\n1.50\n136\n13%\nMock Opponent 3#MOCK\n13/9/8\n271\n—\n—\n1.44\n167\n41%\nMock Opponent 2#MOCK\n13/11/0\n249\n—\n—\n1.18\n127\n19%\nMock Opponent 5#MOCK\n15/9/8\n165\n—\n—\n1.67\n214\n19%\n\nMock 경기 데이터 · 실제 Riot 경기 기록은 연결되지 않았습니다.",
+        "dialogBox": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "pageOverflow": 0
+      },
+      {
+        "size": "mobile",
+        "tab": "rounds",
+        "text": "Competitive · 경기 상세\nHaven 13 : 8\n2026-09-09 21:48\n34분\nMock Preview\n\n현재 경기 요약에 맞춰 구성한 Mock 표본입니다. 참가자·라운드 순서·무기/교전 분포는 실제 기록이 아닙니다.\n\n스코어보드\n라운드\n성과\n분석\nRound flow\n라운드 타임라인\nDemo telemetry · Mock Preview\nR1\n—\n1-0\nR2\n—\n2-0\nR3\n—\n3-0\nR4\n—\n3-1\nR5\n—\n4-1\nR6\n—\n4-2\nR7\n—\n5-2\nR8\n—\n6-2\nR9\n—\n6-3\nR10\n—\n7-3\nR11\n—\n8-3\nR12\n—\n9-3\nR13\n—\n9-4\nR14\n—\n10-4\nR15\n—\n10-5\nR16\n—\n10-6\nR17\n—\n10-7\nR18\n—\n11-7\nR19\n—\n11-8\nR20\n—\n12-8\nR21\n—\n13-8\n우리 팀 승리\n우리 팀 패배\n— 종료 원인 미제공\nRound 1\n킬 로그\n승리\n1-0 · 종료 원인 미제공\n\n이벤트 기록 없음(Mock)\n\nTactical plot\n2D 교전 위치\nMock Preview\n\n좌표 이벤트 기록 없음(Mock)\n\nMock 경기 데이터 · 실제 Riot 경기 기록은 연결되지 않았습니다.",
+        "dialogBox": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "pageOverflow": 0
+      },
+      {
+        "size": "mobile",
+        "tab": "performance",
+        "text": "Competitive · 경기 상세\nHaven 13 : 8\n2026-09-09 21:48\n34분\nMock Preview\n\n현재 경기 요약에 맞춰 구성한 Mock 표본입니다. 참가자·라운드 순서·무기/교전 분포는 실제 기록이 아닙니다.\n\n스코어보드\n라운드\n성과\n분석\nIED agent#Allen\n\nSova · Operator · V26: A5\n\n17 / 13 / 5 K / D / A\n+12 RR\nDamage / Round\n156\nCombat Score\n240\nKAST\n73.5%\nHeadshot %\n32%\nDamage Delta\n+43\nProbe Score\n726\nPerformance\n매치업 분석\nDemo telemetry · Mock Preview\n플레이어\nIED agent#Allen\n매치 K/D/A\n17/13/5\n매치 임팩트\nACS 240\nHead-to-head\n라이벌 매치업\n17 : 13\n상대\n내 킬\n당한 데스\n우열\n표본 요원\nMock Opponent 2#MOCK\n4\n2\n+2\n표본 요원\nMock Opponent 1#MOCK\n4\n3\n+1\n표본 요원\nMock Opponent 3#MOCK\n3\n2\n+1\n표본 요원\nMock Opponent 4#MOCK\n3\n3\n0\n표본 요원\nMock Opponent 5#MOCK\n3\n3\n0\n가장 많이 잡은 상대\nMock Opponent 1#MOCK\n가장 위협적인 상대\nMock Opponent 1#MOCK\nWeapon usage\n무기 킬 분포\n17 KILLS\n1\nOperator\n71% of kills\n12\n2\nPhantom\n29% of kills\n5\n\nMock 경기 데이터 · 실제 Riot 경기 기록은 연결되지 않았습니다.",
+        "dialogBox": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "pageOverflow": 0
+      },
+      {
+        "size": "mobile",
+        "tab": "analysis",
+        "text": "Competitive · 경기 상세\nHaven 13 : 8\n2026-09-09 21:48\n34분\nMock Preview\n\n현재 경기 요약에 맞춰 구성한 Mock 표본입니다. 참가자·라운드 순서·무기/교전 분포는 실제 기록이 아닙니다.\n\n스코어보드\n라운드\n성과\n분석\nMatch analysis\n팀 델타 · 경제 흐름\nDemo telemetry · Mock Preview\nTeam delta\n팀 전투 지표\n우리 팀\n상대 팀\n1,207\n전투 점수\n1,297\n48\n총 킬\n70\n\n팀 피해량은 전체 참가자의 기록이 준비되면 표시됩니다. 현재는 미제공입니다.\n\nRound economy\n로드아웃 · Bank 추이\nMock Preview\n\n경제 기록 없음(Mock)\n\nMock 경기 데이터 · 실제 Riot 경기 기록은 연결되지 않았습니다.",
+        "dialogBox": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "pageOverflow": 0
+      }
+    ],
+    "errors": [],
+    "sourceHashes": {
+      "frontend/src/features/tracker-profile/TrackerProfile.tsx": "04ff91ebb418003902961d7f6df2b4e2c65e8e8b347d615abafc75e96750e91b",
+      "frontend/src/features/tracker-profile/match-history/detail/DetailedMatchPanel.tsx": "4f0039db6fb9914f15a192ada9e5c70af0f26651dfedf13f2010dd7ead83316e",
+      "frontend/src/features/tracker-profile/match-history/detail/MatchDetailDialog.tsx": "1aab9f13479f839e7796ccd76d59f5a0c26e9697d398207c61e0e6401165ce0b"
+    }
+  },
+  "modalVerification": {
+    "groupCount": 60,
+    "detailGroupCount": 42,
+    "existingRegressionGroupCount": 18,
+    "checks": [
+      "desktop: Closed home/profile DOM and visual geometry unchanged",
+      "desktop: Row Enter opens one labelled modal with matching viewer",
+      "desktop: Five tabs have selected state, visible panel and no overflow",
+      "desktop: Detail keyboard arrows and Home/End switch focus and selection",
+      "desktop: Scoreboard sorts both teams numerically and keeps missing values last",
+      "desktop: Economy Bank/Loadout/Total switch selection and honest missing-record notice",
+      "desktop: Performance duel and weapon numeric columns sort in both directions",
+      "desktop: Performance player selection updates identity and preserves missing data for others",
+      "desktop: Duels matrix has 5 provided pairs and 20 missing pairs without fabricated zeros",
+      "desktop: Tab and Shift+Tab stay within modal",
+      "desktop: Wheel on backdrop cannot scroll background",
+      "desktop: Only content scrolls while match header and tabs stay fixed",
+      "desktop: Escape restores opening row focus and original list scroll",
+      "desktop: Rounds keyboard selection and close button preserve list state",
+      "desktop: Backdrop close restores focus and scroll",
+      "desktop: Different row opens its own match and resets selected tab",
+      "desktop: Strip opens modal without jumping to row and restores strip focus",
+      "desktop: Filters and Load more preserve detail opening",
+      "desktop: Deathmatch missing state and personal metrics remain correct",
+      "desktop: Alternate profile keeps own identity",
+      "desktop: Additional 20 viewport/tab combinations stay inside viewport",
+      "mobile: Closed home/profile DOM and visual geometry unchanged",
+      "mobile: Row Enter opens one labelled modal with matching viewer",
+      "mobile: Five tabs have selected state, visible panel and no overflow",
+      "mobile: Detail keyboard arrows and Home/End switch focus and selection",
+      "mobile: Scoreboard sorts both teams numerically and keeps missing values last",
+      "mobile: Economy Bank/Loadout/Total switch selection and honest missing-record notice",
+      "mobile: Performance duel and weapon numeric columns sort in both directions",
+      "mobile: Performance player selection updates identity and preserves missing data for others",
+      "mobile: Duels matrix has 5 provided pairs and 20 missing pairs without fabricated zeros",
+      "mobile: Tab and Shift+Tab stay within modal",
+      "mobile: Wheel on backdrop cannot scroll background",
+      "mobile: Only content scrolls while match header and tabs stay fixed",
+      "mobile: Escape restores opening row focus and original list scroll",
+      "mobile: Rounds keyboard selection and close button preserve list state",
+      "mobile: Mobile full-screen dialog closes by button; backdrop has no exposed area",
+      "mobile: Different row opens its own match and resets selected tab",
+      "mobile: Strip opens modal without jumping to row and restores strip focus",
+      "mobile: Filters and Load more preserve detail opening",
+      "mobile: Deathmatch missing state and personal metrics remain correct",
+      "mobile: Alternate profile keeps own identity",
+      "mobile: Mobile keyboard/table scroll reveals final MK column",
+      "home Search hover / keyboard focus without layout shift",
+      "Home More / Escape / focus",
+      "Home search existing demo route",
+      "Overview existing IED route",
+      "profile Search hover / keyboard focus without layout shift",
+      "Profile search empty/matching/other and existing toast timeout",
+      "Profile More preserves toggle without Home Escape behavior",
+      "Footer/account destinations and Mock notice dismissal",
+      "Sticky navigation",
+      "Six profile tabs",
+      "Agent card filters nine matches",
+      "One open modal and detail tabs reset",
+      "Loss filter / reset / 20 to 23 matches",
+      "Act switch updates data",
+      "Empty state and season reset",
+      "Favorite persists with existing storage key",
+      "profile to lineups restores global shell",
+      "home to lineups restores global shell"
+    ],
+    "additionalResponsiveConditionCount": 20,
+    "responsive": [
+      {
+        "width": 320,
+        "tab": "scoreboard",
+        "dialogBox": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 900
+        },
+        "panelSize": {
+          "clientWidth": 320,
+          "scrollWidth": 320
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 320,
+        "tab": "performance",
+        "dialogBox": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 900
+        },
+        "panelSize": {
+          "clientWidth": 320,
+          "scrollWidth": 320
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 320,
+        "tab": "economy",
+        "dialogBox": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 900
+        },
+        "panelSize": {
+          "clientWidth": 320,
+          "scrollWidth": 320
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 320,
+        "tab": "rounds",
+        "dialogBox": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 900
+        },
+        "panelSize": {
+          "clientWidth": 320,
+          "scrollWidth": 320
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 320,
+        "tab": "duels",
+        "dialogBox": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 900
+        },
+        "panelSize": {
+          "clientWidth": 320,
+          "scrollWidth": 320
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 768,
+        "tab": "scoreboard",
+        "dialogBox": {
+          "x": 24,
+          "y": 24,
+          "width": 720,
+          "height": 852
+        },
+        "panelSize": {
+          "clientWidth": 718,
+          "scrollWidth": 718
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 768,
+        "tab": "performance",
+        "dialogBox": {
+          "x": 24,
+          "y": 24,
+          "width": 720,
+          "height": 852
+        },
+        "panelSize": {
+          "clientWidth": 718,
+          "scrollWidth": 718
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 768,
+        "tab": "economy",
+        "dialogBox": {
+          "x": 24,
+          "y": 24,
+          "width": 720,
+          "height": 852
+        },
+        "panelSize": {
+          "clientWidth": 718,
+          "scrollWidth": 718
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 768,
+        "tab": "rounds",
+        "dialogBox": {
+          "x": 24,
+          "y": 24,
+          "width": 720,
+          "height": 852
+        },
+        "panelSize": {
+          "clientWidth": 718,
+          "scrollWidth": 718
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 768,
+        "tab": "duels",
+        "dialogBox": {
+          "x": 24,
+          "y": 24,
+          "width": 720,
+          "height": 852
+        },
+        "panelSize": {
+          "clientWidth": 718,
+          "scrollWidth": 718
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 1000,
+        "tab": "scoreboard",
+        "dialogBox": {
+          "x": 24,
+          "y": 24,
+          "width": 952,
+          "height": 852
+        },
+        "panelSize": {
+          "clientWidth": 950,
+          "scrollWidth": 950
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 1000,
+        "tab": "performance",
+        "dialogBox": {
+          "x": 24,
+          "y": 24,
+          "width": 952,
+          "height": 852
+        },
+        "panelSize": {
+          "clientWidth": 950,
+          "scrollWidth": 950
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 1000,
+        "tab": "economy",
+        "dialogBox": {
+          "x": 24,
+          "y": 24,
+          "width": 952,
+          "height": 852
+        },
+        "panelSize": {
+          "clientWidth": 950,
+          "scrollWidth": 950
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 1000,
+        "tab": "rounds",
+        "dialogBox": {
+          "x": 24,
+          "y": 24,
+          "width": 952,
+          "height": 852
+        },
+        "panelSize": {
+          "clientWidth": 950,
+          "scrollWidth": 950
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 1000,
+        "tab": "duels",
+        "dialogBox": {
+          "x": 24,
+          "y": 24,
+          "width": 952,
+          "height": 852
+        },
+        "panelSize": {
+          "clientWidth": 950,
+          "scrollWidth": 950
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 1440,
+        "tab": "scoreboard",
+        "dialogBox": {
+          "x": 24,
+          "y": 24,
+          "width": 1392,
+          "height": 852
+        },
+        "panelSize": {
+          "clientWidth": 1390,
+          "scrollWidth": 1390
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 1440,
+        "tab": "performance",
+        "dialogBox": {
+          "x": 24,
+          "y": 24,
+          "width": 1392,
+          "height": 852
+        },
+        "panelSize": {
+          "clientWidth": 1390,
+          "scrollWidth": 1390
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 1440,
+        "tab": "economy",
+        "dialogBox": {
+          "x": 24,
+          "y": 24,
+          "width": 1392,
+          "height": 852
+        },
+        "panelSize": {
+          "clientWidth": 1390,
+          "scrollWidth": 1390
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 1440,
+        "tab": "rounds",
+        "dialogBox": {
+          "x": 24,
+          "y": 24,
+          "width": 1392,
+          "height": 852
+        },
+        "panelSize": {
+          "clientWidth": 1390,
+          "scrollWidth": 1390
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 1440,
+        "tab": "duels",
+        "dialogBox": {
+          "x": 24,
+          "y": 24,
+          "width": 1392,
+          "height": 852
+        },
+        "panelSize": {
+          "clientWidth": 1390,
+          "scrollWidth": 1390
+        },
+        "pageOverflow": 0
+      }
+    ],
+    "measurements": {
+      "desktop-1920-scoreboard-panel": {
+        "clientWidth": 1678,
+        "scrollWidth": 1678
+      },
+      "desktop-1920-performance-panel": {
+        "clientWidth": 1678,
+        "scrollWidth": 1678
+      },
+      "desktop-1920-economy-panel": {
+        "clientWidth": 1678,
+        "scrollWidth": 1678
+      },
+      "desktop-1920-rounds-panel": {
+        "clientWidth": 1678,
+        "scrollWidth": 1678
+      },
+      "desktop-1920-duels-panel": {
+        "clientWidth": 1678,
+        "scrollWidth": 1678
+      },
+      "desktop-focus": {
+        "first": "<button class=\"TrackerMatchPanel_close__UJhaD\" type=\"button\" data-detail-close=\"true\" aria-label=\"경기 상세 닫기\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"m5 5 14 14M19 5 5 19\"></path></svg></button>",
+        "last": "<button type=\"button\" title=\"Multi Kills\" aria-label=\"Team B MK 정렬\">MK</button>",
+        "count": 33
+      },
+      "desktop-locked": {
+        "scrollY": 1410,
+        "bodyPosition": "static",
+        "bodyOverflow": "hidden",
+        "htmlOverflow": "hidden"
+      },
+      "desktop-320-scoreboard-panel": {
+        "clientWidth": 320,
+        "scrollWidth": 320
+      },
+      "desktop-320-performance-panel": {
+        "clientWidth": 320,
+        "scrollWidth": 320
+      },
+      "desktop-320-economy-panel": {
+        "clientWidth": 320,
+        "scrollWidth": 320
+      },
+      "desktop-320-rounds-panel": {
+        "clientWidth": 320,
+        "scrollWidth": 320
+      },
+      "desktop-320-duels-panel": {
+        "clientWidth": 320,
+        "scrollWidth": 320
+      },
+      "desktop-768-scoreboard-panel": {
+        "clientWidth": 718,
+        "scrollWidth": 718
+      },
+      "desktop-768-performance-panel": {
+        "clientWidth": 718,
+        "scrollWidth": 718
+      },
+      "desktop-768-economy-panel": {
+        "clientWidth": 718,
+        "scrollWidth": 718
+      },
+      "desktop-768-rounds-panel": {
+        "clientWidth": 718,
+        "scrollWidth": 718
+      },
+      "desktop-768-duels-panel": {
+        "clientWidth": 718,
+        "scrollWidth": 718
+      },
+      "desktop-1000-scoreboard-panel": {
+        "clientWidth": 950,
+        "scrollWidth": 950
+      },
+      "desktop-1000-performance-panel": {
+        "clientWidth": 950,
+        "scrollWidth": 950
+      },
+      "desktop-1000-economy-panel": {
+        "clientWidth": 950,
+        "scrollWidth": 950
+      },
+      "desktop-1000-rounds-panel": {
+        "clientWidth": 950,
+        "scrollWidth": 950
+      },
+      "desktop-1000-duels-panel": {
+        "clientWidth": 950,
+        "scrollWidth": 950
+      },
+      "desktop-1440-scoreboard-panel": {
+        "clientWidth": 1390,
+        "scrollWidth": 1390
+      },
+      "desktop-1440-performance-panel": {
+        "clientWidth": 1390,
+        "scrollWidth": 1390
+      },
+      "desktop-1440-economy-panel": {
+        "clientWidth": 1390,
+        "scrollWidth": 1390
+      },
+      "desktop-1440-rounds-panel": {
+        "clientWidth": 1390,
+        "scrollWidth": 1390
+      },
+      "desktop-1440-duels-panel": {
+        "clientWidth": 1390,
+        "scrollWidth": 1390
+      },
+      "mobile-390-scoreboard-panel": {
+        "clientWidth": 390,
+        "scrollWidth": 390
+      },
+      "mobile-390-performance-panel": {
+        "clientWidth": 390,
+        "scrollWidth": 390
+      },
+      "mobile-390-economy-panel": {
+        "clientWidth": 390,
+        "scrollWidth": 390
+      },
+      "mobile-390-rounds-panel": {
+        "clientWidth": 390,
+        "scrollWidth": 390
+      },
+      "mobile-390-duels-panel": {
+        "clientWidth": 390,
+        "scrollWidth": 390
+      },
+      "mobile-focus": {
+        "first": "<button class=\"TrackerMatchPanel_close__UJhaD\" type=\"button\" data-detail-close=\"true\" aria-label=\"경기 상세 닫기\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"m5 5 14 14M19 5 5 19\"></path></svg></button>",
+        "last": "<button type=\"button\" title=\"Multi Kills\" aria-label=\"Team B MK 정렬\">MK</button>",
+        "count": 33
+      },
+      "mobile-locked": {
+        "scrollY": 1906,
+        "bodyPosition": "static",
+        "bodyOverflow": "hidden",
+        "htmlOverflow": "hidden"
+      }
+    },
+    "pageErrors": [],
+    "closedDOMComparisons": [
+      {
+        "key": "desktop-home",
+        "status": "unchanged",
+        "image": "/tmp/tracker-after-desktop-home.png"
+      },
+      {
+        "key": "desktop-profile",
+        "status": "unchanged",
+        "image": "/tmp/tracker-after-desktop-profile.png"
+      },
+      {
+        "key": "mobile-home",
+        "status": "unchanged",
+        "image": "/tmp/tracker-after-mobile-home.png"
+      },
+      {
+        "key": "mobile-profile",
+        "status": "unchanged",
+        "image": "/tmp/tracker-after-mobile-profile.png"
+      }
+    ],
+    "closedPixels": [
+      {
+        "name": "desktop-home",
+        "beforeSize": [
+          1920,
+          1076
+        ],
+        "afterSize": [
+          1920,
+          1076
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "name": "desktop-profile",
+        "beforeSize": [
+          1920,
+          4408
+        ],
+        "afterSize": [
+          1920,
+          4408
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "name": "mobile-home",
+        "beforeSize": [
+          390,
+          1486
+        ],
+        "afterSize": [
+          390,
+          1486
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "name": "mobile-profile",
+        "beforeSize": [
+          390,
+          7388
+        ],
+        "afterSize": [
+          390,
+          7388
+        ],
+        "identical": true,
+        "differenceBox": null
+      }
+    ]
+  },
+  "independentCSSAudit": {
+    "conditionCount": 25,
+    "results": [
+      {
+        "width": 1920,
+        "height": 960,
+        "tab": "Scoreboard",
+        "dialog": {
+          "x": 120,
+          "y": 24,
+          "width": 1680,
+          "height": 912
+        },
+        "close": {
+          "x": 1733,
+          "y": 46,
+          "width": 44,
+          "height": 44
+        },
+        "pageOverflow": 0,
+        "dialogOverflow": 0,
+        "body": {
+          "height": 737,
+          "scrollHeight": 737,
+          "width": 1678,
+          "scrollWidth": 1678
+        },
+        "scrollTest": {
+          "amount": 0,
+          "fixedStable": true
+        },
+        "tiny": [],
+        "rows": 10,
+        "allRowsVisible": true,
+        "unavailableText": true,
+        "bodyGraphics": 0
+      },
+      {
+        "width": 1920,
+        "height": 960,
+        "tab": "Performance",
+        "dialog": {
+          "x": 120,
+          "y": 24,
+          "width": 1680,
+          "height": 912
+        },
+        "close": {
+          "x": 1733,
+          "y": 46,
+          "width": 44,
+          "height": 44
+        },
+        "pageOverflow": 0,
+        "dialogOverflow": 0,
+        "body": {
+          "height": 737,
+          "scrollHeight": 1067,
+          "width": 1678,
+          "scrollWidth": 1678
+        },
+        "scrollTest": {
+          "amount": 330,
+          "fixedStable": true
+        },
+        "tiny": [],
+        "rows": 7,
+        "allRowsVisible": false,
+        "unavailableText": true,
+        "bodyGraphics": 0
+      },
+      {
+        "width": 1920,
+        "height": 960,
+        "tab": "Economy",
+        "dialog": {
+          "x": 120,
+          "y": 24,
+          "width": 1680,
+          "height": 912
+        },
+        "close": {
+          "x": 1733,
+          "y": 46,
+          "width": 44,
+          "height": 44
+        },
+        "pageOverflow": 0,
+        "dialogOverflow": 0,
+        "body": {
+          "height": 737,
+          "scrollHeight": 958,
+          "width": 1678,
+          "scrollWidth": 1678
+        },
+        "scrollTest": {
+          "amount": 221,
+          "fixedStable": true
+        },
+        "tiny": [],
+        "rows": 10,
+        "allRowsVisible": false,
+        "unavailableText": true,
+        "bodyGraphics": 0
+      },
+      {
+        "width": 1920,
+        "height": 960,
+        "tab": "Rounds",
+        "dialog": {
+          "x": 120,
+          "y": 24,
+          "width": 1680,
+          "height": 912
+        },
+        "close": {
+          "x": 1733,
+          "y": 46,
+          "width": 44,
+          "height": 44
+        },
+        "pageOverflow": 0,
+        "dialogOverflow": 0,
+        "body": {
+          "height": 737,
+          "scrollHeight": 789,
+          "width": 1678,
+          "scrollWidth": 1678
+        },
+        "scrollTest": {
+          "amount": 52,
+          "fixedStable": true
+        },
+        "tiny": [],
+        "rows": 10,
+        "allRowsVisible": false,
+        "unavailableText": true,
+        "bodyGraphics": 0
+      },
+      {
+        "width": 1920,
+        "height": 960,
+        "tab": "Duels",
+        "dialog": {
+          "x": 120,
+          "y": 24,
+          "width": 1680,
+          "height": 912
+        },
+        "close": {
+          "x": 1733,
+          "y": 46,
+          "width": 44,
+          "height": 44
+        },
+        "pageOverflow": 0,
+        "dialogOverflow": 0,
+        "body": {
+          "height": 737,
+          "scrollHeight": 738,
+          "width": 1678,
+          "scrollWidth": 1678
+        },
+        "scrollTest": {
+          "amount": 1,
+          "fixedStable": true
+        },
+        "tiny": [],
+        "rows": 5,
+        "allRowsVisible": true,
+        "unavailableText": true,
+        "bodyGraphics": 0
+      },
+      {
+        "width": 1440,
+        "height": 900,
+        "tab": "Scoreboard",
+        "dialog": {
+          "x": 24,
+          "y": 24,
+          "width": 1392,
+          "height": 852
+        },
+        "close": {
+          "x": 1349,
+          "y": 46,
+          "width": 44,
+          "height": 44
+        },
+        "pageOverflow": 0,
+        "dialogOverflow": 0,
+        "body": {
+          "height": 677,
+          "scrollHeight": 708,
+          "width": 1390,
+          "scrollWidth": 1390
+        },
+        "scrollTest": {
+          "amount": 31,
+          "fixedStable": true
+        },
+        "tiny": [],
+        "rows": 10,
+        "allRowsVisible": true,
+        "unavailableText": true,
+        "bodyGraphics": 0
+      },
+      {
+        "width": 1440,
+        "height": 900,
+        "tab": "Performance",
+        "dialog": {
+          "x": 24,
+          "y": 24,
+          "width": 1392,
+          "height": 852
+        },
+        "close": {
+          "x": 1349,
+          "y": 46,
+          "width": 44,
+          "height": 44
+        },
+        "pageOverflow": 0,
+        "dialogOverflow": 0,
+        "body": {
+          "height": 677,
+          "scrollHeight": 1067,
+          "width": 1390,
+          "scrollWidth": 1390
+        },
+        "scrollTest": {
+          "amount": 390,
+          "fixedStable": true
+        },
+        "tiny": [],
+        "rows": 7,
+        "allRowsVisible": false,
+        "unavailableText": true,
+        "bodyGraphics": 0
+      },
+      {
+        "width": 1440,
+        "height": 900,
+        "tab": "Economy",
+        "dialog": {
+          "x": 24,
+          "y": 24,
+          "width": 1392,
+          "height": 852
+        },
+        "close": {
+          "x": 1349,
+          "y": 46,
+          "width": 44,
+          "height": 44
+        },
+        "pageOverflow": 0,
+        "dialogOverflow": 0,
+        "body": {
+          "height": 677,
+          "scrollHeight": 958,
+          "width": 1390,
+          "scrollWidth": 1390
+        },
+        "scrollTest": {
+          "amount": 281,
+          "fixedStable": true
+        },
+        "tiny": [],
+        "rows": 10,
+        "allRowsVisible": false,
+        "unavailableText": true,
+        "bodyGraphics": 0
+      },
+      {
+        "width": 1440,
+        "height": 900,
+        "tab": "Rounds",
+        "dialog": {
+          "x": 24,
+          "y": 24,
+          "width": 1392,
+          "height": 852
+        },
+        "close": {
+          "x": 1349,
+          "y": 46,
+          "width": 44,
+          "height": 44
+        },
+        "pageOverflow": 0,
+        "dialogOverflow": 0,
+        "body": {
+          "height": 677,
+          "scrollHeight": 789,
+          "width": 1390,
+          "scrollWidth": 1390
+        },
+        "scrollTest": {
+          "amount": 112,
+          "fixedStable": true
+        },
+        "tiny": [],
+        "rows": 10,
+        "allRowsVisible": false,
+        "unavailableText": true,
+        "bodyGraphics": 0
+      },
+      {
+        "width": 1440,
+        "height": 900,
+        "tab": "Duels",
+        "dialog": {
+          "x": 24,
+          "y": 24,
+          "width": 1392,
+          "height": 852
+        },
+        "close": {
+          "x": 1349,
+          "y": 46,
+          "width": 44,
+          "height": 44
+        },
+        "pageOverflow": 0,
+        "dialogOverflow": 0,
+        "body": {
+          "height": 677,
+          "scrollHeight": 738,
+          "width": 1390,
+          "scrollWidth": 1390
+        },
+        "scrollTest": {
+          "amount": 61,
+          "fixedStable": true
+        },
+        "tiny": [],
+        "rows": 5,
+        "allRowsVisible": false,
+        "unavailableText": true,
+        "bodyGraphics": 0
+      },
+      {
+        "width": 768,
+        "height": 900,
+        "tab": "Scoreboard",
+        "dialog": {
+          "x": 24,
+          "y": 24,
+          "width": 720,
+          "height": 852
+        },
+        "close": {
+          "x": 677,
+          "y": 46,
+          "width": 44,
+          "height": 44
+        },
+        "pageOverflow": 0,
+        "dialogOverflow": 0,
+        "body": {
+          "height": 677,
+          "scrollHeight": 708,
+          "width": 718,
+          "scrollWidth": 718
+        },
+        "scrollTest": {
+          "amount": 31,
+          "fixedStable": true
+        },
+        "tiny": [],
+        "rows": 10,
+        "allRowsVisible": true,
+        "unavailableText": true,
+        "bodyGraphics": 0
+      },
+      {
+        "width": 768,
+        "height": 900,
+        "tab": "Performance",
+        "dialog": {
+          "x": 24,
+          "y": 24,
+          "width": 720,
+          "height": 852
+        },
+        "close": {
+          "x": 677,
+          "y": 46,
+          "width": 44,
+          "height": 44
+        },
+        "pageOverflow": 0,
+        "dialogOverflow": 0,
+        "body": {
+          "height": 677,
+          "scrollHeight": 1328,
+          "width": 718,
+          "scrollWidth": 718
+        },
+        "scrollTest": {
+          "amount": 651,
+          "fixedStable": true
+        },
+        "tiny": [],
+        "rows": 7,
+        "allRowsVisible": false,
+        "unavailableText": true,
+        "bodyGraphics": 0
+      },
+      {
+        "width": 768,
+        "height": 900,
+        "tab": "Economy",
+        "dialog": {
+          "x": 24,
+          "y": 24,
+          "width": 720,
+          "height": 852
+        },
+        "close": {
+          "x": 677,
+          "y": 46,
+          "width": 44,
+          "height": 44
+        },
+        "pageOverflow": 0,
+        "dialogOverflow": 0,
+        "body": {
+          "height": 677,
+          "scrollHeight": 958,
+          "width": 718,
+          "scrollWidth": 718
+        },
+        "scrollTest": {
+          "amount": 281,
+          "fixedStable": true
+        },
+        "tiny": [],
+        "rows": 10,
+        "allRowsVisible": false,
+        "unavailableText": true,
+        "bodyGraphics": 0
+      },
+      {
+        "width": 768,
+        "height": 900,
+        "tab": "Rounds",
+        "dialog": {
+          "x": 24,
+          "y": 24,
+          "width": 720,
+          "height": 852
+        },
+        "close": {
+          "x": 677,
+          "y": 46,
+          "width": 44,
+          "height": 44
+        },
+        "pageOverflow": 0,
+        "dialogOverflow": 0,
+        "body": {
+          "height": 677,
+          "scrollHeight": 1013,
+          "width": 718,
+          "scrollWidth": 718
+        },
+        "scrollTest": {
+          "amount": 336,
+          "fixedStable": true
+        },
+        "tiny": [],
+        "rows": 10,
+        "allRowsVisible": false,
+        "unavailableText": true,
+        "bodyGraphics": 0
+      },
+      {
+        "width": 768,
+        "height": 900,
+        "tab": "Duels",
+        "dialog": {
+          "x": 24,
+          "y": 24,
+          "width": 720,
+          "height": 852
+        },
+        "close": {
+          "x": 677,
+          "y": 46,
+          "width": 44,
+          "height": 44
+        },
+        "pageOverflow": 0,
+        "dialogOverflow": 0,
+        "body": {
+          "height": 677,
+          "scrollHeight": 756,
+          "width": 718,
+          "scrollWidth": 718
+        },
+        "scrollTest": {
+          "amount": 79,
+          "fixedStable": true
+        },
+        "tiny": [],
+        "rows": 5,
+        "allRowsVisible": false,
+        "unavailableText": true,
+        "bodyGraphics": 0
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "tab": "Scoreboard",
+        "dialog": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "close": {
+          "x": 338,
+          "y": 12,
+          "width": 44,
+          "height": 44
+        },
+        "pageOverflow": 0,
+        "dialogOverflow": 0,
+        "body": {
+          "height": 643,
+          "scrollHeight": 730,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        "scrollTest": {
+          "amount": 87,
+          "fixedStable": true
+        },
+        "tiny": [],
+        "rows": 10,
+        "allRowsVisible": false,
+        "unavailableText": true,
+        "bodyGraphics": 0
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "tab": "Performance",
+        "dialog": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "close": {
+          "x": 338,
+          "y": 12,
+          "width": 44,
+          "height": 44
+        },
+        "pageOverflow": 0,
+        "dialogOverflow": 0,
+        "body": {
+          "height": 643,
+          "scrollHeight": 1548,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        "scrollTest": {
+          "amount": 905,
+          "fixedStable": true
+        },
+        "tiny": [],
+        "rows": 7,
+        "allRowsVisible": false,
+        "unavailableText": true,
+        "bodyGraphics": 0
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "tab": "Economy",
+        "dialog": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "close": {
+          "x": 338,
+          "y": 12,
+          "width": 44,
+          "height": 44
+        },
+        "pageOverflow": 0,
+        "dialogOverflow": 0,
+        "body": {
+          "height": 643,
+          "scrollHeight": 1001,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        "scrollTest": {
+          "amount": 358,
+          "fixedStable": true
+        },
+        "tiny": [],
+        "rows": 10,
+        "allRowsVisible": false,
+        "unavailableText": true,
+        "bodyGraphics": 0
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "tab": "Rounds",
+        "dialog": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "close": {
+          "x": 338,
+          "y": 12,
+          "width": 44,
+          "height": 44
+        },
+        "pageOverflow": 0,
+        "dialogOverflow": 0,
+        "body": {
+          "height": 643,
+          "scrollHeight": 1232,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        "scrollTest": {
+          "amount": 589,
+          "fixedStable": true
+        },
+        "tiny": [],
+        "rows": 10,
+        "allRowsVisible": false,
+        "unavailableText": true,
+        "bodyGraphics": 0
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "tab": "Duels",
+        "dialog": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "close": {
+          "x": 338,
+          "y": 12,
+          "width": 44,
+          "height": 44
+        },
+        "pageOverflow": 0,
+        "dialogOverflow": 0,
+        "body": {
+          "height": 643,
+          "scrollHeight": 907,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        "scrollTest": {
+          "amount": 264,
+          "fixedStable": true
+        },
+        "tiny": [],
+        "rows": 5,
+        "allRowsVisible": false,
+        "unavailableText": true,
+        "bodyGraphics": 0
+      },
+      {
+        "width": 320,
+        "height": 740,
+        "tab": "Scoreboard",
+        "dialog": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 740
+        },
+        "close": {
+          "x": 268,
+          "y": 12,
+          "width": 44,
+          "height": 44
+        },
+        "pageOverflow": 0,
+        "dialogOverflow": 0,
+        "body": {
+          "height": 483,
+          "scrollHeight": 730,
+          "width": 320,
+          "scrollWidth": 320
+        },
+        "scrollTest": {
+          "amount": 247,
+          "fixedStable": true
+        },
+        "tiny": [],
+        "rows": 10,
+        "allRowsVisible": false,
+        "unavailableText": true,
+        "bodyGraphics": 0
+      },
+      {
+        "width": 320,
+        "height": 740,
+        "tab": "Performance",
+        "dialog": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 740
+        },
+        "close": {
+          "x": 268,
+          "y": 12,
+          "width": 44,
+          "height": 44
+        },
+        "pageOverflow": 0,
+        "dialogOverflow": 0,
+        "body": {
+          "height": 483,
+          "scrollHeight": 1611,
+          "width": 320,
+          "scrollWidth": 320
+        },
+        "scrollTest": {
+          "amount": 1128,
+          "fixedStable": true
+        },
+        "tiny": [],
+        "rows": 7,
+        "allRowsVisible": false,
+        "unavailableText": true,
+        "bodyGraphics": 0
+      },
+      {
+        "width": 320,
+        "height": 740,
+        "tab": "Economy",
+        "dialog": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 740
+        },
+        "close": {
+          "x": 268,
+          "y": 12,
+          "width": 44,
+          "height": 44
+        },
+        "pageOverflow": 0,
+        "dialogOverflow": 0,
+        "body": {
+          "height": 483,
+          "scrollHeight": 1001,
+          "width": 320,
+          "scrollWidth": 320
+        },
+        "scrollTest": {
+          "amount": 518,
+          "fixedStable": true
+        },
+        "tiny": [],
+        "rows": 10,
+        "allRowsVisible": false,
+        "unavailableText": true,
+        "bodyGraphics": 0
+      },
+      {
+        "width": 320,
+        "height": 740,
+        "tab": "Rounds",
+        "dialog": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 740
+        },
+        "close": {
+          "x": 268,
+          "y": 12,
+          "width": 44,
+          "height": 44
+        },
+        "pageOverflow": 0,
+        "dialogOverflow": 0,
+        "body": {
+          "height": 483,
+          "scrollHeight": 1250,
+          "width": 320,
+          "scrollWidth": 320
+        },
+        "scrollTest": {
+          "amount": 767,
+          "fixedStable": true
+        },
+        "tiny": [],
+        "rows": 10,
+        "allRowsVisible": false,
+        "unavailableText": true,
+        "bodyGraphics": 0
+      },
+      {
+        "width": 320,
+        "height": 740,
+        "tab": "Duels",
+        "dialog": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 740
+        },
+        "close": {
+          "x": 268,
+          "y": 12,
+          "width": 44,
+          "height": 44
+        },
+        "pageOverflow": 0,
+        "dialogOverflow": 0,
+        "body": {
+          "height": 483,
+          "scrollHeight": 907,
+          "width": 320,
+          "scrollWidth": 320
+        },
+        "scrollTest": {
+          "amount": 424,
+          "fixedStable": true
+        },
+        "tiny": [],
+        "rows": 5,
+        "allRowsVisible": false,
+        "unavailableText": true,
+        "bodyGraphics": 0
+      }
+    ],
+    "errors": [],
+    "issues": []
+  },
+  "inlineRestoration": {
+    "groupCount": 22,
+    "checks": [
+      "desktop: Home and closed profile DOM/styles/positions unchanged",
+      "desktop: Four detail tabs, unique ARIA linkage and Mock notice",
+      "desktop: Arrow keys switch and wrap detail tabs with focus",
+      "desktop: Round selector keyboard updates selection",
+      "desktop: Viewer row matches selected player and scoreboard columns remain scrollable",
+      "desktop: Close/reopen and different row reset to scoreboard",
+      "desktop: Recent strip opens target and resets detail tab",
+      "desktop: Match filter closes detail and resets displayed rows",
+      "desktop: Profile tab closes detail and Load more rows retain detail support",
+      "desktop: Deathmatch tabs show explicit missing data and personal metrics without fabricated team table",
+      "desktop: Other profile keeps its own viewer identity in detail",
+      "mobile: Home and closed profile DOM/styles/positions unchanged",
+      "mobile: Four detail tabs, unique ARIA linkage and Mock notice",
+      "mobile: Arrow keys switch and wrap detail tabs with focus",
+      "mobile: Round selector keyboard updates selection",
+      "mobile: Viewer row matches selected player and scoreboard columns remain scrollable",
+      "mobile: Close/reopen and different row reset to scoreboard",
+      "mobile: Recent strip opens target and resets detail tab",
+      "mobile: Match filter closes detail and resets displayed rows",
+      "mobile: Profile tab closes detail and Load more rows retain detail support",
+      "mobile: Deathmatch tabs show explicit missing data and personal metrics without fabricated team table",
+      "mobile: Other profile keeps its own viewer identity in detail"
+    ],
+    "responsiveConditionCount": 16,
+    "responsive": [
+      {
+        "width": 320,
+        "tab": "scoreboard",
+        "pageOverflow": 0
+      },
+      {
+        "width": 320,
+        "tab": "rounds",
+        "pageOverflow": 0
+      },
+      {
+        "width": 320,
+        "tab": "performance",
+        "pageOverflow": 0
+      },
+      {
+        "width": 320,
+        "tab": "analysis",
+        "pageOverflow": 0
+      },
+      {
+        "width": 768,
+        "tab": "scoreboard",
+        "pageOverflow": 0
+      },
+      {
+        "width": 768,
+        "tab": "rounds",
+        "pageOverflow": 0
+      },
+      {
+        "width": 768,
+        "tab": "performance",
+        "pageOverflow": 0
+      },
+      {
+        "width": 768,
+        "tab": "analysis",
+        "pageOverflow": 0
+      },
+      {
+        "width": 1000,
+        "tab": "scoreboard",
+        "pageOverflow": 0
+      },
+      {
+        "width": 1000,
+        "tab": "rounds",
+        "pageOverflow": 0
+      },
+      {
+        "width": 1000,
+        "tab": "performance",
+        "pageOverflow": 0
+      },
+      {
+        "width": 1000,
+        "tab": "analysis",
+        "pageOverflow": 0
+      },
+      {
+        "width": 1440,
+        "tab": "scoreboard",
+        "pageOverflow": 0
+      },
+      {
+        "width": 1440,
+        "tab": "rounds",
+        "pageOverflow": 0
+      },
+      {
+        "width": 1440,
+        "tab": "performance",
+        "pageOverflow": 0
+      },
+      {
+        "width": 1440,
+        "tab": "analysis",
+        "pageOverflow": 0
+      }
+    ],
+    "pageErrors": [],
+    "pixelComparisons": [
+      {
+        "name": "tracker-inline-restored-desktop-scoreboard.png",
+        "beforeSize": [
+          1072,
+          1173
+        ],
+        "afterSize": [
+          1072,
+          1173
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "name": "tracker-inline-restored-desktop-performance.png",
+        "beforeSize": [
+          1072,
+          1095
+        ],
+        "afterSize": [
+          1072,
+          1095
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "name": "tracker-inline-restored-mobile-scoreboard.png",
+        "beforeSize": [
+          350,
+          1244
+        ],
+        "afterSize": [
+          350,
+          1244
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "name": "tracker-inline-restored-mobile-performance.png",
+        "beforeSize": [
+          350,
+          1643
+        ],
+        "afterSize": [
+          350,
+          1643
+        ],
+        "identical": true,
+        "differenceBox": null
+      }
+    ],
+    "configuration": {
+      "modeBefore": "modal",
+      "temporaryMode": "inline",
+      "results": [
+        {
+          "script": "/tmp/fe018-tracker-inline-regressions.cjs",
+          "status": "PASS"
+        },
+        {
+          "script": "/tmp/fe018-tracker-inline-restored.cjs",
+          "status": "PASS"
+        }
+      ],
+      "modeRestored": "modal",
+      "sourceRestoredExactly": true
+    },
+    "finalSetting": "modal",
+    "postRestoreComment": "Root requested a comment-only clarification that inline uses four tabs and modal uses five; final source hashes include that comment."
+  },
+  "referenceComparison": {
+    "status": "PASS",
+    "referenceDirectory": "/var/folders/6p/pkhptxzn0t39l3vyjy2pk78w0000gn/T",
+    "suppliedFiles": {
+      "Scoreboard": "codex-clipboard-de4468e2-4f97-4d0b-adc6-dbd43f3f0086.png",
+      "Performance": "codex-clipboard-0ae785d5-ec12-492c-9445-9aaec282ddb5.png",
+      "Economy": "codex-clipboard-6ae53d0c-19b4-4a6a-864c-8924d3373359.png",
+      "Rounds": "codex-clipboard-7cb0cc2f-59fe-49b4-91e9-4a399084e876.png",
+      "Duels": "codex-clipboard-bd6dbf65-c492-4d5b-9a2a-515995e06967.png"
+    },
+    "directVisualComparison": [
+      {
+        "tab": "Scoreboard",
+        "result": "PASS",
+        "retained": "청회색 정보 헤더·균등 5탭·승리 타임라인·청록/붉은 팀 띠·교차 행·정렬 열 강조·선택 선수 표시",
+        "limitedDifference": "평균/개별 랭크와 FK/FD/MK 미제공은 —. Tracker TRS 대신 별도 의미의 PS를 고지한다."
+      },
+      {
+        "tab": "Performance",
+        "result": "PASS",
+        "retained": "가운데 모인 양 팀 선수띠/VS·선수 초상화와 요약·라운드 띠·Attack/Defense·상대/무기 표",
+        "limitedDifference": "라운드 개인 킬/데스·공수별 통계·피해값을 만들지 않는다. 다른 선수 선택 시 제공된 요약만 표시한다."
+      },
+      {
+        "tab": "Economy",
+        "result": "PASS",
+        "retained": "상단 평균 정보·Bank/Loadout/Total 선택·그래프 영역·하단 양 팀 스코어보드",
+        "limitedDifference": "경제 표본이 없어 추정 곡선 대신 선택 항목별 미제공 안내를 표시한다."
+      },
+      {
+        "tab": "Rounds",
+        "result": "PASS",
+        "retained": "가로 라운드 선택 띠·선택 라운드 제목·팀 참가자 표/Event Log/Player Positions 3영역",
+        "limitedDifference": "팀 승패/누적 점수만 사용한다. 라운드 개인 기록/종료 원인/이벤트/좌표/지도는 임의로 생성하지 않는다."
+      },
+      {
+        "tab": "Duels",
+        "result": "PASS",
+        "retained": "상단 3개 요약 카드·청록/붉은 선수 축·교차 행·킬/데스 색상 칩의 매트릭스",
+        "limitedDifference": "전체 Top Rivalry/Mismatch 순위를 추정하지 않고 조회 선수 합계/5개 제공 조합/20개 미제공 안내로 대체한다."
+      }
+    ],
+    "reviewedMainScreens": [
+      "tracker-after-desktop-scoreboard.png",
+      "tracker-after-desktop-performance.png",
+      "tracker-after-desktop-economy.png",
+      "tracker-after-desktop-rounds.png",
+      "tracker-after-desktop-duels.png",
+      "tracker-after-mobile-scoreboard.png",
+      "tracker-after-mobile-performance.png",
+      "tracker-after-mobile-economy.png",
+      "tracker-after-mobile-rounds.png",
+      "tracker-after-mobile-duels.png",
+      "tracker-after-desktop-deathmatch.png",
+      "tracker-after-mobile-deathmatch.png"
+    ],
+    "independentReview": "Rounds/Economy agent confirmed final Economy PC/mobile captures and additionally checked Rounds/Performance/Duels PC/mobile screenshots. Parent also reviewed final desktop Performance/Duels and mobile Scoreboard.",
+    "preservedReferences": [
+      {
+        "tab": "Scoreboard",
+        "file": "tracker-reference-scoreboard.png",
+        "sourceFile": "codex-clipboard-de4468e2-4f97-4d0b-adc6-dbd43f3f0086.png",
+        "sha256": "ecc48771a1325608c4f442814de2fcfb5836f2c03e449ac0315b00c3c0d6204c",
+        "byteIdentical": true
+      },
+      {
+        "tab": "Performance",
+        "file": "tracker-reference-performance.png",
+        "sourceFile": "codex-clipboard-0ae785d5-ec12-492c-9445-9aaec282ddb5.png",
+        "sha256": "2f0dd004eed6a4e1850deb0e6f206c6a36293ef1668a35682b3b374977987c5b",
+        "byteIdentical": true
+      },
+      {
+        "tab": "Economy",
+        "file": "tracker-reference-economy.png",
+        "sourceFile": "codex-clipboard-6ae53d0c-19b4-4a6a-864c-8924d3373359.png",
+        "sha256": "0fac0e9ea83443b89b60c4dca46eb67bf0be8d6187a8256a5fabea3209edf43a",
+        "byteIdentical": true
+      },
+      {
+        "tab": "Rounds",
+        "file": "tracker-reference-rounds.png",
+        "sourceFile": "codex-clipboard-7cb0cc2f-59fe-49b4-91e9-4a399084e876.png",
+        "sha256": "88ed39ed93a64eeb982e415c2ba6b1e982195f4f56f00234c0a1547267cad598",
+        "byteIdentical": true
+      },
+      {
+        "tab": "Duels",
+        "file": "tracker-reference-duels.png",
+        "sourceFile": "codex-clipboard-bd6dbf65-c492-4d5b-9a2a-515995e06967.png",
+        "sha256": "093beece8503d9a9ab9e6c97d126c96b8ea9a53aa324d0393ff07e72d8de2654",
+        "byteIdentical": true
+      }
+    ]
+  },
+  "visualDebuggingFeedback": [
+    {
+      "finding": "Economy grid auto track expanded the entire active panel to the 1290px scoreboard minimum width at narrow viewports. Top controls and empty-state notice were clipped despite zero document overflow.",
+      "resolution": "TrackerEconomy.module.css .economy gained grid-template-columns:minmax(0,1fr), keeping table scrolling inside its own wrapper.",
+      "verification": "Final 42 groups and 20 responsive conditions rerun with active tabpanel scrollWidth<=clientWidth check; all 17 modal screenshots regenerated. Independent CSS audit25 also passed; final mobile Economy directly re-inspected."
+    }
+  ],
+  "testSetupNotes": [
+    "One preview failure was caused by a nested Playwright has locator that repeated its parent scope for the KAST metric. The locator was corrected to the local dl row; no application change was needed.",
+    "Mobile modal covers the whole viewport, so desktop backdrop dismissal is tested and mobile uses Escape/close button.",
+    "Horizontal scrolling is intentional only inside tab strip/tables/participant and round strips; active tabpanel and page widths remain bounded."
+  ],
+  "sourceFreeze": {
+    "hashAlgorithm": "SHA-256",
+    "recordedAfter": "Final Economy fix, inline restoration to modal, and approved comment-only clarification",
+    "files": {
+      "frontend/src/components/MatchAnalysisTab.tsx": "a3d4c8240a867c600582e5bae3743630a34268d0cd79473c89625356263601c6",
+      "frontend/src/components/MatchPerformanceTab.tsx": "b91ef64dbb089c019277de5db39d031310f52917d6a82ca2eafd390818647df6",
+      "frontend/src/components/MatchRoundMapPlotter.tsx": "334c6f717875d627b1e51e307d382cb0305366605ac67c5f2b1f8fe3296a3cdf",
+      "frontend/src/components/MatchRoundsTab.tsx": "9f0476ec4c9d8a669600da249e8654b3fd743a44045071c0318d8246f320d2dd",
+      "frontend/src/components/MatchScoreboardTab.tsx": "7c608802769227c0d1c1f2469706c041329faddb55376dfd4a28d79604a579de",
+      "frontend/src/features/tracker-profile/TrackerProfile.tsx": "04ff91ebb418003902961d7f6df2b4e2c65e8e8b347d615abafc75e96750e91b",
+      "frontend/src/features/tracker-profile/match-history/MatchDetail.tsx": "890e7c5e60e99f320c1e96eec2e19218b4204ef27a1f366b4075f484d0c41b9b",
+      "frontend/src/features/tracker-profile/match-history/MatchRow.tsx": "ed7de1a4a851aa39ae8be058f7902a5356a360436196e4d8f5d4f1638ad62dbf",
+      "frontend/src/features/tracker-profile/match-history/detail/DetailedMatchPanel.tsx": "4f0039db6fb9914f15a192ada9e5c70af0f26651dfedf13f2010dd7ead83316e",
+      "frontend/src/features/tracker-profile/match-history/detail/MatchDetailDialog.module.css": "a8c2f9f56b065508be774f1c3e2fb98353cb8a247d52bf3d63a15cf5be32eba6",
+      "frontend/src/features/tracker-profile/match-history/detail/MatchDetailDialog.tsx": "1aab9f13479f839e7796ccd76d59f5a0c26e9697d398207c61e0e6401165ce0b",
+      "frontend/src/features/tracker-profile/match-history/detail/MatchDetailTheme.module.css": "23b0f390f36c9ec700d37b22fa4d1d38b9d2ff548927934666313d4077474cd8",
+      "frontend/src/features/tracker-profile/match-history/detail/MatchPersonalSummary.tsx": "adb65b237ec26732e437895a3cea458ae376a710d79b31d089dda8f3fbf1fc40",
+      "frontend/src/features/tracker-profile/match-history/detail/TrackerDuels.module.css": "aa077c02c9d71dc97dd97480b3e6ba6fec543b23d2944094f7ff4582454bab1c",
+      "frontend/src/features/tracker-profile/match-history/detail/TrackerDuels.tsx": "a057a5787265820d049b4a506ae5566065243a524c8d5be4b672c114409ae448",
+      "frontend/src/features/tracker-profile/match-history/detail/TrackerEconomy.module.css": "9de06caca9c055f0e215a5108cb179847c4ddaecffa7ed915fc9712d679bd68a",
+      "frontend/src/features/tracker-profile/match-history/detail/TrackerEconomy.tsx": "2c3db5345d4344cc20382f0e5270fca15f2b7314ccd8072b55ee22bde6810918",
+      "frontend/src/features/tracker-profile/match-history/detail/TrackerMatchPanel.module.css": "031461f5b21596d3aad01d8f6fc13d2ae8f49e9f48f9f0dc776e9d5ee45c6062",
+      "frontend/src/features/tracker-profile/match-history/detail/TrackerMatchPanel.tsx": "a02f42bfb25a726661dce5c260f0da681b04b5a78ccd9f140ed5ce7f8a316a29",
+      "frontend/src/features/tracker-profile/match-history/detail/TrackerPerformance.module.css": "11d15e9bc84af2100c033471504994017b931316173d9568b56531e3354a1610",
+      "frontend/src/features/tracker-profile/match-history/detail/TrackerPerformance.tsx": "736e3520a1eefceb33c3f049d1892a793c30960bbf906d0e29ee197ccf0badec",
+      "frontend/src/features/tracker-profile/match-history/detail/TrackerRounds.module.css": "5016c2005e45aeec28ff4621759b757f9793b642e1b4101ad15c6e4dc42df681",
+      "frontend/src/features/tracker-profile/match-history/detail/TrackerRounds.tsx": "33d547e6fa8866083b171f3a95d09230d2142da092739bfefc6fe136c9b77e59",
+      "frontend/src/features/tracker-profile/match-history/detail/TrackerScoreboard.module.css": "0ce22010cf38e8ab16aa562f0e6cf216acc73cffc27fe506f02b7c3d924003a8",
+      "frontend/src/features/tracker-profile/match-history/detail/TrackerScoreboard.tsx": "d33f171880073edeca8bdd47db9b247ad725035fdf3434b9f65c9f1a5cfc1e9c",
+      "frontend/src/features/tracker-profile/match-history/detail/detailData.ts": "b5ac0c57449718c8e5df80053cc47c92c08b647867fec87e60192f8151bb5df6",
+      "frontend/src/features/tracker-profile/match-history/detail/missingData.test.cjs": "6ea2a7086c578c4092515343d777688a468a2ddb3db332a1da5ed82948fce045",
+      "frontend/src/features/tracker-profile/match-history/detail/mockDetail.test.cjs": "a1932edc55a87a75f221f4155b38073c2b6be60c838a309b35f354d68a8d3c42",
+      "frontend/src/features/tracker-profile/match-history/detail/mockDetail.ts": "edf93a5adfb2b30fa1a5233a368ebfb90b08bb34d4aa1dd466a2a87f90d02795",
+      "frontend/src/features/tracker-profile/match-history/detail/presentation.ts": "79a0258847190356a233ef69304c3fe5bb0b029d67aab01c1c0d0ae8a4e38a37",
+      "frontend/src/features/tracker-profile/match-history/types.ts": "9f4b6f55e452ade04b8f8da2078de6a79e41e887c337a9e75bed4d705582c375"
+    }
+  },
+  "artifacts": {
+    "pngTotal": 88,
+    "preservedEarlierPNG": 52,
+    "newTrackerPNG": 31,
+    "beforeTrackerPNG": 8,
+    "afterTrackerPNG": 19,
+    "restoredInlinePNG": 4,
+    "trackerFiles": [
+      "tracker-after-desktop-content-scrolled.png",
+      "tracker-after-desktop-deathmatch.png",
+      "tracker-after-desktop-duels.png",
+      "tracker-after-desktop-economy.png",
+      "tracker-after-desktop-performance-other-player.png",
+      "tracker-after-desktop-performance.png",
+      "tracker-after-desktop-rounds.png",
+      "tracker-after-desktop-scoreboard.png",
+      "tracker-after-home-keyboard-focus.png",
+      "tracker-after-mobile-content-scrolled.png",
+      "tracker-after-mobile-deathmatch.png",
+      "tracker-after-mobile-duels.png",
+      "tracker-after-mobile-economy.png",
+      "tracker-after-mobile-performance-other-player.png",
+      "tracker-after-mobile-performance.png",
+      "tracker-after-mobile-rounds.png",
+      "tracker-after-mobile-scoreboard-scrolled.png",
+      "tracker-after-mobile-scoreboard.png",
+      "tracker-after-profile-keyboard-focus.png",
+      "tracker-before-desktop-analysis.png",
+      "tracker-before-desktop-performance.png",
+      "tracker-before-desktop-rounds.png",
+      "tracker-before-desktop-scoreboard.png",
+      "tracker-before-mobile-analysis.png",
+      "tracker-before-mobile-performance.png",
+      "tracker-before-mobile-rounds.png",
+      "tracker-before-mobile-scoreboard.png",
+      "tracker-inline-restored-desktop-performance.png",
+      "tracker-inline-restored-desktop-scoreboard.png",
+      "tracker-inline-restored-mobile-performance.png",
+      "tracker-inline-restored-mobile-scoreboard.png"
+    ],
+    "jsonFiles": [
+      "verification.json",
+      "modal-verification.json",
+      "tracker-verification.json"
+    ],
+    "capturePNGTotal": 83,
+    "referencePNGTotal": 5,
+    "referenceFiles": [
+      "tracker-reference-scoreboard.png",
+      "tracker-reference-performance.png",
+      "tracker-reference-economy.png",
+      "tracker-reference-rounds.png",
+      "tracker-reference-duels.png"
+    ]
+  },
+  "finalParentVerification": {
+    "source": "Parent /root report after final source freeze",
+    "docker": "Original Mock, detailed Mock, expanded missing-data SSR, TypeScript, lint and production build PASS; 11 static routes",
+    "restoredServer": "Compose up PASS, profile HTTP200",
+    "smoke": "Post-restart modal5 tabs/close/focus/background unlock and pageerrors0 PASS"
+  },
+  "limitations": [
+    "Chromium only; no Safari/Firefox or real-device touch run.",
+    "Reference information hierarchy and styling were compared qualitatively, not treated as pixel-identical because data and missing states differ.",
+    "No new gameplay data or portraits were fabricated. Existing placeholder assets remain for non-viewer participants."
+  ],
+  "commands": [
+    "node /tmp/fe018-tracker-before.cjs",
+    "node /tmp/fe018-tracker-after.cjs",
+    "node /tmp/fe018-tracker-regressions.cjs",
+    "python3 /tmp/fe018-tracker-inline-cycle.py",
+    "node /tmp/fe018-tracker-inline-regressions.cjs",
+    "node /tmp/fe018-tracker-inline-restored.cjs",
+    "python3 /tmp/fe018-tracker-results.py"
+  ]
+}

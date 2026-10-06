@@ -1,0 +1,17 @@
+{
+  "phase": "after",
+  "screens": [
+    "after-1440-ko-privacy.png",
+    "after-1440-ko-terms.png",
+    "after-1440-en-privacy.png",
+    "after-1440-en-terms.png",
+    "after-390-ko-privacy.png",
+    "after-390-ko-terms.png",
+    "after-390-en-privacy.png",
+    "after-390-en-terms.png"
+  ],
+  "errors": [],
+  "requests": [
+    "http://127.0.0.1:3100"
+  ]
+}

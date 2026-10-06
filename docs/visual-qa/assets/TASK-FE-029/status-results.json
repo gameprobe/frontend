@@ -1,0 +1,1322 @@
+{
+  "checks": [
+    "1440 success map: keyboard activation",
+    "1440 success agent: keyboard activation",
+    "1440 success unmatched loading skill: keyboard activation",
+    "1440 success: loading examples are disclosed and no premature empty message",
+    "1440 loading before success: document has no horizontal overflow",
+    "1440 loading before success: live notices fit their containers",
+    "1440 loading before success: polite live status semantics",
+    "1440 loading before success: atomic live status semantics",
+    "1440 loading before success: user-facing Korean status copy without raw server detail",
+    "1440 success: existing live status receives the completed response",
+    "1440: filtered empty differs from a nonempty public source",
+    "1440 restore matching skill: keyboard activation",
+    "1440 select destination: keyboard activation",
+    "1440: matching result restores map selection and detail URL",
+    "1440 unmatched defense: keyboard activation",
+    "1440: side filter updates empty status and clears path",
+    "1440 settled success: document has no horizontal overflow",
+    "1440 settled success: live notices fit their containers",
+    "1440 settled success: polite live status semantics",
+    "1440 settled success: atomic live status semantics",
+    "1440 settled success: user-facing Korean status copy without raw server detail",
+    "1440 empty map: keyboard activation",
+    "1440 empty agent: keyboard activation",
+    "1440 empty unmatched loading skill: keyboard activation",
+    "1440 empty: loading examples are disclosed and no premature empty message",
+    "1440 loading before empty: document has no horizontal overflow",
+    "1440 loading before empty: live notices fit their containers",
+    "1440 loading before empty: polite live status semantics",
+    "1440 loading before empty: atomic live status semantics",
+    "1440 loading before empty: user-facing Korean status copy without raw server detail",
+    "1440 empty: existing live status receives the completed response",
+    "1440: zero public records do not reuse fallback examples",
+    "1440 settled empty: document has no horizontal overflow",
+    "1440 settled empty: live notices fit their containers",
+    "1440 settled empty: polite live status semantics",
+    "1440 settled empty: atomic live status semantics",
+    "1440 settled empty: user-facing Korean status copy without raw server detail",
+    "1440 failure map: keyboard activation",
+    "1440 failure agent: keyboard activation",
+    "1440 failure unmatched loading skill: keyboard activation",
+    "1440 failure: loading examples are disclosed and no premature empty message",
+    "1440 loading before failure: document has no horizontal overflow",
+    "1440 loading before failure: live notices fit their containers",
+    "1440 loading before failure: polite live status semantics",
+    "1440 loading before failure: atomic live status semantics",
+    "1440 loading before failure: user-facing Korean status copy without raw server detail",
+    "1440 failure: existing live status receives the completed response",
+    "1440: failed fetch preserves disclosed fallback examples",
+    "1440 settled failure: document has no horizontal overflow",
+    "1440 settled failure: live notices fit their containers",
+    "1440 settled failure: polite live status semantics",
+    "1440 settled failure: atomic live status semantics",
+    "1440 settled failure: user-facing Korean status copy without raw server detail",
+    "820 success map: keyboard activation",
+    "820 success agent: keyboard activation",
+    "820 success unmatched loading skill: keyboard activation",
+    "820 success: loading examples are disclosed and no premature empty message",
+    "820 loading before success: document has no horizontal overflow",
+    "820 loading before success: live notices fit their containers",
+    "820 loading before success: polite live status semantics",
+    "820 loading before success: atomic live status semantics",
+    "820 loading before success: user-facing Korean status copy without raw server detail",
+    "820 success: existing live status receives the completed response",
+    "820: filtered empty differs from a nonempty public source",
+    "820 restore matching skill: keyboard activation",
+    "820 select destination: keyboard activation",
+    "820: matching result restores map selection and detail URL",
+    "820 unmatched defense: keyboard activation",
+    "820: side filter updates empty status and clears path",
+    "820 settled success: document has no horizontal overflow",
+    "820 settled success: live notices fit their containers",
+    "820 settled success: polite live status semantics",
+    "820 settled success: atomic live status semantics",
+    "820 settled success: user-facing Korean status copy without raw server detail",
+    "820 empty map: keyboard activation",
+    "820 empty agent: keyboard activation",
+    "820 empty unmatched loading skill: keyboard activation",
+    "820 empty: loading examples are disclosed and no premature empty message",
+    "820 loading before empty: document has no horizontal overflow",
+    "820 loading before empty: live notices fit their containers",
+    "820 loading before empty: polite live status semantics",
+    "820 loading before empty: atomic live status semantics",
+    "820 loading before empty: user-facing Korean status copy without raw server detail",
+    "820 empty: existing live status receives the completed response",
+    "820: zero public records do not reuse fallback examples",
+    "820 settled empty: document has no horizontal overflow",
+    "820 settled empty: live notices fit their containers",
+    "820 settled empty: polite live status semantics",
+    "820 settled empty: atomic live status semantics",
+    "820 settled empty: user-facing Korean status copy without raw server detail",
+    "820 failure map: keyboard activation",
+    "820 failure agent: keyboard activation",
+    "820 failure unmatched loading skill: keyboard activation",
+    "820 failure: loading examples are disclosed and no premature empty message",
+    "820 loading before failure: document has no horizontal overflow",
+    "820 loading before failure: live notices fit their containers",
+    "820 loading before failure: polite live status semantics",
+    "820 loading before failure: atomic live status semantics",
+    "820 loading before failure: user-facing Korean status copy without raw server detail",
+    "820 failure: existing live status receives the completed response",
+    "820: failed fetch preserves disclosed fallback examples",
+    "820 settled failure: document has no horizontal overflow",
+    "820 settled failure: live notices fit their containers",
+    "820 settled failure: polite live status semantics",
+    "820 settled failure: atomic live status semantics",
+    "820 settled failure: user-facing Korean status copy without raw server detail",
+    "390 success map: keyboard activation",
+    "390 success agent: keyboard activation",
+    "390 success unmatched loading skill: keyboard activation",
+    "390 success: loading examples are disclosed and no premature empty message",
+    "390 loading before success: document has no horizontal overflow",
+    "390 loading before success: live notices fit their containers",
+    "390 loading before success: polite live status semantics",
+    "390 loading before success: atomic live status semantics",
+    "390 loading before success: user-facing Korean status copy without raw server detail",
+    "390 success: existing live status receives the completed response",
+    "390: filtered empty differs from a nonempty public source",
+    "390 restore matching skill: keyboard activation",
+    "390 select destination: keyboard activation",
+    "390: matching result restores map selection and detail URL",
+    "390 unmatched defense: keyboard activation",
+    "390: side filter updates empty status and clears path",
+    "390 settled success: document has no horizontal overflow",
+    "390 settled success: live notices fit their containers",
+    "390 settled success: polite live status semantics",
+    "390 settled success: atomic live status semantics",
+    "390 settled success: user-facing Korean status copy without raw server detail",
+    "390 empty map: keyboard activation",
+    "390 empty agent: keyboard activation",
+    "390 empty unmatched loading skill: keyboard activation",
+    "390 empty: loading examples are disclosed and no premature empty message",
+    "390 loading before empty: document has no horizontal overflow",
+    "390 loading before empty: live notices fit their containers",
+    "390 loading before empty: polite live status semantics",
+    "390 loading before empty: atomic live status semantics",
+    "390 loading before empty: user-facing Korean status copy without raw server detail",
+    "390 empty: existing live status receives the completed response",
+    "390: zero public records do not reuse fallback examples",
+    "390 settled empty: document has no horizontal overflow",
+    "390 settled empty: live notices fit their containers",
+    "390 settled empty: polite live status semantics",
+    "390 settled empty: atomic live status semantics",
+    "390 settled empty: user-facing Korean status copy without raw server detail",
+    "390 failure map: keyboard activation",
+    "390 failure agent: keyboard activation",
+    "390 failure unmatched loading skill: keyboard activation",
+    "390 failure: loading examples are disclosed and no premature empty message",
+    "390 loading before failure: document has no horizontal overflow",
+    "390 loading before failure: live notices fit their containers",
+    "390 loading before failure: polite live status semantics",
+    "390 loading before failure: atomic live status semantics",
+    "390 loading before failure: user-facing Korean status copy without raw server detail",
+    "390 failure: existing live status receives the completed response",
+    "390: failed fetch preserves disclosed fallback examples",
+    "390 settled failure: document has no horizontal overflow",
+    "390 settled failure: live notices fit their containers",
+    "390 settled failure: polite live status semantics",
+    "390 settled failure: atomic live status semantics",
+    "390 settled failure: user-facing Korean status copy without raw server detail",
+    "Sparse public record keeps its detail link and explains unavailable map positions",
+    "390 sparse public coordinates: document has no horizontal overflow",
+    "390 sparse public coordinates: live notices fit their containers",
+    "390 sparse public coordinates: polite live status semantics",
+    "390 sparse public coordinates: atomic live status semantics",
+    "390 sparse public coordinates: user-facing Korean status copy without raw server detail",
+    "No page errors",
+    "No unexpected console errors",
+    "Only read-only API requests"
+  ],
+  "transitions": [
+    {
+      "width": 1440,
+      "outcome": "success",
+      "source": "공개 라인업공개 승인된 라인업을 보고 있어요. 맵과 요원을 선택해 확인해 보세요.",
+      "selection": "선택한 조건에 맞는 라인업이 없어요. 맵·진영·요원·스킬을 변경해 보세요."
+    },
+    {
+      "width": 1440,
+      "outcome": "empty",
+      "source": "공개된 라인업이 없어요자료가 공개되면 이곳에서 확인할 수 있어요.",
+      "selection": "공개된 라인업이 없어요. 자료가 공개되면 이곳에서 확인할 수 있어요."
+    },
+    {
+      "width": 1440,
+      "outcome": "failure",
+      "source": "예시 라인업을 보고 있어요자료를 불러오지 못해 예시를 표시하고 있어요. 실제 플레이용으로 검증된 자료는 아니에요.",
+      "selection": "지도 위 스킬 아이콘을 선택하면 시작 위치를 확인할 수 있어요."
+    },
+    {
+      "width": 820,
+      "outcome": "success",
+      "source": "공개 라인업공개 승인된 라인업을 보고 있어요. 맵과 요원을 선택해 확인해 보세요.",
+      "selection": "선택한 조건에 맞는 라인업이 없어요. 맵·진영·요원·스킬을 변경해 보세요."
+    },
+    {
+      "width": 820,
+      "outcome": "empty",
+      "source": "공개된 라인업이 없어요자료가 공개되면 이곳에서 확인할 수 있어요.",
+      "selection": "공개된 라인업이 없어요. 자료가 공개되면 이곳에서 확인할 수 있어요."
+    },
+    {
+      "width": 820,
+      "outcome": "failure",
+      "source": "예시 라인업을 보고 있어요자료를 불러오지 못해 예시를 표시하고 있어요. 실제 플레이용으로 검증된 자료는 아니에요.",
+      "selection": "지도 위 스킬 아이콘을 선택하면 시작 위치를 확인할 수 있어요."
+    },
+    {
+      "width": 390,
+      "outcome": "success",
+      "source": "공개 라인업공개 승인된 라인업을 보고 있어요. 맵과 요원을 선택해 확인해 보세요.",
+      "selection": "선택한 조건에 맞는 라인업이 없어요. 맵·진영·요원·스킬을 변경해 보세요."
+    },
+    {
+      "width": 390,
+      "outcome": "empty",
+      "source": "공개된 라인업이 없어요자료가 공개되면 이곳에서 확인할 수 있어요.",
+      "selection": "공개된 라인업이 없어요. 자료가 공개되면 이곳에서 확인할 수 있어요."
+    },
+    {
+      "width": 390,
+      "outcome": "failure",
+      "source": "예시 라인업을 보고 있어요자료를 불러오지 못해 예시를 표시하고 있어요. 실제 플레이용으로 검증된 자료는 아니에요.",
+      "selection": "지도 위 스킬 아이콘을 선택하면 시작 위치를 확인할 수 있어요."
+    }
+  ],
+  "notices": [
+    {
+      "label": "1440 loading before success",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "라인업을 불러오고 있어요불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+          "label": "자료 상태",
+          "live": null,
+          "atomic": "true",
+          "width": 485.1875,
+          "height": 86.78125,
+          "visible": true,
+          "scrollWidth": 481,
+          "clientWidth": 481,
+          "children": [
+            {
+              "text": "라인업을 불러오고 있어요",
+              "width": 445.1875,
+              "scrollWidth": 445,
+              "clientWidth": 445,
+              "height": 22.390625,
+              "size": 14
+            },
+            {
+              "text": "불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+              "width": 445.1875,
+              "scrollWidth": 445,
+              "clientWidth": 445,
+              "height": 22.390625,
+              "size": 14
+            }
+          ]
+        },
+        {
+          "text": "라인업을 불러오고 있어요. 불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+          "label": "라인업 탐색 안내",
+          "live": null,
+          "atomic": "true",
+          "width": 1076,
+          "height": 47.390625,
+          "visible": true,
+          "scrollWidth": 1076,
+          "clientWidth": 1076,
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "1440 settled success",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "공개 라인업공개 승인된 라인업을 보고 있어요. 맵과 요원을 선택해 확인해 보세요.",
+          "label": "자료 상태",
+          "live": null,
+          "atomic": "true",
+          "width": 485.1875,
+          "height": 86.78125,
+          "visible": true,
+          "scrollWidth": 481,
+          "clientWidth": 481,
+          "children": [
+            {
+              "text": "공개 라인업",
+              "width": 445.1875,
+              "scrollWidth": 445,
+              "clientWidth": 445,
+              "height": 22.390625,
+              "size": 14
+            },
+            {
+              "text": "공개 승인된 라인업을 보고 있어요. 맵과 요원을 선택해 확인해 보세요.",
+              "width": 445.1875,
+              "scrollWidth": 445,
+              "clientWidth": 445,
+              "height": 22.390625,
+              "size": 14
+            }
+          ]
+        },
+        {
+          "text": "선택한 조건에 맞는 라인업이 없어요. 맵·진영·요원·스킬을 변경해 보세요.",
+          "label": "라인업 탐색 안내",
+          "live": null,
+          "atomic": "true",
+          "width": 1076,
+          "height": 47.390625,
+          "visible": true,
+          "scrollWidth": 1076,
+          "clientWidth": 1076,
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "1440 loading before empty",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "라인업을 불러오고 있어요불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+          "label": "자료 상태",
+          "live": null,
+          "atomic": "true",
+          "width": 485.1875,
+          "height": 86.78125,
+          "visible": true,
+          "scrollWidth": 481,
+          "clientWidth": 481,
+          "children": [
+            {
+              "text": "라인업을 불러오고 있어요",
+              "width": 445.1875,
+              "scrollWidth": 445,
+              "clientWidth": 445,
+              "height": 22.390625,
+              "size": 14
+            },
+            {
+              "text": "불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+              "width": 445.1875,
+              "scrollWidth": 445,
+              "clientWidth": 445,
+              "height": 22.390625,
+              "size": 14
+            }
+          ]
+        },
+        {
+          "text": "라인업을 불러오고 있어요. 불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+          "label": "라인업 탐색 안내",
+          "live": null,
+          "atomic": "true",
+          "width": 1076,
+          "height": 47.390625,
+          "visible": true,
+          "scrollWidth": 1076,
+          "clientWidth": 1076,
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "1440 settled empty",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "공개된 라인업이 없어요자료가 공개되면 이곳에서 확인할 수 있어요.",
+          "label": "자료 상태",
+          "live": null,
+          "atomic": "true",
+          "width": 485.1875,
+          "height": 86.78125,
+          "visible": true,
+          "scrollWidth": 481,
+          "clientWidth": 481,
+          "children": [
+            {
+              "text": "공개된 라인업이 없어요",
+              "width": 445.1875,
+              "scrollWidth": 445,
+              "clientWidth": 445,
+              "height": 22.390625,
+              "size": 14
+            },
+            {
+              "text": "자료가 공개되면 이곳에서 확인할 수 있어요.",
+              "width": 445.1875,
+              "scrollWidth": 445,
+              "clientWidth": 445,
+              "height": 22.390625,
+              "size": 14
+            }
+          ]
+        },
+        {
+          "text": "공개된 라인업이 없어요. 자료가 공개되면 이곳에서 확인할 수 있어요.",
+          "label": "라인업 탐색 안내",
+          "live": null,
+          "atomic": "true",
+          "width": 1076,
+          "height": 47.390625,
+          "visible": true,
+          "scrollWidth": 1076,
+          "clientWidth": 1076,
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "1440 loading before failure",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "라인업을 불러오고 있어요불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+          "label": "자료 상태",
+          "live": null,
+          "atomic": "true",
+          "width": 485.1875,
+          "height": 86.78125,
+          "visible": true,
+          "scrollWidth": 481,
+          "clientWidth": 481,
+          "children": [
+            {
+              "text": "라인업을 불러오고 있어요",
+              "width": 445.1875,
+              "scrollWidth": 445,
+              "clientWidth": 445,
+              "height": 22.390625,
+              "size": 14
+            },
+            {
+              "text": "불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+              "width": 445.1875,
+              "scrollWidth": 445,
+              "clientWidth": 445,
+              "height": 22.390625,
+              "size": 14
+            }
+          ]
+        },
+        {
+          "text": "라인업을 불러오고 있어요. 불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+          "label": "라인업 탐색 안내",
+          "live": null,
+          "atomic": "true",
+          "width": 1076,
+          "height": 47.390625,
+          "visible": true,
+          "scrollWidth": 1076,
+          "clientWidth": 1076,
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "1440 settled failure",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "예시 라인업을 보고 있어요자료를 불러오지 못해 예시를 표시하고 있어요. 실제 플레이용으로 검증된 자료는 아니에요.",
+          "label": "자료 상태",
+          "live": null,
+          "atomic": "true",
+          "width": 485.1875,
+          "height": 109.171875,
+          "visible": true,
+          "scrollWidth": 481,
+          "clientWidth": 481,
+          "children": [
+            {
+              "text": "예시 라인업을 보고 있어요",
+              "width": 445.1875,
+              "scrollWidth": 445,
+              "clientWidth": 445,
+              "height": 22.390625,
+              "size": 14
+            },
+            {
+              "text": "자료를 불러오지 못해 예시를 표시하고 있어요. 실제 플레이용으로 검증된 자료는 아니에요.",
+              "width": 445.1875,
+              "scrollWidth": 445,
+              "clientWidth": 445,
+              "height": 44.78125,
+              "size": 14
+            }
+          ]
+        },
+        {
+          "text": "지도 위 스킬 아이콘을 선택하면 시작 위치를 확인할 수 있어요.",
+          "label": "라인업 탐색 안내",
+          "live": null,
+          "atomic": "true",
+          "width": 1076,
+          "height": 47.390625,
+          "visible": true,
+          "scrollWidth": 1076,
+          "clientWidth": 1076,
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "820 loading before success",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "라인업을 불러오고 있어요불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+          "label": "자료 상태",
+          "live": null,
+          "atomic": "true",
+          "width": 722,
+          "height": 86.78125,
+          "visible": true,
+          "scrollWidth": 718,
+          "clientWidth": 718,
+          "children": [
+            {
+              "text": "라인업을 불러오고 있어요",
+              "width": 682,
+              "scrollWidth": 682,
+              "clientWidth": 682,
+              "height": 22.390625,
+              "size": 14
+            },
+            {
+              "text": "불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+              "width": 682,
+              "scrollWidth": 682,
+              "clientWidth": 682,
+              "height": 22.390625,
+              "size": 14
+            }
+          ]
+        },
+        {
+          "text": "라인업을 불러오고 있어요. 불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+          "label": "라인업 탐색 안내",
+          "live": null,
+          "atomic": "true",
+          "width": 778,
+          "height": 47.390625,
+          "visible": true,
+          "scrollWidth": 778,
+          "clientWidth": 778,
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "820 settled success",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "공개 라인업공개 승인된 라인업을 보고 있어요. 맵과 요원을 선택해 확인해 보세요.",
+          "label": "자료 상태",
+          "live": null,
+          "atomic": "true",
+          "width": 722,
+          "height": 86.78125,
+          "visible": true,
+          "scrollWidth": 718,
+          "clientWidth": 718,
+          "children": [
+            {
+              "text": "공개 라인업",
+              "width": 682,
+              "scrollWidth": 682,
+              "clientWidth": 682,
+              "height": 22.390625,
+              "size": 14
+            },
+            {
+              "text": "공개 승인된 라인업을 보고 있어요. 맵과 요원을 선택해 확인해 보세요.",
+              "width": 682,
+              "scrollWidth": 682,
+              "clientWidth": 682,
+              "height": 22.390625,
+              "size": 14
+            }
+          ]
+        },
+        {
+          "text": "선택한 조건에 맞는 라인업이 없어요. 맵·진영·요원·스킬을 변경해 보세요.",
+          "label": "라인업 탐색 안내",
+          "live": null,
+          "atomic": "true",
+          "width": 778,
+          "height": 47.390625,
+          "visible": true,
+          "scrollWidth": 778,
+          "clientWidth": 778,
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "820 loading before empty",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "라인업을 불러오고 있어요불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+          "label": "자료 상태",
+          "live": null,
+          "atomic": "true",
+          "width": 722,
+          "height": 86.78125,
+          "visible": true,
+          "scrollWidth": 718,
+          "clientWidth": 718,
+          "children": [
+            {
+              "text": "라인업을 불러오고 있어요",
+              "width": 682,
+              "scrollWidth": 682,
+              "clientWidth": 682,
+              "height": 22.390625,
+              "size": 14
+            },
+            {
+              "text": "불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+              "width": 682,
+              "scrollWidth": 682,
+              "clientWidth": 682,
+              "height": 22.390625,
+              "size": 14
+            }
+          ]
+        },
+        {
+          "text": "라인업을 불러오고 있어요. 불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+          "label": "라인업 탐색 안내",
+          "live": null,
+          "atomic": "true",
+          "width": 778,
+          "height": 47.390625,
+          "visible": true,
+          "scrollWidth": 778,
+          "clientWidth": 778,
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "820 settled empty",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "공개된 라인업이 없어요자료가 공개되면 이곳에서 확인할 수 있어요.",
+          "label": "자료 상태",
+          "live": null,
+          "atomic": "true",
+          "width": 722,
+          "height": 86.78125,
+          "visible": true,
+          "scrollWidth": 718,
+          "clientWidth": 718,
+          "children": [
+            {
+              "text": "공개된 라인업이 없어요",
+              "width": 682,
+              "scrollWidth": 682,
+              "clientWidth": 682,
+              "height": 22.390625,
+              "size": 14
+            },
+            {
+              "text": "자료가 공개되면 이곳에서 확인할 수 있어요.",
+              "width": 682,
+              "scrollWidth": 682,
+              "clientWidth": 682,
+              "height": 22.390625,
+              "size": 14
+            }
+          ]
+        },
+        {
+          "text": "공개된 라인업이 없어요. 자료가 공개되면 이곳에서 확인할 수 있어요.",
+          "label": "라인업 탐색 안내",
+          "live": null,
+          "atomic": "true",
+          "width": 778,
+          "height": 47.390625,
+          "visible": true,
+          "scrollWidth": 778,
+          "clientWidth": 778,
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "820 loading before failure",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "라인업을 불러오고 있어요불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+          "label": "자료 상태",
+          "live": null,
+          "atomic": "true",
+          "width": 722,
+          "height": 86.78125,
+          "visible": true,
+          "scrollWidth": 718,
+          "clientWidth": 718,
+          "children": [
+            {
+              "text": "라인업을 불러오고 있어요",
+              "width": 682,
+              "scrollWidth": 682,
+              "clientWidth": 682,
+              "height": 22.390625,
+              "size": 14
+            },
+            {
+              "text": "불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+              "width": 682,
+              "scrollWidth": 682,
+              "clientWidth": 682,
+              "height": 22.390625,
+              "size": 14
+            }
+          ]
+        },
+        {
+          "text": "라인업을 불러오고 있어요. 불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+          "label": "라인업 탐색 안내",
+          "live": null,
+          "atomic": "true",
+          "width": 778,
+          "height": 47.390625,
+          "visible": true,
+          "scrollWidth": 778,
+          "clientWidth": 778,
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "820 settled failure",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "예시 라인업을 보고 있어요자료를 불러오지 못해 예시를 표시하고 있어요. 실제 플레이용으로 검증된 자료는 아니에요.",
+          "label": "자료 상태",
+          "live": null,
+          "atomic": "true",
+          "width": 722,
+          "height": 86.78125,
+          "visible": true,
+          "scrollWidth": 718,
+          "clientWidth": 718,
+          "children": [
+            {
+              "text": "예시 라인업을 보고 있어요",
+              "width": 682,
+              "scrollWidth": 682,
+              "clientWidth": 682,
+              "height": 22.390625,
+              "size": 14
+            },
+            {
+              "text": "자료를 불러오지 못해 예시를 표시하고 있어요. 실제 플레이용으로 검증된 자료는 아니에요.",
+              "width": 682,
+              "scrollWidth": 682,
+              "clientWidth": 682,
+              "height": 22.390625,
+              "size": 14
+            }
+          ]
+        },
+        {
+          "text": "지도 위 스킬 아이콘을 선택하면 시작 위치를 확인할 수 있어요.",
+          "label": "라인업 탐색 안내",
+          "live": null,
+          "atomic": "true",
+          "width": 778,
+          "height": 47.390625,
+          "visible": true,
+          "scrollWidth": 778,
+          "clientWidth": 778,
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "390 loading before success",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "라인업을 불러오고 있어요불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+          "label": "자료 상태",
+          "live": null,
+          "atomic": "true",
+          "width": 328,
+          "height": 82.78125,
+          "visible": true,
+          "scrollWidth": 324,
+          "clientWidth": 324,
+          "children": [
+            {
+              "text": "라인업을 불러오고 있어요",
+              "width": 296,
+              "scrollWidth": 296,
+              "clientWidth": 296,
+              "height": 22.390625,
+              "size": 14
+            },
+            {
+              "text": "불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+              "width": 296,
+              "scrollWidth": 296,
+              "clientWidth": 296,
+              "height": 22.390625,
+              "size": 14
+            }
+          ]
+        },
+        {
+          "text": "라인업을 불러오고 있어요. 불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+          "label": "라인업 탐색 안내",
+          "live": null,
+          "atomic": "true",
+          "width": 368,
+          "height": 69.78125,
+          "visible": true,
+          "scrollWidth": 368,
+          "clientWidth": 368,
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "390 settled success",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "공개 라인업공개 승인된 라인업을 보고 있어요. 맵과 요원을 선택해 확인해 보세요.",
+          "label": "자료 상태",
+          "live": null,
+          "atomic": "true",
+          "width": 328,
+          "height": 105.171875,
+          "visible": true,
+          "scrollWidth": 324,
+          "clientWidth": 324,
+          "children": [
+            {
+              "text": "공개 라인업",
+              "width": 296,
+              "scrollWidth": 296,
+              "clientWidth": 296,
+              "height": 22.390625,
+              "size": 14
+            },
+            {
+              "text": "공개 승인된 라인업을 보고 있어요. 맵과 요원을 선택해 확인해 보세요.",
+              "width": 296,
+              "scrollWidth": 296,
+              "clientWidth": 296,
+              "height": 44.78125,
+              "size": 14
+            }
+          ]
+        },
+        {
+          "text": "선택한 조건에 맞는 라인업이 없어요. 맵·진영·요원·스킬을 변경해 보세요.",
+          "label": "라인업 탐색 안내",
+          "live": null,
+          "atomic": "true",
+          "width": 368,
+          "height": 69.78125,
+          "visible": true,
+          "scrollWidth": 368,
+          "clientWidth": 368,
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "390 loading before empty",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "라인업을 불러오고 있어요불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+          "label": "자료 상태",
+          "live": null,
+          "atomic": "true",
+          "width": 328,
+          "height": 82.78125,
+          "visible": true,
+          "scrollWidth": 324,
+          "clientWidth": 324,
+          "children": [
+            {
+              "text": "라인업을 불러오고 있어요",
+              "width": 296,
+              "scrollWidth": 296,
+              "clientWidth": 296,
+              "height": 22.390625,
+              "size": 14
+            },
+            {
+              "text": "불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+              "width": 296,
+              "scrollWidth": 296,
+              "clientWidth": 296,
+              "height": 22.390625,
+              "size": 14
+            }
+          ]
+        },
+        {
+          "text": "라인업을 불러오고 있어요. 불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+          "label": "라인업 탐색 안내",
+          "live": null,
+          "atomic": "true",
+          "width": 368,
+          "height": 69.78125,
+          "visible": true,
+          "scrollWidth": 368,
+          "clientWidth": 368,
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "390 settled empty",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "공개된 라인업이 없어요자료가 공개되면 이곳에서 확인할 수 있어요.",
+          "label": "자료 상태",
+          "live": null,
+          "atomic": "true",
+          "width": 328,
+          "height": 82.78125,
+          "visible": true,
+          "scrollWidth": 324,
+          "clientWidth": 324,
+          "children": [
+            {
+              "text": "공개된 라인업이 없어요",
+              "width": 296,
+              "scrollWidth": 296,
+              "clientWidth": 296,
+              "height": 22.390625,
+              "size": 14
+            },
+            {
+              "text": "자료가 공개되면 이곳에서 확인할 수 있어요.",
+              "width": 296,
+              "scrollWidth": 296,
+              "clientWidth": 296,
+              "height": 22.390625,
+              "size": 14
+            }
+          ]
+        },
+        {
+          "text": "공개된 라인업이 없어요. 자료가 공개되면 이곳에서 확인할 수 있어요.",
+          "label": "라인업 탐색 안내",
+          "live": null,
+          "atomic": "true",
+          "width": 368,
+          "height": 69.78125,
+          "visible": true,
+          "scrollWidth": 368,
+          "clientWidth": 368,
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "390 loading before failure",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "라인업을 불러오고 있어요불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+          "label": "자료 상태",
+          "live": null,
+          "atomic": "true",
+          "width": 328,
+          "height": 82.78125,
+          "visible": true,
+          "scrollWidth": 324,
+          "clientWidth": 324,
+          "children": [
+            {
+              "text": "라인업을 불러오고 있어요",
+              "width": 296,
+              "scrollWidth": 296,
+              "clientWidth": 296,
+              "height": 22.390625,
+              "size": 14
+            },
+            {
+              "text": "불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+              "width": 296,
+              "scrollWidth": 296,
+              "clientWidth": 296,
+              "height": 22.390625,
+              "size": 14
+            }
+          ]
+        },
+        {
+          "text": "라인업을 불러오고 있어요. 불러오는 동안 예시 라인업을 둘러볼 수 있어요.",
+          "label": "라인업 탐색 안내",
+          "live": null,
+          "atomic": "true",
+          "width": 368,
+          "height": 69.78125,
+          "visible": true,
+          "scrollWidth": 368,
+          "clientWidth": 368,
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "390 settled failure",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "예시 라인업을 보고 있어요자료를 불러오지 못해 예시를 표시하고 있어요. 실제 플레이용으로 검증된 자료는 아니에요.",
+          "label": "자료 상태",
+          "live": null,
+          "atomic": "true",
+          "width": 328,
+          "height": 105.171875,
+          "visible": true,
+          "scrollWidth": 324,
+          "clientWidth": 324,
+          "children": [
+            {
+              "text": "예시 라인업을 보고 있어요",
+              "width": 296,
+              "scrollWidth": 296,
+              "clientWidth": 296,
+              "height": 22.390625,
+              "size": 14
+            },
+            {
+              "text": "자료를 불러오지 못해 예시를 표시하고 있어요. 실제 플레이용으로 검증된 자료는 아니에요.",
+              "width": 296,
+              "scrollWidth": 296,
+              "clientWidth": 296,
+              "height": 44.78125,
+              "size": 14
+            }
+          ]
+        },
+        {
+          "text": "지도 위 스킬 아이콘을 선택하면 시작 위치를 확인할 수 있어요.",
+          "label": "라인업 탐색 안내",
+          "live": null,
+          "atomic": "true",
+          "width": 368,
+          "height": 69.78125,
+          "visible": true,
+          "scrollWidth": 368,
+          "clientWidth": 368,
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "390 sparse public coordinates",
+      "overflow": 0,
+      "statuses": [
+        {
+          "text": "공개 라인업공개 승인된 라인업을 보고 있어요. 맵과 요원을 선택해 확인해 보세요.",
+          "label": "자료 상태",
+          "live": null,
+          "atomic": "true",
+          "width": 328,
+          "height": 105.171875,
+          "visible": true,
+          "scrollWidth": 324,
+          "clientWidth": 324,
+          "children": [
+            {
+              "text": "공개 라인업",
+              "width": 296,
+              "scrollWidth": 296,
+              "clientWidth": 296,
+              "height": 22.390625,
+              "size": 14
+            },
+            {
+              "text": "공개 승인된 라인업을 보고 있어요. 맵과 요원을 선택해 확인해 보세요.",
+              "width": 296,
+              "scrollWidth": 296,
+              "clientWidth": 296,
+              "height": 44.78125,
+              "size": 14
+            }
+          ]
+        },
+        {
+          "text": "선택한 라인업의 지도 위치가 아직 등록되지 않았어요. 아래 상세 보기에서 자료를 확인해 보세요.",
+          "label": "라인업 탐색 안내",
+          "live": null,
+          "atomic": "true",
+          "width": 368,
+          "height": 69.78125,
+          "visible": true,
+          "scrollWidth": 368,
+          "clientWidth": 368,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "expectedApiErrors": [
+    {
+      "width": 1440,
+      "outcome": "failure",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 1440,
+      "outcome": "failure",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 820,
+      "outcome": "failure",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 820,
+      "outcome": "failure",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 390,
+      "outcome": "failure",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "width": 390,
+      "outcome": "failure",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://localhost:8080/api/lineups",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "requests": [
+    {
+      "width": 1440,
+      "outcome": "success",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 1440,
+      "outcome": "success",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 1440,
+      "outcome": "empty",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 1440,
+      "outcome": "empty",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 1440,
+      "outcome": "failure",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 1440,
+      "outcome": "failure",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 820,
+      "outcome": "success",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 820,
+      "outcome": "success",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 820,
+      "outcome": "empty",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 820,
+      "outcome": "empty",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 820,
+      "outcome": "failure",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 820,
+      "outcome": "failure",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 390,
+      "outcome": "success",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 390,
+      "outcome": "success",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 390,
+      "outcome": "empty",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 390,
+      "outcome": "empty",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 390,
+      "outcome": "failure",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 390,
+      "outcome": "failure",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 390,
+      "outcome": "sparse",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    },
+    {
+      "width": 390,
+      "outcome": "sparse",
+      "method": "GET",
+      "url": "http://localhost:8080/api/lineups"
+    }
+  ],
+  "status": "PASS"
+}

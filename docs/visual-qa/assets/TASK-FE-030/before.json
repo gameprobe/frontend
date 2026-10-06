@@ -1,0 +1,1634 @@
+[
+  {
+    "width": 1440,
+    "name": "lineup",
+    "url": "/lineups/ascent-killjoy-b-site-molly-003",
+    "file": "before-1440-lineup.png",
+    "status": 200,
+    "headings": [
+      "B 사이트 기본 설치 나노스웜"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [
+      {
+        "left": "28%",
+        "top": "66%"
+      },
+      {
+        "left": "72%",
+        "top": "42%"
+      }
+    ],
+    "paths": [
+      "28.000000000000004,66 46,54 72,42"
+    ],
+    "iframe": "https://www.youtube.com/embed/demo-ascent-kj-b",
+    "difficulty": {
+      "position": "absolute",
+      "top": 10
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "lineup-api",
+    "url": "/lineups/theme-qa-lineup",
+    "file": "before-1440-lineup-api.png",
+    "status": 200,
+    "headings": [
+      "A 사이트 진입 리콘 볼트"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [
+      {
+        "left": "28%",
+        "top": "66%"
+      },
+      {
+        "left": "72%",
+        "top": "42%"
+      },
+      {
+        "left": "62%",
+        "top": "52%"
+      }
+    ],
+    "paths": [
+      "28.000000000000004,66 46,54 72,42"
+    ],
+    "iframe": "https://www.youtube.com/embed/fe030first1",
+    "difficulty": {
+      "position": "absolute",
+      "top": 10
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "lineup-no-video",
+    "url": "/lineups/theme-qa-lineup",
+    "file": "before-1440-lineup-no-video.png",
+    "status": 200,
+    "headings": [
+      "A 사이트 진입 리콘 볼트"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [
+      {
+        "left": "28%",
+        "top": "66%"
+      },
+      {
+        "left": "72%",
+        "top": "42%"
+      },
+      {
+        "left": "62%",
+        "top": "52%"
+      }
+    ],
+    "paths": [
+      "28.000000000000004,66 46,54 72,42"
+    ],
+    "difficulty": {
+      "position": "absolute",
+      "top": 10
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "lineup-loading",
+    "url": "/lineups/theme-qa-lineup",
+    "file": "before-1440-lineup-loading.png",
+    "status": 200,
+    "headings": [],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "lineup-error",
+    "url": "/lineups/theme-qa-missing",
+    "file": "before-1440-lineup-error.png",
+    "status": 200,
+    "headings": [],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "match",
+    "url": "/matches/mock-match-ascent-001",
+    "file": "before-1440-match.png",
+    "status": 200,
+    "headings": [
+      "Ascent · Competitive",
+      "스코어보드",
+      "라운드 타임라인"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "404",
+    "url": "/theme-qa-unknown",
+    "file": "before-1440-404.png",
+    "status": 404,
+    "headings": [
+      "404",
+      "This page could not be found."
+    ],
+    "overflow": false,
+    "mainCount": 0,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "connect",
+    "url": "/connect",
+    "file": "before-1440-connect.png",
+    "status": 200,
+    "headings": [
+      "Riot 계정 연결 예정"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "VSearch",
+        "href": "/#riot-id"
+      },
+      {
+        "text": "Home",
+        "href": "/"
+      },
+      {
+        "text": "Overview",
+        "href": "/players/ied-agent-allen"
+      },
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "admin-login",
+    "url": "/admin",
+    "file": "before-1440-admin-login.png",
+    "status": 200,
+    "headings": [
+      "관리자 인증"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "admin-gate",
+    "url": "/admin/lineups/new",
+    "file": "before-1440-admin-gate.png",
+    "status": 200,
+    "headings": [
+      "관리자 인증이 필요합니다."
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "admin-list",
+    "url": "/admin/lineups",
+    "file": "before-1440-admin-list.png",
+    "status": 200,
+    "headings": [
+      "라인업 운영 센터",
+      "A 사이트 진입 리콘 볼트",
+      "A 사이트 진입 리콘 볼트"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "admin-empty",
+    "url": "/admin/lineups",
+    "file": "before-1440-admin-empty.png",
+    "status": 200,
+    "headings": [
+      "라인업 운영 센터"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "admin-error",
+    "url": "/admin/lineups",
+    "file": "before-1440-admin-error.png",
+    "status": 200,
+    "headings": [
+      "라인업 운영 센터"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "admin-new",
+    "url": "/admin/lineups/new",
+    "file": "before-1440-admin-new.png",
+    "status": 200,
+    "headings": [
+      "새 라인업 작성"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "admin-edit",
+    "url": "/admin/lineups/theme-qa-lineup/edit",
+    "file": "before-1440-admin-edit.png",
+    "status": 200,
+    "headings": [
+      "라인업 수정"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [
+      {
+        "left": "28%",
+        "top": "66%"
+      },
+      {
+        "left": "72%",
+        "top": "42%"
+      },
+      {
+        "left": "62%",
+        "top": "52%"
+      }
+    ],
+    "paths": [
+      "28.000000000000004,66 46,54 72,42"
+    ],
+    "difficulty": null,
+    "errors": [
+      "Text content does not match server-rendered HTML.\nSee more info here: https://nextjs.org/docs/messages/react-hydration-error",
+      "Text content does not match server-rendered HTML.\nSee more info here: https://nextjs.org/docs/messages/react-hydration-error",
+      "Text content does not match server-rendered HTML.\nSee more info here: https://nextjs.org/docs/messages/react-hydration-error",
+      "Text content does not match server-rendered HTML.\nSee more info here: https://nextjs.org/docs/messages/react-hydration-error",
+      "Text content does not match server-rendered HTML.\nSee more info here: https://nextjs.org/docs/messages/react-hydration-error",
+      "Text content does not match server-rendered HTML.\nSee more info here: https://nextjs.org/docs/messages/react-hydration-error",
+      "Text content does not match server-rendered HTML.\nSee more info here: https://nextjs.org/docs/messages/react-hydration-error",
+      "Text content does not match server-rendered HTML.\nSee more info here: https://nextjs.org/docs/messages/react-hydration-error",
+      "Text content does not match server-rendered HTML.\nSee more info here: https://nextjs.org/docs/messages/react-hydration-error",
+      "There was an error while hydrating. Because the error happened outside of a Suspense boundary, the entire root will switch to client rendering.\nSee more info here: https://nextjs.org/docs/messages/react-hydration-error"
+    ]
+  },
+  {
+    "width": 1440,
+    "name": "admin-edit-error",
+    "url": "/admin/lineups/theme-qa-lineup/edit",
+    "file": "before-1440-admin-edit-error.png",
+    "status": 200,
+    "headings": [
+      "관리자 인증이 필요합니다."
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "home",
+    "url": "/",
+    "file": "before-1440-home.png",
+    "status": 200,
+    "headings": [
+      "당신의 플레이,더 선명하게.",
+      "기존 디자인 데모 미리보기",
+      "게임을 더 깊이 들여다보세요",
+      "플레이 분석 미리보기 예시",
+      "위치 선정",
+      "팀 교전",
+      "첫 교전",
+      "사이트 방어"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "VSearch",
+        "href": "#riot-id"
+      },
+      {
+        "text": "Home",
+        "href": "/"
+      },
+      {
+        "text": "Overview",
+        "href": "/players/ied-agent-allen"
+      },
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "새 데이터 데모DemoPlayer01 예시 기록",
+        "href": "/players/demo-player-01"
+      },
+      {
+        "text": "기존 디자인 데모IED agent #Allen",
+        "href": "/players/ied-agent-allen"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "profile",
+    "url": "/players/ied-agent-allen",
+    "file": "before-1440-profile.png",
+    "status": 200,
+    "headings": [
+      "IED agent#Allen",
+      "CURRENT RATING ⓘ",
+      "ACCURACY Selected act",
+      "ROLES",
+      "TOP WEAPONS",
+      "TOP MAPS",
+      "V26: A5 COMPETITIVE OVERVIEW",
+      "TOP AGENTS",
+      "LAST 20 MATCHES"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Home",
+        "href": "/"
+      },
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Lineups ",
+        "href": "/lineups"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "lineup",
+    "url": "/lineups/ascent-killjoy-b-site-molly-003",
+    "file": "before-390-lineup.png",
+    "status": 200,
+    "headings": [
+      "B 사이트 기본 설치 나노스웜"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [
+      {
+        "left": "28%",
+        "top": "66%"
+      },
+      {
+        "left": "72%",
+        "top": "42%"
+      }
+    ],
+    "paths": [
+      "28.000000000000004,66 46,54 72,42"
+    ],
+    "iframe": "https://www.youtube.com/embed/demo-ascent-kj-b",
+    "difficulty": {
+      "position": "absolute",
+      "top": 10
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "lineup-api",
+    "url": "/lineups/theme-qa-lineup",
+    "file": "before-390-lineup-api.png",
+    "status": 200,
+    "headings": [
+      "A 사이트 진입 리콘 볼트"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [
+      {
+        "left": "28%",
+        "top": "66%"
+      },
+      {
+        "left": "72%",
+        "top": "42%"
+      },
+      {
+        "left": "62%",
+        "top": "52%"
+      }
+    ],
+    "paths": [
+      "28.000000000000004,66 46,54 72,42"
+    ],
+    "iframe": "https://www.youtube.com/embed/fe030first1",
+    "difficulty": {
+      "position": "absolute",
+      "top": 10
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "lineup-no-video",
+    "url": "/lineups/theme-qa-lineup",
+    "file": "before-390-lineup-no-video.png",
+    "status": 200,
+    "headings": [
+      "A 사이트 진입 리콘 볼트"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [
+      {
+        "left": "28%",
+        "top": "66%"
+      },
+      {
+        "left": "72%",
+        "top": "42%"
+      },
+      {
+        "left": "62%",
+        "top": "52%"
+      }
+    ],
+    "paths": [
+      "28.000000000000004,66 46,54 72,42"
+    ],
+    "difficulty": {
+      "position": "absolute",
+      "top": 10
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "lineup-loading",
+    "url": "/lineups/theme-qa-lineup",
+    "file": "before-390-lineup-loading.png",
+    "status": 200,
+    "headings": [],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "lineup-error",
+    "url": "/lineups/theme-qa-missing",
+    "file": "before-390-lineup-error.png",
+    "status": 200,
+    "headings": [],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "match",
+    "url": "/matches/mock-match-ascent-001",
+    "file": "before-390-match.png",
+    "status": 200,
+    "headings": [
+      "Ascent · Competitive",
+      "스코어보드",
+      "라운드 타임라인"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "404",
+    "url": "/theme-qa-unknown",
+    "file": "before-390-404.png",
+    "status": 404,
+    "headings": [
+      "404",
+      "This page could not be found."
+    ],
+    "overflow": false,
+    "mainCount": 0,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "connect",
+    "url": "/connect",
+    "file": "before-390-connect.png",
+    "status": 200,
+    "headings": [
+      "Riot 계정 연결 예정"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "VSearch",
+        "href": "/#riot-id"
+      },
+      {
+        "text": "Home",
+        "href": "/"
+      },
+      {
+        "text": "Overview",
+        "href": "/players/ied-agent-allen"
+      },
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "admin-login",
+    "url": "/admin",
+    "file": "before-390-admin-login.png",
+    "status": 200,
+    "headings": [
+      "관리자 인증"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "admin-gate",
+    "url": "/admin/lineups/new",
+    "file": "before-390-admin-gate.png",
+    "status": 200,
+    "headings": [
+      "관리자 인증이 필요합니다."
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "admin-list",
+    "url": "/admin/lineups",
+    "file": "before-390-admin-list.png",
+    "status": 200,
+    "headings": [
+      "라인업 운영 센터",
+      "A 사이트 진입 리콘 볼트",
+      "A 사이트 진입 리콘 볼트"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "admin-empty",
+    "url": "/admin/lineups",
+    "file": "before-390-admin-empty.png",
+    "status": 200,
+    "headings": [
+      "라인업 운영 센터"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "admin-error",
+    "url": "/admin/lineups",
+    "file": "before-390-admin-error.png",
+    "status": 200,
+    "headings": [
+      "라인업 운영 센터"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "admin-new",
+    "url": "/admin/lineups/new",
+    "file": "before-390-admin-new.png",
+    "status": 200,
+    "headings": [
+      "새 라인업 작성"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "name": "admin-edit",
+    "url": "/admin/lineups/theme-qa-lineup/edit",
+    "file": "before-390-admin-edit.png",
+    "status": 200,
+    "headings": [
+      "라인업 수정"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [
+      {
+        "left": "28%",
+        "top": "66%"
+      },
+      {
+        "left": "72%",
+        "top": "42%"
+      },
+      {
+        "left": "62%",
+        "top": "52%"
+      }
+    ],
+    "paths": [
+      "28.000000000000004,66 46,54 72,42"
+    ],
+    "difficulty": null,
+    "errors": [
+      "Text content does not match server-rendered HTML.\nSee more info here: https://nextjs.org/docs/messages/react-hydration-error",
+      "Text content does not match server-rendered HTML.\nSee more info here: https://nextjs.org/docs/messages/react-hydration-error",
+      "Text content does not match server-rendered HTML.\nSee more info here: https://nextjs.org/docs/messages/react-hydration-error",
+      "Text content does not match server-rendered HTML.\nSee more info here: https://nextjs.org/docs/messages/react-hydration-error",
+      "Text content does not match server-rendered HTML.\nSee more info here: https://nextjs.org/docs/messages/react-hydration-error",
+      "Text content does not match server-rendered HTML.\nSee more info here: https://nextjs.org/docs/messages/react-hydration-error",
+      "Text content does not match server-rendered HTML.\nSee more info here: https://nextjs.org/docs/messages/react-hydration-error",
+      "Text content does not match server-rendered HTML.\nSee more info here: https://nextjs.org/docs/messages/react-hydration-error",
+      "Text content does not match server-rendered HTML.\nSee more info here: https://nextjs.org/docs/messages/react-hydration-error",
+      "There was an error while hydrating. Because the error happened outside of a Suspense boundary, the entire root will switch to client rendering.\nSee more info here: https://nextjs.org/docs/messages/react-hydration-error"
+    ]
+  },
+  {
+    "width": 390,
+    "name": "admin-edit-error",
+    "url": "/admin/lineups/theme-qa-lineup/edit",
+    "file": "before-390-admin-edit-error.png",
+    "status": 200,
+    "headings": [
+      "관리자 인증이 필요합니다."
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 820,
+    "name": "lineup",
+    "url": "/lineups/ascent-killjoy-b-site-molly-003",
+    "file": "before-820-lineup.png",
+    "status": 200,
+    "headings": [
+      "B 사이트 기본 설치 나노스웜"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [
+      {
+        "left": "28%",
+        "top": "66%"
+      },
+      {
+        "left": "72%",
+        "top": "42%"
+      }
+    ],
+    "paths": [
+      "28.000000000000004,66 46,54 72,42"
+    ],
+    "iframe": "https://www.youtube.com/embed/demo-ascent-kj-b",
+    "difficulty": {
+      "position": "absolute",
+      "top": 10
+    },
+    "errors": []
+  },
+  {
+    "width": 820,
+    "name": "match",
+    "url": "/matches/mock-match-ascent-001",
+    "file": "before-820-match.png",
+    "status": 200,
+    "headings": [
+      "Ascent · Competitive",
+      "스코어보드",
+      "라운드 타임라인"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 820,
+    "name": "admin-list",
+    "url": "/admin/lineups",
+    "file": "before-820-admin-list.png",
+    "status": 200,
+    "headings": [
+      "라인업 운영 센터",
+      "A 사이트 진입 리콘 볼트",
+      "A 사이트 진입 리콘 볼트"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  },
+  {
+    "width": 820,
+    "name": "admin-new",
+    "url": "/admin/lineups/new",
+    "file": "before-820-admin-new.png",
+    "status": 200,
+    "headings": [
+      "새 라인업 작성"
+    ],
+    "overflow": false,
+    "mainCount": 1,
+    "nav": [
+      {
+        "text": "Lineups",
+        "href": "/lineups"
+      },
+      {
+        "text": "Smokes",
+        "href": "/smokes"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Connect",
+        "href": "/connect"
+      }
+    ],
+    "pins": [],
+    "paths": [],
+    "difficulty": null,
+    "errors": []
+  }
+]

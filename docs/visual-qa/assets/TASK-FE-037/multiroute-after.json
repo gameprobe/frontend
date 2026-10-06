@@ -1,0 +1,45 @@
+{
+  "phase": "after",
+  "screens": [
+    "multiroute-after-1440-editor.png",
+    "multiroute-after-1440-preview.png",
+    "multiroute-after-1440-three-routes-editor.png",
+    "multiroute-after-1440-three-routes-preview.png",
+    "multiroute-after-1440-multiple-walls.png",
+    "multiroute-after-390-editor.png",
+    "multiroute-after-390-preview.png",
+    "multiroute-after-390-three-routes-editor.png",
+    "multiroute-after-390-three-routes-preview.png",
+    "multiroute-after-390-multiple-walls.png"
+  ],
+  "checks": [
+    {
+      "width": 1440,
+      "sharedStart": "PASS",
+      "isolatedRoutes": "PASS",
+      "allRouteValidation": "PASS",
+      "savedPreview": "PASS",
+      "stableDelete": "PASS",
+      "selectedReset": "PASS",
+      "mapReset": "PASS",
+      "multipleWalls": "PASS",
+      "allReset": "PASS",
+      "reload": "PASS"
+    },
+    {
+      "width": 390,
+      "sharedStart": "PASS",
+      "isolatedRoutes": "PASS",
+      "allRouteValidation": "PASS",
+      "savedPreview": "PASS",
+      "stableDelete": "PASS",
+      "selectedReset": "PASS",
+      "mapReset": "PASS",
+      "multipleWalls": "PASS",
+      "allReset": "PASS",
+      "reload": "PASS"
+    }
+  ],
+  "errors": [],
+  "apiRequests": []
+}

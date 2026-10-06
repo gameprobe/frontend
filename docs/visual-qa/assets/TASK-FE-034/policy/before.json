@@ -1,0 +1,17 @@
+{
+  "phase": "before",
+  "screens": [
+    "before-1440-ko-privacy.png",
+    "before-1440-ko-terms.png",
+    "before-1440-en-privacy.png",
+    "before-1440-en-terms.png",
+    "before-390-ko-privacy.png",
+    "before-390-ko-terms.png",
+    "before-390-en-privacy.png",
+    "before-390-en-terms.png"
+  ],
+  "errors": [],
+  "requests": [
+    "http://127.0.0.1:3100"
+  ]
+}

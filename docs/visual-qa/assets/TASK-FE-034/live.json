@@ -1,0 +1,93 @@
+{
+  "checkedAt": "2026-09-28T08:11:43.612Z",
+  "routes": [
+    {
+      "route": "/",
+      "status": 200,
+      "finalUrl": "https://www.game-probe.com/",
+      "hasConsentDemo": false,
+      "hasOldDisabledConnect": false,
+      "hasExampleContact": false,
+      "hasDemoPlayer": true
+    },
+    {
+      "route": "/connect",
+      "status": 200,
+      "finalUrl": "https://www.game-probe.com/connect",
+      "hasConsentDemo": false,
+      "hasOldDisabledConnect": true,
+      "hasExampleContact": false,
+      "hasDemoPlayer": false
+    },
+    {
+      "route": "/privacy",
+      "status": 200,
+      "finalUrl": "https://www.game-probe.com/privacy",
+      "hasConsentDemo": false,
+      "hasOldDisabledConnect": false,
+      "hasExampleContact": false,
+      "hasDemoPlayer": false
+    },
+    {
+      "route": "/terms",
+      "status": 200,
+      "finalUrl": "https://www.game-probe.com/terms",
+      "hasConsentDemo": false,
+      "hasOldDisabledConnect": false,
+      "hasExampleContact": false,
+      "hasDemoPlayer": false
+    },
+    {
+      "route": "/players/demo-player-01",
+      "status": 200,
+      "finalUrl": "https://www.game-probe.com/players/demo-player-01",
+      "hasConsentDemo": false,
+      "hasOldDisabledConnect": false,
+      "hasExampleContact": false,
+      "hasDemoPlayer": true
+    },
+    {
+      "route": "/matches/demo-match-001",
+      "status": 200,
+      "finalUrl": "https://www.game-probe.com/matches/demo-match-001",
+      "hasConsentDemo": false,
+      "hasOldDisabledConnect": false,
+      "hasExampleContact": false,
+      "hasDemoPlayer": true
+    },
+    {
+      "route": "/lineups",
+      "status": 200,
+      "finalUrl": "https://www.game-probe.com/lineups",
+      "hasConsentDemo": false,
+      "hasOldDisabledConnect": false,
+      "hasExampleContact": false,
+      "hasDemoPlayer": false
+    }
+  ],
+  "apiRequests": [
+    {
+      "url": "http://localhost:8080/api/lineups",
+      "method": "GET"
+    },
+    {
+      "url": "https://vercel.com/api/stream/internal",
+      "method": "POST"
+    },
+    {
+      "url": "https://vercel.com/api/jwt",
+      "method": "POST"
+    },
+    {
+      "url": "https://o205439.ingest.sentry.io/api/1323670/envelope/",
+      "method": "POST"
+    }
+  ],
+  "errors": [],
+  "preview": {
+    "url": "https://valorant-platform-git-dev-98jh-shins-projects.vercel.app/connect",
+    "finalOrigin": "https://vercel.com",
+    "status": 200,
+    "requiresVercelLogin": true
+  }
+}

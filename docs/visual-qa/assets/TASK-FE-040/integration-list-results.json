@@ -1,0 +1,42 @@
+[
+  {
+    "name": "1440px list status labels remain one line after CSS fix",
+    "status": "PASS",
+    "labels": [
+      {
+        "whiteSpace": "nowrap",
+        "textLines": 1,
+        "textHeight": 14,
+        "labelHeight": 34
+      },
+      {
+        "whiteSpace": "nowrap",
+        "textLines": 1,
+        "textHeight": 14,
+        "labelHeight": 34
+      }
+    ],
+    "pageErrors": [],
+    "overflow": false
+  },
+  {
+    "name": "390px list status labels remain one line after CSS fix",
+    "status": "PASS",
+    "labels": [
+      {
+        "whiteSpace": "nowrap",
+        "textLines": 1,
+        "textHeight": 14,
+        "labelHeight": 34
+      },
+      {
+        "whiteSpace": "nowrap",
+        "textLines": 1,
+        "textHeight": 14,
+        "labelHeight": 34
+      }
+    ],
+    "pageErrors": [],
+    "overflow": false
+  }
+]

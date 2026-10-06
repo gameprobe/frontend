@@ -1,0 +1,437 @@
+{
+  "checks": [
+    "unauthenticated gate /admin/lineups",
+    "gate /admin/lineups: no document overflow",
+    "gate /admin/lineups: one main landmark",
+    "gate /admin/lineups: shared theme",
+    "gate /admin/lineups: controls/body minimum 14px",
+    "gate /admin/lineups: shared Smokes menu",
+    "unauthenticated gate /admin/lineups/new",
+    "gate /admin/lineups/new: no document overflow",
+    "gate /admin/lineups/new: one main landmark",
+    "gate /admin/lineups/new: shared theme",
+    "gate /admin/lineups/new: controls/body minimum 14px",
+    "gate /admin/lineups/new: shared Smokes menu",
+    "unauthenticated gate /admin/lineups/theme-qa-lineup/edit",
+    "gate /admin/lineups/theme-qa-lineup/edit: no document overflow",
+    "gate /admin/lineups/theme-qa-lineup/edit: one main landmark",
+    "gate /admin/lineups/theme-qa-lineup/edit: shared theme",
+    "gate /admin/lineups/theme-qa-lineup/edit: controls/body minimum 14px",
+    "gate /admin/lineups/theme-qa-lineup/edit: shared Smokes menu",
+    "invalid token not stored",
+    "login field visible focus",
+    "valid fake token redirects to new editor",
+    "valid fake token stored in isolated session",
+    "editor logout clears session",
+    "1440 list: no document overflow",
+    "1440 list: one main landmark",
+    "1440 list: shared theme",
+    "1440 list: controls/body minimum 14px",
+    "1440 list: shared Smokes menu",
+    "1440: all status rows present",
+    "1440: 초안 filter count",
+    "1440: 초안 filter value",
+    "1440: 검수 대기 filter count",
+    "1440: 검수 대기 filter value",
+    "1440: 공개 filter count",
+    "1440: 공개 filter value",
+    "1440: 반려 filter count",
+    "1440: 반려 filter value",
+    "1440: filter visible focus",
+    "1440: mutation uses isolated token",
+    "1440: 검수 요청 status payload",
+    "1440: 검수 요청 response applied",
+    "1440: mutation uses isolated token",
+    "1440: 공개 승인 status payload",
+    "1440: 공개 승인 response applied",
+    "1440: mutation uses isolated token",
+    "1440: 검수로 되돌리기 status payload",
+    "1440: 검수로 되돌리기 response applied",
+    "1440: mutation uses isolated token",
+    "1440: 반려 status payload",
+    "1440: 반려 response applied",
+    "1440: mutation uses isolated token",
+    "1440: 초안으로 되돌리기 status payload",
+    "1440: 초안으로 되돌리기 response applied",
+    "1440: mutation uses isolated token",
+    "failed status request preserves state",
+    "1440 new editor: no document overflow",
+    "1440 new editor: one main landmark",
+    "1440 new editor: shared theme",
+    "1440 new editor: controls/body minimum 14px",
+    "1440 new editor: shared Smokes menu",
+    "1440: agent placement requires skill",
+    "1440: incomplete markers prevent API save",
+    "1440: agent changes ability",
+    "1440: skill marker creation",
+    "1440: selected skill deletion",
+    "1440: agent add/remove",
+    "1440: path points create",
+    "1440: path reset",
+    "1440: skill marker visible focus",
+    "1440: agent marker visible focus",
+    "1440: textarea visible focus",
+    "1440: mutation uses isolated token",
+    "1440: save error re-enables submit",
+    "1440: mutation uses isolated token",
+    "1440: create endpoint/method",
+    "1440: trimmed title/description",
+    "1440: selected values and draft status",
+    "1440: final marker counts",
+    "1440: selected skill metadata",
+    "1440: normalized skill point",
+    "1440: normalized agent point",
+    "1440: normalized path start",
+    "1440: normalized path end",
+    "1440: sova settings",
+    "1440 edit: no document overflow",
+    "1440 edit: one main landmark",
+    "1440 edit: shared theme",
+    "1440 edit: controls/body minimum 14px",
+    "1440 edit: shared Smokes menu",
+    "1440: edit loads title",
+    "1440: edit loaded marker coordinates",
+    "1440: mutation uses isolated token",
+    "1440: update endpoint/method",
+    "1440: edit keeps review status",
+    "1440: edit preserves skill markers",
+    "1440: edit preserves agent markers",
+    "1440: edit preserves path points",
+    "1440: list logout clears session",
+    "820 list: no document overflow",
+    "820 list: one main landmark",
+    "820 list: shared theme",
+    "820 list: controls/body minimum 14px",
+    "820 list: shared Smokes menu",
+    "820: all status rows present",
+    "820: 초안 filter count",
+    "820: 초안 filter value",
+    "820: 검수 대기 filter count",
+    "820: 검수 대기 filter value",
+    "820: 공개 filter count",
+    "820: 공개 filter value",
+    "820: 반려 filter count",
+    "820: 반려 filter value",
+    "820: filter visible focus",
+    "820 new editor: no document overflow",
+    "820 new editor: one main landmark",
+    "820 new editor: shared theme",
+    "820 new editor: controls/body minimum 14px",
+    "820 new editor: shared Smokes menu",
+    "820: agent placement requires skill",
+    "820: incomplete markers prevent API save",
+    "820: agent changes ability",
+    "820: skill marker creation",
+    "820: selected skill deletion",
+    "820: agent add/remove",
+    "820: path points create",
+    "820: path reset",
+    "820: skill marker visible focus",
+    "820: agent marker visible focus",
+    "820: textarea visible focus",
+    "820: mutation uses isolated token",
+    "820: save error re-enables submit",
+    "820: mutation uses isolated token",
+    "820: create endpoint/method",
+    "820: trimmed title/description",
+    "820: selected values and draft status",
+    "820: final marker counts",
+    "820: selected skill metadata",
+    "820: normalized skill point",
+    "820: normalized agent point",
+    "820: normalized path start",
+    "820: normalized path end",
+    "820: sova settings",
+    "820 edit: no document overflow",
+    "820 edit: one main landmark",
+    "820 edit: shared theme",
+    "820 edit: controls/body minimum 14px",
+    "820 edit: shared Smokes menu",
+    "820: edit loads title",
+    "820: edit loaded marker coordinates",
+    "820: mutation uses isolated token",
+    "820: update endpoint/method",
+    "820: edit keeps review status",
+    "820: edit preserves skill markers",
+    "820: edit preserves agent markers",
+    "820: edit preserves path points",
+    "820: list logout clears session",
+    "390 list: no document overflow",
+    "390 list: one main landmark",
+    "390 list: shared theme",
+    "390 list: controls/body minimum 14px",
+    "390 list: shared Smokes menu",
+    "390: all status rows present",
+    "390: 초안 filter count",
+    "390: 초안 filter value",
+    "390: 검수 대기 filter count",
+    "390: 검수 대기 filter value",
+    "390: 공개 filter count",
+    "390: 공개 filter value",
+    "390: 반려 filter count",
+    "390: 반려 filter value",
+    "390: filter visible focus",
+    "390 new editor: no document overflow",
+    "390 new editor: one main landmark",
+    "390 new editor: shared theme",
+    "390 new editor: controls/body minimum 14px",
+    "390 new editor: shared Smokes menu",
+    "390: agent placement requires skill",
+    "390: incomplete markers prevent API save",
+    "390: agent changes ability",
+    "390: skill marker creation",
+    "390: selected skill deletion",
+    "390: agent add/remove",
+    "390: path points create",
+    "390: path reset",
+    "390: skill marker visible focus",
+    "390: agent marker visible focus",
+    "390: textarea visible focus",
+    "390: mutation uses isolated token",
+    "390: save error re-enables submit",
+    "390: mutation uses isolated token",
+    "390: create endpoint/method",
+    "390: trimmed title/description",
+    "390: selected values and draft status",
+    "390: final marker counts",
+    "390: selected skill metadata",
+    "390: normalized skill point",
+    "390: normalized agent point",
+    "390: normalized path start",
+    "390: normalized path end",
+    "390: sova settings",
+    "390 edit: no document overflow",
+    "390 edit: one main landmark",
+    "390 edit: shared theme",
+    "390 edit: controls/body minimum 14px",
+    "390 edit: shared Smokes menu",
+    "390: edit loads title",
+    "390: edit loaded marker coordinates",
+    "390: mutation uses isolated token",
+    "390: update endpoint/method",
+    "390: edit keeps review status",
+    "390: edit preserves skill markers",
+    "390: edit preserves agent markers",
+    "390: edit preserves path points",
+    "390: list logout clears session",
+    "no browser/hydration errors across admin routes"
+  ],
+  "requests": [
+    {
+      "path": "/api/admin/session",
+      "method": "POST",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/session",
+      "method": "POST",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups",
+      "method": "GET",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups",
+      "method": "GET",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups/qa-draft/status",
+      "method": "PATCH",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups/qa-draft/status",
+      "method": "PATCH",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups/qa-draft/status",
+      "method": "PATCH",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups/qa-draft/status",
+      "method": "PATCH",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups/qa-draft/status",
+      "method": "PATCH",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups/qa-draft/status",
+      "method": "PATCH",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups",
+      "method": "POST",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups",
+      "method": "POST",
+      "intercepted": true
+    },
+    {
+      "path": "/api/lineups/theme-qa-lineup",
+      "method": "GET",
+      "intercepted": true
+    },
+    {
+      "path": "/api/lineups/theme-qa-lineup",
+      "method": "GET",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups/theme-qa-lineup",
+      "method": "GET",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups/theme-qa-lineup",
+      "method": "GET",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups/theme-qa-lineup",
+      "method": "PUT",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups",
+      "method": "GET",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups",
+      "method": "GET",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups",
+      "method": "GET",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups",
+      "method": "GET",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups",
+      "method": "POST",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups",
+      "method": "POST",
+      "intercepted": true
+    },
+    {
+      "path": "/api/lineups/theme-qa-lineup",
+      "method": "GET",
+      "intercepted": true
+    },
+    {
+      "path": "/api/lineups/theme-qa-lineup",
+      "method": "GET",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups/theme-qa-lineup",
+      "method": "GET",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups/theme-qa-lineup",
+      "method": "GET",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups/theme-qa-lineup",
+      "method": "PUT",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups",
+      "method": "GET",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups",
+      "method": "GET",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups",
+      "method": "GET",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups",
+      "method": "GET",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups",
+      "method": "POST",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups",
+      "method": "POST",
+      "intercepted": true
+    },
+    {
+      "path": "/api/lineups/theme-qa-lineup",
+      "method": "GET",
+      "intercepted": true
+    },
+    {
+      "path": "/api/lineups/theme-qa-lineup",
+      "method": "GET",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups/theme-qa-lineup",
+      "method": "GET",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups/theme-qa-lineup",
+      "method": "GET",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups/theme-qa-lineup",
+      "method": "PUT",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups",
+      "method": "GET",
+      "intercepted": true
+    },
+    {
+      "path": "/api/admin/lineups",
+      "method": "GET",
+      "intercepted": true
+    }
+  ],
+  "pageErrors": [],
+  "screenshots": [
+    "after-admin-390-login-focus.png",
+    "after-admin-1440-list-focus.png",
+    "after-admin-1440-new-editor.png",
+    "after-admin-820-list-focus.png",
+    "after-admin-820-new-editor.png",
+    "after-admin-390-list-focus.png",
+    "after-admin-390-new-editor.png"
+  ],
+  "externalBlocked": 3
+}

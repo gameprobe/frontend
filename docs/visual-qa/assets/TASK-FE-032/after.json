@@ -1,0 +1,434 @@
+{
+  "results": [
+    {
+      "file": "after-1440-connect-ko.png",
+      "name": "connect",
+      "width": 1440,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot 계정 연결 체험",
+        "연결 전에 알아두세요"
+      ]
+    },
+    {
+      "file": "after-1440-consent-unchecked-ko.png",
+      "name": "consent-unchecked",
+      "width": 1440,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot 계정 연결 체험",
+        "공개되는 정보를 확인하세요"
+      ]
+    },
+    {
+      "file": "after-1440-cancelled-ko.png",
+      "name": "cancelled",
+      "width": 1440,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot 계정 연결 체험",
+        "연결을 취소한 상태"
+      ]
+    },
+    {
+      "file": "after-1440-profile-ko.png",
+      "name": "profile",
+      "width": 1440,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot 계정 연결 체험",
+        "공개 프로필 미리보기"
+      ]
+    },
+    {
+      "file": "after-1440-revoked-ko.png",
+      "name": "revoked",
+      "width": 1440,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot 계정 연결 체험",
+        "공개 동의를 철회한 상태"
+      ]
+    },
+    {
+      "file": "after-1440-connect-en.png",
+      "name": "connect",
+      "width": 1440,
+      "locale": "en",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Try the account connection flow",
+        "Before you connect"
+      ]
+    },
+    {
+      "file": "after-1440-consent-unchecked-en.png",
+      "name": "consent-unchecked",
+      "width": 1440,
+      "locale": "en",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Try the account connection flow",
+        "Review what becomes public"
+      ]
+    },
+    {
+      "file": "after-1440-cancelled-en.png",
+      "name": "cancelled",
+      "width": 1440,
+      "locale": "en",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Try the account connection flow",
+        "Connection cancelled"
+      ]
+    },
+    {
+      "file": "after-1440-profile-en.png",
+      "name": "profile",
+      "width": 1440,
+      "locale": "en",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Try the account connection flow",
+        "Public profile preview"
+      ]
+    },
+    {
+      "file": "after-1440-revoked-en.png",
+      "name": "revoked",
+      "width": 1440,
+      "locale": "en",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Try the account connection flow",
+        "Sharing consent withdrawn"
+      ]
+    },
+    {
+      "file": "after-820-connect-ko.png",
+      "name": "connect",
+      "width": 820,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot 계정 연결 체험",
+        "연결 전에 알아두세요"
+      ]
+    },
+    {
+      "file": "after-820-consent-unchecked-ko.png",
+      "name": "consent-unchecked",
+      "width": 820,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot 계정 연결 체험",
+        "공개되는 정보를 확인하세요"
+      ]
+    },
+    {
+      "file": "after-820-cancelled-ko.png",
+      "name": "cancelled",
+      "width": 820,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot 계정 연결 체험",
+        "연결을 취소한 상태"
+      ]
+    },
+    {
+      "file": "after-820-profile-ko.png",
+      "name": "profile",
+      "width": 820,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot 계정 연결 체험",
+        "공개 프로필 미리보기"
+      ]
+    },
+    {
+      "file": "after-820-revoked-ko.png",
+      "name": "revoked",
+      "width": 820,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot 계정 연결 체험",
+        "공개 동의를 철회한 상태"
+      ]
+    },
+    {
+      "file": "after-390-connect-ko.png",
+      "name": "connect",
+      "width": 390,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot 계정 연결 체험",
+        "연결 전에 알아두세요"
+      ]
+    },
+    {
+      "file": "after-390-consent-unchecked-ko.png",
+      "name": "consent-unchecked",
+      "width": 390,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot 계정 연결 체험",
+        "공개되는 정보를 확인하세요"
+      ]
+    },
+    {
+      "file": "after-390-cancelled-ko.png",
+      "name": "cancelled",
+      "width": 390,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot 계정 연결 체험",
+        "연결을 취소한 상태"
+      ]
+    },
+    {
+      "file": "after-390-profile-ko.png",
+      "name": "profile",
+      "width": 390,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot 계정 연결 체험",
+        "공개 프로필 미리보기"
+      ]
+    },
+    {
+      "file": "after-390-revoked-ko.png",
+      "name": "revoked",
+      "width": 390,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot 계정 연결 체험",
+        "공개 동의를 철회한 상태"
+      ]
+    },
+    {
+      "file": "after-390-connect-en.png",
+      "name": "connect",
+      "width": 390,
+      "locale": "en",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Try the account connection flow",
+        "Before you connect"
+      ]
+    },
+    {
+      "file": "after-390-consent-unchecked-en.png",
+      "name": "consent-unchecked",
+      "width": 390,
+      "locale": "en",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Try the account connection flow",
+        "Review what becomes public"
+      ]
+    },
+    {
+      "file": "after-390-cancelled-en.png",
+      "name": "cancelled",
+      "width": 390,
+      "locale": "en",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Try the account connection flow",
+        "Connection cancelled"
+      ]
+    },
+    {
+      "file": "after-390-profile-en.png",
+      "name": "profile",
+      "width": 390,
+      "locale": "en",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Try the account connection flow",
+        "Public profile preview"
+      ]
+    },
+    {
+      "file": "after-390-revoked-en.png",
+      "name": "revoked",
+      "width": 390,
+      "locale": "en",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Try the account connection flow",
+        "Sharing consent withdrawn"
+      ]
+    },
+    {
+      "file": "after-320-connect-ko.png",
+      "name": "connect",
+      "width": 320,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot 계정 연결 체험",
+        "연결 전에 알아두세요"
+      ]
+    },
+    {
+      "file": "after-320-consent-unchecked-ko.png",
+      "name": "consent-unchecked",
+      "width": 320,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot 계정 연결 체험",
+        "공개되는 정보를 확인하세요"
+      ]
+    },
+    {
+      "file": "after-320-cancelled-ko.png",
+      "name": "cancelled",
+      "width": 320,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot 계정 연결 체험",
+        "연결을 취소한 상태"
+      ]
+    },
+    {
+      "file": "after-320-profile-ko.png",
+      "name": "profile",
+      "width": 320,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot 계정 연결 체험",
+        "공개 프로필 미리보기"
+      ]
+    },
+    {
+      "file": "after-320-revoked-ko.png",
+      "name": "revoked",
+      "width": 320,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "Riot 계정 연결 체험",
+        "공개 동의를 철회한 상태"
+      ]
+    },
+    {
+      "file": "after-1440-home-ko.png",
+      "name": "home",
+      "width": 1440,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "당신의 플레이,더 선명하게.",
+        "기존 디자인 데모 미리보기",
+        "게임을 더 깊이 들여다보세요",
+        "플레이 분석 미리보기 예시",
+        "위치 선정",
+        "팀 교전",
+        "첫 교전",
+        "사이트 방어"
+      ]
+    },
+    {
+      "file": "after-1440-legacy-ko.png",
+      "name": "legacy",
+      "width": 1440,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "IED agent#Allen",
+        "CURRENT RATING ⓘ",
+        "ACCURACY Selected act",
+        "ROLES",
+        "TOP WEAPONS",
+        "TOP MAPS",
+        "V26: A5 COMPETITIVE OVERVIEW",
+        "TOP AGENTS",
+        "LAST 20 MATCHES"
+      ]
+    },
+    {
+      "file": "after-1440-synthetic-ko.png",
+      "name": "synthetic",
+      "width": 1440,
+      "locale": "ko",
+      "overflow": false,
+      "mainCount": 1,
+      "headings": [
+        "DemoPlayer01#DEMO",
+        "CURRENT RATING ⓘ",
+        "ACCURACY Selected act",
+        "ROLES",
+        "TOP WEAPONS",
+        "TOP MAPS",
+        "DEMO ACT COMPETITIVE OVERVIEW",
+        "TOP AGENTS",
+        "LAST 20 MATCHES"
+      ]
+    }
+  ],
+  "checks": [
+    "Policy opens in new tab and keeps selection",
+    "1440px/ko: keyboard, unchecked guard, cancel, sample totals, locale, withdrawal, re-consent, reset, reload, route return, no storage changes",
+    "1440px/en: keyboard, unchecked guard, cancel, sample totals, locale, withdrawal, re-consent, reset, reload, route return, no storage changes",
+    "820px/ko: keyboard, unchecked guard, cancel, sample totals, locale, withdrawal, re-consent, reset, reload, route return, no storage changes",
+    "390px/ko: keyboard, unchecked guard, cancel, sample totals, locale, withdrawal, re-consent, reset, reload, route return, no storage changes",
+    "390px/en: keyboard, unchecked guard, cancel, sample totals, locale, withdrawal, re-consent, reset, reload, route return, no storage changes",
+    "320px/ko: keyboard, unchecked guard, cancel, sample totals, locale, withdrawal, re-consent, reset, reload, route return, no storage changes",
+    "home: identical screenshot; default demo preserved",
+    "legacy: identical screenshot; default demo preserved",
+    "synthetic: identical screenshot; default demo preserved"
+  ],
+  "errors": [],
+  "apiRequests": []
+}

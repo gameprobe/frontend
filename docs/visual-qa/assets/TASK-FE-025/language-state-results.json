@@ -1,0 +1,1377 @@
+{
+  "checks": [
+    "Fresh browser defaults to ko",
+    "EN stored under locale key",
+    "English retained on account client navigation",
+    "English retained on reload",
+    "New tab reads English preference",
+    "storage event synchronizes ko to second tab",
+    "storage event synchronizes en to first tab",
+    "Invalid saved locale falls back to ko",
+    "Storage blocked: English toggle works",
+    "Storage blocked: current-tab client navigation retains English",
+    "Storage blocked: switch back to Korean works",
+    "ied-agent-allen: filter retained after direct toggle",
+    "ied-agent-allen: direct toggle preserves tab/filter/save/count",
+    "ied-agent-allen: cross-tab toggle preserves filter",
+    "ied-agent-allen: external locale event preserves open dialog and detail tab",
+    "ied-agent-allen: locale-switched dialog still closes and restores focus",
+    "demo-player-01: filter retained after direct toggle",
+    "demo-player-01: direct toggle preserves tab/filter/save/count",
+    "demo-player-01: cross-tab toggle preserves filter",
+    "demo-player-01: external locale event preserves open dialog and detail tab",
+    "demo-player-01: locale-switched dialog still closes and restores focus",
+    "1440 / ko: single main",
+    "1440 / ko: no global overflow",
+    "1440 / ko: language/More controls visible without overlap",
+    "1440 / en: single main",
+    "1440 / en: no global overflow",
+    "1440 / en: language/More controls visible without overlap",
+    "1440 /players/ied-agent-allen ko: single main",
+    "1440 /players/ied-agent-allen ko: no global overflow",
+    "1440 /players/ied-agent-allen ko: language/More controls visible without overlap",
+    "1440 /players/ied-agent-allen en: single main",
+    "1440 /players/ied-agent-allen en: no global overflow",
+    "1440 /players/ied-agent-allen en: language/More controls visible without overlap",
+    "1440 /players/demo-player-01 ko: single main",
+    "1440 /players/demo-player-01 ko: no global overflow",
+    "1440 /players/demo-player-01 ko: language/More controls visible without overlap",
+    "1440 /players/demo-player-01 en: single main",
+    "1440 /players/demo-player-01 en: no global overflow",
+    "1440 /players/demo-player-01 en: language/More controls visible without overlap",
+    "1440 /connect ko: single main",
+    "1440 /connect ko: no global overflow",
+    "1440 /connect ko: language/More controls visible without overlap",
+    "1440 /connect en: single main",
+    "1440 /connect en: no global overflow",
+    "1440 /connect en: language/More controls visible without overlap",
+    "1440 /privacy ko: single main",
+    "1440 /privacy ko: no global overflow",
+    "1440 /privacy ko: language/More controls visible without overlap",
+    "1440 /privacy en: single main",
+    "1440 /privacy en: no global overflow",
+    "1440 /privacy en: language/More controls visible without overlap",
+    "1440 /terms ko: single main",
+    "1440 /terms ko: no global overflow",
+    "1440 /terms ko: language/More controls visible without overlap",
+    "1440 /terms en: single main",
+    "1440 /terms en: no global overflow",
+    "1440 /terms en: language/More controls visible without overlap",
+    "1440 new Agents ko: single main",
+    "1440 new Agents ko: no global overflow",
+    "1440 new Agents ko: language/More controls visible without overlap",
+    "1440 new Weapons ko: single main",
+    "1440 new Weapons ko: no global overflow",
+    "1440 new Weapons ko: language/More controls visible without overlap",
+    "1440 new Agents en: single main",
+    "1440 new Agents en: no global overflow",
+    "1440 new Agents en: language/More controls visible without overlap",
+    "1440 new Weapons en: single main",
+    "1440 new Weapons en: no global overflow",
+    "1440 new Weapons en: language/More controls visible without overlap",
+    "820 / ko: single main",
+    "820 / ko: no global overflow",
+    "820 / ko: language/More controls visible without overlap",
+    "820 / en: single main",
+    "820 / en: no global overflow",
+    "820 / en: language/More controls visible without overlap",
+    "820 /players/ied-agent-allen ko: single main",
+    "820 /players/ied-agent-allen ko: no global overflow",
+    "820 /players/ied-agent-allen ko: language/More controls visible without overlap",
+    "820 /players/ied-agent-allen en: single main",
+    "820 /players/ied-agent-allen en: no global overflow",
+    "820 /players/ied-agent-allen en: language/More controls visible without overlap",
+    "820 /players/demo-player-01 ko: single main",
+    "820 /players/demo-player-01 ko: no global overflow",
+    "820 /players/demo-player-01 ko: language/More controls visible without overlap",
+    "820 /players/demo-player-01 en: single main",
+    "820 /players/demo-player-01 en: no global overflow",
+    "820 /players/demo-player-01 en: language/More controls visible without overlap",
+    "820 /connect ko: single main",
+    "820 /connect ko: no global overflow",
+    "820 /connect ko: language/More controls visible without overlap",
+    "820 /connect en: single main",
+    "820 /connect en: no global overflow",
+    "820 /connect en: language/More controls visible without overlap",
+    "820 /privacy ko: single main",
+    "820 /privacy ko: no global overflow",
+    "820 /privacy ko: language/More controls visible without overlap",
+    "820 /privacy en: single main",
+    "820 /privacy en: no global overflow",
+    "820 /privacy en: language/More controls visible without overlap",
+    "820 /terms ko: single main",
+    "820 /terms ko: no global overflow",
+    "820 /terms ko: language/More controls visible without overlap",
+    "820 /terms en: single main",
+    "820 /terms en: no global overflow",
+    "820 /terms en: language/More controls visible without overlap",
+    "820 new Agents ko: single main",
+    "820 new Agents ko: no global overflow",
+    "820 new Agents ko: language/More controls visible without overlap",
+    "820 new Weapons ko: single main",
+    "820 new Weapons ko: no global overflow",
+    "820 new Weapons ko: language/More controls visible without overlap",
+    "820 new Agents en: single main",
+    "820 new Agents en: no global overflow",
+    "820 new Agents en: language/More controls visible without overlap",
+    "820 new Weapons en: single main",
+    "820 new Weapons en: no global overflow",
+    "820 new Weapons en: language/More controls visible without overlap",
+    "390 / ko: single main",
+    "390 / ko: no global overflow",
+    "390 / ko: language/More controls visible without overlap",
+    "390 / en: single main",
+    "390 / en: no global overflow",
+    "390 / en: language/More controls visible without overlap",
+    "390 /players/ied-agent-allen ko: single main",
+    "390 /players/ied-agent-allen ko: no global overflow",
+    "390 /players/ied-agent-allen ko: language/More controls visible without overlap",
+    "390 /players/ied-agent-allen en: single main",
+    "390 /players/ied-agent-allen en: no global overflow",
+    "390 /players/ied-agent-allen en: language/More controls visible without overlap",
+    "390 /players/demo-player-01 ko: single main",
+    "390 /players/demo-player-01 ko: no global overflow",
+    "390 /players/demo-player-01 ko: language/More controls visible without overlap",
+    "390 /players/demo-player-01 en: single main",
+    "390 /players/demo-player-01 en: no global overflow",
+    "390 /players/demo-player-01 en: language/More controls visible without overlap",
+    "390 /connect ko: single main",
+    "390 /connect ko: no global overflow",
+    "390 /connect ko: language/More controls visible without overlap",
+    "390 /connect en: single main",
+    "390 /connect en: no global overflow",
+    "390 /connect en: language/More controls visible without overlap",
+    "390 /privacy ko: single main",
+    "390 /privacy ko: no global overflow",
+    "390 /privacy ko: language/More controls visible without overlap",
+    "390 /privacy en: single main",
+    "390 /privacy en: no global overflow",
+    "390 /privacy en: language/More controls visible without overlap",
+    "390 /terms ko: single main",
+    "390 /terms ko: no global overflow",
+    "390 /terms ko: language/More controls visible without overlap",
+    "390 /terms en: single main",
+    "390 /terms en: no global overflow",
+    "390 /terms en: language/More controls visible without overlap",
+    "390 new Agents ko: single main",
+    "390 new Agents ko: no global overflow",
+    "390 new Agents ko: language/More controls visible without overlap",
+    "390 new Weapons ko: single main",
+    "390 new Weapons ko: no global overflow",
+    "390 new Weapons ko: language/More controls visible without overlap",
+    "390 new Agents en: single main",
+    "390 new Agents en: no global overflow",
+    "390 new Agents en: language/More controls visible without overlap",
+    "390 new Weapons en: single main",
+    "390 new Weapons en: no global overflow",
+    "390 new Weapons en: language/More controls visible without overlap",
+    "320 / ko: single main",
+    "320 / ko: no global overflow",
+    "320 / ko: language/More controls visible without overlap",
+    "320 / en: single main",
+    "320 / en: no global overflow",
+    "320 / en: language/More controls visible without overlap",
+    "320 /players/ied-agent-allen ko: single main",
+    "320 /players/ied-agent-allen ko: no global overflow",
+    "320 /players/ied-agent-allen ko: language/More controls visible without overlap",
+    "320 /players/ied-agent-allen en: single main",
+    "320 /players/ied-agent-allen en: no global overflow",
+    "320 /players/ied-agent-allen en: language/More controls visible without overlap",
+    "320 /players/demo-player-01 ko: single main",
+    "320 /players/demo-player-01 ko: no global overflow",
+    "320 /players/demo-player-01 ko: language/More controls visible without overlap",
+    "320 /players/demo-player-01 en: single main",
+    "320 /players/demo-player-01 en: no global overflow",
+    "320 /players/demo-player-01 en: language/More controls visible without overlap",
+    "320 /connect ko: single main",
+    "320 /connect ko: no global overflow",
+    "320 /connect ko: language/More controls visible without overlap",
+    "320 /connect en: single main",
+    "320 /connect en: no global overflow",
+    "320 /connect en: language/More controls visible without overlap",
+    "320 /privacy ko: single main",
+    "320 /privacy ko: no global overflow",
+    "320 /privacy ko: language/More controls visible without overlap",
+    "320 /privacy en: single main",
+    "320 /privacy en: no global overflow",
+    "320 /privacy en: language/More controls visible without overlap",
+    "320 /terms ko: single main",
+    "320 /terms ko: no global overflow",
+    "320 /terms ko: language/More controls visible without overlap",
+    "320 /terms en: single main",
+    "320 /terms en: no global overflow",
+    "320 /terms en: language/More controls visible without overlap",
+    "320 new Agents ko: single main",
+    "320 new Agents ko: no global overflow",
+    "320 new Agents ko: language/More controls visible without overlap",
+    "320 new Weapons ko: single main",
+    "320 new Weapons ko: no global overflow",
+    "320 new Weapons ko: language/More controls visible without overlap",
+    "320 new Agents en: single main",
+    "320 new Agents en: no global overflow",
+    "320 new Agents en: language/More controls visible without overlap",
+    "320 new Weapons en: single main",
+    "320 new Weapons en: no global overflow",
+    "320 new Weapons en: language/More controls visible without overlap",
+    "no uncaught/hydration errors",
+    "no console/hydration errors"
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "layouts": [
+    {
+      "label": "1440 / ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 1440,
+      "language": {
+        "x": 1181.421875,
+        "y": 4,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 1324.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "1440 / en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 1440,
+      "language": {
+        "x": 1173.671875,
+        "y": 4,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 1324.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "1440 /players/ied-agent-allen ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 1440,
+      "language": {
+        "x": 1181.421875,
+        "y": 4,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 1324.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "1440 /players/ied-agent-allen en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 1440,
+      "language": {
+        "x": 1173.671875,
+        "y": 4,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 1324.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "1440 /players/demo-player-01 ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 1440,
+      "language": {
+        "x": 1181.421875,
+        "y": 4,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 1324.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "1440 /players/demo-player-01 en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 1440,
+      "language": {
+        "x": 1173.671875,
+        "y": 4,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 1324.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "1440 /connect ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 1440,
+      "language": {
+        "x": 1181.421875,
+        "y": 4,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 1324.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "1440 /connect en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 1440,
+      "language": {
+        "x": 1173.671875,
+        "y": 4,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 1324.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "1440 /privacy ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 1440,
+      "language": {
+        "x": 1181.421875,
+        "y": 4,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 1324.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "1440 /privacy en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 1440,
+      "language": {
+        "x": 1173.671875,
+        "y": 4,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 1324.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "1440 /terms ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 1440,
+      "language": {
+        "x": 1181.421875,
+        "y": 4,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 1324.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "1440 /terms en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 1440,
+      "language": {
+        "x": 1173.671875,
+        "y": 4,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 1324.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "1440 new Agents ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 1440,
+      "language": {
+        "x": 1181.421875,
+        "y": 4,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 1324.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "1440 new Weapons ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 1440,
+      "language": {
+        "x": 1181.421875,
+        "y": 4,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 1324.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "1440 new Agents en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 1440,
+      "language": {
+        "x": 1173.671875,
+        "y": 4,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 1324.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "1440 new Weapons en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 1440,
+      "language": {
+        "x": 1173.671875,
+        "y": 4,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 1324.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "820 / ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 820,
+      "language": {
+        "x": 561.421875,
+        "y": 4,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 704.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "820 / en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 820,
+      "language": {
+        "x": 553.671875,
+        "y": 4,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 704.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "820 /players/ied-agent-allen ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 820,
+      "language": {
+        "x": 561.421875,
+        "y": 4,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 704.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "820 /players/ied-agent-allen en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 820,
+      "language": {
+        "x": 553.671875,
+        "y": 4,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 704.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "820 /players/demo-player-01 ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 820,
+      "language": {
+        "x": 561.421875,
+        "y": 4,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 704.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "820 /players/demo-player-01 en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 820,
+      "language": {
+        "x": 553.671875,
+        "y": 4,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 704.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "820 /connect ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 820,
+      "language": {
+        "x": 561.421875,
+        "y": 4,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 704.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "820 /connect en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 820,
+      "language": {
+        "x": 553.671875,
+        "y": 4,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 704.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "820 /privacy ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 820,
+      "language": {
+        "x": 561.421875,
+        "y": 4,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 704.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "820 /privacy en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 820,
+      "language": {
+        "x": 553.671875,
+        "y": 4,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 704.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "820 /terms ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 820,
+      "language": {
+        "x": 561.421875,
+        "y": 4,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 704.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "820 /terms en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 820,
+      "language": {
+        "x": 553.671875,
+        "y": 4,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 704.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "820 new Agents ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 820,
+      "language": {
+        "x": 561.421875,
+        "y": 4,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 704.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "820 new Weapons ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 820,
+      "language": {
+        "x": 561.421875,
+        "y": 4,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 704.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "820 new Agents en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 820,
+      "language": {
+        "x": 553.671875,
+        "y": 4,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 704.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "820 new Weapons en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 820,
+      "language": {
+        "x": 553.671875,
+        "y": 4,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 704.546875,
+        "y": 44.5,
+        "width": 91.453125,
+        "height": 44
+      }
+    },
+    {
+      "label": "390 / ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 390,
+      "language": {
+        "x": 254,
+        "y": 6,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 338,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "390 / en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 390,
+      "language": {
+        "x": 246.25,
+        "y": 6,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 338,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "390 /players/ied-agent-allen ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 390,
+      "language": {
+        "x": 254,
+        "y": 6,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 338,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "390 /players/ied-agent-allen en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 390,
+      "language": {
+        "x": 246.25,
+        "y": 6,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 338,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "390 /players/demo-player-01 ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 390,
+      "language": {
+        "x": 254,
+        "y": 6,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 338,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "390 /players/demo-player-01 en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 390,
+      "language": {
+        "x": 246.25,
+        "y": 6,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 338,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "390 /connect ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 390,
+      "language": {
+        "x": 254,
+        "y": 6,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 338,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "390 /connect en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 390,
+      "language": {
+        "x": 246.25,
+        "y": 6,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 338,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "390 /privacy ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 390,
+      "language": {
+        "x": 254,
+        "y": 6,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 338,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "390 /privacy en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 390,
+      "language": {
+        "x": 246.25,
+        "y": 6,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 338,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "390 /terms ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 390,
+      "language": {
+        "x": 254,
+        "y": 6,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 338,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "390 /terms en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 390,
+      "language": {
+        "x": 246.25,
+        "y": 6,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 338,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "390 new Agents ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 390,
+      "language": {
+        "x": 254,
+        "y": 6,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 338,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "390 new Weapons ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 390,
+      "language": {
+        "x": 254,
+        "y": 6,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 338,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "390 new Agents en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 390,
+      "language": {
+        "x": 246.25,
+        "y": 6,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 338,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "390 new Weapons en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 390,
+      "language": {
+        "x": 246.25,
+        "y": 6,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 338,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "320 / ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 320,
+      "language": {
+        "x": 184,
+        "y": 6,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 268,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "320 / en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 320,
+      "language": {
+        "x": 176.25,
+        "y": 6,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 268,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "320 /players/ied-agent-allen ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 320,
+      "language": {
+        "x": 184,
+        "y": 6,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 268,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "320 /players/ied-agent-allen en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 320,
+      "language": {
+        "x": 176.25,
+        "y": 6,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 268,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "320 /players/demo-player-01 ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 320,
+      "language": {
+        "x": 184,
+        "y": 6,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 268,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "320 /players/demo-player-01 en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 320,
+      "language": {
+        "x": 176.25,
+        "y": 6,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 268,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "320 /connect ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 320,
+      "language": {
+        "x": 184,
+        "y": 6,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 268,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "320 /connect en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 320,
+      "language": {
+        "x": 176.25,
+        "y": 6,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 268,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "320 /privacy ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 320,
+      "language": {
+        "x": 184,
+        "y": 6,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 268,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "320 /privacy en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 320,
+      "language": {
+        "x": 176.25,
+        "y": 6,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 268,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "320 /terms ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 320,
+      "language": {
+        "x": 184,
+        "y": 6,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 268,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "320 /terms en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 320,
+      "language": {
+        "x": 176.25,
+        "y": 6,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 268,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "320 new Agents ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 320,
+      "language": {
+        "x": 184,
+        "y": 6,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 268,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "320 new Weapons ko",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 320,
+      "language": {
+        "x": 184,
+        "y": 6,
+        "width": 44,
+        "height": 32
+      },
+      "more": {
+        "x": 268,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "320 new Agents en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 320,
+      "language": {
+        "x": 176.25,
+        "y": 6,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 268,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "label": "320 new Weapons en",
+      "overflow": 0,
+      "mainCount": 1,
+      "width": 320,
+      "language": {
+        "x": 176.25,
+        "y": 6,
+        "width": 51.75,
+        "height": 32
+      },
+      "more": {
+        "x": 268,
+        "y": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    }
+  ],
+  "contexts": [],
+  "status": "PASS"
+}

@@ -1,0 +1,16 @@
+{
+  "phase": "before",
+  "screens": [
+    "before-1440-admin.png",
+    "before-1440-preview-missing.png",
+    "before-390-admin.png",
+    "before-390-preview-missing.png",
+    "before-1440-home.png",
+    "before-1440-insights.png",
+    "before-1440-lineups.png",
+    "before-1440-smokes.png"
+  ],
+  "checks": [],
+  "errors": [],
+  "apiRequests": []
+}

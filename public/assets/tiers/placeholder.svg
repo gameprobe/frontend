@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-label="Tier placeholder">
+  <rect width="96" height="96" rx="18" fill="#07111f"/>
+  <path d="M48 10 76 27v31L48 86 20 58V27L48 10Z" fill="#0f2135" stroke="#2dd4bf" stroke-width="3"/>
+  <path d="M48 24 64 34v18L48 68 32 52V34l16-10Z" fill="#152b43" stroke="#9fffe8" stroke-width="2"/>
+  <path d="M48 34 57 40v9l-9 9-9-9v-9l9-6Z" fill="#2dd4bf"/>
+</svg>

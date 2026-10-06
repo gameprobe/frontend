@@ -1,0 +1,170 @@
+{
+  "status": "PASS",
+  "geometry": [
+    {
+      "name": "lineups-loading",
+      "width": 1440,
+      "changed": []
+    },
+    {
+      "name": "lineups-success",
+      "width": 1440,
+      "changed": []
+    },
+    {
+      "name": "lineups-selected",
+      "width": 1440,
+      "changed": []
+    },
+    {
+      "name": "lineups-filter-empty",
+      "width": 1440,
+      "changed": []
+    },
+    {
+      "name": "lineups-empty",
+      "width": 1440,
+      "changed": []
+    },
+    {
+      "name": "lineups-failure",
+      "width": 1440,
+      "changed": []
+    },
+    {
+      "name": "smokes-example",
+      "width": 1440,
+      "changed": []
+    },
+    {
+      "name": "smokes-selected",
+      "width": 1440,
+      "changed": []
+    },
+    {
+      "name": "smokes-filter-empty",
+      "width": 1440,
+      "changed": []
+    },
+    {
+      "name": "home",
+      "width": 1440,
+      "changed": []
+    },
+    {
+      "name": "profile",
+      "width": 1440,
+      "changed": []
+    },
+    {
+      "name": "lineups-loading",
+      "width": 820,
+      "changed": []
+    },
+    {
+      "name": "lineups-success",
+      "width": 820,
+      "changed": []
+    },
+    {
+      "name": "lineups-selected",
+      "width": 820,
+      "changed": []
+    },
+    {
+      "name": "lineups-filter-empty",
+      "width": 820,
+      "changed": []
+    },
+    {
+      "name": "lineups-empty",
+      "width": 820,
+      "changed": []
+    },
+    {
+      "name": "lineups-failure",
+      "width": 820,
+      "changed": []
+    },
+    {
+      "name": "smokes-example",
+      "width": 820,
+      "changed": []
+    },
+    {
+      "name": "smokes-selected",
+      "width": 820,
+      "changed": []
+    },
+    {
+      "name": "smokes-filter-empty",
+      "width": 820,
+      "changed": []
+    },
+    {
+      "name": "lineups-loading",
+      "width": 390,
+      "changed": []
+    },
+    {
+      "name": "lineups-success",
+      "width": 390,
+      "changed": []
+    },
+    {
+      "name": "lineups-selected",
+      "width": 390,
+      "changed": []
+    },
+    {
+      "name": "lineups-filter-empty",
+      "width": 390,
+      "changed": []
+    },
+    {
+      "name": "lineups-empty",
+      "width": 390,
+      "changed": []
+    },
+    {
+      "name": "lineups-failure",
+      "width": 390,
+      "changed": []
+    },
+    {
+      "name": "smokes-example",
+      "width": 390,
+      "changed": []
+    },
+    {
+      "name": "smokes-selected",
+      "width": 390,
+      "changed": []
+    },
+    {
+      "name": "smokes-filter-empty",
+      "width": 390,
+      "changed": []
+    }
+  ],
+  "pixels": [
+    {
+      "name": "home",
+      "width": 1440,
+      "size": [
+        1440,
+        960
+      ],
+      "changedPixels": 0
+    },
+    {
+      "name": "profile",
+      "width": 1440,
+      "size": [
+        1440,
+        960
+      ],
+      "changedPixels": 0
+    }
+  ]
+}

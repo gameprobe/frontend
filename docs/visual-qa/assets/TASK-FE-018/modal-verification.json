@@ -1,0 +1,653 @@
+{
+  "task": "TASK-FE-018",
+  "stage": "Modal default with preserved inline setting",
+  "status": "PASS",
+  "environment": {
+    "baseURL": "http://127.0.0.1:3000",
+    "browser": "Playwright Chromium headless",
+    "desktop": [
+      1920,
+      960
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "deviceScaleFactor": 1,
+    "reducedMotion": "reduce"
+  },
+  "modalVerification": {
+    "groups": 50,
+    "detailGroupCount": 32,
+    "existingRegressionGroupCount": 18,
+    "checks": [
+      "desktop: Closed home/profile DOM and visual geometry unchanged",
+      "desktop: Row Enter opens one labelled modal with matching viewer",
+      "desktop: Four tabs have selected state, visible panel and no overflow",
+      "desktop: Detail keyboard arrows wrap focus and selection",
+      "desktop: Tab and Shift+Tab stay within modal",
+      "desktop: Wheel on backdrop cannot scroll background",
+      "desktop: Only content scrolls while match header and tabs stay fixed",
+      "desktop: Escape restores opening row focus and original list scroll",
+      "desktop: Rounds keyboard selection and close button preserve list state",
+      "desktop: Backdrop close restores focus and scroll",
+      "desktop: Different row opens its own match and resets selected tab",
+      "desktop: Strip opens modal without jumping to row and restores strip focus",
+      "desktop: Filters and Load more preserve detail opening",
+      "desktop: Deathmatch missing state and personal metrics remain correct",
+      "desktop: Alternate profile keeps own identity",
+      "desktop: Additional 16 viewport/tab combinations stay inside viewport",
+      "mobile: Closed home/profile DOM and visual geometry unchanged",
+      "mobile: Row Enter opens one labelled modal with matching viewer",
+      "mobile: Four tabs have selected state, visible panel and no overflow",
+      "mobile: Detail keyboard arrows wrap focus and selection",
+      "mobile: Tab and Shift+Tab stay within modal",
+      "mobile: Wheel on backdrop cannot scroll background",
+      "mobile: Only content scrolls while match header and tabs stay fixed",
+      "mobile: Escape restores opening row focus and original list scroll",
+      "mobile: Rounds keyboard selection and close button preserve list state",
+      "mobile: Mobile full-screen dialog closes by button; backdrop has no exposed area",
+      "mobile: Different row opens its own match and resets selected tab",
+      "mobile: Strip opens modal without jumping to row and restores strip focus",
+      "mobile: Filters and Load more preserve detail opening",
+      "mobile: Deathmatch missing state and personal metrics remain correct",
+      "mobile: Alternate profile keeps own identity",
+      "mobile: Mobile keyboard/table scroll reveals final HS% column",
+      "home Search hover / keyboard focus without layout shift",
+      "Home More / Escape / focus",
+      "Home search existing demo route",
+      "Overview existing IED route",
+      "profile Search hover / keyboard focus without layout shift",
+      "Profile search empty/matching/other and existing toast timeout",
+      "Profile More preserves toggle without Home Escape behavior",
+      "Footer/account destinations and Mock notice dismissal",
+      "Sticky navigation",
+      "Six profile tabs",
+      "Agent card filters nine matches",
+      "One open modal and detail tabs reset",
+      "Loss filter / reset / 20 to 23 matches",
+      "Act switch updates data",
+      "Empty state and season reset",
+      "Favorite persists with existing storage key",
+      "profile to lineups restores global shell",
+      "home to lineups restores global shell"
+    ],
+    "responsiveConditions": [
+      {
+        "width": 320,
+        "tab": "scoreboard",
+        "dialogBox": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 900
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 320,
+        "tab": "rounds",
+        "dialogBox": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 900
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 320,
+        "tab": "performance",
+        "dialogBox": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 900
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 320,
+        "tab": "analysis",
+        "dialogBox": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 900
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 768,
+        "tab": "scoreboard",
+        "dialogBox": {
+          "x": 24,
+          "y": 32,
+          "width": 720,
+          "height": 836
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 768,
+        "tab": "rounds",
+        "dialogBox": {
+          "x": 24,
+          "y": 32,
+          "width": 720,
+          "height": 836
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 768,
+        "tab": "performance",
+        "dialogBox": {
+          "x": 24,
+          "y": 32,
+          "width": 720,
+          "height": 836
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 768,
+        "tab": "analysis",
+        "dialogBox": {
+          "x": 24,
+          "y": 32,
+          "width": 720,
+          "height": 836
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 1000,
+        "tab": "scoreboard",
+        "dialogBox": {
+          "x": 24,
+          "y": 32,
+          "width": 952,
+          "height": 836
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 1000,
+        "tab": "rounds",
+        "dialogBox": {
+          "x": 24,
+          "y": 32,
+          "width": 952,
+          "height": 836
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 1000,
+        "tab": "performance",
+        "dialogBox": {
+          "x": 24,
+          "y": 32,
+          "width": 952,
+          "height": 836
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 1000,
+        "tab": "analysis",
+        "dialogBox": {
+          "x": 24,
+          "y": 32,
+          "width": 952,
+          "height": 836
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 1440,
+        "tab": "scoreboard",
+        "dialogBox": {
+          "x": 24,
+          "y": 32,
+          "width": 1392,
+          "height": 836
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 1440,
+        "tab": "rounds",
+        "dialogBox": {
+          "x": 24,
+          "y": 32,
+          "width": 1392,
+          "height": 836
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 1440,
+        "tab": "performance",
+        "dialogBox": {
+          "x": 24,
+          "y": 32,
+          "width": 1392,
+          "height": 836
+        },
+        "pageOverflow": 0
+      },
+      {
+        "width": 1440,
+        "tab": "analysis",
+        "dialogBox": {
+          "x": 24,
+          "y": 32,
+          "width": 1392,
+          "height": 836
+        },
+        "pageOverflow": 0
+      }
+    ],
+    "pageErrors": [],
+    "closedDOMComparison": [
+      {
+        "key": "desktop-home",
+        "status": "unchanged",
+        "image": "/tmp/fe018-modal-desktop-home.png"
+      },
+      {
+        "key": "desktop-profile",
+        "status": "unchanged",
+        "image": "/tmp/fe018-modal-desktop-profile.png"
+      },
+      {
+        "key": "mobile-home",
+        "status": "unchanged",
+        "image": "/tmp/fe018-modal-mobile-home.png"
+      },
+      {
+        "key": "mobile-profile",
+        "status": "unchanged",
+        "image": "/tmp/fe018-modal-mobile-profile.png"
+      }
+    ],
+    "closedScreenPixels": [
+      {
+        "name": "desktop-home",
+        "beforeSize": [
+          1920,
+          1076
+        ],
+        "afterSize": [
+          1920,
+          1076
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "name": "desktop-profile",
+        "beforeSize": [
+          1920,
+          4408
+        ],
+        "afterSize": [
+          1920,
+          4408
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "name": "mobile-home",
+        "beforeSize": [
+          390,
+          1486
+        ],
+        "afterSize": [
+          390,
+          1486
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "name": "mobile-profile",
+        "beforeSize": [
+          390,
+          7388
+        ],
+        "afterSize": [
+          390,
+          7388
+        ],
+        "identical": true,
+        "differenceBox": null
+      }
+    ],
+    "accessibilityChanges": [],
+    "measurements": {
+      "desktop-focus": {
+        "first": "<button type=\"button\" class=\"MatchDetailTheme_closeButton___B356\" aria-label=\"경기 상세 닫기\" data-detail-close=\"true\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"m6 6 12 12M18 6 6 18\"></path></svg></button>",
+        "last": "<div class=\"scoreboard-table\" role=\"table\" tabindex=\"0\" aria-label=\"상대 팀 스코어보드\"><div class=\"scoreboard-row scoreboard-heading\" role=\"row\"><span role=\"columnheader\">플레이어</span><span role=\"columnheader\">K / D / A</span><span role=\"columnheader\">ACS</span><span role=\"columnheader\">FK</span><span role=\"columnheader\">FD</span><span role=\"columnheader\">K/D Ratio</span><span role=\"columnheader\">ADR</span><span role=\"columnheader\">HS%</span></div><div class=\"scoreboard-row\" role=\"row\"><span class=\"scoreboard-player\" role=\"cell\"><img alt=\"표본 요원 요원 이미지\" loading=\"lazy\" width=\"28\" height=\"28\" decoding=\"async\" data-nimg=\"1\" src=\"/assets/agents/placeholder.svg\" style=\"color: transparent;\"><span class=\"scoreboard-player-name\">Mock Opponent 4#MOCK</span><span class=\"scoreboard-mvp-badge\">MVP</span></span><span data-label=\"KDA\" role=\"cell\">14/9/4</span><span class=\"scoreboard-primary-metric\" data-label=\"ACS\" role=\"cell\">310</span><span class=\"scoreboard-first-kill\" data-label=\"FK\" role=\"cell\" title=\"첫 킬 기록 미제공\">—</span><span class=\"scoreboard-first-death\" data-label=\"FD\" role=\"cell\" title=\"첫 데스 기록 미제공\">—</span><span data-label=\"K/D Ratio\" role=\"cell\">1.56</span><span data-label=\"ADR\" role=\"cell\">86</span><span data-label=\"HS%\" role=\"cell\">33%</span></div><div class=\"scoreboard-row\" role=\"row\"><span class=\"scoreboard-player\" role=\"cell\"><img alt=\"표본 요원 요원 이미지\" loading=\"lazy\" width=\"28\" height=\"28\" decoding=\"async\" data-nimg=\"1\" src=\"/assets/agents/placeholder.svg\" style=\"color: transparent;\"><span class=\"scoreboard-player-name\">Mock Opponent 1#MOCK</span></span><span data-label=\"KDA\" role=\"cell\">15/10/8</span><span class=\"scoreboard-primary-metric\" data-label=\"ACS\" role=\"cell\">302</span><span class=\"scoreboard-first-kill\" data-label=\"FK\" role=\"cell\" title=\"첫 킬 기록 미제공\">—</span><span class=\"scoreboard-first-death\" data-label=\"FD\" role=\"cell\" title=\"첫 데스 기록 미제공\">—</span><span data-label=\"K/D Ratio\" role=\"cell\">1.50</span><span data-label=\"ADR\" role=\"cell\">136</span><span data-label=\"HS%\" role=\"cell\">13%</span></div><div class=\"scoreboard-row\" role=\"row\"><span class=\"scoreboard-player\" role=\"cell\"><img alt=\"표본 요원 요원 이미지\" loading=\"lazy\" width=\"28\" height=\"28\" decoding=\"async\" data-nimg=\"1\" src=\"/assets/agents/placeholder.svg\" style=\"color: transparent;\"><span class=\"scoreboard-player-name\">Mock Opponent 3#MOCK</span></span><span data-label=\"KDA\" role=\"cell\">13/9/8</span><span class=\"scoreboard-primary-metric\" data-label=\"ACS\" role=\"cell\">271</span><span class=\"scoreboard-first-kill\" data-label=\"FK\" role=\"cell\" title=\"첫 킬 기록 미제공\">—</span><span class=\"scoreboard-first-death\" data-label=\"FD\" role=\"cell\" title=\"첫 데스 기록 미제공\">—</span><span data-label=\"K/D Ratio\" role=\"cell\">1.44</span><span data-label=\"ADR\" role=\"cell\">167</span><span data-label=\"HS%\" role=\"cell\">41%</span></div><div class=\"scoreboard-row\" role=\"row\"><span class=\"scoreboard-player\" role=\"cell\"><img alt=\"표본 요원 요원 이미지\" loading=\"lazy\" width=\"28\" height=\"28\" decoding=\"async\" data-nimg=\"1\" src=\"/assets/agents/placeholder.svg\" style=\"color: transparent;\"><span class=\"scoreboard-player-name\">Mock Opponent 2#MOCK</span></span><span data-label=\"KDA\" role=\"cell\">13/11/0</span><span class=\"scoreboard-primary-metric\" data-label=\"ACS\" role=\"cell\">249</span><span class=\"scoreboard-first-kill\" data-label=\"FK\" role=\"cell\" title=\"첫 킬 기록 미제공\">—</span><span class=\"scoreboard-first-death\" data-label=\"FD\" role=\"cell\" title=\"첫 데스 기록 미제공\">—</span><span data-label=\"K/D Ratio\" role=\"cell\">1.18</span><span data-label=\"ADR\" role=\"cell\">127</span><span data-label=\"HS%\" role=\"cell\">19%</span></div><div class=\"scoreboard-row\" role=\"row\"><span class=\"scoreboard-player\" role=\"cell\"><img alt=\"표본 요원 요원 이미지\" loading=\"lazy\" width=\"28\" height=\"28\" decoding=\"async\" data-nimg=\"1\" src=\"/assets/agents/placeholder.svg\" style=\"color: transparent;\"><span class=\"scoreboard-player-name\">Mock Opponent 5#MOCK</span></span><span data-label=\"KDA\" role=\"cell\">15/9/8</span><span class=\"scoreboard-primary-metric\" data-label=\"ACS\" role=\"cell\">165</span><span class=\"scoreboard-first-kill\" data-label=\"FK\" role=\"cell\" title=\"첫 킬 기록 미제공\">—</span><span class=\"scoreboard-first-death\" data-label=\"FD\" role=\"cell\" title=\"첫 데스 기록 미제공\">—</span><span data-label=\"K/D Ratio\" role=\"cell\">1.67</span><span data-label=\"ADR\" role=\"cell\">214</span><span data-label=\"HS%\" role=\"cell\">19%</span></div></div>",
+        "count": 5
+      },
+      "desktop-locked": {
+        "scrollY": 1410,
+        "bodyPosition": "static",
+        "bodyOverflow": "hidden",
+        "htmlOverflow": "hidden"
+      },
+      "mobile-focus": {
+        "first": "<button type=\"button\" class=\"MatchDetailTheme_closeButton___B356\" aria-label=\"경기 상세 닫기\" data-detail-close=\"true\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"m6 6 12 12M18 6 6 18\"></path></svg></button>",
+        "last": "<div class=\"scoreboard-table\" role=\"table\" tabindex=\"0\" aria-label=\"상대 팀 스코어보드\"><div class=\"scoreboard-row scoreboard-heading\" role=\"row\"><span role=\"columnheader\">플레이어</span><span role=\"columnheader\">K / D / A</span><span role=\"columnheader\">ACS</span><span role=\"columnheader\">FK</span><span role=\"columnheader\">FD</span><span role=\"columnheader\">K/D Ratio</span><span role=\"columnheader\">ADR</span><span role=\"columnheader\">HS%</span></div><div class=\"scoreboard-row\" role=\"row\"><span class=\"scoreboard-player\" role=\"cell\"><img alt=\"표본 요원 요원 이미지\" loading=\"lazy\" width=\"28\" height=\"28\" decoding=\"async\" data-nimg=\"1\" src=\"/assets/agents/placeholder.svg\" style=\"color: transparent;\"><span class=\"scoreboard-player-name\">Mock Opponent 4#MOCK</span><span class=\"scoreboard-mvp-badge\">MVP</span></span><span data-label=\"KDA\" role=\"cell\">14/9/4</span><span class=\"scoreboard-primary-metric\" data-label=\"ACS\" role=\"cell\">310</span><span class=\"scoreboard-first-kill\" data-label=\"FK\" role=\"cell\" title=\"첫 킬 기록 미제공\">—</span><span class=\"scoreboard-first-death\" data-label=\"FD\" role=\"cell\" title=\"첫 데스 기록 미제공\">—</span><span data-label=\"K/D Ratio\" role=\"cell\">1.56</span><span data-label=\"ADR\" role=\"cell\">86</span><span data-label=\"HS%\" role=\"cell\">33%</span></div><div class=\"scoreboard-row\" role=\"row\"><span class=\"scoreboard-player\" role=\"cell\"><img alt=\"표본 요원 요원 이미지\" loading=\"lazy\" width=\"28\" height=\"28\" decoding=\"async\" data-nimg=\"1\" src=\"/assets/agents/placeholder.svg\" style=\"color: transparent;\"><span class=\"scoreboard-player-name\">Mock Opponent 1#MOCK</span></span><span data-label=\"KDA\" role=\"cell\">15/10/8</span><span class=\"scoreboard-primary-metric\" data-label=\"ACS\" role=\"cell\">302</span><span class=\"scoreboard-first-kill\" data-label=\"FK\" role=\"cell\" title=\"첫 킬 기록 미제공\">—</span><span class=\"scoreboard-first-death\" data-label=\"FD\" role=\"cell\" title=\"첫 데스 기록 미제공\">—</span><span data-label=\"K/D Ratio\" role=\"cell\">1.50</span><span data-label=\"ADR\" role=\"cell\">136</span><span data-label=\"HS%\" role=\"cell\">13%</span></div><div class=\"scoreboard-row\" role=\"row\"><span class=\"scoreboard-player\" role=\"cell\"><img alt=\"표본 요원 요원 이미지\" loading=\"lazy\" width=\"28\" height=\"28\" decoding=\"async\" data-nimg=\"1\" src=\"/assets/agents/placeholder.svg\" style=\"color: transparent;\"><span class=\"scoreboard-player-name\">Mock Opponent 3#MOCK</span></span><span data-label=\"KDA\" role=\"cell\">13/9/8</span><span class=\"scoreboard-primary-metric\" data-label=\"ACS\" role=\"cell\">271</span><span class=\"scoreboard-first-kill\" data-label=\"FK\" role=\"cell\" title=\"첫 킬 기록 미제공\">—</span><span class=\"scoreboard-first-death\" data-label=\"FD\" role=\"cell\" title=\"첫 데스 기록 미제공\">—</span><span data-label=\"K/D Ratio\" role=\"cell\">1.44</span><span data-label=\"ADR\" role=\"cell\">167</span><span data-label=\"HS%\" role=\"cell\">41%</span></div><div class=\"scoreboard-row\" role=\"row\"><span class=\"scoreboard-player\" role=\"cell\"><img alt=\"표본 요원 요원 이미지\" loading=\"lazy\" width=\"28\" height=\"28\" decoding=\"async\" data-nimg=\"1\" src=\"/assets/agents/placeholder.svg\" style=\"color: transparent;\"><span class=\"scoreboard-player-name\">Mock Opponent 2#MOCK</span></span><span data-label=\"KDA\" role=\"cell\">13/11/0</span><span class=\"scoreboard-primary-metric\" data-label=\"ACS\" role=\"cell\">249</span><span class=\"scoreboard-first-kill\" data-label=\"FK\" role=\"cell\" title=\"첫 킬 기록 미제공\">—</span><span class=\"scoreboard-first-death\" data-label=\"FD\" role=\"cell\" title=\"첫 데스 기록 미제공\">—</span><span data-label=\"K/D Ratio\" role=\"cell\">1.18</span><span data-label=\"ADR\" role=\"cell\">127</span><span data-label=\"HS%\" role=\"cell\">19%</span></div><div class=\"scoreboard-row\" role=\"row\"><span class=\"scoreboard-player\" role=\"cell\"><img alt=\"표본 요원 요원 이미지\" loading=\"lazy\" width=\"28\" height=\"28\" decoding=\"async\" data-nimg=\"1\" src=\"/assets/agents/placeholder.svg\" style=\"color: transparent;\"><span class=\"scoreboard-player-name\">Mock Opponent 5#MOCK</span></span><span data-label=\"KDA\" role=\"cell\">15/9/8</span><span class=\"scoreboard-primary-metric\" data-label=\"ACS\" role=\"cell\">165</span><span class=\"scoreboard-first-kill\" data-label=\"FK\" role=\"cell\" title=\"첫 킬 기록 미제공\">—</span><span class=\"scoreboard-first-death\" data-label=\"FD\" role=\"cell\" title=\"첫 데스 기록 미제공\">—</span><span data-label=\"K/D Ratio\" role=\"cell\">1.67</span><span data-label=\"ADR\" role=\"cell\">214</span><span data-label=\"HS%\" role=\"cell\">19%</span></div></div>",
+        "count": 5
+      },
+      "mobile-locked": {
+        "scrollY": 1906,
+        "bodyPosition": "static",
+        "bodyOverflow": "hidden",
+        "htmlOverflow": "hidden"
+      }
+    }
+  },
+  "inlineRestorationVerification": {
+    "groups": 22,
+    "checks": [
+      "desktop: Home and closed profile DOM/styles/positions unchanged",
+      "desktop: Four detail tabs, unique ARIA linkage and Mock notice",
+      "desktop: Arrow keys switch and wrap detail tabs with focus",
+      "desktop: Round selector keyboard updates selection",
+      "desktop: Viewer row matches selected player and scoreboard columns remain scrollable",
+      "desktop: Close/reopen and different row reset to scoreboard",
+      "desktop: Recent strip opens target and resets detail tab",
+      "desktop: Match filter closes detail and resets displayed rows",
+      "desktop: Profile tab closes detail and Load more rows retain detail support",
+      "desktop: Deathmatch tabs show explicit missing data and personal metrics without fabricated team table",
+      "desktop: Other profile keeps its own viewer identity in detail",
+      "mobile: Home and closed profile DOM/styles/positions unchanged",
+      "mobile: Four detail tabs, unique ARIA linkage and Mock notice",
+      "mobile: Arrow keys switch and wrap detail tabs with focus",
+      "mobile: Round selector keyboard updates selection",
+      "mobile: Viewer row matches selected player and scoreboard columns remain scrollable",
+      "mobile: Close/reopen and different row reset to scoreboard",
+      "mobile: Recent strip opens target and resets detail tab",
+      "mobile: Match filter closes detail and resets displayed rows",
+      "mobile: Profile tab closes detail and Load more rows retain detail support",
+      "mobile: Deathmatch tabs show explicit missing data and personal metrics without fabricated team table",
+      "mobile: Other profile keeps its own viewer identity in detail"
+    ],
+    "responsiveConditions": [
+      {
+        "width": 320,
+        "tab": "scoreboard",
+        "pageOverflow": 0
+      },
+      {
+        "width": 320,
+        "tab": "rounds",
+        "pageOverflow": 0
+      },
+      {
+        "width": 320,
+        "tab": "performance",
+        "pageOverflow": 0
+      },
+      {
+        "width": 320,
+        "tab": "analysis",
+        "pageOverflow": 0
+      },
+      {
+        "width": 768,
+        "tab": "scoreboard",
+        "pageOverflow": 0
+      },
+      {
+        "width": 768,
+        "tab": "rounds",
+        "pageOverflow": 0
+      },
+      {
+        "width": 768,
+        "tab": "performance",
+        "pageOverflow": 0
+      },
+      {
+        "width": 768,
+        "tab": "analysis",
+        "pageOverflow": 0
+      },
+      {
+        "width": 1000,
+        "tab": "scoreboard",
+        "pageOverflow": 0
+      },
+      {
+        "width": 1000,
+        "tab": "rounds",
+        "pageOverflow": 0
+      },
+      {
+        "width": 1000,
+        "tab": "performance",
+        "pageOverflow": 0
+      },
+      {
+        "width": 1000,
+        "tab": "analysis",
+        "pageOverflow": 0
+      },
+      {
+        "width": 1440,
+        "tab": "scoreboard",
+        "pageOverflow": 0
+      },
+      {
+        "width": 1440,
+        "tab": "rounds",
+        "pageOverflow": 0
+      },
+      {
+        "width": 1440,
+        "tab": "performance",
+        "pageOverflow": 0
+      },
+      {
+        "width": 1440,
+        "tab": "analysis",
+        "pageOverflow": 0
+      }
+    ],
+    "pageErrors": [],
+    "closedDOMComparison": [
+      {
+        "name": "desktop-home",
+        "status": "unchanged"
+      },
+      {
+        "name": "desktop-profile",
+        "status": "unchanged"
+      },
+      {
+        "name": "mobile-home",
+        "status": "unchanged"
+      },
+      {
+        "name": "mobile-profile",
+        "status": "unchanged"
+      }
+    ],
+    "detailPixels": [
+      {
+        "name": "after-inline-restored-desktop-scoreboard.png",
+        "beforeSize": [
+          1072,
+          1173
+        ],
+        "afterSize": [
+          1072,
+          1173
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "name": "after-inline-restored-desktop-performance.png",
+        "beforeSize": [
+          1072,
+          1095
+        ],
+        "afterSize": [
+          1072,
+          1095
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "name": "after-inline-restored-mobile-scoreboard.png",
+        "beforeSize": [
+          350,
+          1244
+        ],
+        "afterSize": [
+          350,
+          1244
+        ],
+        "identical": true,
+        "differenceBox": null
+      },
+      {
+        "name": "after-inline-restored-mobile-performance.png",
+        "beforeSize": [
+          350,
+          1643
+        ],
+        "afterSize": [
+          350,
+          1643
+        ],
+        "identical": true,
+        "differenceBox": null
+      }
+    ],
+    "images": [
+      "after-inline-restored-desktop-scoreboard.png",
+      "after-inline-restored-desktop-performance.png",
+      "after-inline-restored-mobile-scoreboard.png",
+      "after-inline-restored-mobile-performance.png"
+    ]
+  },
+  "configurationRestoration": {
+    "status": "PASS",
+    "file": "frontend/src/features/tracker-profile/match-history/detail/presentation.ts",
+    "finalSetting": "modal",
+    "sequence": [
+      "modal final browser checks and captures",
+      "root temporarily set inline",
+      "inline browser checks and four exact pixel comparisons",
+      "root restored modal before final production build"
+    ],
+    "verification": "Read final source configuration after root restoration; no application code changed by QA agent."
+  },
+  "beforeModal": {
+    "captures": [
+      "before-modal-desktop-scoreboard.png",
+      "before-modal-desktop-performance.png",
+      "before-modal-mobile-scoreboard.png",
+      "before-modal-mobile-performance.png"
+    ],
+    "captureCount": 4,
+    "sourceHashes": {
+      "frontend/src/features/tracker-profile/TrackerProfile.tsx": "bfdc3c83ba60e7a2cad75448c8a11ceb9002d25c37cd60d32e0f8fb5df0451d0",
+      "frontend/src/features/tracker-profile/match-history/MatchHistory.tsx": "547ac129a1a1820977b31c26738e71421be9e3579100de87d97c4fd1e51d3181",
+      "frontend/src/features/tracker-profile/match-history/MatchRow.tsx": "df762ac34bad67faa37a7766fe545346a64a36698e113ce1705f7d0232aa191d",
+      "frontend/src/features/tracker-profile/match-history/MatchDetail.tsx": "3d48ebb3777f4a8a54cec55358277ec90c45f9a7cac33e7750665872a73bf908",
+      "frontend/src/features/tracker-profile/match-history/detail/DetailedMatchPanel.tsx": "160ac24072632797f3e9389af12770829381e7e38c023f14c6c4320cff1f1b29"
+    },
+    "pageErrors": [],
+    "preservedOriginalImages": 29
+  },
+  "afterModal": {
+    "captures": [
+      "after-modal-desktop-scoreboard.png",
+      "after-modal-desktop-rounds.png",
+      "after-modal-desktop-performance.png",
+      "after-modal-desktop-analysis.png",
+      "after-modal-desktop-content-scrolled.png",
+      "after-modal-desktop-deathmatch.png",
+      "after-modal-mobile-scoreboard.png",
+      "after-modal-mobile-rounds.png",
+      "after-modal-mobile-performance.png",
+      "after-modal-mobile-analysis.png",
+      "after-modal-mobile-content-scrolled.png",
+      "after-modal-mobile-deathmatch.png",
+      "after-modal-mobile-scoreboard-scrolled.png",
+      "after-modal-home-keyboard-focus.png",
+      "after-modal-profile-keyboard-focus.png"
+    ],
+    "captureCount": 15,
+    "finalFocusFixIncluded": true
+  },
+  "qualitativeReview": {
+    "status": "PASS",
+    "reviewedImages": [
+      "after-modal-desktop-scoreboard.png",
+      "after-modal-desktop-rounds.png",
+      "after-modal-desktop-performance.png",
+      "after-modal-desktop-analysis.png",
+      "after-modal-desktop-content-scrolled.png",
+      "after-modal-desktop-deathmatch.png",
+      "after-modal-mobile-scoreboard.png",
+      "after-modal-mobile-rounds.png",
+      "after-modal-mobile-performance.png",
+      "after-modal-mobile-analysis.png",
+      "after-modal-mobile-content-scrolled.png",
+      "after-modal-mobile-deathmatch.png",
+      "after-modal-mobile-scoreboard-scrolled.png"
+    ],
+    "observations": [
+      "Desktop 1920x960 modal displays both scoreboard teams and all 10 rows without vertical table clipping.",
+      "Mobile dialog fills the viewport. Its header, notice, tabs and footnote stay fixed while only the active panel scrolls.",
+      "Internal vertical scroll intentionally clips content at the panel edges; bottom matchup and weapon sections remain reachable.",
+      "Mobile scoreboard horizontally scrolls within each table; the final HS% column is reachable and visible.",
+      "No new overlapping headings, broken layout, or page-level horizontal overflow was observed across four tabs.",
+      "Rounds with missing coordinate events shows a message rather than a fabricated map. Deathmatch shows the missing-detail reason and correct personal metrics.",
+      "The modal intentionally changes presentation. Restored inline scoreboard and performance screenshots are pixel-identical to the four before-modal captures."
+    ]
+  },
+  "debuggingFeedback": [
+    {
+      "finding": "Native dialog Tab from the last item and Shift+Tab from the first item briefly moved document.activeElement to BODY/browser chrome.",
+      "resolution": "Root added explicit visible enabled tabbable boundary wrapping in dialog onKeyDown.",
+      "verification": "Full final 32 modal groups rerun after the fix; Tab and Shift+Tab boundaries passed on desktop and mobile."
+    }
+  ],
+  "testSetupNotes": [
+    "Mobile full-viewport dialog has no exposed backdrop. Desktop backdrop dismissal is tested; mobile uses close button/Escape, both with focus and scroll restoration.",
+    "An independent preview continued unrelated checks while the identified focus boundary issue was being fixed. It is not the final pass evidence; the final complete script included the focus assertions."
+  ],
+  "limitations": [
+    "Browser verification covers Chromium. Safari/Firefox and real touch devices were not run.",
+    "Mock data semantics and build/type/lint results are separately recorded by the parent implementation task.",
+    "Original inline-stage verification.json and 29 PNG assets remain untouched."
+  ],
+  "artifactCounts": {
+    "pngTotal": 52,
+    "originalStagePNG": 29,
+    "beforeModalPNG": 4,
+    "afterModalPNG": 15,
+    "inlineRestoredPNG": 4
+  },
+  "commands": [
+    "node /tmp/fe018-modal-before.cjs",
+    "node /tmp/fe018-modal-after.cjs",
+    "node /tmp/fe018-modal-regressions.cjs",
+    "node /tmp/fe018-inline-regressions.cjs",
+    "node /tmp/fe018-inline-restored.cjs",
+    "python3 /tmp/fe018-modal-results.py"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "layout": {
+    "widthChecks": 26,
+    "differences": [],
+    "errors": []
+  },
+  "pixels": [
+    {
+      "screen": "home-desktop",
+      "size": [
+        1920,
+        1076
+      ],
+      "differenceBounds": null
+    },
+    {
+      "screen": "home-mobile",
+      "size": [
+        390,
+        1486
+      ],
+      "differenceBounds": null
+    },
+    {
+      "screen": "profile-desktop",
+      "size": [
+        1920,
+        4408
+      ],
+      "differenceBounds": null
+    },
+    {
+      "screen": "profile-matches",
+      "size": [
+        1920,
+        960
+      ],
+      "differenceBounds": null
+    },
+    {
+      "screen": "profile-mobile",
+      "size": [
+        390,
+        7388
+      ],
+      "differenceBounds": null
+    }
+  ],
+  "interactions": {
+    "checks": [
+      "Home More / Escape / focus",
+      "Home search existing demo route",
+      "Overview existing IED route",
+      "Six profile tabs",
+      "Agent card filters nine matches",
+      "One expanded match and detail tabs reset",
+      "Loss filter / reset / 20 to 23 matches",
+      "Act switch updates data",
+      "Empty state and season reset",
+      "Favorite persists with existing storage key",
+      "profile to lineups restores global shell",
+      "home to lineups restores global shell"
+    ],
+    "errors": []
+  }
+}

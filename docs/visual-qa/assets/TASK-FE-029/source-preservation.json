@@ -1,0 +1,58 @@
+{
+  "baseline": "c469a68",
+  "checks": [
+    {
+      "file": "frontend/src/lib/lineup-api.ts",
+      "unchanged": true
+    },
+    {
+      "file": "frontend/src/types/lineup.ts",
+      "unchanged": true
+    },
+    {
+      "file": "frontend/src/types/smoke.ts",
+      "unchanged": true
+    },
+    {
+      "file": "frontend/src/lib/smoke-data.ts",
+      "unchanged": true
+    },
+    {
+      "file": "frontend/src/data/mock-lineups.json",
+      "unchanged": true
+    },
+    {
+      "file": "frontend/src/app/globals.css",
+      "unchanged": true
+    },
+    {
+      "file": "frontend/src/features/stats-shell/theme.module.css",
+      "unchanged": true
+    },
+    {
+      "file": "frontend/src/features/stats-shell/navigation.ts",
+      "unchanged": true
+    },
+    {
+      "file": "frontend/src/features/stats-shell/StatsHeader.tsx",
+      "unchanged": true
+    },
+    {
+      "file": "frontend/src/features/stats-shell/StatsShell.tsx",
+      "unchanged": true
+    },
+    {
+      "file": "frontend/src/features/stats-shell/StatsFooter.tsx",
+      "unchanged": true
+    },
+    {
+      "file": "frontend/src/features/stats-shell/locale.tsx",
+      "unchanged": true
+    },
+    {
+      "file": "frontend/package.json",
+      "unchanged": true
+    }
+  ],
+  "status": "PASS"
+}
