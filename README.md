@@ -44,7 +44,7 @@ Node 버전은 [.nvmrc](.nvmrc), Docker 빌드의 Node/npm 버전은 [Dockerfile
 
 ```text
 frontend/
-├── .github/workflows/   # main 업데이트 시 Docker Hub 이미지 업로드
+├── .github/             # 이미지 게시 워크플로와 deploy 이미지 갱신 스크립트
 ├── public/              # 맵·요원 이미지 등 정적 자산
 ├── src/
 │   ├── app/             # 페이지와 라우팅
@@ -239,12 +239,13 @@ GitHub **frontend 저장소 → Settings → Secrets and variables → Actions �
 |------|----|
 | `DOCKERHUB_USERNAME` | `seocj` |
 | `DOCKERHUB_TOKEN` | Docker Hub의 Read & Write 권한 토큰 |
+| `DEPLOY_REPO_TOKEN` | `gameprobe/deploy` 수정·PR 생성용 GitHub fine-grained PAT. 아래 설정 참고 |
 
 실제 백엔드를 연결할 때는 같은 화면의 **Variables → New repository variable**에서
 `NEXT_PUBLIC_BACKEND_URL`을 브라우저에서 접근 가능한 공개 API 주소로 등록합니다.
 아직 백엔드가 없으면 생략합니다. 빈 값으로 빌드되며 위 표의 예시 화면 범위로 동작합니다.
 Secret과 Variable은 조직 공통 설정이 아닌 이 프론트 저장소에 등록합니다.
-토큰은 로그인 단계에서만 사용하며 이미지 빌드 인수로 전달하지 않습니다.
+Docker Hub 토큰은 로그인 단계에서 사용하고, `DEPLOY_REPO_TOKEN`은 이미지 게시 이후 별도 PR 작업에서만 사용합니다. 토큰은 이미지 빌드 인수로 전달하지 않습니다.
 
 워크플로 파일이 `main`에 반영되면 첫 자동 실행이 시작됩니다.
 GitHub **Actions → Publish frontend image**에서 실행 결과를 확인합니다.
@@ -268,17 +269,60 @@ GitHub Actions 빌드는 비공개 저장소 플랜의 Actions 사용량에 포�
 참고: [GitHub Docker 업로드 안내](https://docs.github.com/en/actions/tutorials/publish-packages/publish-docker-images),
 [비공개 저장소 ARM64 러너 지원](https://github.blog/changelog/2026-01-29-arm64-standard-runners-are-now-available-in-private-repositories/).
 
-### k3s 배포 연결
+### deploy 이미지 갱신 PR과 k3s 배포
 
-이미지 업로드 이후 `gameprobe/deploy` 매니페스트와 Argo CD 연결은 별도 작업입니다.
-이미지를 업로드하는 것만으로 실행 중인 k3s 앱이 갱신되지는 않습니다.
+이미지 게시가 성공하면 후속 job이 `gameprobe/deploy`의 `main`을 가져와
+`apps/frontend/kustomization.yaml`의 이미지 **digest**와 원본 프론트 커밋 주석을 갱신합니다.
+고정 브랜치 `codex/frontend-image-update`에서 `deploy/main`을 대상으로 PR을 만들며,
+아직 열려 있는 PR이 있으면 최신 이미지로 갱신합니다. 이미 digest와 소스 커밋이 모두 동일하면 PR을 만들지 않습니다.
+따라서 배포 PR이 열려 있는 동안 새 이미지가 게시되면 해당 PR의 배포 대상도 바뀝니다.
 
-1. 이 저장소의 GitHub Actions에서 프론트 이미지를 빌드하고 Docker Hub에 업로드합니다.
-2. 별도 `gameprobe/deploy` 저장소의 프론트 매니페스트에 업로드된 이미지 digest를 반영합니다.
-3. Argo CD가 해당 Git 변경을 동기화하도록 구성하여 k3s에 배포합니다.
+```text
+frontend 기능 브랜치 → dev → main 병합
+  → Docker Hub 이미지 게시
+  → deploy 이미지 갱신 PR 생성 또는 갱신
+  → 사람이 deploy PR 확인·병합
+  → Argo CD 자동 Sync → k3s 프론트 갱신
+```
 
-k3s 배포용 매니페스트는 `gameprobe/deploy`에서 관리하고,
-로컬 개발용 `compose.yaml`과 프론트 Dockerfile은 이 저장소에서 관리합니다.
+Argo CD는 `deploy`의 Git 변경을 감지합니다. Docker Hub 업로드만으로 배포되지는 않습니다.
+워크플로는 `deploy/main`에 직접 push하거나 PR을 자동 병합하지 않습니다.
+이미 지난 frontend/main 커밋의 실행을 재시도하면 PR 갱신을 건너뜁니다.
+
+#### 처음 한 번 필요한 GitHub 인증 설정
+
+Argo CD에 등록한 **읽기 전용 토큰은 그대로 유지**합니다. PR 작성용 토큰을 별도로 만듭니다.
+
+1. GitHub 개인 프로필 → **Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token**으로 이동합니다.
+2. 이름은 예를 들어 `gameprobe-frontend-deploy-pr`로 정합니다. 만료일은 관리 가능한 기간으로 선택하며 조직 정책이 허용하면 `No expiration`도 선택할 수 있습니다. 만료되면 새 토큰으로 Secret을 갱신해야 합니다.
+3. **Resource owner: gameprobe**, **Repository access: Only select repositories → deploy**를 선택합니다.
+4. **Repository permissions**에서 **Contents: Read and write**, **Pull requests: Read and write**를 지정합니다. Metadata 읽기 권한은 자동 포함됩니다. 조직 승인 대기 상태라면 승인을 먼저 완료합니다.
+5. 생성한 값을 **gameprobe/frontend → Settings → Secrets and variables → Actions → New repository secret**에 이름 `DEPLOY_REPO_TOKEN`으로 등록합니다.
+
+기본 `GITHUB_TOKEN`은 frontend 저장소 범위이므로 다른 비공개 저장소인 deploy에 PR을 만들 수 없습니다.
+이 워크플로의 기본 권한은 계속 `contents: read`이며, deploy 토큰에 frontend 접근 권한은 필요하지 않습니다.
+토큰 값을 소스 파일이나 PR 본문에 넣지 않습니다.
+
+#### 반영과 실행 확인
+
+1. 위 Secret을 등록하고 이 저장소의 변경을 `dev`를 거쳐 `main`에 병합합니다.
+2. **Actions → Publish frontend image**에서 `publish`와 `Propose deployment image update` 두 job의 결과를 확인합니다.
+3. 실행 Summary에 표시된 배포 PR에서 digest와 소스 커밋을 확인한 뒤 `deploy/main`으로 병합합니다.
+4. Argo CD `gameprobe-frontend`에서 해당 deploy 커밋이 `Synced`이고 앱이 `Healthy`인지 확인합니다.
+
+자동 Sync 활성화는 [deploy README](https://github.com/gameprobe/deploy#readme)의 순서로 먼저 진행합니다.
+`argocd/frontend-application.yaml`은 앱이 추적하는 `apps/frontend` 밖에 있으므로,
+등록 YAML의 자동 Sync 설정 변경은 Git push에 이어 기존 Application에 `kubectl apply`로 반영해야 합니다.
+자동 Sync 설정을 반영하기 전에는 기존처럼 수동 Sync가 필요합니다.
+
+이미지는 올라갔는데 PR job만 실패했다면 인증·권한 등을 수정한 뒤 해당 실행의 **Re-run failed jobs**를 선택합니다.
+이미 성공한 이미지 빌드까지 다시 실행할 필요는 없습니다. 이후 main이 바뀌었다면 이전 실행은 건너뛰므로 최신 main의 실행 결과를 확인합니다.
+이 안내의 로컬 검증만으로는 실제 토큰 접근, GitHub PR 생성 또는 클러스터 배포까지 확인된 것이 아닙니다.
+
+k3s 매니페스트는 `gameprobe/deploy`, 로컬 개발용 Compose와 Dockerfile은 이 저장소에서 관리합니다.
+참고: [GitHub PAT 설정](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens),
+[배포 PR 액션](https://github.com/peter-evans/create-pull-request),
+[Argo CD 자동 Sync](https://argo-cd.readthedocs.io/en/stable/user-guide/auto_sync/).
 
 ## 라이선스
 
