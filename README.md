@@ -44,6 +44,7 @@ Node 버전은 [.nvmrc](.nvmrc), Docker 빌드의 Node/npm 버전은 [Dockerfile
 
 ```text
 frontend/
+├── .github/workflows/   # main 업데이트 시 Docker Hub 이미지 업로드
 ├── public/              # 맵·요원 이미지 등 정적 자산
 ├── src/
 │   ├── app/             # 페이지와 라우팅
@@ -224,14 +225,57 @@ docker build --platform linux/arm64 \
 [Next.js 14 배포 안내](https://nextjs.org/docs/14/app/building-your-application/deploying#image-optimization)를 참고하세요.
 이미지 캐시를 쓰므로 `.next`에는 실행 사용자의 쓰기 권한이 필요합니다.
 
+### GitHub Actions로 Docker Hub에 업로드
+
+[Publish frontend image](.github/workflows/docker-publish.yml) 워크플로는 `main`에 push되거나
+PR이 병합되면 기존 운영 Dockerfile로 `linux/arm64` 이미지를 빌드하고
+공개 Docker Hub 저장소 `seocj/gameprobe-frontend`에 업로드합니다.
+`dev` push와 PR 생성만으로는 이 워크플로를 실행하지 않습니다.
+
+GitHub **frontend 저장소 → Settings → Secrets and variables → Actions → Secrets**에
+다음 Repository secrets를 등록합니다.
+
+| 이름 | 값 |
+|------|----|
+| `DOCKERHUB_USERNAME` | `seocj` |
+| `DOCKERHUB_TOKEN` | Docker Hub의 Read & Write 권한 토큰 |
+
+실제 백엔드를 연결할 때는 같은 화면의 **Variables → New repository variable**에서
+`NEXT_PUBLIC_BACKEND_URL`을 브라우저에서 접근 가능한 공개 API 주소로 등록합니다.
+아직 백엔드가 없으면 생략합니다. 빈 값으로 빌드되며 위 표의 예시 화면 범위로 동작합니다.
+Secret과 Variable은 조직 공통 설정이 아닌 이 프론트 저장소에 등록합니다.
+토큰은 로그인 단계에서만 사용하며 이미지 빌드 인수로 전달하지 않습니다.
+
+워크플로 파일이 `main`에 반영되면 첫 자동 실행이 시작됩니다.
+GitHub **Actions → Publish frontend image**에서 실행 결과를 확인합니다.
+다시 빌드하려면 **Run workflow → Branch: main → Run workflow**를 선택합니다.
+다른 브랜치를 선택한 수동 실행은 업로드 작업을 건너뜁니다.
+백엔드 URL Variable을 변경했을 때도 `main`으로 새 수동 실행을 시작해야 반영됩니다.
+
+성공하면 Docker Hub의 **Tags**와 GitHub 실행 **Summary**에서 결과를 확인할 수 있습니다.
+
+- 태그: `seocj/gameprobe-frontend:sha-<전체 커밋 SHA>`
+- 고정 배포 참조: `seocj/gameprobe-frontend@sha256:<이미지 digest>`
+
+같은 커밋을 재빌드하면 SHA 태그가 새 이미지로 갱신될 수 있습니다.
+배포할 이미지를 정확히 고정하려면 Summary의 `Deployment reference`를 사용합니다.
+이 워크플로는 `main` 또는 `latest` 이미지 태그를 만들지 않습니다.
+소스 저장소의 빌드 메타데이터를 공개 이미지에 첨부하지 않도록 provenance/SBOM 생성을 끕니다.
+이미지에 포함된 실행 코드와 정적 자산은 공개 저장소에서 내려받을 수 있습니다.
+
+등록한 Secret의 유효성과 실제 업로드는 GitHub에서 첫 실행이 성공해야 확인됩니다.
+GitHub Actions 빌드는 비공개 저장소 플랜의 Actions 사용량에 포함됩니다.
+참고: [GitHub Docker 업로드 안내](https://docs.github.com/en/actions/tutorials/publish-packages/publish-docker-images),
+[비공개 저장소 ARM64 러너 지원](https://github.blog/changelog/2026-01-29-arm64-standard-runners-are-now-available-in-private-repositories/).
+
 ### k3s 배포 연결
 
-운영 이미지 빌드 파일은 준비되어 있습니다. GitHub Actions, 이미지 레지스트리 업로드와
-Argo CD 연결은 아직 구성하지 않았습니다. 계획한 배포 흐름은 다음과 같습니다.
+이미지 업로드 이후 `gameprobe/deploy` 매니페스트와 Argo CD 연결은 별도 작업입니다.
+이미지를 업로드하는 것만으로 실행 중인 k3s 앱이 갱신되지는 않습니다.
 
-1. 이 저장소의 GitHub Actions에서 프론트 이미지를 빌드하고 이미지 저장소에 업로드합니다.
-2. 별도 `gameprobe/deploy` 저장소의 프론트 매니페스트에 이미지 버전을 반영합니다.
-3. Argo CD가 해당 변경을 동기화하여 k3s에 배포합니다.
+1. 이 저장소의 GitHub Actions에서 프론트 이미지를 빌드하고 Docker Hub에 업로드합니다.
+2. 별도 `gameprobe/deploy` 저장소의 프론트 매니페스트에 업로드된 이미지 digest를 반영합니다.
+3. Argo CD가 해당 Git 변경을 동기화하도록 구성하여 k3s에 배포합니다.
 
 k3s 배포용 매니페스트는 `gameprobe/deploy`에서 관리하고,
 로컬 개발용 `compose.yaml`과 프론트 Dockerfile은 이 저장소에서 관리합니다.
