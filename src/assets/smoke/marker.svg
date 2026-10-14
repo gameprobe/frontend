@@ -1,0 +1,7 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="smoke-marker">
+<circle id="smoke area" opacity="0.22" cx="18" cy="18" r="18" fill="#5B8CFF"/>
+<circle id="ring" cx="18" cy="18" r="17.25" stroke="#5B8CFF" stroke-width="1.5"/>
+<circle id="center" cx="18" cy="18" r="5" fill="#5B8CFF"/>
+</g>
+</svg>

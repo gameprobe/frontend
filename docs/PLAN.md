@@ -1,5 +1,11 @@
 # PLAN.md - 개발 계획
 
+## 현재 실행 기준 (2026-10-14)
+
+- TASK-FE-055: 조직 frontend의 dev에 최신 Vite 프론트 이관. 현재 실행·검증 안내는 [README](../README.md)와 [Task](tasks/TASK-FE-055.md)를 따른다.
+- 아래 Next.js·모노레포 계획은 과거 기록이다. 이번 작업은 main 병합·운영 배포·deploy 저장소 변경을 포함하지 않는다.
+
+
 ## 현재 추가 기능
 - Insights 예시 분석 리포트 및 영문 신청 목표 추가. 로컬 검증 완료, 미커밋/미배포. [Task](tasks/TASK-FE-035.md). 실제 모델 학습은 별도 작업.
 
