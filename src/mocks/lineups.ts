@@ -1,5 +1,6 @@
 import { agentAbilities, agentName, mapName } from "@/data/game-names";
 import { MINIMAP_POINTS } from "@/data/minimap-points";
+import type { RoutePoint } from "@/components/guide-map/geometry";
 import type { AgentRole } from "@/lib/assets";
 
 /**
@@ -56,7 +57,20 @@ export type Lineup = {
   throwFrom: Point;
   videoLength: string;
   steps: { title: string; text: string; screenshot?: string }[];
+  /** 같은 값을 쓰는 라인업끼리 한 도착지로 묶는다. 없으면 라인업 하나가 한 도착지다 (TASK-FE-056) */
+  destinationId?: string;
+  destinationName?: string;
+  /** 던지는 위치 → 착지 사이의 중간 지점. 없으면 직선 */
+  path?: RoutePoint[];
+  /** 유튜브 영상 주소. 없으면 영상 자리만 보여준다 */
+  videoUrl?: string;
 };
+
+/** 예시 영상(사용자 지정 2026-10-12, YouTube Shorts). 모든 예시 공략이 같은 영상을 쓴다. */
+export const EXAMPLE_VIDEO_URL = "https://www.youtube.com/shorts/qHhYLiFSs8k";
+
+/** 같은 도착지를 쓰는 라인업 묶음 키 */
+export const destinationKey = (guide: { id: string; destinationId?: string }) => guide.destinationId ?? guide.id;
 
 export function siteLabel(site: LineupSite): string {
   return site === "미드" ? "미드" : `${site} 사이트`;
@@ -98,6 +112,36 @@ const ASCENT_SOVA_ATTACK: Lineup[] = (
             { title: "발사", text: "충전 2칸, 바운스 1회로 제자리에서 발사해요." },
           ]
         : boltSteps(lineup),
+    videoUrl: EXAMPLE_VIDEO_URL,
+    // 첫 번째 착지 지점은 아래 두 라인업과 함께 쓰는 도착지다
+    ...(index === 0 && {
+      destinationId: "a-lobby-a-site",
+      destinationName: "A 사이트",
+    }),
+  };
+});
+
+/**
+ * 'A 로비 → A 사이트' 착지 지점을 다른 출발지에서 쓰는 예시 2개 (TASK-FE-056, 시안에 없는 값).
+ * 같은 도착지에 마우스를 올리면 출발지 3곳이 함께 보인다.
+ */
+const ASCENT_SOVA_SHARED: Lineup[] = (
+  [
+    ["a-site-from-mid", "미드 → A 사이트 정찰", 2, 0, "보통", 52, "2026-09-12", { x: 330, y: 250 }, [{ x: 240, y: 150 }], "0:12"],
+    ["a-site-from-tree", "A 트리 → A 사이트 정찰", 1, 1, "어려움", 33, "2026-09-18", { x: 360, y: 92 }, [{ x: 236, y: 40 }], "0:10"],
+  ] as const
+).map(([id, title, charge, bounce, difficulty, votes, addedAt, throwFrom, path, videoLength]) => {
+  const lineup = {
+    id, agentId: "sova", skillId: "sova-e", title, side: "attack" as const, site: "A" as const, charge, bounce, difficulty, votes, addedAt,
+    landing: ASCENT_SOVA_ATTACK[0].landing, throwFrom, videoLength,
+  };
+  return {
+    ...lineup,
+    steps: boltSteps(lineup),
+    destinationId: "a-lobby-a-site",
+    destinationName: "A 사이트",
+    path: [...path],
+    videoUrl: EXAMPLE_VIDEO_URL,
   };
 });
 
@@ -203,7 +247,7 @@ export function findLineups(mapId: string, agentId: string): Lineup[] {
   const key = `${mapId}/${agentId}`;
   let lineups = cache.get(key);
   if (!lineups) {
-    const attack = mapId === "ascent" && agentId === "sova" ? ASCENT_SOVA_ATTACK : generate(mapId, agentId, "attack");
+    const attack = mapId === "ascent" && agentId === "sova" ? [...ASCENT_SOVA_ATTACK, ...ASCENT_SOVA_SHARED] : generate(mapId, agentId, "attack");
     lineups = [...attack, ...generate(mapId, agentId, "defense")];
     cache.set(key, lineups);
   }

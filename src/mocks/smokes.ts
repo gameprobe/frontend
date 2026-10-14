@@ -1,6 +1,7 @@
 import { agentName } from "@/data/game-names";
 import { MINIMAP_POINTS } from "@/data/minimap-points";
-import { siteLabel, type LineupSide, type LineupSite, type Point } from "@/mocks/lineups";
+import type { RoutePoint } from "@/components/guide-map/geometry";
+import { EXAMPLE_VIDEO_URL, siteLabel, type LineupSide, type LineupSite, type Point } from "@/mocks/lineups";
 
 /**
  * 09 스모크 가이드 예시 데이터.
@@ -26,6 +27,13 @@ export type SmokeGuide = {
   /** 던지는 위치(요원 초상 가운데) */
   throwFrom: Point;
   steps: { title: string; text: string; screenshot: string }[];
+  /** 같은 값을 쓰는 연막끼리 한 도착지로 묶는다. 없으면 연막 하나가 한 도착지다 (TASK-FE-056) */
+  destinationId?: string;
+  destinationName?: string;
+  /** 던지는 위치 → 도착 사이의 중간 지점 */
+  path?: RoutePoint[];
+  /** 유튜브 영상 주소 */
+  videoUrl?: string;
 };
 
 export const SMOKE_VARIANT_LABEL: Record<SmokeVariant, string> = { circle: "공통 원형", "harbor-wall": "하버 일자" };
@@ -83,6 +91,24 @@ const ASCENT_ATTACK: SmokeGuide[] = (
           { title: "설치", text: "스킬 맵을 열어 A 메인 입구에 연막을 찍어요.", screenshot: "설치 스크린샷" },
         ]
       : smokeSteps(spot, "circle"),
+  videoUrl: EXAMPLE_VIDEO_URL,
+  ...(id === "a-main-entrance" && { destinationId: "a-main-entrance", destinationName: "A 메인 입구" }),
+}));
+
+/** 'A 메인 입구'를 다른 출발지에서 덮는 예시 2개 (TASK-FE-056, 시안에 없는 값) */
+const ASCENT_ATTACK_SHARED: SmokeGuide[] = (
+  [
+    ["a-main-from-mid", "brimstone", { x: 440, y: 300 }, [{ x: 380, y: 200 }]],
+    ["a-main-from-tree", "astra", { x: 410, y: 72 }, []],
+  ] as const
+).map(([id, agentId, throwFrom, path]) => ({
+  ...ASCENT_ATTACK[0],
+  id,
+  agentId,
+  title: `A 메인 입구 원형 연막 (${agentName(agentId)})`,
+  throwFrom,
+  path: [...path],
+  steps: smokeSteps("A 메인 입구", "circle"),
 }));
 
 /** 문자열로 시드를 만드는 작은 난수 생성기(mulberry32). mocks/lineups.ts와 같은 방식이다. */
@@ -154,10 +180,18 @@ export function findSmokes(mapId: string, side: LineupSide, variant: SmokeVarian
   const key = `${mapId}/${side}/${variant}`;
   let smokes = cache.get(key);
   if (!smokes) {
-    smokes = mapId === "ascent" && side === "attack" && variant === "circle" ? ASCENT_ATTACK : generate(mapId, side, variant);
+    smokes = mapId === "ascent" && side === "attack" && variant === "circle" ? [...ASCENT_ATTACK, ...ASCENT_ATTACK_SHARED] : generate(mapId, side, variant);
     cache.set(key, smokes);
   }
   return smokes;
+}
+
+/** 맵 선택 카드의 개수: 공격·수비 × 공통 원형·하버 일자 예시 전부 (TASK-FE-057) */
+export function smokeCount(mapId: string): number {
+  return (["attack", "defense"] as const).reduce(
+    (sum, side) => sum + findSmokes(mapId, side, "circle").length + findSmokes(mapId, side, "harbor-wall").length,
+    0,
+  );
 }
 
 /** 사이트 칩: 전체 · 맵의 사이트(A·B·C) · 미드. 시안(어센트)은 전체 · A · 미드 · B 순서다. */

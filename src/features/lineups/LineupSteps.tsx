@@ -1,13 +1,21 @@
 import { Fragment } from "react";
 import { cx } from "@/lib/cx";
 
-const STEPS = ["맵 선택", "요원 선택", "라인업 보기"];
+const LINEUP_STEPS = ["맵 선택", "요원 선택", "라인업 보기"];
 
-/** 08 라인업 단계 표시 (Figma 73:2). current는 1부터. */
-export function LineupSteps({ current }: { current: 1 | 2 | 3 }) {
+/** 08 라인업 단계 표시 (Figma 73:2). current는 1부터. 스모크 페이지는 steps·label을 바꿔 쓴다(TASK-FE-057). */
+export function LineupSteps({
+  current,
+  steps = LINEUP_STEPS,
+  label = "라인업 단계",
+}: {
+  current: number;
+  steps?: string[];
+  label?: string;
+}) {
   return (
-    <ol aria-label="라인업 단계" className="flex flex-wrap items-center gap-3">
-      {STEPS.map((label, index) => {
+    <ol aria-label={label} className="flex flex-wrap items-center gap-3">
+      {steps.map((label, index) => {
         const step = index + 1;
         const active = step === current;
         return (
