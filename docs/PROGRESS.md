@@ -1,5 +1,13 @@
 # PROGRESS.md - 진행 상황 로그
 
+## 2026-10-14 — TASK-FE-055
+
+- 개인 dev259d880의 Vite 프론트를 조직 dev83c9023 기반에 이관했다. 팀원 Git 이력·배포 helper·main 전용 자동화 정책을 보존하고, 루트 Docker/Compose와 안내를 Vite에 맞췄다.
+- 타입/Lint/빌드, 클라이언트10개·정적 서버16개 검사, ARM64 이미지 HTTP9개 및 브라우저 직접 경로/새로고침 PASS. 데스크톱·모바일 Before/After 비교 PASS.
+- 실제 browser backendApi → localhost:8000/health 200/CORS/UP 및 서버 로그 일치. 화면 데이터는 예시이고 DB 미연결이다. main·운영·Vercel·deploy 변경 없음.
+- 상세 변경·검증·범위는 [Task](tasks/TASK-FE-055.md), [Visual QA](visual-qa/TASK-FE-055.md).
+
+
 ## 2026-10-05 — TASK-FE-041
 
 - 사용자 승인으로 검증 완료 변경을 커밋·푸시하고 `codex/frontend-rework` 대상 PR을 제출한다. 최신 원격 기준4e29dbd와 차이 없음, 최종 범위 검토 PASS, 비밀 환경파일 제외 확인. 병합은 사용자가 수행한다.

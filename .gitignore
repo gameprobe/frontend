@@ -14,7 +14,7 @@ Thumbs.db
 *.swo
 
 # ===========================
-# Frontend (Next.js)
+# Frontend (Vite; historical Next.js artifacts ignored)
 # ===========================
 node_modules/
 .next/
