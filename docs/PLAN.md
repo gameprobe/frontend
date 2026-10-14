@@ -3,6 +3,7 @@
 ## 현재 실행 기준 (2026-10-14)
 
 - TASK-FE-055: 조직 frontend의 dev에 최신 Vite 프론트 이관. 현재 실행·검증 안내는 [README](../README.md)와 [Task](tasks/TASK-FE-055.md)를 따른다.
+- [TASK-FE-059](tasks/TASK-FE-059.md): 라인업·스모크 영상 상세 페이지(Figma 222:6350). 출발지·영상을 누르면 상세로 이동. 브랜치 `feat/guide-video-page`에 사용자 승인으로 커밋(미푸시). 영상 썸네일은 후속.
 - 아래 Next.js·모노레포 계획은 과거 기록이다. 이번 작업은 main 병합·운영 배포·deploy 저장소 변경을 포함하지 않는다.
 
 

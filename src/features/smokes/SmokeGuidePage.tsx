@@ -1,6 +1,7 @@
-import { Fragment, useEffect, useRef, useState } from "react";
-import { useNavigate, useParams, useSearchParams } from "react-router-dom";
-import { YouTubePlayer } from "@/components/guide-map/YouTubePlayer";
+import { Fragment, useState } from "react";
+import { useLocation, useNavigate, useParams, useSearchParams } from "react-router-dom";
+import { VideoLink } from "@/components/guide-map/GuideDetail";
+import { smokeDetailPath } from "@/components/guide-map/paths";
 import { Card } from "@/components/ui/Card";
 import { FilterChipGroup } from "@/components/ui/FilterChip";
 import { agentName } from "@/data/game-names";
@@ -135,15 +136,9 @@ function CompareTable() {
   );
 }
 
-function SmokeDetail({ smoke, autoplay }: { smoke: SmokeGuide; autoplay: boolean }) {
-  const ref = useRef<HTMLElement>(null);
-  // 지도에서 던지는 위치를 눌러 열었으면 목록 아래의 상세(영상)로 화면을 옮긴다
-  useEffect(() => {
-    if (autoplay) ref.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
-  }, [autoplay]);
-
+function SmokeDetail({ smoke, detailPath }: { smoke: SmokeGuide; detailPath: string }) {
   return (
-    <section ref={ref} aria-label={`${smoke.title} 상세`} className="flex flex-col gap-4 rounded-thumb border border-line bg-page p-5 tracking-normal">
+    <section aria-label={`${smoke.title} 상세`} className="flex flex-col gap-4 rounded-thumb border border-line bg-page p-5 tracking-normal">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div className="flex flex-col gap-1">
           <h3 className="text-16 font-semibold">{smoke.title}</h3>
@@ -159,11 +154,8 @@ function SmokeDetail({ smoke, autoplay }: { smoke: SmokeGuide; autoplay: boolean
           ))}
         </ul>
       </div>
-      {smoke.videoUrl && (
-        <div className="w-full max-w-[640px]">
-          <YouTubePlayer url={smoke.videoUrl} title={smoke.title} autoplay={autoplay} />
-        </div>
-      )}
+      {/* 영상은 상세 페이지에서 본다 (TASK-FE-059) */}
+      {smoke.videoUrl && <VideoLink to={detailPath} label="스모크 영상" className="w-full max-w-[640px]" />}
       <ol className="grid gap-3 sm:grid-cols-3">
         {smoke.steps.map((step, index) => (
           <li key={step.title} className="flex flex-col gap-2.5">
@@ -198,25 +190,19 @@ export function SmokeGuidePage() {
 /** 09 스모크 가이드 - 기본 (Figma 182:4065) · 맵 드롭다운 (185:4122) · 연막 선택 (185:4375) */
 function SmokeBoard({ map }: { map: LineupMap }) {
   const navigate = useNavigate();
+  const location = useLocation();
   const filters = useSmokeFilters(map);
   const { side, variant, site } = filters;
   const [mapOpen, setMapOpen] = useState(false);
 
-  const [autoplayId, setAutoplayId] = useState<string | null>(null);
   // 관리자 예시에서 게시한 연막도 같은 탭에서는 함께 보여준다 (TASK-FE-056)
   const published = usePublishedSmokes(map.mapId, side, variant);
   const all = [...findSmokes(map.mapId, side, variant), ...published];
   const visible = all.filter((smoke) => site === "all" || smoke.site === site);
   const selected = visible.find((smoke) => smoke.id === filters.smokeId);
-  const select = (smoke: SmokeGuide) => {
-    setAutoplayId(null);
-    filters.update({ smoke: smoke.id === selected?.id ? null : smoke.id });
-  };
-  /** 던지는 위치를 누르면 그 연막을 열고 영상을 바로 튼다 */
-  const play = (smoke: SmokeGuide) => {
-    setAutoplayId(smoke.id);
-    filters.update({ smoke: smoke.id });
-  };
+  const select = (smoke: SmokeGuide) => filters.update({ smoke: smoke.id === selected?.id ? null : smoke.id });
+  /** 던지는 위치를 누르면 상세 페이지로 간다. 돌아올 때 지금 필터를 살리도록 쿼리를 넘긴다 (TASK-FE-059) */
+  const play = (smoke: SmokeGuide) => navigate(smokeDetailPath(map.mapId, smoke.id), { state: { from: location.search } });
 
   return (
     <div className="container-page flex flex-col gap-6 pt-8 pb-12">
@@ -381,7 +367,7 @@ function SmokeBoard({ map }: { map: LineupMap }) {
                       </li>
                       {active && (
                         <li>
-                          <SmokeDetail smoke={smoke} autoplay={autoplayId === smoke.id} />
+                          <SmokeDetail smoke={smoke} detailPath={smokeDetailPath(map.mapId, smoke.id)} />
                         </li>
                       )}
                     </Fragment>

@@ -1,5 +1,10 @@
 # PROGRESS.md - 진행 상황 로그
 
+## 2026-10-14 — TASK-FE-059
+
+- 라인업·스모크 영상 상세 페이지(`/lineups/:mapId/:agentId/:lineupId`, `/smokes/:mapId/:smokeId`, Figma 222:6350). 보드에서 출발지나 영상 자리를 누르면 상세로 가고, 목록 링크로 돌아오면 필터와 고른 공략이 유지된다. 사용자 승인으로 Claude가 직접 구현.
+- 검증: 타입·Lint·빌드 PASS, Playwright 38/38(1440·390), 오류·넘침 0. 사용자 승인으로 커밋(미푸시). 보드 영상 썸네일은 후속. [Task](tasks/TASK-FE-059.md)
+
 ## 2026-10-14 — TASK-FE-055
 
 - 개인 dev259d880의 Vite 프론트를 조직 dev83c9023 기반에 이관했다. 팀원 Git 이력·배포 helper·main 전용 자동화 정책을 보존하고, 루트 Docker/Compose와 안내를 Vite에 맞췄다.
