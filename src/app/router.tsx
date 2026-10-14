@@ -1,5 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import { AppLayout } from "@/app/AppLayout";
+import { AdminEditorPage } from "@/features/admin/AdminEditorPage";
+import { AdminGatePage } from "@/features/admin/AdminGatePage";
+import { AdminLayout } from "@/features/admin/AdminLayout";
+import { AdminListPage } from "@/features/admin/AdminListPage";
 import { UPCOMING_SECTIONS } from "@/app/navigation";
 import { ComingSoonPage } from "@/pages/ComingSoonPage";
 import { MatchLayout } from "@/features/match/MatchLayout";
@@ -28,6 +32,7 @@ import { LineupBoardPage } from "@/features/lineups/LineupBoardPage";
 import { MapSelectPage } from "@/features/lineups/MapSelectPage";
 import { MetaLayout } from "@/features/meta/MetaLayout";
 import { SmokeGuidePage } from "@/features/smokes/SmokeGuidePage";
+import { SmokeMapSelectPage } from "@/features/smokes/SmokeMapSelectPage";
 import { AgentsTierTab } from "@/features/meta/tabs/AgentsTierTab";
 import { CompsTab } from "@/features/meta/tabs/CompsTab";
 import { MetaMapsTab } from "@/features/meta/tabs/MapsTab";
@@ -115,7 +120,23 @@ export const router = createBrowserRouter([
       { path: "lineups", element: <MapSelectPage /> },
       { path: "lineups/:mapId", element: <AgentSelectPage /> },
       { path: "lineups/:mapId/:agentId", element: <LineupBoardPage /> },
-      { path: "smokes", element: <SmokeGuidePage /> },
+      { path: "smokes", element: <SmokeMapSelectPage /> },
+      { path: "smokes/:mapId", element: <SmokeGuidePage /> },
+      // 관리자 예시 모드 (TASK-FE-055). 헤더 메뉴에는 넣지 않는다
+      { path: "admin", element: <AdminGatePage /> },
+      {
+        path: "admin",
+        element: <AdminLayout />,
+        children: [
+          { path: "lineups", element: <AdminListPage key="lineup" kind="lineup" /> },
+          { path: "lineups/new", element: <AdminEditorPage kind="lineup" /> },
+          { path: "lineups/:id", element: <AdminEditorPage kind="lineup" /> },
+          { path: "smokes", element: <AdminListPage key="smoke" kind="smoke" /> },
+          { path: "smokes/new", element: <AdminEditorPage kind="smoke" /> },
+          { path: "smokes/:id", element: <AdminEditorPage kind="smoke" /> },
+          { path: "*", element: <NotFoundPage /> },
+        ],
+      },
       ...UPCOMING_SECTIONS.flatMap(({ prefix }) => [
         { path: prefix, element: <ComingSoonPage /> },
         { path: `${prefix}/*`, element: <ComingSoonPage /> },
