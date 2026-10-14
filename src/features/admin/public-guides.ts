@@ -19,7 +19,8 @@ function usePublished(): Placed[] {
   return hasDemoSession() ? entries.filter(isPlaced) : [];
 }
 
-const notesStep = (entry: GuideEntry) => (entry.notes.trim() ? [{ title: "설명", text: entry.notes.trim(), screenshot: "" }] : []);
+/** 관리자 설명은 상세 페이지의 설명 글로 쓴다 (TASK-FE-059) */
+const notes = (entry: GuideEntry) => entry.notes.trim() || undefined;
 
 function toLineup(entry: Placed): Lineup {
   const ability = agentAbilities(entry.agentId).find((item) => item.key === entry.abilitySlot);
@@ -38,7 +39,8 @@ function toLineup(entry: Placed): Lineup {
     landing: entry.destination.point,
     throwFrom: entry.start,
     videoLength: "",
-    steps: notesStep(entry).map(({ title, text }) => ({ title, text })),
+    steps: [],
+    description: notes(entry),
     destinationId: entry.destination.id,
     destinationName: entry.destination.name,
     path: entry.path,
@@ -57,7 +59,8 @@ function toSmoke(entry: Placed): SmokeGuide {
     title: entry.title,
     landing: entry.destination.point,
     throwFrom: entry.start,
-    steps: notesStep(entry),
+    steps: [],
+    description: notes(entry),
     destinationId: entry.destination.id,
     destinationName: entry.destination.name,
     path: entry.path,
@@ -74,5 +77,12 @@ export function usePublishedLineups(mapId: string | undefined, agentId: string |
 export function usePublishedSmokes(mapId: string, side: LineupSide, variant: SmokeVariant): SmokeGuide[] {
   return usePublished()
     .filter((entry) => entry.kind === "smoke" && entry.mapId === mapId && entry.side === side && entry.shape === variant)
+    .map(toSmoke);
+}
+
+/** 상세 페이지용: 한 맵의 게시 연막 전부(진영·유형 무관) (TASK-FE-059) */
+export function usePublishedSmokesOnMap(mapId: string): SmokeGuide[] {
+  return usePublished()
+    .filter((entry) => entry.kind === "smoke" && entry.mapId === mapId)
     .map(toSmoke);
 }
