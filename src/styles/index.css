@@ -124,29 +124,3 @@
     padding-inline: 40px;
   }
 }
-
-/* 08 라인업 상세: 던지는 위치 → 착지 지점 직선을 따라 날아가는 점 (MinimapStage) */
-@keyframes lineup-throw {
-  from {
-    left: var(--from-x);
-    top: var(--from-y);
-  }
-  to {
-    left: var(--to-x);
-    top: var(--to-y);
-  }
-}
-
-.lineup-throw-dot {
-  left: var(--from-x);
-  top: var(--from-y);
-  animation: lineup-throw 1.6s ease-in-out infinite;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .lineup-throw-dot {
-    left: var(--mid-x);
-    top: var(--mid-y);
-    animation: none;
-  }
-}

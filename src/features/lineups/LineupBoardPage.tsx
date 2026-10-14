@@ -3,9 +3,11 @@ import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import chevronLeftIcon from "@/assets/icons/chevron-left.svg";
 import playIcon from "@/assets/icons/play.svg";
 import searchIcon from "@/assets/icons/search.svg";
+import { YouTubePlayer } from "@/components/guide-map/YouTubePlayer";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { FilterChipGroup } from "@/components/ui/FilterChip";
+import { usePublishedLineups } from "@/features/admin/public-guides";
 import { MapPickerGrid } from "@/features/lineups/MapPickerGrid";
 import { MinimapStage } from "@/features/lineups/MinimapStage";
 import { SelectionRow } from "@/features/lineups/SelectionRow";
@@ -162,7 +164,7 @@ function AgentPicker({ id, mapId, current, onPick }: { id: string; mapId: string
   );
 }
 
-function LineupDetail({ lineup, skill, onBack }: { lineup: Lineup; skill?: Skill; onBack: () => void }) {
+function LineupDetail({ lineup, skill, autoplay, onBack }: { lineup: Lineup; skill?: Skill; autoplay: boolean; onBack: () => void }) {
   const [helped, setHelped] = useState(false);
   const [saved, updateSaved] = useStoredList<string>("gp:saved-lineups", []);
   const isSaved = saved.includes(lineup.id);
@@ -193,13 +195,17 @@ function LineupDetail({ lineup, skill, onBack }: { lineup: Lineup; skill?: Skill
             .join(" · ")}
         </p>
       </div>
-      {/* 영상은 아직 없어 자리만 보여준다 */}
+      {/* 영상 주소가 없는 생성 예시는 자리만 보여준다 */}
+      {lineup.videoUrl ? (
+        <YouTubePlayer url={lineup.videoUrl} title={lineup.title} autoplay={autoplay} />
+      ) : (
       <div className="flex h-[158px] flex-col items-center justify-center gap-2 rounded-thumb bg-elevated" aria-label="라인업 영상 (준비 중)">
         <span className="flex size-11 items-center justify-center rounded-full bg-primary">
           <img src={playIcon} alt="" width={16} height={16} />
         </span>
         <span className="text-12 font-medium text-sub">라인업 영상 · {lineup.videoLength}</span>
       </div>
+      )}
       <ol className="flex flex-col gap-4">
         {lineup.steps.map((step, index) => (
           <li key={step.title} className="flex gap-3">
@@ -241,11 +247,15 @@ export function LineupBoardPage() {
   const { mapId, agentId } = useParams();
   const map = findLineupMap(mapId);
   const agent = map ? lineupAgents(map.mapId).find((candidate) => candidate.agentId === agentId) : undefined;
-  const all = map && agent ? findLineups(map.mapId, agent.agentId) : [];
+  // 관리자 예시에서 게시한 공략도 같은 탭에서는 함께 보여준다 (TASK-FE-056)
+  const published = usePublishedLineups(map?.mapId, agent?.agentId);
+  const all = map && agent ? [...findLineups(map.mapId, agent.agentId), ...published] : [];
   const skills = agent ? agentSkills(agent.agentId) : [];
   const filters = useBoardFilters(skills, all);
   const [reportNote, setReportNote] = useState(false);
   const [picker, setPicker] = useState<"map" | "agent" | null>(null);
+  // 출발지를 눌러 연 라인업만 영상을 바로 튼다
+  const [autoplayId, setAutoplayId] = useState<string | null>(null);
   const navigate = useNavigate();
 
   if (!map || !agent) return <NotFoundPage />;
@@ -405,7 +415,9 @@ export function LineupBoardPage() {
                 {map.name} · {SIDE_LABEL[filters.side]}
               </h2>
               <p className="text-13 text-sub">
-                {selected ? "던지는 위치에서 착지 지점까지의 경로예요." : "마커를 누르면 라인업 상세를 볼 수 있어요."}
+                {selected
+                  ? "던지는 위치에서 착지 지점까지의 경로예요. 던지는 위치를 누르면 영상이 재생돼요."
+                  : "착지 마커에 마우스를 올리면 출발지가 보이고, 출발지를 누르면 영상이 재생돼요."}
               </p>
             </div>
             <p className="shrink-0 text-13 font-medium text-sub-weak">라인업 {visible.length}개</p>
@@ -416,12 +428,25 @@ export function LineupBoardPage() {
             agentId={agent.agentId}
             lineups={visible}
             selected={selected}
-            onSelect={(lineup) => filters.set("lineup", lineup.id)}
+            onSelect={(lineup) => {
+              setAutoplayId(null);
+              filters.set("lineup", lineup.id);
+            }}
+            onPlay={(lineup) => {
+              setAutoplayId(lineup.id);
+              filters.set("lineup", lineup.id);
+            }}
           />
         </Card>
 
         {selected ? (
-          <LineupDetail key={selected.id} lineup={selected} skill={skillOf(selected)} onBack={() => filters.set("lineup", null)} />
+          <LineupDetail
+            key={selected.id}
+            lineup={selected}
+            skill={skillOf(selected)}
+            autoplay={autoplayId === selected.id}
+            onBack={() => filters.set("lineup", null)}
+          />
         ) : (
           <Card as="section" aria-labelledby="list-title" className="flex flex-col gap-1 px-3 pt-5 pb-4">
             <div className="flex items-center justify-between px-2 pb-2">

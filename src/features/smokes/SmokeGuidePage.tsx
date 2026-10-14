@@ -1,14 +1,17 @@
-import { Fragment, useState } from "react";
-import { useSearchParams } from "react-router-dom";
+import { Fragment, useEffect, useRef, useState } from "react";
+import { useNavigate, useParams, useSearchParams } from "react-router-dom";
+import { YouTubePlayer } from "@/components/guide-map/YouTubePlayer";
 import { Card } from "@/components/ui/Card";
 import { FilterChipGroup } from "@/components/ui/FilterChip";
 import { agentName } from "@/data/game-names";
+import { usePublishedSmokes } from "@/features/admin/public-guides";
 import { MapPickerGrid } from "@/features/lineups/MapPickerGrid";
 import { SelectionRow } from "@/features/lineups/SelectionRow";
 import { SmokeMarkerIcon, SmokeMinimap } from "@/features/smokes/SmokeMinimap";
 import { agentIconPath, mapImagePath } from "@/lib/assets";
 import { cx } from "@/lib/cx";
-import { findLineupMap, siteLabel, type LineupSide } from "@/mocks/lineups";
+import { NotFoundPage } from "@/pages/NotFoundPage";
+import { findLineupMap, siteLabel, type LineupMap, type LineupSide } from "@/mocks/lineups";
 import {
   findSmokes,
   SMOKE_AGENT_STATS,
@@ -20,12 +23,9 @@ import {
 } from "@/mocks/smokes";
 
 const SIDE_LABEL: Record<LineupSide, string> = { attack: "공격", defense: "수비" };
-const DEFAULT_MAP = "ascent";
-
-/** 필터와 고른 연막은 쿼리(?map·side·site·type·smoke)에 둔다. 기본: 어센트 · 공격 · 전체 · 공통 원형. */
-function useSmokeFilters() {
+/** 맵은 주소(/smokes/:mapId), 필터와 고른 연막은 쿼리(?side·site·type·smoke)에 둔다. 기본: 공격 · 전체 · 공통 원형. */
+function useSmokeFilters(map: LineupMap) {
   const [params, setParams] = useSearchParams();
-  const map = findLineupMap(params.get("map") ?? DEFAULT_MAP) ?? findLineupMap(DEFAULT_MAP)!;
   const side: LineupSide = params.get("side") === "defense" ? "defense" : "attack";
   const variant: SmokeVariant = params.get("type") === "harbor-wall" ? "harbor-wall" : "circle";
   const siteOptions = smokeSiteOptions(map.mapId);
@@ -43,7 +43,16 @@ function useSmokeFilters() {
     setParams(next, { replace: !("smoke" in changes) });
   };
 
-  return { map, side, variant, site, siteOptions, smokeId, update };
+  /** 맵을 바꾸면 진영·유형은 두고 사이트·고른 연막은 닫는다 (TASK-FE-057) */
+  const mapQuery = () => {
+    const next = new URLSearchParams(params);
+    next.delete("site");
+    next.delete("smoke");
+    const query = next.toString();
+    return query ? `?${query}` : "";
+  };
+
+  return { map, side, variant, site, siteOptions, smokeId, update, mapQuery };
 }
 
 function Segmented<T extends string>({
@@ -126,9 +135,15 @@ function CompareTable() {
   );
 }
 
-function SmokeDetail({ smoke }: { smoke: SmokeGuide }) {
+function SmokeDetail({ smoke, autoplay }: { smoke: SmokeGuide; autoplay: boolean }) {
+  const ref = useRef<HTMLElement>(null);
+  // 지도에서 던지는 위치를 눌러 열었으면 목록 아래의 상세(영상)로 화면을 옮긴다
+  useEffect(() => {
+    if (autoplay) ref.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }, [autoplay]);
+
   return (
-    <section aria-label={`${smoke.title} 상세`} className="flex flex-col gap-4 rounded-thumb border border-line bg-page p-5 tracking-normal">
+    <section ref={ref} aria-label={`${smoke.title} 상세`} className="flex flex-col gap-4 rounded-thumb border border-line bg-page p-5 tracking-normal">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div className="flex flex-col gap-1">
           <h3 className="text-16 font-semibold">{smoke.title}</h3>
@@ -144,13 +159,20 @@ function SmokeDetail({ smoke }: { smoke: SmokeGuide }) {
           ))}
         </ul>
       </div>
+      {smoke.videoUrl && (
+        <div className="w-full max-w-[640px]">
+          <YouTubePlayer url={smoke.videoUrl} title={smoke.title} autoplay={autoplay} />
+        </div>
+      )}
       <ol className="grid gap-3 sm:grid-cols-3">
         {smoke.steps.map((step, index) => (
           <li key={step.title} className="flex flex-col gap-2.5">
             {/* 스크린샷은 아직 없어 자리만 보여준다 */}
-            <div className="flex h-28 items-center justify-center rounded-lg border border-line bg-elevated text-12 text-sub-weak">
-              {step.screenshot}
-            </div>
+            {step.screenshot && (
+              <div className="flex h-28 items-center justify-center rounded-lg border border-line bg-elevated text-12 text-sub-weak">
+                {step.screenshot}
+              </div>
+            )}
             <p className="flex items-center gap-2 text-13 font-semibold">
               <span lang="en" className="flex size-5 items-center justify-center rounded-full bg-primary text-11 font-semibold text-on-primary">
                 {index + 1}
@@ -165,16 +187,36 @@ function SmokeDetail({ smoke }: { smoke: SmokeGuide }) {
   );
 }
 
-/** 09 스모크 가이드 - 기본 (Figma 182:4065) · 맵 드롭다운 (185:4122) · 연막 선택 (185:4375) */
+/** 09 스모크 - 스모크 보기 (/smokes/:mapId). 맵 선택은 SmokeMapSelectPage (TASK-FE-057). */
 export function SmokeGuidePage() {
-  const filters = useSmokeFilters();
-  const { map, side, variant, site } = filters;
+  const { mapId } = useParams();
+  const map = findLineupMap(mapId);
+  if (!map) return <NotFoundPage />;
+  return <SmokeBoard key={map.mapId} map={map} />;
+}
+
+/** 09 스모크 가이드 - 기본 (Figma 182:4065) · 맵 드롭다운 (185:4122) · 연막 선택 (185:4375) */
+function SmokeBoard({ map }: { map: LineupMap }) {
+  const navigate = useNavigate();
+  const filters = useSmokeFilters(map);
+  const { side, variant, site } = filters;
   const [mapOpen, setMapOpen] = useState(false);
 
-  const all = findSmokes(map.mapId, side, variant);
+  const [autoplayId, setAutoplayId] = useState<string | null>(null);
+  // 관리자 예시에서 게시한 연막도 같은 탭에서는 함께 보여준다 (TASK-FE-056)
+  const published = usePublishedSmokes(map.mapId, side, variant);
+  const all = [...findSmokes(map.mapId, side, variant), ...published];
   const visible = all.filter((smoke) => site === "all" || smoke.site === site);
   const selected = visible.find((smoke) => smoke.id === filters.smokeId);
-  const select = (smoke: SmokeGuide) => filters.update({ smoke: smoke.id === selected?.id ? null : smoke.id });
+  const select = (smoke: SmokeGuide) => {
+    setAutoplayId(null);
+    filters.update({ smoke: smoke.id === selected?.id ? null : smoke.id });
+  };
+  /** 던지는 위치를 누르면 그 연막을 열고 영상을 바로 튼다 */
+  const play = (smoke: SmokeGuide) => {
+    setAutoplayId(smoke.id);
+    filters.update({ smoke: smoke.id });
+  };
 
   return (
     <div className="container-page flex flex-col gap-6 pt-8 pb-12">
@@ -221,7 +263,7 @@ export function SmokeGuidePage() {
                   current={map.mapId}
                   onPick={(next) => {
                     setMapOpen(false);
-                    if (next !== map.mapId) filters.update({ map: next === DEFAULT_MAP ? null : next, site: null });
+                    if (next !== map.mapId) navigate(`/smokes/${next}${filters.mapQuery()}`);
                   }}
                 />
               </>
@@ -282,7 +324,7 @@ export function SmokeGuidePage() {
             </p>
           </div>
           <div className="flex justify-center bg-page px-4 py-7">
-            <SmokeMinimap mapId={map.mapId} mapName={map.name} smokes={visible} selected={selected} onSelect={select} />
+            <SmokeMinimap mapId={map.mapId} mapName={map.name} smokes={visible} selected={selected} onSelect={select} onPlay={play} />
           </div>
           <ul aria-label="범례" className="flex flex-wrap gap-5 border-t border-line-light px-6 py-4 text-12 text-sub">
             <li className="flex items-center gap-1.5">
@@ -339,7 +381,7 @@ export function SmokeGuidePage() {
                       </li>
                       {active && (
                         <li>
-                          <SmokeDetail smoke={smoke} />
+                          <SmokeDetail smoke={smoke} autoplay={autoplayId === smoke.id} />
                         </li>
                       )}
                     </Fragment>
