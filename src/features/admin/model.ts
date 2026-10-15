@@ -1,12 +1,12 @@
 import { MINIMAP_SIZE, type RoutePoint } from "@/components/guide-map/geometry";
 import type { MapGuide } from "@/components/guide-map/GuideMapViewer";
-import { isSafeHttpUrl, youtubeVideoId } from "@/lib/youtube";
+import { isSafeHttpUrl } from "@/lib/youtube";
 import { EXAMPLE_VIDEO_URL, type LineupSide, type LineupSite, type Point } from "@/mocks/lineups";
 import type { SmokeVariant } from "@/mocks/smokes";
 
 /**
- * 관리자 예시 모드의 공략 한 건 (TASK-FE-055).
- * - 좌표는 공개 화면과 같은 512×512 미니맵 px이다. 백엔드(0..1)로 바꾸는 일은 연결 Task에서 한다.
+ * 관리자 편집 화면의 공략 한 건. 실제 DB와 예시 저장소는 분리한다.
+ * - 좌표는 공개 화면과 같은 512×512 미니맵 px이다. admin-lineup-api에서 백엔드의 0..1 좌표로 변환한다.
  * - 같은 destination.id를 쓰는 공략끼리 한 도착지 묶음이 된다. 출발·경로·영상은 공략마다 따로다.
  * 순수 함수는 legacy-next/src/features/admin/preview/model.ts에서 옮겼다.
  */
@@ -174,11 +174,12 @@ export function validateEntry(entry: GuideEntry): Record<string, string> {
   const title = entry.title.trim();
   if (!title) errors.title = "공략 제목을 입력해 주세요.";
   else if (title.length > 120) errors.title = "제목은 120자 이내로 입력해 주세요.";
-  if (!entry.videoUrl.trim()) errors.videoUrl = "유튜브 영상 주소를 입력해 주세요.";
-  else if (!isSafeHttpUrl(entry.videoUrl) || !youtubeVideoId(entry.videoUrl)) {
-    errors.videoUrl = "youtube.com 또는 youtu.be 영상 주소를 입력해 주세요.";
+  if (!entry.videoUrl.trim()) errors.videoUrl = "영상 주소를 입력해 주세요.";
+  else if (!isSafeHttpUrl(entry.videoUrl)) {
+    errors.videoUrl = "인증정보가 없는 HTTP(S) 영상 주소를 입력해 주세요.";
   }
   if (!entry.destination.name.trim()) errors.destination = "도착점 이름을 입력해 주세요.";
+  else if (entry.destination.name.trim().length > 120) errors.destination = "도착점 이름은 120자 이내로 입력해 주세요.";
   else if (!entry.destination.point) errors.destination = "지도에서 도착 위치를 지정해 주세요.";
   else if (!isValidPoint(entry.destination.point)) errors.destination = "도착 위치는 지도 안에 지정해 주세요.";
   if (!entry.start) errors.start = "지도에서 출발 위치를 지정해 주세요.";

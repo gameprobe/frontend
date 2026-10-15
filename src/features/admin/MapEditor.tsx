@@ -21,7 +21,7 @@ type MapEditorProps = {
   mapName: string;
   onChange: (entry: GuideEntry) => void;
   /** 다른 공략과 함께 쓰는 도착점이면 '도착점 수정'을 눌러야 옮길 수 있다. */
-  shared?: { count: number; editing: boolean; onToggle: () => void };
+  shared?: { count: number; editing: boolean; onToggle?: () => void };
   errors: Record<string, string>;
 };
 
@@ -119,18 +119,19 @@ export function MapEditor({ entry, mapName, onChange, shared, errors }: MapEdito
           <p className="text-13 text-sub">
             {shared.editing
               ? `이 도착점을 함께 쓰는 공략 ${shared.count + 1}개의 도착 위치를 같이 수정합니다. 저장할 때 반영됩니다.`
-              : `이 도착점은 공략 ${shared.count + 1}개가 함께 씁니다. 옮기면 모두 같이 바뀝니다.`}
+              : shared.onToggle ? `이 도착점은 공략 ${shared.count + 1}개가 함께 씁니다. 옮기면 모두 같이 바뀝니다.`
+              : `공략 ${shared.count + 1}개가 함께 쓰는 도착점입니다. 다른 위치가 필요하면 '새 도착점 지정'을 선택하세요.`}
           </p>
-          <Button
+          {shared.onToggle && <Button
             size="md"
             variant="secondary"
             onClick={() => {
-              shared.onToggle();
+              shared.onToggle?.();
               setMode(shared.editing ? "start" : "target");
             }}
           >
             {shared.editing ? "도착점 수정 취소" : "도착점 수정"}
-          </Button>
+          </Button>}
         </div>
       )}
 
@@ -189,7 +190,7 @@ export function MapEditor({ entry, mapName, onChange, shared, errors }: MapEdito
           return locked ? (
             <span
               key={label}
-              title="함께 쓰는 도착점 · '도착점 수정'을 누른 뒤 옮기세요"
+              title={shared?.onToggle ? "함께 쓰는 도착점 · '도착점 수정'을 누른 뒤 옮기세요" : "함께 쓰는 도착점 · 새 도착점을 지정하면 따로 옮길 수 있습니다"}
               className="pointer-events-none absolute z-[2] -translate-1/2"
               style={at(point)}
             >
