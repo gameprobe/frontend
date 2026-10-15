@@ -1,82 +1,66 @@
-import { useState } from "react";
-import { useLocation, useParams } from "react-router-dom";
-import { GuideDetail } from "@/components/guide-map/GuideDetail";
-import { GuideRouteMap } from "@/components/guide-map/GuideRouteMap";
-import { boardPath } from "@/components/guide-map/paths";
-import { Button } from "@/components/ui/Button";
-import { agentName } from "@/data/game-names";
-import { usePublishedSmokesOnMap } from "@/features/admin/public-guides";
-import { SmokeMarkerIcon } from "@/features/smokes/SmokeMinimap";
-import { useStoredList } from "@/lib/stored-list";
-import { findLineupMap, siteLabel } from "@/mocks/lineups";
-import { findSmoke, SMOKE_VARIANT_LABEL } from "@/mocks/smokes";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { Button, ButtonLink } from "@/components/ui/Button";
+import { Card } from "@/components/ui/Card";
+import { SmokePointMap } from "@/features/smokes/SmokePointMap";
+import { createSmokeApi, SmokeApiError, smokeErrorMessage } from "@/features/smokes/smoke-api";
+import type { PublicSmoke } from "@/features/smokes/smoke-model";
+import { findLineupMap, type LineupMap } from "@/mocks/lineups";
 import { NotFoundPage } from "@/pages/NotFoundPage";
 
-/** 스모크 상세 (라인업 상세 Figma 222:6350과 같은 구성, TASK-FE-059). /smokes/:mapId/:smokeId */
+const smokeApi = createSmokeApi(import.meta.env.VITE_BACKEND_URL);
+type DetailState = { status: "loading" } | { status: "missing" } | { status: "error"; message: string } | { status: "ready"; smoke: PublicSmoke };
+
+/** 새로고침과 직접 주소 접근에서도 서버에 공개된 한 건을 다시 읽는다. */
 export function SmokeDetailPage() {
-  const { mapId = "", smokeId = "" } = useParams();
-  const location = useLocation();
+  const { mapId, smokeId = "" } = useParams();
   const map = findLineupMap(mapId);
-  const published = usePublishedSmokesOnMap(mapId);
-  const smoke = map ? (findSmoke(mapId, smokeId) ?? published.find((candidate) => candidate.id === smokeId)) : undefined;
-  const [helped, setHelped] = useState(false);
-  const [saved, updateSaved] = useStoredList<string>("gp:saved-smokes", []);
+  if (!map) return <NotFoundPage />;
+  return <SmokeDetail key={`${map.mapId}:${smokeId}`} map={map} smokeId={smokeId} />;
+}
 
-  if (!map || !smoke) return <NotFoundPage />;
+function SmokeDetail({ map, smokeId }: { map: LineupMap; smokeId: string }) {
+  const [state, setState] = useState<DetailState>({ status: "loading" });
+  const [reload, setReload] = useState(0);
 
-  const side = smoke.side === "attack" ? "공격" : "수비";
-  const variant = SMOKE_VARIANT_LABEL[smoke.variant];
-  const isSaved = saved.includes(smoke.id);
-  const from = (location.state as { from?: string } | null)?.from;
-  const defaults: Record<string, string> = {};
-  if (smoke.side === "defense") defaults.side = "defense";
-  if (smoke.variant === "harbor-wall") defaults.type = "harbor-wall";
+  useEffect(() => {
+    const controller = new AbortController();
+    setState({ status: "loading" });
+    void smokeApi.getPublic(smokeId, controller.signal).then((smoke) => {
+      if (controller.signal.aborted) return;
+      setState(smoke.mapId === map.mapId ? { status: "ready", smoke } : { status: "missing" });
+    }).catch((error: unknown) => {
+      if (controller.signal.aborted) return;
+      if (error instanceof SmokeApiError && error.status === 404) setState({ status: "missing" });
+      else setState({ status: "error", message: smokeErrorMessage(error) });
+    });
+    return () => controller.abort();
+  }, [map.mapId, smokeId, reload]);
 
   return (
-    <GuideDetail
-      tags={[variant, side, siteLabel(smoke.site)]}
-      title={smoke.title}
-      meta={`${agentName(smoke.agentId)} · ${variant} · 예시 · 패치 검증 필요`}
-      back={{ to: boardPath(`/smokes/${mapId}`, "smoke", smoke.id, from, defaults), label: "스모크 목록" }}
-      video={{ url: smoke.videoUrl, placeholder: "스모크 영상" }}
-      steps={smoke.steps}
-      mapTitle={`${map.name} · ${variant} 연막`}
-      map={
-        <GuideRouteMap
-          mapId={mapId}
-          mapName={map.name}
-          agentId={smoke.agentId}
-          landing={smoke.landing}
-          throwFrom={smoke.throwFrom}
-          path={smoke.path}
-          marker={
-            <span className="relative flex size-9 items-center justify-center">
-              <SmokeMarkerIcon selected />
-            </span>
-          }
-        />
-      }
-      description={smoke.description ?? `${smoke.destinationName ?? smoke.title} 쪽에 ${agentName(smoke.agentId)}의 ${variant} 연막을 설치해요. 아래 순서대로 서는 위치와 조준을 맞춰 보세요.`}
-      info={[
-        { label: "요원", value: agentName(smoke.agentId) },
-        { label: "연막 유형", value: variant },
-        { label: "진영", value: side },
-        { label: "사이트", value: siteLabel(smoke.site) },
-      ]}
-      actions={
+    <div className="container-page flex flex-col gap-6 pt-8 pb-12">
+      <div><ButtonLink to={`/smokes/${map.mapId}?smoke=${encodeURIComponent(smokeId)}`} variant="secondary">← {map.name} 스모크 목록</ButtonLink></div>
+      {state.status === "loading" && <Card className="p-8"><p role="status" className="text-14 text-sub">스모크를 불러오는 중이에요.</p></Card>}
+      {state.status === "missing" && <Card className="space-y-2 p-8"><h1 className="text-20 font-semibold">공개된 스모크를 찾을 수 없어요.</h1><p className="text-14 text-sub">삭제되었거나 현재 공개되지 않은 자료예요. 목록에서 다른 위치를 확인해 주세요.</p></Card>}
+      {state.status === "error" && <Card className="flex flex-col items-start gap-4 p-6"><p role="alert" className="text-14 text-loss">{state.message}</p><Button variant="secondary" onClick={() => setReload((value) => value + 1)}>다시 시도</Button></Card>}
+      {state.status === "ready" && (
         <>
-          <Button variant="secondary" className="flex-1 px-2 text-14 font-semibold" aria-pressed={helped} onClick={() => setHelped((value) => !value)}>
-            {helped ? "도움됐어요" : "도움돼요"}
-          </Button>
-          <Button
-            className="flex-1 px-2 text-14"
-            aria-pressed={isSaved}
-            onClick={() => updateSaved((current) => (isSaved ? current.filter((id) => id !== smoke.id) : [...current, smoke.id]))}
-          >
-            {isSaved ? "저장됨" : "스모크 저장"}
-          </Button>
+          <Card as="header" className="min-w-0 space-y-2 p-5 sm:p-7">
+            <p className="text-13 font-medium text-primary">{map.name} · 스모크</p>
+            <h1 className="text-24 leading-[1.5] font-semibold break-words">{state.smoke.title}</h1>
+          </Card>
+          <div className="grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_360px]">
+            <Card as="section" className="min-w-0 p-4 sm:p-6" aria-label="스모크 설치 위치">
+              <h2 className="text-18 font-semibold">설치 위치</h2>
+              <SmokePointMap mapId={map.mapId} points={[state.smoke]} selectedId={state.smoke.id} />
+            </Card>
+            <Card as="section" className="min-w-0 space-y-4 p-5 sm:p-6" aria-label="스모크 설명">
+              <h2 className="text-18 font-semibold">설치 안내</h2>
+              <p className="text-14 leading-[1.8] whitespace-pre-wrap break-words text-sub">{state.smoke.notes || "등록된 설명이 없어요."}</p>
+            </Card>
+          </div>
         </>
-      }
-    />
+      )}
+    </div>
   );
 }

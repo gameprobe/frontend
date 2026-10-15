@@ -2,7 +2,6 @@ import { Link, Navigate, useSearchParams } from "react-router-dom";
 import { LineupHeading, LineupSteps } from "@/features/lineups/LineupSteps";
 import { mapImagePath } from "@/lib/assets";
 import { findLineupMap, LINEUP_MAPS } from "@/mocks/lineups";
-import { smokeCount } from "@/mocks/smokes";
 
 const SMOKE_STEPS = ["맵 선택", "스모크 보기"];
 
@@ -36,7 +35,7 @@ export function SmokeMapSelectPage() {
               <img src={mapImagePath(map.mapId)} alt="" loading="lazy" className="h-[126px] w-full object-cover" />
               <span className="flex flex-wrap items-center justify-between gap-x-2 px-4 pt-3 pb-4">
                 <span className="text-16 font-semibold">{map.name}</span>
-                <span className="text-13 text-sub">스모크 {smokeCount(map.mapId)}</span>
+                <span className="text-13 text-sub">설치 위치 보기</span>
               </span>
             </Link>
           </li>

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { TextField } from "@/components/ui/TextField";
 import { adminLineupApi, clearAdminLineups } from "./admin-lineup-store";
+import { clearAdminSmokes, clearDemoSmokes } from "./admin-smoke-store";
 import { DEMO_CODE, isDemoCode, startAdminSession, startDemoSession } from "@/features/admin/admin-session";
 
 /** 실제 관리자 인증과 DB를 사용하지 않는 예시 체험을 구분한다. */
@@ -36,9 +37,9 @@ function TokenCard({ onDemo }: { onDemo: () => void }) {
   return (
     <>
       <Link to="/lineups" className="self-start text-14 text-sub hover:text-main">← 라인업 목록</Link>
-      <CardHeading title="관리자 인증" text="관리자 토큰으로 로그인하면 DB에 저장된 라인업을 관리할 수 있습니다." />
+      <CardHeading title="관리자 인증" text="관리자 토큰으로 로그인하면 DB에 저장된 라인업·스모크를 관리할 수 있습니다." />
       <AdminTokenForm onAuthenticated={() => {
-        clearAdminLineups();
+        clearAdminLineups(); clearAdminSmokes(); clearDemoSmokes();
         navigate("/admin/lineups");
       }} />
       <button type="button" onClick={onDemo} className="self-start text-14 font-medium text-main hover:text-primary">
@@ -101,14 +102,14 @@ function DemoCard({ onBack }: { onBack: () => void }) {
       setError("예시 입장 코드가 맞지 않습니다.");
       return;
     }
-    clearAdminLineups();
+    clearAdminLineups(); clearAdminSmokes(); clearDemoSmokes();
     startDemoSession();
     navigate("/admin/lineups");
   };
 
   return (
     <>
-      <CardHeading title="관리자 화면 체험" text="예시 코드로 들어가 라인업·스모크 자료와 지도 경로를 등록해 보세요." />
+      <CardHeading title="관리자 화면 체험" text="예시 코드로 들어가 라인업 경로와 스모크 위치를 등록해 보세요." />
       <form onSubmit={submit} className="flex flex-col gap-3">
         <TextField
           label="예시 입장 코드"
