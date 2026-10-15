@@ -41,12 +41,12 @@ export function FavoritesAndLogin() {
 
       <Card className="flex flex-col justify-between gap-5 p-6">
         <div className="flex flex-col">
-          <p className="text-14 font-medium">라이엇 계정 연동</p>
-          <h2 className="text-20 font-semibold">로그인하면 내 전적이 바로 열려요</h2>
-          <p className="text-14 text-sub">검색 없이 내 프로필과 최근 매치를 확인하세요.</p>
+          <p className="text-14 font-medium">계정 연결 예시</p>
+          <h2 className="text-20 font-semibold">내 전적 연결 과정을 체험해 보세요</h2>
+          <p className="text-14 text-sub">가상 계정으로 동의·연결·해제 흐름을 살펴보세요.</p>
         </div>
         <ButtonLink to="/my" className="w-full">
-          라이엇 계정으로 로그인
+          예시 연결 체험
         </ButtonLink>
       </Card>
     </section>
