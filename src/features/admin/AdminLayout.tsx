@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/Button";
 import { AdminTokenForm } from "./AdminGatePage";
 import { clearAdminLineups, loadAdminLineups, useAdminLineups } from "./admin-lineup-store";
+import { clearAdminSmokes, clearDemoSmokes, loadAdminSmokes, useAdminSmokes, useDemoSmokes } from "./admin-smoke-store";
 import { Navigate, NavLink, Outlet, useNavigate } from "react-router-dom";
 import { endDemoSession, useAdminMode, useAdminToken } from "@/features/admin/admin-session";
 import { useGuideEntries } from "@/features/admin/guide-store";
@@ -12,6 +13,8 @@ import { cx } from "@/lib/cx";
 export function AdminLayout() {
   const demoEntries = useGuideEntries();
   const real = useAdminLineups();
+  const realSmokes = useAdminSmokes();
+  const demoSmokes = useDemoSmokes();
   const mode = useAdminMode();
   const token = useAdminToken();
   const reauthRef = useRef<HTMLDivElement>(null);
@@ -43,7 +46,7 @@ export function AdminLayout() {
   }, [reauth]);
   const entries = mode === "real" ? real.entries : demoEntries;
   useEffect(() => {
-    if (mode === "real" && token) void loadAdminLineups();
+    if (mode === "real" && token) { void loadAdminLineups(); void loadAdminSmokes(); }
   }, [mode, token]);
   const navigate = useNavigate();
 
@@ -63,7 +66,7 @@ export function AdminLayout() {
           type="button"
           onClick={() => {
             if (!window.confirm("관리자 화면에서 나갈까요? 저장하지 않은 내용은 사라집니다.")) return;
-            clearAdminLineups();
+            clearAdminLineups(); clearAdminSmokes(); clearDemoSmokes();
             endDemoSession();
             navigate("/admin");
           }}
@@ -76,8 +79,8 @@ export function AdminLayout() {
       <p role="note" className="rounded-lg border border-line border-l-2 border-l-caution bg-surface px-4 py-3 text-14 text-sub">
         <b className="mr-2 font-semibold text-caution">{mode === "real" ? "DB 자료 관리" : "화면 체험 중"}</b>
         {mode === "real"
-          ? "저장·수정·삭제는 연결된 DB에 반영됩니다. 일반 사용자 화면의 실제 자료 연결은 준비 중입니다."
-          : "입력한 내용은 이 탭에서만 유지되고 새로고침하면 초기화됩니다. 활성 상태로 저장한 공략은 이 탭의 공개 라인업·스모크 화면에서 미리 볼 수 있습니다."}
+          ? "저장·수정·삭제는 연결된 DB에 반영됩니다. 활성 스모크는 공개 지도에 표시됩니다. 공개 라인업은 아직 예시 화면입니다."
+          : "입력한 내용은 이 탭에서만 유지되고 새로고침하면 초기화됩니다. 체험 스모크는 공개 지도에 표시되지 않습니다. 활성 라인업은 이 탭의 라인업 화면에서 미리 볼 수 있습니다."}
       </p>
 
       {reauth && (
@@ -88,7 +91,7 @@ export function AdminLayout() {
             <AdminTokenForm onAuthenticated={() => undefined} />
             <Button variant="secondary" onClick={() => {
               if (!window.confirm("저장하지 않은 내용을 버리고 나갈까요?")) return;
-              clearAdminLineups(); endDemoSession(); navigate("/admin");
+              clearAdminLineups(); clearAdminSmokes(); clearDemoSmokes(); endDemoSession(); navigate("/admin");
             }}>로그인 화면으로</Button>
           </div>
         </div>
@@ -96,11 +99,7 @@ export function AdminLayout() {
       <div className="flex flex-col gap-6 lg:flex-row lg:items-start">
         <nav aria-label="자료 관리" className="flex shrink-0 gap-2 rounded-card border border-line bg-surface p-3 lg:w-[200px] lg:flex-col">
           <p className="hidden px-2 pt-1 pb-2 text-13 font-medium text-sub lg:block">자료 관리</p>
-          {(["lineup", "smoke"] as const).map((kind) => mode === "real" && kind === "smoke" ? (
-            <span key={kind} aria-disabled="true" className="flex h-11 items-center justify-between gap-3 px-3 text-15 text-sub-weak">
-              스모크 관리 <span className="text-12">준비 중</span>
-            </span>
-          ) : (
+          {(["lineup", "smoke"] as const).map((kind) => (
             <NavLink
               key={kind}
               to={`/admin/${KIND_PATH[kind]}`}
@@ -112,7 +111,7 @@ export function AdminLayout() {
               }
             >
               {KIND_LABEL[kind]} 관리
-              <span className="text-13 text-sub">{entries.filter((entry) => entry.kind === kind).length}</span>
+              <span className="text-13 text-sub">{kind === "smoke" ? (mode === "real" ? realSmokes.entries.length : demoSmokes.length) : entries.filter((entry) => entry.kind === kind).length}</span>
             </NavLink>
           ))}
         </nav>

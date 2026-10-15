@@ -1,185 +1,17 @@
-import { Fragment, useState } from "react";
-import { useLocation, useNavigate, useParams, useSearchParams } from "react-router-dom";
-import { VideoLink } from "@/components/guide-map/GuideDetail";
-import { smokeDetailPath } from "@/components/guide-map/paths";
+import { useEffect, useState } from "react";
+import { useParams, useSearchParams } from "react-router-dom";
+import { Button, ButtonLink } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
-import { FilterChipGroup } from "@/components/ui/FilterChip";
-import { agentName } from "@/data/game-names";
-import { usePublishedSmokes } from "@/features/admin/public-guides";
-import { MapPickerGrid } from "@/features/lineups/MapPickerGrid";
-import { SelectionRow } from "@/features/lineups/SelectionRow";
-import { SmokeMarkerIcon, SmokeMinimap } from "@/features/smokes/SmokeMinimap";
-import { agentIconPath, mapImagePath } from "@/lib/assets";
+import { SmokePointMap } from "@/features/smokes/SmokePointMap";
+import { createSmokeApi, smokeErrorMessage } from "@/features/smokes/smoke-api";
+import type { PublicSmoke } from "@/features/smokes/smoke-model";
 import { cx } from "@/lib/cx";
+import { findLineupMap, type LineupMap } from "@/mocks/lineups";
 import { NotFoundPage } from "@/pages/NotFoundPage";
-import { findLineupMap, siteLabel, type LineupMap, type LineupSide } from "@/mocks/lineups";
-import {
-  findSmokes,
-  SMOKE_AGENT_STATS,
-  SMOKE_VARIANT_LABEL,
-  smokeMeta,
-  smokeSiteOptions,
-  type SmokeGuide,
-  type SmokeVariant,
-} from "@/mocks/smokes";
 
-const SIDE_LABEL: Record<LineupSide, string> = { attack: "공격", defense: "수비" };
-/** 맵은 주소(/smokes/:mapId), 필터와 고른 연막은 쿼리(?side·site·type·smoke)에 둔다. 기본: 공격 · 전체 · 공통 원형. */
-function useSmokeFilters(map: LineupMap) {
-  const [params, setParams] = useSearchParams();
-  const side: LineupSide = params.get("side") === "defense" ? "defense" : "attack";
-  const variant: SmokeVariant = params.get("type") === "harbor-wall" ? "harbor-wall" : "circle";
-  const siteOptions = smokeSiteOptions(map.mapId);
-  const site = siteOptions.find((option) => option.value === params.get("site"))?.value ?? "all";
-  const smokeId = params.get("smoke");
+const smokeApi = createSmokeApi(import.meta.env.VITE_BACKEND_URL);
+type ListState = { status: "loading" } | { status: "error"; message: string } | { status: "ready"; items: PublicSmoke[] };
 
-  /** 값을 바꾸면 고른 연막은 닫는다. 연막을 고를 때만 기록에 남긴다. */
-  const update = (changes: Record<string, string | null>) => {
-    const next = new URLSearchParams(params);
-    for (const [key, value] of Object.entries(changes)) {
-      if (value === null) next.delete(key);
-      else next.set(key, value);
-    }
-    if (!("smoke" in changes)) next.delete("smoke");
-    setParams(next, { replace: !("smoke" in changes) });
-  };
-
-  /** 맵을 바꾸면 진영·유형은 두고 사이트·고른 연막은 닫는다 (TASK-FE-057) */
-  const mapQuery = () => {
-    const next = new URLSearchParams(params);
-    next.delete("site");
-    next.delete("smoke");
-    const query = next.toString();
-    return query ? `?${query}` : "";
-  };
-
-  return { map, side, variant, site, siteOptions, smokeId, update, mapQuery };
-}
-
-function Segmented<T extends string>({
-  label,
-  options,
-  value,
-  onChange,
-  className,
-}: {
-  label: string;
-  options: readonly { value: T; label: string }[];
-  value: T;
-  onChange: (value: T) => void;
-  className?: string;
-}) {
-  return (
-    <div role="radiogroup" aria-label={label} className={cx("flex gap-1 rounded-thumb border border-line p-1", className)}>
-      {options.map((option) => {
-        const active = option.value === value;
-        return (
-          <button
-            key={option.value}
-            type="button"
-            role="radio"
-            aria-checked={active}
-            onClick={() => onChange(option.value)}
-            className={cx(
-              "flex-1 rounded-lg py-2 text-14",
-              active ? "bg-primary-soft font-semibold text-primary" : "font-medium text-sub hover:text-main",
-            )}
-          >
-            {option.label}
-          </button>
-        );
-      })}
-    </div>
-  );
-}
-
-function CompareTable() {
-  return (
-    <Card as="section" aria-labelledby="smoke-compare-title" className="flex flex-col gap-3 p-5">
-      <div className="flex items-center justify-between">
-        <h2 id="smoke-compare-title" className="text-15 font-semibold tracking-normal">
-          요원별 연막 비교
-        </h2>
-        <p className="text-12 font-medium tracking-normal text-caution">예시 · 검증 전</p>
-      </div>
-      <table className="w-full overflow-hidden rounded-[10px] bg-page text-12 tracking-normal outline outline-1 -outline-offset-1 outline-line">
-        <thead>
-          <tr className="text-left text-sub-weak">
-            <th scope="col" className="w-[106px] py-2 pl-2.5 font-medium">
-              요원
-            </th>
-            <th scope="col" className="w-16 py-2 font-medium">
-              크기
-            </th>
-            <th scope="col" className="py-2 pr-2.5 font-medium">
-              지속
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {SMOKE_AGENT_STATS.map((stat) => (
-            <tr key={stat.agentId} className="border-t border-line-light text-sub">
-              <th scope="row" className="py-1 pl-2.5 text-left">
-                <span className="flex items-center gap-1.5 font-semibold text-main">
-                  <img src={agentIconPath(stat.agentId)} alt="" className="size-5 rounded-md bg-elevated object-cover" />
-                  {stat.name}
-                </span>
-              </th>
-              <td className="py-1">{stat.size}</td>
-              <td className="py-1 pr-2.5">{stat.duration}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-      <p className="text-12 leading-[1.55] tracking-normal text-sub-weak">바이퍼 전용 연막은 라인업 페이지에서 확인할 수 있어요.</p>
-    </Card>
-  );
-}
-
-function SmokeDetail({ smoke, detailPath }: { smoke: SmokeGuide; detailPath: string }) {
-  return (
-    <section aria-label={`${smoke.title} 상세`} className="flex flex-col gap-4 rounded-thumb border border-line bg-page p-5 tracking-normal">
-      <div className="flex flex-wrap items-center justify-between gap-3">
-        <div className="flex flex-col gap-1">
-          <h3 className="text-16 font-semibold">{smoke.title}</h3>
-          <p className="text-12 text-sub">
-            {agentName(smoke.agentId)} · {SMOKE_VARIANT_LABEL[smoke.variant]} · 예시 설명
-          </p>
-        </div>
-        <ul className="flex gap-1.5">
-          {[SIDE_LABEL[smoke.side], siteLabel(smoke.site)].map((tag) => (
-            <li key={tag} className="rounded-md bg-elevated px-2 py-1 text-12 font-medium text-sub">
-              {tag}
-            </li>
-          ))}
-        </ul>
-      </div>
-      {/* 영상은 상세 페이지에서 본다 (TASK-FE-059) */}
-      {smoke.videoUrl && <VideoLink to={detailPath} label="스모크 영상" className="w-full max-w-[640px]" />}
-      <ol className="grid gap-3 sm:grid-cols-3">
-        {smoke.steps.map((step, index) => (
-          <li key={step.title} className="flex flex-col gap-2.5">
-            {/* 스크린샷은 아직 없어 자리만 보여준다 */}
-            {step.screenshot && (
-              <div className="flex h-28 items-center justify-center rounded-lg border border-line bg-elevated text-12 text-sub-weak">
-                {step.screenshot}
-              </div>
-            )}
-            <p className="flex items-center gap-2 text-13 font-semibold">
-              <span lang="en" className="flex size-5 items-center justify-center rounded-full bg-primary text-11 font-semibold text-on-primary">
-                {index + 1}
-              </span>
-              {step.title}
-            </p>
-            <p className="text-12 leading-[1.55] text-sub">{step.text}</p>
-          </li>
-        ))}
-      </ol>
-    </section>
-  );
-}
-
-/** 09 스모크 - 스모크 보기 (/smokes/:mapId). 맵 선택은 SmokeMapSelectPage (TASK-FE-057). */
 export function SmokeGuidePage() {
   const { mapId } = useParams();
   const map = findLineupMap(mapId);
@@ -187,202 +19,106 @@ export function SmokeGuidePage() {
   return <SmokeBoard key={map.mapId} map={map} />;
 }
 
-/** 09 스모크 가이드 - 기본 (Figma 182:4065) · 맵 드롭다운 (185:4122) · 연막 선택 (185:4375) */
 function SmokeBoard({ map }: { map: LineupMap }) {
-  const navigate = useNavigate();
-  const location = useLocation();
-  const filters = useSmokeFilters(map);
-  const { side, variant, site } = filters;
-  const [mapOpen, setMapOpen] = useState(false);
+  const [state, setState] = useState<ListState>({ status: "loading" });
+  const [reload, setReload] = useState(0);
+  const [params, setParams] = useSearchParams();
 
-  // 관리자 예시에서 게시한 연막도 같은 탭에서는 함께 보여준다 (TASK-FE-056)
-  const published = usePublishedSmokes(map.mapId, side, variant);
-  const all = [...findSmokes(map.mapId, side, variant), ...published];
-  const visible = all.filter((smoke) => site === "all" || smoke.site === site);
-  const selected = visible.find((smoke) => smoke.id === filters.smokeId);
-  const select = (smoke: SmokeGuide) => filters.update({ smoke: smoke.id === selected?.id ? null : smoke.id });
-  /** 던지는 위치를 누르면 상세 페이지로 간다. 돌아올 때 지금 필터를 살리도록 쿼리를 넘긴다 (TASK-FE-059) */
-  const play = (smoke: SmokeGuide) => navigate(smokeDetailPath(map.mapId, smoke.id), { state: { from: location.search } });
+  useEffect(() => {
+    const controller = new AbortController();
+    setState({ status: "loading" });
+
+    async function load() {
+      try {
+        const records = new Map<string, PublicSmoke>();
+        let offset = 0;
+        let total = 0;
+        // 한 맵에 100개 이상 있어도 다음 페이지를 이어 읽어 지도에서 빠지지 않게 한다.
+        do {
+          const page = await smokeApi.listPublic(map.mapId, offset, controller.signal);
+          if (controller.signal.aborted) return;
+          for (const item of page.items) records.set(item.id, item);
+          total = page.total;
+          if (page.items.length === 0 && offset < total) throw new Error("스모크 목록을 끝까지 불러오지 못했어요. 다시 시도해 주세요.");
+          offset += page.items.length;
+        } while (offset < total);
+        setState({ status: "ready", items: [...records.values()] });
+      } catch (error) {
+        if (!controller.signal.aborted) setState({ status: "error", message: smokeErrorMessage(error) });
+      }
+    }
+
+    void load();
+    return () => controller.abort();
+  }, [map.mapId, reload]);
+
+  const items = state.status === "ready" ? state.items : [];
+  const selected = items.find((item) => item.id === params.get("smoke"));
+  function select(id: string) {
+    const next = new URLSearchParams();
+    if (id !== selected?.id) next.set("smoke", id);
+    setParams(next);
+  }
 
   return (
     <div className="container-page flex flex-col gap-6 pt-8 pb-12">
-      <Card as="section" className="flex flex-wrap items-center justify-between gap-6 p-7">
-        <div className="flex flex-col gap-2">
-          <p lang="en" className="text-12 font-semibold tracking-[1.44px] text-primary">
-            GAMEPROBE SMOKE LIBRARY
-          </p>
-          <h1 className="text-28 leading-[1.35] font-semibold tracking-normal">스모크 가이드</h1>
-          <p className="text-14 leading-[1.6] tracking-normal text-sub">
-            맵과 진영을 고르면 어디에 연막을 설치하면 좋은지 미니맵 위에서 바로 확인할 수 있어요.
-            <br />
-            바이퍼를 제외한 공통 원형 연막과 하버 일자 연막을 안내해요.
-          </p>
+      <Card as="section" className="flex flex-wrap items-center justify-between gap-5 p-5 sm:p-7">
+        <div className="min-w-0 space-y-2">
+          <p lang="en" className="text-12 font-semibold tracking-[1.44px] text-primary">GAMEPROBE SMOKE LIBRARY</p>
+          <h1 className="text-28 font-semibold tracking-normal">{map.name} 스모크</h1>
+          <p className="text-14 leading-[1.6] text-sub">지도나 목록에서 위치를 고르면 설치 위치와 설명을 확인할 수 있어요.</p>
         </div>
-        <div className="flex w-full flex-col gap-1.5 rounded-thumb border-l-3 border-caution bg-page px-5 py-4 tracking-normal md:w-[380px]">
-          <p className="text-14 font-semibold text-caution">예시 스모크 가이드</p>
-          <p className="text-13 leading-[1.55] text-sub">위치·경로·크기·지속시간은 예시예요. 실제 사용 전 패치별 검증이 필요해요.</p>
-        </div>
+        <ButtonLink to="/smokes" variant="secondary">맵 변경</ButtonLink>
       </Card>
 
-      <div className="grid items-start gap-6 lg:grid-cols-[280px_minmax(0,1fr)]">
-        <aside aria-label="스모크 필터" className="flex flex-col gap-4">
-          <Card
-            className="flex flex-col gap-4 p-5"
-            onKeyDown={(event) => {
-              if (event.key === "Escape") setMapOpen(false);
-            }}
-          >
-            <SelectionRow
-              label="맵"
-              title={map.name}
-              image={mapImagePath(map.mapId)}
-              wide
-              open={mapOpen}
-              controls="smoke-map-picker"
-              onToggle={() => setMapOpen((open) => !open)}
-            />
-            {mapOpen && (
-              <>
-                <span aria-hidden className="h-px bg-line" />
-                <MapPickerGrid
-                  id="smoke-map-picker"
-                  current={map.mapId}
-                  onPick={(next) => {
-                    setMapOpen(false);
-                    if (next !== map.mapId) navigate(`/smokes/${next}${filters.mapQuery()}`);
-                  }}
-                />
-              </>
-            )}
-          </Card>
-          <Segmented
-            label="공격 · 수비"
-            options={[
-              { value: "attack", label: "공격" },
-              { value: "defense", label: "수비" },
-            ]}
-            value={side}
-            onChange={(next) => filters.update({ side: next === "attack" ? null : next })}
-            className="bg-surface"
-          />
-          <CompareTable />
-          <Card as="section" aria-labelledby="smoke-site-title" className="flex flex-col gap-3 p-5">
-            <h2 id="smoke-site-title" className="text-16 font-semibold">
-              사이트
-            </h2>
-            <FilterChipGroup
-              label="사이트"
-              options={filters.siteOptions}
-              value={site}
-              onChange={(next) => filters.update({ site: next === "all" ? null : next })}
-              size="xl"
-            />
-          </Card>
-          <Card as="section" aria-labelledby="smoke-type-title" className="flex flex-col gap-3 p-5">
-            <h2 id="smoke-type-title" className="text-15 font-semibold tracking-normal">
-              연막 유형
-            </h2>
-            <Segmented
-              label="연막 유형"
-              options={[
-                { value: "circle", label: "공통 원형" },
-                { value: "harbor-wall", label: "하버 일자" },
-              ]}
-              value={variant}
-              onChange={(next) => filters.update({ type: next === "circle" ? null : next })}
-              className="bg-page"
-            />
-          </Card>
-        </aside>
-
-        <Card as="section" aria-labelledby="smoke-explorer-title" className="flex min-w-0 flex-col overflow-hidden tracking-normal">
-          <div className="flex items-center justify-between gap-3 border-b border-line-light px-6 py-5">
-            <div className="flex flex-col gap-1">
-              <p lang="en" className="text-11 font-semibold tracking-[1.32px] text-sub-weak">
-                SMOKE EXPLORER
-              </p>
-              <h2 id="smoke-explorer-title" className="text-20 leading-[1.35] font-semibold">
-                {map.name} · {SIDE_LABEL[side]}
-              </h2>
-            </div>
-            <p className="text-13 font-medium text-sub">
-              가이드 {visible.length}개 · {SIDE_LABEL[side]}
-            </p>
-          </div>
-          <div className="flex justify-center bg-page px-4 py-7">
-            <SmokeMinimap mapId={map.mapId} mapName={map.name} smokes={visible} selected={selected} onSelect={select} onPlay={play} />
-          </div>
-          <ul aria-label="범례" className="flex flex-wrap gap-5 border-t border-line-light px-6 py-4 text-12 text-sub">
-            <li className="flex items-center gap-1.5">
-              <span aria-hidden className="size-2.5 rounded-full bg-primary" />
-              연막 도착 위치
-            </li>
-            <li className="flex items-center gap-1.5">
-              <span aria-hidden className="size-2.5 rounded-full bg-win" />
-              투척 위치
-            </li>
-            <li className="flex items-center gap-1.5">
-              <span aria-hidden className="h-0.5 w-4 bg-primary" />
-              투사 경로
-            </li>
-          </ul>
-          <div className="flex flex-col gap-2.5 px-6 pt-5 pb-6">
-            <div className="flex items-center justify-between">
-              <h3 className="text-15 font-semibold">연막 예시 목록</h3>
-              <p className="text-13 font-medium text-sub-weak">{visible.length}개</p>
-            </div>
-            {visible.length === 0 ? (
-              <p role="status" className="py-6 text-center text-14 text-sub">
-                조건에 맞는 연막 예시가 없어요.
-              </p>
-            ) : (
-              <ul aria-label="연막 예시 목록" className="flex flex-col gap-2.5">
-                {visible.map((smoke) => {
-                  const active = smoke.id === selected?.id;
-                  return (
-                    <Fragment key={smoke.id}>
-                      <li>
-                        <button
-                          type="button"
-                          aria-expanded={active}
-                          onClick={() => select(smoke)}
-                          className={cx(
-                            "flex w-full items-center gap-3.5 rounded-thumb bg-elevated py-3 pr-4 pl-3.5 text-left",
-                            active ? "border-[1.5px] border-primary" : "border border-line hover:border-line-strong",
-                          )}
-                        >
-                          <span className="relative flex size-9 shrink-0 items-center justify-center">
-                            {smoke.variant === "circle" ? (
-                              <SmokeMarkerIcon />
-                            ) : (
-                              <img src={agentIconPath(smoke.agentId)} alt="" className="size-9 rounded-full bg-elevated object-cover" />
-                            )}
-                          </span>
-                          <span className="flex min-w-0 flex-1 flex-col gap-0.5">
-                            <span className="truncate text-14 font-semibold">{smoke.title}</span>
-                            <span className="truncate text-12 text-sub">{smokeMeta(smoke)}</span>
-                          </span>
-                          <span className="hidden text-12 font-medium whitespace-nowrap text-caution sm:inline">예시 · 패치 검증 필요</span>
-                        </button>
-                      </li>
-                      {active && (
-                        <li>
-                          <SmokeDetail smoke={smoke} detailPath={smokeDetailPath(map.mapId, smoke.id)} />
-                        </li>
-                      )}
-                    </Fragment>
-                  );
-                })}
-              </ul>
-            )}
-            {!selected && visible.length > 0 && (
-              <p className="rounded-thumb border border-dashed border-line px-4 py-5 text-center text-13 text-sub">
-                지도 위 연막 아이콘이나 목록을 선택하면 투척 경로와 설치 방법을 볼 수 있어요.
-              </p>
-            )}
-          </div>
+      {state.status === "loading" && <Card className="p-8"><p role="status" className="text-14 text-sub">스모크를 불러오는 중이에요.</p></Card>}
+      {state.status === "error" && (
+        <Card className="flex flex-col items-start gap-4 p-6">
+          <p role="alert" className="text-14 text-loss">{state.message}</p>
+          <Button variant="secondary" onClick={() => setReload((value) => value + 1)}>다시 시도</Button>
         </Card>
-      </div>
+      )}
+      {state.status === "ready" && (
+        <div className="grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
+          <Card as="section" aria-label="스모크 지도" className="min-w-0 p-4 sm:p-6">
+            <div className="mb-2 flex items-center justify-between gap-3">
+              <h2 className="text-18 font-semibold">설치 위치</h2>
+              <span className="text-13 text-sub">스모크 {items.length}개</span>
+            </div>
+            <SmokePointMap mapId={map.mapId} points={items} selectedId={selected?.id} onSelect={select} />
+            {selected ? (
+              <section aria-label="선택한 스모크" className="mt-5 space-y-3 rounded-thumb border border-primary/40 bg-primary-soft p-5">
+                <h3 className="text-18 font-semibold break-words">{selected.title}</h3>
+                <p className="text-14 leading-[1.7] whitespace-pre-wrap break-words text-sub">{selected.notes || "등록된 설명이 없어요."}</p>
+                <ButtonLink to={`/smokes/${map.mapId}/${encodeURIComponent(selected.id)}`} size="md" variant="secondary">상세 보기</ButtonLink>
+              </section>
+            ) : <p className="mt-5 rounded-lg bg-page px-4 py-3 text-13 leading-[1.6] text-sub">{items.length ? "지도에서 번호를 선택하세요. 위치가 겹치면 스모크 목록에서 선택할 수 있어요." : "이 맵에는 아직 공개된 스모크가 없어요."}</p>}
+          </Card>
+          <Card as="section" aria-labelledby="smoke-list-title" className="flex min-w-0 flex-col gap-4 p-5">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <h2 id="smoke-list-title" className="text-18 font-semibold">스모크 목록</h2>
+              <button type="button" className="min-h-10 text-13 text-primary" onClick={() => setReload((value) => value + 1)}>새로고침</button>
+            </div>
+            {items.length === 0 ? <p className="text-14 leading-[1.6] text-sub">등록된 스모크가 활성화되면 여기에 표시돼요.</p> : (
+              <ol className="flex flex-col gap-2">
+                {items.map((smoke, index) => (
+                  <li key={smoke.id}>
+                    <button
+                      type="button"
+                      aria-pressed={selected?.id === smoke.id}
+                      onClick={() => select(smoke.id)}
+                      className={cx("flex w-full items-start gap-3 rounded-lg border p-3 text-left", selected?.id === smoke.id ? "border-primary bg-primary-soft" : "border-transparent hover:bg-elevated")}
+                    >
+                      <span aria-hidden className="flex size-7 shrink-0 items-center justify-center rounded-full bg-elevated text-13 font-semibold text-primary">{index + 1}</span>
+                      <span className="min-w-0 break-words text-14 leading-7 font-medium">{smoke.title}</span>
+                    </button>
+                  </li>
+                ))}
+              </ol>
+            )}
+          </Card>
+        </div>
+      )}
     </div>
   );
 }

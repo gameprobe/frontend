@@ -6,7 +6,7 @@ import { cx } from "@/lib/cx";
 import { formatRiotId } from "@/lib/riot-id";
 
 const TABS = [
-  { label: "라이엇 계정 연동", path: "/my" },
+  { label: "예시 계정 연결", path: "/my" },
   { label: "내 전적 바로가기", path: "/my/record" },
   { label: "즐겨찾기 관리", path: "/my/favorites" },
   { label: "설정", path: "/my/settings" },
@@ -50,8 +50,9 @@ export function MyLayout() {
     <div className="container-page flex flex-col gap-9 pt-8 pb-20 md:pt-10">
       <div className="flex flex-col gap-5">
         <div className="flex flex-col gap-1">
-          <p className="text-16 font-medium text-sub">마이페이지</p>
+          <p className="text-16 font-medium text-sub">마이페이지 · 브라우저 체험</p>
           <h1 className="text-24 font-semibold md:text-28 xl:text-32">{formatRiotId(session)} 님, 반가워요</h1>
+          <p className="text-14 text-sub">실제 Riot 계정이 아닌 가상 프로필이에요. 연결 해제는 이 브라우저의 예시 연결 상태만 삭제해요.</p>
         </div>
         <nav aria-label="마이페이지 메뉴" className="flex gap-1 overflow-x-auto border-b border-line [scrollbar-width:none]">
           {TABS.map((tab) => {

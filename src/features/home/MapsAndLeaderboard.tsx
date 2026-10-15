@@ -42,7 +42,7 @@ function Leaderboard() {
   return (
     <Card as="section" className="flex flex-col gap-4 p-6">
       <CardTitleRow
-        title={`공식 리더보드 · ${LEADERBOARD_REGION_LABEL}`}
+        title={`예시 리더보드 · ${LEADERBOARD_REGION_LABEL}`}
         action={<TextLink to="/ranking">전체 랭킹</TextLink>}
       />
       <ol>

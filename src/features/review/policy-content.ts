@@ -1,0 +1,37 @@
+import type { ReviewLanguage } from "@/features/review/review-content";
+
+type Section = { title: string; body: string };
+export const PRIVACY: Record<ReviewLanguage, Section[]> = {
+  ko: [
+    { title: "1. 운영자와 적용 범위", body: "GameProbe의 운영자이자 개인정보 문의 담당자는 ShinJungho이며, 문의처는 game.probe217@gmail.com이에요. 이 안내는 현재 무료 공개 데모에 적용돼요. 실제 Riot 계정 연동·전적 수집을 시작하기 전에 처리 항목과 기간을 다시 안내할 예정이에요." },
+    { title: "2. 현재 전적과 계정 연결", body: "현재 전적·랭킹·메타 통계와 분석 시나리오는 예시예요. 실제 Riot 계정 인증, 비밀번호·토큰 수집 또는 실제 전적 조회는 하지 않아요. 동의 화면의 체크와 연결 버튼은 체험용이며 실제 개인정보 처리 동의 기록으로 사용되지 않아요." },
+    { title: "3. 브라우저에 저장되는 정보", body: "예시 플레이어의 최근 검색·즐겨찾기, 표시 설정, 예시 연결 상태와 브라우저에서 작성한 가이드 등은 기기의 사이트 저장소에 남을 수 있어요. 서버 계정에 동기화되지 않으며 자동 만료를 두지 않아요. 최근 검색·즐겨찾기는 각 화면에서 삭제하고, 예시 연결은 마이페이지에서 해제할 수 있어요. 전체 초기화는 브라우저의 이 사이트 데이터 삭제 기능을 사용해 주세요. 페이지 주소나 검색어는 호스팅 요청·브라우저 기록에 남을 수 있으므로 민감한 정보를 입력하지 마세요." },
+    { title: "4. 이메일 문의와 삭제 요청", body: "이메일을 보내면 주소·표시 이름·문의 본문·첨부파일을 Gmail에서 확인하며, 답변과 요청 처리에만 사용해요. 담당자가 문의 해결 후 30일 이내에 수동으로 영구 삭제하는 방침이에요. 자동 삭제 기능은 없고, 제공자의 백업 삭제 시점까지 보장하지 않아요. 열람·정정·삭제·처리 중지 요청은 문의 이메일로 보내 주세요. 요청 대상만 설명하면 되며 비밀번호나 신분증을 보내지 마세요." },
+    { title: "5. 호스팅·외부 영상과 국외 처리", body: "사이트는 Vercel로 제공되고 접속 과정에서 IP 주소·요청 경로·시각·응답 상태 등 운영·보안 정보가 처리될 수 있어요. 가이드의 YouTube 영상을 열면 Google/YouTube에 접속 정보가 전달되고 제공자 정책에 따라 쿠키 등이 사용될 수 있어요. 문의 메일은 Google의 Gmail에서 처리돼요. 이들 제공자는 한국 외 국가에서 정보를 처리할 수 있어요. 모든 처리 국가·보관 기간·백업 삭제 시점을 이 데모가 통제하거나 확정하지는 못하며, 아래 제공자 안내를 함께 확인해 주세요. 개별 국외 처리 요건과 세부 고지는 추가 확인이 필요한 상태예요." },
+    { title: "6. 향후 실제 서비스", body: "Riot 승인 후 RSO와 서버 동의 기록·접근 제어·철회·삭제 처리를 구현한 다음 실제 데이터를 사용할 예정이에요. 동의하지 않은 선수의 개인 통계를 공개하지 않으며, 비교 데이터 사용이나 모델 학습은 별도 허용 범위 확인 후 진행해요. 브라우저 체험 상태 삭제와 이메일·호스팅 기록 삭제는 별개예요. 처리 방식이 바뀌면 안내를 갱신해요." },
+  ],
+  en: [
+    { title: "1. Operator and scope", body: "ShinJungho operates GameProbe and handles privacy inquiries at game.probe217@gmail.com. This notice covers the free public demo. Data categories and retention will be updated before real Riot account integration or match-data collection begins." },
+    { title: "2. Player data and account flow", body: "Player records, rankings, meta statistics and coaching scenarios are examples. The demo does not authenticate real Riot accounts, collect Riot passwords or tokens, or retrieve real player statistics. Checkbox selections and the connection button simulate a flow; they are not records of consent for processing real player data." },
+    { title: "3. Browser storage", body: "Recent sample-player searches, favorites, settings, demo connection state and locally authored guides may persist in this device's site storage. They are not synced to a server account and have no automatic expiry. Remove searches and favorites in their screens, and unlink the demo session in My Page. Clear this site's browser data to reset all local state. URLs and search queries may appear in hosting requests or browser history; do not enter sensitive information." },
+    { title: "4. Email inquiries and requests", body: "If you email us, your email address, display name, message and attachments are handled in Gmail to respond and process your request. The operator's policy is to manually permanently delete the inquiry within 30 days of resolution. This is not automated and does not guarantee immediate deletion of provider backups. Request access, correction, deletion or suspension of processing by email. Describe the affected information; do not send passwords or identity documents." },
+    { title: "5. Hosting, videos and international processing", body: "Vercel hosts the site and may process IP addresses, request paths, timestamps, response status and other operational or security information. Opening embedded YouTube videos sends connection information to Google/YouTube, which may use cookies under its policies. Google handles contact emails through Gmail. These providers may process information outside Korea. This demo does not control or establish every processing country, retention period or backup-deletion date. See the provider notices below. Applicable international-processing requirements and detailed disclosures still need further verification." },
+    { title: "6. Planned real-data service", body: "After Riot approval, we plan to implement RSO, server-side consent records, access controls, withdrawal and deletion before accessing real player data. We will not expose non-opted-in players' personal statistics. Reference-data and model-training uses require separate permission checks. Deleting browser demo state does not delete emails or hosting records. This notice will be updated when processing changes." },
+  ],
+};
+export const TERMS: Record<ReviewLanguage, Section[]> = {
+  ko: [
+    { title: "1. 서비스 목적", body: "GameProbe는 종료된 VALORANT 경기를 돌아보고 라인업·스모크 자료를 직접 탐색하는 무료 공개 프로토타입이에요. 한국 이용자를 중심으로 준비 중이며 주요 화면은 한국어, 서비스 안내·분석 예시·정책은 한국어와 영어로 제공해요." },
+    { title: "2. 예시와 제공 범위", body: "표시된 선수 기록·순위·메타 통계·분석 시나리오는 실제 현재 성적이나 공식 통계가 아니에요. 예시 연결은 실제 Riot 로그인이나 계정 저장이 아니며, 실제 데이터와 학습된 AI 피드백은 아직 제공하지 않아요. 가이드는 패치에 따라 달라질 수 있고 경기 성과나 승률을 보장하지 않아요." },
+    { title: "3. 이용 시 지켜 주세요", body: "타인의 개인정보·인증 정보를 입력하거나 공유하지 말아 주세요. 서비스나 외부 콘텐츠의 접근 제한을 우회하거나 운영을 방해하는 용도로 이용하면 안 돼요. 실시간 전술 지시·상대 사전 정찰·아이템 상점 조회 서비스로 제공되지 않아요." },
+    { title: "4. 콘텐츠와 Riot Games", body: "GameProbe는 Riot Games가 보증하거나 후원하지 않는 비공식 서비스예요. VALORANT 및 관련 상표·게임 자산의 권리는 Riot Games에 있어요. 외부 영상과 기타 자료의 권리는 각 권리자에게 있으며, 서비스 열람이 콘텐츠 재사용 권한을 부여하지는 않아요. 권리 관련 문의는 운영자에게 보내 주세요." },
+    { title: "5. 변경과 문의", body: "프로토타입의 기능과 예시 자료는 변경될 수 있어요. 실제 계정 데이터 처리나 유료 기능 도입 등 중요한 변경 전에는 안내를 갱신해요. 문의와 개인정보 요청은 운영자 ShinJungho의 game.probe217@gmail.com으로 보내 주세요. 이 초안은 법률 검토 완료를 의미하지 않아요." },
+  ],
+  en: [
+    { title: "1. Purpose", body: "GameProbe is a free public prototype for reviewing completed VALORANT matches and manually browsing lineup and smoke guides. It initially focuses on Korean users. Main product screens are in Korean; the demo guide, example report and policies support Korean and English." },
+    { title: "2. Examples and limitations", body: "Player records, rankings, meta statistics and coaching scenarios are examples, not current performance or official statistics. The connection demo is not Riot authentication or server account storage. Real player data and trained AI feedback are not yet available. Guides may become outdated with game patches, and no match outcome or win rate is guaranteed." },
+    { title: "3. Appropriate use", body: "Do not enter or share other people's personal information or credentials. Do not bypass access restrictions or disrupt the service or linked content. The product does not provide live tactical directions, pre-match opponent scouting or item-store checking." },
+    { title: "4. Content and Riot Games", body: "GameProbe is an unofficial service and is not endorsed or sponsored by Riot Games. VALORANT and related trademarks and game assets belong to Riot Games. External videos and other content belong to their respective owners. Viewing this service does not grant redistribution rights. Contact the operator with rights inquiries." },
+    { title: "5. Changes and contact", body: "Prototype features and examples may change. Notices will be updated before material changes such as real account-data processing or paid features. Contact operator ShinJungho at game.probe217@gmail.com for service or privacy requests. This draft does not represent completed legal review." },
+  ],
+};

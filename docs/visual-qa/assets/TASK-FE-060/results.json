@@ -1,0 +1,213 @@
+{
+  "status": "PASS",
+  "base": "http://127.0.0.1:4173",
+  "routes": [
+    {
+      "label": "desktop",
+      "route": "/",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "desktop",
+      "route": "/review",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "desktop",
+      "route": "/review?lang=en",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "desktop",
+      "route": "/privacy",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "desktop",
+      "route": "/privacy?lang=en",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "desktop",
+      "route": "/terms",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "desktop",
+      "route": "/terms?lang=en",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "desktop",
+      "route": "/insights",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "desktop",
+      "route": "/insights?lang=en",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "desktop",
+      "route": "/my",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "desktop",
+      "route": "/my/consent",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "desktop",
+      "route": "/my/login-failed",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "desktop",
+      "route": "/players/demo-player-01",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "desktop",
+      "route": "/matches/demo-match-001",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "desktop",
+      "route": "/lineups",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "desktop",
+      "route": "/smokes",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "desktop",
+      "consent": "unchecked / required gating / cancel / persist / unlink / optional / select-all PASS",
+      "walkthrough": "4 links PASS",
+      "language": "switch / link / reload PASS"
+    },
+    {
+      "label": "mobile",
+      "route": "/",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "mobile",
+      "route": "/review",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "mobile",
+      "route": "/review?lang=en",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "mobile",
+      "route": "/privacy",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "mobile",
+      "route": "/privacy?lang=en",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "mobile",
+      "route": "/terms",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "mobile",
+      "route": "/terms?lang=en",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "mobile",
+      "route": "/insights",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "mobile",
+      "route": "/insights?lang=en",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "mobile",
+      "route": "/my",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "mobile",
+      "route": "/my/consent",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "mobile",
+      "route": "/my/login-failed",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "mobile",
+      "route": "/players/demo-player-01",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "mobile",
+      "route": "/matches/demo-match-001",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "mobile",
+      "route": "/lineups",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "mobile",
+      "route": "/smokes",
+      "rendered": true,
+      "overflow": false
+    },
+    {
+      "label": "mobile",
+      "consent": "unchecked / required gating / cancel / persist / unlink / optional / select-all PASS",
+      "walkthrough": "4 links PASS",
+      "language": "switch / link / reload PASS"
+    }
+  ],
+  "errors": [],
+  "dataRequests": [],
+  "checkedAt": "2026-10-15T06:42:35.893Z"
+}
