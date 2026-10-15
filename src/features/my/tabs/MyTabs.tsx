@@ -23,17 +23,17 @@ export function AccountTab() {
   };
 
   return (
-    <Card as="section" aria-label="연동된 라이엇 계정" className="flex flex-wrap items-center gap-5 p-6 md:p-8">
+    <Card as="section" aria-label="연결된 예시 계정" className="flex flex-wrap items-center gap-5 p-6 md:p-8">
       <img src={agentIconPath(PROBE_PROFILE.agentId)} alt="" className="size-16 shrink-0 rounded-thumb object-cover" />
       <div className="flex min-w-0 flex-1 flex-col gap-1">
-        <p className="text-13 font-medium text-sub">연동된 라이엇 계정</p>
+        <p className="text-13 font-medium text-sub">연결된 예시 계정</p>
         <p className="truncate text-20 font-semibold">{formatRiotId(session)}</p>
         <p className="text-13 text-sub-weak">
           {PROBE_PROFILE.server} · {session.linkedAt} 연동
         </p>
       </div>
       <Button variant="secondary" className="px-4 text-14" onClick={disconnect}>
-        연동 해제
+        예시 연결 해제
       </Button>
     </Card>
   );
