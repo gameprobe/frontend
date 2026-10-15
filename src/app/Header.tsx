@@ -73,7 +73,7 @@ function AuthButton({ fullWidth, onNavigate }: { fullWidth?: boolean; onNavigate
   if (!session) {
     return (
       <ButtonLink to="/my" size="md" className={fullWidth ? "w-full" : undefined} onClick={onNavigate}>
-        라이엇 로그인
+        연결 체험
       </ButtonLink>
     );
   }

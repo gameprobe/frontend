@@ -1,3 +1,5 @@
+> **2026-10-15 update — TASK-FE-060:** Current product is the Vite frontend in gameprobe/frontend. Use [APPLICATION.md](APPLICATION.md) for replacement text and [TASK-FE-060](../tasks/TASK-FE-060.md) for implementation/verification. Publication was authorized on2026-10-15; verify the public walkthrough after release before using the shortened description in the Riot portal. The September records below are historical.
+
 # GameProbe — Riot 신청 준비 자료
 
 2026-09-28 · TASK-FE-034 · 최신 dev `6249e14` 기준

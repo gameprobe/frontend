@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import { AppLayout } from "@/app/AppLayout";
 import { AdminEditorPage } from "@/features/admin/AdminEditorPage";
 import { AdminGatePage } from "@/features/admin/AdminGatePage";
@@ -44,12 +44,24 @@ import { HomePage } from "@/pages/HomePage";
 import { NotFoundPage } from "@/pages/NotFoundPage";
 import { SearchPage } from "@/pages/SearchPage";
 
+import { ReviewPage } from "@/features/review/ReviewPage";
+import { InsightsPage } from "@/features/review/InsightsPage";
+import { PolicyPage } from "@/features/review/PolicyPage";
+import { DEMO_PROFILE_PATH } from "@/features/review/review-content";
+
 export const router = createBrowserRouter([
   {
     element: <AppLayout />,
     children: [
       { index: true, element: <HomePage /> },
       { path: "search", element: <SearchPage /> },
+      { path: "review", element: <ReviewPage /> },
+      { path: "insights", element: <InsightsPage /> },
+      { path: "privacy", element: <PolicyPage kind="privacy" /> },
+      { path: "terms", element: <PolicyPage kind="terms" /> },
+      // Keep links from the earlier Riot application usable after the frontend migration.
+      { path: "connect", element: <Navigate to="/my/consent" replace /> },
+      { path: "players/demo-player-01", element: <Navigate to={DEMO_PROFILE_PATH} replace /> },
       {
         path: "players/:riotId",
         element: <ProfileLayout />,
