@@ -353,6 +353,7 @@ function Editor({ kind, initialEntry, entries, realMode }: { kind: GuideKind; in
                 />
                 <Field label="상태">
                   <Dropdown label="상태" appearance="field" options={STATUS_OPTIONS} value={draft.status} onChange={(status) => update({ status })} />
+                  <p className="text-13 text-sub">활성 공략은 일반 사용자에게 공개됩니다. 비활성 공략은 관리자만 볼 수 있습니다.</p>
                 </Field>
               </div>
             </details>

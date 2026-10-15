@@ -44,7 +44,7 @@ export function AdminListPage({ kind }: { kind: GuideKind }) {
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div className="flex flex-col gap-1">
           <h2 className="text-24 font-bold">{KIND_LABEL[kind]} 관리</h2>
-          <p className="text-14 text-sub">같은 도착점의 공략을 모았습니다. 공략을 고르면 편집할 수 있습니다.</p>
+          <p className="text-14 text-sub">같은 도착점의 공략을 모았습니다. 활성 공략만 일반 사용자에게 공개됩니다.</p>
         </div>
         <ButtonLink to={`${base}/new`}>+ 새 {KIND_LABEL[kind]} 등록</ButtonLink>
       </div>

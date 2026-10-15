@@ -17,7 +17,7 @@ const origin = "http://localhost:8001";
 const token = "test-only-token";
 const record = {
   id: "saved-id", title: "테스트 공략", mapId: "ascent", agentId: "brimstone", abilitySlot: "Q",
-  side: "attack", site: "A", status: "draft", notes: "설명", videoUrl: "https://example.com/video.mp4",
+  side: "attack", site: "A", status: "inactive", notes: "설명", videoUrl: "https://example.com/video.mp4",
   destination: { id: "destination-1", name: "도착점", point: { x: 0.45500538482730984, y: 0.14341172640068126 } },
   start: { x: 0.6393417987827785, y: 0.07448593683472338 },
   path: [{ x: 0.4742404888922283, y: 0.2173717033586295 }, { x: 0, y: 1 }],
@@ -33,6 +33,24 @@ test("API coordinates round-trip unchanged, preserving intermediate point order 
   assert.deepEqual(toLineupPayload(entry), expected);
   assert.equal("kind" in toLineupPayload(entry), false);
   assert.equal("id" in toLineupPayload(entry), false);
+});
+
+test("active and inactive survive API round-trips and are sent unchanged when saving", async () => {
+  const calls = [];
+  globalThis.fetch = async (_url, init) => {
+    calls.push(JSON.parse(init.body));
+    return Response.json({ ...record, ...JSON.parse(init.body) });
+  };
+  const client = createAdminLineupApi(origin);
+  for (const status of ["active", "inactive"]) {
+    const entry = fromLineupRecord({ ...record, status });
+    assert.equal(entry.status, status);
+    const payload = toLineupPayload(entry);
+    assert.equal(payload.status, status);
+    const saved = await client.update(token, record.id, payload);
+    assert.equal(fromLineupRecord(saved).status, status);
+  }
+  assert.deepEqual(calls.map((payload) => payload.status), ["active", "inactive"]);
 });
 
 test("missing coordinates fail before an incomplete payload is sent", () => {
