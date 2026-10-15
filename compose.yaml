@@ -6,6 +6,9 @@ services:
       context: .
       dockerfile: Dockerfile.dev
     init: true
+    environment:
+      # 브라우저가 접근할 로컬 FastAPI 주소. 운영 빌드에는 적용하지 않는다.
+      VITE_BACKEND_URL: ${VITE_BACKEND_URL:-http://localhost:8000}
     ports:
       - "127.0.0.1:${FRONTEND_PORT:-3000}:3000"
     volumes:
