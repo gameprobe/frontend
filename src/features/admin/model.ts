@@ -14,7 +14,7 @@ export const MAP_SIZE = MINIMAP_SIZE;
 export const MAX_PATH_POINTS = 30;
 
 export type GuideKind = "lineup" | "smoke";
-export type GuideStatus = "draft" | "review" | "published" | "rejected";
+export type GuideStatus = "active" | "inactive";
 export type AbilitySlot = "Q" | "E" | "C" | "X";
 export type { RoutePoint };
 export type PointMode = "target" | "start" | "path";
@@ -46,7 +46,7 @@ export type DestinationGroup = { destination: Destination; mapId: string; entrie
 /** /admin 주소의 자료 종류 부분 */
 export const KIND_PATH: Record<GuideKind, string> = { lineup: "lineups", smoke: "smokes" };
 export const KIND_LABEL: Record<GuideKind, string> = { lineup: "라인업", smoke: "스모크" };
-export const STATUS_LABEL: Record<GuideStatus, string> = { draft: "초안", review: "검토 대기", published: "게시", rejected: "반려" };
+export const STATUS_LABEL: Record<GuideStatus, string> = { active: "활성", inactive: "비활성" };
 
 const newId = () => crypto.randomUUID();
 const copyDestination = (destination: Destination): Destination => ({
@@ -59,7 +59,7 @@ export function createEmpty(kind: GuideKind, destinationId: string = newId()): G
   return {
     id: "",
     kind,
-    status: "draft",
+    status: "inactive",
     mapId: "ascent",
     agentId: kind === "lineup" ? "sova" : "omen",
     side: "attack",
@@ -93,14 +93,14 @@ export function createAtDestination(source: GuideEntry): GuideEntry {
 /**
  * 화면 체험용 합성 예시. 좌표·경로는 실제 공략이 아니다.
  * 도착점 ID·좌표는 공개 예시(mocks)의 'A 로비 → A 사이트'·'A 메인 입구'와 같게 두어,
- * 게시한 공략이 공개 화면에서 같은 도착지 묶음에 들어가게 한다 (TASK-FE-056).
+ * 활성 공략이 공개 화면에서 같은 도착지 묶음에 들어가게 한다 (TASK-FE-056).
  */
 export function createExamples(): GuideEntry[] {
   const aSite: Destination = { id: "a-lobby-a-site", name: "A 사이트", point: { x: 162, y: 58 } };
   const sova: GuideEntry = {
     ...createEmpty("lineup", aSite.id),
     id: "example-lineup-01",
-    status: "review",
+    status: "inactive",
     title: "예시 · 소바 중간 지점 공략",
     videoUrl: EXAMPLE_VIDEO_URL,
     notes: "관리자 화면 체험용 예시입니다. 좌표와 경로는 실제 공략이 아닙니다.",
@@ -118,7 +118,7 @@ export function createExamples(): GuideEntry[] {
     {
       ...createAtDestination(sova),
       id: "example-lineup-02",
-      status: "published",
+      status: "active",
       title: "예시 · 소바 직선 출발 공략",
       videoUrl: EXAMPLE_VIDEO_URL,
       notes: "같은 도착점을 다른 출발점에서 향하는 별도 공략입니다.",
@@ -145,7 +145,7 @@ export function createExamples(): GuideEntry[] {
     {
       ...createEmpty("smoke", smokeWall.id),
       id: "example-smoke-02",
-      status: "review",
+      status: "inactive",
       agentId: "harbor",
       site: "B",
       shape: "harbor-wall",
