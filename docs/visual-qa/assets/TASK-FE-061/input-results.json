@@ -1,0 +1,74 @@
+[
+  {
+    "test": "smoke attack/270 ArrowRight",
+    "pass": true,
+    "before": {
+      "x": 0.25,
+      "y": 0.75
+    },
+    "after": {
+      "x": 0.25,
+      "y": 0.752
+    }
+  },
+  {
+    "test": "smoke defense/90 ArrowRight and orientation-only switch",
+    "pass": true,
+    "after": {
+      "x": 0.25,
+      "y": 0.75
+    }
+  },
+  {
+    "test": "lineup intermediate point ArrowDown/270",
+    "pass": true,
+    "path": [
+      {
+        "x": 235,
+        "y": 300
+      },
+      {
+        "x": 280,
+        "y": 220
+      }
+    ]
+  },
+  {
+    "test": "smoke pointer click defense/90",
+    "pass": true,
+    "actual": {
+      "x": 0.3996302480916031,
+      "y": 0.700381679389313
+    }
+  },
+  {
+    "test": "smoke drag defense/90",
+    "pass": true,
+    "actual": {
+      "x": 0.3996302480916031,
+      "y": 0.6011450381679388
+    }
+  },
+  {
+    "test": "lineup defense/90 Shift+ArrowRight",
+    "pass": true,
+    "path": [
+      {
+        "x": 235,
+        "y": 250
+      },
+      {
+        "x": 280,
+        "y": 220
+      }
+    ]
+  },
+  {
+    "test": "mobile smoke keyboard attack/270",
+    "pass": true,
+    "actual": {
+      "x": 0.252,
+      "y": 0.75
+    }
+  }
+]

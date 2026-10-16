@@ -1,5 +1,6 @@
+import { minimapView, type MinimapSide } from "@/data/minimap-layout";
 import { useId, useRef, useState, type PointerEvent as ReactPointerEvent, type ReactNode, type RefObject } from "react";
-import { at, polylinePoints } from "@/components/guide-map/geometry";
+import { polylinePoints } from "@/components/guide-map/geometry";
 import { Button } from "@/components/ui/Button";
 import {
   clampPoint,
@@ -21,7 +22,7 @@ type MapEditorProps = {
   mapName: string;
   onChange: (entry: GuideEntry) => void;
   /** 다른 공략과 함께 쓰는 도착점이면 '도착점 수정'을 눌러야 옮길 수 있다. */
-  shared?: { count: number; editing: boolean; onToggle: () => void };
+  shared?: { count: number; editing: boolean; onToggle?: () => void };
   errors: Record<string, string>;
 };
 
@@ -57,6 +58,8 @@ export function MapEditor({ entry, mapName, onChange, shared, errors }: MapEdito
   const activeMode: PointMode = mode === "target" && destinationLocked ? "start" : mode;
   const pathFull = entry.path.length >= MAX_PATH_POINTS;
   const route = routePoints(entry);
+  const view = minimapView(entry.mapId, entry.side);
+  const at = view.at;
 
   function place(point: Point) {
     const next = clampPoint(point);
@@ -119,22 +122,23 @@ export function MapEditor({ entry, mapName, onChange, shared, errors }: MapEdito
           <p className="text-13 text-sub">
             {shared.editing
               ? `이 도착점을 함께 쓰는 공략 ${shared.count + 1}개의 도착 위치를 같이 수정합니다. 저장할 때 반영됩니다.`
-              : `이 도착점은 공략 ${shared.count + 1}개가 함께 씁니다. 옮기면 모두 같이 바뀝니다.`}
+              : shared.onToggle ? `이 도착점은 공략 ${shared.count + 1}개가 함께 씁니다. 옮기면 모두 같이 바뀝니다.`
+              : `공략 ${shared.count + 1}개가 함께 쓰는 도착점입니다. 다른 위치가 필요하면 '새 도착점 지정'을 선택하세요.`}
           </p>
-          <Button
+          {shared.onToggle && <Button
             size="md"
             variant="secondary"
             onClick={() => {
-              shared.onToggle();
+              shared.onToggle?.();
               setMode(shared.editing ? "start" : "target");
             }}
           >
             {shared.editing ? "도착점 수정 취소" : "도착점 수정"}
-          </Button>
+          </Button>}
         </div>
       )}
 
-      <div ref={mapRef} role="group" aria-label="공략 지도 편집" className="relative mx-auto aspect-square w-full max-w-[512px] touch-none select-none">
+      <div {...view.attributes} ref={mapRef} role="group" aria-label="공략 지도 편집" className="relative mx-auto aspect-square w-full max-w-[512px] touch-none select-none">
         <button
           type="button"
           aria-label={`지도 위치 지정 (${MODE_LABEL[activeMode]})`}
@@ -142,22 +146,24 @@ export function MapEditor({ entry, mapName, onChange, shared, errors }: MapEdito
           className="absolute inset-0 z-0 cursor-crosshair rounded-lg"
           onClick={(event) => {
             const rect = event.currentTarget.getBoundingClientRect();
-            place({ x: ((event.clientX - rect.left) / rect.width) * MAP_SIZE, y: ((event.clientY - rect.top) / rect.height) * MAP_SIZE });
+            place(view.unproject({ x: ((event.clientX - rect.left) / rect.width) * MAP_SIZE, y: ((event.clientY - rect.top) / rect.height) * MAP_SIZE }));
           }}
           onKeyDown={(event) => {
             const delta = keyMovement(event.key, event.shiftKey);
             if (delta) {
               event.preventDefault();
-              setCursor((point) => clampPoint({ x: point.x + delta.x, y: point.y + delta.y }));
+              const original = view.unproject(delta, 0);
+              setCursor((point) => clampPoint({ x: point.x + original.x, y: point.y + original.y }));
             } else if (event.key === "Enter" || event.key === " ") {
               event.preventDefault();
               place(cursor);
             }
           }}
         >
-          <img src={mapMiniPath(entry.mapId)} alt="" className="pointer-events-none size-full object-contain" draggable={false} />
+          <img style={view.imageStyle} src={mapMiniPath(entry.mapId)} alt="" className="pointer-events-none size-full object-contain" draggable={false} />
         </button>
-        <svg aria-hidden viewBox="0 0 512 512" className="pointer-events-none absolute inset-0 z-[1] size-full">
+
+        <svg style={view.imageStyle} aria-hidden viewBox="0 0 512 512" className="pointer-events-none absolute inset-0 z-[1] size-full">
           {entry.kind === "smoke" && entry.destination.point && (
             <circle cx={entry.destination.point.x} cy={entry.destination.point.y} r="18" fill="var(--color-primary)" fillOpacity={0.2} stroke="var(--color-primary)" />
           )}
@@ -169,6 +175,8 @@ export function MapEditor({ entry, mapName, onChange, shared, errors }: MapEdito
           <PointMarker
             key={index}
             point={point}
+            mapId={entry.mapId}
+            side={entry.side}
             label={`${index + 1}번 중간 지점`}
             mapRef={mapRef}
             describedBy={`${ids}-move`}
@@ -189,7 +197,7 @@ export function MapEditor({ entry, mapName, onChange, shared, errors }: MapEdito
           return locked ? (
             <span
               key={label}
-              title="함께 쓰는 도착점 · '도착점 수정'을 누른 뒤 옮기세요"
+              title={shared?.onToggle ? "함께 쓰는 도착점 · '도착점 수정'을 누른 뒤 옮기세요" : "함께 쓰는 도착점 · 새 도착점을 지정하면 따로 옮길 수 있습니다"}
               className="pointer-events-none absolute z-[2] -translate-1/2"
               style={at(point)}
             >
@@ -199,6 +207,8 @@ export function MapEditor({ entry, mapName, onChange, shared, errors }: MapEdito
             <PointMarker
               key={label}
               point={point}
+              mapId={entry.mapId}
+              side={entry.side}
               label={`${label} 위치`}
               mapRef={mapRef}
               describedBy={`${ids}-move`}
@@ -258,6 +268,8 @@ export function MapEditor({ entry, mapName, onChange, shared, errors }: MapEdito
 }
 
 type PointMarkerProps = {
+  mapId: string;
+  side: MinimapSide;
   point: Point;
   label: string;
   mapRef: RefObject<HTMLDivElement | null>;
@@ -269,17 +281,20 @@ type PointMarkerProps = {
 type DragState = { id: number; before: Point; initial: Point; offset: Point; moved: boolean };
 
 /** 찍은 점. 끌기(3px 이상 움직여야 시작)·방향키로 옮기고, Esc·포인터 취소면 원래 자리로 돌린다. */
-function PointMarker({ point, label, mapRef, describedBy, onMove, children }: PointMarkerProps) {
+function PointMarker({ mapId, side, point, label, mapRef, describedBy, onMove, children }: PointMarkerProps) {
+  const view = minimapView(mapId, side);
+  const at = view.at;
+  const shown = view.project(point);
   const drag = useRef<DragState | null>(null);
   const [dragging, setDragging] = useState(false);
 
   const toMap = (event: ReactPointerEvent, offset: Point) => {
     const rect = mapRef.current?.getBoundingClientRect();
     if (!rect?.width || !rect.height) return null;
-    return {
+    return view.unproject({
       x: ((event.clientX - rect.left - offset.x) / rect.width) * MAP_SIZE,
       y: ((event.clientY - rect.top - offset.y) / rect.height) * MAP_SIZE,
-    };
+    });
   };
 
   function update(event: ReactPointerEvent<HTMLButtonElement>) {
@@ -320,8 +335,8 @@ function PointMarker({ point, label, mapRef, describedBy, onMove, children }: Po
           before: { ...point },
           initial: { x: event.clientX, y: event.clientY },
           offset: {
-            x: event.clientX - rect.left - (point.x / MAP_SIZE) * rect.width,
-            y: event.clientY - rect.top - (point.y / MAP_SIZE) * rect.height,
+            x: event.clientX - rect.left - (shown.x / MAP_SIZE) * rect.width,
+            y: event.clientY - rect.top - (shown.y / MAP_SIZE) * rect.height,
           },
           moved: false,
         };
@@ -360,7 +375,8 @@ function PointMarker({ point, label, mapRef, describedBy, onMove, children }: Po
         if (delta) {
           event.preventDefault();
           event.stopPropagation();
-          onMove(clampPoint({ x: point.x + delta.x, y: point.y + delta.y }));
+          const original = view.unproject(delta, 0);
+          onMove(clampPoint({ x: point.x + original.x, y: point.y + original.y }));
         } else if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
           event.stopPropagation();

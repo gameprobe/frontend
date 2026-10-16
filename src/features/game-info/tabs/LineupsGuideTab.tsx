@@ -1,3 +1,4 @@
+import { minimapView } from "@/data/minimap-layout";
 import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { Card } from "@/components/ui/Card";
@@ -11,12 +12,14 @@ const MAP_OPTIONS = MAP_INFOS.map((map) => ({ value: map.mapId, label: map.name 
 
 function LineupBoard({ mapId, mapName, lineups }: { mapId: string; mapName: string; lineups: Lineup[] }) {
   const [selected, setSelected] = useState(0);
+  const view = minimapView(mapId);
 
   return (
     <div className="grid items-start gap-4 lg:grid-cols-[520px_minmax(0,1fr)]">
       <Card className="p-4 md:p-6">
-        <div className="relative mx-auto aspect-square w-full max-w-[470px]">
-          <img src={mapMiniPath(mapId)} alt={`${mapName} 미니맵`} className="size-full object-contain opacity-85" />
+        <div {...view.attributes} className="relative mx-auto aspect-square w-full max-w-[470px]">
+
+          <img style={view.imageStyle} src={mapMiniPath(mapId)} alt={`${mapName} 미니맵`} className="size-full object-contain opacity-85" />
           {lineups.map((lineup, index) => {
             const active = index === selected;
             return (
@@ -30,7 +33,7 @@ function LineupBoard({ mapId, mapName, lineups }: { mapId: string; mapName: stri
                   "absolute flex items-center justify-center rounded-full border-2 border-page p-1 text-12 font-semibold text-on-primary",
                   active ? "h-8 min-w-[18px] bg-primary" : "h-6 min-w-5 bg-main",
                 )}
-                style={{ left: `${lineup.x}%`, top: `${lineup.y}%` }}
+                style={view.at({ x: lineup.x * 5.12, y: lineup.y * 5.12 })}
               >
                 {index + 1}
               </button>

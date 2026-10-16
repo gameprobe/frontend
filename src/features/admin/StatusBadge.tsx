@@ -2,10 +2,8 @@ import { STATUS_LABEL, type GuideStatus } from "@/features/admin/model";
 import { cx } from "@/lib/cx";
 
 const TONE: Record<GuideStatus, string> = {
-  draft: "border-line text-sub",
-  review: "border-caution text-caution",
-  published: "border-win text-win",
-  rejected: "border-loss text-loss",
+  active: "border-win text-win",
+  inactive: "border-line text-sub",
 };
 
 export function StatusBadge({ status }: { status: GuideStatus }) {

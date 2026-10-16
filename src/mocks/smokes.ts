@@ -34,6 +34,8 @@ export type SmokeGuide = {
   path?: RoutePoint[];
   /** 유튜브 영상 주소 */
   videoUrl?: string;
+  /** 상세 페이지 설명 글. 없으면 기본 문장 (TASK-FE-059) */
+  description?: string;
 };
 
 export const SMOKE_VARIANT_LABEL: Record<SmokeVariant, string> = { circle: "공통 원형", "harbor-wall": "하버 일자" };
@@ -184,6 +186,17 @@ export function findSmokes(mapId: string, side: LineupSide, variant: SmokeVarian
     cache.set(key, smokes);
   }
   return smokes;
+}
+
+/** 상세 페이지(/smokes/:mapId/:smokeId)에서 연막 하나를 찾는다. 진영·유형을 모두 본다 (TASK-FE-059) */
+export function findSmoke(mapId: string, smokeId: string): SmokeGuide | undefined {
+  for (const side of ["attack", "defense"] as const) {
+    for (const variant of ["circle", "harbor-wall"] as const) {
+      const smoke = findSmokes(mapId, side, variant).find((candidate) => candidate.id === smokeId);
+      if (smoke) return smoke;
+    }
+  }
+  return undefined;
 }
 
 /** 맵 선택 카드의 개수: 공격·수비 × 공통 원형·하버 일자 예시 전부 (TASK-FE-057) */

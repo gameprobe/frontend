@@ -12,3 +12,13 @@ export const at = (point: Point) => ({ left: pct(point.x), top: pct(point.y) });
 
 /** 출발 → 중간 지점 → 도착 순서의 SVG polyline points */
 export const polylinePoints = (points: Point[]) => points.map((point) => `${point.x},${point.y}`).join(" ");
+
+/** 원본 좌표를 표시용으로만 회전한다. size=1은 API 좌표, size=0은 이동 벡터다. */
+export function rotatePoint(point: Point, degrees: number, size = MINIMAP_SIZE): Point {
+  switch (((degrees % 360) + 360) % 360) {
+    case 90: return { x: size - point.y, y: point.x };
+    case 180: return { x: size - point.x, y: size - point.y };
+    case 270: return { x: point.y, y: size - point.x };
+    default: return { ...point };
+  }
+}

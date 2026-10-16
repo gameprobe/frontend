@@ -1,38 +1,64 @@
-/**
- * 예시 입장 여부. 실제 관리자 인증이 아니며 이 탭(sessionStorage)에만 남는다.
- * 실제 토큰 인증(POST /api/admin/session)은 백엔드 연결 Task에서 붙인다.
- */
+import { useSyncExternalStore } from "react";
+
 export const DEMO_CODE = "DEMO1234";
-const KEY = "gameprobe-admin-demo";
-/** sessionStorage를 못 쓰는 환경에서 이번 페이지 동안만 쓰는 값 */
-let entered = false;
+const DEMO_KEY = "gameprobe-admin-demo";
+const TOKEN_KEY = "gameprobe-admin-token";
+const MODE_KEY = "gameprobe-admin-mode";
+export type AdminMode = "demo" | "real" | null;
+const listeners = new Set<() => void>();
+let sessionVersion = 0;
 
-export function isDemoCode(value: string): boolean {
-  return value.trim().toUpperCase() === DEMO_CODE;
+function read(key: string): string | null {
+  try { return window.sessionStorage.getItem(key); } catch { return null; }
 }
-
-export function hasDemoSession(): boolean {
+function write(key: string, value: string | null) {
   try {
-    return entered || window.sessionStorage.getItem(KEY) === "1";
-  } catch {
-    return entered;
-  }
+    if (value === null) window.sessionStorage.removeItem(key);
+    else window.sessionStorage.setItem(key, value);
+  } catch { /* 저장소를 사용할 수 없으면 이번 페이지 동안 메모리에서만 유지한다. */ }
 }
+let token = read(TOKEN_KEY) ?? "";
+let mode: AdminMode = read(MODE_KEY) === "real" ? "real" : read(DEMO_KEY) === "1" ? "demo" : null;
+function notify() { listeners.forEach((listener) => listener()); }
+function subscribe(listener: () => void) { listeners.add(listener); return () => listeners.delete(listener); }
 
-export function startDemoSession(): void {
-  entered = true;
-  try {
-    window.sessionStorage.setItem(KEY, "1");
-  } catch {
-    // 저장소를 못 쓰면 이번 화면에서만 들어간다
-  }
+export function useAdminMode() { return useSyncExternalStore(subscribe, () => mode); }
+export function useAdminToken() { return useSyncExternalStore(subscribe, () => token); }
+export function getAdminToken() { return token; }
+export function getAdminSessionVersion() { return sessionVersion; }
+export function isDemoCode(value: string) { return value.trim().toUpperCase() === DEMO_CODE; }
+export function hasDemoSession() { return mode === "demo"; }
+export function startDemoSession() {
+  sessionVersion += 1;
+  token = "";
+  mode = "demo";
+  write(TOKEN_KEY, null);
+  write(MODE_KEY, null);
+  write(DEMO_KEY, "1");
+  notify();
 }
-
-export function endDemoSession(): void {
-  entered = false;
-  try {
-    window.sessionStorage.removeItem(KEY);
-  } catch {
-    // 무시
-  }
+export function startAdminSession(value: string) {
+  sessionVersion += 1;
+  token = value;
+  mode = "real";
+  write(TOKEN_KEY, value);
+  write(MODE_KEY, "real");
+  write(DEMO_KEY, null);
+  notify();
+}
+/** 폼은 유지하고 토큰만 지운다. 레이아웃에서 다시 인증받는다. */
+export function expireAdminToken() {
+  sessionVersion += 1;
+  token = "";
+  write(TOKEN_KEY, null);
+  notify();
+}
+export function endDemoSession() {
+  sessionVersion += 1;
+  token = "";
+  mode = null;
+  write(TOKEN_KEY, null);
+  write(MODE_KEY, null);
+  write(DEMO_KEY, null);
+  notify();
 }

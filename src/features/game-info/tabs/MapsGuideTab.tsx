@@ -1,3 +1,4 @@
+import { minimapView } from "@/data/minimap-layout";
 import { Link, useParams } from "react-router-dom";
 import closeIcon from "@/assets/icons/close-light.svg";
 import { Card } from "@/components/ui/Card";
@@ -9,6 +10,7 @@ import { metaAgentName } from "@/mocks/meta";
 
 /** 20b 맵 상세 패널 (Figma 57:44) */
 function MapDetail({ map }: { map: MapInfo }) {
+  const view = minimapView(map.mapId);
   const stats = [
     { label: "스파이크 사이트", value: `${map.sites}개` },
     { label: "공격 승률", value: `${map.attackWinRate.toFixed(1)}%` },
@@ -69,7 +71,10 @@ function MapDetail({ map }: { map: MapInfo }) {
         </div>
         {/* 시안 미니맵 카드 높이 397px(왼쪽 열 높이에 맞춤) */}
         <div className="rounded-thumb bg-elevated p-4 lg:min-h-[397px]">
-          <img src={mapMiniPath(map.mapId)} alt={`${map.name} 미니맵`} className="mx-auto aspect-square w-full max-w-[328px] object-contain opacity-90" />
+          <div {...view.attributes} className="relative mx-auto aspect-square w-full max-w-[328px]">
+            <img style={view.imageStyle} src={mapMiniPath(map.mapId)} alt={`${map.name} 미니맵`} className="size-full object-contain opacity-90" />
+
+          </div>
         </div>
       </div>
     </Card>

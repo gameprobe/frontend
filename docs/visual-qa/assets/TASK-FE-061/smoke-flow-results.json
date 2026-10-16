@@ -1,0 +1,18 @@
+{
+  "backend": "Read-only local fixture on 8011; not real backend/DB",
+  "checks": [
+    {
+      "test": "API canonical (.3,.7) projects to (30%,30%) on icebox defense/90; selection preserves side",
+      "pass": true
+    },
+    {
+      "test": "detail and reload preserve defense/90",
+      "pass": true
+    },
+    {
+      "test": "back link preserves smoke selection and side",
+      "pass": true
+    }
+  ],
+  "url": "http://127.0.0.1:3011/smokes/icebox?smoke=qa-icebox&side=defense"
+}

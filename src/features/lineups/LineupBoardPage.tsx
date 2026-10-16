@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { useNavigate, useParams, useSearchParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams, useSearchParams } from "react-router-dom";
 import chevronLeftIcon from "@/assets/icons/chevron-left.svg";
 import playIcon from "@/assets/icons/play.svg";
 import searchIcon from "@/assets/icons/search.svg";
-import { YouTubePlayer } from "@/components/guide-map/YouTubePlayer";
+import { VideoLink } from "@/components/guide-map/GuideDetail";
+import { lineupDetailPath } from "@/components/guide-map/paths";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { FilterChipGroup } from "@/components/ui/FilterChip";
@@ -164,7 +165,7 @@ function AgentPicker({ id, mapId, current, onPick }: { id: string; mapId: string
   );
 }
 
-function LineupDetail({ lineup, skill, autoplay, onBack }: { lineup: Lineup; skill?: Skill; autoplay: boolean; onBack: () => void }) {
+function LineupDetail({ lineup, skill, detailPath, onBack }: { lineup: Lineup; skill?: Skill; detailPath: string; onBack: () => void }) {
   const [helped, setHelped] = useState(false);
   const [saved, updateSaved] = useStoredList<string>("gp:saved-lineups", []);
   const isSaved = saved.includes(lineup.id);
@@ -195,9 +196,9 @@ function LineupDetail({ lineup, skill, autoplay, onBack }: { lineup: Lineup; ski
             .join(" · ")}
         </p>
       </div>
-      {/* 영상 주소가 없는 생성 예시는 자리만 보여준다 */}
+      {/* 영상은 상세 페이지에서 본다(TASK-FE-059). 영상 주소가 없는 생성 예시는 자리만 보여준다 */}
       {lineup.videoUrl ? (
-        <YouTubePlayer url={lineup.videoUrl} title={lineup.title} autoplay={autoplay} />
+        <VideoLink to={detailPath} label={`라인업 영상${lineup.videoLength ? ` · ${lineup.videoLength}` : ""}`} />
       ) : (
       <div className="flex h-[158px] flex-col items-center justify-center gap-2 rounded-thumb bg-elevated" aria-label="라인업 영상 (준비 중)">
         <span className="flex size-11 items-center justify-center rounded-full bg-primary">
@@ -254,9 +255,8 @@ export function LineupBoardPage() {
   const filters = useBoardFilters(skills, all);
   const [reportNote, setReportNote] = useState(false);
   const [picker, setPicker] = useState<"map" | "agent" | null>(null);
-  // 출발지를 눌러 연 라인업만 영상을 바로 튼다
-  const [autoplayId, setAutoplayId] = useState<string | null>(null);
   const navigate = useNavigate();
+  const location = useLocation();
 
   if (!map || !agent) return <NotFoundPage />;
 
@@ -423,19 +423,15 @@ export function LineupBoardPage() {
             <p className="shrink-0 text-13 font-medium text-sub-weak">라인업 {visible.length}개</p>
           </div>
           <MinimapStage
+            side={filters.side}
             mapId={map.mapId}
             mapName={map.name}
             agentId={agent.agentId}
             lineups={visible}
             selected={selected}
-            onSelect={(lineup) => {
-              setAutoplayId(null);
-              filters.set("lineup", lineup.id);
-            }}
-            onPlay={(lineup) => {
-              setAutoplayId(lineup.id);
-              filters.set("lineup", lineup.id);
-            }}
+            onSelect={(lineup) => filters.set("lineup", lineup.id)}
+            // 출발지를 누르면 상세 페이지로 간다. 돌아올 때 지금 필터를 살리도록 쿼리를 넘긴다 (TASK-FE-059)
+            onPlay={(lineup) => navigate(lineupDetailPath(map.mapId, agent.agentId, lineup.id), { state: { from: location.search } })}
           />
         </Card>
 
@@ -444,7 +440,7 @@ export function LineupBoardPage() {
             key={selected.id}
             lineup={selected}
             skill={skillOf(selected)}
-            autoplay={autoplayId === selected.id}
+            detailPath={lineupDetailPath(map.mapId, agent.agentId, selected.id)}
             onBack={() => filters.set("lineup", null)}
           />
         ) : (

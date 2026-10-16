@@ -1,10 +1,11 @@
+import { minimapView, type MinimapSide } from "@/data/minimap-layout";
 import { useState } from "react";
-import { at, pct, type RoutePoint } from "@/components/guide-map/geometry";
+import { type RoutePoint } from "@/components/guide-map/geometry";
 import { RouteBall, RouteLine } from "@/components/guide-map/RouteSvg";
 import { SmokeMarkerIcon } from "@/features/smokes/SmokeMinimap";
 import { agentIconPath, mapMiniPath, skillIconPath } from "@/lib/assets";
 import { cx } from "@/lib/cx";
-import { minimapLabels, type Point } from "@/mocks/lineups";
+import { type Point } from "@/mocks/lineups";
 
 /** 지도에 그릴 공략 한 건. 관리자 미리보기와 공개 화면(FE-056)이 같이 쓴다. */
 export type MapGuide = {
@@ -23,6 +24,7 @@ export type MapGuide = {
 };
 
 type GuideMapViewerProps = {
+  side?: MinimapSide;
   mapId: string;
   mapName: string;
   guides: MapGuide[];
@@ -47,10 +49,11 @@ function groupGuides(guides: MapGuide[]): Group[] {
  * 도착지 마커에 마우스를 올리거나(포커스) 누르면 그 도착지의 출발지가 모두 나오고,
  * 출발지를 누르면 onPlay로 영상을 튼다. 누른 도착지는 마우스가 지도를 벗어나도 열린 채로 둔다(터치 화면 대응).
  */
-export function GuideMapViewer({ mapId, mapName, guides, playingId, onPlay }: GuideMapViewerProps) {
+export function GuideMapViewer({ mapId, mapName, guides, playingId, onPlay, side = "attack" }: GuideMapViewerProps) {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const [pinnedId, setPinnedId] = useState<string | null>(null);
-  const labels = minimapLabels(mapId);
+  const view = minimapView(mapId, side);
+  const at = view.at;
   const groups = groupGuides(guides);
   const playingGroupId = guides.find((guide) => guide.id === playingId)?.destinationId ?? null;
   const openId = hoveredId ?? pinnedId ?? playingGroupId;
@@ -58,14 +61,10 @@ export function GuideMapViewer({ mapId, mapName, guides, playingId, onPlay }: Gu
 
   return (
     <div className="flex flex-col gap-3">
-      <div className="relative mx-auto aspect-square w-full max-w-[512px]" onMouseLeave={() => setHoveredId(null)}>
-        <img src={mapMiniPath(mapId)} alt={`${mapName} 미니맵`} className="size-full object-contain" draggable={false} />
-        {labels.sites.map((label) => (
-          <span key={label.text} aria-hidden lang="en" className="absolute text-20 font-semibold opacity-50" style={at(label)}>
-            {label.text}
-          </span>
-        ))}
-        <svg aria-hidden viewBox="0 0 512 512" className="pointer-events-none absolute inset-0 size-full">
+      <div {...view.attributes} className="relative mx-auto aspect-square w-full max-w-[512px]" onMouseLeave={() => setHoveredId(null)}>
+
+        <img style={view.imageStyle} src={mapMiniPath(mapId)} alt={`${mapName} 미니맵`} className="size-full object-contain" draggable={false} />
+        <svg style={view.imageStyle} aria-hidden viewBox="0 0 512 512" className="pointer-events-none absolute inset-0 size-full">
           {open?.guides.map((guide) => (
             <RouteLine key={`route-${guide.id}`} from={guide.start} path={guide.path} to={guide.landing} />
           ))}
@@ -128,13 +127,13 @@ export function GuideMapViewer({ mapId, mapName, guides, playingId, onPlay }: Gu
         {open && (
           <span
             className="pointer-events-none absolute z-20 -translate-x-1/2 rounded-md bg-page px-2 py-1 text-12 font-medium whitespace-nowrap text-main"
-            style={{ left: pct(Math.min(440, Math.max(72, open.landing.x))), top: pct(Math.max(0, open.landing.y - 44)) }}
+            style={view.labelAt(open.landing, -44)}
           >
             {open.name} · 출발지 {open.guides.length}곳
           </span>
         )}
         {open && (
-          <svg aria-hidden viewBox="0 0 512 512" className="pointer-events-none absolute inset-0 z-30 size-full">
+          <svg style={view.imageStyle} aria-hidden viewBox="0 0 512 512" className="pointer-events-none absolute inset-0 z-30 size-full">
             {open.guides.map((guide) => (
               <RouteBall key={`ball-${guide.id}`} from={guide.start} path={guide.path} to={guide.landing} />
             ))}

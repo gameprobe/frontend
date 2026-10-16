@@ -2,6 +2,29 @@
 
 모든 게임 이미지는 WebP(품질 80)다. 런타임에 외부 이미지를 불러오지 않는다.
 
+## TASK-FE-061 미니맵 갱신 — 2026-10-16
+
+브리즈·로터스·선셋·아이스박스·펄·바인드의 `maps-mini/*.webp`는 Valorant-API의 같은 맵 UUID `displayIcon` PNG를 내려받아 1024×1024 WebP(quality80, method6)로 변환했다. 아래 기존 원본 설명은 이 6개 파일에는 더 이상 적용되지 않는다. 게임 자산의 저작자는 Riot Games이며, 공급원 Valorant-API는 Riot 비공식 서비스다.
+
+- 메타데이터: `https://valorant-api.com/v1/maps?language=ko-KR`
+- 공급원 버전 응답: `13.08.00.5627607` / `release-13.08`. 이는 공급원 전체 버전이며 각 이미지의 변경 패치를 보증하지 않는다.
+- PNG 주소: `https://media.valorant-api.com/maps/{아래 UUID}/displayicon.png`
+
+| 파일 | UUID |
+|---|---|
+| `maps-mini/breeze.webp` | `2fb9a4fd-47b8-4e7d-a969-74b4046ebd53` |
+| `maps-mini/lotus.webp` | `2fe4ed3a-450a-948b-6d6b-e89a78e680a9` |
+| `maps-mini/sunset.webp` | `92584fbe-486a-b1b2-9faa-39b0f486b498` |
+| `maps-mini/icebox.webp` | `e2ad5c54-4114-a870-9641-8ea21279579a` |
+| `maps-mini/pearl.webp` | `fd267378-4d1d-484f-ff52-77821ed10dc2` |
+| `maps-mini/bind.webp` | `2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba` |
+
+이미지는 원본 방향으로 보관한다. `src/data/minimap-layout.ts`의 스폰·사이트 위치는 같은 공급원의 callouts에서 변환했다(`imageX = worldY * xMultiplier + xScalarToAdd`, `imageY = worldX * yMultiplier + yScalarToAdd`). 스폰 좌표는 회전 방향 결정에만 쓴다. 화면에 A/B/C 사이트 글자나 스폰 글자를 별도로 덧씌우지 않고 원본 이미지에 들어 있는 표시만 사용한다. 화면에서 지도·마커·경로를 함께 회전하며 DB의 원본 좌표는 변경하지 않는다. 클릭·드래그·방향키 입력은 역변환한다.
+
+공격 기준 회전: 어센트·헤이븐·스플릿 +90°, 아이스박스 -90°, 나머지 기존6개 0°. 수비 기준은 여기에180°를 더한다. 스모크의 진영 전환은 지도 방향만 바꾸며 서버 자료를 필터링하거나 스킬 의미를 변경하지 않는다.
+
+갱신6개의 지도 내부 예시 좌표 표본은 새 이미지에서 재생성했고 기존10개 맵의 A/B/C 명칭은 callouts에 맞췄다. 이 표본과 지도에서 실제 게임의 라인업 성공 여부를 추론해서는 안 된다. 좌표 검증과 시각 검증 결과는 `docs/visual-qa/TASK-FE-061.md`를 따른다.
+
 ## 원본
 
 TASK-FE-050(2026-10-09)부터 사용자가 저장소 루트 `Assets/`(Git 제외)에 넣은 Riot 공식 원본을 쓴다.

@@ -64,6 +64,8 @@ export type Lineup = {
   path?: RoutePoint[];
   /** 유튜브 영상 주소. 없으면 영상 자리만 보여준다 */
   videoUrl?: string;
+  /** 상세 페이지 설명 글. 없으면 제목으로 만든 기본 문장 (TASK-FE-059) */
+  description?: string;
 };
 
 /** 예시 영상(사용자 지정 2026-10-12, YouTube Shorts). 모든 예시 공략이 같은 영상을 쓴다. */
@@ -117,6 +119,7 @@ const ASCENT_SOVA_ATTACK: Lineup[] = (
     ...(index === 0 && {
       destinationId: "a-lobby-a-site",
       destinationName: "A 사이트",
+      description: "A 로비 오른쪽 상자 모서리에서 정찰용 화살을 쏴 A 사이트 안쪽을 확인해요. 진입 전에 상대 위치를 먼저 파악하고 싶을 때 쓰면 좋아요.",
     }),
   };
 });
@@ -254,6 +257,11 @@ export function findLineups(mapId: string, agentId: string): Lineup[] {
   return lineups;
 }
 
+/** 상세 페이지(/lineups/:mapId/:agentId/:lineupId)에서 라인업 하나를 찾는다 (TASK-FE-059) */
+export function findLineup(mapId: string, agentId: string, lineupId: string): Lineup | undefined {
+  return findLineups(mapId, agentId).find((lineup) => lineup.id === lineupId);
+}
+
 export type LineupAgent = { agentId: string; name: string; role: AgentRole; count: number };
 
 /** 요원 선택 화면: 역할군 순서대로, 라인업 수는 실제 예시 개수 */
@@ -289,23 +297,4 @@ export function topAttackLineups(mapId: string, limit: number): Lineup[] {
     .filter((lineup) => lineup.side === "attack")
     .sort((a, b) => b.votes - a.votes)
     .slice(0, limit);
-}
-
-/** 미니맵 위 라벨 (512 기준). 어센트는 시안(74:175) 값, 다른 맵은 사이트 글자만 */
-export function minimapLabels(mapId: string) {
-  if (mapId === "ascent") {
-    return {
-      sites: [
-        { text: "A", x: 150, y: 62 },
-        { text: "B", x: 128, y: 392 },
-      ],
-      areas: [
-        { text: "공격 진영", x: 402, y: 250 },
-        { text: "수비 진영", x: 24, y: 260 },
-        { text: "미드", x: 230, y: 274 },
-      ],
-    };
-  }
-  const sites = (MINIMAP_POINTS[mapId]?.sites ?? []).map((site) => ({ text: site.label, x: site.x - 6, y: site.y - 14 }));
-  return { sites, areas: [] as { text: string; x: number; y: number }[] };
 }

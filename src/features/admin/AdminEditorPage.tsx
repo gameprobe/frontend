@@ -1,4 +1,4 @@
-import { useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { Link, useLocation, useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { GuideMapViewer, type MapGuide } from "@/components/guide-map/GuideMapViewer";
 import { YouTubePlayer } from "@/components/guide-map/YouTubePlayer";
@@ -9,6 +9,9 @@ import { SegmentedControl } from "@/components/ui/SegmentedControl";
 import { TextAreaField, TextField } from "@/components/ui/TextField";
 import { agentAbilities, agentName, ALL_AGENT_IDS, mapName } from "@/data/game-names";
 import { MapEditor } from "@/features/admin/MapEditor";
+import { isSafeHttpUrl } from "@/lib/youtube";
+import { useAdminMode, useAdminToken } from "./admin-session";
+import { adminErrorMessage, deleteAdminLineup, fetchAdminLineup, loadAdminLineups, saveAdminLineup, useAdminLineups } from "./admin-lineup-store";
 import { saveGuideEntry, useGuideEntries } from "@/features/admin/guide-store";
 import {
   changeMap,
@@ -44,28 +47,94 @@ const SHAPE_OPTIONS = (Object.keys(SMOKE_VARIANT_LABEL) as SmokeVariant[]).map((
 const AGENT_OPTIONS = ALL_AGENT_IDS.map((agentId) => ({ value: agentId, label: agentName(agentId) }))
   .sort((a, b) => a.label.localeCompare(b.label, "ko"));
 
-/** /admin/:kind/new · /admin/:kind/:id. 이동할 때마다 key로 편집 상태를 새로 만든다. */
+/** 실제 데이터는 목록과 단건 조회를 마친 뒤 편집 폼을 만든다. */
 export function AdminEditorPage({ kind }: { kind: GuideKind }) {
   const { id } = useParams();
   const [params] = useSearchParams();
   const { key } = useLocation();
+  const mode = useAdminMode();
+  const demoEntries = useGuideEntries();
   const destinationId = params.get("destination");
-  // 저장 후 같은 주소로 다시 들어와도(location.key 변경) 저장된 값으로 새로 시작한다
-  return <Editor key={key} kind={kind} id={id} destinationId={destinationId} />;
+  const mapId = params.get("map");
+  if (mode === "real") {
+    if (kind === "smoke") return <Card className="p-6">스모크 관리는 준비 중입니다.</Card>;
+    return <RealEditorLoader key={key} id={id} destinationId={destinationId} mapId={mapId} />;
+  }
+  const initial = initialEntry(demoEntries, kind, id, destinationId, mapId);
+  return initial
+    ? <Editor key={key} kind={kind} initialEntry={initial} entries={demoEntries} realMode={false} />
+    : <EditorUnavailable message="공략을 찾을 수 없습니다. 새로고침하면 예시 자료로 초기화됩니다." kind={kind} />;
 }
 
-function Editor({ kind, id, destinationId }: { kind: GuideKind; id?: string; destinationId: string | null }) {
-  const entries = useGuideEntries();
+function initialEntry(entries: GuideEntry[], kind: GuideKind, id?: string, destinationId?: string | null, mapId?: string | null) {
+  if (id) return entries.find((entry) => entry.id === id && entry.kind === kind) ?? null;
+  const source = destinationId && entries.find((entry) => entry.kind === kind
+    && entry.destination.id === destinationId && (!mapId || entry.mapId === mapId));
+  return source ? createAtDestination(source) : createEmpty(kind);
+}
+
+function EditorUnavailable({ message, kind, retry }: { message: string; kind: GuideKind; retry?: () => void }) {
+  return <Card className="flex flex-col items-start gap-4 p-6">
+    <p role="alert" className="text-15 text-sub">{message}</p>
+    {retry && <Button onClick={retry}>다시 불러오기</Button>}
+    <ButtonLink to={`/admin/${KIND_PATH[kind]}`} size="md" variant="secondary">목록으로</ButtonLink>
+  </Card>;
+}
+
+function RealEditorLoader({ id, destinationId, mapId }: { id?: string; destinationId: string | null; mapId: string | null }) {
+  const data = useAdminLineups();
+  const token = useAdminToken();
+  const [record, setRecord] = useState<GuideEntry | null>(null);
+  const [error, setError] = useState("");
+  const [attempt, setAttempt] = useState(0);
+  useEffect(() => {
+    if (!id || !token || record) return;
+    let active = true;
+    fetchAdminLineup(id).then((entry) => { if (active) setRecord(entry); })
+      .catch((reason: unknown) => { if (active) setError(adminErrorMessage(reason)); });
+    return () => { active = false; };
+  }, [id, token, attempt, record]);
+  if (error) return <EditorUnavailable kind="lineup" message={error} retry={() => { setError(""); setAttempt((value) => value + 1); }} />;
+  if (!data.loaded) {
+    if (data.error) return <EditorUnavailable kind="lineup" message={data.error} retry={() => void loadAdminLineups()} />;
+    return <Card className="p-6"><p role="status">DB에서 라인업을 불러오는 중…</p></Card>;
+  }
+  if (id && !record) return <Card className="p-6"><p role="status">공략을 불러오는 중…</p></Card>;
+  const initial = record ?? initialEntry(data.entries, "lineup", undefined, destinationId, mapId);
+  return <Editor kind="lineup" initialEntry={initial!} entries={data.entries} realMode />;
+}
+
+function Editor({ kind, initialEntry, entries, realMode }: { kind: GuideKind; initialEntry: GuideEntry; entries: GuideEntry[]; realMode: boolean }) {
   const navigate = useNavigate();
   const location = useLocation();
   const base = `/admin/${KIND_PATH[kind]}`;
-
-  const [initial] = useState<GuideEntry | null>(() => {
-    if (id) return entries.find((entry) => entry.id === id && entry.kind === kind) ?? null;
-    const source = destinationId && entries.find((entry) => entry.kind === kind && entry.destination.id === destinationId);
-    return source ? createAtDestination(source) : createEmpty(kind);
-  });
-  const [draft, setDraft] = useState<GuideEntry | null>(initial);
+  const [initial, setInitial] = useState(initialEntry);
+  const [draft, setDraft] = useState(initialEntry);
+  const id = draft.id;
+  const dirty = JSON.stringify(draft) !== JSON.stringify(initial);
+  const [pending, setPending] = useState(false);
+  const submitting = useRef(false);
+  const mounted = useRef(true);
+  useEffect(() => {
+    mounted.current = true;
+    return () => { mounted.current = false; };
+  }, []);
+  const [apiError, setApiError] = useState("");
+  useEffect(() => {
+    if (!dirty) return;
+    const beforeUnload = (event: BeforeUnloadEvent) => { event.preventDefault(); event.returnValue = ""; };
+    const beforeLink = (event: MouseEvent) => {
+      const link = event.target instanceof Element ? event.target.closest("a[href]") : null;
+      if (!(link instanceof HTMLAnchorElement) || link.target === "_blank" || event.defaultPrevented) return;
+      if (link.href === window.location.href) return;
+      if (!window.confirm("저장하지 않은 내용을 버리고 이동할까요?")) {
+        event.preventDefault(); event.stopPropagation();
+      }
+    };
+    window.addEventListener("beforeunload", beforeUnload);
+    document.addEventListener("click", beforeLink, true);
+    return () => { window.removeEventListener("beforeunload", beforeUnload); document.removeEventListener("click", beforeLink, true); };
+  }, [dirty]);
   const [moveShared, setMoveShared] = useState(false);
   // 저장을 한 번 눌러 본 뒤에는 고칠 때마다 남은 오류만 다시 보여준다
   const [attempted, setAttempted] = useState(false);
@@ -73,21 +142,9 @@ function Editor({ kind, id, destinationId }: { kind: GuideKind; id?: string; des
   const [playingId, setPlayingId] = useState<string>();
   const savedMessage = (location.state as { saved?: boolean } | null)?.saved;
 
-  if (!draft || !initial) {
-    return (
-      <Card className="flex flex-col items-start gap-4 p-6">
-        <p className="text-15 text-sub">공략을 찾을 수 없습니다. 새로고침하면 예시 자료로 초기화됩니다.</p>
-        <ButtonLink to={base} size="md" variant="secondary">
-          목록으로
-        </ButtonLink>
-      </Card>
-    );
-  }
-
   const errors = attempted ? validateEntry(draft) : {};
   const others = sharedCount(entries, draft);
-  const destinationLocked = others > 0 && !moveShared;
-  const dirty = JSON.stringify(draft) !== JSON.stringify(initial);
+  const destinationLocked = others > 0 && (realMode || !moveShared);
   const groups = groupDestinations(entries, kind, draft.mapId);
   const currentGroup = groups.find((group) => group.destination.id === draft.destination.id);
   const update = (changes: Partial<GuideEntry>) => setDraft({ ...draft, ...changes });
@@ -103,11 +160,49 @@ function Editor({ kind, id, destinationId }: { kind: GuideKind; id?: string; des
     setMoveShared(false);
   };
 
-  const save = () => {
+  const save = async () => {
+    if (submitting.current) return;
     setAttempted(true);
     if (Object.keys(validateEntry(draft)).length > 0) return;
-    const savedId = saveGuideEntry(draft, moveShared);
-    navigate(`${base}/${savedId}`, { replace: Boolean(id), state: { saved: true } });
+    submitting.current = true;
+    setPending(true);
+    setApiError("");
+    try {
+      if (realMode) {
+        const saved = await saveAdminLineup(draft);
+        if (!mounted.current) return;
+        setInitial(saved);
+        setDraft(saved);
+        navigate(`${base}/${saved.id}`, { replace: Boolean(id), state: { saved: true } });
+      } else {
+        const savedId = saveGuideEntry(draft, moveShared);
+        navigate(`${base}/${savedId}`, { replace: Boolean(id), state: { saved: true } });
+      }
+    } catch (error) {
+      const message = adminErrorMessage(error);
+      if (mounted.current) setApiError(message);
+    } finally {
+      submitting.current = false;
+      if (mounted.current) setPending(false);
+    }
+  };
+  const remove = async () => {
+    if (submitting.current || !id) return;
+    if (!window.confirm(`“${draft.title}” 공략을 DB에서 삭제할까요? 삭제하면 되돌릴 수 없습니다.`)) return;
+    submitting.current = true;
+    setPending(true);
+    setApiError("");
+    try {
+      await deleteAdminLineup(id);
+      if (!mounted.current) return;
+      navigate(base, { replace: true, state: { deleted: true } });
+    } catch (error) {
+      const message = adminErrorMessage(error);
+      if (mounted.current) setApiError(message);
+    } finally {
+      submitting.current = false;
+      if (mounted.current) setPending(false);
+    }
   };
 
   // 미리보기: 같은 맵·종류의 저장된 공략 + 지금 편집 중인 공략(저장 전 내용으로 바꿔 끼움)
@@ -131,17 +226,19 @@ function Editor({ kind, id, destinationId }: { kind: GuideKind; id?: string; des
         <div className="flex flex-col gap-1">
           <h2 className="text-24 font-bold">{id ? "공략 편집" : "새 공략 등록"}</h2>
           <p className="text-14 text-sub" role="status">
-            {dirty ? "저장하지 않은 변경이 있습니다." : savedMessage ? "예시 목록에 저장했습니다." : "공략 하나에 출발점과 유튜브 영상을 하나씩 등록합니다."}
+            {dirty ? "저장하지 않은 변경이 있습니다." : savedMessage ? (realMode ? "DB에 저장했습니다." : "예시 목록에 저장했습니다.") : "공략 하나에 출발점과 영상 주소를 하나씩 등록합니다."}
           </p>
         </div>
-        <div className="flex gap-2">
-          <Button variant="secondary" onClick={() => setPreview((value) => !value)}>
+        <div className="flex flex-wrap gap-2">
+          {realMode && id && <Button variant="secondary" disabled={pending} onClick={() => void remove()}>공략 삭제</Button>}
+          <Button disabled={pending} variant="secondary" onClick={() => setPreview((value) => !value)}>
             {preview ? "편집으로 돌아가기" : "미리보기"}
           </Button>
-          <Button onClick={save}>예시 목록에 저장</Button>
+          <Button disabled={pending} onClick={() => void save()}>{pending ? "처리 중…" : realMode ? "DB에 저장" : "예시 목록에 저장"}</Button>
         </div>
       </div>
 
+      {apiError && <p role="alert" className="rounded-lg border border-loss bg-loss-soft px-4 py-3 text-14 text-loss">{apiError} 입력한 내용은 유지됩니다.</p>}
       {Object.keys(errors).length > 0 && (
         <p role="alert" className="rounded-lg border border-loss bg-loss-soft px-4 py-3 text-14 text-loss">
           저장하려면 표시한 항목을 채워 주세요: {Object.values(errors).join(" ")}
@@ -154,13 +251,13 @@ function Editor({ kind, id, destinationId }: { kind: GuideKind; id?: string; des
             <span className="text-15 font-semibold">{currentGroup.destination.name}</span>
             <span className="text-13 text-sub">같은 도착점의 공략 {currentGroup.entries.length}개</span>
           </div>
-          <Link to={`${base}/new?destination=${encodeURIComponent(currentGroup.destination.id)}`} className="text-14 font-medium text-primary hover:underline">
+          <Link to={`${base}/new?destination=${encodeURIComponent(currentGroup.destination.id)}&map=${encodeURIComponent(draft.mapId)}`} className="text-14 font-medium text-primary hover:underline">
             이 도착점에 공략 추가 →
           </Link>
         </div>
       )}
 
-      <div className="grid gap-5 xl:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
+      <fieldset disabled={pending} style={{ pointerEvents: pending ? "none" : undefined }} className="grid min-w-0 gap-5 xl:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
         <div className="flex flex-col gap-5">
           <FormSection step="1" title="도착점 선택" text="어디에 도착하는 공략인가요?">
             <div className="grid gap-4 sm:grid-cols-2">
@@ -226,7 +323,7 @@ function Editor({ kind, id, destinationId }: { kind: GuideKind; id?: string; des
             </div>
           </FormSection>
 
-          <FormSection step="2" title="공략 정보와 영상" text="지도에 출발점을 찍고 유튜브 주소를 넣으세요.">
+          <FormSection step="2" title="공략 정보와 영상" text="지도에 출발점을 찍고 영상 주소를 넣으세요.">
             <TextField
               label="공략 제목 *"
               placeholder="예: A 메인에서 던지는 방법"
@@ -236,14 +333,14 @@ function Editor({ kind, id, destinationId }: { kind: GuideKind; id?: string; des
               error={errors.title}
             />
             <TextField
-              label="유튜브 영상 주소 *"
+              label="영상 주소 *"
               type="url"
               inputMode="url"
               placeholder="https://www.youtube.com/watch?v=…"
               value={draft.videoUrl}
               onChange={(event) => update({ videoUrl: event.target.value })}
               error={errors.videoUrl}
-              hint="youtube.com/watch, youtu.be, shorts 주소를 넣을 수 있습니다. 출발지를 누르면 이 영상이 재생됩니다."
+              hint="HTTP(S) 자료 주소를 입력하세요. 유튜브는 화면 안에서 재생하고, 그 외 주소는 새 탭에서 확인합니다."
             />
             <details className="group border-t border-line pt-4">
               <summary className="cursor-pointer text-14 font-medium text-sub hover:text-main">설명·상태 설정</summary>
@@ -256,6 +353,7 @@ function Editor({ kind, id, destinationId }: { kind: GuideKind; id?: string; des
                 />
                 <Field label="상태">
                   <Dropdown label="상태" appearance="field" options={STATUS_OPTIONS} value={draft.status} onChange={(status) => update({ status })} />
+                  <p className="text-13 text-sub">활성 공략은 일반 사용자에게 공개됩니다. 비활성 공략은 관리자만 볼 수 있습니다.</p>
                 </Field>
               </div>
             </details>
@@ -268,14 +366,14 @@ function Editor({ kind, id, destinationId }: { kind: GuideKind; id?: string; des
               <p lang="en" className="text-12 font-semibold tracking-wider text-sub-weak">
                 PREVIEW
               </p>
-              <h2 className="text-20 font-semibold">공개 화면 미리보기</h2>
+              <h2 className="text-20 font-semibold">공략 미리보기</h2>
               <p className="text-13 text-sub">
                 {mapName(draft.mapId)}의 {KIND_LABEL[kind]} 공략 {previewGuides.length}개를 보여줍니다. 편집 중인 공략은 저장 전 내용입니다.
               </p>
             </div>
             {playing ? (
               <div className="flex flex-col gap-2">
-                <YouTubePlayer url={playing.videoUrl} title={playing.title} autoplay={Boolean(playingId)} />
+                <YouTubePlayer url={isSafeHttpUrl(playing.videoUrl) ? playing.videoUrl : ""} title={playing.title} autoplay={Boolean(playingId)} />
                 <p className="text-15 font-semibold">{playing.title}</p>
                 <p className="text-13 text-sub">
                   {agentName(playing.agentId)} · {playing.destinationName}
@@ -284,18 +382,19 @@ function Editor({ kind, id, destinationId }: { kind: GuideKind; id?: string; des
             ) : (
               <p className="rounded-lg bg-elevated px-4 py-3 text-14 text-sub">편집 중인 공략의 도착·출발 위치를 지정하면 함께 보입니다.</p>
             )}
-            <GuideMapViewer mapId={draft.mapId} mapName={mapName(draft.mapId)} guides={previewGuides} playingId={playing?.id} onPlay={(guide) => setPlayingId(guide.id)} />
+            <GuideMapViewer side={draft.side} mapId={draft.mapId} mapName={mapName(draft.mapId)} guides={previewGuides} playingId={playing?.id} onPlay={(guide) => setPlayingId(guide.id)} />
           </Card>
         ) : (
           <MapEditor
+            key={`${draft.mapId}:${draft.side}`}
             entry={draft}
             mapName={mapName(draft.mapId)}
             onChange={setDraft}
             errors={errors}
-            shared={others > 0 ? { count: others, editing: moveShared, onToggle: () => setMoveShared((value) => !value) } : undefined}
+            shared={others > 0 ? { count: others, editing: !realMode && moveShared, onToggle: realMode ? undefined : () => setMoveShared((value) => !value) } : undefined}
           />
         )}
-      </div>
+      </fieldset>
     </div>
   );
 }

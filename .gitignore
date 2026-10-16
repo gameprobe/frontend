@@ -60,3 +60,17 @@ playwright-report/
 # 에이전트 로컬 자산 캐시
 # ===========================
 .agent-assets/
+
+# ===========================
+# 디자인
+# ===========================
+figmaCSS.txt
+MyDesign발로란트.md
+Assets
+# ===========================
+# WebP 이미지 변환
+# ===========================
+asset-manifest.json
+convert-images.mjs
+extract-minimap-points.mjs
+generate-game-data.py

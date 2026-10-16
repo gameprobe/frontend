@@ -3,6 +3,8 @@ import { AppLayout } from "@/app/AppLayout";
 import { AdminEditorPage } from "@/features/admin/AdminEditorPage";
 import { AdminGatePage } from "@/features/admin/AdminGatePage";
 import { AdminLayout } from "@/features/admin/AdminLayout";
+import { AdminSmokeListPage } from "@/features/admin/AdminSmokeListPage";
+import { AdminSmokeEditorPage } from "@/features/admin/AdminSmokeEditorPage";
 import { AdminListPage } from "@/features/admin/AdminListPage";
 import { UPCOMING_SECTIONS } from "@/app/navigation";
 import { ComingSoonPage } from "@/pages/ComingSoonPage";
@@ -29,10 +31,12 @@ import { MyLayout } from "@/features/my/MyLayout";
 import { AccountTab, FavoritesTab, RecordTab, SettingsTab } from "@/features/my/tabs/MyTabs";
 import { AgentSelectPage } from "@/features/lineups/AgentSelectPage";
 import { LineupBoardPage } from "@/features/lineups/LineupBoardPage";
+import { LineupDetailPage } from "@/features/lineups/LineupDetailPage";
 import { MapSelectPage } from "@/features/lineups/MapSelectPage";
 import { MetaLayout } from "@/features/meta/MetaLayout";
 import { SmokeGuidePage } from "@/features/smokes/SmokeGuidePage";
 import { SmokeMapSelectPage } from "@/features/smokes/SmokeMapSelectPage";
+import { SmokeDetailPage } from "@/features/smokes/SmokeDetailPage";
 import { AgentsTierTab } from "@/features/meta/tabs/AgentsTierTab";
 import { CompsTab } from "@/features/meta/tabs/CompsTab";
 import { MetaMapsTab } from "@/features/meta/tabs/MapsTab";
@@ -132,9 +136,11 @@ export const router = createBrowserRouter([
       { path: "lineups", element: <MapSelectPage /> },
       { path: "lineups/:mapId", element: <AgentSelectPage /> },
       { path: "lineups/:mapId/:agentId", element: <LineupBoardPage /> },
+      { path: "lineups/:mapId/:agentId/:lineupId", element: <LineupDetailPage /> },
       { path: "smokes", element: <SmokeMapSelectPage /> },
       { path: "smokes/:mapId", element: <SmokeGuidePage /> },
-      // 관리자 예시 모드 (TASK-FE-055). 헤더 메뉴에는 넣지 않는다
+      { path: "smokes/:mapId/:smokeId", element: <SmokeDetailPage /> },
+      // 관리자 인증 및 체험 모드. 헤더 메뉴에는 넣지 않는다
       { path: "admin", element: <AdminGatePage /> },
       {
         path: "admin",
@@ -143,9 +149,9 @@ export const router = createBrowserRouter([
           { path: "lineups", element: <AdminListPage key="lineup" kind="lineup" /> },
           { path: "lineups/new", element: <AdminEditorPage kind="lineup" /> },
           { path: "lineups/:id", element: <AdminEditorPage kind="lineup" /> },
-          { path: "smokes", element: <AdminListPage key="smoke" kind="smoke" /> },
-          { path: "smokes/new", element: <AdminEditorPage kind="smoke" /> },
-          { path: "smokes/:id", element: <AdminEditorPage kind="smoke" /> },
+          { path: "smokes", element: <AdminSmokeListPage /> },
+          { path: "smokes/new", element: <AdminSmokeEditorPage /> },
+          { path: "smokes/:id", element: <AdminSmokeEditorPage /> },
           { path: "*", element: <NotFoundPage /> },
         ],
       },
