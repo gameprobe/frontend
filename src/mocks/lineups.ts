@@ -298,22 +298,3 @@ export function topAttackLineups(mapId: string, limit: number): Lineup[] {
     .sort((a, b) => b.votes - a.votes)
     .slice(0, limit);
 }
-
-/** 미니맵 위 라벨 (512 기준). 어센트는 시안(74:175) 값, 다른 맵은 사이트 글자만 */
-export function minimapLabels(mapId: string) {
-  if (mapId === "ascent") {
-    return {
-      sites: [
-        { text: "A", x: 150, y: 62 },
-        { text: "B", x: 128, y: 392 },
-      ],
-      areas: [
-        { text: "공격 진영", x: 402, y: 250 },
-        { text: "수비 진영", x: 24, y: 260 },
-        { text: "미드", x: 230, y: 274 },
-      ],
-    };
-  }
-  const sites = (MINIMAP_POINTS[mapId]?.sites ?? []).map((site) => ({ text: site.label, x: site.x - 6, y: site.y - 14 }));
-  return { sites, areas: [] as { text: string; x: number; y: number }[] };
-}

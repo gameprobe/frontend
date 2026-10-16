@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useSearchParams } from "react-router-dom";
+import type { MinimapSide } from "@/data/minimap-layout";
 import { Button, ButtonLink } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { SmokePointMap } from "@/features/smokes/SmokePointMap";
@@ -20,6 +21,14 @@ export function SmokeDetailPage() {
 }
 
 function SmokeDetail({ map, smokeId }: { map: LineupMap; smokeId: string }) {
+  const [params, setParams] = useSearchParams();
+  const side: MinimapSide = params.get("side") === "defense" ? "defense" : "attack";
+  const setSide = (nextSide: MinimapSide) => {
+    const next = new URLSearchParams(params);
+    if (nextSide === "defense") next.set("side", "defense");
+    else next.delete("side");
+    setParams(next, { replace: true });
+  };
   const [state, setState] = useState<DetailState>({ status: "loading" });
   const [reload, setReload] = useState(0);
 
@@ -39,7 +48,7 @@ function SmokeDetail({ map, smokeId }: { map: LineupMap; smokeId: string }) {
 
   return (
     <div className="container-page flex flex-col gap-6 pt-8 pb-12">
-      <div><ButtonLink to={`/smokes/${map.mapId}?smoke=${encodeURIComponent(smokeId)}`} variant="secondary">← {map.name} 스모크 목록</ButtonLink></div>
+      <div><ButtonLink to={`/smokes/${map.mapId}?smoke=${encodeURIComponent(smokeId)}${side === "defense" ? "&side=defense" : ""}`} variant="secondary">← {map.name} 스모크 목록</ButtonLink></div>
       {state.status === "loading" && <Card className="p-8"><p role="status" className="text-14 text-sub">스모크를 불러오는 중이에요.</p></Card>}
       {state.status === "missing" && <Card className="space-y-2 p-8"><h1 className="text-20 font-semibold">공개된 스모크를 찾을 수 없어요.</h1><p className="text-14 text-sub">삭제되었거나 현재 공개되지 않은 자료예요. 목록에서 다른 위치를 확인해 주세요.</p></Card>}
       {state.status === "error" && <Card className="flex flex-col items-start gap-4 p-6"><p role="alert" className="text-14 text-loss">{state.message}</p><Button variant="secondary" onClick={() => setReload((value) => value + 1)}>다시 시도</Button></Card>}
@@ -52,7 +61,7 @@ function SmokeDetail({ map, smokeId }: { map: LineupMap; smokeId: string }) {
           <div className="grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_360px]">
             <Card as="section" className="min-w-0 p-4 sm:p-6" aria-label="스모크 설치 위치">
               <h2 className="text-18 font-semibold">설치 위치</h2>
-              <SmokePointMap mapId={map.mapId} points={[state.smoke]} selectedId={state.smoke.id} />
+              <SmokePointMap mapId={map.mapId} side={side} onSideChange={setSide} points={[state.smoke]} selectedId={state.smoke.id} />
             </Card>
             <Card as="section" className="min-w-0 space-y-4 p-5 sm:p-6" aria-label="스모크 설명">
               <h2 className="text-18 font-semibold">설치 안내</h2>

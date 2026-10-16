@@ -1,15 +1,15 @@
+import { minimapView, type MinimapSide } from "@/data/minimap-layout";
 import { groupByDestination, useOpenDestination } from "@/components/guide-map/destination-groups";
 import { RouteBall, RouteLine } from "@/components/guide-map/RouteSvg";
 import { agentIconPath, mapMiniPath, skillIconPath } from "@/lib/assets";
 import { cx } from "@/lib/cx";
-import { destinationKey, minimapLabels, type Lineup } from "@/mocks/lineups";
+import { destinationKey, type Lineup } from "@/mocks/lineups";
 
 /** 512px 미니맵 좌표를 %로 바꾼다. 화면 폭이 줄어도 같은 위치에 그린다. */
-const pct = (value: number) => `${(value / 512) * 100}%`;
-const at = (point: { x: number; y: number }) => ({ left: pct(point.x), top: pct(point.y) });
 
 type MinimapStageProps = {
   mapId: string;
+  side?: MinimapSide;
   mapName: string;
   agentId: string;
   lineups: Lineup[];
@@ -24,39 +24,20 @@ type MinimapStageProps = {
  * 펼쳐진 도착지(호버·고정·고른 라인업)의 모든 경로 위로 공이 날아간다(RouteBall).
  * TASK-FE-056: 착지 지점이 같은 라인업은 마커 하나로 묶고, 마커에 마우스를 올리면 연결된 출발지·경로를 모두 켠다(Figma 206:5458).
  */
-export function MinimapStage({ mapId, mapName, agentId, lineups, selected, onSelect, onPlay }: MinimapStageProps) {
-  const labels = minimapLabels(mapId);
+export function MinimapStage({ mapId, mapName, agentId, lineups, selected, onSelect, onPlay, side = "attack" }: MinimapStageProps) {
+  const view = minimapView(mapId, side);
+  const at = view.at;
   const groups = groupByDestination(lineups);
   const { openKey, hover, leave, togglePin } = useOpenDestination(selected ? destinationKey(selected) : null);
   const open = groups.find((group) => group.key === openKey);
   const dimmed = Boolean(selected || open);
 
   return (
-    <div className="relative mx-auto aspect-square w-full max-w-[512px]" onMouseLeave={leave}>
-      <img src={mapMiniPath(mapId)} alt={`${mapName} 미니맵`} className="size-full object-contain" />
-      {labels.sites.map((label) => (
-        <span
-          key={label.text}
-          aria-hidden
-          lang="en"
-          className="absolute text-20 font-semibold opacity-50"
-          style={{ left: pct(label.x), top: pct(label.y) }}
-        >
-          {label.text}
-        </span>
-      ))}
-      {labels.areas.map((label) => (
-        <span
-          key={label.text}
-          aria-hidden
-          className={cx("absolute rounded-sm bg-page px-2 py-1 text-12 font-medium whitespace-nowrap", dimmed && "opacity-50")}
-          style={{ left: pct(label.x), top: pct(label.y) }}
-        >
-          {label.text}
-        </span>
-      ))}
+    <div {...view.attributes} className="relative mx-auto aspect-square w-full max-w-[512px]" onMouseLeave={leave}>
+
+      <img style={view.imageStyle} src={mapMiniPath(mapId)} alt={`${mapName} 미니맵`} className="size-full object-contain" />
       {(open || selected) && (
-        <svg aria-hidden viewBox="0 0 512 512" className="pointer-events-none absolute inset-0 size-full">
+        <svg style={view.imageStyle} aria-hidden viewBox="0 0 512 512" className="pointer-events-none absolute inset-0 size-full">
           {open?.guides
             .filter((lineup) => lineup.id !== selected?.id)
             .map((lineup) => (
@@ -128,7 +109,7 @@ export function MinimapStage({ mapId, mapName, agentId, lineups, selected, onSel
           </button>
           <span
             className="pointer-events-none absolute z-20 -translate-x-1/2 rounded-md border border-line bg-elevated px-2 py-1 text-12 font-semibold whitespace-nowrap"
-            style={{ left: pct(selected.throwFrom.x), top: pct(selected.throwFrom.y + 28) }}
+            style={view.labelAt(selected.throwFrom, 28)}
           >
             던지는 위치
           </span>
@@ -137,13 +118,13 @@ export function MinimapStage({ mapId, mapName, agentId, lineups, selected, onSel
       {open && !selected && open.guides.length > 1 && (
         <span
           className="pointer-events-none absolute z-20 -translate-x-1/2 rounded-md bg-page px-2 py-1 text-12 font-medium whitespace-nowrap"
-          style={{ left: pct(Math.min(430, Math.max(80, open.landing.x))), top: pct(Math.max(0, open.landing.y - 46)) }}
+          style={view.labelAt(open.landing, -46)}
         >
           {open.name} · 출발지 {open.guides.length}곳
         </span>
       )}
       {open && (
-        <svg aria-hidden viewBox="0 0 512 512" className="pointer-events-none absolute inset-0 z-30 size-full">
+        <svg style={view.imageStyle} aria-hidden viewBox="0 0 512 512" className="pointer-events-none absolute inset-0 z-30 size-full">
           {open.guides.map((lineup) => (
             <RouteBall
               key={lineup.id}

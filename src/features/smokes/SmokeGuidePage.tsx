@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, useSearchParams } from "react-router-dom";
+import type { MinimapSide } from "@/data/minimap-layout";
 import { Button, ButtonLink } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { SmokePointMap } from "@/features/smokes/SmokePointMap";
@@ -54,9 +55,17 @@ function SmokeBoard({ map }: { map: LineupMap }) {
 
   const items = state.status === "ready" ? state.items : [];
   const selected = items.find((item) => item.id === params.get("smoke"));
+  const side: MinimapSide = params.get("side") === "defense" ? "defense" : "attack";
+  function setSide(nextSide: MinimapSide) {
+    const next = new URLSearchParams(params);
+    if (nextSide === "defense") next.set("side", "defense");
+    else next.delete("side");
+    setParams(next, { replace: true });
+  }
   function select(id: string) {
-    const next = new URLSearchParams();
+    const next = new URLSearchParams(params);
     if (id !== selected?.id) next.set("smoke", id);
+    else next.delete("smoke");
     setParams(next);
   }
 
@@ -85,12 +94,12 @@ function SmokeBoard({ map }: { map: LineupMap }) {
               <h2 className="text-18 font-semibold">설치 위치</h2>
               <span className="text-13 text-sub">스모크 {items.length}개</span>
             </div>
-            <SmokePointMap mapId={map.mapId} points={items} selectedId={selected?.id} onSelect={select} />
+            <SmokePointMap mapId={map.mapId} side={side} onSideChange={setSide} points={items} selectedId={selected?.id} onSelect={select} />
             {selected ? (
               <section aria-label="선택한 스모크" className="mt-5 space-y-3 rounded-thumb border border-primary/40 bg-primary-soft p-5">
                 <h3 className="text-18 font-semibold break-words">{selected.title}</h3>
                 <p className="text-14 leading-[1.7] whitespace-pre-wrap break-words text-sub">{selected.notes || "등록된 설명이 없어요."}</p>
-                <ButtonLink to={`/smokes/${map.mapId}/${encodeURIComponent(selected.id)}`} size="md" variant="secondary">상세 보기</ButtonLink>
+                <ButtonLink to={`/smokes/${map.mapId}/${encodeURIComponent(selected.id)}${side === "defense" ? "?side=defense" : ""}`} size="md" variant="secondary">상세 보기</ButtonLink>
               </section>
             ) : <p className="mt-5 rounded-lg bg-page px-4 py-3 text-13 leading-[1.6] text-sub">{items.length ? "지도에서 번호를 선택하세요. 위치가 겹치면 스모크 목록에서 선택할 수 있어요." : "이 맵에는 아직 공개된 스모크가 없어요."}</p>}
           </Card>

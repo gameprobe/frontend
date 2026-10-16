@@ -1,0 +1,56 @@
+[
+  {
+    "map": "bind",
+    "source": "https://media.valorant-api.com/maps/2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba/displayicon.png",
+    "snapshot": "13.08.00.5627607",
+    "source_sha256": "84f5ff72aa58bf677617ab5792def847c1c154b38f6e7458f7234121baa3507f",
+    "output_sha256": "0b0bd453eeb1d41a407ca62e828ee7ff6c2a1fce18b488c7e271908422beed41",
+    "old_sample_points": 209,
+    "new_sample_points": 367
+  },
+  {
+    "map": "breeze",
+    "source": "https://media.valorant-api.com/maps/2fb9a4fd-47b8-4e7d-a969-74b4046ebd53/displayicon.png",
+    "snapshot": "13.08.00.5627607",
+    "source_sha256": "82c6472afe6f34ac4c0d979fbf6df0a739c174292edf593f29b9495f3b3f84a2",
+    "output_sha256": "cab830380b159e74d6ddd9a558e3cd63e02f5e00e03ca093b675f2b054392092",
+    "old_sample_points": 545,
+    "new_sample_points": 629
+  },
+  {
+    "map": "icebox",
+    "source": "https://media.valorant-api.com/maps/e2ad5c54-4114-a870-9641-8ea21279579a/displayicon.png",
+    "snapshot": "13.08.00.5627607",
+    "source_sha256": "85b9cef2682985b2cf44f260d995d8123d40246f6d078dbf188fe27ed71723db",
+    "output_sha256": "3d2da5dcf958bbbcb05cef089b1561343e88b901e96cc5fb7831411e2f8d85fb",
+    "old_sample_points": 528,
+    "new_sample_points": 709
+  },
+  {
+    "map": "lotus",
+    "source": "https://media.valorant-api.com/maps/2fe4ed3a-450a-948b-6d6b-e89a78e680a9/displayicon.png",
+    "snapshot": "13.08.00.5627607",
+    "source_sha256": "d533af2a6fbc09f12579b2d33438a610d5846db61e56842ad3038087155851c2",
+    "output_sha256": "5dab6cfa9c44f5e1599628407e65774432e3f288a24e17074f771cbc70baaca8",
+    "old_sample_points": 372,
+    "new_sample_points": 561
+  },
+  {
+    "map": "pearl",
+    "source": "https://media.valorant-api.com/maps/fd267378-4d1d-484f-ff52-77821ed10dc2/displayicon.png",
+    "snapshot": "13.08.00.5627607",
+    "source_sha256": "5e0e7d4a80d830d9b8bb0f265cb14245be583bce87a69d3f53a07e9083ca810c",
+    "output_sha256": "a77d3759d78be9a842cd0fe23208d0bc6728b2d9a23a1f93d5b24a4e935f4137",
+    "old_sample_points": 436,
+    "new_sample_points": 627
+  },
+  {
+    "map": "sunset",
+    "source": "https://media.valorant-api.com/maps/92584fbe-486a-b1b2-9faa-39b0f486b498/displayicon.png",
+    "snapshot": "13.08.00.5627607",
+    "source_sha256": "1188642e2f94f4fbb17d6c61feb9071d349dec21c9749349db710afbc1bbb228",
+    "output_sha256": "7f165ba2b36bf8bbddf199d1d631c5fd9bcc28b16f35f685cce1f40fcc959adb",
+    "old_sample_points": 417,
+    "new_sample_points": 613
+  }
+]

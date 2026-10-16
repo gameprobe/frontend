@@ -423,6 +423,7 @@ export function LineupBoardPage() {
             <p className="shrink-0 text-13 font-medium text-sub-weak">라인업 {visible.length}개</p>
           </div>
           <MinimapStage
+            side={filters.side}
             mapId={map.mapId}
             mapName={map.name}
             agentId={agent.agentId}

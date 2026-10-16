@@ -48,6 +48,7 @@ export function LineupDetailPage() {
       mapTitle={`${map.name} · ${skill?.name ?? "스킬"}`}
       map={
         <GuideRouteMap
+          side={lineup.side}
           mapId={mapId}
           mapName={map.name}
           agentId={agentId}

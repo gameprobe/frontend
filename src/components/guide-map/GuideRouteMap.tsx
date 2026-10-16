@@ -1,5 +1,6 @@
+import { minimapView, type MinimapSide } from "@/data/minimap-layout";
 import type { ReactNode } from "react";
-import { at, MINIMAP_SIZE, pct, type RoutePoint } from "@/components/guide-map/geometry";
+import { MINIMAP_SIZE, pct, type RoutePoint } from "@/components/guide-map/geometry";
 import { RouteBall, RouteLine } from "@/components/guide-map/RouteSvg";
 import { agentIconPath, mapMiniPath } from "@/lib/assets";
 import type { Point } from "@/mocks/lineups";
@@ -9,6 +10,7 @@ const VIEW_W = 320;
 const VIEW_H = 260;
 
 type GuideRouteMapProps = {
+  side?: MinimapSide;
   mapId: string;
   mapName: string;
   agentId: string;
@@ -34,9 +36,12 @@ function viewOrigin(points: Point[]) {
  * 상세 페이지의 '던지는 위치 → 착지 지점' 지도 (Figma 222:6651, TASK-FE-059).
  * 공략 하나의 경로만 그리고, 경로를 따라 공이 계속 날아간다. 지도 폭이 바뀌어도 같은 범위를 보여준다.
  */
-export function GuideRouteMap({ mapId, mapName, agentId, landing, throwFrom, path = [], marker }: GuideRouteMapProps) {
+export function GuideRouteMap({ mapId, mapName, agentId, landing, throwFrom, path = [], marker, side = "attack" }: GuideRouteMapProps) {
+  const view = minimapView(mapId, side);
+  const at = view.at;
+  const shownStart = view.project(throwFrom);
   // 던지는 위치 아래 라벨(약 40px)까지 창 안에 들어오게 한다
-  const origin = viewOrigin([throwFrom, { x: throwFrom.x, y: throwFrom.y + 44 }, ...path, landing]);
+  const origin = viewOrigin([shownStart, { x: shownStart.x, y: shownStart.y + 44 }, ...path.map((point) => view.project(point)), view.project(landing)]);
   // 512 지도를 창 크기에 맞춰 키우고, 창 왼쪽 위가 origin이 되도록 민다
   const mapStyle = {
     width: `${(MINIMAP_SIZE / VIEW_W) * 100}%`,
@@ -44,13 +49,14 @@ export function GuideRouteMap({ mapId, mapName, agentId, landing, throwFrom, pat
     left: `${(-origin.x / VIEW_W) * 100}%`,
     top: `${(-origin.y / VIEW_H) * 100}%`,
   };
-  const labelLeft = throwFrom.x > 440;
+  const labelLeft = shownStart.x > 440;
 
   return (
     <div className="relative aspect-[320/260] w-full overflow-hidden rounded-thumb bg-page">
-      <div className="absolute" style={mapStyle}>
-        <img src={mapMiniPath(mapId)} alt={`${mapName} 미니맵`} className="size-full object-contain" draggable={false} />
-        <svg aria-hidden viewBox="0 0 512 512" className="pointer-events-none absolute inset-0 size-full">
+      <div {...view.attributes} className="absolute" style={mapStyle}>
+
+        <img style={view.imageStyle} src={mapMiniPath(mapId)} alt={`${mapName} 미니맵`} className="size-full object-contain" draggable={false} />
+        <svg style={view.imageStyle} aria-hidden viewBox="0 0 512 512" className="pointer-events-none absolute inset-0 size-full">
           <RouteLine from={throwFrom} path={path} to={landing} />
         </svg>
         <span className="absolute z-10 flex -translate-1/2 items-center justify-center" style={at(landing)}>
@@ -61,11 +67,11 @@ export function GuideRouteMap({ mapId, mapName, agentId, landing, throwFrom, pat
         </span>
         <span
           className="absolute z-10 rounded-md bg-page px-2 py-1 text-12 font-medium whitespace-nowrap text-main"
-          style={{ left: pct(throwFrom.x), top: pct(throwFrom.y + 28), transform: labelLeft ? "translateX(-85%)" : "translateX(-50%)" }}
+          style={{ left: pct(shownStart.x), top: pct(shownStart.y + 28), transform: labelLeft ? "translateX(-85%)" : "translateX(-50%)" }}
         >
           던지는 위치
         </span>
-        <svg aria-hidden viewBox="0 0 512 512" className="pointer-events-none absolute inset-0 z-20 size-full">
+        <svg style={view.imageStyle} aria-hidden viewBox="0 0 512 512" className="pointer-events-none absolute inset-0 z-20 size-full">
           <RouteBall from={throwFrom} path={path} to={landing} testId="throw-dot" />
         </svg>
       </div>

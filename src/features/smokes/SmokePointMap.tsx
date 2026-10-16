@@ -1,5 +1,7 @@
+import { minimapView, type MinimapSide } from "@/data/minimap-layout";
 import { useId, useRef, useState, type KeyboardEvent, type PointerEvent } from "react";
 import { mapMiniPath } from "@/lib/assets";
+import { SegmentedControl } from "@/components/ui/SegmentedControl";
 import { cx } from "@/lib/cx";
 
 type Point = { x: number; y: number };
@@ -7,6 +9,8 @@ type MapPoint = { id: string; title: string; destination: Point };
 
 type SmokePointMapProps = {
   mapId: string;
+  side?: MinimapSide;
+  onSideChange?: (side: MinimapSide) => void;
   points?: MapPoint[];
   selectedId?: string;
   onSelect?: (id: string) => void;
@@ -16,7 +20,6 @@ type SmokePointMapProps = {
 
 type Drag = { pointerId: number; before: Point; initial: Point; offset: Point; moved: boolean };
 const clamp = (point: Point): Point => ({ x: Math.max(0, Math.min(1, point.x)), y: Math.max(0, Math.min(1, point.y)) });
-const position = (point: Point) => ({ left: `${point.x * 100}%`, top: `${point.y * 100}%` });
 
 function arrowMovement(event: KeyboardEvent): Point | null {
   const step = event.shiftKey ? 0.02 : 0.002;
@@ -32,7 +35,7 @@ export function SmokePointMap(props: SmokePointMapProps) {
   return <PointMapStage key={props.mapId} {...props} />;
 }
 
-function PointMapStage({ mapId, points = [], selectedId, onSelect, value, onChange }: SmokePointMapProps) {
+function PointMapStage({ mapId, points = [], selectedId, onSelect, value, onChange, side: selectedSide, onSideChange }: SmokePointMapProps) {
   const instructionsId = useId();
   const stage = useRef<HTMLDivElement>(null);
   const drag = useRef<Drag | null>(null);
@@ -40,11 +43,23 @@ function PointMapStage({ mapId, points = [], selectedId, onSelect, value, onChan
   const [dragging, setDragging] = useState(false);
   const [mapFocused, setMapFocused] = useState(false);
   const editing = Boolean(onChange);
+  const [localSide, setLocalSide] = useState<MinimapSide>("attack");
+  const side = selectedSide ?? localSide;
+  const setSide = onSideChange ?? setLocalSide;
+  const view = minimapView(mapId, side);
+  const position = (point: Point) => {
+    const shown = view.project(point, 1);
+    return { left: `${shown.x * 100}%`, top: `${shown.y * 100}%` };
+  };
+  const move = (point: Point, delta: Point) => {
+    const canonical = view.unproject(delta, 0);
+    return clamp({ x: point.x + canonical.x, y: point.y + canonical.y });
+  };
 
   function toPoint(clientX: number, clientY: number, offset: Point = { x: 0, y: 0 }) {
     const rect = stage.current?.getBoundingClientRect();
     if (!rect?.width || !rect.height) return null;
-    return clamp({ x: (clientX - rect.left - offset.x) / rect.width, y: (clientY - rect.top - offset.y) / rect.height });
+    return view.unproject(clamp({ x: (clientX - rect.left - offset.x) / rect.width, y: (clientY - rect.top - offset.y) / rect.height }), 1);
   }
 
   function moveDrag(event: PointerEvent<HTMLButtonElement>) {
@@ -67,9 +82,14 @@ function PointMapStage({ mapId, points = [], selectedId, onSelect, value, onChan
 
   return (
     <div className="flex min-w-0 flex-col gap-3">
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <span className="text-12 text-sub">지도 기준 진영</span>
+        <SegmentedControl label="지도 기준 진영" options={[{ value: "attack", label: "공격 아래" }, { value: "defense", label: "수비 아래" }]} value={side} onChange={setSide} />
+      </div>
       {/* 가장자리 좌표에서도 버튼과 포커스 테두리가 잘리지 않도록 지도 밖 여백을 둔다. */}
       <div className="mx-auto w-full max-w-[688px] p-6">
-        <div ref={stage} role="group" aria-label={editing ? "스모크 위치 편집 지도" : "스모크 위치 지도"} className="relative aspect-square w-full select-none">
+        <div {...view.attributes} ref={stage} role="group" aria-label={editing ? "스모크 위치 편집 지도" : "스모크 위치 지도"} className="relative aspect-square w-full select-none">
+
           {editing ? (
             <button
               type="button"
@@ -86,16 +106,16 @@ function PointMapStage({ mapId, points = [], selectedId, onSelect, value, onChan
                 const delta = arrowMovement(event);
                 if (delta) {
                   event.preventDefault();
-                  setCursor((current) => clamp({ x: current.x + delta.x, y: current.y + delta.y }));
+                  setCursor((current) => move(current, delta));
                 } else if (event.key === "Enter" || event.key === " ") {
                   event.preventDefault();
                   onChange?.(cursor);
                 }
               }}
             >
-              <img src={mapMiniPath(mapId)} alt="" draggable={false} className="pointer-events-none size-full object-contain" />
+              <img style={view.imageStyle} src={mapMiniPath(mapId)} alt="" draggable={false} className="pointer-events-none size-full object-contain" />
             </button>
-          ) : <img src={mapMiniPath(mapId)} alt="스모크 위치를 표시한 미니맵" draggable={false} className="size-full object-contain" />}
+          ) : <img style={view.imageStyle} src={mapMiniPath(mapId)} alt="스모크 위치를 표시한 미니맵" draggable={false} className="size-full object-contain" />}
           {points.map((point, index) => {
             const className = cx(
               "absolute flex size-9 -translate-1/2 items-center justify-center rounded-full border-2 text-14 font-semibold shadow-md",
@@ -123,9 +143,10 @@ function PointMapStage({ mapId, points = [], selectedId, onSelect, value, onChan
                 event.preventDefault();
                 event.stopPropagation();
                 event.currentTarget.focus({ preventScroll: true });
+                const shown = view.project(value, 1);
                 drag.current = {
                   pointerId: event.pointerId, before: { ...value }, initial: { x: event.clientX, y: event.clientY }, moved: false,
-                  offset: { x: event.clientX - rect.left - value.x * rect.width, y: event.clientY - rect.top - value.y * rect.height },
+                  offset: { x: event.clientX - rect.left - shown.x * rect.width, y: event.clientY - rect.top - shown.y * rect.height },
                 };
                 event.currentTarget.setPointerCapture(event.pointerId);
                 setDragging(true);
@@ -148,7 +169,7 @@ function PointMapStage({ mapId, points = [], selectedId, onSelect, value, onChan
                 const delta = arrowMovement(event);
                 if (delta) {
                   event.preventDefault(); event.stopPropagation();
-                  onChange?.(clamp({ x: value.x + delta.x, y: value.y + delta.y }));
+                  onChange?.(move(value, delta));
                 }
               }}
             ><span aria-hidden className="size-3 rounded-full bg-main" /></button>

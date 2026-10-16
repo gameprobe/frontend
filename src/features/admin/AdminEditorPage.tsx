@@ -382,10 +382,11 @@ function Editor({ kind, initialEntry, entries, realMode }: { kind: GuideKind; in
             ) : (
               <p className="rounded-lg bg-elevated px-4 py-3 text-14 text-sub">편집 중인 공략의 도착·출발 위치를 지정하면 함께 보입니다.</p>
             )}
-            <GuideMapViewer mapId={draft.mapId} mapName={mapName(draft.mapId)} guides={previewGuides} playingId={playing?.id} onPlay={(guide) => setPlayingId(guide.id)} />
+            <GuideMapViewer side={draft.side} mapId={draft.mapId} mapName={mapName(draft.mapId)} guides={previewGuides} playingId={playing?.id} onPlay={(guide) => setPlayingId(guide.id)} />
           </Card>
         ) : (
           <MapEditor
+            key={`${draft.mapId}:${draft.side}`}
             entry={draft}
             mapName={mapName(draft.mapId)}
             onChange={setDraft}

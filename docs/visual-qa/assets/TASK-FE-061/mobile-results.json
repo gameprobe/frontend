@@ -1,0 +1,23 @@
+[
+  {
+    "map": "icebox",
+    "overflow": false,
+    "rotation": "90",
+    "spawnLabels": 0,
+    "width": 390
+  },
+  {
+    "map": "breeze",
+    "overflow": false,
+    "rotation": "180",
+    "spawnLabels": 0,
+    "width": 390
+  },
+  {
+    "map": "sunset",
+    "overflow": false,
+    "rotation": "180",
+    "spawnLabels": 0,
+    "width": 390
+  }
+]

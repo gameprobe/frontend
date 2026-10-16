@@ -1,15 +1,13 @@
+import { minimapView } from "@/data/minimap-layout";
 import markerIcon from "@/assets/smoke/marker.svg";
 import { groupByDestination, useOpenDestination } from "@/components/guide-map/destination-groups";
 import { RouteBall, RouteLine } from "@/components/guide-map/RouteSvg";
 import markerSelectedIcon from "@/assets/smoke/marker-selected.svg";
 import { agentIconPath, mapMiniPath } from "@/lib/assets";
 import { cx } from "@/lib/cx";
-import { minimapLabels, type Point } from "@/mocks/lineups";
 import type { SmokeGuide } from "@/mocks/smokes";
 
 /** 512px 미니맵 좌표를 %로 바꾼다 (MinimapStage와 같은 방식). */
-const pct = (value: number) => `${(value / 512) * 100}%`;
-const at = (point: Point) => ({ left: pct(point.x), top: pct(point.y) });
 
 /** Figma smoke-marker(182:4064). Default 36px, Selected는 그림자 포함 64px 이미지라 같은 가운데에 크게 놓는다. */
 export function SmokeMarkerIcon({ selected = false }: { selected?: boolean }) {
@@ -35,7 +33,9 @@ type SmokeMinimapProps = {
  * TASK-FE-056: 도착 위치가 같은 연막은 마커 하나로 묶고, 마커에 마우스를 올리면 연결된 던지는 위치·경로를 모두 켠다(Figma 206:5458).
  */
 export function SmokeMinimap({ mapId, mapName, smokes, selected, onSelect, onPlay }: SmokeMinimapProps) {
-  const labels = minimapLabels(mapId);
+  const side = selected?.side ?? smokes[0]?.side ?? "attack";
+  const view = minimapView(mapId, side);
+  const at = view.at;
   const walls = smokes.filter((smoke) => smoke.wallEnd);
   const groups = groupByDestination(smokes);
   const { openKey, hover, leave, togglePin } = useOpenDestination(selected ? (selected.destinationId ?? selected.id) : null);
@@ -43,25 +43,11 @@ export function SmokeMinimap({ mapId, mapName, smokes, selected, onSelect, onPla
   const others = open?.guides.filter((smoke) => smoke.id !== selected?.id) ?? [];
 
   return (
-    <div className="relative aspect-square w-full max-w-[512px]" onMouseLeave={leave}>
-      <img src={mapMiniPath(mapId)} alt={`${mapName} 미니맵`} className="size-full object-contain" />
-      {labels.sites.map((label) => (
-        <span key={label.text} aria-hidden lang="en" className="absolute text-20 font-bold opacity-85" style={at(label)}>
-          {label.text}
-        </span>
-      ))}
-      {labels.areas.map((label) => (
-        <span
-          key={label.text}
-          aria-hidden
-          className="absolute rounded-md bg-page px-2 py-1 text-12 font-medium whitespace-nowrap text-sub"
-          style={at(label)}
-        >
-          {label.text}
-        </span>
-      ))}
+    <div {...view.attributes} className="relative aspect-square w-full max-w-[512px]" onMouseLeave={leave}>
+
+      <img style={view.imageStyle} src={mapMiniPath(mapId)} alt={`${mapName} 미니맵`} className="size-full object-contain" />
       {(walls.length > 0 || selected || others.length > 0) && (
-        <svg aria-hidden viewBox="0 0 512 512" className="pointer-events-none absolute inset-0 size-full">
+        <svg style={view.imageStyle} aria-hidden viewBox="0 0 512 512" className="pointer-events-none absolute inset-0 size-full">
           {walls.map((smoke) => (
             <line
               key={smoke.id}
@@ -139,7 +125,7 @@ export function SmokeMinimap({ mapId, mapName, smokes, selected, onSelect, onPla
               // 지도 오른쪽 끝에서는 라벨이 잘리지 않게 오른쪽을 맞춘다
               selected.throwFrom.x > 440 ? "-translate-x-[85%]" : "-translate-x-1/2",
             )}
-            style={{ left: pct(selected.throwFrom.x), top: pct(selected.throwFrom.y + 26) }}
+            style={view.labelAt(selected.throwFrom, 26)}
           >
             던지는 위치
           </span>
@@ -148,13 +134,13 @@ export function SmokeMinimap({ mapId, mapName, smokes, selected, onSelect, onPla
       {open && !selected && open.guides.length > 1 && (
         <span
           className="pointer-events-none absolute z-20 -translate-x-1/2 rounded-md bg-page px-2 py-1 text-12 font-medium whitespace-nowrap"
-          style={{ left: pct(Math.min(430, Math.max(80, open.landing.x))), top: pct(Math.max(0, open.landing.y - 46)) }}
+          style={view.labelAt(open.landing, -46)}
         >
           {open.name} · 던지는 위치 {open.guides.length}곳
         </span>
       )}
       {(open || selected) && (
-        <svg aria-hidden viewBox="0 0 512 512" className="pointer-events-none absolute inset-0 z-30 size-full">
+        <svg style={view.imageStyle} aria-hidden viewBox="0 0 512 512" className="pointer-events-none absolute inset-0 z-30 size-full">
           {[...others, ...(selected ? [selected] : [])].map((smoke) => (
             <RouteBall
               key={smoke.id}

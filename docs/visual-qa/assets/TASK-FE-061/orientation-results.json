@@ -1,0 +1,162 @@
+[
+  {
+    "imageLoaded": true,
+    "map": "ascent",
+    "overflow": false,
+    "rotation": "90",
+    "side": "attack",
+    "spawnLabels": 0
+  },
+  {
+    "imageLoaded": true,
+    "map": "ascent",
+    "overflow": false,
+    "rotation": "270",
+    "side": "defense",
+    "spawnLabels": 0
+  },
+  {
+    "imageLoaded": true,
+    "map": "bind",
+    "overflow": false,
+    "rotation": "0",
+    "side": "attack",
+    "spawnLabels": 0
+  },
+  {
+    "imageLoaded": true,
+    "map": "bind",
+    "overflow": false,
+    "rotation": "180",
+    "side": "defense",
+    "spawnLabels": 0
+  },
+  {
+    "imageLoaded": true,
+    "map": "breeze",
+    "overflow": false,
+    "rotation": "0",
+    "side": "attack",
+    "spawnLabels": 0
+  },
+  {
+    "imageLoaded": true,
+    "map": "breeze",
+    "overflow": false,
+    "rotation": "180",
+    "side": "defense",
+    "spawnLabels": 0
+  },
+  {
+    "imageLoaded": true,
+    "map": "fracture",
+    "overflow": false,
+    "rotation": "0",
+    "side": "attack",
+    "spawnLabels": 0
+  },
+  {
+    "imageLoaded": true,
+    "map": "fracture",
+    "overflow": false,
+    "rotation": "180",
+    "side": "defense",
+    "spawnLabels": 0
+  },
+  {
+    "imageLoaded": true,
+    "map": "haven",
+    "overflow": false,
+    "rotation": "90",
+    "side": "attack",
+    "spawnLabels": 0
+  },
+  {
+    "imageLoaded": true,
+    "map": "haven",
+    "overflow": false,
+    "rotation": "270",
+    "side": "defense",
+    "spawnLabels": 0
+  },
+  {
+    "imageLoaded": true,
+    "map": "icebox",
+    "overflow": false,
+    "rotation": "270",
+    "side": "attack",
+    "spawnLabels": 0
+  },
+  {
+    "imageLoaded": true,
+    "map": "icebox",
+    "overflow": false,
+    "rotation": "90",
+    "side": "defense",
+    "spawnLabels": 0
+  },
+  {
+    "imageLoaded": true,
+    "map": "lotus",
+    "overflow": false,
+    "rotation": "0",
+    "side": "attack",
+    "spawnLabels": 0
+  },
+  {
+    "imageLoaded": true,
+    "map": "lotus",
+    "overflow": false,
+    "rotation": "180",
+    "side": "defense",
+    "spawnLabels": 0
+  },
+  {
+    "imageLoaded": true,
+    "map": "pearl",
+    "overflow": false,
+    "rotation": "0",
+    "side": "attack",
+    "spawnLabels": 0
+  },
+  {
+    "imageLoaded": true,
+    "map": "pearl",
+    "overflow": false,
+    "rotation": "180",
+    "side": "defense",
+    "spawnLabels": 0
+  },
+  {
+    "imageLoaded": true,
+    "map": "split",
+    "overflow": false,
+    "rotation": "90",
+    "side": "attack",
+    "spawnLabels": 0
+  },
+  {
+    "imageLoaded": true,
+    "map": "split",
+    "overflow": false,
+    "rotation": "270",
+    "side": "defense",
+    "spawnLabels": 0
+  },
+  {
+    "imageLoaded": true,
+    "map": "sunset",
+    "overflow": false,
+    "rotation": "0",
+    "side": "attack",
+    "spawnLabels": 0
+  },
+  {
+    "imageLoaded": true,
+    "map": "sunset",
+    "overflow": false,
+    "rotation": "180",
+    "side": "defense",
+    "spawnLabels": 0
+  }
+]
