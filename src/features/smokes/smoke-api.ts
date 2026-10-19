@@ -1,5 +1,5 @@
 import { toSmokePayload } from "./smoke-model";
-import type { PublicSmoke, SmokePage, SmokePayload, SmokeRecord } from "./smoke-model";
+import type { PublicSmoke, SmokePage, SmokePayload, SmokeRecord, SmokeSide } from "./smoke-model";
 
 export class SmokeApiError extends Error {
   status: number;
@@ -69,8 +69,8 @@ export function createSmokeApi(baseUrl: string | undefined, fetchImpl: typeof fe
   }
 
   return {
-    listPublic: (mapId: string, offset = 0, signal?: AbortSignal) => {
-      const query = new URLSearchParams({ mapId, limit: "100", offset: String(offset) });
+    listPublic: (mapId: string, side: SmokeSide, offset = 0, signal?: AbortSignal) => {
+      const query = new URLSearchParams({ mapId, side, limit: "100", offset: String(offset) });
       return request<SmokePage<PublicSmoke>>(`/api/smokes?${query}`, { signal });
     },
     getPublic: (id: string, signal?: AbortSignal) => request<PublicSmoke>(`/api/smokes/${encodeURIComponent(id)}`, { signal }),

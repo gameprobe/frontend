@@ -7,13 +7,14 @@ import { TextAreaField, TextField } from "@/components/ui/TextField";
 import { CATALOG_MAPS } from "@/data/game-catalog";
 import { SmokePointMap } from "@/features/smokes/SmokePointMap";
 import { smokeErrorMessage } from "@/features/smokes/smoke-api";
-import type { SmokePayload, SmokeRecord } from "@/features/smokes/smoke-model";
+import type { SmokePayload, SmokeRecord, SmokeSide } from "@/features/smokes/smoke-model";
 import { useAdminMode, useAdminToken } from "./admin-session";
 import { deleteAdminSmoke, deleteDemoSmoke, fetchAdminSmoke, saveAdminSmoke, saveDemoSmoke, useDemoSmokes } from "./admin-smoke-store";
 
 const MAP_OPTIONS = CATALOG_MAPS.map((map) => ({ value: map.key, label: map.ko }));
+const SIDE_OPTIONS = [{ value: "attack", label: "공격" }, { value: "defense", label: "수비" }] as const;
 const STATUS_OPTIONS = [{ value: "inactive", label: "비활성" }, { value: "active", label: "활성" }] as const;
-type Draft = Omit<SmokePayload, "destination"> & { destination: SmokePayload["destination"] | null };
+type Draft = Omit<SmokePayload, "destination" | "side"> & { destination: SmokePayload["destination"] | null; side: SmokeSide | "" };
 
 export function AdminSmokeEditorPage() {
   const { id } = useParams();
@@ -49,7 +50,7 @@ function SmokeEditorLoader({ id, realMode }: { id?: string; realMode: boolean })
 function SmokeEditor({ initial, realMode }: { initial?: SmokeRecord; realMode: boolean }) {
   const navigate = useNavigate();
   const location = useLocation();
-  const [draft, setDraft] = useState<Draft>(() => initial ?? { title: "", mapId: MAP_OPTIONS[0].value, destination: null, notes: "", status: "inactive" });
+  const [draft, setDraft] = useState<Draft>(() => initial ? { ...initial, side: initial.side ?? "" } : { title: "", mapId: MAP_OPTIONS[0].value, side: "attack", destination: null, notes: "", status: "inactive" });
   const original = useRef(draft);
   const dirty = JSON.stringify(draft) !== JSON.stringify(original.current);
   const [pending, setPending] = useState(false);
@@ -77,6 +78,7 @@ function SmokeEditor({ initial, realMode }: { initial?: SmokeRecord; realMode: b
 
   const knownMap = MAP_OPTIONS.some((map) => map.value === draft.mapId);
   const titleError = attempted && !draft.title.trim() ? "제목을 입력해 주세요." : undefined;
+  const sideError = attempted && !draft.side ? "공격 또는 수비를 선택해 주세요." : undefined;
   const pointError = attempted && !draft.destination ? "지도에서 스모크 위치를 한 번 눌러 주세요." : undefined;
   const update = (changes: Partial<Draft>) => setDraft((previous) => ({ ...previous, ...changes }));
 
@@ -84,9 +86,9 @@ function SmokeEditor({ initial, realMode }: { initial?: SmokeRecord; realMode: b
     event.preventDefault();
     if (submitting.current) return;
     setAttempted(true);
-    if (!draft.title.trim() || !draft.destination || !knownMap) return;
-    // 편집용 상태와 서버 응답 필드를 제외하고 쓰기 계약의 다섯 필드만 보낸다.
-    const payload: SmokePayload = { title: draft.title.trim(), mapId: draft.mapId, destination: draft.destination, notes: draft.notes, status: draft.status };
+    if (!draft.title.trim() || !draft.destination || !draft.side || !knownMap) return;
+    // 편집용 상태와 서버 응답 필드를 제외하고 쓰기 계약의 여섯 필드만 보낸다.
+    const payload: SmokePayload = { title: draft.title.trim(), mapId: draft.mapId, side: draft.side, destination: draft.destination, notes: draft.notes, status: draft.status };
     submitting.current = true; setPending(true); setError("");
     try {
       const saved = realMode ? await saveAdminSmoke(payload, initial?.id) : saveDemoSmoke(payload, initial?.id);
@@ -138,6 +140,14 @@ function SmokeEditor({ initial, realMode }: { initial?: SmokeRecord; realMode: b
               update({ mapId, destination: null });
             }} />
           {!knownMap && <p role="alert" className="text-13 text-loss">지원하지 않는 맵입니다. 맵을 선택하고 위치를 다시 지정해 주세요.</p>}
+        </div>
+        <div className="flex flex-col gap-2">
+          <span className="text-14 font-medium text-sub">진영 *</span>
+          <Dropdown label="스모크 진영" appearance="field" options={draft.side ? SIDE_OPTIONS : [{ value: "", label: "진영을 선택해 주세요" }, ...SIDE_OPTIONS]}
+            value={draft.side} onChange={(side) => update({ side })} />
+          <p className="text-13 text-sub">이 스모크를 사용할 진영입니다. 지도 방향을 바꿔도 저장할 진영과 위치는 유지됩니다.</p>
+          {!draft.side && <p className="text-13 text-sub">기존 자료에 진영이 없습니다. 저장 전에 선택해 주세요.</p>}
+          {sideError && <p role="alert" className="text-13 text-loss">{sideError}</p>}
         </div>
         <TextAreaField label="설명" value={draft.notes} maxLength={5000} rows={5} placeholder="어떤 시야를 막는 위치인지 적어 주세요." onChange={(event) => update({ notes: event.target.value })} />
         <div className="flex flex-col gap-2">

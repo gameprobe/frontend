@@ -87,3 +87,22 @@ test("active smoke previews stay demo-only and remain hidden after leaving the d
   assert.equal(publicGuides.usePublishedSmokesOnMap(smoke.mapId).length, 0);
   assert.equal(publicGuides.usePublishedLineups("ascent", "sova").length, 0);
 });
+
+
+test("new and destination-copied lineups have no site and never inherit uploaded images", () => {
+  const entry = model.createEmpty("lineup", "destination-1");
+  assert.equal("site" in entry, false);
+  assert.deepEqual(entry.images, { position: null, aim: null });
+  const source = {
+    ...model.createExamples()[0],
+    images: {
+      position: { id: "existing-image", sizeBytes: 70, contentType: "image/png", url: "/api/lineups/example/images/position" },
+      aim: null,
+    },
+  };
+  const copy = model.createAtDestination(source);
+  assert.equal("site" in copy, false);
+  assert.deepEqual(copy.images, { position: null, aim: null });
+  assert.equal(copy.destination.id, source.destination.id);
+  assert.notEqual(copy.destination.point, source.destination.point);
+});

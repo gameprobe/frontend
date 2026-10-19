@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocation, useNavigate, useParams, useSearchParams } from "react-router-dom";
 import chevronLeftIcon from "@/assets/icons/chevron-left.svg";
 import playIcon from "@/assets/icons/play.svg";
@@ -7,7 +7,8 @@ import { VideoLink } from "@/components/guide-map/GuideDetail";
 import { lineupDetailPath } from "@/components/guide-map/paths";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
-import { FilterChipGroup } from "@/components/ui/FilterChip";
+import { useAdminMode } from "@/features/admin/admin-session";
+import { createPublicLineupApi, toPublicLineup } from "@/features/lineups/lineup-api";
 import { usePublishedLineups } from "@/features/admin/public-guides";
 import { MapPickerGrid } from "@/features/lineups/MapPickerGrid";
 import { MinimapStage } from "@/features/lineups/MinimapStage";
@@ -20,30 +21,20 @@ import {
   findLineupMap,
   findLineups,
   lineupAgents,
-  siteLabel,
   type Lineup,
   type LineupSide,
   type Skill,
 } from "@/mocks/lineups";
 import { NotFoundPage } from "@/pages/NotFoundPage";
 
-const SITE_OPTIONS = [
-  { value: "all", label: "전체" },
-  { value: "A", label: "A" },
-  { value: "미드", label: "미드" },
-  { value: "B", label: "B" },
-] as const;
-
-type SiteFilter = (typeof SITE_OPTIONS)[number]["value"];
 type Sort = "popular" | "latest";
 
 const SIDE_LABEL: Record<LineupSide, string> = { attack: "공격", defense: "수비" };
 
 /**
- * 기본 상태: 공격, 지금 진영에 라인업이 있는 스킬 전부, 사이트 전체, 인기순.
- * (어센트 · 소바 · 공격은 시안처럼 정찰용 화살·충격 화살 2개가 된다)
+ * 기본 상태: 공격, 현재 진영에 자료가 있는 스킬 전체. 실제 자료는 최신순으로 표시한다.
  */
-function useBoardFilters(skills: Skill[], lineups: Lineup[]) {
+function useBoardFilters(skills: Skill[], lineups: Lineup[], demo: boolean) {
   const [params, setParams] = useSearchParams();
   const side: LineupSide = params.get("side") === "defense" ? "defense" : "attack";
   const defaultSkills = skills
@@ -52,8 +43,7 @@ function useBoardFilters(skills: Skill[], lineups: Lineup[]) {
 
   const skillParam = params.get("skills");
   const selectedSkills = skillParam === null ? defaultSkills : skillParam.split(",").filter(Boolean);
-  const site = (SITE_OPTIONS.find((option) => option.value === params.get("site"))?.value ?? "all") as SiteFilter;
-  const sort: Sort = params.get("sort") === "latest" ? "latest" : "popular";
+  const sort: Sort = demo && params.get("sort") !== "latest" ? "popular" : "latest";
   const lineupId = params.get("lineup");
 
   const set = (key: string, value: string | null) => {
@@ -81,7 +71,7 @@ function useBoardFilters(skills: Skill[], lineups: Lineup[]) {
     setParams(params2, { replace: true });
   };
 
-  return { side, selectedSkills, site, sort, lineupId, set, toggleSkill, changeSide };
+  return { side, selectedSkills, sort, lineupId, set, toggleSkill, changeSide };
 }
 
 /** 시안(178:3343) 칩 순서: 전체 · 타격대 · 척후대 · 감시자 · 전략가 */
@@ -165,7 +155,7 @@ function AgentPicker({ id, mapId, current, onPick }: { id: string; mapId: string
   );
 }
 
-function LineupDetail({ lineup, skill, detailPath, onBack }: { lineup: Lineup; skill?: Skill; detailPath: string; onBack: () => void }) {
+function LineupDetail({ lineup, skill, detailPath, onBack, demo }: { lineup: Lineup; skill?: Skill; detailPath: string; onBack: () => void; demo: boolean }) {
   const [helped, setHelped] = useState(false);
   const [saved, updateSaved] = useStoredList<string>("gp:saved-lineups", []);
   const isSaved = saved.includes(lineup.id);
@@ -178,7 +168,7 @@ function LineupDetail({ lineup, skill, detailPath, onBack }: { lineup: Lineup; s
       </button>
       <div className="flex flex-col gap-2">
         <ul className="flex flex-wrap gap-1.5">
-          {[skill?.name, SIDE_LABEL[lineup.side], siteLabel(lineup.site)].filter(Boolean).map((tag) => (
+          {[skill?.name, SIDE_LABEL[lineup.side]].filter(Boolean).map((tag) => (
             <li key={tag} className="rounded-md bg-elevated px-2 py-1 text-12 font-medium text-sub">
               {tag}
             </li>
@@ -189,8 +179,8 @@ function LineupDetail({ lineup, skill, detailPath, onBack }: { lineup: Lineup; s
           {[
             lineup.charge !== null && `충전 ${lineup.charge}칸`,
             lineup.bounce !== null && `바운스 ${lineup.bounce}회`,
-            `난이도 ${lineup.difficulty}`,
-            `추천 ${lineup.votes}`,
+            demo && `난이도 ${lineup.difficulty}`,
+            demo && `추천 ${lineup.votes}`,
           ]
             .filter(Boolean)
             .join(" · ")}
@@ -198,7 +188,7 @@ function LineupDetail({ lineup, skill, detailPath, onBack }: { lineup: Lineup; s
       </div>
       {/* 영상은 상세 페이지에서 본다(TASK-FE-059). 영상 주소가 없는 생성 예시는 자리만 보여준다 */}
       {lineup.videoUrl ? (
-        <VideoLink to={detailPath} label={`라인업 영상${lineup.videoLength ? ` · ${lineup.videoLength}` : ""}`} />
+        <VideoLink to={detailPath} label={`영상 · 위치 · 에임 자료${lineup.videoLength ? ` · ${lineup.videoLength}` : ""}`} />
       ) : (
       <div className="flex h-[158px] flex-col items-center justify-center gap-2 rounded-thumb bg-elevated" aria-label="라인업 영상 (준비 중)">
         <span className="flex size-11 items-center justify-center rounded-full bg-primary">
@@ -228,9 +218,9 @@ function LineupDetail({ lineup, skill, detailPath, onBack }: { lineup: Lineup; s
         ))}
       </ol>
       <div className="flex gap-2">
-        <Button variant="secondary" className="flex-1 px-2 text-14 font-semibold" aria-pressed={helped} onClick={() => setHelped((value) => !value)}>
+        {demo && <Button variant="secondary" className="flex-1 px-2 text-14 font-semibold" aria-pressed={helped} onClick={() => setHelped((value) => !value)}>
           도움돼요 {lineup.votes + (helped ? 1 : 0)}
-        </Button>
+        </Button>}
         <Button
           className="flex-1 px-2 text-14"
           aria-pressed={isSaved}
@@ -243,16 +233,41 @@ function LineupDetail({ lineup, skill, detailPath, onBack }: { lineup: Lineup; s
   );
 }
 
-/** 08 라인업 - 맵 뷰 (Figma 72:65) · 상세 (72:96). 필터와 고른 라인업은 쿼리(?side·skills·site·sort·lineup)에 둔다. */
+/** 08 라인업 - 맵 뷰 (Figma 72:65) · 상세 (72:96). 필터와 고른 라인업은 쿼리(?side·skills·sort·lineup)에 둔다. */
 export function LineupBoardPage() {
   const { mapId, agentId } = useParams();
   const map = findLineupMap(mapId);
   const agent = map ? lineupAgents(map.mapId).find((candidate) => candidate.agentId === agentId) : undefined;
-  // 관리자 예시에서 게시한 공략도 같은 탭에서는 함께 보여준다 (TASK-FE-056)
+  const demo = useAdminMode() === "demo";
   const published = usePublishedLineups(map?.mapId, agent?.agentId);
-  const all = map && agent ? [...findLineups(map.mapId, agent.agentId), ...published] : [];
+  const selectedMapId = map?.mapId;
+  const selectedAgentId = agent?.agentId;
+  const requestKey = `${selectedMapId}/${selectedAgentId}`;
+  const [reload, setReload] = useState(0);
+  const [remote, setRemote] = useState<{ key: string; items: Lineup[]; loading: boolean; error: string }>({ key: "", items: [], loading: true, error: "" });
+
+  useEffect(() => {
+    if (demo || !selectedMapId || !selectedAgentId) return;
+    const controller = new AbortController();
+    const key = `${selectedMapId}/${selectedAgentId}`;
+    setRemote({ key, items: [], loading: true, error: "" });
+    createPublicLineupApi(import.meta.env.VITE_BACKEND_URL)
+      .listAll({ mapId: selectedMapId, agentId: selectedAgentId }, controller.signal)
+      .then((records) => {
+        if (!controller.signal.aborted) setRemote({ key, items: records.map(toPublicLineup), loading: false, error: "" });
+      })
+      .catch((error: unknown) => {
+        if (!controller.signal.aborted) setRemote({ key, items: [], loading: false, error: error instanceof Error ? error.message : "라인업을 불러오지 못했습니다." });
+      });
+    return () => controller.abort();
+  }, [selectedMapId, selectedAgentId, demo, reload]);
+
+  const loading = !demo && (remote.key !== requestKey || remote.loading);
+  const error = !demo && remote.key === requestKey ? remote.error : "";
+  const all = demo && map && agent ? [...findLineups(map.mapId, agent.agentId), ...published]
+    : remote.key === requestKey ? remote.items : [];
   const skills = agent ? agentSkills(agent.agentId) : [];
-  const filters = useBoardFilters(skills, all);
+  const filters = useBoardFilters(skills, all, demo);
   const [reportNote, setReportNote] = useState(false);
   const [picker, setPicker] = useState<"map" | "agent" | null>(null);
   const navigate = useNavigate();
@@ -263,20 +278,22 @@ export function LineupBoardPage() {
   const visible = all
     .filter((lineup) => lineup.side === filters.side)
     .filter((lineup) => filters.selectedSkills.includes(lineup.skillId))
-    .filter((lineup) => filters.site === "all" || lineup.site === filters.site)
     .sort((a, b) => (filters.sort === "popular" ? b.votes - a.votes : b.addedAt.localeCompare(a.addedAt)));
   const selected = visible.find((lineup) => lineup.id === filters.lineupId);
   const skillOf = (lineup: Lineup) => skills.find((skill) => skill.skillId === lineup.skillId);
 
   const emptyMessage =
     all.length === 0
-      ? `${map.name} · ${agent.name} 라인업 예시는 아직 없어요. 시안 예시는 어센트 · 소바예요.`
-      : filters.selectedSkills.length === 0
-        ? "스킬을 하나 이상 골라 주세요."
-        : "조건에 맞는 라인업이 없어요.";
+      ? `${map.name} · ${agent.name}에 공개된 라인업이 아직 없어요.`
+      : !all.some((lineup) => lineup.side === filters.side)
+        ? `${SIDE_LABEL[filters.side]} 진영에 공개된 라인업이 아직 없어요.`
+        : filters.selectedSkills.length === 0
+          ? "스킬을 하나 이상 골라 주세요."
+          : "조건에 맞는 라인업이 없어요.";
 
   return (
     <div className="container-page pt-8 pb-20">
+      {demo && <p role="status" className="mb-4 rounded-lg border border-line bg-surface p-3 text-13 text-sub">관리자 예시 모드의 자료입니다. 실제 등록된 라인업과 분리되어 있어요.</p>}
       <div className="grid items-start gap-6 lg:grid-cols-[280px_minmax(0,1fr)_320px]">
         <aside aria-label="라인업 필터" className="flex flex-col gap-4">
           <Card
@@ -386,18 +403,6 @@ export function LineupBoardPage() {
               </ul>
             )}
           </Card>
-          <Card as="section" aria-labelledby="site-title" className="flex flex-col gap-3 p-5">
-            <h2 id="site-title" className="text-16 font-semibold">
-              사이트
-            </h2>
-            <FilterChipGroup
-              label="사이트"
-              options={SITE_OPTIONS}
-              value={filters.site}
-              onChange={(next) => filters.set("site", next === "all" ? null : next)}
-              size="xl"
-            />
-          </Card>
           <div className="flex flex-col gap-2">
             <Button variant="secondary" size="lg" className="w-full text-14 font-semibold" onClick={() => setReportNote(true)}>
               + 라인업 제보하기
@@ -420,7 +425,7 @@ export function LineupBoardPage() {
                   : "착지 마커에 마우스를 올리면 출발지가 보이고, 출발지를 누르면 영상이 재생돼요."}
               </p>
             </div>
-            <p className="shrink-0 text-13 font-medium text-sub-weak">라인업 {visible.length}개</p>
+            <p className="shrink-0 text-13 font-medium text-sub-weak">{loading ? "불러오는 중" : `라인업 ${visible.length}개`}</p>
           </div>
           <MinimapStage
             side={filters.side}
@@ -442,6 +447,7 @@ export function LineupBoardPage() {
             skill={skillOf(selected)}
             detailPath={lineupDetailPath(map.mapId, agent.agentId, selected.id)}
             onBack={() => filters.set("lineup", null)}
+            demo={demo}
           />
         ) : (
           <Card as="section" aria-labelledby="list-title" className="flex flex-col gap-1 px-3 pt-5 pb-4">
@@ -449,7 +455,7 @@ export function LineupBoardPage() {
               <h2 id="list-title" className="text-16 font-semibold">
                 라인업 목록
               </h2>
-              <div role="radiogroup" aria-label="정렬" className="flex gap-3 text-13">
+              {demo ? <div role="radiogroup" aria-label="정렬" className="flex gap-3 text-13">
                 {(["popular", "latest"] as const).map((sort) => (
                   <button
                     key={sort}
@@ -462,9 +468,16 @@ export function LineupBoardPage() {
                     {sort === "popular" ? "인기순" : "최신순"}
                   </button>
                 ))}
-              </div>
+              </div> : <span className="text-13 text-sub">최신순</span>}
             </div>
-            {visible.length === 0 ? (
+            {loading ? (
+              <p role="status" className="px-2 py-6 text-14 text-sub">라인업을 불러오는 중이에요.</p>
+            ) : error ? (
+              <div className="flex flex-col gap-3 px-2 py-6">
+                <p role="alert" className="text-14 text-sub">{error}</p>
+                <Button variant="secondary" onClick={() => setReload((value) => value + 1)}>다시 시도</Button>
+              </div>
+            ) : visible.length === 0 ? (
               <p role="status" className="px-2 py-6 text-14 text-sub">
                 {emptyMessage}
               </p>
@@ -487,15 +500,15 @@ export function LineupBoardPage() {
                             skillOf(lineup)?.name,
                             lineup.charge !== null && `충전 ${lineup.charge}`,
                             lineup.bounce !== null && `바운스 ${lineup.bounce}`,
-                            lineup.difficulty,
+                            demo && lineup.difficulty,
                           ]
                             .filter(Boolean)
                             .join(" · ")}
                         </span>
                       </span>
-                      <span lang="en" className="text-12 font-medium text-sub-weak">
+                      {demo && <span lang="en" className="text-12 font-medium text-sub-weak">
                         {lineup.votes}
-                      </span>
+                      </span>}
                     </button>
                   </li>
                 ))}

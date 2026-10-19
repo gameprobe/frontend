@@ -1,7 +1,7 @@
 import { useSyncExternalStore } from "react";
 import { AdminApiError, createAdminLineupApi, fromLineupRecord, toLineupPayload } from "./admin-lineup-api";
 import { expireAdminToken, getAdminSessionVersion, getAdminToken } from "./admin-session";
-import type { GuideEntry } from "./model";
+import type { GuideEntry, LineupImage, LineupImageSlot } from "./model";
 
 export const adminLineupApi = createAdminLineupApi(import.meta.env.VITE_BACKEND_URL);
 type State = { entries: GuideEntry[]; loading: boolean; loaded: boolean; error: string; unsupportedCount: number };
@@ -92,6 +92,68 @@ export async function deleteAdminLineup(id: string) {
     session.check();
     revision += 1;
     setState({ ...state, entries: state.entries.filter((entry) => entry.id !== id), loading: false });
+  } catch (error) {
+    session.check();
+    throw error;
+  }
+}
+
+/** 이미지 변경은 해당 슬롯만 갱신한다. 제목·좌표 등 다른 입력과 분리해서 저장한다. */
+function updateCachedImage(id: string, slot: LineupImageSlot, image: LineupImage | null) {
+  revision += 1;
+  setState({
+    ...state,
+    entries: state.entries.map((entry) => entry.id === id
+      ? { ...entry, images: { ...entry.images, [slot]: image } }
+      : entry),
+    loading: false,
+  });
+}
+
+export async function uploadAdminLineupImage(id: string, slot: LineupImageSlot, file: Blob): Promise<LineupImage> {
+  const session = requestSession();
+  try {
+    const image = await adminLineupApi.uploadImage(session.token, id, slot, file);
+    session.check();
+    updateCachedImage(id, slot, image);
+    return image;
+  } catch (error) {
+    session.check();
+    throw error;
+  }
+}
+
+export async function deleteAdminLineupImage(id: string, slot: LineupImageSlot): Promise<void> {
+  const session = requestSession();
+  try {
+    await adminLineupApi.removeImage(session.token, id, slot);
+    session.check();
+    updateCachedImage(id, slot, null);
+  } catch (error) {
+    session.check();
+    throw error;
+  }
+}
+
+/** 비활성 라인업도 미리 볼 수 있도록 토큰을 헤더로 전달하고 파일만 반환한다. */
+export async function fetchAdminLineupImage(id: string, slot: LineupImageSlot, signal?: AbortSignal): Promise<Blob> {
+  const session = requestSession();
+  try {
+    const image = await adminLineupApi.getImage(session.token, id, slot, signal);
+    session.check();
+    return image;
+  } catch (error) {
+    session.check();
+    throw error;
+  }
+}
+
+export async function fetchAdminUploadUsage() {
+  const session = requestSession();
+  try {
+    const usage = await adminLineupApi.usage(session.token);
+    session.check();
+    return usage;
   } catch (error) {
     session.check();
     throw error;

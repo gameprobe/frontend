@@ -1,3 +1,4 @@
+import { useAdminMode } from "@/features/admin/admin-session";
 import { Link } from "react-router-dom";
 import { LineupHeading, LineupSteps } from "@/features/lineups/LineupSteps";
 import { mapImagePath } from "@/lib/assets";
@@ -5,6 +6,7 @@ import { LINEUP_MAPS } from "@/mocks/lineups";
 
 /** 08 라인업 - 맵 선택 (Figma 72:3) */
 export function MapSelectPage() {
+  const demo = useAdminMode() === "demo";
   return (
     <div className="container-page flex flex-col gap-6 pt-8 pb-20">
       <LineupSteps current={1} />
@@ -23,7 +25,7 @@ export function MapSelectPage() {
               <img src={mapImagePath(map.mapId)} alt="" loading="lazy" className="h-[126px] w-full object-cover" />
               <span className="flex flex-wrap items-center justify-between gap-x-2 px-4 pt-3 pb-4">
                 <span className="text-16 font-semibold">{map.name}</span>
-                <span className="text-13 text-sub">라인업 {map.total}</span>
+                {demo && <span className="text-13 text-sub">예시 {map.total}개</span>}
               </span>
             </Link>
           </li>

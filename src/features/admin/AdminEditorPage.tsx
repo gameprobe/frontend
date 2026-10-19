@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import { Link, useLocation, useNavigate, useParams, useSearchParams } from "react-router-dom";
+import { Link, useBlocker, useLocation, useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { GuideMapViewer, type MapGuide } from "@/components/guide-map/GuideMapViewer";
 import { YouTubePlayer } from "@/components/guide-map/YouTubePlayer";
 import { Button, ButtonLink } from "@/components/ui/Button";
@@ -8,6 +8,8 @@ import { Dropdown } from "@/components/ui/Dropdown";
 import { SegmentedControl } from "@/components/ui/SegmentedControl";
 import { TextAreaField, TextField } from "@/components/ui/TextField";
 import { agentAbilities, agentName, ALL_AGENT_IDS, mapName } from "@/data/game-names";
+import { AdminLineupImages, type LineupImageChanges } from "./AdminLineupImages";
+import { uploadAdminLineupImage, deleteAdminLineupImage } from "./admin-lineup-store";
 import { MapEditor } from "@/features/admin/MapEditor";
 import { isSafeHttpUrl } from "@/lib/youtube";
 import { useAdminMode, useAdminToken } from "./admin-session";
@@ -29,8 +31,9 @@ import {
   type GuideEntry,
   type GuideKind,
   type GuideStatus,
+  type LineupImageSlot,
 } from "@/features/admin/model";
-import { LINEUP_MAPS, type LineupSide, type LineupSite } from "@/mocks/lineups";
+import { LINEUP_MAPS, type LineupSide } from "@/mocks/lineups";
 import { SMOKE_VARIANT_LABEL, type SmokeVariant } from "@/mocks/smokes";
 
 const NEW_DESTINATION = "__new__";
@@ -38,7 +41,6 @@ const SIDE_OPTIONS: { value: LineupSide; label: string }[] = [
   { value: "attack", label: "공격" },
   { value: "defense", label: "수비" },
 ];
-const SITE_OPTIONS: { value: LineupSite; label: string }[] = (["A", "B", "C", "미드"] as const).map((site) => ({ value: site, label: site }));
 const MAP_OPTIONS = LINEUP_MAPS.map((map) => ({ value: map.mapId, label: map.name }));
 const STATUS_OPTIONS = (Object.keys(STATUS_LABEL) as GuideStatus[]).map((status) => ({ value: status, label: STATUS_LABEL[status] }));
 const SHAPE_OPTIONS = (Object.keys(SMOKE_VARIANT_LABEL) as SmokeVariant[]).map((shape) => ({ value: shape, label: SMOKE_VARIANT_LABEL[shape] }));
@@ -111,7 +113,16 @@ function Editor({ kind, initialEntry, entries, realMode }: { kind: GuideKind; in
   const [initial, setInitial] = useState(initialEntry);
   const [draft, setDraft] = useState(initialEntry);
   const id = draft.id;
-  const dirty = JSON.stringify(draft) !== JSON.stringify(initial);
+  const [imageChanges, setImageChanges] = useState<LineupImageChanges>({});
+  const dirty = JSON.stringify(draft) !== JSON.stringify(initial) || Object.keys(imageChanges).length > 0;
+  const changeImage = (slot: LineupImageSlot, value: File | null | undefined) => {
+    setImageChanges((current) => {
+      const next = { ...current };
+      if (value === undefined) delete next[slot];
+      else next[slot] = value;
+      return next;
+    });
+  };
   const [pending, setPending] = useState(false);
   const submitting = useRef(false);
   const mounted = useRef(true);
@@ -120,20 +131,18 @@ function Editor({ kind, initialEntry, entries, realMode }: { kind: GuideKind; in
     return () => { mounted.current = false; };
   }, []);
   const [apiError, setApiError] = useState("");
+  const allowNavigation = useRef(false);
+  const blocker = useBlocker(() => dirty && !allowNavigation.current);
+  useEffect(() => {
+    if (blocker.state !== "blocked") return;
+    if (window.confirm("저장하지 않은 내용을 버리고 이동할까요?")) blocker.proceed();
+    else blocker.reset();
+  }, [blocker]);
   useEffect(() => {
     if (!dirty) return;
     const beforeUnload = (event: BeforeUnloadEvent) => { event.preventDefault(); event.returnValue = ""; };
-    const beforeLink = (event: MouseEvent) => {
-      const link = event.target instanceof Element ? event.target.closest("a[href]") : null;
-      if (!(link instanceof HTMLAnchorElement) || link.target === "_blank" || event.defaultPrevented) return;
-      if (link.href === window.location.href) return;
-      if (!window.confirm("저장하지 않은 내용을 버리고 이동할까요?")) {
-        event.preventDefault(); event.stopPropagation();
-      }
-    };
     window.addEventListener("beforeunload", beforeUnload);
-    document.addEventListener("click", beforeLink, true);
-    return () => { window.removeEventListener("beforeunload", beforeUnload); document.removeEventListener("click", beforeLink, true); };
+    return () => window.removeEventListener("beforeunload", beforeUnload);
   }, [dirty]);
   const [moveShared, setMoveShared] = useState(false);
   // 저장을 한 번 눌러 본 뒤에는 고칠 때마다 남은 오류만 다시 보여준다
@@ -169,13 +178,33 @@ function Editor({ kind, initialEntry, entries, realMode }: { kind: GuideKind; in
     setApiError("");
     try {
       if (realMode) {
-        const saved = await saveAdminLineup(draft);
+        let saved = await saveAdminLineup(draft);
         if (!mounted.current) return;
+        // 먼저 받은 ID를 보관한다. 이미지 업로드가 실패해도 재시도 시 공략을 중복 생성하지 않는다.
         setInitial(saved);
         setDraft(saved);
+        for (const slot of ["position", "aim"] as const) {
+          const change = imageChanges[slot];
+          if (change === undefined) continue;
+          try {
+            let image = null;
+            if (change === null) await deleteAdminLineupImage(saved.id, slot);
+            else image = await uploadAdminLineupImage(saved.id, slot, change);
+            if (!mounted.current) return;
+            saved = { ...saved, images: { ...saved.images, [slot]: image } };
+            setInitial(saved);
+            setDraft(saved);
+            changeImage(slot, undefined);
+          } catch (reason) {
+            const label = slot === "position" ? "위치" : "에임";
+            throw new Error(`공략 정보는 저장했습니다. ${label} 이미지 변경은 완료하지 못했습니다. ${adminErrorMessage(reason)} 남은 변경을 확인한 뒤 다시 저장해 주세요.`);
+          }
+        }
+        allowNavigation.current = true;
         navigate(`${base}/${saved.id}`, { replace: Boolean(id), state: { saved: true } });
       } else {
         const savedId = saveGuideEntry(draft, moveShared);
+        allowNavigation.current = true;
         navigate(`${base}/${savedId}`, { replace: Boolean(id), state: { saved: true } });
       }
     } catch (error) {
@@ -195,6 +224,7 @@ function Editor({ kind, initialEntry, entries, realMode }: { kind: GuideKind; in
     try {
       await deleteAdminLineup(id);
       if (!mounted.current) return;
+      allowNavigation.current = true;
       navigate(base, { replace: true, state: { deleted: true } });
     } catch (error) {
       const message = adminErrorMessage(error);
@@ -257,7 +287,7 @@ function Editor({ kind, initialEntry, entries, realMode }: { kind: GuideKind; in
         </div>
       )}
 
-      <fieldset disabled={pending} style={{ pointerEvents: pending ? "none" : undefined }} className="grid min-w-0 gap-5 xl:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
+      <fieldset disabled={pending} style={{ pointerEvents: pending ? "none" : undefined }} className="grid min-w-0 items-start gap-5 xl:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
         <div className="flex flex-col gap-5">
           <FormSection step="1" title="도착점 선택" text="어디에 도착하는 공략인가요?">
             <div className="grid gap-4 sm:grid-cols-2">
@@ -269,9 +299,6 @@ function Editor({ kind, initialEntry, entries, realMode }: { kind: GuideKind; in
               </Field>
               <Field label="진영">
                 <SegmentedControl label="진영" options={SIDE_OPTIONS} value={draft.side} onChange={(side) => update({ side })} />
-              </Field>
-              <Field label="사이트">
-                <Dropdown label="사이트" appearance="field" options={SITE_OPTIONS} value={draft.site} onChange={(site) => update({ site })} />
               </Field>
             </div>
             <Field label="도착점">
@@ -358,6 +385,9 @@ function Editor({ kind, initialEntry, entries, realMode }: { kind: GuideKind; in
               </div>
             </details>
           </FormSection>
+          {kind === "lineup" && <FormSection step="3" title="위치·에임 이미지" text="영상과 함께 볼 수 있는 참고 사진을 추가하세요.">
+            <AdminLineupImages lineupId={id} images={draft.images} changes={imageChanges} onChange={changeImage} realMode={realMode} />
+          </FormSection>}
         </div>
 
         {preview ? (
@@ -395,6 +425,9 @@ function Editor({ kind, initialEntry, entries, realMode }: { kind: GuideKind; in
           />
         )}
       </fieldset>
+      <div className="flex justify-end border-t border-line pt-5">
+        <Button disabled={pending} onClick={() => void save()}>{pending ? "처리 중…" : realMode ? "DB에 저장" : "예시 목록에 저장"}</Button>
+      </div>
     </div>
   );
 }

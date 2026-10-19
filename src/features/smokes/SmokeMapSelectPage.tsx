@@ -29,7 +29,7 @@ export function SmokeMapSelectPage() {
         {LINEUP_MAPS.map((map) => (
           <li key={map.mapId}>
             <Link
-              to={`/smokes/${map.mapId}`}
+              to={`/smokes/${map.mapId}${params.get("side") === "defense" ? "?side=defense" : ""}`}
               className="flex flex-col overflow-hidden rounded-card border border-line bg-surface transition-colors hover:border-line-strong"
             >
               <img src={mapImagePath(map.mapId)} alt="" loading="lazy" className="h-[126px] w-full object-cover" />
