@@ -1,3 +1,4 @@
+import { useAdminMode } from "@/features/admin/admin-session";
 import { Link, useParams, useSearchParams } from "react-router-dom";
 import { ButtonLink } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
@@ -9,6 +10,7 @@ import { NotFoundPage } from "@/pages/NotFoundPage";
 
 /** 08 라인업 - 요원 선택 (Figma 72:34). ?agent= 는 맵 뷰에서 '변경'으로 돌아왔을 때 현재 요원 표시. */
 export function AgentSelectPage() {
+  const demo = useAdminMode() === "demo";
   const { mapId } = useParams();
   const [searchParams] = useSearchParams();
   const map = findLineupMap(mapId);
@@ -28,7 +30,7 @@ export function AgentSelectPage() {
             <p className="text-20 font-semibold">{map.name}</p>
           </div>
           <p className="text-14 text-sub">
-            라인업 {map.total}개 · 공격 {map.attack} · 수비 {map.defense}
+            {demo ? `예시 ${map.total}개 · 공격 ${map.attack} · 수비 ${map.defense}` : "요원을 선택하면 공개된 라인업을 확인할 수 있어요."}
           </p>
         </div>
         <ButtonLink to="/lineups" variant="secondary" className="h-[46px] px-4 text-14 font-semibold">
@@ -38,7 +40,7 @@ export function AgentSelectPage() {
       <LineupHeading
         label="요원 선택"
         title="어떤 요원의 라인업을 볼까요?"
-        description="라인업이 등록된 요원만 표시돼요. 역할군별로 정리했어요."
+        description="요원을 역할군별로 정리했어요. 요원을 골라 등록된 라인업을 확인해 보세요."
       />
       <div className="flex flex-col gap-4">
         {LINEUP_ROLES.map((role) => {
@@ -70,7 +72,7 @@ export function AgentSelectPage() {
                       >
                         <img src={agentIconPath(agent.agentId)} alt="" className="size-16 rounded-thumb object-cover" />
                         <span className={cx("text-14 font-medium", selected && "text-primary")}>{agent.name}</span>
-                        <span className="text-12 text-sub-weak">라인업 {agent.count}</span>
+                        {demo && <span className="text-12 text-sub-weak">예시 {agent.count}개</span>}
                       </Link>
                     </li>
                   );

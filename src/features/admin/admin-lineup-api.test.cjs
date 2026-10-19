@@ -9,7 +9,7 @@ const output = join(directory, "admin-lineup-api.cjs");
 writeFileSync(output, ts.transpileModule(readFileSync(join(__dirname, "admin-lineup-api.ts"), "utf8"), {
   compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
 }).outputText);
-const { AdminApiError, createAdminLineupApi, toLineupPayload, fromLineupRecord } = require(output);
+const { AdminApiError, createAdminLineupApi, toLineupPayload, fromLineupRecord, lineupImageFileError, MAX_LINEUP_IMAGE_BYTES } = require(output);
 const originalFetch = globalThis.fetch;
 afterEach(() => { globalThis.fetch = originalFetch; });
 after(() => rmSync(directory, { recursive: true, force: true }));
@@ -17,11 +17,15 @@ const origin = "http://localhost:8001";
 const token = "test-only-token";
 const record = {
   id: "saved-id", title: "테스트 공략", mapId: "ascent", agentId: "brimstone", abilitySlot: "Q",
-  side: "attack", site: "A", status: "inactive", notes: "설명", videoUrl: "https://example.com/video.mp4",
+  side: "attack", status: "inactive", notes: "설명", videoUrl: "https://example.com/video.mp4",
   destination: { id: "destination-1", name: "도착점", point: { x: 0.45500538482730984, y: 0.14341172640068126 } },
   start: { x: 0.6393417987827785, y: 0.07448593683472338 },
   path: [{ x: 0.4742404888922283, y: 0.2173717033586295 }, { x: 0, y: 1 }],
   createdAt: "2026-10-15T00:00:00Z", updatedAt: "2026-10-15T00:00:00Z",
+  images: {
+    position: { id: "image-1", sizeBytes: 70, contentType: "image/png", url: "/api/lineups/saved-id/images/position?v=image-1" },
+    aim: null,
+  },
 };
 
 test("API coordinates round-trip unchanged, preserving intermediate point order and DTO names", () => {
@@ -29,10 +33,16 @@ test("API coordinates round-trip unchanged, preserving intermediate point order 
   assert.equal(entry.kind, "lineup");
   assert.equal(entry.start.x, record.start.x * 512);
   assert.equal(entry.path[1].y, 512);
-  const { id: _id, createdAt: _created, updatedAt: _updated, ...expected } = record;
+  const { id: _id, createdAt: _created, updatedAt: _updated, images: _images, ...expected } = record;
   assert.deepEqual(toLineupPayload(entry), expected);
   assert.equal("kind" in toLineupPayload(entry), false);
   assert.equal("id" in toLineupPayload(entry), false);
+  assert.equal("site" in entry, false);
+  assert.equal("site" in toLineupPayload({ ...entry, site: "A" }), false);
+  assert.equal("images" in toLineupPayload(entry), false);
+  assert.deepEqual(entry.images, record.images);
+  entry.images.position.id = "changed-local-copy";
+  assert.equal(record.images.position.id, "image-1");
 });
 
 test("active and inactive survive API round-trips and are sent unchanged when saving", async () => {
@@ -218,4 +228,148 @@ test("a stale 401 cannot invalidate a newer authentication when the UI formats t
     assert.equal(currentToken(), "new-test-token");
     return true;
   });
+});
+
+
+test("image validation rejects empty, oversized and unsupported files before sending", async () => {
+  globalThis.fetch = () => assert.fail("Invalid images must not be sent");
+  const client = createAdminLineupApi(origin);
+  for (const file of [
+    new Blob([], { type: "image/png" }),
+    new Blob(["GIF89a"], { type: "image/gif" }),
+    { size: MAX_LINEUP_IMAGE_BYTES + 1, type: "image/jpeg" },
+  ]) {
+    assert.notEqual(lineupImageFileError(file), "");
+    await assert.rejects(client.uploadImage(token, "saved-id", "position", file));
+  }
+  assert.equal(lineupImageFileError({ size: MAX_LINEUP_IMAGE_BYTES, type: "image/webp" }), "");
+  const valid = new Blob(["image-bytes"], { type: "image/png" });
+  await assert.rejects(client.uploadImage(token, "", "position", valid), /먼저 저장/);
+  await assert.rejects(client.uploadImage(token, "saved-id", "other", valid), /위치 또는 에임/);
+});
+
+test("image upload sends raw bytes with a fixed slot path, never multipart or JSON", async () => {
+  const file = new Blob(["image-bytes"], { type: "image/png" });
+  globalThis.fetch = async (url, init) => {
+    assert.equal(String(url), `${origin}/api/admin/lineups/id%2Fwith%20space/images/position`);
+    assert.equal(init.method, "PUT");
+    assert.equal(init.body, file);
+    assert.deepEqual(init.headers, { "X-Admin-Token": token, "Content-Type": "image/png" });
+    assert.equal(init.credentials, "omit");
+    assert.equal(init.redirect, "error");
+    assert.equal(init.cache, "no-store");
+    return Response.json(record.images.position);
+  };
+  const result = await createAdminLineupApi(origin).uploadImage(token, "id/with space", "position", file);
+  assert.deepEqual(result, record.images.position);
+});
+
+test("inactive image preview fetches authenticated bytes and supports cancellation", async () => {
+  const controller = new AbortController();
+  globalThis.fetch = async (url, init) => {
+    assert.equal(String(url), `${origin}/api/admin/lineups/saved-id/images/aim`);
+    assert.equal(init.method, "GET");
+    assert.deepEqual(init.headers, { "X-Admin-Token": token });
+    assert.equal(init.signal, controller.signal);
+    assert.equal(init.redirect, "error");
+    return new Response("image-bytes", { headers: { "Content-Type": "image/webp" } });
+  };
+  const blob = await createAdminLineupApi(origin).getImage(token, "saved-id", "aim", controller.signal);
+  assert.equal(blob.type, "image/webp");
+  assert.equal(await blob.text(), "image-bytes");
+  controller.abort();
+  globalThis.fetch = async () => { throw new DOMException("Aborted", "AbortError"); };
+  await assert.rejects(createAdminLineupApi(origin).getImage(token, "saved-id", "aim", controller.signal), (error) => error.name === "AbortError");
+});
+
+test("slot deletion and upload usage use authenticated API paths without a request body", async () => {
+  const calls = [];
+  const usage = { usedBytes: 70, reservedBytes: 0, limitBytes: 5_000_000_000 };
+  globalThis.fetch = async (url, init) => {
+    calls.push({ url: String(url), ...init });
+    return init.method === "DELETE" ? new Response(null, { status: 204 }) : Response.json(usage);
+  };
+  const client = createAdminLineupApi(origin);
+  assert.equal(await client.removeImage(token, "saved-id", "position"), undefined);
+  assert.deepEqual(await client.usage(token), usage);
+  assert.deepEqual(calls.map((call) => [call.method, call.url]), [
+    ["DELETE", `${origin}/api/admin/lineups/saved-id/images/position`],
+    ["GET", `${origin}/api/admin/uploads/usage`],
+  ]);
+  for (const call of calls) {
+    assert.equal(call.body, undefined);
+    assert.deepEqual(call.headers, { "X-Admin-Token": token });
+  }
+});
+
+test("image quota and authentication errors preserve HTTP status and never retry a write", async () => {
+  const client = createAdminLineupApi(origin);
+  const file = new Blob(["image-bytes"], { type: "image/png" });
+  for (const status of [401, 409, 413, 503]) {
+    let calls = 0;
+    globalThis.fetch = async () => {
+      calls += 1;
+      return Response.json({ detail: "이미지 요청 실패" }, { status });
+    };
+    await assert.rejects(client.uploadImage(token, "saved-id", "position", file), (error) => error instanceof AdminApiError && error.status === status);
+    assert.equal(calls, 1);
+  }
+  let calls = 0;
+  globalThis.fetch = async () => { calls += 1; throw new TypeError("fetch failed"); };
+  await assert.rejects(client.uploadImage(token, "saved-id", "position", file), /저장 여부/);
+  assert.equal(calls, 1);
+});
+
+test("image writes update only the selected cached slot and leave text and other image intact", async () => {
+  const { store } = loadStore();
+  globalThis.fetch = async () => Response.json({ items: [record], total: 1, limit: 100, offset: 0, unsupportedCount: 0 });
+  await store.loadAdminLineups();
+  const uploaded = { id: "image-aim", sizeBytes: 90, contentType: "image/png", url: "/api/lineups/saved-id/images/aim?v=image-aim" };
+  globalThis.fetch = async () => Response.json(uploaded);
+  assert.deepEqual(await store.uploadAdminLineupImage("saved-id", "aim", new Blob(["image"], { type: "image/png" })), uploaded);
+  const saved = store.useAdminLineups().entries[0];
+  assert.equal(saved.title, record.title);
+  assert.deepEqual(saved.images.position, record.images.position);
+  assert.deepEqual(saved.images.aim, uploaded);
+  globalThis.fetch = async () => new Response(null, { status: 204 });
+  await store.deleteAdminLineupImage("saved-id", "position");
+  const deleted = store.useAdminLineups().entries[0];
+  assert.equal(deleted.images.position, null);
+  assert.deepEqual(deleted.images.aim, uploaded);
+});
+
+test("late image upload after logout cannot recreate cached admin data", async () => {
+  const { store, changeSession } = loadStore();
+  const delayed = deferred();
+  globalThis.fetch = async () => delayed.promise;
+  const saving = store.uploadAdminLineupImage("saved-id", "position", new Blob(["image"], { type: "image/png" }));
+  changeSession("");
+  store.clearAdminLineups();
+  delayed.resolve(Response.json(record.images.position));
+  await assert.rejects(saving, /인증이 변경/);
+  assert.equal(store.useAdminLineups().entries.length, 0);
+});
+
+test("late image preview and usage responses are discarded after authentication changes", async () => {
+  for (const action of ["preview", "usage"]) {
+    const { store, changeSession } = loadStore();
+    const delayed = deferred();
+    globalThis.fetch = async () => delayed.promise;
+    const reading = action === "preview"
+      ? store.fetchAdminLineupImage("saved-id", "position")
+      : store.fetchAdminUploadUsage();
+    changeSession("new-test-token");
+    delayed.resolve(action === "preview"
+      ? new Response("image-bytes", { headers: { "Content-Type": "image/png" } })
+      : Response.json({ usedBytes: 70, reservedBytes: 0, limitBytes: 5_000_000_000 }));
+    await assert.rejects(reading, /인증이 변경/);
+  }
+});
+
+
+test("records created before image support start with two empty slots", () => {
+  const { images: _images, ...withoutImages } = record;
+  const entry = fromLineupRecord(withoutImages);
+  assert.deepEqual(entry.images, { position: null, aim: null });
+  assert.deepEqual(toLineupPayload(entry), toLineupPayload(fromLineupRecord(record)));
 });

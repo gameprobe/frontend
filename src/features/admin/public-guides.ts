@@ -30,7 +30,6 @@ function toLineup(entry: Placed): Lineup {
     skillId: ability?.id ?? `${entry.agentId}-${entry.abilitySlot.toLowerCase()}`,
     title: entry.title,
     side: entry.side,
-    site: entry.site,
     charge: null,
     bounce: null,
     difficulty: "보통",
@@ -45,6 +44,7 @@ function toLineup(entry: Placed): Lineup {
     destinationName: entry.destination.name,
     path: entry.path,
     videoUrl: entry.videoUrl,
+    images: entry.images,
   };
 }
 
@@ -53,7 +53,8 @@ function toSmoke(entry: Placed): SmokeGuide {
     id: `admin-${entry.id}`,
     mapId: entry.mapId,
     side: entry.side,
-    site: entry.site,
+    // 실제 스모크 API에는 없는 예시 화면용 분류다.
+    site: "미드",
     variant: entry.shape,
     agentId: entry.agentId,
     title: entry.title,

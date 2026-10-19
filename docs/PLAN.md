@@ -1,5 +1,13 @@
 # PLAN.md - 개발 계획
 
+## 현재 실행 기준 (2026-10-19)
+
+- [TASK-FE-062](tasks/TASK-FE-062.md): 라인업 site 제거·위치/에임 이미지 등록 및 공개 표시·스모크 공격/수비 연결 IMPLEMENTED. `codex/lineup-images-smoke-side`에서 검증 완료, 사용자 검토 대기.
+- 작업 시작 시 frontend dev와 main 파일 트리는 같았다. main은 변경하지 않는다. 사용자 승인으로 작업 브랜치를 커밋·푸시하고 dev 대상 PR을 제출한다. 병합은 사용자가 수행하며 main·운영 배포는 변경하지 않는다.
+- 일반 라인업 공개 조회도 실제 API 연결 완료. 이후 운영 적용은 해당 이미지/진영 API의 백엔드 배포 및 동료의 frontend main 반영 순서 확인이 필요하다.
+- 아래 기록은 이전 시점의 계획이며 현재 결과와 검증은 TASK-FE-062를 따른다.
+
+
 ## 현재 실행 기준 (2026-10-14)
 
 - TASK-FE-055: 조직 frontend의 dev에 최신 Vite 프론트 이관. 현재 실행·검증 안내는 [README](../README.md)와 [Task](tasks/TASK-FE-055.md)를 따른다.

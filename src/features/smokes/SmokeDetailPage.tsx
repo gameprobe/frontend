@@ -22,14 +22,16 @@ export function SmokeDetailPage() {
 
 function SmokeDetail({ map, smokeId }: { map: LineupMap; smokeId: string }) {
   const [params, setParams] = useSearchParams();
-  const side: MinimapSide = params.get("side") === "defense" ? "defense" : "attack";
+  const [state, setState] = useState<DetailState>({ status: "loading" });
+  const savedSide = state.status === "ready" ? state.smoke.side : null;
+  // 이전 상세 링크의 side는 지도 방향으로 사용했으므로 계속 읽을 수 있게 한다.
+  const view = params.get("view") ?? params.get("side");
+  const side: MinimapSide = view === "attack" || view === "defense" ? view : savedSide ?? "attack";
   const setSide = (nextSide: MinimapSide) => {
     const next = new URLSearchParams(params);
-    if (nextSide === "defense") next.set("side", "defense");
-    else next.delete("side");
+    next.set("view", nextSide);
     setParams(next, { replace: true });
   };
-  const [state, setState] = useState<DetailState>({ status: "loading" });
   const [reload, setReload] = useState(0);
 
   useEffect(() => {
@@ -48,14 +50,15 @@ function SmokeDetail({ map, smokeId }: { map: LineupMap; smokeId: string }) {
 
   return (
     <div className="container-page flex flex-col gap-6 pt-8 pb-12">
-      <div><ButtonLink to={`/smokes/${map.mapId}?smoke=${encodeURIComponent(smokeId)}${side === "defense" ? "&side=defense" : ""}`} variant="secondary">← {map.name} 스모크 목록</ButtonLink></div>
+      <div><ButtonLink to={`/smokes/${map.mapId}?smoke=${encodeURIComponent(smokeId)}&side=${savedSide ?? "attack"}&view=${side}`} variant="secondary">← {map.name} 스모크 목록</ButtonLink></div>
       {state.status === "loading" && <Card className="p-8"><p role="status" className="text-14 text-sub">스모크를 불러오는 중이에요.</p></Card>}
       {state.status === "missing" && <Card className="space-y-2 p-8"><h1 className="text-20 font-semibold">공개된 스모크를 찾을 수 없어요.</h1><p className="text-14 text-sub">삭제되었거나 현재 공개되지 않은 자료예요. 목록에서 다른 위치를 확인해 주세요.</p></Card>}
       {state.status === "error" && <Card className="flex flex-col items-start gap-4 p-6"><p role="alert" className="text-14 text-loss">{state.message}</p><Button variant="secondary" onClick={() => setReload((value) => value + 1)}>다시 시도</Button></Card>}
       {state.status === "ready" && (
         <>
           <Card as="header" className="min-w-0 space-y-2 p-5 sm:p-7">
-            <p className="text-13 font-medium text-primary">{map.name} · 스모크</p>
+            <p className="text-13 font-medium text-primary">{map.name} · {savedSide === "attack" ? "공격" : savedSide === "defense" ? "수비" : "진영 미지정"} 스모크</p>
+            {!savedSide && <p className="text-13 text-sub">아직 진영이 지정되지 않은 기존 자료입니다.</p>}
             <h1 className="text-24 leading-[1.5] font-semibold break-words">{state.smoke.title}</h1>
           </Card>
           <div className="grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_360px]">

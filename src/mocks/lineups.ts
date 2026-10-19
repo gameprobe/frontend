@@ -1,3 +1,4 @@
+import type { LineupImages } from "@/features/admin/model";
 import { agentAbilities, agentName, mapName } from "@/data/game-names";
 import { MINIMAP_POINTS } from "@/data/minimap-points";
 import type { RoutePoint } from "@/components/guide-map/geometry";
@@ -43,7 +44,9 @@ export type Lineup = {
   skillId: string;
   title: string;
   side: LineupSide;
-  site: LineupSite;
+  /** 예시 자료에서만 사용한다. 실제 라인업 API에는 사이트 항목이 없다. */
+  site?: LineupSite;
+  images?: LineupImages;
   /** 충전·바운스는 소바 화살처럼 쏘는 스킬에만 있다. */
   charge: number | null;
   bounce: number | null;
@@ -74,7 +77,8 @@ export const EXAMPLE_VIDEO_URL = "https://www.youtube.com/shorts/qHhYLiFSs8k";
 /** 같은 도착지를 쓰는 라인업 묶음 키 */
 export const destinationKey = (guide: { id: string; destinationId?: string }) => guide.destinationId ?? guide.id;
 
-export function siteLabel(site: LineupSite): string {
+export function siteLabel(site: LineupSite | undefined): string {
+  if (!site) return "";
   return site === "미드" ? "미드" : `${site} 사이트`;
 }
 
@@ -291,10 +295,10 @@ export function findLineupMap(mapId: string | undefined): LineupMap | undefined 
 }
 
 /** 맵의 공격 라인업을 추천 수 순으로 (06 게임 정보 라인업 탭) */
-export function topAttackLineups(mapId: string, limit: number): Lineup[] {
+export function topAttackLineups(mapId: string, limit: number): (Lineup & { site: LineupSite })[] {
   return LINEUP_ROLES.flatMap((role) => AGENT_ORDER[role])
     .flatMap((agentId) => findLineups(mapId, agentId))
-    .filter((lineup) => lineup.side === "attack")
+    .filter((lineup): lineup is Lineup & { site: LineupSite } => lineup.side === "attack" && lineup.site !== undefined)
     .sort((a, b) => b.votes - a.votes)
     .slice(0, limit);
 }

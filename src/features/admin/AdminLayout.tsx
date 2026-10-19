@@ -79,7 +79,7 @@ export function AdminLayout() {
       <p role="note" className="rounded-lg border border-line border-l-2 border-l-caution bg-surface px-4 py-3 text-14 text-sub">
         <b className="mr-2 font-semibold text-caution">{mode === "real" ? "DB 자료 관리" : "화면 체험 중"}</b>
         {mode === "real"
-          ? "저장·수정·삭제는 연결된 DB에 반영됩니다. 활성 스모크는 공개 지도에 표시됩니다. 공개 라인업은 아직 예시 화면입니다."
+          ? "저장·수정·삭제는 연결된 DB에 반영됩니다. 활성 라인업과 스모크는 공개 지도에 표시됩니다. 비활성 자료는 관리자만 확인할 수 있습니다."
           : "입력한 내용은 이 탭에서만 유지되고 새로고침하면 초기화됩니다. 체험 스모크는 공개 지도에 표시되지 않습니다. 활성 라인업은 이 탭의 라인업 화면에서 미리 볼 수 있습니다."}
       </p>
 

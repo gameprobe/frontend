@@ -4,7 +4,7 @@ const { readFileSync } = require("node:fs");
 const { join } = require("node:path");
 const Module = require("node:module");
 const ts = require("typescript");
-const payload = { title: "연막", mapId: "ascent", destination: { x: 0.4, y: 0.6 }, notes: "입구", status: "inactive" };
+const payload = { title: "연막", mapId: "ascent", side: "attack", destination: { x: 0.4, y: 0.6 }, notes: "입구", status: "inactive" };
 const record = { ...payload, id: "smoke-1", createdAt: "2026-10-15T00:00:00Z", updatedAt: "2026-10-15T00:00:00Z" };
 
 function loadStore(fetchImpl) {
@@ -122,7 +122,8 @@ test("successful save wins over an older in-flight list, and delete removes the 
   delayed.resolve(page([{ ...record, title: "오래된 제목" }]));
   await loading;
   assert.equal(store.useAdminSmokes().entries[0].title, "연막");
-  await store.saveAdminSmoke({ ...payload, status: "active" }, saved.id);
+  await store.saveAdminSmoke({ ...payload, side: "defense", status: "active" }, saved.id);
+  assert.equal(store.useAdminSmokes().entries[0].side, "defense");
   assert.equal(store.useAdminSmokes().entries[0].status, "active");
   await store.deleteAdminSmoke(saved.id);
   assert.deepEqual(store.useAdminSmokes().entries, []);
@@ -148,8 +149,9 @@ test("demo CRUD is separate memory data and never calls the backend", () => {
   const saved = store.saveDemoSmoke(payload);
   assert.ok(saved.id);
   assert.equal(saved.status, "inactive");
-  const edited = store.saveDemoSmoke({ ...payload, status: "active", destination: { x: 0, y: 1 } }, saved.id);
+  const edited = store.saveDemoSmoke({ ...payload, side: "defense", status: "active", destination: { x: 0, y: 1 } }, saved.id);
   assert.equal(edited.id, saved.id);
+  assert.equal(edited.side, "defense");
   assert.equal(edited.createdAt, saved.createdAt);
   assert.equal(store.useDemoSmokes()[0].status, "active");
   assert.deepEqual(store.useAdminSmokes().entries, []);
@@ -208,4 +210,14 @@ test("a failed read after a successful save keeps the success and presents a ret
   assert.equal(store.useAdminSmokes().entries[0].id, record.id);
   assert.equal(reads, 1);
   assert.equal(writes, 1);
+});
+
+
+test("a legacy smoke requires explicit side selection before demo storage", () => {
+  const { store } = loadStore(() => assert.fail("Demo must not call API"));
+  assert.throws(() => store.saveDemoSmoke({ ...payload, side: null }), /스모크 진영/);
+  assert.deepEqual(store.useDemoSmokes(), []);
+  const saved = store.saveDemoSmoke({ ...payload, side: "defense" });
+  assert.equal(saved.side, "defense");
+  assert.deepEqual(saved.destination, payload.destination, "side changes do not rotate persisted coordinates");
 });

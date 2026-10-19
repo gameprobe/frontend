@@ -1,7 +1,7 @@
 import { MINIMAP_SIZE, type RoutePoint } from "@/components/guide-map/geometry";
 import type { MapGuide } from "@/components/guide-map/GuideMapViewer";
 import { isSafeHttpUrl } from "@/lib/youtube";
-import { EXAMPLE_VIDEO_URL, type LineupSide, type LineupSite, type Point } from "@/mocks/lineups";
+import { EXAMPLE_VIDEO_URL, type LineupSide, type Point } from "@/mocks/lineups";
 import type { SmokeVariant } from "@/mocks/smokes";
 
 /**
@@ -16,6 +16,9 @@ export const MAX_PATH_POINTS = 30;
 export type GuideKind = "lineup" | "smoke";
 export type GuideStatus = "active" | "inactive";
 export type AbilitySlot = "Q" | "E" | "C" | "X";
+export type LineupImageSlot = "position" | "aim";
+export type LineupImage = { id: string; sizeBytes: number; contentType: string; url: string };
+export type LineupImages = Record<LineupImageSlot, LineupImage | null>;
 export type { RoutePoint };
 export type PointMode = "target" | "start" | "path";
 export type PointSelection = { kind: "target" | "start" } | { kind: "path"; index: number };
@@ -29,12 +32,13 @@ export type GuideEntry = {
   mapId: string;
   agentId: string;
   side: LineupSide;
-  site: LineupSite;
   abilitySlot: AbilitySlot;
   /** 스모크만 쓴다. 공개 스모크 가이드의 연막 유형 필터(공통 원형·하버 일자)와 같다 */
   shape: SmokeVariant;
   title: string;
   videoUrl: string;
+  /** 이미지는 별도 업로드 API로 저장한다. 일반 라인업 요청에는 넣지 않는다. */
+  images: LineupImages;
   notes: string;
   destination: Destination;
   start: Point | null;
@@ -63,11 +67,11 @@ export function createEmpty(kind: GuideKind, destinationId: string = newId()): G
     mapId: "ascent",
     agentId: kind === "lineup" ? "sova" : "omen",
     side: "attack",
-    site: "A",
     abilitySlot: "E",
     shape: "circle",
     title: "",
     videoUrl: "",
+    images: { position: null, aim: null },
     notes: "",
     destination: { id: destinationId, name: "", point: null },
     start: null,
@@ -82,7 +86,6 @@ export function createAtDestination(source: GuideEntry): GuideEntry {
     mapId: source.mapId,
     agentId: source.agentId,
     side: source.side,
-    site: source.site,
     abilitySlot: source.abilitySlot,
     shape: source.shape,
     destination: copyDestination(source.destination),
@@ -147,7 +150,6 @@ export function createExamples(): GuideEntry[] {
       id: "example-smoke-02",
       status: "inactive",
       agentId: "harbor",
-      site: "B",
       shape: "harbor-wall",
       title: "예시 · 하버 일자 스모크 공략",
       videoUrl: EXAMPLE_VIDEO_URL,

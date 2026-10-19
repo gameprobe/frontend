@@ -15,6 +15,8 @@ type GuideDetailProps = {
   meta: string;
   back: { to: string; label: string };
   video: { url?: string; placeholder: string };
+  /** 라인업의 영상·이미지 전환처럼 별도 자료 보기가 필요할 때 사용한다. */
+  media?: ReactNode;
   steps: { title: string; text: string; screenshot?: string }[];
   mapTitle: string;
   map: ReactNode;
@@ -23,7 +25,7 @@ type GuideDetailProps = {
   actions: ReactNode;
 };
 
-export function GuideDetail({ tags, title, meta, back, video, steps, mapTitle, map, description, info, actions }: GuideDetailProps) {
+export function GuideDetail({ tags, title, meta, back, video, media, steps, mapTitle, map, description, info, actions }: GuideDetailProps) {
   return (
     <div className="container-page flex flex-col gap-5 pt-8 pb-20 md:pt-10">
       <div className="flex flex-wrap items-end justify-between gap-4">
@@ -45,7 +47,7 @@ export function GuideDetail({ tags, title, meta, back, video, steps, mapTitle, m
 
       <div className="grid items-start gap-5 lg:grid-cols-[minmax(0,1fr)_360px]">
         <div className="flex min-w-0 flex-col gap-4">
-          {video.url ? (
+          {media ?? (video.url ? (
             <YouTubePlayer url={video.url} title={title} autoplay />
           ) : (
             <div aria-label={`${video.placeholder} (준비 중)`} className="flex aspect-video w-full flex-col items-center justify-center gap-2 rounded-card border border-line bg-surface">
@@ -54,7 +56,7 @@ export function GuideDetail({ tags, title, meta, back, video, steps, mapTitle, m
               </span>
               <span className="text-12 font-medium text-sub">{video.placeholder}</span>
             </div>
-          )}
+          ))}
           {steps.length > 0 && (
             <ol className={cx("grid gap-4", steps.length >= 3 ? "sm:grid-cols-3" : steps.length === 2 && "sm:grid-cols-2")}>
               {steps.map((step, index) => (
